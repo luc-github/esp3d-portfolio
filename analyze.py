@@ -10,8 +10,8 @@ class GitHubPortfolioAnalyzer:
         
         # List of repositories to analyze
         self.target_repos = [
-            'esp3d',
-            'esp3d-webui',
+            'ESP3D',
+            'ESP3D-WEBUI',
             # Add more repositories here
         ]
     
