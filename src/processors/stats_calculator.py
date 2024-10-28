@@ -423,3 +423,77 @@ class StatsCalculator:
                 response_times.append(response_time)
                 
         return sum(response_times) / len(response_times) if response_times else float('inf')
+    
+    def _calculate_issue_creation_trend(self, repositories: List[Dict]) -> List[Dict]:
+        """Calculate trend of issue creation over time"""
+        trend_data = []
+        now = datetime.now(timezone.utc)
+        
+        # Analyze last 12 months
+        for month in range(12):
+            start_date = now - timedelta(days=30 * month)
+            end_date = start_date - timedelta(days=30)
+            
+            month_count = 0
+            for repo in repositories:
+                for branch in repo.get('branches', []):
+                    month_count += sum(
+                        1 for issue in branch.get('issues', [])
+                        if end_date <= datetime.fromisoformat(issue['created_at'].replace('Z', '+00:00')) < start_date
+                    )
+            
+            trend_data.append({
+                'date': end_date.strftime('%Y-%m'),
+                'count': month_count
+            })
+            
+        return trend_data
+
+    def _calculate_issue_resolution_trend(self, repositories: List[Dict]) -> List[Dict]:
+        """Calculate trend of issue resolution over time"""
+        trend_data = []
+        now = datetime.now(timezone.utc)
+        
+        # Analyze last 12 months
+        for month in range(12):
+            start_date = now - timedelta(days=30 * month)
+            end_date = start_date - timedelta(days=30)
+            
+            month_count = 0
+            for repo in repositories:
+                for branch in repo.get('branches', []):
+                    month_count += sum(
+                        1 for issue in branch.get('issues', [])
+                        if issue.get('closed_at') and
+                        end_date <= datetime.fromisoformat(issue['closed_at'].replace('Z', '+00:00')) < start_date
+                    )
+            
+            trend_data.append({
+                'date': end_date.strftime('%Y-%m'),
+                'count': month_count
+            })
+            
+        return trend_data
+
+    def _calculate_commit_trend(self, repositories: List[Dict]) -> List[Dict]:
+        """Calculate trend of commits over time"""
+        trend_data = []
+        
+        for repo in repositories:
+            activity = repo.get('activity', {}).get('commit_activity', [])
+            for week_data in activity:
+                trend_data.append({
+                    'date': datetime.fromtimestamp(week_data['week']).strftime('%Y-%m-%d'),
+                    'count': week_data['total']
+                })
+                
+        # Sort by date and combine data points for same dates
+        sorted_data = {}
+        for point in trend_data:
+            date = point['date']
+            if date in sorted_data:
+                sorted_data[date]['count'] += point['count']
+            else:
+                sorted_data[date] = point
+                
+        return list(sorted_data.values())
