@@ -1,0 +1,1849 @@
+{
+  "repositories": [
+    {
+      "name": "Arduino",
+      "description": "ESP8266 core for Arduino",
+      "url": "https://github.com/luc-github/Arduino",
+      "language": null,
+      "created_at": "2022-01-09T04:09:57+00:00",
+      "last_updated": "2022-02-02T21:34:45+00:00",
+      "dependencies": [
+        "website"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Arduino-Add-On-for-LinkIt-SDK",
+      "description": "Arduino board support package for LinkIt 7697",
+      "url": "https://github.com/luc-github/Arduino-Add-On-for-LinkIt-SDK",
+      "language": "C",
+      "created_at": "2017-08-09T15:56:32+00:00",
+      "last_updated": "2019-07-08T16:05:07+00:00",
+      "dependencies": [
+        "Arduino"
+      ],
+      "todos": []
+    },
+    {
+      "name": "arduino-esp32",
+      "description": "Arduino core for the ESP32",
+      "url": "https://github.com/luc-github/arduino-esp32",
+      "language": "C",
+      "created_at": "2021-01-14T15:16:47+00:00",
+      "last_updated": "2021-10-24T10:25:06+00:00",
+      "dependencies": [
+        "Arduino",
+        "esp-idf"
+      ],
+      "todos": []
+    },
+    {
+      "name": "arduinoWebSockets",
+      "description": "arduinoWebSockets",
+      "url": "https://github.com/luc-github/arduinoWebSockets",
+      "language": "C++",
+      "created_at": "2019-07-04T10:37:34+00:00",
+      "last_updated": "2022-02-02T21:35:30+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32",
+        "AsyncTCP"
+      ],
+      "todos": []
+    },
+    {
+      "name": "AsyncTCP",
+      "description": "Async TCP Library for ESP32",
+      "url": "https://github.com/luc-github/AsyncTCP",
+      "language": "C++",
+      "created_at": "2018-09-21T18:57:06+00:00",
+      "last_updated": "2019-07-08T16:05:07+00:00",
+      "dependencies": [
+        "Arduino",
+        "ESPAsyncWebServer"
+      ],
+      "todos": []
+    },
+    {
+      "name": "BIGTREETECH-TouchScreenFirmware",
+      "description": "support TFT35 V1.0/V1.1/V1.2/V2.0/V3.0, TFT28, TFT24 V1.1",
+      "url": "https://github.com/luc-github/BIGTREETECH-TouchScreenFirmware",
+      "language": null,
+      "created_at": "2020-04-20T07:12:05+00:00",
+      "last_updated": "2022-02-02T21:35:22+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "cncjs",
+      "description": "A web-based interface for CNC milling controller running Grbl, Marlin, Smoothieware, or TinyG.",
+      "url": "https://github.com/luc-github/cncjs",
+      "language": "JavaScript",
+      "created_at": "2018-12-06T06:59:57+00:00",
+      "last_updated": "2021-08-15T17:35:54+00:00",
+      "dependencies": [
+        "Marlin",
+        "Smoothieware",
+        "website",
+        "Marlin"
+      ],
+      "todos": []
+    },
+    {
+      "name": "config-mega-ramps",
+      "description": null,
+      "url": "https://github.com/luc-github/config-mega-ramps",
+      "language": "C++",
+      "created_at": "2020-01-03T10:44:39+00:00",
+      "last_updated": "2020-01-03T16:21:57+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "config-megaprinter",
+      "description": null,
+      "url": "https://github.com/luc-github/config-megaprinter",
+      "language": null,
+      "created_at": "2019-12-29T12:44:33+00:00",
+      "last_updated": "2019-12-29T12:44:33+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "config-MRR_ESPA",
+      "description": null,
+      "url": "https://github.com/luc-github/config-MRR_ESPA",
+      "language": "C++",
+      "created_at": "2019-12-29T12:45:14+00:00",
+      "last_updated": "2020-08-09T08:36:10+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "config-MRR_ESPE",
+      "description": null,
+      "url": "https://github.com/luc-github/config-MRR_ESPE",
+      "language": "C++",
+      "created_at": "2019-12-28T18:00:19+00:00",
+      "last_updated": "2019-12-30T15:28:33+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "config-re-arm",
+      "description": "re-arm FW",
+      "url": "https://github.com/luc-github/config-re-arm",
+      "language": "C++",
+      "created_at": "2020-01-03T08:31:18+00:00",
+      "last_updated": "2020-01-03T10:45:02+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "DUE-RADDS-GLCD",
+      "description": "Setup for DUE with RADDS and Graphical LCD",
+      "url": "https://github.com/luc-github/DUE-RADDS-GLCD",
+      "language": null,
+      "created_at": "2015-03-25T07:54:23+00:00",
+      "last_updated": "2022-09-17T03:27:34+00:00",
+      "dependencies": [
+        "luc-github",
+        "Marlin",
+        "Repetier-Firmware",
+        "Marlin"
+      ],
+      "todos": []
+    },
+    {
+      "name": "esp-idf",
+      "description": "Espressif IoT Development Framework. Official development framework for ESP32.",
+      "url": "https://github.com/luc-github/esp-idf",
+      "language": "C",
+      "created_at": "2017-10-14T12:15:37+00:00",
+      "last_updated": "2019-07-08T16:05:07+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "ESP32-CAM-Video-Recorder",
+      "description": "Video Recorder for ESP32-CAM with http server for config and ftp (or http) server to download video",
+      "url": "https://github.com/luc-github/ESP32-CAM-Video-Recorder",
+      "language": null,
+      "created_at": "2022-06-10T14:00:29+00:00",
+      "last_updated": "2022-06-07T19:18:01+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32"
+      ],
+      "todos": []
+    },
+    {
+      "name": "esp32-usb-serial",
+      "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+      "url": "https://github.com/luc-github/esp32-usb-serial",
+      "language": "C++",
+      "created_at": "2024-02-12T12:39:24+00:00",
+      "last_updated": "2024-10-10T12:36:53+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32"
+      ],
+      "todos": []
+    },
+    {
+      "name": "ESP32NETBIOS",
+      "description": "NETBIOS Library for ESP32",
+      "url": "https://github.com/luc-github/ESP32NETBIOS",
+      "language": "C++",
+      "created_at": "2018-03-20T15:41:58+00:00",
+      "last_updated": "2023-01-20T22:46:56+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "ESP32SSDP",
+      "description": "Simple SSDP library for ESP32",
+      "url": "https://github.com/luc-github/ESP32SSDP",
+      "language": "C++",
+      "created_at": "2018-03-20T12:53:31+00:00",
+      "last_updated": "2024-10-06T08:16:54+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32",
+        "luc-github",
+        "SSDP_IDF"
+      ],
+      "todos": [
+        {
+          "title": "[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server",
+          "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
+          "created_at": "2023-05-16T01:56:16+00:00",
+          "repository": "ESP32SSDP",
+          "url": "https://github.com/luc-github/ESP32SSDP/issues/35"
+        },
+        {
+          "title": "[FEATURE REQUEST] Respont to multiple device types or callback?",
+          "body": "Currently the API accepts a single device type. UPNP clients normally look for a root device then read device xml. The xml contains the real device type but the search target header is \r\n\"ST: upnp:rootdevice\"\r\n\r\nSo setting the device SSDP.setDeviceType() to say upnp:rootdevice works for discovery to start but fails because the xml device info schema will contain the wrong device type.\r\n\\<deviceType\\>upnp:rootdevice\\</deviceType\\>\r\n\r\nIn my case my actual device type is \"urn:schemas-upnp-org:device:Basic:1\" but I need to respond to \"upnp:rootdevice\" and \"ssdp:all\" also the search term reply header is supposed to be the same as the ST in the search regardless of the actual device type. \r\n\r\nMaybe this is best handled in a callback of some type? The ability to respond to multiple device types is a good feature but in most cases just one is enough provided the above rootdevice and ssdp:all are also returning a valid reply.\r\n\r\n",
+          "created_at": "2020-02-05T03:26:28+00:00",
+          "repository": "ESP32SSDP",
+          "url": "https://github.com/luc-github/ESP32SSDP/issues/9"
+        }
+      ]
+    },
+    {
+      "name": "esp32_https_server",
+      "description": "Alternative ESP32 Webserver implementation for the ESP32 Arduino Core, supporting HTTPS and HTTP.",
+      "url": "https://github.com/luc-github/esp32_https_server",
+      "language": null,
+      "created_at": "2020-08-01T17:32:59+00:00",
+      "last_updated": "2020-08-01T17:33:01+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32"
+      ],
+      "todos": []
+    },
+    {
+      "name": "ESP3D",
+      "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+      "url": "https://github.com/luc-github/ESP3D",
+      "language": "C++",
+      "created_at": "2015-04-16T13:47:44+00:00",
+      "last_updated": "2024-10-27T11:17:20+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32",
+        "arduinoWebSockets",
+        "ESP32SSDP",
+        "ESP3D-WEBUI",
+        "esp3d.io",
+        "luc-github",
+        "Repetier-Firmware",
+        "smoothie"
+      ],
+      "todos": [
+        {
+          "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED",
+          "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
+          "created_at": "2024-10-21T04:51:29+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/1058"
+        },
+        {
+          "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
+          "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
+          "created_at": "2024-10-21T04:39:58+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/1057"
+        },
+        {
+          "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
+          "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
+          "created_at": "2024-10-20T20:58:03+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/1056"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄Change ESP_DIRECT_SD to ESP_ONLY_SD for consistency",
+          "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
+          "created_at": "2023-10-12T01:00:43+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/955"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄Add discord Notification",
+          "body": "the APi is described  here : https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-1p01\r\nand here : https://gist.github.com/Birdie0/78ee79402a4301b1faf412ab5f1cdcf9",
+          "created_at": "2023-02-22T13:17:35+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/891"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄WhatsApp Notification",
+          "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement",
+          "created_at": "2023-02-20T06:57:26+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/888"
+        },
+        {
+          "title": "[TODO]☑Code refactoring plan",
+          "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\r\n\r\n* <s>Change GenLinkedList to vector</s>:+1:\r\n* Implement better file encapsulation class to cover any new file system and any new arch\r\n* Web server abstraction layer to allow to update smoothly to another solution\r\n* Add https support once there is an HTTP server that is implemented that support it \r\n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\r\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\r\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\r\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \r\n* TBD\r\n\r\n\r\nAnyone willing to contribute is welcome of course 😸 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
+          "created_at": "2022-07-28T00:34:00+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/795"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄Notification using custom webhook ",
+          "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
+          "created_at": "2022-02-28T05:28:21+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/726"
+        },
+        {
+          "title": "[BenchMark]Web upload / Web Download on different FS and platform",
+          "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
+          "created_at": "2021-02-03T11:37:13+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/576"
+        },
+        {
+          "title": "⏸️[FEATURE REQUEST]🦄Use better serial protocol communication",
+          "body": "Current protocol between printer and ESP3D use raw serial which is ok for GCODE communication but no really efficient for file transfer\r\nMore over if some output come from printer board due to auto send it bring some trouble on file transfer which is already slow\r\n\r\nCurrent MKS protocol encapsulate each command in a frame with specific header,  it also use 2 additionnal pins for notification/ack ,and different headers for GCODE / File transfer / Error, which make coexistance easier\r\nThis protocol allow 110KB/S transfer vs 0.4KB/S M28/M29 transfer and handle GCODE even during transfer.\r\nThat said current MKS protocol miss 2 things:    \r\n* CRC to ensure data are correct\r\n* resend process in case of corrupted data\r\n\r\nI think add a CRC32 should improve reliability and will only use couple of byte on each frame, and calculation should not affect too much performances.  if done when data is received\r\nBased on this crc, if any error happen then do a resend, if more than 2 resend is needed  on same packet, then automaticaly ask for decreasing baudrate to do more secure transfer. \r\n\r\nThis would need to add some code in Printer FW  but will ensure communication for file transfer as well as commands \r\nThis will be between esp3d and printer like on MKS Wifi so external progam won't be affected.\r\n\r\nI am considering to write a library that could be used to hook the serial wifi port, but this also means need a dedicated wifi port like BTT do for board or TFT or an available UART port  \r\nIf Serial port  is same as USB one, it won't work (e.g: Mega/Ramps and aux 1),  so I need to see if can handle raw serial in same time or consider it as limitation= no support of shared solution, may add custom GCODE  to switch from one mode to another ?\r\nIn addition it need 2 additional pins available.\r\n\r\nThis would allow to remove the need of supporting the slow and unreliable M28/M29 protocol but bring more work on ESP3D part by adding a daughter library / Serial protocol accross FW  (Repetier / Marlin / Smoothieware/ TBD...)\r\n\r\nAny feedback /comment is welcome  \r\n\r\n",
+          "created_at": "2021-02-01T12:13:07+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/575"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄USB Disk support using CH376S chip",
+          "body": "Global FS support Flash and SD, now let's try to add USB Flash disk/key using SPI and CH376s Chip\r\n\r\nThis library looks very promising https://github.com/djuseeq/Ch376msc\r\ne\r\nChip is using 3.3 by default but need 5V to power the USB disk\r\nIt need to test features , if work as expected then need to implement an abstraction layer for the USB FS and  add it to the global FS",
+          "created_at": "2021-01-24T19:14:07+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/568"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄autodetection",
+          "body": "Add some diagnostic/autodetect process for:\r\n* Baudrate\r\n* Fw printer and version\r\n* TBD",
+          "created_at": "2019-09-24T07:53:09+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/376"
+        },
+        {
+          "title": "[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X",
+          "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
+          "created_at": "2018-07-14T13:24:33+00:00",
+          "repository": "ESP3D",
+          "url": "https://github.com/luc-github/ESP3D/issues/243"
+        }
+      ]
+    },
+    {
+      "name": "ESP3D-Configurator",
+      "description": null,
+      "url": "https://github.com/luc-github/ESP3D-Configurator",
+      "language": "JavaScript",
+      "created_at": "2022-06-03T07:30:48+00:00",
+      "last_updated": "2024-10-19T11:27:07+00:00",
+      "dependencies": [
+        "ESP3D",
+        "luc-github",
+        "luc-github.github.io",
+        "spectre"
+      ],
+      "todos": [
+        {
+          "title": "[FEATURE REQUEST]Web Flasher Tool",
+          "body": "May be use : https://esphome.github.io/esp-web-tools/",
+          "created_at": "2023-05-18T01:28:29+00:00",
+          "repository": "ESP3D-Configurator",
+          "url": "https://github.com/luc-github/ESP3D-Configurator/issues/16"
+        },
+        {
+          "title": "[Information]Devt status",
+          "body": "The configurator is now in beta state 🎆 \r\nThe current version is compatible with ESP3D 3.0 only\r\n\r\nIt still need to get improved text content (suggestions/contributions are more than welcome) and add translations support once text is ready.\r\n \r\nThe offline behavior seems not consistent across browsers - so only online version is currently usable=> under investigation\r\n\r\nEdit: offline mode is now fixed and prebuild is available in `build` directory",
+          "created_at": "2022-06-18T06:49:19+00:00",
+          "repository": "ESP3D-Configurator",
+          "url": "https://github.com/luc-github/ESP3D-Configurator/issues/5"
+        }
+      ]
+    },
+    {
+      "name": "esp3d-mock-server",
+      "description": null,
+      "url": "https://github.com/luc-github/esp3d-mock-server",
+      "language": null,
+      "created_at": "2021-01-21T09:25:48+00:00",
+      "last_updated": "2022-02-02T21:37:17+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "luc-github"
+      ],
+      "todos": []
+    },
+    {
+      "name": "esp3d-portfolio",
+      "description": "site that monitor all esp3d project in one page",
+      "url": "https://github.com/luc-github/esp3d-portfolio",
+      "language": "Python",
+      "created_at": "2024-10-28T10:46:21+00:00",
+      "last_updated": "2024-10-28T11:57:43+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "ESP3D-TFT",
+      "description": "ESP3D Firmware for ESP32 based TFT ",
+      "url": "https://github.com/luc-github/ESP3D-TFT",
+      "language": "C",
+      "created_at": "2022-08-24T05:55:10+00:00",
+      "last_updated": "2024-09-14T07:20:11+00:00",
+      "dependencies": [
+        "esp-idf",
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "esp3d.io",
+        "luc-github"
+      ],
+      "todos": [
+        {
+          "title": "Very slow communication with connected device to usb host",
+          "body": "I am using ESP32-S3 DEV KIT N8R8 with esp3d-tft to communicate via wifi with my cnc 3030 prover max (with GRBL, USB port CH340) and the setting is made to communicate via USB SERIAL port. I can send and I receive data from the cnc through the USB SERIAL port.. The problem is that there is a delay of about 1 second between the sending of the command and the execution from cnc device, this is very clear visible when a file is executed, all commands are executed with a delay between each other and the whole process is interrupted. I tested with communication from my computer directly to port 23 of an esp3d-tft board the delay remains, I tested using the web interface the delay remains on sending commands or executing file. If connect the machine directly to the computer with a usb cable everything works fine.\r\n\r\nCan someone tell me if this is a bug or if I missed something when compiling the code.\r\n\r\nI apologize for my bad English.",
+          "created_at": "2024-10-24T15:47:10+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/77"
+        },
+        {
+          "title": "[FEATURE REQUEST]Add Lua interpreter support like in ESP3D",
+          "body": "Lua interpreter support is implemented in ESP3D https://esp3d.io/ESP3D/Version_3.X/documentation/lua/\r\n\r\nAdd same support in ESP3D-TFT\r\n",
+          "created_at": "2024-10-13T07:48:18+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/76"
+        },
+        {
+          "title": "[FEATURE REQUEST]Add BTT GCODE thumbnails",
+          "body": "It was raised to me that now BTT TFT support thumbnails in gcode it is even documented https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware?tab=readme-ov-file#adding-gcode-thumbnails\r\n\r\nI think it would be fun to add this feature also if possible - it would need to add an image decoder which is not an issue in theory\r\n I need to see the impact on low memory screens, but at first sight looks possible on others ^_^ TBC\r\n  ",
+          "created_at": "2024-08-14T05:12:07+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/74"
+        },
+        {
+          "title": "[FEATURE REQUEST]Add support of macro defined by webui on screen",
+          "body": "Now Tft fw can read the preferences.json, so a screen listing defined macros should be available.\n\nThe question is where to display the macro button?",
+          "created_at": "2024-04-21T04:35:12+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/67"
+        },
+        {
+          "title": "[FEATURE REQUEST]Code review / refactoring / improvement",
+          "body": "This is todo list of several topic that need to be done before release:\r\n\r\n- <s>Use queue for values and process them to avoid racing conditions https://github.com/luc-github/ESP3D-TFT/blob/main/main/core/esp3d_values.cpp#L70-L72\r\nand put the pop/clear the list in display task </s> (Done  :+1: ) \r\n\r\n-  Design different boot logo / splash for each target ( e.g: ESP3D Logo + Target name) to know from start what is display for ",
+          "created_at": "2024-01-19T04:45:00+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/55"
+        },
+        {
+          "title": "[FEATURE REQUEST]Move to lvgl 9.0",
+          "body": "I did some reading on migration guide and API description - the mechanism seems pretty identical, API is very close but there are a lot of renaming\r\nI plan to really start to work on it when official 9.0 release is done and move to 9.x when first bug release is out  ",
+          "created_at": "2024-01-17T10:43:01+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/54"
+        },
+        {
+          "title": "[FEATURE REQUEST]Do better snapshot code with no memory need",
+          "body": "Currently the lvgl snapshot API use a lot of memory because it allocate all screen in one buffer then push data to it, it crash if any animation or scrolling text is active which is really not convenient\r\n\r\nI am thinking to use my previous method for snapshot (in first 3.0 version ) that actually hook the `void esp_lv_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)` function.\r\nIt did not need any buffer screen unlike the lvgl API and may just freeze the screen the time the data are saved \r\nhere the old code :\r\n```\r\n/* Display flushing */\r\nvoid esp_lv_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)\r\n{\r\n    //TODO: need to write version for oled with big resolution\r\n    uint16_t c;\r\n    esp3d_screen.startWrite(); /* Start new TFT transaction */\r\n    esp3d_screen.setAddrWindow(area->x1, area->y1, (area->x2 - area->x1 + 1), (area->y2 - area->y1 + 1)); /* set the working window */\r\n    for (int y = area->y1; y <= area->y2; y++) {\r\n        for (int x = area->x1; x <= area->x2; x++) {\r\n            c = color_p->full;\r\n            esp3d_screen.writeColor(c, 1);\r\n#if defined(DISPLAY_SNAPSHOT_FEATURE)\r\n            if(bSnapshot) {\r\n                uint32_t data = lv_color_to32(*color_p);\r\n                //to handle any write issue\r\n                if (fsSnapFile.write((const uint8_t *)(&data), sizeof(uint32_t)) !=  sizeof(uint32_t)) {\r\n                    //if error we stop to dump\r\n                    bSnapshot = false;\r\n                    //raise error\r\n                    error_snapshot = 1;\r\n                }\r\n            }\r\n#endif //DISPLAY_SNAPSHOT_FEATURE\r\n            color_p++;\r\n        }\r\n    }\r\n    esp3d_screen.endWrite(); /* terminate TFT transaction */\r\n    lv_disp_flush_ready(disp); /* tell lvgl that flushing is done */\r\n}\r\n\r\n\r\nbool Display::snapshot(char * filename)\r\n{\r\n    bool res = false;\r\n#if defined(DISPLAY_SNAPSHOT_FEATURE)\r\n    //sanity check to avoid to corrupt FS with capacity overload\r\n    error_snapshot = 0;\r\n    if (ESP_FileSystem::freeBytes() < SNAP_SIZE) {\r\n        return false;\r\n    }\r\n    if(filename) {\r\n        fsSnapFile = ESP_FileSystem::open(filename, ESP_FILE_WRITE);\r\n    } else {\r\n        fsSnapFile = ESP_FileSystem::open(SNAPFILENAME, ESP_FILE_WRITE);\r\n    }\r\n    if (!fsSnapFile) {\r\n        return false;\r\n    }\r\n\r\n    bSnapshot = true;\r\n    lv_obj_invalidate(lv_scr_act());\r\n    lv_refr_now(lv_disp_get_default());                    /* Will call our disp_drv.disp_flush function */\r\n    bSnapshot = false;\r\n    fsSnapFile.close();\r\n    //if any snapshot error\r\n    if (error_snapshot == 0) {\r\n        res = true;\r\n    }\r\n#endif //DISPLAY_SNAPSHOT_FEATURE\r\n    return res;\r\n}\r\n```\r\n\r\nthe new lvgl API use one function only:\r\n```\r\nstatic void lv_disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p) {\r\n  esp_lcd_panel_draw_bitmap(disp_panel, area->x1, area->y1, area->x2 + 1, area->y2 + 1, color_p);  \r\n}\r\n```\r\nso it may be possible to redo same for snapshot - this method do a real snap what ever is displayed and even there is an animation.=> TBC ",
+          "created_at": "2024-01-07T04:47:08+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/53"
+        },
+        {
+          "title": "[FEATURE REQUEST]WhatsApp Notification",
+          "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement\r\n",
+          "created_at": "2023-02-20T06:58:18+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/12"
+        },
+        {
+          "title": "[ENHANCEMENT]Add Pin interrupt support on FT5X06 when supported to save mcu time instead of doing permanent polling",
+          "body": "Doing permament polling on touch to see if was pressed save mcu time on some solution (WT32-SC01 New Plus),  int pin for FT5X06 is available, but seems not working on my device (https://github.com/luc-github/ESP3D-TFT/discussions/1#discussioncomment-3762021), may be hardware issue ? \r\n\r\nIf anyone know how to solve this with a working solution - feedback is welcome 😸 ",
+          "created_at": "2022-10-01T00:07:26+00:00",
+          "repository": "ESP3D-TFT",
+          "url": "https://github.com/luc-github/ESP3D-TFT/issues/5"
+        }
+      ]
+    },
+    {
+      "name": "ESP3D-WEBUI",
+      "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI",
+      "language": "JavaScript",
+      "created_at": "2017-05-19T07:02:14+00:00",
+      "last_updated": "2024-10-25T00:54:46+00:00",
+      "dependencies": [
+        "ESP3D",
+        "luc-github",
+        "Marlin",
+        "Repetier-Firmware",
+        "smoothie",
+        "Smoothieware",
+        "smoothieware-webui-for-ESP3D",
+        "Marlin"
+      ],
+      "todos": [
+        {
+          "title": "[FEATURE REQUEST]Port surfacing wizard as extension ",
+          "body": "the surfacing wizard is a good candidate for an extension \r\nPorting : https://github.com/luc-github/ESP3D-WEBUI/pull/197 should not be too difficult and also help to review extension API",
+          "created_at": "2024-06-02T23:46:47+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/390"
+        },
+        {
+          "title": "[FEATURE REQUEST] Add support for pen plotters",
+          "body": "**Is your feature request related to a problem? Please describe.**\r\nThe ESP3D project has amazing flexibility. I would like to add support for hpgl pen plotters. These great machines are just too good to let die out. Adding the possibility of using these machines within the ESP3D framework would open up features such as wifi connectivity, SD plotting and all the other fantastic features that ESP3D has to offer\r\n\r\n**Describe the solution you'd like**\r\nThe integration of hpgl commands into some of the panels such as JOG and status. The core features like the SD file system and terminal are already 99% usable and only need minor changes to use.\r\n\r\n**Describe alternatives you've considered**\r\nI had started a software that has similar features. It was not even nearly as stable as ESP3D . After looking at the ESP3D project I realized I was just trying to re-invent the wheel. The required changes have already been tried and tested so should be good to add to ESP3D. The changes to the UI would be very much within the framework of the existing ESP3D UI and would not require a total re write.\r\n\r\nBasic notes here \r\nhttps://github.com/ithinkido/ESP3D/tree/3.0_HPGL/HPGL\r\n\r\n",
+          "created_at": "2022-10-08T14:50:28+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/273"
+        },
+        {
+          "title": "[FEATURE REQUEST]Integrate the [ ESP700] command into the button",
+          "body": "Integrate the [ ESP700] command into the  button so you can start file printing directly from the button in GCODE HOST mode",
+          "created_at": "2022-09-18T01:54:13+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/265"
+        },
+        {
+          "title": "[Enhancement]Clean up Interface UI according usage",
+          "body": "Multiple conditions is now supported - so in Settings->Intefaces some controls could be hidden if not in usage context\r\n\r\n",
+          "created_at": "2022-07-06T07:13:52+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/249"
+        },
+        {
+          "title": "CNC process visualization functionality",
+          "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
+          "created_at": "2022-05-14T20:46:19+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244"
+        },
+        {
+          "title": "[FEATURE REQUEST]Configuration  Wizard ",
+          "body": "now all ESP3D Feature are ready and 3D printer  feature are almost ready too, it is time to define a configuration wizard to:\r\n* Setup Network\r\n* Setup UI according printer features \r\n\r\n",
+          "created_at": "2022-05-10T04:57:31+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/242"
+        },
+        {
+          "title": "[FEATURE REQUEST]PCB and Engraving Milling autoleveling",
+          "body": "**Is your feature request related to a problem? Please describe.**\r\nI would like the ability to probe a surface and modify the loaded g code to account for surface inconsistencies\r\n\r\n**Describe the solution you'd like**\r\nI'd like to be able to specify a grid of points that could be probed and generate a mesh. this mesh could then be used to correct uploaded gcode files to account for z height inconsistencies. This mesh should be able to be applied to multiple files via a button and the height should be able to be downloaded for future use.\r\n\r\n**Describe alternatives you've considered**\r\nRight now the only work around is to attached the GRBL ESP32 to a computer and run one of the programs that can do this. These are\r\nOpenCNCpilot, bCNC, Universal G code Sender.\r\n\r\nIdeally I would like to be able to run this self contained\r\n\r\n**Additional context**\r\n\r\n",
+          "created_at": "2020-10-10T22:29:15+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/122"
+        },
+        {
+          "title": "[FEATURE REQUEST] Bed Mesh Leveling Visualizer",
+          "body": "**Is your feature request related to a problem? Please describe.**\r\n\r\nI am using an octoprint plugin called bed visualizer to display G29 T. Would be nice to have something like this in the esp3D. \r\n\r\n**Describe the solution you'd like**\r\n\r\nI basically want to be able to see this a graph like this on the web page of the ESP3D. Or at least a very basic graph that shows 4 corners and how much they differ from each other, so I know which knobs to turn to calibrate bed so it's physically as level as possible. \r\n\r\n\r\n**Additional context**\r\n\r\n![image](https://user-images.githubusercontent.com/33436796/88237163-a66d8e80-cc4c-11ea-975b-520c49e9f7da.png)\r\n",
+          "created_at": "2020-07-22T22:58:30+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/106"
+        },
+        {
+          "title": "[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them",
+          "body": "```\r\nOne UI to rule them all, One UI to find them,\r\nOne UI to bring them all and in the darkness bind them\r\n```\r\nA way to agregate all UI/esp3d and control them like an esp3d farm, even sending jobs from one to another\r\nThis tool could also handle printers access for fab lab or a classroom  for example\r\n\r\nIt could be used also with usage of NFC devices - imagination is just the limit\r\n\r\nThis thread is more for a discussion  for the moment to see if there is a need or it is just a fake good idea ^_^     ",
+          "created_at": "2020-01-04T20:21:40+00:00",
+          "repository": "ESP3D-WEBUI",
+          "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/85"
+        }
+      ]
+    },
+    {
+      "name": "esp3d-webui-devtool",
+      "description": "ESP3D webui development CLI tool",
+      "url": "https://github.com/luc-github/esp3d-webui-devtool",
+      "language": null,
+      "created_at": "2021-01-21T09:26:13+00:00",
+      "last_updated": "2022-02-02T21:35:13+00:00",
+      "dependencies": [
+        "ESP3D"
+      ],
+      "todos": []
+    },
+    {
+      "name": "esp3d.io",
+      "description": "Project Main page",
+      "url": "https://github.com/luc-github/esp3d.io",
+      "language": "HTML",
+      "created_at": "2023-01-29T00:46:38+00:00",
+      "last_updated": "2024-10-28T04:04:35+00:00",
+      "dependencies": [
+        "luc-github"
+      ],
+      "todos": [
+        {
+          "title": "Do a description page for each WebUI panel / Settings",
+          "body": "According Version and Target",
+          "created_at": "2023-02-28T06:31:09+00:00",
+          "repository": "esp3d.io",
+          "url": "https://github.com/luc-github/esp3d.io/issues/8"
+        },
+        {
+          "title": "Add Default setting description page",
+          "body": "Each project has default settings values need to list them",
+          "created_at": "2023-02-28T06:27:05+00:00",
+          "repository": "esp3d.io",
+          "url": "https://github.com/luc-github/esp3d.io/issues/6"
+        }
+      ]
+    },
+    {
+      "name": "ESP3DLib",
+      "description": "ESP3D library for Marlin and ESP32 boards",
+      "url": "https://github.com/luc-github/ESP3DLib",
+      "language": "C++",
+      "created_at": "2019-12-16T13:18:03+00:00",
+      "last_updated": "2024-09-09T04:35:12+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "FYSETC-E4",
+        "luc-github",
+        "Marlin",
+        "MKS-TinyBee",
+        "Marlin"
+      ],
+      "todos": [
+        {
+          "title": "Bump braces and gulp in /embedded",
+          "body": "Bumps [braces](https://github.com/micromatch/braces) to 3.0.3 and updates ancestor dependency [gulp](https://github.com/gulpjs/gulp). These dependencies need to be updated together.\n\nUpdates `braces` from 3.0.2 to 3.0.3\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/micromatch/braces/commit/74b2db2938fad48a2ea54a9c8bf27a37a62c350d\"><code>74b2db2</code></a> 3.0.3</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/88f1429a0f47e1dd3813de35211fc97ffda27f9e\"><code>88f1429</code></a> update eslint. lint, fix unit tests.</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff\"><code>415d660</code></a> Snyk js braces 6838727 (<a href=\"https://redirect.github.com/micromatch/braces/issues/40\">#40</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/190510f79db1adf21d92798b0bb6fccc1f72c9d6\"><code>190510f</code></a> fix tests, skip 1 test in test/braces.expand</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/716eb9f12d820b145a831ad678618731927e8856\"><code>716eb9f</code></a> readme bump</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/a5851e57f45c3431a94d83fc565754bc10f5bbc3\"><code>a5851e5</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/braces/issues/37\">#37</a> from coderaiser/fix/vulnerability</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/2092bd1fb108d2c59bd62e243b70ad98db961538\"><code>2092bd1</code></a> feature: braces: add maxSymbols (<a href=\"https://github.com/micromatch/braces/issues/\">https://github.com/micromatch/braces/issues/</a>...</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/9f5b4cf47329351bcb64287223ffb6ecc9a5e6d3\"><code>9f5b4cf</code></a> fix: vulnerability (<a href=\"https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727\">https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/98414f9f1fabe021736e26836d8306d5de747e0d\"><code>98414f9</code></a> remove funding file</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/665ab5d561c017a38ba7aafd92cc6655b91d8c14\"><code>665ab5d</code></a> update keepEscaping doc (<a href=\"https://redirect.github.com/micromatch/braces/issues/27\">#27</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/micromatch/braces/compare/3.0.2...3.0.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `gulp` from 4.0.2 to 5.0.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/releases\">gulp's releases</a>.</em></p>\n<blockquote>\n<h2>gulp v5.0.0</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/HEAD/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>⚠ BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md\">gulp's changelog</a>.</em></p>\n<blockquote>\n<h2><a href=\"https://www.github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">5.0.0</a> (2024-03-29)</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/master/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>⚠ BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/5c4c5473c5582a8e4495c695ecd93b13f0852cbd\"><code>5c4c547</code></a> chore: Release 5.0.0 (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2762\">#2762</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/bf72116c5d5f613836b392fb83633ea6c14f3a65\"><code>bf72116</code></a> chore: Add index.mjs to files list</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\"><code>b00de68</code></a> feat: Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\"><code>72668c6</code></a> chore!: Normalize repository, dropping node &lt;10.13 support (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2758\">#2758</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/85896d4f099a80d58dd08d1f6d80586b07678995\"><code>85896d4</code></a> chore(docs): Update stream handbook link (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2711\">#2711</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/818bd73e5da1ad69f43eef84214c98d6392a73e4\"><code>818bd73</code></a> Docs: Remove gulp-sourcemaps because it is built-in (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2592\">#2592</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/598f971a6567401e5760f4fd0b84df0180c2e350\"><code>598f971</code></a> Docs: Fix broken link in recipe (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2571\">#2571</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/9877de07cf923c889d7f0661d87f3d6f8634eeb1\"><code>9877de0</code></a> Docs: Guide CustomRegistries to maintain properties on tasks (fixes <a href=\"https://redirect.github.com/gulpjs/gulp/issues/2561\">#2561</a>) (#...</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/f91c388beb265e5008202f11100309549162247a\"><code>f91c388</code></a> Docs: Remove typo in custom registry docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2543\">#2543</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/df252509b52acd712300b3b5d00bf7aedf0dbd40\"><code>df25250</code></a> Docs: Fix typo in task docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2524\">#2524</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3DLib/network/alerts).\n\n</details>",
+          "created_at": "2024-06-13T06:12:56+00:00",
+          "repository": "ESP3DLib",
+          "url": "https://github.com/luc-github/ESP3DLib/pull/79"
+        },
+        {
+          "title": "3.0 refactoring",
+          "body": null,
+          "created_at": "2024-01-03T02:55:35+00:00",
+          "repository": "ESP3DLib",
+          "url": "https://github.com/luc-github/ESP3DLib/pull/76"
+        },
+        {
+          "title": "[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0",
+          "body": "https://github.com/MarlinFirmware/Marlin/commit/fecadaca82e49c2558b42684382ede121274bfea removed all configurations flags access for ESP3DLib \r\n\r\n### In Configuration_adv.h\r\nLatest changes prevent  ESP3D_WIFISUPPORT  to use :\r\n```\r\n#define WEBSUPPORT          // Start a webserver (which may include auto-discovery) using SPIFFS\r\n#define OTASUPPORT          // Support over-the-air firmware updates\r\n#define WIFI_CUSTOM_COMMAND // Accept feature config commands (e.g., WiFi ESP3D) from the host\r\n```\r\n\r\nYou need to replace/put back:\r\n`#if ENABLED(WIFISUPPORT)` by `#if ANY(WIFISUPPORT, ESP3D_WIFISUPPORT)`\r\n\r\nOr add the flags outside of the `#if ENABLED(WIFISUPPORT)`\r\n\r\nIf not, ESP3DLib cannot communicate with Marlin and is not setup for web access \r\n\r\n### In SanityCheck.h\r\nchange \r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif defined(WIFI_SSID) || defined(WIFI_PWD)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nby\r\n\r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif (defined(WIFI_SSID) || defined(WIFI_PWD)) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nOr compilation will failed \r\n\r\n",
+          "created_at": "2023-12-15T12:07:14+00:00",
+          "repository": "ESP3DLib",
+          "url": "https://github.com/luc-github/ESP3DLib/issues/75"
+        },
+        {
+          "title": "[FEATURE REQUEST]ESP3DLib 3.0",
+          "body": "Here features that will be covered by ESP3DLib 3.0 : \r\n- Webui <s>2.1</s> 3.0 support\r\n-  Move to SSDP asyncudp library\r\n- Move ESP32 core to 2.0.2 / 2.0.3\r\n- Move from SPIFFS to LittleFS\r\n- AP mode setup reviewed\r\n- New embedded page\r\n- Add Telnet server support\r\n- Add Notifications support\r\n- Add MKS Cura pluggin support for file upload\r\n- Move SD support from Marlin SD Lib to SDFat 2.0 for better performance (TBC),\r\nNote: Marlin itself will still use Marlin SD Lib as only ESP3DLib will be affected. \r\n\r\n\r\nTesting boards:\r\n1 - MRR_ESPA V1.3 without display\r\n2 - FYSETC V1.0 + MKS TFT32_L V4.0 (With BTT FW)\r\n3 - MKS TinyBee V1.0 + MKS Mini12864 V3.0\r\n4 - Panda Zhu V1.2\r\n\r\nMarlin Code base should be 2.0.9.3 bugfix  2.0.9.4? (TBD)\r\n",
+          "created_at": "2022-02-01T07:02:41+00:00",
+          "repository": "ESP3DLib",
+          "url": "https://github.com/luc-github/ESP3DLib/issues/39"
+        }
+      ]
+    },
+    {
+      "name": "ESP8266-Arduino-Lua",
+      "description": "Lua scripting engine integrated in Arduino for ESP8266",
+      "url": "https://github.com/luc-github/ESP8266-Arduino-Lua",
+      "language": "C",
+      "created_at": "2019-10-05T10:49:09+00:00",
+      "last_updated": "2022-12-19T21:35:55+00:00",
+      "dependencies": [
+        "Arduino"
+      ],
+      "todos": []
+    },
+    {
+      "name": "ESPAsyncWebServer",
+      "description": "Async Web Server for ESP8266 and ESP32",
+      "url": "https://github.com/luc-github/ESPAsyncWebServer",
+      "language": "C++",
+      "created_at": "2018-09-02T13:21:15+00:00",
+      "last_updated": "2022-02-02T21:35:43+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32",
+        "AsyncTCP"
+      ],
+      "todos": []
+    },
+    {
+      "name": "EspLuaEngine",
+      "description": "Add Lua engine to your firmware using ESP boards",
+      "url": "https://github.com/luc-github/EspLuaEngine",
+      "language": "C",
+      "created_at": "2024-08-17T11:15:11+00:00",
+      "last_updated": "2024-10-15T10:41:16+00:00",
+      "dependencies": [
+        "Arduino",
+        "ESP3D",
+        "ESP8266-Arduino-Lua",
+        "luc-github"
+      ],
+      "todos": []
+    },
+    {
+      "name": "ESPWebDAV",
+      "description": "macOS, linux, windows: Natively sharing files - port 80 is shared",
+      "url": "https://github.com/luc-github/ESPWebDAV",
+      "language": null,
+      "created_at": "2021-01-25T12:18:26+00:00",
+      "last_updated": "2023-01-18T22:49:41+00:00",
+      "dependencies": [
+        "Arduino"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Flashair-FM",
+      "description": "FlashAir Web File Manager",
+      "url": "https://github.com/luc-github/Flashair-FM",
+      "language": "HTML",
+      "created_at": "2015-03-25T06:30:23+00:00",
+      "last_updated": "2023-09-19T11:35:02+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "luc-github"
+      ],
+      "todos": [
+        {
+          "title": "Update UI to fit WebUI-ESP3D 3.0 panel",
+          "body": "content is visible in a frame\r\n<img src=\"https://user-images.githubusercontent.com/8822552/97572520-abc73b80-19e8-11eb-9b3c-2102a1672066.png\"/>\r\n\r\ncurrent title is too big and current width is also generating horizontal scrollbar - and inside have also another vertical scrollbar\r\n\r\nso put sd space  as top as well as upload button / no need to display menu /language ? just list files  ? TBD",
+          "created_at": "2020-10-29T12:27:44+00:00",
+          "repository": "Flashair-FM",
+          "url": "https://github.com/luc-github/Flashair-FM/issues/7"
+        },
+        {
+          "title": "Add translations for Devt",
+          "body": "Devt allows multi language - but only english is done",
+          "created_at": "2018-12-09T17:03:14+00:00",
+          "repository": "Flashair-FM",
+          "url": "https://github.com/luc-github/Flashair-FM/issues/5"
+        },
+        {
+          "title": "Read APPNAME from CONFIG and display it",
+          "body": "to avoid to edit List.htm ,it is easier to edit CONFIG to discriminate page\r\n\r\n![image](https://user-images.githubusercontent.com/8822552/40102364-9165fe14-58ea-11e8-8de0-5446a1098864.png)\r\n",
+          "created_at": "2018-05-16T07:20:29+00:00",
+          "repository": "Flashair-FM",
+          "url": "https://github.com/luc-github/Flashair-FM/issues/4"
+        }
+      ]
+    },
+    {
+      "name": "FW-config-editor",
+      "description": "Firmware configuration editor",
+      "url": "https://github.com/luc-github/FW-config-editor",
+      "language": "JavaScript",
+      "created_at": "2016-12-18T20:57:00+00:00",
+      "last_updated": "2023-01-28T20:21:09+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "luc-github",
+        "smoothie",
+        "Smoothieware"
+      ],
+      "todos": []
+    },
+    {
+      "name": "FYSETC-E4",
+      "description": "FYSETC Board - The E4 board is a minimal 3D printer control board based on the ESP32 microcontroller from ESPRESSIF, with built-in Wi-Fi and Bluetooth.",
+      "url": "https://github.com/luc-github/FYSETC-E4",
+      "language": null,
+      "created_at": "2022-02-01T04:05:58+00:00",
+      "last_updated": "2022-01-29T19:13:17+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3DLib",
+        "luc-github",
+        "Marlin",
+        "Marlin"
+      ],
+      "todos": []
+    },
+    {
+      "name": "gcode-viewer",
+      "description": "A web-based 3D GCode viewer to help understand 3D printer models.",
+      "url": "https://github.com/luc-github/gcode-viewer",
+      "language": "JavaScript",
+      "created_at": "2018-12-06T06:51:47+00:00",
+      "last_updated": "2022-10-26T15:27:07+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "Grbl_Esp32",
+      "description": "A port of Grbl CNC Firmware for ESP32",
+      "url": "https://github.com/luc-github/Grbl_Esp32",
+      "language": "nesC",
+      "created_at": "2021-03-04T12:32:11+00:00",
+      "last_updated": "2021-10-24T00:41:26+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32",
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "luc-github"
+      ],
+      "todos": []
+    },
+    {
+      "name": "gt911_ts",
+      "description": "GT911 Touch Screen Driver For Rockchips",
+      "url": "https://github.com/luc-github/gt911_ts",
+      "language": "C",
+      "created_at": "2019-01-21T09:01:46+00:00",
+      "last_updated": "2019-07-08T16:05:07+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "hello-github-actions",
+      "description": null,
+      "url": "https://github.com/luc-github/hello-github-actions",
+      "language": "Dockerfile",
+      "created_at": "2019-09-04T21:25:51+00:00",
+      "last_updated": "2019-09-10T19:22:12+00:00",
+      "dependencies": [],
+      "todos": [
+        {
+          "title": "Congratulations",
+          "body": "## Nice work!\n\n![celebrate](https://octodex.github.com/images/jetpacktocat.png)\n\nYou merged and this course is now complete! I'll stop responding but the fun doesn't have to stop here. \n\n## Want to keep learning? \n\nIn this repository:\n- Your merge should trigger your action again, check it out in the [Actions tab](https://github.com/luc-github/hello-github-actions/actions).\n- The `Dockerfile` contains metadata for your action. Try changing some of that. You could, for example, change the icon that displays when the action is running.\n- Change the `MY_NAME` environment variable to use your name instead of Mona's in `.github/workflows/main.yml`.\n- Change the contents of `entrypoint.sh` to do output a different message.\n\nOutside of this repository:\n- Review the [GitHub Actions documentation](https://help.github.com/articles/about-github-actions) on the GitHub Developer site. \n- Use existing actions from the [GitHub Marketplace](https://github.com/marketplace/actions).\n- Use existing actions from GitHub's [official list](https://github.com/actions).\n- Use actions created by others in [awesome-actions](https://github.com/sdras/awesome-actions).\n\nNow...[what will you learn next](https://lab.github.com/courses)?\n",
+          "created_at": "2019-09-10T19:22:10+00:00",
+          "repository": "hello-github-actions",
+          "url": "https://github.com/luc-github/hello-github-actions/issues/4"
+        }
+      ]
+    },
+    {
+      "name": "horus",
+      "description": "3D Scanning multiplatform desktop application",
+      "url": "https://github.com/luc-github/horus",
+      "language": "Python",
+      "created_at": "2016-06-10T10:11:29+00:00",
+      "last_updated": "2020-01-29T11:36:48+00:00",
+      "dependencies": [],
+      "todos": [
+        {
+          "title": "Horus use dtr but Davinci has white leds",
+          "body": "leds should only be used for calibration, extra commands ?\nlike :\npre calib commands : led on\npost calib commands : led off\n",
+          "created_at": "2016-06-12T20:43:32+00:00",
+          "repository": "horus",
+          "url": "https://github.com/luc-github/horus/issues/6"
+        },
+        {
+          "title": "Horus use 2 lasers/1 cam but Davinci use 1 laser / 1 cam, one up and one down ",
+          "body": "Logic of calibration/scan need to be adjusted\n",
+          "created_at": "2016-06-12T20:42:18+00:00",
+          "repository": "horus",
+          "url": "https://github.com/luc-github/horus/issues/5"
+        },
+        {
+          "title": "Usage is 0 index (T0/T1)) but Horus use 1 index(T1/T2) for lasers",
+          "body": "need to be parameter in settings\n",
+          "created_at": "2016-06-12T20:38:52+00:00",
+          "repository": "horus",
+          "url": "https://github.com/luc-github/horus/issues/4"
+        },
+        {
+          "title": "GCODE are specifics",
+          "body": "allow to use different GCODE for different FW like repetier\nG1 Xnnn is already used and do not use angular reference but distance\nneed to use `G201 Ennn : move motor in deg` instead\n",
+          "created_at": "2016-06-12T20:36:53+00:00",
+          "repository": "horus",
+          "url": "https://github.com/luc-github/horus/issues/3"
+        },
+        {
+          "title": "FW check limit usage of others boards ",
+          "body": "should have a setting : do not check FW\n",
+          "created_at": "2016-06-12T20:33:30+00:00",
+          "repository": "horus",
+          "url": "https://github.com/luc-github/horus/issues/2"
+        },
+        {
+          "title": "Motor speed in autocheck.py is hard coded",
+          "body": "better to be selected from settings / preference\n",
+          "created_at": "2016-06-12T20:32:19+00:00",
+          "repository": "horus",
+          "url": "https://github.com/luc-github/horus/issues/1"
+        }
+      ]
+    },
+    {
+      "name": "luc-github",
+      "description": "About me",
+      "url": "https://github.com/luc-github/luc-github",
+      "language": "HTML",
+      "created_at": "2020-10-31T08:15:02+00:00",
+      "last_updated": "2022-04-07T11:45:34+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3D-WEBUI",
+        "ESP3DLib"
+      ],
+      "todos": []
+    },
+    {
+      "name": "luc-github.github.io",
+      "description": null,
+      "url": "https://github.com/luc-github/luc-github.github.io",
+      "language": "HTML",
+      "created_at": "2021-05-22T09:30:35+00:00",
+      "last_updated": "2024-10-19T11:27:23+00:00",
+      "dependencies": [
+        "ESP3D",
+        "ESP3DLib",
+        "luc-github"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Marlin",
+      "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+      "url": "https://github.com/luc-github/Marlin",
+      "language": "C++",
+      "created_at": "2022-04-17T07:28:57+00:00",
+      "last_updated": "2024-07-28T21:33:04+00:00",
+      "dependencies": [
+        "Arduino",
+        "arduino-esp32"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Marlin4Due",
+      "description": "Marlin for DaVinci Printer - Pre alpha - do not use unless to help",
+      "url": "https://github.com/luc-github/Marlin4Due",
+      "language": "C",
+      "created_at": "2015-04-28T01:04:13+00:00",
+      "last_updated": "2022-09-17T03:27:27+00:00",
+      "dependencies": [
+        "luc-github",
+        "Marlin",
+        "Repetier-Firmware",
+        "Marlin"
+      ],
+      "todos": [
+        {
+          "title": "No Z homing and no heating",
+          "body": "So I installed this on my Da Vinci 1.0a and It homes x and Y but not Z and it dont heat up.\r\n\r\nCan you please help or do I have to go back to Repetier firmware? \r\n\r\n",
+          "created_at": "2018-04-15T19:35:10+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/11"
+        },
+        {
+          "title": "No EEPROM on Davinci - need to use SDCard as Virtual EEPROM",
+          "body": "Now SDCard is working - need to implement the virtual EEPROM on SDCard\n",
+          "created_at": "2015-05-11T13:37:56+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/9"
+        },
+        {
+          "title": "Add condition for 1.0(A) and 2.0(A) for specific settings",
+          "body": "like bed size - default extruder - fan numbers (2.0SF and others 2.0(A)\n",
+          "created_at": "2015-05-05T02:36:46+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/8"
+        },
+        {
+          "title": "CREATE MODEL 1",
+          "body": "MODEL 0 for 1.0\nMODEL 1 for 1.0a\n",
+          "created_at": "2015-05-04T23:45:54+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/pull/7"
+        },
+        {
+          "title": "LCD menu is terrible for 16x4 ",
+          "body": "need to adjust menu item for a 16x4 for better user experience\n",
+          "created_at": "2015-05-04T11:56:03+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/6"
+        },
+        {
+          "title": "Navigation using key is sometimes upside down / back key is not used",
+          "body": "because of Rotary encoder there is not up/down concept but turn right / turn left to navigate to menu, to increment/decrement  value - so need some adjustment\n\nalso Ok is also used to start/stop and action when Back should/could be used also - need to complete back key usage\n",
+          "created_at": "2015-05-04T11:54:59+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/5"
+        },
+        {
+          "title": "Conditions for Pin management between 1.0/2.0 and 1.0A/2.0A",
+          "body": "Need to define a condition used inside pins_DAVINCI.h to handle all pins\n",
+          "created_at": "2015-05-04T11:44:18+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/3"
+        },
+        {
+          "title": "TODO ~ TO CHECK",
+          "body": "Better LCD 16x4 UI\n\nUI for 2nd extruder\n\nLight management, menu, GCode\n\nPowersave LCD/Light\n\nClean Nozzle,Menu,GCode\n\nDripBox Cleaning, Menu\n\nHoming reset if disable stepper\n\nHoming flag per axis\n\nTop sensor alert\n\nFilament sensor alert\n\nWatchdog support\n\nLoad/Unload filament menu, on Dripboxes\n\nJam sensor support\n\nManual bed levelling menu\n\nEmmergency Stop\n\nKeypad support\n\nPins according model\n\nBed Size according model\n\nAutolevel positions according model\n\nExtruders/Fans control\n\nSD Card : done https://github.com/luc-github/Marlin4Due/commit/9dd636a7cb373ff4aa375dcd69a3a2b9352ea544\n\nVirtual EEPROM\n\nSound effect if key pressed, menu for sound off\n\nTBD\n",
+          "created_at": "2015-05-01T04:32:15+00:00",
+          "repository": "Marlin4Due",
+          "url": "https://github.com/luc-github/Marlin4Due/issues/2"
+        }
+      ]
+    },
+    {
+      "name": "MarlinConfigurations",
+      "description": "Configurations for Marlin Firmware",
+      "url": "https://github.com/luc-github/MarlinConfigurations",
+      "language": null,
+      "created_at": "2023-12-16T01:26:43+00:00",
+      "last_updated": "2023-12-16T01:26:43+00:00",
+      "dependencies": [
+        "Marlin",
+        "Marlin"
+      ],
+      "todos": []
+    },
+    {
+      "name": "MKS-TFT",
+      "description": "MKS TFT32/28 alternative firmware",
+      "url": "https://github.com/luc-github/MKS-TFT",
+      "language": "C",
+      "created_at": "2017-05-30T14:38:34+00:00",
+      "last_updated": "2020-01-29T11:35:54+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "MKS-TinyBee",
+      "description": "MKS TinyBee is a mainboard for 3d printing, based on ESP32 module",
+      "url": "https://github.com/luc-github/MKS-TinyBee",
+      "language": null,
+      "created_at": "2022-02-01T02:51:37+00:00",
+      "last_updated": "2022-01-29T18:56:42+00:00",
+      "dependencies": [
+        "Marlin",
+        "Marlin"
+      ],
+      "todos": []
+    },
+    {
+      "name": "MKS-WIFI",
+      "description": "MKS TFT WIFI and MKS ROBIN WIFI , share the same firmware. Support MKS Robin series board and MKS TFT series board, for cloud printing and LAN printer controling……",
+      "url": "https://github.com/luc-github/MKS-WIFI",
+      "language": null,
+      "created_at": "2020-12-15T08:53:49+00:00",
+      "last_updated": "2023-01-28T11:18:14+00:00",
+      "dependencies": [
+        "Arduino",
+        "website"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Mock-api-server",
+      "description": null,
+      "url": "https://github.com/luc-github/Mock-api-server",
+      "language": null,
+      "created_at": "2021-01-21T09:26:55+00:00",
+      "last_updated": "2021-02-11T18:26:46+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "Repetier-Firmware",
+      "description": "Firmware for Arduino based RepRap 3D printer.",
+      "url": "https://github.com/luc-github/Repetier-Firmware",
+      "language": null,
+      "created_at": "2022-05-01T00:37:08+00:00",
+      "last_updated": "2024-06-25T15:06:27+00:00",
+      "dependencies": [
+        "Arduino",
+        "Marlin",
+        "Marlin"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Repetier-Firmware-0.91",
+      "description": null,
+      "url": "https://github.com/luc-github/Repetier-Firmware-0.91",
+      "language": "HTML",
+      "created_at": "2017-12-19T09:28:04+00:00",
+      "last_updated": "2023-01-28T21:21:01+00:00",
+      "dependencies": [
+        "Arduino",
+        "luc-github",
+        "Repetier-Firmware"
+      ],
+      "todos": []
+    },
+    {
+      "name": "Repetier-Firmware-4-Davinci",
+      "description": "Repetier-Firmware-0.92 based for DaVinci printer (Beta - so far so good)",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci",
+      "language": "HTML",
+      "created_at": "2014-11-08T11:21:54+00:00",
+      "last_updated": "2024-09-17T18:11:02+00:00",
+      "dependencies": [
+        "Arduino",
+        "horus",
+        "luc-github",
+        "Repetier-Firmware"
+      ],
+      "todos": [
+        {
+          "title": "I think my printer isn't being detected? da vinci 1.0",
+          "body": "went through all the steps, trying to now press on upload on the Arduino, got this error.. anyone know why? \r\n![Capture](https://github.com/luc-github/Repetier-Firmware-4-Davinci/assets/172260405/4b790166-7b1f-40d8-a5f9-fca02188a943)\r\n",
+          "created_at": "2024-06-10T09:34:19+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/417"
+        },
+        {
+          "title": "After uploading \"usb device not recognized\" constantly reconnecting printer still displaying 2 black bars",
+          "body": "What is your question ?\r\n",
+          "created_at": "2024-05-17T01:12:52+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/416"
+        },
+        {
+          "title": "[Question] Cords show up as NAN",
+          "body": "I finally got repetier to flash to my da vinci 1.0a and when I try to home my axis it just says \"NAN\" for all of them. I don't know what I did wrong but I don't think I did anything wrong because it flashed just fine and the light can still be toggled. The heating elements also don't seem to work.",
+          "created_at": "2024-05-05T20:06:49+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/415"
+        },
+        {
+          "title": "How to add 2nd fan to DaVinci 1.0a",
+          "body": "Hi guys, I know this is an old printer, but after flashing repetier on my 1.0a I've printed tpu, pla, petg and prints very well, I want to add a 2nd fan and I know there is and older post #152 about doing it but I need some help in doing it, where abouts do I put #define add extra fan etc? Do I put it in Arduino? And reflash the printer? I'm confused, please help, everything is soldered up ready go",
+          "created_at": "2023-10-28T18:42:34+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/411"
+        },
+        {
+          "title": "[FR]Add platformIO support",
+          "body": "I will add platformIO support - it should allow to patch the due source automaticaly and so no need to do any manual changes \r\nalso it should allow to not change anything in configuration.h but use specific env for each config\r\n\r\nSo firmware should be easy to build in this way\r\nthis will be first step as repetier 2.0 use platformio , so need to prepare the porting\r\n\r\nEdit: patching seems supported https://docs.platformio.org/en/latest/projectconf/advanced_scripting.html#override-package-files\r\nSo it should be too hard to do it",
+          "created_at": "2021-04-13T16:37:51+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/380"
+        },
+        {
+          "title": "inactive time should be used during filament changes",
+          "body": "if the printer runs out of filament it should cool down using inactive time in eeprom. mine stayed on the filament load screen at full temperature for over 10 min.",
+          "created_at": "2018-12-19T02:45:27+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/332"
+        },
+        {
+          "title": "Resume printer after M600",
+          "body": "Hi , i have some troubles with filament change during printing .\r\n\r\nWhen i put M600 , printer is going to load / unload filament well .\r\n\r\nBut it makes printer  //;pause and i can't do anything after that , in order to resume and restart the print .\r\n\r\nAny solutions for it ?\r\n\r\nThanks",
+          "created_at": "2017-08-03T22:32:23+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/265"
+        },
+        {
+          "title": "Disable Door sensor when using Unload / Load ",
+          "body": "as Door need to be open and sensor beep when heating which slow down the process and is anoying",
+          "created_at": "2017-08-03T11:32:54+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/264"
+        },
+        {
+          "title": "Typo mistake Extruder 1/2 instead of left / right",
+          "body": "some update have been lost when merging the 0.92.10\r\nneed review / reapplied the changes",
+          "created_at": "2017-06-27T19:36:28+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/255"
+        },
+        {
+          "title": "Filament printed value is reduced on every power cycle",
+          "body": "Running from commit a1d781657069af6c0a652bb01f8aebbff0a004cb, the 'Filament printed' value consistently drops every time the power is turned off, and later turned back on.  This isn't mid-print power cycling, it's completely done with all tasks and stable.  I note the value and power down the printer.  Some time later, I power up the printer and check the value before a new print.  The value is always lower when the printer is powered back on then it was prior to powering down.\n\nFurther more, it seems like the value displayed after powering the printer back on is more correct, or at least it more closely matches the estimated value provided by S3D slicing.\n",
+          "created_at": "2016-09-14T12:59:33+00:00",
+          "repository": "Repetier-Firmware-4-Davinci",
+          "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/191"
+        }
+      ]
+    },
+    {
+      "name": "smoothie",
+      "description": "Smoothie Charts: smooooooth JavaScript charts for realtime streaming data",
+      "url": "https://github.com/luc-github/smoothie",
+      "language": "JavaScript",
+      "created_at": "2020-08-16T08:59:02+00:00",
+      "last_updated": "2021-04-11T07:32:08+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "Smoothieware",
+      "description": "Modular, opensource, high performance G-code interpreter and CNC controller written in Object-Oriented C++",
+      "url": "https://github.com/luc-github/Smoothieware",
+      "language": "C++",
+      "created_at": "2019-05-07T12:28:54+00:00",
+      "last_updated": "2019-07-08T16:05:07+00:00",
+      "dependencies": [
+        "smoothie"
+      ],
+      "todos": []
+    },
+    {
+      "name": "smoothieware-webui-for-ESP3D",
+      "description": "Better webUI for Smoothieware",
+      "url": "https://github.com/luc-github/smoothieware-webui-for-ESP3D",
+      "language": "JavaScript",
+      "created_at": "2016-11-23T20:41:52+00:00",
+      "last_updated": "2024-10-17T14:35:47+00:00",
+      "dependencies": [
+        "ESP3D",
+        "luc-github",
+        "smoothie",
+        "Smoothieware"
+      ],
+      "todos": []
+    },
+    {
+      "name": "spectre",
+      "description": "Spectre.css - A Lightweight, Responsive and Modern CSS Framework",
+      "url": "https://github.com/luc-github/spectre",
+      "language": "SCSS",
+      "created_at": "2022-01-29T03:51:14+00:00",
+      "last_updated": "2022-01-29T04:10:00+00:00",
+      "dependencies": [
+        "website"
+      ],
+      "todos": []
+    },
+    {
+      "name": "SSDP_IDF",
+      "description": "SSDP IDF component for ESP32",
+      "url": "https://github.com/luc-github/SSDP_IDF",
+      "language": "C",
+      "created_at": "2022-12-20T07:39:49+00:00",
+      "last_updated": "2024-07-23T19:51:44+00:00",
+      "dependencies": [
+        "esp-idf",
+        "ESP32SSDP",
+        "luc-github"
+      ],
+      "todos": [
+        {
+          "title": "[BUG]Miss send notify : NTS: ssdp:byebye when stopping ssdp server #35",
+          "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
+          "created_at": "2023-05-16T01:57:52+00:00",
+          "repository": "SSDP_IDF",
+          "url": "https://github.com/luc-github/SSDP_IDF/issues/1"
+        }
+      ]
+    },
+    {
+      "name": "svg-icons",
+      "description": "3D Printer and related SVG icons",
+      "url": "https://github.com/luc-github/svg-icons",
+      "language": "HTML",
+      "created_at": "2019-08-16T12:06:17+00:00",
+      "last_updated": "2022-04-03T11:30:55+00:00",
+      "dependencies": [
+        "luc-github"
+      ],
+      "todos": []
+    },
+    {
+      "name": "TFT_eSPI",
+      "description": "Arduino and PlatformIO IDE compatible TFT library for the ESP8266 and ESP32 that supports different driver chips",
+      "url": "https://github.com/luc-github/TFT_eSPI",
+      "language": "C",
+      "created_at": "2019-07-04T10:21:38+00:00",
+      "last_updated": "2022-02-02T21:35:40+00:00",
+      "dependencies": [
+        "Arduino"
+      ],
+      "todos": []
+    },
+    {
+      "name": "website",
+      "description": null,
+      "url": "https://github.com/luc-github/website",
+      "language": null,
+      "created_at": "2021-07-08T08:20:08+00:00",
+      "last_updated": "2021-07-08T08:20:09+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "WIP-Projects",
+      "description": null,
+      "url": "https://github.com/luc-github/WIP-Projects",
+      "language": "C++",
+      "created_at": "2021-02-10T15:43:22+00:00",
+      "last_updated": "2024-07-22T05:03:24+00:00",
+      "dependencies": [],
+      "todos": []
+    },
+    {
+      "name": "Marlin",
+      "description": "Optimized firmware for RepRap 3D printers based on the Arduino platform.",
+      "url": "https://github.com/simon-jouet/Marlin",
+      "language": "C++",
+      "created_at": "2017-10-06T21:31:26+00:00",
+      "last_updated": "2024-03-12T16:29:20+00:00",
+      "dependencies": [
+        "Arduino"
+      ],
+      "todos": [
+        {
+          "title": "Errors in platformsIO and Arduino IDE",
+          "body": "I am building this project for a controller I have designed myself with an espressif esp32-s2. I'm using both VSCode + PlatformIO and the Arduino IDE, and on both I have compile errors:\r\n\r\nMarlin/src/HAL/ESP32/timers.cpp: In function 'void timer_isr(void*)':\r\nMarlin/src/HAL/ESP32/timers.cpp:79:45: error: 'struct timg_dev_t' has no member named 'int_st'\r\n     uint32_t intr_status = TG[timer.group]->int_st.val;\r\n                                             ^~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp:94:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_0: TG[timer.group]->int_clr.t0 = 1; break;\r\n                                        ^~~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp:95:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_1: TG[timer.group]->int_clr.t1 = 1; break;\r\n                                        ^~~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp:105:47: error: 'volatile union timg_txconfig_reg_t' has no member named 'alarm_en'\r\n   TG[timer.group]->hw_timer[timer.idx].config.alarm_en = TIMER_ALARM_EN;\r\n                                               ^~~~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp: In function 'bool HAL_timer_interrupt_enabled(uint8_t)':\r\nMarlin/src/HAL/ESP32/timers.cpp:202:27: error: 'struct timg_dev_t' has no member named 'int_ena'\r\n   return TG[timer.group]->int_ena.val | BIT(timer_num);\r\n                           ^~~~~~~\r\n*** [.pio\\build\\esp32controllerr3\\src\\src\\HAL\\ESP32\\timers.cpp.o] Error 1",
+          "created_at": "2023-03-28T19:12:19+00:00",
+          "repository": "Marlin",
+          "url": "https://github.com/simon-jouet/Marlin/issues/15"
+        },
+        {
+          "title": "ESP32S2 compiling issues",
+          "body": "I have tried to compile the esp32s2 branch, but getting the following errors::\r\n\r\n```\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp: In function 'void timer_isr(void*)':\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:79:45: error: 'struct timg_dev_t' has no member named 'int_st'\r\n     uint32_t intr_status = TG[timer.group]->int_st.val;\r\n                                             ^~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:94:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_0: TG[timer.group]->int_clr.t0 = 1; break;\r\n                                        ^~~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:95:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_1: TG[timer.group]->int_clr.t1 = 1; break;\r\n                                        ^~~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:105:47: error: 'volatile union timg_txconfig_reg_t' has no member named 'alarm_en'\r\n   TG[timer.group]->hw_timer[timer.idx].config.alarm_en = TIMER_ALARM_EN;\r\n                                               ^~~~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp: In function 'bool HAL_timer_interrupt_enabled(uint8_t)':\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:202:27: error: 'struct timg_dev_t' has no member named 'int_ena'\r\n   return TG[timer.group]->int_ena.val | BIT(timer_num);\r\n                           ^~~~~~~\r\nMultiple libraries were found for \"WiFi.h\"\r\n Used: C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.5\\libraries\\WiFi\r\n Not used: C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\r\nexit status 1\r\nError compiling for board ESP32S2 Dev Module.\r\n```\r\n\r\nAlso, any intention to port Marlin to esp32s3 ?",
+          "created_at": "2022-12-19T11:07:20+00:00",
+          "repository": "Marlin",
+          "url": "https://github.com/simon-jouet/Marlin/issues/14"
+        },
+        {
+          "title": "Start from beginning ",
+          "body": "I have some question regarding this cool project\r\n1. this branch still actual? or everything that needed for running esp32 as controller already exists in official marlin branch?\r\n2. I try out official Marlin branch, it compiles without a problem and I also able flash this binary to dev board but big question if  I upload code to some esp32 dev board like \"DOIT Esp32 DevKit v1\" project will run without a connection to additional hardware?\r\nfor my test, it's just crashed and I try to understand this because some hardware must be connected and if it's missing I must expect that it crashes?\r\nI like the idea to use esp32 as the controller board\r\n\r\nif it's expected that devices won't' boot without additional hardware what is the minimum required hardware?\r\nI plan to create some minimal with SPI drivers \r\nAnd want start from some minimal hardware connected to this board\r\n",
+          "created_at": "2019-04-02T12:45:20+00:00",
+          "repository": "Marlin",
+          "url": "https://github.com/simon-jouet/Marlin/issues/12"
+        }
+      ]
+    },
+    {
+      "name": "MKS_DLC32",
+      "description": null,
+      "url": "https://github.com/solawc/MKS_DLC32",
+      "language": "C",
+      "created_at": "2020-12-29T12:20:34+00:00",
+      "last_updated": "2021-10-26T03:07:35+00:00",
+      "dependencies": [],
+      "todos": []
+    }
+  ],
+  "dependencies": {},
+  "todos": [
+    {
+      "title": "[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server",
+      "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
+      "created_at": "2023-05-16T01:56:16+00:00",
+      "repository": "ESP32SSDP",
+      "url": "https://github.com/luc-github/ESP32SSDP/issues/35"
+    },
+    {
+      "title": "[FEATURE REQUEST] Respont to multiple device types or callback?",
+      "body": "Currently the API accepts a single device type. UPNP clients normally look for a root device then read device xml. The xml contains the real device type but the search target header is \r\n\"ST: upnp:rootdevice\"\r\n\r\nSo setting the device SSDP.setDeviceType() to say upnp:rootdevice works for discovery to start but fails because the xml device info schema will contain the wrong device type.\r\n\\<deviceType\\>upnp:rootdevice\\</deviceType\\>\r\n\r\nIn my case my actual device type is \"urn:schemas-upnp-org:device:Basic:1\" but I need to respond to \"upnp:rootdevice\" and \"ssdp:all\" also the search term reply header is supposed to be the same as the ST in the search regardless of the actual device type. \r\n\r\nMaybe this is best handled in a callback of some type? The ability to respond to multiple device types is a good feature but in most cases just one is enough provided the above rootdevice and ssdp:all are also returning a valid reply.\r\n\r\n",
+      "created_at": "2020-02-05T03:26:28+00:00",
+      "repository": "ESP32SSDP",
+      "url": "https://github.com/luc-github/ESP32SSDP/issues/9"
+    },
+    {
+      "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED",
+      "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
+      "created_at": "2024-10-21T04:51:29+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/1058"
+    },
+    {
+      "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
+      "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
+      "created_at": "2024-10-21T04:39:58+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/1057"
+    },
+    {
+      "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
+      "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
+      "created_at": "2024-10-20T20:58:03+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/1056"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄Change ESP_DIRECT_SD to ESP_ONLY_SD for consistency",
+      "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
+      "created_at": "2023-10-12T01:00:43+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/955"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄Add discord Notification",
+      "body": "the APi is described  here : https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-1p01\r\nand here : https://gist.github.com/Birdie0/78ee79402a4301b1faf412ab5f1cdcf9",
+      "created_at": "2023-02-22T13:17:35+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/891"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄WhatsApp Notification",
+      "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement",
+      "created_at": "2023-02-20T06:57:26+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/888"
+    },
+    {
+      "title": "[TODO]☑Code refactoring plan",
+      "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\r\n\r\n* <s>Change GenLinkedList to vector</s>:+1:\r\n* Implement better file encapsulation class to cover any new file system and any new arch\r\n* Web server abstraction layer to allow to update smoothly to another solution\r\n* Add https support once there is an HTTP server that is implemented that support it \r\n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\r\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\r\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\r\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \r\n* TBD\r\n\r\n\r\nAnyone willing to contribute is welcome of course 😸 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
+      "created_at": "2022-07-28T00:34:00+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/795"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄Notification using custom webhook ",
+      "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
+      "created_at": "2022-02-28T05:28:21+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/726"
+    },
+    {
+      "title": "[BenchMark]Web upload / Web Download on different FS and platform",
+      "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
+      "created_at": "2021-02-03T11:37:13+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/576"
+    },
+    {
+      "title": "⏸️[FEATURE REQUEST]🦄Use better serial protocol communication",
+      "body": "Current protocol between printer and ESP3D use raw serial which is ok for GCODE communication but no really efficient for file transfer\r\nMore over if some output come from printer board due to auto send it bring some trouble on file transfer which is already slow\r\n\r\nCurrent MKS protocol encapsulate each command in a frame with specific header,  it also use 2 additionnal pins for notification/ack ,and different headers for GCODE / File transfer / Error, which make coexistance easier\r\nThis protocol allow 110KB/S transfer vs 0.4KB/S M28/M29 transfer and handle GCODE even during transfer.\r\nThat said current MKS protocol miss 2 things:    \r\n* CRC to ensure data are correct\r\n* resend process in case of corrupted data\r\n\r\nI think add a CRC32 should improve reliability and will only use couple of byte on each frame, and calculation should not affect too much performances.  if done when data is received\r\nBased on this crc, if any error happen then do a resend, if more than 2 resend is needed  on same packet, then automaticaly ask for decreasing baudrate to do more secure transfer. \r\n\r\nThis would need to add some code in Printer FW  but will ensure communication for file transfer as well as commands \r\nThis will be between esp3d and printer like on MKS Wifi so external progam won't be affected.\r\n\r\nI am considering to write a library that could be used to hook the serial wifi port, but this also means need a dedicated wifi port like BTT do for board or TFT or an available UART port  \r\nIf Serial port  is same as USB one, it won't work (e.g: Mega/Ramps and aux 1),  so I need to see if can handle raw serial in same time or consider it as limitation= no support of shared solution, may add custom GCODE  to switch from one mode to another ?\r\nIn addition it need 2 additional pins available.\r\n\r\nThis would allow to remove the need of supporting the slow and unreliable M28/M29 protocol but bring more work on ESP3D part by adding a daughter library / Serial protocol accross FW  (Repetier / Marlin / Smoothieware/ TBD...)\r\n\r\nAny feedback /comment is welcome  \r\n\r\n",
+      "created_at": "2021-02-01T12:13:07+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/575"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄USB Disk support using CH376S chip",
+      "body": "Global FS support Flash and SD, now let's try to add USB Flash disk/key using SPI and CH376s Chip\r\n\r\nThis library looks very promising https://github.com/djuseeq/Ch376msc\r\ne\r\nChip is using 3.3 by default but need 5V to power the USB disk\r\nIt need to test features , if work as expected then need to implement an abstraction layer for the USB FS and  add it to the global FS",
+      "created_at": "2021-01-24T19:14:07+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/568"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄autodetection",
+      "body": "Add some diagnostic/autodetect process for:\r\n* Baudrate\r\n* Fw printer and version\r\n* TBD",
+      "created_at": "2019-09-24T07:53:09+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/376"
+    },
+    {
+      "title": "[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X",
+      "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
+      "created_at": "2018-07-14T13:24:33+00:00",
+      "repository": "ESP3D",
+      "url": "https://github.com/luc-github/ESP3D/issues/243"
+    },
+    {
+      "title": "[FEATURE REQUEST]Web Flasher Tool",
+      "body": "May be use : https://esphome.github.io/esp-web-tools/",
+      "created_at": "2023-05-18T01:28:29+00:00",
+      "repository": "ESP3D-Configurator",
+      "url": "https://github.com/luc-github/ESP3D-Configurator/issues/16"
+    },
+    {
+      "title": "[Information]Devt status",
+      "body": "The configurator is now in beta state 🎆 \r\nThe current version is compatible with ESP3D 3.0 only\r\n\r\nIt still need to get improved text content (suggestions/contributions are more than welcome) and add translations support once text is ready.\r\n \r\nThe offline behavior seems not consistent across browsers - so only online version is currently usable=> under investigation\r\n\r\nEdit: offline mode is now fixed and prebuild is available in `build` directory",
+      "created_at": "2022-06-18T06:49:19+00:00",
+      "repository": "ESP3D-Configurator",
+      "url": "https://github.com/luc-github/ESP3D-Configurator/issues/5"
+    },
+    {
+      "title": "Very slow communication with connected device to usb host",
+      "body": "I am using ESP32-S3 DEV KIT N8R8 with esp3d-tft to communicate via wifi with my cnc 3030 prover max (with GRBL, USB port CH340) and the setting is made to communicate via USB SERIAL port. I can send and I receive data from the cnc through the USB SERIAL port.. The problem is that there is a delay of about 1 second between the sending of the command and the execution from cnc device, this is very clear visible when a file is executed, all commands are executed with a delay between each other and the whole process is interrupted. I tested with communication from my computer directly to port 23 of an esp3d-tft board the delay remains, I tested using the web interface the delay remains on sending commands or executing file. If connect the machine directly to the computer with a usb cable everything works fine.\r\n\r\nCan someone tell me if this is a bug or if I missed something when compiling the code.\r\n\r\nI apologize for my bad English.",
+      "created_at": "2024-10-24T15:47:10+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/77"
+    },
+    {
+      "title": "[FEATURE REQUEST]Add Lua interpreter support like in ESP3D",
+      "body": "Lua interpreter support is implemented in ESP3D https://esp3d.io/ESP3D/Version_3.X/documentation/lua/\r\n\r\nAdd same support in ESP3D-TFT\r\n",
+      "created_at": "2024-10-13T07:48:18+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/76"
+    },
+    {
+      "title": "[FEATURE REQUEST]Add BTT GCODE thumbnails",
+      "body": "It was raised to me that now BTT TFT support thumbnails in gcode it is even documented https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware?tab=readme-ov-file#adding-gcode-thumbnails\r\n\r\nI think it would be fun to add this feature also if possible - it would need to add an image decoder which is not an issue in theory\r\n I need to see the impact on low memory screens, but at first sight looks possible on others ^_^ TBC\r\n  ",
+      "created_at": "2024-08-14T05:12:07+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/74"
+    },
+    {
+      "title": "[FEATURE REQUEST]Add support of macro defined by webui on screen",
+      "body": "Now Tft fw can read the preferences.json, so a screen listing defined macros should be available.\n\nThe question is where to display the macro button?",
+      "created_at": "2024-04-21T04:35:12+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/67"
+    },
+    {
+      "title": "[FEATURE REQUEST]Code review / refactoring / improvement",
+      "body": "This is todo list of several topic that need to be done before release:\r\n\r\n- <s>Use queue for values and process them to avoid racing conditions https://github.com/luc-github/ESP3D-TFT/blob/main/main/core/esp3d_values.cpp#L70-L72\r\nand put the pop/clear the list in display task </s> (Done  :+1: ) \r\n\r\n-  Design different boot logo / splash for each target ( e.g: ESP3D Logo + Target name) to know from start what is display for ",
+      "created_at": "2024-01-19T04:45:00+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/55"
+    },
+    {
+      "title": "[FEATURE REQUEST]Move to lvgl 9.0",
+      "body": "I did some reading on migration guide and API description - the mechanism seems pretty identical, API is very close but there are a lot of renaming\r\nI plan to really start to work on it when official 9.0 release is done and move to 9.x when first bug release is out  ",
+      "created_at": "2024-01-17T10:43:01+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/54"
+    },
+    {
+      "title": "[FEATURE REQUEST]Do better snapshot code with no memory need",
+      "body": "Currently the lvgl snapshot API use a lot of memory because it allocate all screen in one buffer then push data to it, it crash if any animation or scrolling text is active which is really not convenient\r\n\r\nI am thinking to use my previous method for snapshot (in first 3.0 version ) that actually hook the `void esp_lv_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)` function.\r\nIt did not need any buffer screen unlike the lvgl API and may just freeze the screen the time the data are saved \r\nhere the old code :\r\n```\r\n/* Display flushing */\r\nvoid esp_lv_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)\r\n{\r\n    //TODO: need to write version for oled with big resolution\r\n    uint16_t c;\r\n    esp3d_screen.startWrite(); /* Start new TFT transaction */\r\n    esp3d_screen.setAddrWindow(area->x1, area->y1, (area->x2 - area->x1 + 1), (area->y2 - area->y1 + 1)); /* set the working window */\r\n    for (int y = area->y1; y <= area->y2; y++) {\r\n        for (int x = area->x1; x <= area->x2; x++) {\r\n            c = color_p->full;\r\n            esp3d_screen.writeColor(c, 1);\r\n#if defined(DISPLAY_SNAPSHOT_FEATURE)\r\n            if(bSnapshot) {\r\n                uint32_t data = lv_color_to32(*color_p);\r\n                //to handle any write issue\r\n                if (fsSnapFile.write((const uint8_t *)(&data), sizeof(uint32_t)) !=  sizeof(uint32_t)) {\r\n                    //if error we stop to dump\r\n                    bSnapshot = false;\r\n                    //raise error\r\n                    error_snapshot = 1;\r\n                }\r\n            }\r\n#endif //DISPLAY_SNAPSHOT_FEATURE\r\n            color_p++;\r\n        }\r\n    }\r\n    esp3d_screen.endWrite(); /* terminate TFT transaction */\r\n    lv_disp_flush_ready(disp); /* tell lvgl that flushing is done */\r\n}\r\n\r\n\r\nbool Display::snapshot(char * filename)\r\n{\r\n    bool res = false;\r\n#if defined(DISPLAY_SNAPSHOT_FEATURE)\r\n    //sanity check to avoid to corrupt FS with capacity overload\r\n    error_snapshot = 0;\r\n    if (ESP_FileSystem::freeBytes() < SNAP_SIZE) {\r\n        return false;\r\n    }\r\n    if(filename) {\r\n        fsSnapFile = ESP_FileSystem::open(filename, ESP_FILE_WRITE);\r\n    } else {\r\n        fsSnapFile = ESP_FileSystem::open(SNAPFILENAME, ESP_FILE_WRITE);\r\n    }\r\n    if (!fsSnapFile) {\r\n        return false;\r\n    }\r\n\r\n    bSnapshot = true;\r\n    lv_obj_invalidate(lv_scr_act());\r\n    lv_refr_now(lv_disp_get_default());                    /* Will call our disp_drv.disp_flush function */\r\n    bSnapshot = false;\r\n    fsSnapFile.close();\r\n    //if any snapshot error\r\n    if (error_snapshot == 0) {\r\n        res = true;\r\n    }\r\n#endif //DISPLAY_SNAPSHOT_FEATURE\r\n    return res;\r\n}\r\n```\r\n\r\nthe new lvgl API use one function only:\r\n```\r\nstatic void lv_disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p) {\r\n  esp_lcd_panel_draw_bitmap(disp_panel, area->x1, area->y1, area->x2 + 1, area->y2 + 1, color_p);  \r\n}\r\n```\r\nso it may be possible to redo same for snapshot - this method do a real snap what ever is displayed and even there is an animation.=> TBC ",
+      "created_at": "2024-01-07T04:47:08+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/53"
+    },
+    {
+      "title": "[FEATURE REQUEST]WhatsApp Notification",
+      "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement\r\n",
+      "created_at": "2023-02-20T06:58:18+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/12"
+    },
+    {
+      "title": "[ENHANCEMENT]Add Pin interrupt support on FT5X06 when supported to save mcu time instead of doing permanent polling",
+      "body": "Doing permament polling on touch to see if was pressed save mcu time on some solution (WT32-SC01 New Plus),  int pin for FT5X06 is available, but seems not working on my device (https://github.com/luc-github/ESP3D-TFT/discussions/1#discussioncomment-3762021), may be hardware issue ? \r\n\r\nIf anyone know how to solve this with a working solution - feedback is welcome 😸 ",
+      "created_at": "2022-10-01T00:07:26+00:00",
+      "repository": "ESP3D-TFT",
+      "url": "https://github.com/luc-github/ESP3D-TFT/issues/5"
+    },
+    {
+      "title": "[FEATURE REQUEST]Port surfacing wizard as extension ",
+      "body": "the surfacing wizard is a good candidate for an extension \r\nPorting : https://github.com/luc-github/ESP3D-WEBUI/pull/197 should not be too difficult and also help to review extension API",
+      "created_at": "2024-06-02T23:46:47+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/390"
+    },
+    {
+      "title": "[FEATURE REQUEST] Add support for pen plotters",
+      "body": "**Is your feature request related to a problem? Please describe.**\r\nThe ESP3D project has amazing flexibility. I would like to add support for hpgl pen plotters. These great machines are just too good to let die out. Adding the possibility of using these machines within the ESP3D framework would open up features such as wifi connectivity, SD plotting and all the other fantastic features that ESP3D has to offer\r\n\r\n**Describe the solution you'd like**\r\nThe integration of hpgl commands into some of the panels such as JOG and status. The core features like the SD file system and terminal are already 99% usable and only need minor changes to use.\r\n\r\n**Describe alternatives you've considered**\r\nI had started a software that has similar features. It was not even nearly as stable as ESP3D . After looking at the ESP3D project I realized I was just trying to re-invent the wheel. The required changes have already been tried and tested so should be good to add to ESP3D. The changes to the UI would be very much within the framework of the existing ESP3D UI and would not require a total re write.\r\n\r\nBasic notes here \r\nhttps://github.com/ithinkido/ESP3D/tree/3.0_HPGL/HPGL\r\n\r\n",
+      "created_at": "2022-10-08T14:50:28+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/273"
+    },
+    {
+      "title": "[FEATURE REQUEST]Integrate the [ ESP700] command into the button",
+      "body": "Integrate the [ ESP700] command into the  button so you can start file printing directly from the button in GCODE HOST mode",
+      "created_at": "2022-09-18T01:54:13+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/265"
+    },
+    {
+      "title": "[Enhancement]Clean up Interface UI according usage",
+      "body": "Multiple conditions is now supported - so in Settings->Intefaces some controls could be hidden if not in usage context\r\n\r\n",
+      "created_at": "2022-07-06T07:13:52+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/249"
+    },
+    {
+      "title": "CNC process visualization functionality",
+      "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
+      "created_at": "2022-05-14T20:46:19+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244"
+    },
+    {
+      "title": "[FEATURE REQUEST]Configuration  Wizard ",
+      "body": "now all ESP3D Feature are ready and 3D printer  feature are almost ready too, it is time to define a configuration wizard to:\r\n* Setup Network\r\n* Setup UI according printer features \r\n\r\n",
+      "created_at": "2022-05-10T04:57:31+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/242"
+    },
+    {
+      "title": "[FEATURE REQUEST]PCB and Engraving Milling autoleveling",
+      "body": "**Is your feature request related to a problem? Please describe.**\r\nI would like the ability to probe a surface and modify the loaded g code to account for surface inconsistencies\r\n\r\n**Describe the solution you'd like**\r\nI'd like to be able to specify a grid of points that could be probed and generate a mesh. this mesh could then be used to correct uploaded gcode files to account for z height inconsistencies. This mesh should be able to be applied to multiple files via a button and the height should be able to be downloaded for future use.\r\n\r\n**Describe alternatives you've considered**\r\nRight now the only work around is to attached the GRBL ESP32 to a computer and run one of the programs that can do this. These are\r\nOpenCNCpilot, bCNC, Universal G code Sender.\r\n\r\nIdeally I would like to be able to run this self contained\r\n\r\n**Additional context**\r\n\r\n",
+      "created_at": "2020-10-10T22:29:15+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/122"
+    },
+    {
+      "title": "[FEATURE REQUEST] Bed Mesh Leveling Visualizer",
+      "body": "**Is your feature request related to a problem? Please describe.**\r\n\r\nI am using an octoprint plugin called bed visualizer to display G29 T. Would be nice to have something like this in the esp3D. \r\n\r\n**Describe the solution you'd like**\r\n\r\nI basically want to be able to see this a graph like this on the web page of the ESP3D. Or at least a very basic graph that shows 4 corners and how much they differ from each other, so I know which knobs to turn to calibrate bed so it's physically as level as possible. \r\n\r\n\r\n**Additional context**\r\n\r\n![image](https://user-images.githubusercontent.com/33436796/88237163-a66d8e80-cc4c-11ea-975b-520c49e9f7da.png)\r\n",
+      "created_at": "2020-07-22T22:58:30+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/106"
+    },
+    {
+      "title": "[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them",
+      "body": "```\r\nOne UI to rule them all, One UI to find them,\r\nOne UI to bring them all and in the darkness bind them\r\n```\r\nA way to agregate all UI/esp3d and control them like an esp3d farm, even sending jobs from one to another\r\nThis tool could also handle printers access for fab lab or a classroom  for example\r\n\r\nIt could be used also with usage of NFC devices - imagination is just the limit\r\n\r\nThis thread is more for a discussion  for the moment to see if there is a need or it is just a fake good idea ^_^     ",
+      "created_at": "2020-01-04T20:21:40+00:00",
+      "repository": "ESP3D-WEBUI",
+      "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/85"
+    },
+    {
+      "title": "Do a description page for each WebUI panel / Settings",
+      "body": "According Version and Target",
+      "created_at": "2023-02-28T06:31:09+00:00",
+      "repository": "esp3d.io",
+      "url": "https://github.com/luc-github/esp3d.io/issues/8"
+    },
+    {
+      "title": "Add Default setting description page",
+      "body": "Each project has default settings values need to list them",
+      "created_at": "2023-02-28T06:27:05+00:00",
+      "repository": "esp3d.io",
+      "url": "https://github.com/luc-github/esp3d.io/issues/6"
+    },
+    {
+      "title": "Bump braces and gulp in /embedded",
+      "body": "Bumps [braces](https://github.com/micromatch/braces) to 3.0.3 and updates ancestor dependency [gulp](https://github.com/gulpjs/gulp). These dependencies need to be updated together.\n\nUpdates `braces` from 3.0.2 to 3.0.3\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/micromatch/braces/commit/74b2db2938fad48a2ea54a9c8bf27a37a62c350d\"><code>74b2db2</code></a> 3.0.3</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/88f1429a0f47e1dd3813de35211fc97ffda27f9e\"><code>88f1429</code></a> update eslint. lint, fix unit tests.</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff\"><code>415d660</code></a> Snyk js braces 6838727 (<a href=\"https://redirect.github.com/micromatch/braces/issues/40\">#40</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/190510f79db1adf21d92798b0bb6fccc1f72c9d6\"><code>190510f</code></a> fix tests, skip 1 test in test/braces.expand</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/716eb9f12d820b145a831ad678618731927e8856\"><code>716eb9f</code></a> readme bump</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/a5851e57f45c3431a94d83fc565754bc10f5bbc3\"><code>a5851e5</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/braces/issues/37\">#37</a> from coderaiser/fix/vulnerability</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/2092bd1fb108d2c59bd62e243b70ad98db961538\"><code>2092bd1</code></a> feature: braces: add maxSymbols (<a href=\"https://github.com/micromatch/braces/issues/\">https://github.com/micromatch/braces/issues/</a>...</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/9f5b4cf47329351bcb64287223ffb6ecc9a5e6d3\"><code>9f5b4cf</code></a> fix: vulnerability (<a href=\"https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727\">https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/98414f9f1fabe021736e26836d8306d5de747e0d\"><code>98414f9</code></a> remove funding file</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/665ab5d561c017a38ba7aafd92cc6655b91d8c14\"><code>665ab5d</code></a> update keepEscaping doc (<a href=\"https://redirect.github.com/micromatch/braces/issues/27\">#27</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/micromatch/braces/compare/3.0.2...3.0.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `gulp` from 4.0.2 to 5.0.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/releases\">gulp's releases</a>.</em></p>\n<blockquote>\n<h2>gulp v5.0.0</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/HEAD/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>⚠ BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md\">gulp's changelog</a>.</em></p>\n<blockquote>\n<h2><a href=\"https://www.github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">5.0.0</a> (2024-03-29)</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/master/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>⚠ BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/5c4c5473c5582a8e4495c695ecd93b13f0852cbd\"><code>5c4c547</code></a> chore: Release 5.0.0 (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2762\">#2762</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/bf72116c5d5f613836b392fb83633ea6c14f3a65\"><code>bf72116</code></a> chore: Add index.mjs to files list</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\"><code>b00de68</code></a> feat: Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\"><code>72668c6</code></a> chore!: Normalize repository, dropping node &lt;10.13 support (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2758\">#2758</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/85896d4f099a80d58dd08d1f6d80586b07678995\"><code>85896d4</code></a> chore(docs): Update stream handbook link (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2711\">#2711</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/818bd73e5da1ad69f43eef84214c98d6392a73e4\"><code>818bd73</code></a> Docs: Remove gulp-sourcemaps because it is built-in (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2592\">#2592</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/598f971a6567401e5760f4fd0b84df0180c2e350\"><code>598f971</code></a> Docs: Fix broken link in recipe (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2571\">#2571</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/9877de07cf923c889d7f0661d87f3d6f8634eeb1\"><code>9877de0</code></a> Docs: Guide CustomRegistries to maintain properties on tasks (fixes <a href=\"https://redirect.github.com/gulpjs/gulp/issues/2561\">#2561</a>) (#...</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/f91c388beb265e5008202f11100309549162247a\"><code>f91c388</code></a> Docs: Remove typo in custom registry docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2543\">#2543</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/df252509b52acd712300b3b5d00bf7aedf0dbd40\"><code>df25250</code></a> Docs: Fix typo in task docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2524\">#2524</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3DLib/network/alerts).\n\n</details>",
+      "created_at": "2024-06-13T06:12:56+00:00",
+      "repository": "ESP3DLib",
+      "url": "https://github.com/luc-github/ESP3DLib/pull/79"
+    },
+    {
+      "title": "3.0 refactoring",
+      "body": null,
+      "created_at": "2024-01-03T02:55:35+00:00",
+      "repository": "ESP3DLib",
+      "url": "https://github.com/luc-github/ESP3DLib/pull/76"
+    },
+    {
+      "title": "[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0",
+      "body": "https://github.com/MarlinFirmware/Marlin/commit/fecadaca82e49c2558b42684382ede121274bfea removed all configurations flags access for ESP3DLib \r\n\r\n### In Configuration_adv.h\r\nLatest changes prevent  ESP3D_WIFISUPPORT  to use :\r\n```\r\n#define WEBSUPPORT          // Start a webserver (which may include auto-discovery) using SPIFFS\r\n#define OTASUPPORT          // Support over-the-air firmware updates\r\n#define WIFI_CUSTOM_COMMAND // Accept feature config commands (e.g., WiFi ESP3D) from the host\r\n```\r\n\r\nYou need to replace/put back:\r\n`#if ENABLED(WIFISUPPORT)` by `#if ANY(WIFISUPPORT, ESP3D_WIFISUPPORT)`\r\n\r\nOr add the flags outside of the `#if ENABLED(WIFISUPPORT)`\r\n\r\nIf not, ESP3DLib cannot communicate with Marlin and is not setup for web access \r\n\r\n### In SanityCheck.h\r\nchange \r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif defined(WIFI_SSID) || defined(WIFI_PWD)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nby\r\n\r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif (defined(WIFI_SSID) || defined(WIFI_PWD)) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nOr compilation will failed \r\n\r\n",
+      "created_at": "2023-12-15T12:07:14+00:00",
+      "repository": "ESP3DLib",
+      "url": "https://github.com/luc-github/ESP3DLib/issues/75"
+    },
+    {
+      "title": "[FEATURE REQUEST]ESP3DLib 3.0",
+      "body": "Here features that will be covered by ESP3DLib 3.0 : \r\n- Webui <s>2.1</s> 3.0 support\r\n-  Move to SSDP asyncudp library\r\n- Move ESP32 core to 2.0.2 / 2.0.3\r\n- Move from SPIFFS to LittleFS\r\n- AP mode setup reviewed\r\n- New embedded page\r\n- Add Telnet server support\r\n- Add Notifications support\r\n- Add MKS Cura pluggin support for file upload\r\n- Move SD support from Marlin SD Lib to SDFat 2.0 for better performance (TBC),\r\nNote: Marlin itself will still use Marlin SD Lib as only ESP3DLib will be affected. \r\n\r\n\r\nTesting boards:\r\n1 - MRR_ESPA V1.3 without display\r\n2 - FYSETC V1.0 + MKS TFT32_L V4.0 (With BTT FW)\r\n3 - MKS TinyBee V1.0 + MKS Mini12864 V3.0\r\n4 - Panda Zhu V1.2\r\n\r\nMarlin Code base should be 2.0.9.3 bugfix  2.0.9.4? (TBD)\r\n",
+      "created_at": "2022-02-01T07:02:41+00:00",
+      "repository": "ESP3DLib",
+      "url": "https://github.com/luc-github/ESP3DLib/issues/39"
+    },
+    {
+      "title": "Update UI to fit WebUI-ESP3D 3.0 panel",
+      "body": "content is visible in a frame\r\n<img src=\"https://user-images.githubusercontent.com/8822552/97572520-abc73b80-19e8-11eb-9b3c-2102a1672066.png\"/>\r\n\r\ncurrent title is too big and current width is also generating horizontal scrollbar - and inside have also another vertical scrollbar\r\n\r\nso put sd space  as top as well as upload button / no need to display menu /language ? just list files  ? TBD",
+      "created_at": "2020-10-29T12:27:44+00:00",
+      "repository": "Flashair-FM",
+      "url": "https://github.com/luc-github/Flashair-FM/issues/7"
+    },
+    {
+      "title": "Add translations for Devt",
+      "body": "Devt allows multi language - but only english is done",
+      "created_at": "2018-12-09T17:03:14+00:00",
+      "repository": "Flashair-FM",
+      "url": "https://github.com/luc-github/Flashair-FM/issues/5"
+    },
+    {
+      "title": "Read APPNAME from CONFIG and display it",
+      "body": "to avoid to edit List.htm ,it is easier to edit CONFIG to discriminate page\r\n\r\n![image](https://user-images.githubusercontent.com/8822552/40102364-9165fe14-58ea-11e8-8de0-5446a1098864.png)\r\n",
+      "created_at": "2018-05-16T07:20:29+00:00",
+      "repository": "Flashair-FM",
+      "url": "https://github.com/luc-github/Flashair-FM/issues/4"
+    },
+    {
+      "title": "Congratulations",
+      "body": "## Nice work!\n\n![celebrate](https://octodex.github.com/images/jetpacktocat.png)\n\nYou merged and this course is now complete! I'll stop responding but the fun doesn't have to stop here. \n\n## Want to keep learning? \n\nIn this repository:\n- Your merge should trigger your action again, check it out in the [Actions tab](https://github.com/luc-github/hello-github-actions/actions).\n- The `Dockerfile` contains metadata for your action. Try changing some of that. You could, for example, change the icon that displays when the action is running.\n- Change the `MY_NAME` environment variable to use your name instead of Mona's in `.github/workflows/main.yml`.\n- Change the contents of `entrypoint.sh` to do output a different message.\n\nOutside of this repository:\n- Review the [GitHub Actions documentation](https://help.github.com/articles/about-github-actions) on the GitHub Developer site. \n- Use existing actions from the [GitHub Marketplace](https://github.com/marketplace/actions).\n- Use existing actions from GitHub's [official list](https://github.com/actions).\n- Use actions created by others in [awesome-actions](https://github.com/sdras/awesome-actions).\n\nNow...[what will you learn next](https://lab.github.com/courses)?\n",
+      "created_at": "2019-09-10T19:22:10+00:00",
+      "repository": "hello-github-actions",
+      "url": "https://github.com/luc-github/hello-github-actions/issues/4"
+    },
+    {
+      "title": "Horus use dtr but Davinci has white leds",
+      "body": "leds should only be used for calibration, extra commands ?\nlike :\npre calib commands : led on\npost calib commands : led off\n",
+      "created_at": "2016-06-12T20:43:32+00:00",
+      "repository": "horus",
+      "url": "https://github.com/luc-github/horus/issues/6"
+    },
+    {
+      "title": "Horus use 2 lasers/1 cam but Davinci use 1 laser / 1 cam, one up and one down ",
+      "body": "Logic of calibration/scan need to be adjusted\n",
+      "created_at": "2016-06-12T20:42:18+00:00",
+      "repository": "horus",
+      "url": "https://github.com/luc-github/horus/issues/5"
+    },
+    {
+      "title": "Usage is 0 index (T0/T1)) but Horus use 1 index(T1/T2) for lasers",
+      "body": "need to be parameter in settings\n",
+      "created_at": "2016-06-12T20:38:52+00:00",
+      "repository": "horus",
+      "url": "https://github.com/luc-github/horus/issues/4"
+    },
+    {
+      "title": "GCODE are specifics",
+      "body": "allow to use different GCODE for different FW like repetier\nG1 Xnnn is already used and do not use angular reference but distance\nneed to use `G201 Ennn : move motor in deg` instead\n",
+      "created_at": "2016-06-12T20:36:53+00:00",
+      "repository": "horus",
+      "url": "https://github.com/luc-github/horus/issues/3"
+    },
+    {
+      "title": "FW check limit usage of others boards ",
+      "body": "should have a setting : do not check FW\n",
+      "created_at": "2016-06-12T20:33:30+00:00",
+      "repository": "horus",
+      "url": "https://github.com/luc-github/horus/issues/2"
+    },
+    {
+      "title": "Motor speed in autocheck.py is hard coded",
+      "body": "better to be selected from settings / preference\n",
+      "created_at": "2016-06-12T20:32:19+00:00",
+      "repository": "horus",
+      "url": "https://github.com/luc-github/horus/issues/1"
+    },
+    {
+      "title": "No Z homing and no heating",
+      "body": "So I installed this on my Da Vinci 1.0a and It homes x and Y but not Z and it dont heat up.\r\n\r\nCan you please help or do I have to go back to Repetier firmware? \r\n\r\n",
+      "created_at": "2018-04-15T19:35:10+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/11"
+    },
+    {
+      "title": "No EEPROM on Davinci - need to use SDCard as Virtual EEPROM",
+      "body": "Now SDCard is working - need to implement the virtual EEPROM on SDCard\n",
+      "created_at": "2015-05-11T13:37:56+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/9"
+    },
+    {
+      "title": "Add condition for 1.0(A) and 2.0(A) for specific settings",
+      "body": "like bed size - default extruder - fan numbers (2.0SF and others 2.0(A)\n",
+      "created_at": "2015-05-05T02:36:46+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/8"
+    },
+    {
+      "title": "CREATE MODEL 1",
+      "body": "MODEL 0 for 1.0\nMODEL 1 for 1.0a\n",
+      "created_at": "2015-05-04T23:45:54+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/pull/7"
+    },
+    {
+      "title": "LCD menu is terrible for 16x4 ",
+      "body": "need to adjust menu item for a 16x4 for better user experience\n",
+      "created_at": "2015-05-04T11:56:03+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/6"
+    },
+    {
+      "title": "Navigation using key is sometimes upside down / back key is not used",
+      "body": "because of Rotary encoder there is not up/down concept but turn right / turn left to navigate to menu, to increment/decrement  value - so need some adjustment\n\nalso Ok is also used to start/stop and action when Back should/could be used also - need to complete back key usage\n",
+      "created_at": "2015-05-04T11:54:59+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/5"
+    },
+    {
+      "title": "Conditions for Pin management between 1.0/2.0 and 1.0A/2.0A",
+      "body": "Need to define a condition used inside pins_DAVINCI.h to handle all pins\n",
+      "created_at": "2015-05-04T11:44:18+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/3"
+    },
+    {
+      "title": "TODO ~ TO CHECK",
+      "body": "Better LCD 16x4 UI\n\nUI for 2nd extruder\n\nLight management, menu, GCode\n\nPowersave LCD/Light\n\nClean Nozzle,Menu,GCode\n\nDripBox Cleaning, Menu\n\nHoming reset if disable stepper\n\nHoming flag per axis\n\nTop sensor alert\n\nFilament sensor alert\n\nWatchdog support\n\nLoad/Unload filament menu, on Dripboxes\n\nJam sensor support\n\nManual bed levelling menu\n\nEmmergency Stop\n\nKeypad support\n\nPins according model\n\nBed Size according model\n\nAutolevel positions according model\n\nExtruders/Fans control\n\nSD Card : done https://github.com/luc-github/Marlin4Due/commit/9dd636a7cb373ff4aa375dcd69a3a2b9352ea544\n\nVirtual EEPROM\n\nSound effect if key pressed, menu for sound off\n\nTBD\n",
+      "created_at": "2015-05-01T04:32:15+00:00",
+      "repository": "Marlin4Due",
+      "url": "https://github.com/luc-github/Marlin4Due/issues/2"
+    },
+    {
+      "title": "I think my printer isn't being detected? da vinci 1.0",
+      "body": "went through all the steps, trying to now press on upload on the Arduino, got this error.. anyone know why? \r\n![Capture](https://github.com/luc-github/Repetier-Firmware-4-Davinci/assets/172260405/4b790166-7b1f-40d8-a5f9-fca02188a943)\r\n",
+      "created_at": "2024-06-10T09:34:19+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/417"
+    },
+    {
+      "title": "After uploading \"usb device not recognized\" constantly reconnecting printer still displaying 2 black bars",
+      "body": "What is your question ?\r\n",
+      "created_at": "2024-05-17T01:12:52+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/416"
+    },
+    {
+      "title": "[Question] Cords show up as NAN",
+      "body": "I finally got repetier to flash to my da vinci 1.0a and when I try to home my axis it just says \"NAN\" for all of them. I don't know what I did wrong but I don't think I did anything wrong because it flashed just fine and the light can still be toggled. The heating elements also don't seem to work.",
+      "created_at": "2024-05-05T20:06:49+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/415"
+    },
+    {
+      "title": "How to add 2nd fan to DaVinci 1.0a",
+      "body": "Hi guys, I know this is an old printer, but after flashing repetier on my 1.0a I've printed tpu, pla, petg and prints very well, I want to add a 2nd fan and I know there is and older post #152 about doing it but I need some help in doing it, where abouts do I put #define add extra fan etc? Do I put it in Arduino? And reflash the printer? I'm confused, please help, everything is soldered up ready go",
+      "created_at": "2023-10-28T18:42:34+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/411"
+    },
+    {
+      "title": "[FR]Add platformIO support",
+      "body": "I will add platformIO support - it should allow to patch the due source automaticaly and so no need to do any manual changes \r\nalso it should allow to not change anything in configuration.h but use specific env for each config\r\n\r\nSo firmware should be easy to build in this way\r\nthis will be first step as repetier 2.0 use platformio , so need to prepare the porting\r\n\r\nEdit: patching seems supported https://docs.platformio.org/en/latest/projectconf/advanced_scripting.html#override-package-files\r\nSo it should be too hard to do it",
+      "created_at": "2021-04-13T16:37:51+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/380"
+    },
+    {
+      "title": "inactive time should be used during filament changes",
+      "body": "if the printer runs out of filament it should cool down using inactive time in eeprom. mine stayed on the filament load screen at full temperature for over 10 min.",
+      "created_at": "2018-12-19T02:45:27+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/332"
+    },
+    {
+      "title": "Resume printer after M600",
+      "body": "Hi , i have some troubles with filament change during printing .\r\n\r\nWhen i put M600 , printer is going to load / unload filament well .\r\n\r\nBut it makes printer  //;pause and i can't do anything after that , in order to resume and restart the print .\r\n\r\nAny solutions for it ?\r\n\r\nThanks",
+      "created_at": "2017-08-03T22:32:23+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/265"
+    },
+    {
+      "title": "Disable Door sensor when using Unload / Load ",
+      "body": "as Door need to be open and sensor beep when heating which slow down the process and is anoying",
+      "created_at": "2017-08-03T11:32:54+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/264"
+    },
+    {
+      "title": "Typo mistake Extruder 1/2 instead of left / right",
+      "body": "some update have been lost when merging the 0.92.10\r\nneed review / reapplied the changes",
+      "created_at": "2017-06-27T19:36:28+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/255"
+    },
+    {
+      "title": "Filament printed value is reduced on every power cycle",
+      "body": "Running from commit a1d781657069af6c0a652bb01f8aebbff0a004cb, the 'Filament printed' value consistently drops every time the power is turned off, and later turned back on.  This isn't mid-print power cycling, it's completely done with all tasks and stable.  I note the value and power down the printer.  Some time later, I power up the printer and check the value before a new print.  The value is always lower when the printer is powered back on then it was prior to powering down.\n\nFurther more, it seems like the value displayed after powering the printer back on is more correct, or at least it more closely matches the estimated value provided by S3D slicing.\n",
+      "created_at": "2016-09-14T12:59:33+00:00",
+      "repository": "Repetier-Firmware-4-Davinci",
+      "url": "https://github.com/luc-github/Repetier-Firmware-4-Davinci/issues/191"
+    },
+    {
+      "title": "[BUG]Miss send notify : NTS: ssdp:byebye when stopping ssdp server #35",
+      "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
+      "created_at": "2023-05-16T01:57:52+00:00",
+      "repository": "SSDP_IDF",
+      "url": "https://github.com/luc-github/SSDP_IDF/issues/1"
+    },
+    {
+      "title": "Errors in platformsIO and Arduino IDE",
+      "body": "I am building this project for a controller I have designed myself with an espressif esp32-s2. I'm using both VSCode + PlatformIO and the Arduino IDE, and on both I have compile errors:\r\n\r\nMarlin/src/HAL/ESP32/timers.cpp: In function 'void timer_isr(void*)':\r\nMarlin/src/HAL/ESP32/timers.cpp:79:45: error: 'struct timg_dev_t' has no member named 'int_st'\r\n     uint32_t intr_status = TG[timer.group]->int_st.val;\r\n                                             ^~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp:94:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_0: TG[timer.group]->int_clr.t0 = 1; break;\r\n                                        ^~~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp:95:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_1: TG[timer.group]->int_clr.t1 = 1; break;\r\n                                        ^~~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp:105:47: error: 'volatile union timg_txconfig_reg_t' has no member named 'alarm_en'\r\n   TG[timer.group]->hw_timer[timer.idx].config.alarm_en = TIMER_ALARM_EN;\r\n                                               ^~~~~~~~\r\nMarlin/src/HAL/ESP32/timers.cpp: In function 'bool HAL_timer_interrupt_enabled(uint8_t)':\r\nMarlin/src/HAL/ESP32/timers.cpp:202:27: error: 'struct timg_dev_t' has no member named 'int_ena'\r\n   return TG[timer.group]->int_ena.val | BIT(timer_num);\r\n                           ^~~~~~~\r\n*** [.pio\\build\\esp32controllerr3\\src\\src\\HAL\\ESP32\\timers.cpp.o] Error 1",
+      "created_at": "2023-03-28T19:12:19+00:00",
+      "repository": "Marlin",
+      "url": "https://github.com/simon-jouet/Marlin/issues/15"
+    },
+    {
+      "title": "ESP32S2 compiling issues",
+      "body": "I have tried to compile the esp32s2 branch, but getting the following errors::\r\n\r\n```\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp: In function 'void timer_isr(void*)':\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:79:45: error: 'struct timg_dev_t' has no member named 'int_st'\r\n     uint32_t intr_status = TG[timer.group]->int_st.val;\r\n                                             ^~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:94:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_0: TG[timer.group]->int_clr.t0 = 1; break;\r\n                                        ^~~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:95:40: error: 'struct timg_dev_t' has no member named 'int_clr'\r\n         case TIMER_1: TG[timer.group]->int_clr.t1 = 1; break;\r\n                                        ^~~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:105:47: error: 'volatile union timg_txconfig_reg_t' has no member named 'alarm_en'\r\n   TG[timer.group]->hw_timer[timer.idx].config.alarm_en = TIMER_ALARM_EN;\r\n                                               ^~~~~~~~\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp: In function 'bool HAL_timer_interrupt_enabled(uint8_t)':\r\nC:\\Marlin\\Marlin-esp32s2\\Marlin\\src\\HAL\\ESP32\\timers.cpp:202:27: error: 'struct timg_dev_t' has no member named 'int_ena'\r\n   return TG[timer.group]->int_ena.val | BIT(timer_num);\r\n                           ^~~~~~~\r\nMultiple libraries were found for \"WiFi.h\"\r\n Used: C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.5\\libraries\\WiFi\r\n Not used: C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\r\nexit status 1\r\nError compiling for board ESP32S2 Dev Module.\r\n```\r\n\r\nAlso, any intention to port Marlin to esp32s3 ?",
+      "created_at": "2022-12-19T11:07:20+00:00",
+      "repository": "Marlin",
+      "url": "https://github.com/simon-jouet/Marlin/issues/14"
+    },
+    {
+      "title": "Start from beginning ",
+      "body": "I have some question regarding this cool project\r\n1. this branch still actual? or everything that needed for running esp32 as controller already exists in official marlin branch?\r\n2. I try out official Marlin branch, it compiles without a problem and I also able flash this binary to dev board but big question if  I upload code to some esp32 dev board like \"DOIT Esp32 DevKit v1\" project will run without a connection to additional hardware?\r\nfor my test, it's just crashed and I try to understand this because some hardware must be connected and if it's missing I must expect that it crashes?\r\nI like the idea to use esp32 as the controller board\r\n\r\nif it's expected that devices won't' boot without additional hardware what is the minimum required hardware?\r\nI plan to create some minimal with SPI drivers \r\nAnd want start from some minimal hardware connected to this board\r\n",
+      "created_at": "2019-04-02T12:45:20+00:00",
+      "repository": "Marlin",
+      "url": "https://github.com/simon-jouet/Marlin/issues/12"
+    }
+  ]
+}
