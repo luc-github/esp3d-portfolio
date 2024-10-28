@@ -8,6 +8,13 @@ class GitHubPortfolioAnalyzer:
         self.g = Github(token)
         self.user = self.g.get_user()
         
+        # List of repositories to analyze
+        self.target_repos = [
+            'esp3d',
+            'esp3d-webui',
+            # Add more repositories here
+        ]
+    
     def analyze_repositories(self):
         portfolio = {
             'repositories': [],
@@ -15,7 +22,15 @@ class GitHubPortfolioAnalyzer:
             'todos': []
         }
         
-        for repo in self.user.get_repos():
+        # Get all repositories first
+        all_repos = list(self.user.get_repos())
+        
+        # Filter repositories
+        for repo in all_repos:
+            # Skip if not in target list
+            if repo.name not in self.target_repos:
+                continue
+                
             repo_info = {
                 'name': repo.name,
                 'description': repo.description,
@@ -44,9 +59,9 @@ class GitHubPortfolioAnalyzer:
                     repo_info['todos'].append(todo)
                     portfolio['todos'].append(todo)
                 
-                # Look for references to other repos
-                for other_repo in self.user.get_repos():
-                    if other_repo.name in content and other_repo.name != repo.name:
+                # Look for references to other repos in target list
+                for other_repo in all_repos:
+                    if other_repo.name in self.target_repos and other_repo.name in content and other_repo.name != repo.name:
                         repo_info['dependencies'].append(other_repo.name)
                 
             except Exception as e:

@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'
   push:
     branches: [ main ]
+    paths-ignore:    # Ignore les changements sur ces fichiers
+      - 'PORTFOLIO.md'
+      - 'github_portfolio.json'
   workflow_dispatch:
 
 jobs:
@@ -13,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PAT_TOKEN }}  
+          token: ${{ secrets.PAT_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -38,4 +41,4 @@ jobs:
           git config --global user.email 'action@github.com'
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update portfolio analysis" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update portfolio analysis [skip ci]" && git push)
