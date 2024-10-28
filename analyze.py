@@ -28,11 +28,11 @@ class GitHubPortfolioAnalyzer:
             }
             
             try:
-                # Rechercher les dépendances dans le README
+                # Search for dependencies in README
                 readme = repo.get_readme()
                 content = readme.decoded_content.decode()
                 
-                # Chercher les TODOs dans les issues
+                # Get TODOs from issues
                 for issue in repo.get_issues(state='open'):
                     todo = {
                         'title': issue.title,
@@ -44,13 +44,13 @@ class GitHubPortfolioAnalyzer:
                     repo_info['todos'].append(todo)
                     portfolio['todos'].append(todo)
                 
-                # Chercher les références à d'autres repos
+                # Look for references to other repos
                 for other_repo in self.user.get_repos():
                     if other_repo.name in content and other_repo.name != repo.name:
                         repo_info['dependencies'].append(other_repo.name)
                 
             except Exception as e:
-                print(f"Erreur lors de l'analyse de {repo.name}: {str(e)}")
+                print(f"Error analyzing {repo.name}: {str(e)}")
             
             portfolio['repositories'].append(repo_info)
             
@@ -62,22 +62,22 @@ class GitHubPortfolioAnalyzer:
             
     def generate_markdown_report(self, portfolio, filename='PORTFOLIO.md'):
         with open(filename, 'w', encoding='utf-8') as f:
-            f.write('# Portfolio des Projets GitHub\n\n')
+            f.write('# GitHub Projects Portfolio\n\n')
             
-            f.write('## Vue d'ensemble\n\n')
-            f.write(f"Nombre total de repositories: {len(portfolio['repositories'])}\n")
-            f.write(f"Nombre total de TODOs: {len(portfolio['todos'])}\n\n")
+            f.write('## Overview\n\n')
+            f.write(f"Total repositories: {len(portfolio['repositories'])}\n")
+            f.write(f"Total TODOs: {len(portfolio['todos'])}\n\n")
             
             f.write('## Repositories\n\n')
             for repo in portfolio['repositories']:
                 f.write(f"### {repo['name']}\n\n")
-                f.write(f"- Description: {repo['description'] or 'Pas de description'}\n")
-                f.write(f"- Langage principal: {repo['language'] or 'Non spécifié'}\n")
+                f.write(f"- Description: {repo['description'] or 'No description'}\n")
+                f.write(f"- Main language: {repo['language'] or 'Not specified'}\n")
                 if repo['dependencies']:
-                    f.write("- Dépendances:\n")
+                    f.write("- Dependencies:\n")
                     for dep in repo['dependencies']:
                         f.write(f"  - {dep}\n")
-                f.write(f"- [Voir sur GitHub]({repo['url']})\n\n")
+                f.write(f"- [View on GitHub]({repo['url']})\n\n")
                 
                 if repo['todos']:
                     f.write("#### TODOs:\n")
@@ -85,14 +85,14 @@ class GitHubPortfolioAnalyzer:
                         f.write(f"- {todo['title']}\n")
                     f.write("\n")
             
-            f.write('## TODOs Globaux\n\n')
+            f.write('## Global TODOs\n\n')
             for todo in portfolio['todos']:
                 f.write(f"- [{todo['repository']}] {todo['title']}\n")
 
 def main():
     token = os.getenv('GITHUB_TOKEN')
     if not token:
-        raise ValueError("GITHUB_TOKEN n'est pas défini")
+        raise ValueError("GITHUB_TOKEN is not defined")
     
     analyzer = GitHubPortfolioAnalyzer(token)
     portfolio = analyzer.analyze_repositories()
