@@ -10,11 +10,6 @@ on:
 jobs:
   analyze:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: read
-      repository-projects: read
-      
     steps:
       - uses: actions/checkout@v2
       
@@ -30,7 +25,7 @@ jobs:
           
       - name: Run analysis
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: python analyze.py
           
       - name: Commit and push if changed
