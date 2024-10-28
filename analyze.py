@@ -107,17 +107,54 @@ class GitHubPortfolioAnalyzer:
             json.dump(portfolio, f, indent=2, ensure_ascii=False)
             
     def generate_readme(self, portfolio):
-        """Generate README content for the portfolio"""
+        """Generate enhanced README content for the portfolio"""
         content = []
         
-        content.append('# ESP3D Portfolio\n')
-        content.append('This repository tracks the status of ESP3D-related projects and their open issues.\n')
+        # Header with badges
+        content.append('# 🛠️ ESP3D Portfolio\n')
         
-        # Overview section with statistics
-        content.append('## Overview\n')
+        # Add stats badges
         repo_count = len(set(repo['name'] for repo in portfolio['repositories']))
-        content.append(f"Total repositories: {repo_count}\n")
-        content.append(f"Total TODOs: {len(portfolio['todos'])}\n\n")
+        todo_count = len(portfolio['todos'])
+        content.append('<div align="center">\n\n')
+        content.append(f'![Repositories](https://img.shields.io/badge/Repositories-{repo_count}-blue)')
+        content.append(f' ![Issues](https://img.shields.io/badge/Open%20Issues-{todo_count}-yellow)')
+        content.append('\n</div>\n\n')
+        
+        # Introduction
+        content.append('> 📑 This repository tracks the status of ESP3D-related projects and their open issues.\n')
+        
+        # Quick Navigation
+        content.append('## 🔍 Quick Navigation\n\n')
+        content.append('<div align="center">\n\n')
+        content.append('| Section | Description |\n')
+        content.append('|---------|-------------|\n')
+        for repo_name in set(repo['name'] for repo in portfolio['repositories']):
+            content.append(f'| [🔗 {repo_name}](#-{repo_name.lower()}) | Project status and issues |\n')
+        content.append('| [📋 Global TODOs](#-global-todos) | All open issues across projects |\n')
+        content.append('\n</div>\n\n')
+        
+        # Statistics Section
+        content.append('<details>\n<summary><h2>📊 Statistics</h2></summary>\n\n')
+        
+        # Add a statistics table
+        content.append('| Metric | Value |\n')
+        content.append('|--------|-------|\n')
+        content.append(f'| Total Repositories | {repo_count} |\n')
+        content.append(f'| Total Open Issues | {todo_count} |\n')
+        
+        # Count issues per repository
+        repos_stats = {}
+        for todo in portfolio['todos']:
+            repos_stats[todo['repository']] = repos_stats.get(todo['repository'], 0) + 1
+        
+        for repo, count in repos_stats.items():
+            content.append(f'| Issues in {repo} | {count} |\n')
+            
+        content.append('\n</details>\n\n')
+        
+        # Repositories section
+        content.append('## 📦 Projects Status\n')
         
         # Group repositories by name
         repos_by_name = {}
@@ -126,35 +163,78 @@ class GitHubPortfolioAnalyzer:
                 repos_by_name[repo['name']] = []
             repos_by_name[repo['name']].append(repo)
         
-        # Repositories section
-        content.append('## Repositories\n')
         for repo_name, branches in repos_by_name.items():
-            content.append(f"### [{repo_name}]({branches[0]['url']})\n")
-            content.append(f"- Description: {branches[0]['description'] or 'No description'}\n")
-            content.append(f"- Main language: {branches[0]['language'] or 'Not specified'}\n\n")
+            content.append(f'<details open>\n<summary><h3>🔗 {repo_name}</h3></summary>\n\n')
+            
+            # Repository info box
+            content.append('<table><tr><td>\n\n')
+            content.append(f"**Project**: [{repo_name}]({branches[0]['url']})<br>\n")
+            content.append(f"**Description**: {branches[0]['description'] or 'No description'}<br>\n")
+            content.append(f"**Language**: {branches[0]['language'] or 'Not specified'}<br>\n")
+            content.append('\n</td></tr></table>\n\n')
             
             for branch in branches:
+                # Branch header with appropriate emoji
                 label_emoji = "🚀" if branch['branch_label'] == "Production" else "🔧"
-                content.append(f"#### {label_emoji} {branch['branch_label']} Branch (`{branch['branch']}`)\n")
-                content.append(f"- Last commit: {branch['last_commit'].split('T')[0]} (#{branch['commit_sha']})\n\n")
+                content.append(f"<details>\n<summary><h4>{label_emoji} {branch['branch_label']} Branch (`{branch['branch']}`)</h4></summary>\n\n")
                 
+                # Branch info
+                content.append('```\n')
+                content.append(f"Last commit: {branch['last_commit'].split('T')[0]} (#{branch['commit_sha']})\n")
+                content.append('```\n\n')
+                
+                # Issues for this branch
                 if branch['todos']:
-                    content.append("##### Open Issues:\n")
+                    content.append('<table>\n')
+                    content.append('<tr><th>Status</th><th>Issue</th><th>Created</th></tr>\n')
                     for todo in branch['todos']:
                         state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
-                        content.append(f"- {state_marker} #{todo['number']}: [{todo['title']}]({todo['url']})\n")
-                    content.append("\n")
-            content.append("---\n\n")
+                        created_date = todo['created_at'].split('T')[0]
+                        content.append(f"<tr><td>{state_marker}</td><td>#{todo['number']}: <a href='{todo['url']}'>{todo['title']}</a></td><td><code>{created_date}</code></td></tr>\n")
+                    content.append('</table>\n')
+                else:
+                    content.append('> 🎉 No open issues\n')
+                
+                content.append('\n</details>\n\n')
+            
+            content.append('</details>\n\n')
+            content.append('<hr>\n\n')
         
         # Global TODOs section
-        content.append('## Global TODOs\n')
-        for todo in portfolio['todos']:
-            state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
-            branch_emoji = "🚀" if todo['branch_label'] == "Production" else "🔧"
-            content.append(f"- {state_marker} [{todo['repository']}/{todo['branch']}] {branch_emoji} #{todo['number']}: [{todo['title']}]({todo['url']})\n")
+        content.append('## 📋 Global TODOs\n\n')
+        content.append('<details open>\n<summary><h3>🔍 All Open Issues</h3></summary>\n\n')
         
-        # Add footer with generation timestamp
-        content.append(f"\n---\n*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC*\n")
+        # Group todos by repository
+        todos_by_repo = {}
+        for todo in portfolio['todos']:
+            repo_name = todo['repository']
+            if repo_name not in todos_by_repo:
+                todos_by_repo[repo_name] = []
+            todos_by_repo[repo_name].append(todo)
+        
+        for repo_name, todos in todos_by_repo.items():
+            content.append(f"<details>\n<summary><b>📁 {repo_name}</b></summary>\n\n")
+            content.append('<table>\n')
+            content.append('<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th></tr>\n')
+            
+            for todo in todos:
+                state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
+                branch_emoji = "🚀" if todo['branch_label'] == "Production" else "🔧"
+                created_date = todo['created_at'].split('T')[0]
+                content.append(f"<tr><td>{state_marker}</td><td>{branch_emoji} {todo['branch']}</td><td>#{todo['number']}: <a href='{todo['url']}'>{todo['title']}</a></td><td><code>{created_date}</code></td></tr>\n")
+            
+            content.append('</table>\n\n</details>\n\n')
+        
+        content.append('</details>\n\n')
+        
+        # Footer with timestamp and info
+        content.append('<hr>\n\n')
+        content.append('<div align="center">\n\n')
+        content.append('*🔄 Last updated: ')
+        content.append(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        content.append(' UTC*\n\n')
+        content.append('*Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*\n')
+        content.append('\n</div>\n')
         
         return ''.join(content)
 
