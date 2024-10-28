@@ -66,15 +66,10 @@ class GitHubPortfolioAnalyzer:
                         'commit_sha': branch.commit.sha[:7],
                         'created_at': repo.created_at.isoformat(),
                         'last_updated': repo.updated_at.isoformat(),
-                        'dependencies': [],
                         'todos': []
                     }
                     
                     try:
-                        # Get README from specific branch
-                        readme = repo.get_contents("README.md", ref=branch_name)
-                        content = readme.decoded_content.decode()
-                        
                         # Get TODOs from issues
                         issues = repo.get_issues(state='open' if not self.options['include_closed_issues'] else 'all')
                         for issue in issues:
@@ -97,11 +92,6 @@ class GitHubPortfolioAnalyzer:
                             repo_info['todos'].append(todo)
                             portfolio['todos'].append(todo)
                         
-                        # Look for references to other repos in target list
-                        for other_repo in all_repos:
-                            if other_repo.name in self.repo_configs and other_repo.name in content and other_repo.name != repo.name:
-                                repo_info['dependencies'].append(other_repo.name)
-                        
                     except Exception as e:
                         print(f"Error analyzing {repo.name}/{branch_name}: {str(e)}")
                     
@@ -116,58 +106,57 @@ class GitHubPortfolioAnalyzer:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(portfolio, f, indent=2, ensure_ascii=False)
             
-    def generate_markdown_report(self, portfolio, filename='PORTFOLIO.md'):
-        with open(filename, 'w', encoding='utf-8') as f:
-            f.write('# GitHub Projects Portfolio\n\n')
+    def generate_readme(self, portfolio):
+        """Generate README content for the portfolio"""
+        content = []
+        
+        content.append('# ESP3D Portfolio\n')
+        content.append('This repository tracks the status of ESP3D-related projects and their open issues.\n')
+        
+        # Overview section with statistics
+        content.append('## Overview\n')
+        repo_count = len(set(repo['name'] for repo in portfolio['repositories']))
+        content.append(f"Total repositories: {repo_count}\n")
+        content.append(f"Total TODOs: {len(portfolio['todos'])}\n\n")
+        
+        # Group repositories by name
+        repos_by_name = {}
+        for repo in portfolio['repositories']:
+            if repo['name'] not in repos_by_name:
+                repos_by_name[repo['name']] = []
+            repos_by_name[repo['name']].append(repo)
+        
+        # Repositories section
+        content.append('## Repositories\n')
+        for repo_name, branches in repos_by_name.items():
+            content.append(f"### [{repo_name}]({branches[0]['url']})\n")
+            content.append(f"- Description: {branches[0]['description'] or 'No description'}\n")
+            content.append(f"- Main language: {branches[0]['language'] or 'Not specified'}\n\n")
             
-            # Overview section with statistics
-            f.write('## Overview\n\n')
-            repo_count = len(set(repo['name'] for repo in portfolio['repositories']))
-            f.write(f"Total repositories: {repo_count}\n")
-            f.write(f"Total TODOs: {len(portfolio['todos'])}\n\n")
-            
-            # Group repositories by name
-            repos_by_name = {}
-            for repo in portfolio['repositories']:
-                if repo['name'] not in repos_by_name:
-                    repos_by_name[repo['name']] = []
-                repos_by_name[repo['name']].append(repo)
-            
-            # Repositories section
-            f.write('## Repositories\n\n')
-            for repo_name, branches in repos_by_name.items():
-                f.write(f"### [{repo_name}]({branches[0]['url']})\n\n")
-                f.write(f"- Description: {branches[0]['description'] or 'No description'}\n")
-                f.write(f"- Main language: {branches[0]['language'] or 'Not specified'}\n\n")
+            for branch in branches:
+                label_emoji = "🚀" if branch['branch_label'] == "Production" else "🔧"
+                content.append(f"#### {label_emoji} {branch['branch_label']} Branch (`{branch['branch']}`)\n")
+                content.append(f"- Last commit: {branch['last_commit'].split('T')[0]} (#{branch['commit_sha']})\n\n")
                 
-                for branch in branches:
-                    label_emoji = "🚀" if branch['branch_label'] == "Production" else "🔧"
-                    f.write(f"#### {label_emoji} {branch['branch_label']} Branch (`{branch['branch']}`)\n\n")
-                    f.write(f"- Last commit: {branch['last_commit'].split('T')[0]} (#{branch['commit_sha']})\n")
-                    
-                    if branch['dependencies']:
-                        f.write("- Dependencies:\n")
-                        for dep in branch['dependencies']:
-                            f.write(f"  - {dep}\n")
-                    f.write("\n")
-                    
-                    if branch['todos']:
-                        f.write("##### Open Issues:\n")
-                        for todo in branch['todos']:
-                            state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
-                            f.write(f"- {state_marker} #{todo['number']}: [{todo['title']}]({todo['url']})\n")
-                        f.write("\n")
-                f.write("---\n\n")
-            
-            # Global TODOs section with improved formatting
-            f.write('## Global TODOs\n\n')
-            for todo in portfolio['todos']:
-                state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
-                branch_emoji = "🚀" if todo['branch_label'] == "Production" else "🔧"
-                f.write(f"- {state_marker} [{todo['repository']}/{todo['branch']}] {branch_emoji} #{todo['number']}: [{todo['title']}]({todo['url']})\n")
-            
-            # Add footer with generation timestamp
-            f.write(f"\n---\n*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC*\n")
+                if branch['todos']:
+                    content.append("##### Open Issues:\n")
+                    for todo in branch['todos']:
+                        state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
+                        content.append(f"- {state_marker} #{todo['number']}: [{todo['title']}]({todo['url']})\n")
+                    content.append("\n")
+            content.append("---\n\n")
+        
+        # Global TODOs section
+        content.append('## Global TODOs\n')
+        for todo in portfolio['todos']:
+            state_marker = "🔄" if todo['is_pr'] else "⭕" if todo['state'] == 'open' else "✅"
+            branch_emoji = "🚀" if todo['branch_label'] == "Production" else "🔧"
+            content.append(f"- {state_marker} [{todo['repository']}/{todo['branch']}] {branch_emoji} #{todo['number']}: [{todo['title']}]({todo['url']})\n")
+        
+        # Add footer with generation timestamp
+        content.append(f"\n---\n*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC*\n")
+        
+        return ''.join(content)
 
 def main():
     token = os.getenv('GITHUB_TOKEN')
@@ -177,8 +166,13 @@ def main():
     analyzer = GitHubPortfolioAnalyzer(token)
     portfolio = analyzer.analyze_repositories()
     
+    # Save the raw data
     analyzer.save_analysis(portfolio)
-    analyzer.generate_markdown_report(portfolio)
+    
+    # Generate and save README
+    readme_content = analyzer.generate_readme(portfolio)
+    with open('README.md', 'w', encoding='utf-8') as f:
+        f.write(readme_content)
 
 if __name__ == '__main__':
     main()
