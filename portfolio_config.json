@@ -1,0 +1,34 @@
+{
+    "repositories": [
+        {
+            "name": "ESP3D",
+            "branches": [
+                {
+                    "name": "2.1.x",
+                    "label": "Production"
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development"
+                }
+            ]
+        },
+        {
+            "name": "ESP3D",
+            "branches": [
+                {
+                    "name": "2.1",
+                    "label": "Production"
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development"
+                }
+            ]
+        }
+    ],
+    "options": {
+        "include_closed_issues": false,
+        "include_pull_requests": false
+    }
+}
