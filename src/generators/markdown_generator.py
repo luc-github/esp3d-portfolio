@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from typing import Dict, List, Any
 from ..utils.constants import STATUS_EMOJIS, CHART_CHARS
 
-    def _generate_health_suggestions(self, repository: Dict) -> List[Dict]:
+def _generate_health_suggestions(self, repository: Dict) -> List[Dict]:
         """Generate improvement suggestions based on health metrics"""
         suggestions = []
         scores = repository.get('health_score', {})
