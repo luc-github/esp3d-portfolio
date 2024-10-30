@@ -19,26 +19,6 @@
                     "is_production": false
                 }
             ]
-        },
-        {
-            "name": "ESP3DLib",
-            "type": "main",
-            "priority": 1,
-            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
-            "ignore_labels": ["wontfix", "duplicate", "invalid"],
-            "highlight_labels": ["critical", "priority"],
-            "branches": [
-                {
-                    "name": "master",
-                    "label": "Production",
-                    "is_production": true
-                },
-                {
-                    "name": "3.0",
-                    "label": "Development",
-                    "is_production": false
-                }
-            ]
         }
     ],
     "options": {
