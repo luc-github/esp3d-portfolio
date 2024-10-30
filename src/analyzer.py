@@ -87,15 +87,20 @@ class PortfolioAnalyzer:
         
         # Save raw data
         self._save_report(processed_data, 'github_portfolio.json', is_json=True)
-    
     def _save_report(self, content: Any, filename: str, is_json: bool = False) -> None:
         """Save report to file."""
+        def json_serial(obj):
+            """JSON serializer for objects not serializable by default json code"""
+            if isinstance(obj, datetime):
+                return obj.isoformat()
+            raise TypeError(f"Type {type(obj)} not serializable")
+
         try:
             mode = 'w' if not is_json else 'w'
             with open(filename, mode, encoding='utf-8') as f:
                 if is_json:
                     import json
-                    json.dump(content, f, indent=2, ensure_ascii=False)
+                    json.dump(content, f, indent=2, default=json_serial)
                 else:
                     f.write(content)
                     
@@ -104,7 +109,6 @@ class PortfolioAnalyzer:
         except Exception as e:
             self.logger.error(f"Error saving report {filename}: {e}")
             raise
-    
     def cleanup(self) -> None:
         """Cleanup resources and temporary files."""
         try:

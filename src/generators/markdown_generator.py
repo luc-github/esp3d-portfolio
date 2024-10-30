@@ -373,9 +373,9 @@ class MarkdownGenerator:
                 
                 for point in data_points:
                     if point['total'] >= threshold:
-                        row.append(self.CHART_CHARS['block_full'])
+                        row.append(CHART_CHARS['block_full'])
                     else:
-                        row.append(self.CHART_CHARS['block_empty'])
+                        row.append(CHART_CHARS['block_empty'])
                         
                 chart.append(''.join(row))
                 
