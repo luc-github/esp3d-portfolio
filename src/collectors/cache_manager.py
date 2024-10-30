@@ -44,6 +44,14 @@ class CacheManager:
         except Exception as e:
             self.logger.warning(f"Error reading cache for {key}: {e}")
             return None
+        
+    def _json_serial(obj):
+        """JSON serializer for objects not serializable by default json code"""
+        if isinstance(obj, (datetime, date)):
+            return obj.isoformat()
+        raise TypeError (f"Type {type(obj)} not serializable")
+
+
     
     def set(self, key: str, data: Any):
         """Store value in cache with timestamp"""
@@ -58,8 +66,7 @@ class CacheManager:
             
             cache_path = self._get_cache_path(key)
             with cache_path.open('w', encoding='utf-8') as f:
-                json.dump(cache_data, f, indent=2)
-                
+                json.dump(cache_data, f, indent=2, default=_json_serial)
             self.logger.debug(f"Cached data for {key}")
             
         except Exception as e:

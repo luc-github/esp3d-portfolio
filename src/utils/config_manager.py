@@ -10,6 +10,17 @@ class BranchConfig:
     name: str
     label: str
     is_production: bool
+    ignore_labels: list = None
+    tracked_labels: list = None
+    highlight_labels: list = None
+
+    def __post_init__(self):
+        if self.ignore_labels is None:
+            self.ignore_labels = []
+        if self.tracked_labels is None:
+            self.tracked_labels = []
+        if self.highlight_labels is None:
+            self.highlight_labels = []
 
 @dataclass
 class RepositoryConfig:
