@@ -269,31 +269,42 @@ class StatsCalculator:
         now = datetime.now(timezone.utc)
         
         # Recent commit activity
-        last_commit = datetime.fromisoformat(repository['last_updated'].replace('Z', '+00:00'))
-        days_since_last_commit = (now - last_commit).days
-        score += max(0, 1 - (days_since_last_commit / 30))  # Full score if updated within last month
-        
+        try:
+            # Chercher la dernière mise à jour dans les branches
+            last_update = None
+            for branch in repository.get('branches', []):
+                branch_commit = branch.get('last_commit', {}).get('date')
+                if branch_commit:
+                    branch_date = datetime.fromisoformat(branch_commit.replace('Z', '+00:00'))
+                    if not last_update or branch_date > last_update:
+                        last_update = branch_date
+            
+            if last_update:
+                days_since_last_commit = (now - last_update).days
+                score += max(0, 1 - (days_since_last_commit / 30))  # Full score if updated within last month
+            
+        except Exception as e:
+            self.logger.warning(f"Error calculating commit activity score: {e}")
+            score += 0  # No score for this metric if there's an error
+            
         # Issue response time
         if repository.get('issues'):
-            avg_response_time = self._calculate_average_issue_response_time(repository['issues'])
-            score += max(0, 1 - (avg_response_time / 7))  # Full score if responded within a week
-            
-        # Regular release schedule
-        if repository.get('releases'):
-            releases = repository['releases']
-            if len(releases) >= 2:
-                avg_release_interval = self._calculate_average_release_interval(releases)
-                score += max(0, 1 - (avg_release_interval / 90))  # Full score for releases every 3 months
+            try:
+                avg_response_time = self._calculate_average_issue_response_time(repository['issues'])
+                score += max(0, 1 - (avg_response_time / 7))  # Full score if responded within a week
+            except Exception as e:
+                self.logger.warning(f"Error calculating issue response time score: {e}")
                 
         # Branch health
-        if repository.get('branches'):
-            protected_branches = sum(1 for b in repository['branches'] if b.get('protected'))
-            score += min(protected_branches / 2, 1.0)  # Score for protected branches, max at 2
+        try:
+            if repository.get('branches'):
+                protected_branches = sum(1 for b in repository['branches'] if b.get('protected'))
+                score += min(protected_branches / 2, 1.0)  # Score for protected branches, max at 2
+        except Exception as e:
+            self.logger.warning(f"Error calculating branch health score: {e}")
             
-        # CI/CD presence and health
-        if repository.get('workflows'):
-            workflow_success_rate = self._calculate_workflow_success_rate(repository['workflows'])
-            score += workflow_success_rate
+        # Au moins un point minimal si le repository existe et est accessible
+        score = max(score, 0.5)
             
         return score / max_score
     
