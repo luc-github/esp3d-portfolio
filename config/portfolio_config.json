@@ -19,6 +19,106 @@
                     "is_production": false
                 }
             ]
+        },
+        {
+            "name": "ESP3DLib",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "master",
+                    "label": "Production",
+                    "is_production": true
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3D-WEBUI",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "2.1",
+                    "label": "Production",
+                    "is_production": true
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3D-TFT",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3D-Configurator",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true
+                }
+            ]
+        },
+        {
+            "name": "esp3d.io",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true
+                }
+            ]
+        },
+        {
+            "name": "ESP32SSDP",
+            "type": "depedency",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "v2.x",
+                    "label": "Production",
+                    "is_production": true
+                }
+            ]
         }
     ],
     "options": {
