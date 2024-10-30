@@ -19,20 +19,21 @@ class GitHubCollector:
             try:
                 return func(*args, **kwargs)
             except GithubException as e:
-                if e.status == 403:  # Rate limit exceeded
-                    reset_time = int(self.github.rate_limiting_resettime)
-                    wait_time = reset_time - time.time()
-                    if wait_time > 0:
-                        self.logger.warning(f"Rate limit exceeded. Waiting {wait_time:.0f} seconds...")
-                        time.sleep(wait_time + 1)
-                        continue
+                if e.status == 404:
+                    # Ajout de plus de détails dans le log
+                    self.logger.warning(
+                        f"GitHub 404 Error - Resource not found: Repository: {kwargs.get('repo', 'unknown')}, "
+                        f"Branch: {kwargs.get('branch', 'unknown')}, "
+                        f"Function: {func.__name__}, "
+                        f"Args: {args}, "
+                        f"Error: {str(e)}"
+                    )
                 if attempt < MAX_RETRIES - 1:
                     wait_time = RETRY_DELAY * (2 ** attempt)
                     self.logger.warning(f"GitHub API error: {e}. Retrying in {wait_time} seconds...")
                     time.sleep(wait_time)
                 else:
-                    raise
-                    
+                    raise             
     def collect_repository_data(self, repo_name: str) -> Dict:
         """Collect all data for a repository"""
         cache_key = f"repo_{repo_name}"
@@ -68,7 +69,6 @@ class GitHubCollector:
         except Exception as e:
             self.logger.error(f"Error collecting data for {repo_name}: {e}")
             raise
-            
     def _collect_branches_data(self, repo, repo_config) -> List[Dict]:
         """Collect data for configured branches"""
         branches_data = []

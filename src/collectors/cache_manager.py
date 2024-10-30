@@ -45,14 +45,12 @@ class CacheManager:
             self.logger.warning(f"Error reading cache for {key}: {e}")
             return None
         
-    def _json_serial(obj):
+    def _json_serial(self, obj):  # Ajout de self ici
         """JSON serializer for objects not serializable by default json code"""
-        if isinstance(obj, (datetime, date)):
+        if isinstance(obj, datetime):  # Simplifié pour datetime uniquement
             return obj.isoformat()
-        raise TypeError (f"Type {type(obj)} not serializable")
+        raise TypeError(f"Type {type(obj)} not serializable")
 
-
-    
     def set(self, key: str, data: Any):
         """Store value in cache with timestamp"""
         if not self.enabled:
@@ -66,12 +64,11 @@ class CacheManager:
             
             cache_path = self._get_cache_path(key)
             with cache_path.open('w', encoding='utf-8') as f:
-                json.dump(cache_data, f, indent=2, default=_json_serial)
+                json.dump(cache_data, f, indent=2, default=self._json_serial)  # Ajout de self ici
             self.logger.debug(f"Cached data for {key}")
             
         except Exception as e:
             self.logger.warning(f"Error writing cache for {key}: {e}")
-    
     def clear(self, key: Optional[str] = None):
         """Clear specific or all cache entries"""
         if not self.enabled:
