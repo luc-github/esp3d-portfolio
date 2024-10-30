@@ -1,0 +1,148 @@
+{
+    "repositories": [
+        {
+            "name": "ESP3D",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "2.1.x",
+                    "label": "Production",
+                    "is_production": true
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3DLib",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3D-WEBUI",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "2.1",
+                    "label": "Production",
+                    "is_production": true
+                },
+                {
+                    "name": "3.0",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3D-TFT",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Development",
+                    "is_production": false
+                }
+            ]
+        },
+        {
+            "name": "ESP3D-Configurator",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true
+                }
+            ]
+        },
+        {
+            "name": "esp3d.io",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true
+                }
+            ]
+        },
+        {
+            "name": "ESP32SSDP",
+            "type": "depedency",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "v2.x",
+                    "label": "Production",
+                    "is_production": true
+                }
+            ]
+        }
+    ],
+    "options": {
+        "include_closed_issues": false,
+        "include_pull_requests": true,
+        "days_for_recent": 7,
+        "cache_timeout": 3600,
+        "show_contributors": true,
+        "show_activity_graph": true,
+        "highlight_recent_updates": true,
+        "max_retries": 3,
+        "retry_delay": 5
+    },
+    "display": {
+        "sort_issues_by": "updated_at",
+        "group_by": ["repository", "branch"],
+        "expanded_sections": ["main_projects", "recent_updates"],
+        "chart_style": "ascii",
+        "show_descriptions": true,
+        "compact_mode": false
+    },
+    "cache": {
+        "enabled": true,
+        "directory": ".cache",
+        "max_age": 3600
+    }
+}
