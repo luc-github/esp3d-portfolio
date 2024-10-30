@@ -482,8 +482,13 @@ class StatsCalculator:
         for repo in repositories:
             activity = repo.get('activity', {}).get('commit_activity', [])
             for week_data in activity:
+                if isinstance(week_data['week'], datetime):
+                    timestamp = int(week_data['week'].timestamp())
+                else:
+                    timestamp = week_data['week']
+                    
                 trend_data.append({
-                    'date': datetime.fromtimestamp(week_data['week']).strftime('%Y-%m-%d'),
+                    'date': datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d'),
                     'count': week_data['total']
                 })
                 
