@@ -1,5 +1,6 @@
 import logging
 from typing import Dict, Any
+from datetime import datetime
 from .collectors import GitHubCollector, CacheManager
 from .processors import StatsCalculator, IssueProcessor
 from .generators import MarkdownGenerator
