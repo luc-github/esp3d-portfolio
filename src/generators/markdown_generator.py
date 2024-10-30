@@ -344,27 +344,52 @@ class MarkdownGenerator:
         if not commit_frequency:
             return "No activity data available"
             
-        max_value = max(day['total'] for day in commit_frequency)
-        if max_value == 0:
+        # S'assurer que nous avons une liste de dictionnaires avec 'date' et 'count'
+        if isinstance(commit_frequency, list):
+            data_points = commit_frequency
+        else:
+            # Convertir les données en format attendu
+            data_points = []
+            for date, count in commit_frequency.items():
+                if isinstance(count, dict) and 'total' in count:
+                    data_points.append({'date': date, 'total': count['total']})
+                elif isinstance(count, (int, float)):
+                    data_points.append({'date': date, 'total': count})
+            
+        if not data_points:
             return "No commits in this period"
             
-        chart_height = 7
-        chart = []
-        
-        for i in range(chart_height):
-            row = []
-            threshold = max_value * (chart_height - i) / chart_height
+        try:
+            max_value = max(point['total'] for point in data_points)
+            if max_value == 0:
+                return "No commits in this period"
+                
+            chart_height = 7
+            chart = []
             
-            for day in commit_frequency:
-                if day['total'] >= threshold:
-                    row.append(CHART_CHARS['block_full'])
-                else:
-                    row.append(CHART_CHARS['block_empty'])
-                    
-            chart.append(''.join(row))
+            for i in range(chart_height):
+                row = []
+                threshold = max_value * (chart_height - i) / chart_height
+                
+                for point in data_points:
+                    if point['total'] >= threshold:
+                        row.append(self.CHART_CHARS['block_full'])
+                    else:
+                        row.append(self.CHART_CHARS['block_empty'])
+                        
+                chart.append(''.join(row))
+                
+            # Ajouter une légende
+            dates = [point['date'][:10] for point in data_points]  # Format YYYY-MM-DD
+            chart.append('-' * len(data_points))
+            chart.append(' '.join(dates))
+                
+            return '\n'.join(chart)
             
-        return '\n'.join(chart)
-    
+        except Exception as e:
+            self.logger.error(f"Error generating activity chart: {e}")
+            return "Error generating activity chart"
+          
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
         """Generate ASCII heatmap for activity"""
         if not heatmap_data:
