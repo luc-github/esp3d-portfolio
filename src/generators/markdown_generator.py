@@ -3,39 +3,7 @@ from datetime import datetime, timezone
 from typing import Dict, List, Any
 from ..utils.constants import STATUS_EMOJIS, CHART_CHARS
 
-class MarkdownGenerator:
-    def __init__(self, config_manager):
-        self.logger = logging.getLogger("portfolio.markdown")
-        self.config = config_manager
-        
-    def generate_readme(self, data: Dict[str, Any]) -> str:
-        """Generate complete README content"""
-        content = []
-        
-        # Header section
-        content.extend(self._generate_header(data))
-        
-        # Navigation section
-        content.extend(self._generate_navigation(data))
-        
-        # Statistics section
-        content.extend(self._generate_statistics(data))
-        
-        # Projects status section
-        content.extend(self._generate_projects_status(data))
-        
-        # Global issues section
-        content.extend(self._generate_global_issues(data))
-        
-        # Activity summary section
-        content.extend(self._generate_activity_summary(data))
-        
-        # Footer
-        content.extend(self._generate_footer())
-        
-        return '\n'.join(content)
-    
-def _generate_health_suggestions(self, repository: Dict) -> List[Dict]:
+    def _generate_health_suggestions(self, repository: Dict) -> List[Dict]:
         """Generate improvement suggestions based on health metrics"""
         suggestions = []
         scores = repository.get('health_score', {})
@@ -90,7 +58,8 @@ def _generate_health_suggestions(self, repository: Dict) -> List[Dict]:
                 })
 
         return suggestions
-def _check_missing_documentation(self, repository: Dict) -> List[Dict]:
+
+    def _check_missing_documentation(self, repository: Dict) -> List[Dict]:
         """Check for missing documentation"""
         missing = []
         
@@ -167,6 +136,38 @@ def _check_missing_documentation(self, repository: Dict) -> List[Dict]:
                 
         return missing
 
+class MarkdownGenerator:
+    def __init__(self, config_manager):
+        self.logger = logging.getLogger("portfolio.markdown")
+        self.config = config_manager
+        
+    def generate_readme(self, data: Dict[str, Any]) -> str:
+        """Generate complete README content"""
+        content = []
+        
+        # Header section
+        content.extend(self._generate_header(data))
+        
+        # Navigation section
+        content.extend(self._generate_navigation(data))
+        
+        # Statistics section
+        content.extend(self._generate_statistics(data))
+        
+        # Projects status section
+        content.extend(self._generate_projects_status(data))
+        
+        # Global issues section
+        content.extend(self._generate_global_issues(data))
+        
+        # Activity summary section
+        content.extend(self._generate_activity_summary(data))
+        
+        # Footer
+        content.extend(self._generate_footer())
+        
+        return '\n'.join(content)
+    
     def _generate_header(self, data: Dict) -> List[str]:
         """Generate header section with badges"""
         stats = data['stats']
