@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Repositories](https://img.shields.io/badge/Repositories-1-blue)
-![Main Projects](https://img.shields.io/badge/Main%20Projects-1-orange)
-![Dependencies](https://img.shields.io/badge/Dependencies-0-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-28-yellow)
+![Repositories](https://img.shields.io/badge/Repositories-7-blue)
+![Main Projects](https://img.shields.io/badge/Main%20Projects-6-orange)
+![Dependencies](https://img.shields.io/badge/Dependencies-1-green)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-67-yellow)
 
 > 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -18,6 +18,11 @@
 | Section | Type | Description |
 |---------|------|-------------|
 | [⭐ ESP3D](#esp3d) | Main Project | FW for ESP8266/ESP8285/ESP32 used with 3D printer |
+| [⭐ ESP3DLib](#esp3dlib) | Main Project | ESP3D library for Marlin and ESP32 boards |
+| [⭐ ESP3D-WEBUI](#esp3d-webui) | Main Project | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
+| [⭐ ESP3D-TFT](#esp3d-tft) | Main Project | ESP3D Firmware for ESP32 based TFT  |
+| [⭐ ESP3D-Configurator](#esp3d-configurator) | Main Project | Project status and issues |
+| [⭐ esp3d.io](#esp3d.io) | Main Project | Project Main page |
 | [📋 Global Issues](#-global-issues) | Overview | All open issues across projects |
 | [📊 Statistics](#-statistics) | Metrics | Project health and activity metrics |
 
@@ -32,19 +37,19 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Repositories | 1 |
-| Main Projects | 1 |
-| Dependencies | 0 |
-| Total Stars | 1759 |
-| Total Forks | 466 |
+| Total Repositories | 7 |
+| Main Projects | 6 |
+| Dependencies | 1 |
+| Total Stars | 2720 |
+| Total Forks | 860 |
 
 ### Issue Statistics
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 28 |
+| Open Issues | 67 |
 | Closed Issues | 0 |
-| Average Age | 837.1 days |
+| Average Age | 777.2 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -138,6 +143,259 @@ Author: Luc
 
 <hr>
 
+<details open>
+<summary><h3>⭐ ESP3D-Configurator</h3></summary>
+
+<table><tr><td>
+
+**Project**: [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator)<br>
+**Type**: Main<br>
+**Description**: No description<br>
+**Language**: JavaScript<br>
+**Health Score**: <span style="color: #ff0000">7.8%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`main`)</h4></summary>
+
+```
+Last commit: 2024-10-19 (#494085b)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#16: <a href="https://github.com/luc-github/ESP3D-Configurator/issues/16">[FEATURE REQUEST]Web Flasher Tool</a></td><td><code>2023-05-18</code></td><td><code>2023-05-18</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#5: <a href="https://github.com/luc-github/ESP3D-Configurator/issues/5">[Information]Devt status</a></td><td><code>2022-06-18</code></td><td><code>2022-08-18</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
+<details open>
+<summary><h3>⭐ ESP3D-TFT</h3></summary>
+
+<table><tr><td>
+
+**Project**: [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT)<br>
+**Type**: Main<br>
+**Description**: ESP3D Firmware for ESP32 based TFT <br>
+**Language**: C<br>
+**Health Score**: <span style="color: #ff0000">11.6%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🔧 Development Branch (`main`)</h4></summary>
+
+```
+Last commit: 2024-08-14 (#7ccc509)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#77: <a href="https://github.com/luc-github/ESP3D-TFT/issues/77">Very slow communication with connected device to usb host</a></td><td><code>2024-10-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#76: <a href="https://github.com/luc-github/ESP3D-TFT/issues/76">[FEATURE REQUEST]Add Lua interpreter support like in ESP3D</a></td><td><code>2024-10-13</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#54: <a href="https://github.com/luc-github/ESP3D-TFT/issues/54">[FEATURE REQUEST]Move to lvgl 9.0</a></td><td><code>2024-01-17</code></td><td><code>2024-08-29</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#74: <a href="https://github.com/luc-github/ESP3D-TFT/issues/74">[FEATURE REQUEST]Add BTT GCODE thumbnails</a></td><td><code>2024-08-14</code></td><td><code>2024-08-14</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#67: <a href="https://github.com/luc-github/ESP3D-TFT/issues/67">[FEATURE REQUEST]Add support of macro defined by webui on screen</a></td><td><code>2024-04-21</code></td><td><code>2024-08-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-01-21</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#53: <a href="https://github.com/luc-github/ESP3D-TFT/issues/53">[FEATURE REQUEST]Do better snapshot code with no memory need</a></td><td><code>2024-01-07</code></td><td><code>2024-01-07</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#12: <a href="https://github.com/luc-github/ESP3D-TFT/issues/12">[FEATURE REQUEST]WhatsApp Notification</a></td><td><code>2023-02-20</code></td><td><code>2023-02-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#5: <a href="https://github.com/luc-github/ESP3D-TFT/issues/5">[ENHANCEMENT]Add Pin interrupt support on FT5X06 when supported to save mcu time instead of doing permanent polling</a></td><td><code>2022-10-01</code></td><td><code>2022-10-01</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
+<details open>
+<summary><h3>⭐ ESP3D-WEBUI</h3></summary>
+
+<table><tr><td>
+
+**Project**: [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI)<br>
+**Type**: Main<br>
+**Description**: A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC<br>
+**Language**: JavaScript<br>
+**Health Score**: <span style="color: #ff0000">17.5%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`2.1`)</h4></summary>
+
+```
+Last commit: 2024-10-01 (#0b80ee0)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#265: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/265">[FEATURE REQUEST]Integrate the [ ESP700] command into the button</a></td><td><code>2022-09-18</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#273: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/273">[FEATURE REQUEST] Add support for pen plotters</a></td><td><code>2022-10-08</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#85: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/85">[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them</a></td><td><code>2020-01-04</code></td><td><code>2022-08-15</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#249: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/249">[Enhancement]Clean up Interface UI according usage</a></td><td><code>2022-07-06</code></td><td><code>2022-08-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#242: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/242">[FEATURE REQUEST]Configuration  Wizard </a></td><td><code>2022-05-10</code></td><td><code>2022-06-06</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
+
+```
+Last commit: 2024-10-13 (#0b0116f)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#265: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/265">[FEATURE REQUEST]Integrate the [ ESP700] command into the button</a></td><td><code>2022-09-18</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#273: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/273">[FEATURE REQUEST] Add support for pen plotters</a></td><td><code>2022-10-08</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#85: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/85">[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them</a></td><td><code>2020-01-04</code></td><td><code>2022-08-15</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#249: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/249">[Enhancement]Clean up Interface UI according usage</a></td><td><code>2022-07-06</code></td><td><code>2022-08-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#242: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/242">[FEATURE REQUEST]Configuration  Wizard </a></td><td><code>2022-05-10</code></td><td><code>2022-06-06</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
+<details open>
+<summary><h3>⭐ esp3d.io</h3></summary>
+
+<table><tr><td>
+
+**Project**: [esp3d.io](https://github.com/luc-github/esp3d.io)<br>
+**Type**: Main<br>
+**Description**: Project Main page<br>
+**Language**: HTML<br>
+**Health Score**: <span style="color: #ff0000">15.3%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`main`)</h4></summary>
+
+```
+Last commit: 2024-10-30 (#7fea8cf)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#8: <a href="https://github.com/luc-github/esp3d.io/issues/8">Do a description page for each WebUI panel / Settings</a></td><td><code>2023-02-28</code></td><td><code>2023-02-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#6: <a href="https://github.com/luc-github/esp3d.io/issues/6">Add Default setting description page</a></td><td><code>2023-02-28</code></td><td><code>2023-02-28</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
+<details open>
+<summary><h3>⭐ ESP3DLib</h3></summary>
+
+<table><tr><td>
+
+**Project**: [ESP3DLib](https://github.com/luc-github/ESP3DLib)<br>
+**Type**: Main<br>
+**Description**: ESP3D library for Marlin and ESP32 boards<br>
+**Language**: C++<br>
+**Health Score**: <span style="color: #ff0000">17.5%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`master`)</h4></summary>
+
+```
+Last commit: 2024-06-01 (#4fbed7f)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-10-10</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
+
+```
+Last commit: 2023-10-05 (#b5c99e2)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-10-10</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
+<details open>
+<summary><h3>🔗 ESP32SSDP</h3></summary>
+
+<table><tr><td>
+
+**Project**: [ESP32SSDP](https://github.com/luc-github/ESP32SSDP)<br>
+**Type**: Depedency<br>
+**Description**: Simple SSDP library for ESP32<br>
+**Language**: C++<br>
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`v2.x`)</h4></summary>
+
+```
+Last commit: 2024-08-24 (#cbc3183)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#35: <a href="https://github.com/luc-github/ESP32SSDP/issues/35">[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#9: <a href="https://github.com/luc-github/ESP32SSDP/issues/9">[FEATURE REQUEST] Respont to multiple device types or callback?</a></td><td><code>2020-02-05</code></td><td><code>2020-02-21</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
 ## 📋 Global Issues
 
 <details open>
@@ -180,6 +438,99 @@ Author: Luc
 
 </details>
 
+<details>
+<summary><b>📁 ESP3DLib</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🚀 master</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-10-10</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-10-10</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>🚀 master</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>🔧 3.0</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 master</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📁 ESP3D-WEBUI</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#265: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/265">[FEATURE REQUEST]Integrate the [ ESP700] command into the button</a></td><td><code>2022-09-18</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#265: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/265">[FEATURE REQUEST]Integrate the [ ESP700] command into the button</a></td><td><code>2022-09-18</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#273: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/273">[FEATURE REQUEST] Add support for pen plotters</a></td><td><code>2022-10-08</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#273: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/273">[FEATURE REQUEST] Add support for pen plotters</a></td><td><code>2022-10-08</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#85: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/85">[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them</a></td><td><code>2020-01-04</code></td><td><code>2022-08-15</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#85: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/85">[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them</a></td><td><code>2020-01-04</code></td><td><code>2022-08-15</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#249: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/249">[Enhancement]Clean up Interface UI according usage</a></td><td><code>2022-07-06</code></td><td><code>2022-08-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#249: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/249">[Enhancement]Clean up Interface UI according usage</a></td><td><code>2022-07-06</code></td><td><code>2022-08-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1</td><td>#242: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/242">[FEATURE REQUEST]Configuration  Wizard </a></td><td><code>2022-05-10</code></td><td><code>2022-06-06</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#242: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/242">[FEATURE REQUEST]Configuration  Wizard </a></td><td><code>2022-05-10</code></td><td><code>2022-06-06</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📁 ESP3D-TFT</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#77: <a href="https://github.com/luc-github/ESP3D-TFT/issues/77">Very slow communication with connected device to usb host</a></td><td><code>2024-10-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#76: <a href="https://github.com/luc-github/ESP3D-TFT/issues/76">[FEATURE REQUEST]Add Lua interpreter support like in ESP3D</a></td><td><code>2024-10-13</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#54: <a href="https://github.com/luc-github/ESP3D-TFT/issues/54">[FEATURE REQUEST]Move to lvgl 9.0</a></td><td><code>2024-01-17</code></td><td><code>2024-08-29</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#74: <a href="https://github.com/luc-github/ESP3D-TFT/issues/74">[FEATURE REQUEST]Add BTT GCODE thumbnails</a></td><td><code>2024-08-14</code></td><td><code>2024-08-14</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#67: <a href="https://github.com/luc-github/ESP3D-TFT/issues/67">[FEATURE REQUEST]Add support of macro defined by webui on screen</a></td><td><code>2024-04-21</code></td><td><code>2024-08-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-01-21</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#53: <a href="https://github.com/luc-github/ESP3D-TFT/issues/53">[FEATURE REQUEST]Do better snapshot code with no memory need</a></td><td><code>2024-01-07</code></td><td><code>2024-01-07</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#12: <a href="https://github.com/luc-github/ESP3D-TFT/issues/12">[FEATURE REQUEST]WhatsApp Notification</a></td><td><code>2023-02-20</code></td><td><code>2023-02-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#5: <a href="https://github.com/luc-github/ESP3D-TFT/issues/5">[ENHANCEMENT]Add Pin interrupt support on FT5X06 when supported to save mcu time instead of doing permanent polling</a></td><td><code>2022-10-01</code></td><td><code>2022-10-01</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📁 ESP3D-Configurator</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🚀 main</td><td>#16: <a href="https://github.com/luc-github/ESP3D-Configurator/issues/16">[FEATURE REQUEST]Web Flasher Tool</a></td><td><code>2023-05-18</code></td><td><code>2023-05-18</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 main</td><td>#5: <a href="https://github.com/luc-github/ESP3D-Configurator/issues/5">[Information]Devt status</a></td><td><code>2022-06-18</code></td><td><code>2022-08-18</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📁 esp3d.io</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🚀 main</td><td>#8: <a href="https://github.com/luc-github/esp3d.io/issues/8">Do a description page for each WebUI panel / Settings</a></td><td><code>2023-02-28</code></td><td><code>2023-02-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 main</td><td>#6: <a href="https://github.com/luc-github/esp3d.io/issues/6">Add Default setting description page</a></td><td><code>2023-02-28</code></td><td><code>2023-02-28</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+<details>
+<summary><b>📁 ESP32SSDP</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🚀 v2.x</td><td>#35: <a href="https://github.com/luc-github/ESP32SSDP/issues/35">[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 v2.x</td><td>#9: <a href="https://github.com/luc-github/ESP32SSDP/issues/9">[FEATURE REQUEST] Respont to multiple device types or callback?</a></td><td><code>2020-02-05</code></td><td><code>2020-02-21</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
 </details>
 
 ## 📈 Recent Activity
@@ -191,8 +542,8 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 10 |
-| New Issues | 4 |
+| Commits | 70 |
+| New Issues | 5 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
 
@@ -201,11 +552,11 @@ Author: Luc
 ```
     00 03 06 09 12 15 18 21
     -----------------------
-Mon ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
+Mon ▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓
 Tue ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
-Wed ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
-Thu ░ ░ ░ ░ ░ ░ ░ ░
-Fri ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
+Wed ▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓
+Thu ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
+Fri ▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓
 Sat ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
 Sun ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
 ```
@@ -216,7 +567,7 @@ Sun ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
 
 <div align="center">
 
-*🔄 Last updated: 2024-10-30 16:01:32 UTC*
+*🔄 Last updated: 2024-10-31 00:58:43 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
