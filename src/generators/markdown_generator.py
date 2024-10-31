@@ -177,6 +177,78 @@ class MarkdownGenerator:
         content.append('</details>')
         return content
     
+    def _generate_health_score_section(self, repo: Dict) -> List[str]:
+        """Generate health score section with suggestions"""
+        health_score = repo.get('health_score', {})
+        overall_score = health_score.get('overall_score', 0) * 100
+        content = [
+            f'**Health Score**: {self._generate_health_score_badge(repo)}',
+            '',
+            '<details>',
+            '<summary>📊 Health Score Details</summary>',
+            '',
+            '| Metric | Score | Status |',
+            '|--------|--------|--------|'
+        ]
+        
+        metrics = {
+            'documentation_score': {
+                'name': 'Documentation',
+                'suggestions': {
+                    'low': '- Add more detailed README\n- Create documentation directory\n- Add usage examples',
+                    'medium': '- Enhance API documentation\n- Add more code comments\n- Create wiki pages',
+                    'high': '- Keep documentation up to date\n- Consider adding video tutorials'
+                }
+            },
+            'maintenance_score': {
+                'name': 'Maintenance',
+                'suggestions': {
+                    'low': '- Increase commit frequency\n- Address stale issues\n- Set up automated testing',
+                    'medium': '- Improve test coverage\n- Regular dependency updates\n- Set up branch protection',
+                    'high': '- Monitor performance metrics\n- Regular security audits'
+                }
+            },
+            'activity_score': {
+                'name': 'Activity',
+                'suggestions': {
+                    'low': '- Engage with community\n- Regular status updates\n- Promote the project',
+                    'medium': '- Host community calls\n- Write blog posts\n- Create roadmap',
+                    'high': '- Consider feature requests\n- Regular releases'
+                }
+            },
+            'community_score': {
+                'name': 'Community',
+                'suggestions': {
+                    'low': '- Add contributing guidelines\n- Add code of conduct\n- Welcome new contributors',
+                    'medium': '- Create issue templates\n- Regular acknowledgments\n- Set up discussions',
+                    'high': '- Mentor new contributors\n- Recognize key contributors'
+                }
+            }
+        }
+        
+        for metric, info in metrics.items():
+            score = health_score.get(metric, 0) * 100
+            if score < 40:
+                status = '🔴 Needs Attention'
+                level = 'low'
+            elif score < 70:
+                status = '🟡 Good'
+                level = 'medium'
+            else:
+                status = '🟢 Excellent'
+                level = 'high'
+                
+            content.append(f'| {info["name"]} | {score:.1f}% | {status} |')
+            
+            # Add suggestions for metrics below 70%
+            if score < 70:
+                if len(content) > 0 and not content[-1].endswith('|'):
+                    content.append('')
+                content.append(f'**{info["name"]} Suggestions:**\n{info["suggestions"][level]}')
+        
+        content.extend(['', '</details>', ''])
+        return content
+    
     def _generate_branch_section(self, branch: Dict) -> List[str]:
         """Generate section for a single branch"""
         label_emoji = STATUS_EMOJIS['production'] if branch['is_production'] else STATUS_EMOJIS['development']
@@ -277,7 +349,7 @@ class MarkdownGenerator:
                 )
             
             content.extend(['</table>', '', '</details>', ''])
-        
+            content.extend(self._generate_health_score_section(repo))
         content.extend(['</details>', ''])
         return content
     
@@ -391,12 +463,21 @@ class MarkdownGenerator:
             return "Error generating activity chart"
           
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
-        """Generate ASCII heatmap for activity"""
+        """Generate colored activity heatmap"""
         if not heatmap_data:
             return "No heatmap data available"
             
         days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
         hours = [f'{h:02d}' for h in range(0, 24, 3)]
+        
+        # Utiliser des émojis colorés pour différents niveaux d'activité
+        activity_levels = {
+            0: "⬜",  # Blanc pour aucune activité
+            1: "🟦",  # Bleu clair pour faible activité
+            2: "🟩",  # Vert pour activité moyenne
+            3: "🟨",  # Jaune pour activité élevée
+            4: "🟥"   # Rouge pour très haute activité
+        }
         
         heatmap = []
         
@@ -409,25 +490,32 @@ class MarkdownGenerator:
         for day_idx, day_data in enumerate(heatmap_data):
             row = [days[day_idx]]
             for hour_idx in range(0, 24, 3):
-                # Calculate average activity for this 3-hour block
                 block_activity = sum(day_data[hour_idx:hour_idx + 3]) / 3
                 
-                # Convert activity level to character
+                # Convert activity level to emoji
                 if block_activity == 0:
-                    char = CHART_CHARS['block_empty']
+                    level = 0
                 elif block_activity < 2:
-                    char = CHART_CHARS['block_quarter']
+                    level = 1
                 elif block_activity < 5:
-                    char = CHART_CHARS['block_half']
+                    level = 2
+                elif block_activity < 10:
+                    level = 3
                 else:
-                    char = CHART_CHARS['block_full']
+                    level = 4
                     
-                row.append(char)
+                row.append(activity_levels[level])
                 
             heatmap.append(' '.join([f"{row[0]:<3}"] + row[1:]))
+        
+        # Add legend
+        heatmap.extend([
+            '',
+            'Legend:',
+            f'{activity_levels[0]} None  {activity_levels[1]} Low  {activity_levels[2]} Medium  {activity_levels[3]} High  {activity_levels[4]} Very High'
+        ])
             
         return '\n'.join(heatmap)
-    
     def _get_issue_state_marker(self, issue: Dict) -> str:
         """Get appropriate emoji marker for issue state"""
         if issue.get('is_pr'):
