@@ -415,46 +415,68 @@ class MarkdownGenerator:
         if not commit_frequency:
             return "No activity data available"
         
-        # Convertir les données en structure unifiée
         data = {
             'Daily': commit_frequency.get('daily', 0),
             'Weekly': commit_frequency.get('weekly', 0),
             'Monthly': commit_frequency.get('monthly', 0)
         }
         
-        # Déterminer l'échelle
-        max_value = max(data.values())
-        if max_value == 0:
+        if max(data.values()) == 0:
             return "No commits in this period"
         
-        chart_height = 7
         activity_levels = {
-            0: "⬜",  # Pas d'activité
-            1: "🟦",  # Faible activité
-            2: "🟩",  # Activité modérée
-            3: "🟨",  # Activité haute
-            4: "🟥"   # Activité très haute
+            'Daily': {
+                0: '⬜ No activity',
+                1: '🟦 Few (1-2 commits)',
+                2: '🟩 Some (3-5 commits)',
+                3: '🟨 Active (6-10 commits)',
+                4: '🟥 Very Active (>10 commits)'
+            },
+            'Weekly': {
+                0: '⬜ No activity',
+                1: '🟦 Few (1-10 commits)',
+                2: '🟩 Some (11-20 commits)',
+                3: '🟨 Active (21-30 commits)',
+                4: '🟥 Very Active (>30 commits)'
+            },
+            'Monthly': {
+                0: '⬜ No activity',
+                1: '🟦 Few (1-25 commits)',
+                2: '🟩 Some (26-50 commits)',
+                3: '🟨 Active (51-75 commits)',
+                4: '🟥 Very Active (>75 commits)'
+            }
         }
         
         chart = []
-        chart.append("Activity Levels:")
+        chart.append("Commit Activity:\n")
         
-        # Générer les barres du graphique
+        # Générer les barres avec des seuils spécifiques pour chaque période
         for period, value in data.items():
-            # Normaliser la valeur sur une échelle de 0-4
-            normalized_value = min(4, int((value / max_value) * 4))
-            bar = activity_levels[normalized_value]
-            chart.append(f"{period:8} {bar} {value:.1f} commits")
+            if period == 'Daily':
+                if value == 0: level = 0
+                elif value <= 2: level = 1
+                elif value <= 5: level = 2
+                elif value <= 10: level = 3
+                else: level = 4
+            elif period == 'Weekly':
+                if value == 0: level = 0
+                elif value <= 10: level = 1
+                elif value <= 20: level = 2
+                elif value <= 30: level = 3
+                else: level = 4
+            else:  # Monthly
+                if value == 0: level = 0
+                elif value <= 25: level = 1
+                elif value <= 50: level = 2
+                elif value <= 75: level = 3
+                else: level = 4
+                
+            chart.append(f"{period:8} {activity_levels[period][level]:<30} ({value:.1f} commits)")
         
-        # Ajouter une légende
-        chart.extend([
-            '',
-            'Legend:',
-            f"⬜ None   🟦 Low (1-25%)   🟩 Medium (26-50%)",
-            f"🟨 High (51-75%)   🟥 Very High (76-100%)"
-        ])
-        
-        return '\n'.join(chart)  
+        return '\n'.join(chart)
+
+
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
         """Generate colored activity heatmap"""
         if not heatmap_data:
