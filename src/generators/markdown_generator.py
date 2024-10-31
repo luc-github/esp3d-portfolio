@@ -71,7 +71,7 @@ class MarkdownGenerator:
             if repo['type'] == 'main':
                 type_emoji = STATUS_EMOJIS['main_project']
                 content.append(
-                    f'| [{type_emoji} {repo["name"]}](#{repo["name"].lower()}) | Main Project | '
+                    f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Main Project | '
                     f'{repo["description"] or "Project status and issues"} |'
                 )
         
@@ -153,10 +153,9 @@ class MarkdownGenerator:
     def _generate_repository_section(self, repo: Dict) -> List[str]:
         """Generate section for a single repository"""
         type_emoji = STATUS_EMOJIS['main_project'] if repo['type'] == 'main' else STATUS_EMOJIS['dependency']
-        
+       
         content = [
-            f'<details open>',
-            f'<summary><h3>{type_emoji} {repo["name"]}</h3></summary>',
+            f'<details open id="{repo["name"].lower()}">\n<summary><h3>{type_emoji} {repo["name"]}</h3></summary>'
             '',
             '<table><tr><td>',
             '',
@@ -470,13 +469,13 @@ class MarkdownGenerator:
         days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
         hours = [f'{h:02d}' for h in range(0, 24, 3)]
         
-        # Utiliser des émojis colorés pour différents niveaux d'activité
+        # Plus explicite et plus coloré
         activity_levels = {
-            0: "⬜",  # Blanc pour aucune activité
-            1: "🟦",  # Bleu clair pour faible activité
-            2: "🟩",  # Vert pour activité moyenne
-            3: "🟨",  # Jaune pour activité élevée
-            4: "🟥"   # Rouge pour très haute activité
+            0: ("⬜", "No activity"),
+            1: ("🟦", "Low (1-2 commits)"),
+            2: ("🟩", "Moderate (3-5 commits)"),
+            3: ("🟨", "High (6-10 commits)"),
+            4: ("🟥", "Very High (>10 commits)")
         }
         
         heatmap = []
@@ -495,24 +494,24 @@ class MarkdownGenerator:
                 # Convert activity level to emoji
                 if block_activity == 0:
                     level = 0
-                elif block_activity < 2:
+                elif block_activity <= 2:
                     level = 1
-                elif block_activity < 5:
+                elif block_activity <= 5:
                     level = 2
-                elif block_activity < 10:
+                elif block_activity <= 10:
                     level = 3
                 else:
                     level = 4
                     
-                row.append(activity_levels[level])
+                row.append(activity_levels[level][0])
                 
             heatmap.append(' '.join([f"{row[0]:<3}"] + row[1:]))
         
-        # Add legend
+        # Add legend with descriptions
         heatmap.extend([
             '',
             'Legend:',
-            f'{activity_levels[0]} None  {activity_levels[1]} Low  {activity_levels[2]} Medium  {activity_levels[3]} High  {activity_levels[4]} Very High'
+            ' '.join(f"{emoji} {desc}" for emoji, desc in activity_levels.values())
         ])
             
         return '\n'.join(heatmap)
