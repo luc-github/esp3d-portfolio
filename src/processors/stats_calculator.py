@@ -489,19 +489,28 @@ class StatsCalculator:
     def _calculate_commit_trend(self, repositories: List[Dict]) -> List[Dict]:
         """Calculate trend of commits over time"""
         trend_data = []
-        
+    
         for repo in repositories:
             activity = repo.get('activity', {}).get('commit_activity', [])
             for week_data in activity:
-                if isinstance(week_data['week'], datetime):
-                    timestamp = int(week_data['week'].timestamp())
-                else:
-                    timestamp = week_data['week']
+                try:
+                    # Plus robuste gestion du timestamp
+                    if isinstance(week_data.get('week'), (int, float)):
+                        timestamp = int(week_data['week'])
+                    elif isinstance(week_data.get('week'), str):
+                        timestamp = int(float(week_data['week']))
+                    elif isinstance(week_data.get('week'), datetime):
+                        timestamp = int(week_data['week'].timestamp())
+                    else:
+                        continue  # Skip invalid data
                     
-                trend_data.append({
-                    'date': datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d'),
-                    'count': week_data['total']
-                })
+                    trend_data.append({
+                        'date': datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d'),
+                        'count': int(week_data.get('total', 0))
+                    })
+                except (ValueError, TypeError, AttributeError) as e:
+                    self.logger.warning(f"Error processing week data: {e}")
+                    continue
                 
         # Sort by date and combine data points for same dates
         sorted_data = {}

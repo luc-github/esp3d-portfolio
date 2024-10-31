@@ -82,9 +82,10 @@ class IssueProcessor:
     
     def _estimate_issue_size(self, issue: Dict) -> str:
         """Estimate the size/effort of an issue"""
-        body_length = len(issue.get('body', ''))
+        body = issue.get('body', '') or ''
+        body_length = len(body)
         labels = issue.get('labels', [])
-        
+     
         # Size estimation based on content and labels
         if any(label in labels for label in ['epic', 'large']):
             return 'large'
