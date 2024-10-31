@@ -438,6 +438,36 @@ Author: Luc
 
 </details>
 
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
+
+</details>
+
 <details>
 <summary><b>📁 ESP3DLib</b></summary>
 
@@ -450,6 +480,36 @@ Author: Luc
 <tr><td>⭕</td><td>🚀 master</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
 </table>
+
+</details>
+
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
 
 </details>
 
@@ -480,6 +540,36 @@ Author: Luc
 
 </details>
 
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
+
+</details>
+
 <details>
 <summary><b>📁 ESP3D-TFT</b></summary>
 
@@ -498,6 +588,36 @@ Author: Luc
 
 </details>
 
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
+
+</details>
+
 <details>
 <summary><b>📁 ESP3D-Configurator</b></summary>
 
@@ -506,6 +626,36 @@ Author: Luc
 <tr><td>⭕</td><td>🚀 main</td><td>#16: <a href="https://github.com/luc-github/ESP3D-Configurator/issues/16">[FEATURE REQUEST]Web Flasher Tool</a></td><td><code>2023-05-18</code></td><td><code>2023-05-18</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 main</td><td>#5: <a href="https://github.com/luc-github/ESP3D-Configurator/issues/5">[Information]Devt status</a></td><td><code>2022-06-18</code></td><td><code>2022-08-18</code></td><td style="color: #000000">normal</td></tr>
 </table>
+
+</details>
+
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
 
 </details>
 
@@ -520,6 +670,36 @@ Author: Luc
 
 </details>
 
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
+
+</details>
+
 <details>
 <summary><b>📁 ESP32SSDP</b></summary>
 
@@ -528,6 +708,36 @@ Author: Luc
 <tr><td>⭕</td><td>🚀 v2.x</td><td>#35: <a href="https://github.com/luc-github/ESP32SSDP/issues/35">[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 v2.x</td><td>#9: <a href="https://github.com/luc-github/ESP32SSDP/issues/9">[FEATURE REQUEST] Respont to multiple device types or callback?</a></td><td><code>2020-02-05</code></td><td><code>2020-02-21</code></td><td style="color: #000000">normal</td></tr>
 </table>
+
+</details>
+
+**Health Score**: <span style="color: #ff0000">12.9%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 10.0% | 🔴 Needs Attention |
+**Maintenance Suggestions:**
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 41.6% | 🟡 Good |
+**Community Suggestions:**
+- Create issue templates
+- Regular acknowledgments
+- Set up discussions
 
 </details>
 
@@ -552,13 +762,16 @@ Author: Luc
 ```
     00 03 06 09 12 15 18 21
     -----------------------
-Mon ▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓
-Tue ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
-Wed ▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓
-Thu ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
-Fri ▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓
-Sat ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
-Sun ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
+Mon 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+Tue 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+Wed 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+Thu 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+Fri 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩
+Sat 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+Sun 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+
+Legend:
+⬜ None  🟦 Low  🟩 Medium  🟨 High  🟥 Very High
 ```
 
 </details>
@@ -567,7 +780,7 @@ Sun ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
 
 <div align="center">
 
-*🔄 Last updated: 2024-10-31 08:03:08 UTC*
+*🔄 Last updated: 2024-10-31 08:16:38 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

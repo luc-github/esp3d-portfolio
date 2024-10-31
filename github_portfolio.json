@@ -1760,18 +1760,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "2760",
-                "2762",
-                "2758",
-                "2711",
-                "2571",
-                "27",
-                "2592",
-                "2561",
+                "40",
                 "2543",
-                "2524",
+                "2592",
+                "2762",
+                "2561",
                 "37",
-                "40"
+                "2758",
+                "2524",
+                "27",
+                "2760",
+                "2571",
+                "2711"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -1893,18 +1893,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "2760",
-                "2762",
-                "2758",
-                "2711",
-                "2571",
-                "27",
-                "2592",
-                "2561",
+                "40",
                 "2543",
-                "2524",
+                "2592",
+                "2762",
+                "2561",
                 "37",
-                "40"
+                "2758",
+                "2524",
+                "27",
+                "2760",
+                "2571",
+                "2711"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2806,7 +2806,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1481,
-              "days_since_update": 17,
+              "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2835,7 +2835,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1561,
-              "days_since_update": 17,
+              "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3107,7 +3107,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1481,
-              "days_since_update": 17,
+              "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3136,7 +3136,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1561,
-              "days_since_update": 17,
+              "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -7926,13 +7926,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4860,
+      "remaining": 4859,
       "reset": "2024-10-31T08:55:09+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-10-31T08:04:08+00:00"
+      "reset": "2024-10-31T08:17:38+00:00"
     }
   },
   "stats": {
@@ -7960,7 +7960,7 @@
       "open_count": 67,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 777.5010666010194,
+      "avg_age_days": 777.5104375460425,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 67
@@ -8269,216 +8269,7 @@
           "count": 0
         }
       ],
-      "commit_trend": [
-        {
-          "date": "2023-11-05",
-          "count": 4
-        },
-        {
-          "date": "2023-11-12",
-          "count": 7
-        },
-        {
-          "date": "2023-11-19",
-          "count": 2
-        },
-        {
-          "date": "2023-11-26",
-          "count": 2
-        },
-        {
-          "date": "2023-12-03",
-          "count": 9
-        },
-        {
-          "date": "2023-12-10",
-          "count": 0
-        },
-        {
-          "date": "2023-12-17",
-          "count": 2
-        },
-        {
-          "date": "2023-12-24",
-          "count": 0
-        },
-        {
-          "date": "2023-12-31",
-          "count": 4
-        },
-        {
-          "date": "2024-01-07",
-          "count": 7
-        },
-        {
-          "date": "2024-01-14",
-          "count": 2
-        },
-        {
-          "date": "2024-01-21",
-          "count": 8
-        },
-        {
-          "date": "2024-01-28",
-          "count": 7
-        },
-        {
-          "date": "2024-02-04",
-          "count": 10
-        },
-        {
-          "date": "2024-02-11",
-          "count": 9
-        },
-        {
-          "date": "2024-02-18",
-          "count": 1
-        },
-        {
-          "date": "2024-02-25",
-          "count": 2
-        },
-        {
-          "date": "2024-03-03",
-          "count": 18
-        },
-        {
-          "date": "2024-03-10",
-          "count": 18
-        },
-        {
-          "date": "2024-03-17",
-          "count": 31
-        },
-        {
-          "date": "2024-03-24",
-          "count": 30
-        },
-        {
-          "date": "2024-03-31",
-          "count": 14
-        },
-        {
-          "date": "2024-04-07",
-          "count": 8
-        },
-        {
-          "date": "2024-04-14",
-          "count": 32
-        },
-        {
-          "date": "2024-04-21",
-          "count": 7
-        },
-        {
-          "date": "2024-04-28",
-          "count": 8
-        },
-        {
-          "date": "2024-05-05",
-          "count": 1
-        },
-        {
-          "date": "2024-05-12",
-          "count": 0
-        },
-        {
-          "date": "2024-05-19",
-          "count": 0
-        },
-        {
-          "date": "2024-05-26",
-          "count": 13
-        },
-        {
-          "date": "2024-06-02",
-          "count": 7
-        },
-        {
-          "date": "2024-06-09",
-          "count": 1
-        },
-        {
-          "date": "2024-06-16",
-          "count": 2
-        },
-        {
-          "date": "2024-06-23",
-          "count": 0
-        },
-        {
-          "date": "2024-06-30",
-          "count": 0
-        },
-        {
-          "date": "2024-07-07",
-          "count": 1
-        },
-        {
-          "date": "2024-07-14",
-          "count": 1
-        },
-        {
-          "date": "2024-07-21",
-          "count": 1
-        },
-        {
-          "date": "2024-07-28",
-          "count": 0
-        },
-        {
-          "date": "2024-08-04",
-          "count": 7
-        },
-        {
-          "date": "2024-08-11",
-          "count": 2
-        },
-        {
-          "date": "2024-08-18",
-          "count": 8
-        },
-        {
-          "date": "2024-08-25",
-          "count": 1
-        },
-        {
-          "date": "2024-09-01",
-          "count": 8
-        },
-        {
-          "date": "2024-09-08",
-          "count": 2
-        },
-        {
-          "date": "2024-09-15",
-          "count": 1
-        },
-        {
-          "date": "2024-09-22",
-          "count": 0
-        },
-        {
-          "date": "2024-09-29",
-          "count": 3
-        },
-        {
-          "date": "2024-10-06",
-          "count": 0
-        },
-        {
-          "date": "2024-10-13",
-          "count": 1
-        },
-        {
-          "date": "2024-10-20",
-          "count": 4
-        },
-        {
-          "date": "2024-10-27",
-          "count": 3
-        }
-      ]
+      "commit_trend": []
     }
   }
 }
