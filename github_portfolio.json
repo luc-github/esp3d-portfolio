@@ -1760,18 +1760,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "40",
-                "2762",
-                "2524",
-                "2592",
                 "2561",
-                "37",
-                "2711",
+                "2592",
+                "40",
                 "27",
-                "2758",
-                "2571",
+                "37",
+                "2543",
+                "2524",
+                "2762",
                 "2760",
-                "2543"
+                "2758",
+                "2711",
+                "2571"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -1893,18 +1893,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "40",
-                "2762",
-                "2524",
-                "2592",
                 "2561",
-                "37",
-                "2711",
+                "2592",
+                "40",
                 "27",
-                "2758",
-                "2571",
+                "37",
+                "2543",
+                "2524",
+                "2762",
                 "2760",
-                "2543"
+                "2758",
+                "2711",
+                "2571"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -7926,13 +7926,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4858,
-      "reset": "2024-10-31T10:18:53+00:00"
+      "remaining": 4999,
+      "reset": "2024-10-31T11:22:22+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-10-31T10:01:29+00:00"
+      "reset": "2024-10-31T10:23:47+00:00"
     }
   },
   "stats": {
@@ -7960,7 +7960,7 @@
       "open_count": 67,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 777.5825599049778,
+      "avg_age_days": 777.5980407672924,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 67
