@@ -219,6 +219,20 @@ class StatsCalculator:
                             
         return heatmap
     
+    def _get_last_commit_date(self, repository: Dict) -> Optional[datetime]:
+        """Get the date of the last commit from any branch"""
+        last_date = None
+        
+        for branch in repository.get('branches', []):
+            if 'last_commit' in branch:
+                commit_date = branch['last_commit'].get('date')
+                if commit_date:
+                    # Convertir la date string en datetime
+                    date = datetime.fromisoformat(commit_date.replace('Z', '+00:00'))
+                    if not last_date or date > last_date:
+                        last_date = date
+                        
+        return last_date
 
     def calculate_repository_health(self, repository: Dict) -> Dict:
         """Calculate repository health metrics with weighted components"""
