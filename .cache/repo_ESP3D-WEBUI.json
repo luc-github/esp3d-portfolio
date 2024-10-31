@@ -1,0 +1,1185 @@
+{
+  "timestamp": 1730336295.6433003,
+  "data": {
+    "name": "ESP3D-WEBUI",
+    "type": "main",
+    "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+    "url": "https://github.com/luc-github/ESP3D-WEBUI",
+    "language": "JavaScript",
+    "created_at": "2017-05-19T07:02:14+00:00",
+    "updated_at": "2024-10-29T21:06:06+00:00",
+    "branches": [
+      {
+        "name": "2.1",
+        "label": "Production",
+        "is_production": true,
+        "last_commit": {
+          "sha": "0b80ee0",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2024-10-01T04:14:29+00:00"
+        },
+        "protected": false,
+        "issues": [
+          {
+            "number": 390,
+            "title": "[FEATURE REQUEST]Port surfacing wizard as extension ",
+            "body": "the surfacing wizard is a good candidate for an extension \r\nPorting : https://github.com/luc-github/ESP3D-WEBUI/pull/197 should not be too difficult and also help to review extension API",
+            "state": "open",
+            "created_at": "2024-06-02T23:46:47+00:00",
+            "updated_at": "2024-10-13T08:02:44+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/390",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned",
+              "Under Investigation",
+              "CNC",
+              "grblHAL",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 273,
+            "title": "[FEATURE REQUEST] Add support for pen plotters",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\nThe ESP3D project has amazing flexibility. I would like to add support for hpgl pen plotters. These great machines are just too good to let die out. Adding the possibility of using these machines within the ESP3D framework would open up features such as wifi connectivity, SD plotting and all the other fantastic features that ESP3D has to offer\r\n\r\n**Describe the solution you'd like**\r\nThe integration of hpgl commands into some of the panels such as JOG and status. The core features like the SD file system and terminal are already 99% usable and only need minor changes to use.\r\n\r\n**Describe alternatives you've considered**\r\nI had started a software that has similar features. It was not even nearly as stable as ESP3D . After looking at the ESP3D project I realized I was just trying to re-invent the wheel. The required changes have already been tried and tested so should be good to add to ESP3D. The changes to the UI would be very much within the framework of the existing ESP3D UI and would not require a total re write.\r\n\r\nBasic notes here \r\nhttps://github.com/ithinkido/ESP3D/tree/3.0_HPGL/HPGL\r\n\r\n",
+            "state": "open",
+            "created_at": "2022-10-08T14:50:28+00:00",
+            "updated_at": "2024-10-13T07:39:07+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/273",
+            "is_pr": false,
+            "labels": [
+              "Feature request"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 265,
+            "title": "[FEATURE REQUEST]Integrate the [ ESP700] command into the button",
+            "body": "Integrate the [ ESP700] command into the  button so you can start file printing directly from the button in GCODE HOST mode",
+            "state": "open",
+            "created_at": "2022-09-18T01:54:13+00:00",
+            "updated_at": "2024-10-13T07:40:33+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/265",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Work in progress"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 249,
+            "title": "[Enhancement]Clean up Interface UI according usage",
+            "body": "Multiple conditions is now supported - so in Settings->Intefaces some controls could be hidden if not in usage context\r\n\r\n",
+            "state": "open",
+            "created_at": "2022-07-06T07:13:52+00:00",
+            "updated_at": "2022-08-13T20:00:02+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/249",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 244,
+            "title": "CNC process visualization functionality",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
+            "state": "open",
+            "created_at": "2022-05-14T20:46:19+00:00",
+            "updated_at": "2024-10-13T08:02:23+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Work in progress",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": "sp5iou"
+          },
+          {
+            "number": 242,
+            "title": "[FEATURE REQUEST]Configuration  Wizard ",
+            "body": "now all ESP3D Feature are ready and 3D printer  feature are almost ready too, it is time to define a configuration wizard to:\r\n* Setup Network\r\n* Setup UI according printer features \r\n\r\n",
+            "state": "open",
+            "created_at": "2022-05-10T04:57:31+00:00",
+            "updated_at": "2022-06-06T08:28:09+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/242",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "Feedback Welcome",
+              "3.0",
+              "Planned",
+              "Work in progress"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 122,
+            "title": "[FEATURE REQUEST]PCB and Engraving Milling autoleveling",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\nI would like the ability to probe a surface and modify the loaded g code to account for surface inconsistencies\r\n\r\n**Describe the solution you'd like**\r\nI'd like to be able to specify a grid of points that could be probed and generate a mesh. this mesh could then be used to correct uploaded gcode files to account for z height inconsistencies. This mesh should be able to be applied to multiple files via a button and the height should be able to be downloaded for future use.\r\n\r\n**Describe alternatives you've considered**\r\nRight now the only work around is to attached the GRBL ESP32 to a computer and run one of the programs that can do this. These are\r\nOpenCNCpilot, bCNC, Universal G code Sender.\r\n\r\nIdeally I would like to be able to run this self contained\r\n\r\n**Additional context**\r\n\r\n",
+            "state": "open",
+            "created_at": "2020-10-10T22:29:15+00:00",
+            "updated_at": "2024-10-13T08:03:58+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/122",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned",
+              "GRBL",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 106,
+            "title": "[FEATURE REQUEST] Bed Mesh Leveling Visualizer",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\n\r\nI am using an octoprint plugin called bed visualizer to display G29 T. Would be nice to have something like this in the esp3D. \r\n\r\n**Describe the solution you'd like**\r\n\r\nI basically want to be able to see this a graph like this on the web page of the ESP3D. Or at least a very basic graph that shows 4 corners and how much they differ from each other, so I know which knobs to turn to calibrate bed so it's physically as level as possible. \r\n\r\n\r\n**Additional context**\r\n\r\n![image](https://user-images.githubusercontent.com/33436796/88237163-a66d8e80-cc4c-11ea-975b-520c49e9f7da.png)\r\n",
+            "state": "open",
+            "created_at": "2020-07-22T22:58:30+00:00",
+            "updated_at": "2024-10-13T08:03:25+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/106",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 85,
+            "title": "[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them",
+            "body": "```\r\nOne UI to rule them all, One UI to find them,\r\nOne UI to bring them all and in the darkness bind them\r\n```\r\nA way to agregate all UI/esp3d and control them like an esp3d farm, even sending jobs from one to another\r\nThis tool could also handle printers access for fab lab or a classroom  for example\r\n\r\nIt could be used also with usage of NFC devices - imagination is just the limit\r\n\r\nThis thread is more for a discussion  for the moment to see if there is a need or it is just a fake good idea ^_^     ",
+            "state": "open",
+            "created_at": "2020-01-04T20:21:40+00:00",
+            "updated_at": "2022-08-15T10:32:23+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/85",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "Feedback Welcome",
+              "3.0"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
+      },
+      {
+        "name": "3.0",
+        "label": "Development",
+        "is_production": false,
+        "last_commit": {
+          "sha": "0b0116f",
+          "message": "update packages",
+          "author": "Luc",
+          "date": "2024-10-13T07:34:05+00:00"
+        },
+        "protected": false,
+        "issues": [
+          {
+            "number": 390,
+            "title": "[FEATURE REQUEST]Port surfacing wizard as extension ",
+            "body": "the surfacing wizard is a good candidate for an extension \r\nPorting : https://github.com/luc-github/ESP3D-WEBUI/pull/197 should not be too difficult and also help to review extension API",
+            "state": "open",
+            "created_at": "2024-06-02T23:46:47+00:00",
+            "updated_at": "2024-10-13T08:02:44+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/390",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned",
+              "Under Investigation",
+              "CNC",
+              "grblHAL",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 273,
+            "title": "[FEATURE REQUEST] Add support for pen plotters",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\nThe ESP3D project has amazing flexibility. I would like to add support for hpgl pen plotters. These great machines are just too good to let die out. Adding the possibility of using these machines within the ESP3D framework would open up features such as wifi connectivity, SD plotting and all the other fantastic features that ESP3D has to offer\r\n\r\n**Describe the solution you'd like**\r\nThe integration of hpgl commands into some of the panels such as JOG and status. The core features like the SD file system and terminal are already 99% usable and only need minor changes to use.\r\n\r\n**Describe alternatives you've considered**\r\nI had started a software that has similar features. It was not even nearly as stable as ESP3D . After looking at the ESP3D project I realized I was just trying to re-invent the wheel. The required changes have already been tried and tested so should be good to add to ESP3D. The changes to the UI would be very much within the framework of the existing ESP3D UI and would not require a total re write.\r\n\r\nBasic notes here \r\nhttps://github.com/ithinkido/ESP3D/tree/3.0_HPGL/HPGL\r\n\r\n",
+            "state": "open",
+            "created_at": "2022-10-08T14:50:28+00:00",
+            "updated_at": "2024-10-13T07:39:07+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/273",
+            "is_pr": false,
+            "labels": [
+              "Feature request"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 265,
+            "title": "[FEATURE REQUEST]Integrate the [ ESP700] command into the button",
+            "body": "Integrate the [ ESP700] command into the  button so you can start file printing directly from the button in GCODE HOST mode",
+            "state": "open",
+            "created_at": "2022-09-18T01:54:13+00:00",
+            "updated_at": "2024-10-13T07:40:33+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/265",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Work in progress"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 249,
+            "title": "[Enhancement]Clean up Interface UI according usage",
+            "body": "Multiple conditions is now supported - so in Settings->Intefaces some controls could be hidden if not in usage context\r\n\r\n",
+            "state": "open",
+            "created_at": "2022-07-06T07:13:52+00:00",
+            "updated_at": "2022-08-13T20:00:02+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/249",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 244,
+            "title": "CNC process visualization functionality",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
+            "state": "open",
+            "created_at": "2022-05-14T20:46:19+00:00",
+            "updated_at": "2024-10-13T08:02:23+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Work in progress",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": "sp5iou"
+          },
+          {
+            "number": 242,
+            "title": "[FEATURE REQUEST]Configuration  Wizard ",
+            "body": "now all ESP3D Feature are ready and 3D printer  feature are almost ready too, it is time to define a configuration wizard to:\r\n* Setup Network\r\n* Setup UI according printer features \r\n\r\n",
+            "state": "open",
+            "created_at": "2022-05-10T04:57:31+00:00",
+            "updated_at": "2022-06-06T08:28:09+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/242",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "Feedback Welcome",
+              "3.0",
+              "Planned",
+              "Work in progress"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 122,
+            "title": "[FEATURE REQUEST]PCB and Engraving Milling autoleveling",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\nI would like the ability to probe a surface and modify the loaded g code to account for surface inconsistencies\r\n\r\n**Describe the solution you'd like**\r\nI'd like to be able to specify a grid of points that could be probed and generate a mesh. this mesh could then be used to correct uploaded gcode files to account for z height inconsistencies. This mesh should be able to be applied to multiple files via a button and the height should be able to be downloaded for future use.\r\n\r\n**Describe alternatives you've considered**\r\nRight now the only work around is to attached the GRBL ESP32 to a computer and run one of the programs that can do this. These are\r\nOpenCNCpilot, bCNC, Universal G code Sender.\r\n\r\nIdeally I would like to be able to run this self contained\r\n\r\n**Additional context**\r\n\r\n",
+            "state": "open",
+            "created_at": "2020-10-10T22:29:15+00:00",
+            "updated_at": "2024-10-13T08:03:58+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/122",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned",
+              "GRBL",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 106,
+            "title": "[FEATURE REQUEST] Bed Mesh Leveling Visualizer",
+            "body": "**Is your feature request related to a problem? Please describe.**\r\n\r\nI am using an octoprint plugin called bed visualizer to display G29 T. Would be nice to have something like this in the esp3D. \r\n\r\n**Describe the solution you'd like**\r\n\r\nI basically want to be able to see this a graph like this on the web page of the ESP3D. Or at least a very basic graph that shows 4 corners and how much they differ from each other, so I know which knobs to turn to calibrate bed so it's physically as level as possible. \r\n\r\n\r\n**Additional context**\r\n\r\n![image](https://user-images.githubusercontent.com/33436796/88237163-a66d8e80-cc4c-11ea-975b-520c49e9f7da.png)\r\n",
+            "state": "open",
+            "created_at": "2020-07-22T22:58:30+00:00",
+            "updated_at": "2024-10-13T08:03:25+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/106",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "3.0",
+              "Planned",
+              "Extension"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 85,
+            "title": "[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them",
+            "body": "```\r\nOne UI to rule them all, One UI to find them,\r\nOne UI to bring them all and in the darkness bind them\r\n```\r\nA way to agregate all UI/esp3d and control them like an esp3d farm, even sending jobs from one to another\r\nThis tool could also handle printers access for fab lab or a classroom  for example\r\n\r\nIt could be used also with usage of NFC devices - imagination is just the limit\r\n\r\nThis thread is more for a discussion  for the moment to see if there is a need or it is just a fake good idea ^_^     ",
+            "state": "open",
+            "created_at": "2020-01-04T20:21:40+00:00",
+            "updated_at": "2022-08-15T10:32:23+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/85",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "Feedback Welcome",
+              "3.0"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "login": "luc-github",
+        "contributions": 216,
+        "url": "https://github.com/luc-github"
+      },
+      {
+        "login": "allcontributors[bot]",
+        "contributions": 31,
+        "url": "https://github.com/apps/allcontributors"
+      },
+      {
+        "login": "dependabot[bot]",
+        "contributions": 6,
+        "url": "https://github.com/apps/dependabot"
+      },
+      {
+        "login": "cotepat",
+        "contributions": 5,
+        "url": "https://github.com/cotepat"
+      },
+      {
+        "login": "leseaw",
+        "contributions": 4,
+        "url": "https://github.com/leseaw"
+      },
+      {
+        "login": "lucmoda",
+        "contributions": 3,
+        "url": "https://github.com/lucmoda"
+      },
+      {
+        "login": "3d-gussner",
+        "contributions": 2,
+        "url": "https://github.com/3d-gussner"
+      },
+      {
+        "login": "vivian-ng",
+        "contributions": 2,
+        "url": "https://github.com/vivian-ng"
+      },
+      {
+        "login": "Engineer2Designer",
+        "contributions": 1,
+        "url": "https://github.com/Engineer2Designer"
+      },
+      {
+        "login": "drzejkopf",
+        "contributions": 1,
+        "url": "https://github.com/drzejkopf"
+      }
+    ],
+    "activity": {
+      "recent_commits": [
+        {
+          "sha": "0b80ee0",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2024-10-01T04:14:29+00:00"
+        },
+        {
+          "sha": "0229794",
+          "message": "Update logo to avoid quality lost at resize",
+          "author": "Luc",
+          "date": "2024-10-01T04:11:33+00:00"
+        },
+        {
+          "sha": "80d64a5",
+          "message": "Add Anolex",
+          "author": "Luc",
+          "date": "2024-10-01T04:06:37+00:00"
+        },
+        {
+          "sha": "9725ab2",
+          "message": "Bump micromatch, gulp-cli and gulp (#400)\n\nBumps [micromatch](https://github.com/micromatch/micromatch) to 4.0.8 and updates ancestor dependencies [micromatch](https://github.com/micromatch/micromatch), [gulp-cli](https://github.com/gulpjs/gulp-cli) and [gulp](https://github.com/gulpjs/gulp). These dependencies need to be updated together.\r\n\r\n\r\nUpdates `micromatch` from 4.0.4 to 4.0.8\r\n- [Release notes](https://github.com/micromatch/micromatch/releases)\r\n- [Changelog](https://github.com/micromatch/micromatch/blob/4.0.8/CHANGELOG.md)\r\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.4...4.0.8)\r\n\r\nUpdates `gulp-cli` from 2.3.0 to 3.0.0\r\n- [Release notes](https://github.com/gulpjs/gulp-cli/releases)\r\n- [Changelog](https://github.com/gulpjs/gulp-cli/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/gulpjs/gulp-cli/compare/v2.3.0...v3.0.0)\r\n\r\nUpdates `gulp` from 4.0.2 to 5.0.0\r\n- [Release notes](https://github.com/gulpjs/gulp/releases)\r\n- [Changelog](https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: micromatch\r\n  dependency-type: indirect\r\n- dependency-name: gulp-cli\r\n  dependency-type: direct:production\r\n- dependency-name: gulp\r\n  dependency-type: direct:development\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "author": "dependabot[bot]",
+          "date": "2024-08-26T13:47:24+00:00"
+        },
+        {
+          "sha": "5e05641",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2024-03-23T01:19:57+00:00"
+        },
+        {
+          "sha": "5472f08",
+          "message": "Bump es5-ext from 0.10.53 to 0.10.63 (#382)\n\nBumps [es5-ext](https://github.com/medikoo/es5-ext) from 0.10.53 to 0.10.63.\r\n- [Release notes](https://github.com/medikoo/es5-ext/releases)\r\n- [Changelog](https://github.com/medikoo/es5-ext/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/medikoo/es5-ext/compare/v0.10.53...v0.10.63)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: es5-ext\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "author": "dependabot[bot]",
+          "date": "2024-02-27T23:50:27+00:00"
+        },
+        {
+          "sha": "d89f031",
+          "message": "docs: add rondlh as a contributor for code, and review (#380)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2024-02-07T00:59:04+00:00"
+        },
+        {
+          "sha": "30d56ef",
+          "message": "docs: add dbuezas as a contributor for code, and bug (#377)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2023-12-04T02:02:36+00:00"
+        },
+        {
+          "sha": "1690a27",
+          "message": "Update 3.0 CI badge",
+          "author": "Luc",
+          "date": "2023-10-03T06:32:01+00:00"
+        },
+        {
+          "sha": "7e2618e",
+          "message": "docs: add jamespearson04 as a contributor for code, and ideas (#365)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2023-10-03T05:19:49+00:00"
+        }
+      ],
+      "commit_activity": [
+        {
+          "week": "2023-11-05T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-11-12T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-11-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-11-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-03T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-28T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-04T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-11T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-18T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-25T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-17T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2024-03-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-28T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-05T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-12T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-23T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-30T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-28T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-04T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-11T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-18T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-25T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-01T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-08T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-15T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-29T00:00:00+00:00",
+          "total": 3,
+          "days": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-06T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-13T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-20T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-27T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "statistics": {
+      "size": 109971,
+      "stars": 763,
+      "forks": 305,
+      "open_issues": 9,
+      "watchers": 763,
+      "default_branch": "2.1",
+      "license": "GNU General Public License v3.0"
+    }
+  }
+}

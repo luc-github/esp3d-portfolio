@@ -1,0 +1,829 @@
+{
+  "timestamp": 1730336323.0783381,
+  "data": {
+    "name": "ESP32SSDP",
+    "type": "depedency",
+    "description": "Simple SSDP library for ESP32",
+    "url": "https://github.com/luc-github/ESP32SSDP",
+    "language": "C++",
+    "created_at": "2018-03-20T12:53:31+00:00",
+    "updated_at": "2024-10-06T08:16:54+00:00",
+    "branches": [
+      {
+        "name": "v2.x",
+        "label": "Production",
+        "is_production": true,
+        "last_commit": {
+          "sha": "cbc3183",
+          "message": "Make backward compatible for the warning fix",
+          "author": "Luc",
+          "date": "2024-08-24T08:13:51+00:00"
+        },
+        "protected": false,
+        "issues": [
+          {
+            "number": 35,
+            "title": "[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server",
+            "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
+            "state": "open",
+            "created_at": "2023-05-16T01:56:16+00:00",
+            "updated_at": "2023-05-16T01:56:27+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP32SSDP/issues/35",
+            "is_pr": false,
+            "labels": [
+              "bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 9,
+            "title": "[FEATURE REQUEST] Respont to multiple device types or callback?",
+            "body": "Currently the API accepts a single device type. UPNP clients normally look for a root device then read device xml. The xml contains the real device type but the search target header is \r\n\"ST: upnp:rootdevice\"\r\n\r\nSo setting the device SSDP.setDeviceType() to say upnp:rootdevice works for discovery to start but fails because the xml device info schema will contain the wrong device type.\r\n\\<deviceType\\>upnp:rootdevice\\</deviceType\\>\r\n\r\nIn my case my actual device type is \"urn:schemas-upnp-org:device:Basic:1\" but I need to respond to \"upnp:rootdevice\" and \"ssdp:all\" also the search term reply header is supposed to be the same as the ST in the search regardless of the actual device type. \r\n\r\nMaybe this is best handled in a callback of some type? The ability to respond to multiple device types is a good feature but in most cases just one is enough provided the above rootdevice and ssdp:all are also returning a valid reply.\r\n\r\n",
+            "state": "open",
+            "created_at": "2020-02-05T03:26:28+00:00",
+            "updated_at": "2020-02-21T09:59:12+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP32SSDP/issues/9",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "Planned"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "login": "luc-github",
+        "contributions": 38,
+        "url": "https://github.com/luc-github"
+      },
+      {
+        "login": "allcontributors[bot]",
+        "contributions": 3,
+        "url": "https://github.com/apps/allcontributors"
+      },
+      {
+        "login": "CriPstian",
+        "contributions": 1,
+        "url": "https://github.com/CriPstian"
+      }
+    ],
+    "activity": {
+      "recent_commits": [
+        {
+          "sha": "32a4e0c",
+          "message": "Update README.md (#42)",
+          "author": "Luc",
+          "date": "2024-06-01T08:59:33+00:00"
+        },
+        {
+          "sha": "3f5b0b5",
+          "message": "Add esp32 version to be used\n\nAdd script to format c/cpp/h files using clang-format and Google setting\nFix version to 2.0.8 for CI",
+          "author": "Luc",
+          "date": "2024-05-30T07:50:12+00:00"
+        },
+        {
+          "sha": "f05d64e",
+          "message": "Move ssdp_method_t definition to private to avoid conflict",
+          "author": "Luc",
+          "date": "2024-04-30T14:40:44+00:00"
+        },
+        {
+          "sha": "8f9ed1a",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2024-03-23T00:20:03+00:00"
+        },
+        {
+          "sha": "b8e04d2",
+          "message": "docs: add CriPstian as a contributor for bug (#34)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2023-02-16T01:40:31+00:00"
+        },
+        {
+          "sha": "e08b9f8",
+          "message": "docs: add B4stl3r as a contributor for code (#33)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2023-02-16T01:38:09+00:00"
+        },
+        {
+          "sha": "143fb12",
+          "message": "docs: add f34rdotcom as a contributor for code (#32)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: create .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2023-02-16T01:36:22+00:00"
+        },
+        {
+          "sha": "79df5af",
+          "message": "Fix typo raised by @dmognaschi",
+          "author": "Luc",
+          "date": "2023-01-26T23:45:51+00:00"
+        },
+        {
+          "sha": "a25fde7",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2022-12-30T02:10:52+00:00"
+        },
+        {
+          "sha": "7d71c83",
+          "message": "Fix regression issue : ttl is not actually used",
+          "author": "Luc",
+          "date": "2022-12-26T07:55:31+00:00"
+        }
+      ],
+      "commit_activity": [
+        {
+          "week": "2023-11-05T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-11-12T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-11-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-11-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2023-12-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-01-28T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-04T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-11T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-18T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-02-25T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-17T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2024-03-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-03-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-04-28T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-05T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-12T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-05-26T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2024-06-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-23T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-06-30T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-07-28T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-04T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-11T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-18T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-08-25T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-01T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-08T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-15T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-09-29T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-06T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-13T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-20T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-10-27T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "statistics": {
+      "size": 119,
+      "stars": 48,
+      "forks": 23,
+      "open_issues": 2,
+      "watchers": 48,
+      "default_branch": "master",
+      "license": "GNU General Public License v3.0"
+    }
+  }
+}
