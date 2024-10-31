@@ -1,0 +1,19 @@
+2024-10-31 08:01:48,765 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-10-31 08:01:48,769 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-10-31 08:01:48,771 - portfolio.cache - INFO - Cache initialized in .cache
+2024-10-31 08:01:48,772 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-10-31 08:01:48,774 - portfolio.analyzer - INFO - Starting data collection
+2024-10-31 08:01:48,776 - portfolio.github - INFO - Collecting data for repository: ESP3D
+2024-10-31 08:02:10,766 - portfolio.github - INFO - Collecting data for repository: ESP3DLib
+2024-10-31 08:02:22,949 - portfolio.github - INFO - Collecting data for repository: ESP3D-WEBUI
+2024-10-31 08:02:41,129 - portfolio.github - INFO - Collecting data for repository: ESP3D-TFT
+2024-10-31 08:02:50,076 - portfolio.github - INFO - Collecting data for repository: ESP3D-Configurator
+2024-10-31 08:02:56,307 - portfolio.github - INFO - Collecting data for repository: esp3d.io
+2024-10-31 08:03:02,446 - portfolio.github - INFO - Collecting data for repository: ESP32SSDP
+2024-10-31 08:03:08,738 - portfolio.analyzer - INFO - Processing collected data
+2024-10-31 08:03:08,744 - portfolio.issues - ERROR - Error processing issue #76: 'NoneType' object has no attribute 'lower'
+2024-10-31 08:03:08,747 - portfolio.issues - ERROR - Error processing issue #76: 'NoneType' object has no attribute 'lower'
+2024-10-31 08:03:08,754 - portfolio.analyzer - INFO - Generating reports
+2024-10-31 08:03:08,756 - portfolio.analyzer - INFO - Saved report: README.md
+2024-10-31 08:03:08,766 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-10-31 08:03:08,767 - portfolio.analyzer - INFO - Analysis completed successfully
