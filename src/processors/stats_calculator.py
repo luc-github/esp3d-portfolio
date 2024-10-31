@@ -219,164 +219,125 @@ class StatsCalculator:
                             
         return heatmap
     
+
     def calculate_repository_health(self, repository: Dict) -> Dict:
-        """Calculate repository health metrics"""
-        health_metrics = {
+        """Calculate repository health metrics with weighted components"""
+        metrics = {
             'documentation_score': self._calculate_documentation_score(repository),
             'maintenance_score': self._calculate_maintenance_score(repository),
             'activity_score': self._calculate_activity_score(repository),
             'community_score': self._calculate_community_score(repository)
         }
         
-        health_metrics['overall_score'] = sum(health_metrics.values()) / len(health_metrics)
-        return health_metrics
-    
+        # Pondération différente selon l'importance relative
+        weights = {
+            'documentation_score': 0.3,    # 30% - Important mais pas critique
+            'maintenance_score': 0.35,     # 35% - Très important
+            'activity_score': 0.25,        # 25% - Important
+            'community_score': 0.1         # 10% - Bonus
+        }
+        
+        metrics['overall_score'] = sum(score * weights[key] for key, score in metrics.items())
+        return metrics
+
     def _calculate_documentation_score(self, repository: Dict) -> float:
         """Calculate documentation health score (0.0 to 1.0)"""
         score = 0.0
-        max_score = 5.0  # Total number of criteria
+        max_points = 0.0
         
-        # Check for README presence and quality
+        # README - 40% du score
         if repository.get('readme_content'):
-            readme_length = len(repository['readme_content'])
-            score += min(readme_length / 2000, 1.0)  # Score based on README length, max at 2000 chars
-            
-        # Check for Wiki
-        if repository.get('has_wiki'):
-            score += 1.0
-            
-        # Check for documentation in specific formats
-        doc_patterns = ['.md', '.rst', '.txt', '.doc', 'docs/', 'documentation/']
-        doc_files = sum(1 for pattern in doc_patterns if any(pattern in f for f in repository.get('files', [])))
-        score += min(doc_files / 3, 1.0)  # Score based on documentation files, max at 3 files
+            readme_length = len(repository.get('readme_content', ''))
+            # Plus réaliste pour la taille du README
+            score += min(readme_length / 1000, 1.0) * 0.4
+            max_points += 0.4
         
-        # Check for code comments (if available)
-        if repository.get('code_analysis', {}).get('comment_ratio'):
-            comment_ratio = repository['code_analysis']['comment_ratio']
-            score += min(comment_ratio / 0.2, 1.0)  # Score based on comment ratio, max at 20%
+        # Documentation dans le code - 30%
+        doc_files = sum(1 for f in repository.get('files', []) 
+                    if any(ext in f.lower() for ext in ['.md', '.rst', '.txt', 'readme', 'doc']))
+        if doc_files > 0:
+            score += min(doc_files / 3, 1.0) * 0.3
+            max_points += 0.3
+        
+        # Wiki ou autres docs - 30%
+        if repository.get('has_wiki') or any('docs/' in f for f in repository.get('files', [])):
+            score += 0.3
+            max_points += 0.3
             
-        # Check for license presence
-        if repository.get('license'):
-            score += 1.0
-            
-        return score / max_score
-    
+        return score / max(max_points, 1.0)
+
     def _calculate_maintenance_score(self, repository: Dict) -> float:
-        """Calculate maintenance health score (0.0 to 1.0)"""
+        """Calculate maintenance score"""
         score = 0.0
-        max_score = 5.0
         
-        now = datetime.now(timezone.utc)
+        # Activité récente (50% du score)
+        last_commit = self._get_last_commit_date(repository)
+        if last_commit:
+            days_since = (datetime.now(timezone.utc) - last_commit).days
+            if days_since <= 30:  # Dernier mois
+                score += 0.5
+            elif days_since <= 90:  # Dernier trimestre
+                score += 0.3
+            elif days_since <= 180:  # Dernier semestre
+                score += 0.2
         
-        # Recent commit activity
-        try:
-            # Chercher la dernière mise à jour dans les branches
-            last_update = None
-            for branch in repository.get('branches', []):
-                branch_commit = branch.get('last_commit', {}).get('date')
-                if branch_commit:
-                    branch_date = datetime.fromisoformat(branch_commit.replace('Z', '+00:00'))
-                    if not last_update or branch_date > last_update:
-                        last_update = branch_date
-            
-            if last_update:
-                days_since_last_commit = (now - last_update).days
-                score += max(0, 1 - (days_since_last_commit / 30))  # Full score if updated within last month
-            
-        except Exception as e:
-            self.logger.warning(f"Error calculating commit activity score: {e}")
-            score += 0  # No score for this metric if there's an error
-            
-        # Issue response time
-        if repository.get('issues'):
-            try:
-                avg_response_time = self._calculate_average_issue_response_time(repository['issues'])
-                score += max(0, 1 - (avg_response_time / 7))  # Full score if responded within a week
-            except Exception as e:
-                self.logger.warning(f"Error calculating issue response time score: {e}")
-                
-        # Branch health
-        try:
-            if repository.get('branches'):
-                protected_branches = sum(1 for b in repository['branches'] if b.get('protected'))
-                score += min(protected_branches / 2, 1.0)  # Score for protected branches, max at 2
-        except Exception as e:
-            self.logger.warning(f"Error calculating branch health score: {e}")
-            
-        # Au moins un point minimal si le repository existe et est accessible
-        score = max(score, 0.5)
-            
-        return score / max_score
-    
+        # Issues et PRs (30%)
+        issues = repository.get('issues', [])
+        if issues:
+            recent_issues = sum(1 for i in issues if self._is_recently_updated(i, 90))
+            score += min(recent_issues / 5, 1.0) * 0.3
+        
+        # Branches protégées et structure (20%)
+        if repository.get('branches'):
+            score += 0.2
+        
+        return score
+
     def _calculate_activity_score(self, repository: Dict) -> float:
-        """Calculate activity health score (0.0 to 1.0)"""
+        """Calculate activity score"""
         score = 0.0
-        max_score = 5.0
         
-        # Commit frequency
-        if repository.get('activity', {}).get('commit_frequency'):
-            weekly_commits = repository['activity']['commit_frequency']['weekly']
-            score += min(weekly_commits / 10, 1.0)  # Full score for 10+ commits per week
-            
-        # Issue activity
+        # Commits réguliers (40%)
+        commit_frequency = repository.get('activity', {}).get('commit_frequency', {})
+        if commit_frequency.get('monthly', 0) > 0:
+            score += 0.4
+        
+        # Issues actives (30%)
         if repository.get('issues'):
-            monthly_issue_activity = sum(1 for i in repository['issues'] 
-                                       if self._is_recently_updated(i, 30))
-            score += min(monthly_issue_activity / 10, 1.0)  # Full score for 10+ active issues
-            
-        # PR activity
-        if repository.get('pull_requests'):
-            monthly_pr_activity = sum(1 for pr in repository['pull_requests'] 
-                                    if self._is_recently_updated(pr, 30))
-            score += min(monthly_pr_activity / 5, 1.0)  # Full score for 5+ active PRs
-            
-        # Discussion activity
-        if repository.get('discussions'):
-            monthly_discussions = sum(1 for d in repository['discussions'] 
-                                    if self._is_recently_updated(d, 30))
-            score += min(monthly_discussions / 5, 1.0)  # Full score for 5+ active discussions
-            
-        # Contributor activity
-        monthly_active_contributors = len(repository.get('activity', {}).get('active_contributors', []))
-        score += min(monthly_active_contributors / 3, 1.0)  # Full score for 3+ active contributors
+            active_issues = sum(1 for i in repository.get('issues', [])
+                            if self._is_recently_updated(i, 30))
+            score += min(active_issues / 3, 1.0) * 0.3
         
-        return score / max_score
-    
+        # PRs et discussions (30%)
+        if repository.get('pull_requests') or repository.get('discussions'):
+            score += 0.3
+        
+        return score
+
     def _calculate_community_score(self, repository: Dict) -> float:
-        """Calculate community health score (0.0 to 1.0)"""
+        """Calculate community score"""
         score = 0.0
-        max_score = 5.0
         
-        # Number of contributors
-        total_contributors = len(repository.get('contributors', []))
-        score += min(total_contributors / 5, 1.0)  # Full score for 5+ contributors
+        # Stars et Forks (40%)
+        stats = repository.get('statistics', {})
+        stars = stats.get('stars', 0)
+        forks = stats.get('forks', 0)
         
-        # Stars and forks
-        stars = repository.get('statistics', {}).get('stars', 0)
-        forks = repository.get('statistics', {}).get('forks', 0)
-        score += min(stars / 100, 1.0)  # Full score for 100+ stars
-        score += min(forks / 20, 1.0)   # Full score for 20+ forks
+        score += min(stars / 20, 1.0) * 0.2  # 20 stars = max
+        score += min(forks / 5, 1.0) * 0.2   # 5 forks = max
         
-        # Community engagement
-        if repository.get('issues'):
-            issue_participants = self._count_unique_participants(repository['issues'])
-            score += min(issue_participants / 10, 1.0)  # Full score for 10+ participants
-            
-        # Community guidelines presence
-        community_files = [
-            'CONTRIBUTING.md',
-            'CODE_OF_CONDUCT.md',
-            'SECURITY.md',
-            'SUPPORT.md',
-            'GOVERNANCE.md'
-        ]
+        # Contributeurs (40%)
+        contributors = len(repository.get('contributors', []))
+        score += min(contributors / 3, 1.0) * 0.4  # 3 contributeurs = max
         
-        community_docs = sum(1 for f in community_files 
-                           if any(f in path for path in repository.get('files', [])))
-        score += min(community_docs / len(community_files), 1.0)
+        # Fichiers communautaires (20%)
+        community_files = ['contributing', 'code_of_conduct', 'security']
+        files = [f.lower() for f in repository.get('files', [])]
+        for cf in community_files:
+            if any(cf in f for f in files):
+                score += 0.2 / len(community_files)
         
-        return score / max_score
-    
+        return score
     def _calculate_workflow_success_rate(self, workflows: List[Dict]) -> float:
         """Calculate the success rate of CI/CD workflows"""
         if not workflows:
