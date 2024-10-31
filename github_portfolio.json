@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C++",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2024-10-28T12:06:41+00:00",
+      "updated_at": "2024-10-31T13:28:40+00:00",
       "branches": [
         {
           "name": "2.1.x",
@@ -27,7 +27,7 @@
               "body": "Hello,\r\nI\u2019m using ESP3D version 2.x and want to send G-code commands like `G28 Z` and `M114 `through the HTTP API. I've tried requests in the format `http://<IP>/command?cmd=M114`, but I keep getting an `Invalid command` error. Could you clarify the correct way to format these requests for version 2.x? Also, if a password is needed, how do I set and include it in the requests?\r\n\r\nThank you for your help!",
               "state": "open",
               "created_at": "2024-10-30T04:21:33+00:00",
-              "updated_at": "2024-10-31T09:28:04+00:00",
+              "updated_at": "2024-10-31T14:43:27+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3D/issues/1059",
               "is_pr": false,
@@ -66,7 +66,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1375,
-              "days_since_update": 2,
+              "days_since_update": 3,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -198,7 +198,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2300,
+              "age_days": 2301,
               "days_since_update": 152,
               "is_stale": true,
               "is_recent": false,
@@ -228,7 +228,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 385,
-              "days_since_update": 167,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -283,7 +283,7 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1367,
+              "age_days": 1368,
               "days_since_update": 239,
               "is_stale": true,
               "is_recent": false,
@@ -365,7 +365,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 616,
+              "age_days": 617,
               "days_since_update": 241,
               "is_stale": true,
               "is_recent": false,
@@ -397,7 +397,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1365,
+              "age_days": 1366,
               "days_since_update": 794,
               "is_stale": true,
               "is_recent": false,
@@ -453,7 +453,7 @@
               "body": "Hello,\r\nI\u2019m using ESP3D version 2.x and want to send G-code commands like `G28 Z` and `M114 `through the HTTP API. I've tried requests in the format `http://<IP>/command?cmd=M114`, but I keep getting an `Invalid command` error. Could you clarify the correct way to format these requests for version 2.x? Also, if a password is needed, how do I set and include it in the requests?\r\n\r\nThank you for your help!",
               "state": "open",
               "created_at": "2024-10-30T04:21:33+00:00",
-              "updated_at": "2024-10-31T09:28:04+00:00",
+              "updated_at": "2024-10-31T14:43:27+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3D/issues/1059",
               "is_pr": false,
@@ -492,7 +492,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1375,
-              "days_since_update": 2,
+              "days_since_update": 3,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -624,7 +624,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2300,
+              "age_days": 2301,
               "days_since_update": 152,
               "is_stale": true,
               "is_recent": false,
@@ -654,7 +654,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 385,
-              "days_since_update": 167,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -709,7 +709,7 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1367,
+              "age_days": 1368,
               "days_since_update": 239,
               "is_stale": true,
               "is_recent": false,
@@ -791,7 +791,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 616,
+              "age_days": 617,
               "days_since_update": 241,
               "is_stale": true,
               "is_recent": false,
@@ -823,7 +823,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1365,
+              "age_days": 1366,
               "days_since_update": 794,
               "is_stale": true,
               "is_recent": false,
@@ -1673,19 +1673,19 @@
       },
       "statistics": {
         "size": 134698,
-        "stars": 1759,
+        "stars": 1761,
         "forks": 466,
         "open_issues": 14,
-        "watchers": 1759,
+        "watchers": 1761,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.13333333333333336,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
-        "community_score": 0.6,
-        "overall_score": 0.18333333333333335
+        "community_score": 0.8,
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -1760,17 +1760,17 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "2561",
-                "2592",
-                "40",
                 "27",
                 "37",
-                "2543",
-                "2524",
                 "2762",
                 "2760",
-                "2758",
+                "2592",
+                "2561",
+                "2543",
                 "2711",
+                "2758",
+                "40",
+                "2524",
                 "2571"
               ],
               "suggested_priority": "medium",
@@ -1793,7 +1793,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 320,
+              "age_days": 321,
               "days_since_update": 222,
               "is_stale": true,
               "is_recent": false,
@@ -1893,17 +1893,17 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "2561",
-                "2592",
-                "40",
                 "27",
                 "37",
-                "2543",
-                "2524",
                 "2762",
                 "2760",
-                "2758",
+                "2592",
+                "2561",
+                "2543",
                 "2711",
+                "2758",
+                "40",
+                "2524",
                 "2571"
               ],
               "suggested_priority": "medium",
@@ -1926,7 +1926,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 320,
+              "age_days": 321,
               "days_since_update": 222,
               "is_stale": true,
               "is_recent": false,
@@ -2759,10 +2759,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.1,
+        "maintenance_score": 0.4,
         "activity_score": 0.0,
-        "community_score": 0.5980000000000001,
-        "overall_score": 0.17450000000000002
+        "community_score": 0.8,
+        "overall_score": 0.22
       }
     },
     {
@@ -2949,7 +2949,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 753,
+              "age_days": 754,
               "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
@@ -2978,7 +2978,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1761,
-              "days_since_update": 807,
+              "days_since_update": 808,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3250,7 +3250,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 753,
+              "age_days": 754,
               "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
@@ -3279,7 +3279,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1761,
-              "days_since_update": 807,
+              "days_since_update": 808,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4182,10 +4182,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.1,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
-        "community_score": 0.6,
-        "overall_score": 0.175
+        "community_score": 0.8,
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -4224,7 +4224,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 6,
+              "age_days": 7,
               "days_since_update": 3,
               "is_stale": false,
               "is_recent": true,
@@ -4277,7 +4277,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 287,
+              "age_days": 288,
               "days_since_update": 63,
               "is_stale": true,
               "is_recent": false,
@@ -5260,10 +5260,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.1,
+        "maintenance_score": 0.5,
         "activity_score": 0.0,
-        "community_score": 0.366,
-        "overall_score": 0.11649999999999999
+        "community_score": 0.8,
+        "overall_score": 0.255
       }
     },
     {
@@ -6135,10 +6135,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.12666666666666665,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
-        "community_score": 0.184,
-        "overall_score": 0.07766666666666666
+        "community_score": 0.67,
+        "overall_score": 0.31199999999999994
       }
     },
     {
@@ -7039,10 +7039,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
-        "community_score": 0.41200000000000003,
-        "overall_score": 0.15300000000000002
+        "community_score": 0.66,
+        "overall_score": 0.31099999999999994
       }
     },
     {
@@ -7916,23 +7916,23 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.1,
+        "maintenance_score": 0.5,
         "activity_score": 0.0,
-        "community_score": 0.41600000000000004,
-        "overall_score": 0.129
+        "community_score": 0.8,
+        "overall_score": 0.255
       }
     }
   ],
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4999,
-      "reset": "2024-10-31T11:22:22+00:00"
+      "remaining": 4815,
+      "reset": "2024-10-31T16:43:07+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-10-31T10:23:47+00:00"
+      "reset": "2024-10-31T16:02:56+00:00"
     }
   },
   "stats": {
@@ -7947,7 +7947,7 @@
         "HTML": 1
       },
       "total_size": 467965,
-      "total_stars": 2720,
+      "total_stars": 2722,
       "total_forks": 860,
       "branches": {
         "production": 6,
@@ -7960,7 +7960,7 @@
       "open_count": 67,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 777.5980407672924,
+      "avg_age_days": 777.8335610628712,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 67
@@ -8269,7 +8269,216 @@
           "count": 0
         }
       ],
-      "commit_trend": []
+      "commit_trend": [
+        {
+          "date": "2023-11-05",
+          "count": 4
+        },
+        {
+          "date": "2023-11-12",
+          "count": 7
+        },
+        {
+          "date": "2023-11-19",
+          "count": 2
+        },
+        {
+          "date": "2023-11-26",
+          "count": 2
+        },
+        {
+          "date": "2023-12-03",
+          "count": 9
+        },
+        {
+          "date": "2023-12-10",
+          "count": 0
+        },
+        {
+          "date": "2023-12-17",
+          "count": 2
+        },
+        {
+          "date": "2023-12-24",
+          "count": 0
+        },
+        {
+          "date": "2023-12-31",
+          "count": 4
+        },
+        {
+          "date": "2024-01-07",
+          "count": 7
+        },
+        {
+          "date": "2024-01-14",
+          "count": 2
+        },
+        {
+          "date": "2024-01-21",
+          "count": 8
+        },
+        {
+          "date": "2024-01-28",
+          "count": 7
+        },
+        {
+          "date": "2024-02-04",
+          "count": 10
+        },
+        {
+          "date": "2024-02-11",
+          "count": 9
+        },
+        {
+          "date": "2024-02-18",
+          "count": 1
+        },
+        {
+          "date": "2024-02-25",
+          "count": 2
+        },
+        {
+          "date": "2024-03-03",
+          "count": 18
+        },
+        {
+          "date": "2024-03-10",
+          "count": 18
+        },
+        {
+          "date": "2024-03-17",
+          "count": 31
+        },
+        {
+          "date": "2024-03-24",
+          "count": 30
+        },
+        {
+          "date": "2024-03-31",
+          "count": 14
+        },
+        {
+          "date": "2024-04-07",
+          "count": 8
+        },
+        {
+          "date": "2024-04-14",
+          "count": 32
+        },
+        {
+          "date": "2024-04-21",
+          "count": 7
+        },
+        {
+          "date": "2024-04-28",
+          "count": 8
+        },
+        {
+          "date": "2024-05-05",
+          "count": 1
+        },
+        {
+          "date": "2024-05-12",
+          "count": 0
+        },
+        {
+          "date": "2024-05-19",
+          "count": 0
+        },
+        {
+          "date": "2024-05-26",
+          "count": 13
+        },
+        {
+          "date": "2024-06-02",
+          "count": 7
+        },
+        {
+          "date": "2024-06-09",
+          "count": 1
+        },
+        {
+          "date": "2024-06-16",
+          "count": 2
+        },
+        {
+          "date": "2024-06-23",
+          "count": 0
+        },
+        {
+          "date": "2024-06-30",
+          "count": 0
+        },
+        {
+          "date": "2024-07-07",
+          "count": 1
+        },
+        {
+          "date": "2024-07-14",
+          "count": 1
+        },
+        {
+          "date": "2024-07-21",
+          "count": 1
+        },
+        {
+          "date": "2024-07-28",
+          "count": 0
+        },
+        {
+          "date": "2024-08-04",
+          "count": 7
+        },
+        {
+          "date": "2024-08-11",
+          "count": 2
+        },
+        {
+          "date": "2024-08-18",
+          "count": 8
+        },
+        {
+          "date": "2024-08-25",
+          "count": 1
+        },
+        {
+          "date": "2024-09-01",
+          "count": 8
+        },
+        {
+          "date": "2024-09-08",
+          "count": 2
+        },
+        {
+          "date": "2024-09-15",
+          "count": 1
+        },
+        {
+          "date": "2024-09-22",
+          "count": 0
+        },
+        {
+          "date": "2024-09-29",
+          "count": 3
+        },
+        {
+          "date": "2024-10-06",
+          "count": 0
+        },
+        {
+          "date": "2024-10-13",
+          "count": 1
+        },
+        {
+          "date": "2024-10-20",
+          "count": 4
+        },
+        {
+          "date": "2024-10-27",
+          "count": 3
+        }
+      ]
     }
   }
 }

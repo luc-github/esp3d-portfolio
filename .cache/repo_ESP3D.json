@@ -1,5 +1,5 @@
 {
-  "timestamp": 1730367337.1927083,
+  "timestamp": 1730390410.9621692,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2024-10-28T12:06:41+00:00",
+    "updated_at": "2024-10-31T13:28:40+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -27,7 +27,7 @@
             "body": "Hello,\r\nI\u2019m using ESP3D version 2.x and want to send G-code commands like `G28 Z` and `M114 `through the HTTP API. I've tried requests in the format `http://<IP>/command?cmd=M114`, but I keep getting an `Invalid command` error. Could you clarify the correct way to format these requests for version 2.x? Also, if a password is needed, how do I set and include it in the requests?\r\n\r\nThank you for your help!",
             "state": "open",
             "created_at": "2024-10-30T04:21:33+00:00",
-            "updated_at": "2024-10-31T09:28:04+00:00",
+            "updated_at": "2024-10-31T14:43:27+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1059",
             "is_pr": false,
@@ -288,7 +288,7 @@
             "body": "Hello,\r\nI\u2019m using ESP3D version 2.x and want to send G-code commands like `G28 Z` and `M114 `through the HTTP API. I've tried requests in the format `http://<IP>/command?cmd=M114`, but I keep getting an `Invalid command` error. Could you clarify the correct way to format these requests for version 2.x? Also, if a password is needed, how do I set and include it in the requests?\r\n\r\nThank you for your help!",
             "state": "open",
             "created_at": "2024-10-30T04:21:33+00:00",
-            "updated_at": "2024-10-31T09:28:04+00:00",
+            "updated_at": "2024-10-31T14:43:27+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1059",
             "is_pr": false,
@@ -1343,10 +1343,10 @@
     },
     "statistics": {
       "size": 134698,
-      "stars": 1759,
+      "stars": 1761,
       "forks": 466,
       "open_issues": 14,
-      "watchers": 1759,
+      "watchers": 1761,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
     }
