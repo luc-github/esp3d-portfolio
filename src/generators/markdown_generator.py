@@ -414,53 +414,47 @@ class MarkdownGenerator:
         """Generate ASCII chart for commit activity"""
         if not commit_frequency:
             return "No activity data available"
-            
-        # S'assurer que nous avons une liste de dictionnaires avec 'date' et 'count'
-        if isinstance(commit_frequency, list):
-            data_points = commit_frequency
-        else:
-            # Convertir les données en format attendu
-            data_points = []
-            for date, count in commit_frequency.items():
-                if isinstance(count, dict) and 'total' in count:
-                    data_points.append({'date': date, 'total': count['total']})
-                elif isinstance(count, (int, float)):
-                    data_points.append({'date': date, 'total': count})
-            
-        if not data_points:
+        
+        # Convertir les données en structure unifiée
+        data = {
+            'Daily': commit_frequency.get('daily', 0),
+            'Weekly': commit_frequency.get('weekly', 0),
+            'Monthly': commit_frequency.get('monthly', 0)
+        }
+        
+        # Déterminer l'échelle
+        max_value = max(data.values())
+        if max_value == 0:
             return "No commits in this period"
-            
-        try:
-            max_value = max(point['total'] for point in data_points)
-            if max_value == 0:
-                return "No commits in this period"
-                
-            chart_height = 7
-            chart = []
-            
-            for i in range(chart_height):
-                row = []
-                threshold = max_value * (chart_height - i) / chart_height
-                
-                for point in data_points:
-                    if point['total'] >= threshold:
-                        row.append(CHART_CHARS['block_full'])
-                    else:
-                        row.append(CHART_CHARS['block_empty'])
-                        
-                chart.append(''.join(row))
-                
-            # Ajouter une légende
-            dates = [point['date'][:10] for point in data_points]  # Format YYYY-MM-DD
-            chart.append('-' * len(data_points))
-            chart.append(' '.join(dates))
-                
-            return '\n'.join(chart)
-            
-        except Exception as e:
-            self.logger.error(f"Error generating activity chart: {e}")
-            return "Error generating activity chart"
-          
+        
+        chart_height = 7
+        activity_levels = {
+            0: "⬜",  # Pas d'activité
+            1: "🟦",  # Faible activité
+            2: "🟩",  # Activité modérée
+            3: "🟨",  # Activité haute
+            4: "🟥"   # Activité très haute
+        }
+        
+        chart = []
+        chart.append("Activity Levels:")
+        
+        # Générer les barres du graphique
+        for period, value in data.items():
+            # Normaliser la valeur sur une échelle de 0-4
+            normalized_value = min(4, int((value / max_value) * 4))
+            bar = activity_levels[normalized_value]
+            chart.append(f"{period:8} {bar} {value:.1f} commits")
+        
+        # Ajouter une légende
+        chart.extend([
+            '',
+            'Legend:',
+            f"⬜ None   🟦 Low (1-25%)   🟩 Medium (26-50%)",
+            f"🟨 High (51-75%)   🟥 Very High (76-100%)"
+        ])
+        
+        return '\n'.join(chart)  
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
         """Generate colored activity heatmap"""
         if not heatmap_data:
