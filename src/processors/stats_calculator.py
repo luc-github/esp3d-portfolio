@@ -1,6 +1,6 @@
 from datetime import datetime, timezone, timedelta
 import logging
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 from collections import defaultdict
 from ..utils.constants import SECONDS_IN_DAY, DAYS_IN_WEEK, DAYS_IN_MONTH
 
