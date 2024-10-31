@@ -49,7 +49,7 @@
 |--------|-------|
 | Open Issues | 67 |
 | Closed Issues | 0 |
-| Average Age | 777.2 days |
+| Average Age | 777.5 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -93,7 +93,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-30</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
@@ -121,7 +121,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-30</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
@@ -406,8 +406,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-30</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-30</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
@@ -567,7 +567,7 @@ Sun ▒ ▒ ▒ ▒ ▒ ▒ ▒ ▒
 
 <div align="center">
 
-*🔄 Last updated: 2024-10-31 00:58:43 UTC*
+*🔄 Last updated: 2024-10-31 08:03:08 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
