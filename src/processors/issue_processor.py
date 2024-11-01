@@ -92,10 +92,10 @@ class IssueProcessor:
     
     def _estimate_issue_size(self, issue: Dict) -> str:
         """Estimate the size/effort of an issue"""
-        body = issue.get('body', '') or ''
-        body_length = len(body)
+        # Assurer que body n'est jamais None
+        body = (issue.get('body') or '').lower()
         labels = issue.get('labels', [])
-     
+        
         # Size estimation based on content and labels
         if any(label in labels for label in ['epic', 'large']):
             return 'large'
@@ -105,17 +105,17 @@ class IssueProcessor:
             return 'small'
         
         # Estimate based on content length
-        if body_length > 1000:
+        if len(body) > 1000:
             return 'large'
-        elif body_length > 300:
+        elif len(body) > 300:
             return 'medium'
         else:
             return 'small'
-    
     def _estimate_complexity(self, issue: Dict) -> str:
         """Estimate the complexity of an issue"""
+        # Assurer que body n'est jamais None
+        body = (issue.get('body') or '').lower()
         labels = issue.get('labels', [])
-        body = issue.get('body', '').lower()
         
         # Complexity indicators in labels
         if any(label in labels for label in ['complex', 'hard']):
