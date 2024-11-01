@@ -22,7 +22,7 @@ class IssueProcessor:
             branch['issue_summary'] = self._generate_issue_summary(branch['issues'])
             
         return enriched_data
-    
+   
     def _process_branch_issues(self, issues: List[Dict], repo_name: str, branch_name: str) -> List[Dict]:
         """Process and enrich individual issues"""
         processed_issues = []
@@ -33,17 +33,27 @@ class IssueProcessor:
                 processed_issues.append(processed_issue)
             except Exception as e:
                 self.logger.error(f"Error processing issue #{issue.get('number')}: {e}")
-                
+        
+        # Définir une date par défaut pour le tri
+        def get_sort_date(issue):
+            updated_at = issue.get('updated_at')
+            if not updated_at:
+                return datetime.min
+            try:
+                return datetime.fromisoformat(updated_at.replace('Z', '+00:00'))
+            except (ValueError, AttributeError):
+                return datetime.min
+
         # Sort issues by priority and update date
         return sorted(
             processed_issues,
             key=lambda x: (
-                self._priority_sort_key(x['priority']),
-                datetime.fromisoformat(x['updated_at'].replace('Z', '+00:00')),
+                self._priority_sort_key(x.get('priority', 'low')),
+                get_sort_date(x),
             ),
             reverse=True
         )
-    
+
     def _enrich_issue_data(self, issue: Dict, repo_name: str, branch_name: str) -> Dict:
         """Enrich issue data with additional information"""
         enriched = issue.copy()

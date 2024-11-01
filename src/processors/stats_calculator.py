@@ -464,18 +464,24 @@ class StatsCalculator:
     def _calculate_commit_trend(self, repositories: List[Dict]) -> List[Dict]:
         """Calculate trend of commits over time"""
         trend_data = []
-    
+
         for repo in repositories:
             activity = repo.get('activity', {}).get('commit_activity', [])
             for week_data in activity:
                 try:
-                    # Plus robuste gestion du timestamp
-                    if isinstance(week_data.get('week'), (int, float)):
-                        timestamp = int(week_data['week'])
-                    elif isinstance(week_data.get('week'), str):
-                        timestamp = int(float(week_data['week']))
-                    elif isinstance(week_data.get('week'), datetime):
-                        timestamp = int(week_data['week'].timestamp())
+                    # Gestion des différents formats de date
+                    week = week_data.get('week')
+                    if isinstance(week, (int, float)):
+                        timestamp = int(week)
+                    elif isinstance(week, str):
+                        # Conversion de la date ISO en timestamp
+                        try:
+                            dt = datetime.fromisoformat(week.replace('Z', '+00:00'))
+                            timestamp = int(dt.timestamp())
+                        except ValueError:
+                            continue
+                    elif isinstance(week, datetime):
+                        timestamp = int(week.timestamp())
                     else:
                         continue  # Skip invalid data
                     
