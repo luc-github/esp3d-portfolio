@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Repositories](https://img.shields.io/badge/Repositories-7-blue)
-![Main Projects](https://img.shields.io/badge/Main%20Projects-6-orange)
-![Dependencies](https://img.shields.io/badge/Dependencies-1-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-67-yellow)
+![Repositories](https://img.shields.io/badge/Repositories-12-blue)
+![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
+![Dependencies](https://img.shields.io/badge/Dependencies-4-green)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-68-yellow)
 
 > 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -21,6 +21,8 @@
 | [⭐ ESP3DLib](#user-content-esp3dlib) | Main Project | ESP3D library for Marlin and ESP32 boards |
 | [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
 | [⭐ ESP3D-TFT](#user-content-esp3d-tft) | Main Project | ESP3D Firmware for ESP32 based TFT  |
+| [⭐ Marlin](#user-content-marlin) | Main Project | Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine. |
+| [⭐ Marlin](#user-content-marlin) | Main Project | Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine. |
 | [⭐ ESP3D-Configurator](#user-content-esp3d-configurator) | Main Project | Project status and issues |
 | [⭐ esp3d.io](#user-content-esp3d.io) | Main Project | Project Main page |
 | [📋 Global Issues](#-global-issues) | Overview | All open issues across projects |
@@ -37,19 +39,19 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Repositories | 7 |
-| Main Projects | 6 |
-| Dependencies | 1 |
-| Total Stars | 2722 |
-| Total Forks | 860 |
+| Total Repositories | 12 |
+| Main Projects | 8 |
+| Dependencies | 4 |
+| Total Stars | 2748 |
+| Total Forks | 872 |
 
 ### Issue Statistics
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 67 |
+| Open Issues | 68 |
 | Closed Issues | 0 |
-| Average Age | 778.2 days |
+| Average Age | 774.8 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -57,9 +59,9 @@
 ```
 Commit Activity:
 
-Daily    🟦 Few (1-2 commits)            (0.8 commits)
-Weekly   🟦 Few (1-10 commits)           (5.9 commits)
-Monthly  🟦 Few (1-25 commits)           (23.8 commits)
+Daily    🟦 Few (1-2 commits)            (0.9 commits)
+Weekly   🟦 Few (1-10 commits)           (6.3 commits)
+Monthly  🟩 Some (26-50 commits)         (25.4 commits)
 ```
 
 </details>
@@ -353,6 +355,90 @@ Author: Luc
 
 <hr>
 
+<details open id="marlin">
+<summary><h3>⭐ Marlin</h3></summary>
+<table><tr><td>
+
+**Project**: [Marlin](https://github.com/luc-github/Marlin)<br>
+**Type**: Main<br>
+**Description**: Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.<br>
+**Language**: C++<br>
+**Health Score**: <span style="color: #ff0000">13.2%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🔧 Development Branch (`ESP3DLib-V3-bugfix-2.1.x`)</h4></summary>
+
+```
+Last commit: 2024-03-21 (#9d9f72b)
+Author: Luc
+```
+
+> 🎉 No open issues
+
+</details>
+
+</details>
+
+<hr>
+
+<details open id="marlin">
+<summary><h3>⭐ Marlin</h3></summary>
+<table><tr><td>
+
+**Project**: [Marlin](https://github.com/luc-github/Marlin)<br>
+**Type**: Main<br>
+**Description**: Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.<br>
+**Language**: C++<br>
+**Health Score**: <span style="color: #ff0000">13.2%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🔧 Development Branch (`ESP3DLib-V3-bugfix-2.1.x`)</h4></summary>
+
+```
+Last commit: 2024-03-21 (#9d9f72b)
+Author: Luc
+```
+
+> 🎉 No open issues
+
+</details>
+
+</details>
+
+<hr>
+
+<details open id="esp32-usb-serial">
+<summary><h3>🔗 esp32-usb-serial</h3></summary>
+<table><tr><td>
+
+**Project**: [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial)<br>
+**Type**: Depedency<br>
+**Description**: Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components<br>
+**Language**: C++<br>
+**Health Score**: <span style="color: #ff0000">20.4%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`main`)</h4></summary>
+
+```
+Last commit: 2024-09-16 (#f74abce)
+Author: Luc
+```
+
+> 🎉 No open issues
+
+</details>
+
+</details>
+
+<hr>
+
 <details open id="esp32ssdp">
 <summary><h3>🔗 ESP32SSDP</h3></summary>
 <table><tr><td>
@@ -377,6 +463,65 @@ Author: Luc
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
 <tr><td>⭕</td><td>#35: <a href="https://github.com/luc-github/ESP32SSDP/issues/35">[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#9: <a href="https://github.com/luc-github/ESP32SSDP/issues/9">[FEATURE REQUEST] Respont to multiple device types or callback?</a></td><td><code>2020-02-05</code></td><td><code>2020-02-21</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+</details>
+
+<hr>
+
+<details open id="espluaengine">
+<summary><h3>🔗 EspLuaEngine</h3></summary>
+<table><tr><td>
+
+**Project**: [EspLuaEngine](https://github.com/luc-github/EspLuaEngine)<br>
+**Type**: Depedency<br>
+**Description**: Add Lua engine to your firmware using ESP boards<br>
+**Language**: C<br>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`main`)</h4></summary>
+
+```
+Last commit: 2024-10-15 (#db9521c)
+Author: Luc
+```
+
+> 🎉 No open issues
+
+</details>
+
+</details>
+
+<hr>
+
+<details open id="ssdp_idf">
+<summary><h3>🔗 SSDP_IDF</h3></summary>
+<table><tr><td>
+
+**Project**: [SSDP_IDF](https://github.com/luc-github/SSDP_IDF)<br>
+**Type**: Depedency<br>
+**Description**: SSDP IDF component for ESP32<br>
+**Language**: C<br>
+**Health Score**: <span style="color: #ff0000">16.5%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`main`)</h4></summary>
+
+```
+Last commit: 2024-05-30 (#b33c81b)
+Author: Luc
+```
+
+<table>
+<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#1: <a href="https://github.com/luc-github/SSDP_IDF/issues/1">[BUG]Miss send notify : NTS: ssdp:byebye when stopping ssdp server #35</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -427,7 +572,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -439,17 +584,17 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -468,7 +613,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -480,17 +625,17 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -521,7 +666,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -533,17 +678,17 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -565,7 +710,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -577,17 +722,17 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -602,7 +747,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -614,17 +759,17 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -639,7 +784,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -651,17 +796,17 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -676,7 +821,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -688,17 +833,53 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 50.0% | 🟡 Good |
-**Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 80.0% | 🟢 Excellent |
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
+
+</details>
+
+<details>
+<summary><b>📁 SSDP_IDF</b></summary>
+
+<table>
+<tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🚀 main</td><td>#1: <a href="https://github.com/luc-github/SSDP_IDF/issues/1">[BUG]Miss send notify : NTS: ssdp:byebye when stopping ssdp server #35</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
+</table>
+
+</details>
+
+**Health Score**: <span style="color: #ff0000">26.0%</span>
+
+<details>
+<summary>📊 Health Score Details</summary>
+
+| Metric | Score | Status |
+|--------|--------|--------|
+| Documentation | 0.0% | 🔴 Needs Attention |
+**Documentation Suggestions:**
+- Add more detailed README
+- Create documentation directory
+- Add usage examples
+| Maintenance | 70.0% | 🟢 Excellent |
+| Activity | 0.0% | 🔴 Needs Attention |
+**Activity Suggestions:**
+- Engage with community
+- Regular status updates
+- Promote the project
+| Community | 15.3% | 🔴 Needs Attention |
+**Community Suggestions:**
+- Add contributing guidelines
+- Add code of conduct
+- Welcome new contributors
 
 </details>
 
@@ -713,7 +894,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 70 |
+| Commits | 117 |
 | New Issues | 5 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
@@ -741,7 +922,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2024-11-01 01:03:04 UTC*
+*🔄 Last updated: 2024-11-01 06:14:56 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
