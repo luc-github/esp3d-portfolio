@@ -1,0 +1,12 @@
+2024-11-01 06:58:27,487 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-11-01 06:58:27,491 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-11-01 06:58:27,493 - portfolio.cache - INFO - Cache initialized in .cache
+2024-11-01 06:58:27,495 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-11-01 06:58:27,497 - portfolio.analyzer - INFO - Starting data collection
+2024-11-01 06:58:27,617 - portfolio.analyzer - INFO - Processing collected data
+2024-11-01 06:58:27,622 - portfolio.issues - ERROR - Error processing issue #76: expected string or bytes-like object, got 'NoneType'
+2024-11-01 06:58:27,626 - portfolio.issues - ERROR - Error processing issue #76: expected string or bytes-like object, got 'NoneType'
+2024-11-01 06:58:27,635 - portfolio.analyzer - INFO - Generating reports
+2024-11-01 06:58:27,637 - portfolio.analyzer - INFO - Saved report: README.md
+2024-11-01 06:58:27,652 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-11-01 06:58:27,653 - portfolio.analyzer - INFO - Analysis completed successfully

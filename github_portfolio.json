@@ -170,7 +170,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 619,
+              "age_days": 620,
               "days_since_update": 153,
               "is_stale": true,
               "is_recent": false,
@@ -596,7 +596,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 619,
+              "age_days": 620,
               "days_since_update": 153,
               "is_stale": true,
               "is_recent": false,
@@ -1760,18 +1760,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "27",
-                "2758",
-                "37",
-                "2592",
                 "2762",
                 "2561",
+                "37",
+                "2758",
+                "2571",
+                "2711",
                 "2760",
+                "27",
                 "2543",
                 "2524",
                 "40",
-                "2711",
-                "2571"
+                "2592"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -1893,18 +1893,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "27",
-                "2758",
-                "37",
-                "2592",
                 "2762",
                 "2561",
+                "37",
+                "2758",
+                "2571",
+                "2711",
                 "2760",
+                "27",
                 "2543",
                 "2524",
                 "40",
-                "2711",
-                "2571"
+                "2592"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -4278,7 +4278,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 288,
-              "days_since_update": 63,
+              "days_since_update": 64,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4412,7 +4412,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 619,
+              "age_days": 620,
               "days_since_update": 619,
               "is_stale": true,
               "is_recent": false,
@@ -10964,7 +10964,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 866,
+              "age_days": 867,
               "days_since_update": 806,
               "is_stale": true,
               "is_recent": false,
@@ -15988,13 +15988,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4998,
+      "remaining": 4996,
       "reset": "2024-11-01T07:35:51+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-01T06:45:06+00:00"
+      "reset": "2024-11-01T06:59:27+00:00"
     }
   },
   "stats": {
@@ -16022,7 +16022,7 @@
       "open_count": 68,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 774.8690113959614,
+      "avg_age_days": 774.8789785643872,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 68
