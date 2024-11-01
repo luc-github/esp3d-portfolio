@@ -1,0 +1,12 @@
+2024-11-01 06:44:06,283 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-11-01 06:44:06,287 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-11-01 06:44:06,289 - portfolio.cache - INFO - Cache initialized in .cache
+2024-11-01 06:44:06,290 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-11-01 06:44:06,292 - portfolio.analyzer - INFO - Starting data collection
+2024-11-01 06:44:06,454 - portfolio.analyzer - INFO - Processing collected data
+2024-11-01 06:44:06,459 - portfolio.issues - ERROR - Error processing issue #76: 'NoneType' object has no attribute 'lower'
+2024-11-01 06:44:06,463 - portfolio.issues - ERROR - Error processing issue #76: 'NoneType' object has no attribute 'lower'
+2024-11-01 06:44:06,471 - portfolio.analyzer - INFO - Generating reports
+2024-11-01 06:44:06,473 - portfolio.analyzer - INFO - Saved report: README.md
+2024-11-01 06:44:06,488 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-11-01 06:44:06,489 - portfolio.analyzer - INFO - Analysis completed successfully
