@@ -1760,18 +1760,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "2561",
-                "2758",
-                "2762",
-                "37",
-                "2571",
-                "2524",
-                "2760",
-                "40",
-                "2592",
-                "2543",
                 "27",
-                "2711"
+                "2758",
+                "2760",
+                "37",
+                "2561",
+                "40",
+                "2543",
+                "2592",
+                "2571",
+                "2762",
+                "2711",
+                "2524"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -1918,18 +1918,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "2561",
-                "2758",
-                "2762",
-                "37",
-                "2571",
-                "2524",
-                "2760",
-                "40",
-                "2592",
-                "2543",
                 "27",
-                "2711"
+                "2758",
+                "2760",
+                "37",
+                "2561",
+                "40",
+                "2543",
+                "2592",
+                "2571",
+                "2762",
+                "2711",
+                "2524"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -16038,13 +16038,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4799,
+      "remaining": 4797,
       "reset": "2024-11-02T09:58:28+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-02T09:26:00+00:00"
+      "reset": "2024-11-02T09:43:58+00:00"
     }
   },
   "stats": {
@@ -16072,7 +16072,7 @@
       "open_count": 70,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 762.5033074637236,
+      "avg_age_days": 762.5157930805638,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 70
