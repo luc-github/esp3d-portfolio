@@ -34,12 +34,12 @@ class MarkdownGenerator:
         content.extend(self._generate_footer())
         
         return '\n'.join(content)
-    
+
     def _generate_header(self, data: Dict) -> List[str]:
-        """Generate header section with badges"""
+        """Generate header section with badges and styles"""
         stats = data['stats']
         
-        return [
+        content = [
             '# 🛠️ ESP3D Portfolio',
             '',
             '<div align="center">',
@@ -52,9 +52,29 @@ class MarkdownGenerator:
             '> 📑 Real-time status and analysis of ESP3D-related projects',
             '',
             '</div>',
+            '',
+            '<style>',
+            '.statistics-grid { display: grid; gap: 1rem; padding: 1rem; }',
+            '.project-card { border: 1px solid #e1e4e8; border-radius: 6px; margin-bottom: 1rem; }',
+            '.project-header { padding: 1rem; background: #f6f8fa; border-bottom: 1px solid #e1e4e8; }',
+            '.project-header.main { background: #f1f8ff; }',
+            '.project-header.dependency { background: #f6f8fa; }',
+            '.project-body { padding: 1rem; }',
+            '.project-stats { display: flex; gap: 1rem; margin-top: 0.5rem; }',
+            '.project-stats span { color: #586069; }',
+            '.health-score { float: right; padding: 0.25rem 0.5rem; border-radius: 0.25rem; }',
+            '.issue-section { margin-bottom: 1.5rem; }',
+            '.issue-table { width: 100%; border-collapse: collapse; }',
+            '.issue-table th, .issue-table td { padding: 0.5rem; text-align: left; border: 1px solid #e1e4e8; }',
+            '.trend-up { color: #28a745; }',
+            '.trend-down { color: #cb2431; }',
+            '.trend-stable { color: #6a737d; }',
+            '</style>',
             ''
         ]
-    
+        
+        return content
+
     def _generate_navigation(self, data: Dict) -> List[str]:
         """Generate quick navigation section"""
         content = [
@@ -94,46 +114,98 @@ class MarkdownGenerator:
         
         return content
     
+    def _get_trend_emoji(self, trend: float) -> str:
+        """Get trend emoji based on value"""
+        if not trend:
+            return "➡️"
+        if trend > 0:
+            return "⬆️"
+        if trend < 0:
+            return "⬇️"
+        return "➡️"
+
+    def _generate_progress_bar(self, value: float, max_value: float, width: int = 20) -> str:
+        """Generate a progress bar"""
+        filled = int((value / max_value) * width)
+        return f"{'█' * filled}{'░' * (width - filled)}"
+
+    def _generate_issue_distribution_chart(self, distribution: Dict) -> str:
+        """Generate ASCII chart for issue distribution"""
+        total = sum(distribution.values())
+        if not total:
+            return "No issues found"
+            
+        chart = ['```']
+        for priority, count in sorted(distribution.items()):
+            percentage = (count / total) * 100
+            bar = self._generate_progress_bar(count, total)
+            chart.append(f"{priority:10} {bar} {percentage:5.1f}% ({count})")
+        chart.append('```')
+        return '\n'.join(chart)
+
     def _generate_statistics(self, data: Dict) -> List[str]:
         """Generate statistics section with charts"""
         stats = data['stats']
         content = [
-            '## 📊 Statistics',
+            '## 📊 Project Statistics',
             '',
-            '<details>',
-            '<summary>Click to view detailed statistics</summary>',
+            '<div class="statistics-grid">',
             '',
-            '### Repository Statistics',
+            '### 📦 Repository Overview',
+            '<table>',
+            '<tr><th>Type</th><th>Count</th><th>Stars</th><th>Issues</th><th>Activity</th></tr>',
+            f'<tr><td>🚀 Main Projects</td><td>{stats["repositories"]["main_projects"]}</td>'
+            f'<td>{stats["repositories"].get("total_stars", 0)} ⭐</td>'
+            f'<td>{sum(1 for r in data["repositories"] if r["type"] == "main")} 📝</td>'
+            f'<td>{self._get_trend_emoji(stats["activity"].get("commit_trend", 0))}</td></tr>',
+            
+            f'<tr><td>🔧 Dependencies</td><td>{stats["repositories"]["dependencies"]}</td>'
+            f'<td>{stats["repositories"].get("total_forks", 0)} 🔄</td>'
+            f'<td>{sum(1 for r in data["repositories"] if r["type"] == "dependency")} 📝</td>'
+            f'<td>{self._get_trend_emoji(stats["activity"].get("dependency_trend", 0))}</td></tr>',
+            '</table>',
             '',
-            '| Metric | Value |',
-            '|--------|-------|',
-            f'| Total Repositories | {stats["repositories"]["total_count"]} |',
-            f'| Main Projects | {stats["repositories"]["main_projects"]} |',
-            f'| Dependencies | {stats["repositories"]["dependencies"]} |',
-            f'| Total Stars | {stats["repositories"].get("total_stars", 0)} |',
-            f'| Total Forks | {stats["repositories"].get("total_forks", 0)} |',
+            '### 📈 Recent Activity',
+            '<table>',
+            '<tr><th>Metric</th><th>Last 7 Days</th><th>Last 30 Days</th><th>Trend</th></tr>',
+            self._generate_activity_row("Commits", stats["activity"]),
+            self._generate_activity_row("Contributors", stats["activity"]["active_contributors"]),
+            self._generate_activity_row("Issues Created", stats["issues"]["recent_activity"]),
+            self._generate_activity_row("Issues Closed", stats["issues"]["recent_activity"], "closed_"),
+            '</table>',
             '',
-            '### Issue Statistics',
+            '### 🏷️ Issue Distribution',
+            '<table><tr><td>',
+            self._generate_issue_distribution_chart(stats["issues"].get("priority_distribution", {})),
+            '</td></tr></table>',
             '',
-            '| Metric | Value |',
-            '|--------|-------|',
-            f'| Open Issues | {stats["issues"]["open_count"]} |',
-            f'| Closed Issues | {stats["issues"]["closed_count"]} |',
-            f'| Average Age | {stats["issues"]["avg_age_days"]:.1f} days |',
-            f'| Close Rate | {stats["issues"]["close_rate"]*100:.1f}% |',
+            '### 📅 Activity Calendar',
+            '<table><tr><td>',
+            self._generate_activity_chart(data["stats"]["activity"]["commit_frequency"]),
+            '</td></tr></table>',
             '',
-            '### Recent Activity',
-            '',
-            '```',
-            self._generate_activity_chart(data['stats']['activity']['commit_frequency']),
-            '```',
-            '',
-            '</details>',
-            ''
+            '</div>'
         ]
         
         return content
-    
+
+    def _generate_activity_row(self, label: str, data: Dict, prefix: str = "") -> str:
+        """Generate a row for the activity table"""
+        week_key = f"{prefix}last_week"
+        month_key = f"{prefix}last_month"
+        trend_key = f"{prefix}trend"
+        
+        week = data.get(week_key, 0)
+        month = data.get(month_key, 0)
+        trend = data.get(trend_key, 0)
+        
+        return (
+            f'<tr><td>{label}</td>'
+            f'<td>{week}</td>'
+            f'<td>{month}</td>'
+            f'<td>{self._get_trend_emoji(trend)}</td></tr>'
+        )
+     
     def _generate_projects_status(self, data: Dict) -> List[str]:
         """Generate projects status section"""
         content = ['## 📦 Projects Status', '']
