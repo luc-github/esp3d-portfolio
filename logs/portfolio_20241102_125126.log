@@ -1,0 +1,21 @@
+2024-11-02 12:51:26,487 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-11-02 12:51:26,491 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-11-02 12:51:26,492 - portfolio.cache - INFO - Cache initialized in .cache
+2024-11-02 12:51:26,493 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-11-02 12:51:26,495 - portfolio.analyzer - INFO - Starting data collection
+2024-11-02 12:51:26,497 - portfolio.github - INFO - Collecting data for repository: ESP3D
+2024-11-02 12:51:39,586 - portfolio.github - INFO - Collecting data for repository: ESP3DLib
+2024-11-02 12:51:44,342 - portfolio.github - INFO - Collecting data for repository: ESP3D-WEBUI
+2024-11-02 12:51:53,930 - portfolio.github - INFO - Collecting data for repository: ESP3D-TFT
+2024-11-02 12:51:59,518 - portfolio.github - INFO - Collecting data for repository: Marlin
+2024-11-02 12:52:07,554 - portfolio.github - INFO - Collecting data for repository: ESP3D-Configurator
+2024-11-02 12:52:15,102 - portfolio.github - INFO - Collecting data for repository: esp3d.io
+2024-11-02 12:52:20,279 - portfolio.github - INFO - Collecting data for repository: ESP32SSDP
+2024-11-02 12:52:25,649 - portfolio.github - INFO - Collecting data for repository: SSDP_IDF
+2024-11-02 12:52:28,389 - portfolio.github - INFO - Collecting data for repository: esp32-usb-serial
+2024-11-02 12:52:30,845 - portfolio.github - INFO - Collecting data for repository: EspLuaEngine
+2024-11-02 12:52:33,605 - portfolio.analyzer - INFO - Processing collected data
+2024-11-02 12:52:33,618 - portfolio.analyzer - INFO - Generating reports
+2024-11-02 12:52:33,620 - portfolio.analyzer - INFO - Saved report: README.md
+2024-11-02 12:52:33,637 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-11-02 12:52:33,638 - portfolio.analyzer - INFO - Analysis completed successfully
