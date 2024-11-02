@@ -49,7 +49,7 @@ class MarkdownGenerator:
             f'![Dependencies](https://img.shields.io/badge/Dependencies-{stats["repositories"]["dependencies"]}-green)',
             f'![Open Issues](https://img.shields.io/badge/Open%20Issues-{stats["issues"]["open_count"]}-yellow)',
             '',
-            '> 📑 Real-time status and analysis of ESP3D-related projects',
+            '📑 Real-time status and analysis of ESP3D-related projects',
             '',
             '</div>',
             ''
