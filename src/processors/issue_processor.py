@@ -26,13 +26,15 @@ class IssueProcessor:
     def _process_branch_issues(self, issues: List[Dict], repo_name: str, branch_name: str) -> List[Dict]:
         """Process and enrich individual issues"""
         processed_issues = []
-        
+    
         for issue in issues:
             try:
                 processed_issue = self._enrich_issue_data(issue, repo_name, branch_name)
                 processed_issues.append(processed_issue)
             except Exception as e:
-                self.logger.error(f"Error processing issue #{issue.get('number')}: {e}")
+                self.logger.error(
+                    f"Error processing issue #{issue.get('number')} - {issue.get('title', 'No title')}: {e}"
+                )
         
         # Définir une date par défaut pour le tri
         def get_sort_date(issue):
@@ -141,7 +143,7 @@ class IssueProcessor:
     def _find_related_issues(self, issue: Dict) -> List[str]:
         """Find related issues based on content analysis"""
         related = []
-        body = issue.get('body', '')
+        body = issue.get('body') or ''  # S'assurer que body n'est jamais None
         
         # Look for issue references (#123)
         import re
