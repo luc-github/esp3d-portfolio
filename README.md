@@ -5,7 +5,7 @@
 ![Repositories](https://img.shields.io/badge/Repositories-12-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-4-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-70-yellow)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-68-yellow)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -42,16 +42,16 @@
 | Total Repositories | 12 |
 | Main Projects | 8 |
 | Dependencies | 4 |
-| Total Stars | 2762 |
+| Total Stars | 2763 |
 | Total Forks | 877 |
 
 ### Issue Statistics
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 70 |
+| Open Issues | 68 |
 | Closed Issues | 0 |
-| Average Age | 775.2 days |
+| Average Age | 798.5 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -90,7 +90,6 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
@@ -118,7 +117,6 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
@@ -481,7 +479,7 @@ Author: Luc
 **Type**: Depedency<br>
 **Description**: Add Lua engine to your firmware using ESP boards<br>
 **Language**: C<br>
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 </td></tr></table>
 
@@ -542,8 +540,6 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1059: <a href="https://github.com/luc-github/ESP3D/issues/1059">[Question]How to Send G-code Commands via HTTP API in ESP3D Version 2.x</a></td><td><code>2024-10-30</code></td><td><code>2024-10-31</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
@@ -574,7 +570,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -586,7 +582,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -617,7 +617,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -629,7 +629,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -670,7 +674,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -682,7 +686,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -714,7 +722,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -726,7 +734,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -751,7 +763,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -763,7 +775,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -788,7 +804,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -800,7 +816,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -825,7 +845,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -837,7 +857,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -861,7 +885,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">26.0%</span>
+**Health Score**: <span style="color: #ff0000">19.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -873,7 +897,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 70.0% | 🟢 Excellent |
+| Maintenance | 50.0% | 🟡 Good |
+**Maintenance Suggestions:**
+- Improve test coverage
+- Regular dependency updates
+- Set up branch protection
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -926,7 +954,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2024-11-15 01:01:33 UTC*
+*🔄 Last updated: 2024-11-16 00:59:59 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
