@@ -42,7 +42,7 @@
 | Total Repositories | 12 |
 | Main Projects | 8 |
 | Dependencies | 4 |
-| Total Stars | 2763 |
+| Total Stars | 2770 |
 | Total Forks | 877 |
 
 ### Issue Statistics
@@ -51,7 +51,7 @@
 |--------|-------|
 | Open Issues | 68 |
 | Closed Issues | 0 |
-| Average Age | 798.5 days |
+| Average Age | 798.7 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -146,7 +146,7 @@ Author: Luc
 **Type**: Main<br>
 **Description**: Configurator for ESP3D Firmware<br>
 **Language**: JavaScript<br>
-**Health Score**: <span style="color: #ff0000">31.2%</span>
+**Health Score**: <span style="color: #ff0000">31.3%</span>
 
 </td></tr></table>
 
@@ -419,7 +419,7 @@ Author: Luc
 **Type**: Depedency<br>
 **Description**: Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components<br>
 **Language**: C++<br>
-**Health Score**: <span style="color: #ff0000">27.9%</span>
+**Health Score**: <span style="color: #ff0000">28.0%</span>
 
 </td></tr></table>
 
@@ -479,7 +479,7 @@ Author: Luc
 **Type**: Depedency<br>
 **Description**: Add Lua engine to your firmware using ESP boards<br>
 **Language**: C<br>
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 </td></tr></table>
 
@@ -570,7 +570,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -592,7 +592,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -617,7 +617,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -639,7 +639,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -674,7 +674,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -696,7 +696,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -722,7 +722,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -744,7 +744,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -763,7 +763,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -785,7 +785,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -804,7 +804,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -826,7 +826,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -845,7 +845,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -867,7 +867,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -885,7 +885,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">19.0%</span>
+**Health Score**: <span style="color: #ff0000">19.1%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -907,7 +907,7 @@ Author: Luc
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 15.3% | 🔴 Needs Attention |
+| Community | 16.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -954,7 +954,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2024-11-16 00:59:59 UTC*
+*🔄 Last updated: 2024-11-16 07:00:51 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
