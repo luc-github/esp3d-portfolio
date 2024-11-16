@@ -78,9 +78,9 @@ class MarkdownGenerator:
         # Then add dependencies
         for repo in data['repositories']:
             if repo['type'] == 'dependency':
-                type_emoji = STATUS_EMOJIS['main_project']
+                type_emoji = STATUS_EMOJIS['dependency']
                 content.append(
-                    f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Main Project | '
+                    f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Dependency | '
                     f'{repo["description"] or "Project status and issues"} |'
                 )
         

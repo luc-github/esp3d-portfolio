@@ -127,7 +127,7 @@
         },
         {
             "name": "ESP32SSDP",
-            "type": "dependency",
+            "type": "main_project",
             "priority": 1,
             "tracked_labels": ["bug", "enhancement", "feature", "critical"],
             "ignore_labels": ["wontfix", "duplicate", "invalid"],
