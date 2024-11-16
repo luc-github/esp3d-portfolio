@@ -87,17 +87,7 @@
                     "name": "ESP3DLib-V3-bugfix-2.1.x",
                     "label": "Development",
                     "is_production": false
-                }
-            ]
-        },
-        {
-            "name": "Marlin",
-            "type": "main",
-            "priority": 1,
-            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
-            "ignore_labels": ["wontfix", "duplicate", "invalid"],
-            "highlight_labels": ["critical", "priority"],
-            "branches": [
+                },
                 {
                     "name": "ESP3DLib-V3-2.1.2",
                     "label": "Development",
