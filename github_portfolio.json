@@ -1708,18 +1708,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "40",
-                "2571",
-                "27",
                 "2758",
-                "2711",
-                "2592",
-                "2561",
-                "2524",
-                "2760",
                 "37",
+                "2571",
+                "2760",
+                "27",
+                "2524",
+                "2561",
+                "2711",
                 "2762",
-                "2543"
+                "2592",
+                "2543",
+                "40"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -1866,18 +1866,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "40",
-                "2571",
-                "27",
                 "2758",
-                "2711",
-                "2592",
-                "2561",
-                "2524",
-                "2760",
                 "37",
+                "2571",
+                "2760",
+                "27",
+                "2524",
+                "2561",
+                "2711",
                 "2762",
-                "2543"
+                "2592",
+                "2543",
+                "40"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -3003,7 +3003,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 863,
+              "age_days": 864,
               "days_since_update": 825,
               "is_stale": true,
               "is_recent": false,
@@ -3304,7 +3304,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 863,
+              "age_days": 864,
               "days_since_update": 825,
               "is_stale": true,
               "is_recent": false,
@@ -13168,13 +13168,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4754,
+      "remaining": 4753,
       "reset": "2024-11-16T07:52:45+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-16T07:08:52+00:00"
+      "reset": "2024-11-16T07:24:34+00:00"
     }
   },
   "stats": {
@@ -13202,7 +13202,7 @@
       "open_count": 68,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 798.7402090965795,
+      "avg_age_days": 798.7511208607809,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 68
