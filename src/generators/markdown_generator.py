@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime, timezone
 from typing import Dict, List, Any
-from ..utils.constants import STATUS_EMOJIS, CHART_CHARS
+from ..utils.constants import STATUS_EMOJIS, CHART_CHARS, ProjectType
 
 class MarkdownGenerator:
     def __init__(self, config_manager):
@@ -68,7 +68,7 @@ class MarkdownGenerator:
         
         # Add main projects first
         for repo in data['repositories']:
-            if repo['type'] == 'main':
+            if repo['type'].lower() == ProjectType.MAIN.value:  # Comparaison insensible à la casse
                 type_emoji = STATUS_EMOJIS['main_project']
                 content.append(
                     f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Main Project | '
@@ -77,7 +77,7 @@ class MarkdownGenerator:
         
         # Then add dependencies
         for repo in data['repositories']:
-            if repo['type'] == 'dependency':
+            if repo['type'].lower() == ProjectType.DEPENDENCY.value:  # Comparaison insensible à la casse
                 type_emoji = STATUS_EMOJIS['dependency']
                 content.append(
                     f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Dependency | '

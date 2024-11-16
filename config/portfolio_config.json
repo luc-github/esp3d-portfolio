@@ -127,7 +127,7 @@
         },
         {
             "name": "ESP32SSDP",
-            "type": "main_project",
+            "type": "dependency",
             "priority": 1,
             "tracked_labels": ["bug", "enhancement", "feature", "critical"],
             "ignore_labels": ["wontfix", "duplicate", "invalid"],
@@ -142,7 +142,7 @@
         },
         {
             "name": "SSDP_IDF",
-            "type": "main_project",
+            "type": "dependency",
             "priority": 1,
             "tracked_labels": ["bug", "enhancement", "feature", "critical"],
             "ignore_labels": ["wontfix", "duplicate", "invalid"],
@@ -157,7 +157,7 @@
         },
         {
             "name": "esp32-usb-serial",
-            "type": "main_project",
+            "type": "dependency",
             "priority": 1,
             "tracked_labels": ["bug", "enhancement", "feature", "critical"],
             "ignore_labels": ["wontfix", "duplicate", "invalid"],
@@ -172,7 +172,7 @@
         },
         {
             "name": "EspLuaEngine",
-            "type": "main_project",
+            "type": "dependency",
             "priority": 1,
             "tracked_labels": ["bug", "enhancement", "feature", "critical"],
             "ignore_labels": ["wontfix", "duplicate", "invalid"],
