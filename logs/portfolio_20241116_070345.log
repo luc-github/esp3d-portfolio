@@ -1,0 +1,10 @@
+2024-11-16 07:03:45,087 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-11-16 07:03:45,091 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-11-16 07:03:45,092 - portfolio.cache - INFO - Cache initialized in .cache
+2024-11-16 07:03:45,093 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-11-16 07:03:45,095 - portfolio.analyzer - INFO - Starting data collection
+2024-11-16 07:03:45,175 - portfolio.analyzer - INFO - Processing collected data
+2024-11-16 07:03:45,188 - portfolio.analyzer - INFO - Generating reports
+2024-11-16 07:03:45,191 - portfolio.analyzer - INFO - Saved report: README.md
+2024-11-16 07:03:45,206 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-11-16 07:03:45,207 - portfolio.analyzer - INFO - Analysis completed successfully

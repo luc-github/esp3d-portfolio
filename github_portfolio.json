@@ -1674,7 +1674,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1018,
+              "age_days": 1019,
               "days_since_update": 37,
               "is_stale": true,
               "is_recent": false,
@@ -1708,18 +1708,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
+                "2561",
                 "27",
-                "2711",
-                "37",
                 "2543",
-                "2758",
-                "2592",
-                "2762",
-                "2760",
-                "2571",
-                "2524",
                 "40",
-                "2561"
+                "2592",
+                "2571",
+                "2711",
+                "2758",
+                "2760",
+                "2524",
+                "2762",
+                "37"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -1832,7 +1832,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1018,
+              "age_days": 1019,
               "days_since_update": 37,
               "is_stale": true,
               "is_recent": false,
@@ -1866,18 +1866,18 @@
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
+                "2561",
                 "27",
-                "2711",
-                "37",
                 "2543",
-                "2758",
-                "2592",
-                "2762",
-                "2760",
-                "2571",
-                "2524",
                 "40",
-                "2561"
+                "2592",
+                "2571",
+                "2711",
+                "2758",
+                "2760",
+                "2524",
+                "2762",
+                "37"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -15986,13 +15986,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4756,
+      "remaining": 4755,
       "reset": "2024-11-16T07:52:45+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-16T07:01:51+00:00"
+      "reset": "2024-11-16T07:04:45+00:00"
     }
   },
   "stats": {
@@ -16020,7 +16020,7 @@
       "open_count": 68,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 798.7353386969382,
+      "avg_age_days": 798.7373509926906,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 68
