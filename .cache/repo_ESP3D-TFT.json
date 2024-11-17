@@ -1,5 +1,5 @@
 {
-  "timestamp": 1731744151.8711905,
+  "timestamp": 1731805425.1513698,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -27,12 +27,13 @@
             "body": "I am using ESP32-S3 DEV KIT N8R8 with esp3d-tft to communicate via wifi with my cnc 3030 prover max (with GRBL, USB port CH340) and the setting is made to communicate via USB SERIAL port. I can send and I receive data from the cnc through the USB SERIAL port.. The problem is that there is a delay of about 1 second between the sending of the command and the execution from cnc device, this is very clear visible when a file is executed, all commands are executed with a delay between each other and the whole process is interrupted. I tested with communication from my computer directly to port 23 of an esp3d-tft board the delay remains, I tested using the web interface the delay remains on sending commands or executing file. If connect the machine directly to the computer with a usb cable everything works fine.\r\n\r\nCan someone tell me if this is a bug or if I missed something when compiling the code.\r\n\r\nI apologize for my bad English.",
             "state": "open",
             "created_at": "2024-10-24T15:47:10+00:00",
-            "updated_at": "2024-10-28T00:46:13+00:00",
+            "updated_at": "2024-11-16T09:31:54+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-TFT/issues/77",
             "is_pr": false,
             "labels": [
-              "bug"
+              "bug",
+              "Under investigation"
             ],
             "priority": "normal",
             "assignee": null
@@ -268,19 +269,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-11-19T00:00:00+00:00",
-          "total": 1,
-          "days": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-11-26T00:00:00+00:00",
           "total": 0,
@@ -933,6 +921,19 @@
         },
         {
           "week": "2024-11-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-11-17T00:00:00+00:00",
           "total": 0,
           "days": [
             0,
