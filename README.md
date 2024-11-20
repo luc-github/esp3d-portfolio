@@ -5,7 +5,7 @@
 ![Repositories](https://img.shields.io/badge/Repositories-11-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-7-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-4-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-48-yellow)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-41-yellow)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -33,6 +33,76 @@
 
 </div>
 
+## 📊 Activity Rankings
+
+Repository activity rankings based on commits, issues, and overall engagement.
+
+### Last 24 Hours
+
+<div class="activity-ranking">
+
+| Rank | Repository | Type | Activity Score | Details |
+|------|------------|------|----------------|----------|
+| 🥇 1 | [ESP3D](#esp3d) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| 🥈 2 | [ESP3DLib](#esp3dlib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| 🥉 3 | [ESP3D-WEBUI](#esp3d-webui) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 4 | [ESP3D-TFT](#esp3d-tft) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 5 | [Marlin](#marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 6 | [ESP3D-Configurator](#esp3d-configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 7 | [esp3d.io](#esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 8 | [ESP32SSDP](#esp32ssdp) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 9 | [SSDP_IDF](#ssdp_idf) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 10 | [esp32-usb-serial](#esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 11 | [EspLuaEngine](#espluaengine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+
+</div>
+
+### Last 7 Days
+
+<div class="activity-ranking">
+
+| Rank | Repository | Type | Activity Score | Details |
+|------|------------|------|----------------|----------|
+| 🥇 1 | [esp3d.io](#esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | Commits: 1, Issues: 0 |
+| 🥈 2 | [ESP3D](#esp3d) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| 🥉 3 | [ESP3DLib](#esp3dlib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 4 | [ESP3D-WEBUI](#esp3d-webui) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 5 | [ESP3D-TFT](#esp3d-tft) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 6 | [Marlin](#marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 7 | [ESP3D-Configurator](#esp3d-configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 8 | [ESP32SSDP](#esp32ssdp) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 9 | [SSDP_IDF](#ssdp_idf) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 10 | [esp32-usb-serial](#esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 11 | [EspLuaEngine](#espluaengine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+
+</div>
+
+### Last 30 Days
+
+<div class="activity-ranking">
+
+| Rank | Repository | Type | Activity Score | Details |
+|------|------------|------|----------------|----------|
+| 🥇 1 | [esp3d.io](#esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (24) | Commits: 8, Issues: 0 |
+| 🥈 2 | [ESP3D-Configurator](#esp3d-configurator) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | Commits: 1, Issues: 0 |
+| 🥉 3 | [esp32-usb-serial](#esp32-usb-serial) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | Commits: 1, Issues: 0 |
+| ▪️ 4 | [ESP3D-TFT](#esp3d-tft) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | Commits: 0, Issues: 1 |
+| ▪️ 5 | [ESP3D](#esp3d) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 6 | [ESP3DLib](#esp3dlib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 7 | [ESP3D-WEBUI](#esp3d-webui) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 8 | [Marlin](#marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 9 | [ESP32SSDP](#esp32ssdp) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 10 | [SSDP_IDF](#ssdp_idf) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+| ▪️ 11 | [EspLuaEngine](#espluaengine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | Commits: 0, Issues: 0 |
+
+</div>
+
+### Legend
+
+- 🟦 Activity Score (relative to most active repository)
+- Activity Score = (Commits × 3) + (Issues × 2) + (Comments × 1)
+- Higher score indicates more activity
+
 ## 📊 Statistics
 
 <details>
@@ -52,9 +122,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 48 |
+| Open Issues | 41 |
 | Closed Issues | 0 |
-| Average Age | 700.3 days |
+| Average Age | 777.8 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -93,10 +163,6 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1056: <a href="https://github.com/luc-github/ESP3D/issues/1056">[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping</a></td><td><code>2024-10-20</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#726: <a href="https://github.com/luc-github/ESP3D/issues/726">[FEATURE REQUEST]🦄Notification using custom webhook </a></td><td><code>2022-02-28</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#576: <a href="https://github.com/luc-github/ESP3D/issues/576">[BenchMark]Web upload / Web Download on different FS and platform</a></td><td><code>2021-02-03</code></td><td><code>2022-08-29</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
@@ -112,16 +178,16 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#726: <a href="https://github.com/luc-github/ESP3D/issues/726">[FEATURE REQUEST]🦄Notification using custom webhook </a></td><td><code>2022-02-28</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1056: <a href="https://github.com/luc-github/ESP3D/issues/1056">[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping</a></td><td><code>2024-10-20</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1056: <a href="https://github.com/luc-github/ESP3D/issues/1056">[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping</a></td><td><code>2024-10-20</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#888: <a href="https://github.com/luc-github/ESP3D/issues/888">[FEATURE REQUEST]🦄WhatsApp Notification</a></td><td><code>2023-02-20</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#955: <a href="https://github.com/luc-github/ESP3D/issues/955">[FEATURE REQUEST]🦄Change ESP_DIRECT_SD to ESP_ONLY_SD for consistency</a></td><td><code>2023-10-12</code></td><td><code>2024-05-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#376: <a href="https://github.com/luc-github/ESP3D/issues/376">[FEATURE REQUEST]🦄autodetection</a></td><td><code>2019-09-24</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#726: <a href="https://github.com/luc-github/ESP3D/issues/726">[FEATURE REQUEST]🦄Notification using custom webhook </a></td><td><code>2022-02-28</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#891: <a href="https://github.com/luc-github/ESP3D/issues/891">[FEATURE REQUEST]🦄Add discord Notification</a></td><td><code>2023-02-22</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#576: <a href="https://github.com/luc-github/ESP3D/issues/576">[BenchMark]Web upload / Web Download on different FS and platform</a></td><td><code>2021-02-03</code></td><td><code>2022-08-29</code></td><td style="color: #000000">normal</td></tr>
@@ -308,8 +374,6 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>🔄</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#76: <a href="https://github.com/luc-github/ESP3DLib/pull/76">3.0 refactoring</a></td><td><code>2024-01-03</code></td><td><code>2024-06-08</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
@@ -325,9 +389,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>🔄</td><td>#76: <a href="https://github.com/luc-github/ESP3DLib/pull/76">3.0 refactoring</a></td><td><code>2024-01-03</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-10-10</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#76: <a href="https://github.com/luc-github/ESP3DLib/pull/76">3.0 refactoring</a></td><td><code>2024-01-03</code></td><td><code>2024-06-08</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -505,20 +568,16 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#726: <a href="https://github.com/luc-github/ESP3D/issues/726">[FEATURE REQUEST]🦄Notification using custom webhook </a></td><td><code>2022-02-28</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1056: <a href="https://github.com/luc-github/ESP3D/issues/1056">[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping</a></td><td><code>2024-10-20</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1057: <a href="https://github.com/luc-github/ESP3D/issues/1057">[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 </a></td><td><code>2024-10-21</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1056: <a href="https://github.com/luc-github/ESP3D/issues/1056">[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping</a></td><td><code>2024-10-20</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1056: <a href="https://github.com/luc-github/ESP3D/issues/1056">[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping</a></td><td><code>2024-10-20</code></td><td><code>2024-10-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#888: <a href="https://github.com/luc-github/ESP3D/issues/888">[FEATURE REQUEST]🦄WhatsApp Notification</a></td><td><code>2023-02-20</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#955: <a href="https://github.com/luc-github/ESP3D/issues/955">[FEATURE REQUEST]🦄Change ESP_DIRECT_SD to ESP_ONLY_SD for consistency</a></td><td><code>2023-10-12</code></td><td><code>2024-05-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#376: <a href="https://github.com/luc-github/ESP3D/issues/376">[FEATURE REQUEST]🦄autodetection</a></td><td><code>2019-09-24</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#726: <a href="https://github.com/luc-github/ESP3D/issues/726">[FEATURE REQUEST]🦄Notification using custom webhook </a></td><td><code>2022-02-28</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#726: <a href="https://github.com/luc-github/ESP3D/issues/726">[FEATURE REQUEST]🦄Notification using custom webhook </a></td><td><code>2022-02-28</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#891: <a href="https://github.com/luc-github/ESP3D/issues/891">[FEATURE REQUEST]🦄Add discord Notification</a></td><td><code>2023-02-22</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#576: <a href="https://github.com/luc-github/ESP3D/issues/576">[BenchMark]Web upload / Web Download on different FS and platform</a></td><td><code>2021-02-03</code></td><td><code>2022-08-29</code></td><td style="color: #000000">normal</td></tr>
@@ -562,11 +621,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>🔄</td><td>🔧 3.0</td><td>#76: <a href="https://github.com/luc-github/ESP3DLib/pull/76">3.0 refactoring</a></td><td><code>2024-01-03</code></td><td><code>2024-11-20</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-10-10</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🚀 master</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🔧 3.0</td><td>#79: <a href="https://github.com/luc-github/ESP3DLib/pull/79">Bump braces and gulp in /embedded</a></td><td><code>2024-06-13</code></td><td><code>2024-06-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🚀 master</td><td>#76: <a href="https://github.com/luc-github/ESP3DLib/pull/76">3.0 refactoring</a></td><td><code>2024-01-03</code></td><td><code>2024-06-08</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🔧 3.0</td><td>#76: <a href="https://github.com/luc-github/ESP3DLib/pull/76">3.0 refactoring</a></td><td><code>2024-01-03</code></td><td><code>2024-06-08</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 master</td><td>#75: <a href="https://github.com/luc-github/ESP3DLib/issues/75">[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0</a></td><td><code>2023-12-15</code></td><td><code>2024-03-22</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
@@ -872,7 +928,7 @@ Author: Luc
 | Activity | Count |
 |----------|--------|
 | Commits | 107 |
-| New Issues | 1 |
+| New Issues | 6 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
 
@@ -899,7 +955,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2024-11-20 05:20:01 UTC*
+*🔄 Last updated: 2024-11-20 06:44:26 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

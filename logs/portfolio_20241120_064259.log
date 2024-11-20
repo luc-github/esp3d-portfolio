@@ -1,0 +1,217 @@
+2024-11-20 06:42:59,621 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-11-20 06:42:59,625 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-11-20 06:42:59,626 - portfolio.cache - INFO - Cache initialized in .cache
+2024-11-20 06:42:59,627 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-11-20 06:42:59,629 - portfolio.analyzer - INFO - Starting data collection
+2024-11-20 06:42:59,630 - portfolio.cache - DEBUG - Cache expired for repo_ESP3D
+2024-11-20 06:42:59,630 - portfolio.github - INFO - Collecting data for repository: ESP3D
+2024-11-20 06:42:59,632 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-11-20 06:42:59,744 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:00,099 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D HTTP/11" 200 None
+2024-11-20 06:43:00,428 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/branches/2.1.x HTTP/11" 200 None
+2024-11-20 06:43:00,867 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:01,221 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/1058 HTTP/11" 200 None
+2024-11-20 06:43:01,573 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/1057 HTTP/11" 200 None
+2024-11-20 06:43:01,937 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/1056 HTTP/11" 200 None
+2024-11-20 06:43:02,314 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/955 HTTP/11" 200 None
+2024-11-20 06:43:02,685 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/891 HTTP/11" 200 None
+2024-11-20 06:43:03,051 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/888 HTTP/11" 200 None
+2024-11-20 06:43:03,421 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/795 HTTP/11" 200 None
+2024-11-20 06:43:03,773 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/726 HTTP/11" 200 None
+2024-11-20 06:43:04,138 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/576 HTTP/11" 200 None
+2024-11-20 06:43:04,505 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/575 HTTP/11" 200 None
+2024-11-20 06:43:04,852 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/568 HTTP/11" 200 None
+2024-11-20 06:43:05,210 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/376 HTTP/11" 200 None
+2024-11-20 06:43:05,557 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/243 HTTP/11" 200 None
+2024-11-20 06:43:05,907 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/branches/3.0 HTTP/11" 200 None
+2024-11-20 06:43:06,308 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:06,670 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/1058 HTTP/11" 200 None
+2024-11-20 06:43:07,022 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/1057 HTTP/11" 200 None
+2024-11-20 06:43:07,374 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/1056 HTTP/11" 200 None
+2024-11-20 06:43:07,721 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/955 HTTP/11" 200 None
+2024-11-20 06:43:08,071 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/891 HTTP/11" 200 None
+2024-11-20 06:43:08,429 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/888 HTTP/11" 200 None
+2024-11-20 06:43:08,791 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/795 HTTP/11" 200 None
+2024-11-20 06:43:09,139 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/726 HTTP/11" 200 None
+2024-11-20 06:43:09,501 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/576 HTTP/11" 200 None
+2024-11-20 06:43:09,847 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/575 HTTP/11" 200 None
+2024-11-20 06:43:10,199 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/568 HTTP/11" 200 None
+2024-11-20 06:43:10,567 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/376 HTTP/11" 200 None
+2024-11-20 06:43:10,949 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/issues/243 HTTP/11" 200 None
+2024-11-20 06:43:11,351 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/contributors HTTP/11" 200 None
+2024-11-20 06:43:11,930 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/commits HTTP/11" 200 None
+2024-11-20 06:43:12,270 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:43:12,273 - portfolio.cache - DEBUG - Cached data for repo_ESP3D
+2024-11-20 06:43:12,273 - portfolio.cache - DEBUG - Cache expired for repo_ESP3DLib
+2024-11-20 06:43:12,273 - portfolio.github - INFO - Collecting data for repository: ESP3DLib
+2024-11-20 06:43:12,601 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:12,986 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib HTTP/11" 200 None
+2024-11-20 06:43:13,343 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/branches/master HTTP/11" 200 None
+2024-11-20 06:43:13,757 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:14,134 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/issues/75 HTTP/11" 200 None
+2024-11-20 06:43:14,496 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/issues/39 HTTP/11" 200 None
+2024-11-20 06:43:14,874 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/branches/3.0 HTTP/11" 200 None
+2024-11-20 06:43:15,245 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:15,602 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/issues/75 HTTP/11" 200 None
+2024-11-20 06:43:15,968 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/issues/39 HTTP/11" 200 None
+2024-11-20 06:43:16,332 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/contributors HTTP/11" 200 None
+2024-11-20 06:43:16,730 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/commits HTTP/11" 200 None
+2024-11-20 06:43:17,144 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:43:19,216 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3DLib/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:43:19,218 - portfolio.cache - DEBUG - Cached data for repo_ESP3DLib
+2024-11-20 06:43:19,219 - portfolio.cache - DEBUG - Cache expired for repo_ESP3D-WEBUI
+2024-11-20 06:43:19,219 - portfolio.github - INFO - Collecting data for repository: ESP3D-WEBUI
+2024-11-20 06:43:19,545 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:19,904 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI HTTP/11" 200 None
+2024-11-20 06:43:20,266 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/branches/2.1 HTTP/11" 200 None
+2024-11-20 06:43:20,675 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:21,026 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/390 HTTP/11" 200 None
+2024-11-20 06:43:21,412 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/265 HTTP/11" 200 None
+2024-11-20 06:43:21,758 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/249 HTTP/11" 200 None
+2024-11-20 06:43:22,110 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/244 HTTP/11" 200 None
+2024-11-20 06:43:22,487 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/242 HTTP/11" 200 None
+2024-11-20 06:43:22,838 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/122 HTTP/11" 200 None
+2024-11-20 06:43:23,211 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/106 HTTP/11" 200 None
+2024-11-20 06:43:23,581 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/85 HTTP/11" 200 None
+2024-11-20 06:43:23,918 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/branches/3.0 HTTP/11" 200 None
+2024-11-20 06:43:25,569 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:25,925 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/390 HTTP/11" 200 None
+2024-11-20 06:43:26,276 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/265 HTTP/11" 200 None
+2024-11-20 06:43:26,640 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/249 HTTP/11" 200 None
+2024-11-20 06:43:26,989 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/244 HTTP/11" 200 None
+2024-11-20 06:43:27,365 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/242 HTTP/11" 200 None
+2024-11-20 06:43:27,713 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/122 HTTP/11" 200 None
+2024-11-20 06:43:28,065 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/106 HTTP/11" 200 None
+2024-11-20 06:43:28,415 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/issues/85 HTTP/11" 200 None
+2024-11-20 06:43:28,785 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/contributors HTTP/11" 200 None
+2024-11-20 06:43:29,201 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/commits HTTP/11" 200 None
+2024-11-20 06:43:29,531 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-WEBUI/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:43:29,534 - portfolio.cache - DEBUG - Cached data for repo_ESP3D-WEBUI
+2024-11-20 06:43:29,534 - portfolio.cache - DEBUG - Cache expired for repo_ESP3D-TFT
+2024-11-20 06:43:29,534 - portfolio.github - INFO - Collecting data for repository: ESP3D-TFT
+2024-11-20 06:43:29,863 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:30,235 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT HTTP/11" 200 None
+2024-11-20 06:43:30,606 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/branches/main HTTP/11" 200 None
+2024-11-20 06:43:31,034 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:31,387 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/77 HTTP/11" 200 None
+2024-11-20 06:43:31,746 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/76 HTTP/11" 200 None
+2024-11-20 06:43:32,110 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/74 HTTP/11" 200 None
+2024-11-20 06:43:32,511 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/67 HTTP/11" 200 None
+2024-11-20 06:43:32,858 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/55 HTTP/11" 200 None
+2024-11-20 06:43:33,258 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/54 HTTP/11" 200 None
+2024-11-20 06:43:33,605 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/53 HTTP/11" 200 None
+2024-11-20 06:43:33,958 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/12 HTTP/11" 200 None
+2024-11-20 06:43:34,327 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/issues/5 HTTP/11" 200 None
+2024-11-20 06:43:34,765 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/contributors HTTP/11" 200 None
+2024-11-20 06:43:35,193 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/commits HTTP/11" 200 None
+2024-11-20 06:43:35,523 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-TFT/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:43:35,526 - portfolio.cache - DEBUG - Cached data for repo_ESP3D-TFT
+2024-11-20 06:43:35,526 - portfolio.cache - DEBUG - Cache expired for repo_Marlin
+2024-11-20 06:43:35,526 - portfolio.github - INFO - Collecting data for repository: Marlin
+2024-11-20 06:43:35,846 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:36,315 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin HTTP/11" 200 None
+2024-11-20 06:43:36,652 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/branches/ESP3DLib-V3-bugfix-2.1.x HTTP/11" 200 None
+2024-11-20 06:43:36,973 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/issues?state=open HTTP/11" 200 2
+2024-11-20 06:43:37,362 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/branches/ESP3DLib-V3-2.1.2 HTTP/11" 200 None
+2024-11-20 06:43:37,687 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/issues?state=open HTTP/11" 200 2
+2024-11-20 06:43:38,258 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/contributors HTTP/11" 200 None
+2024-11-20 06:43:38,635 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=2 HTTP/11" 200 None
+2024-11-20 06:43:39,005 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=3 HTTP/11" 200 None
+2024-11-20 06:43:39,406 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=4 HTTP/11" 200 None
+2024-11-20 06:43:39,799 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=5 HTTP/11" 200 None
+2024-11-20 06:43:40,195 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=6 HTTP/11" 200 None
+2024-11-20 06:43:40,593 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=7 HTTP/11" 200 None
+2024-11-20 06:43:40,997 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=8 HTTP/11" 200 None
+2024-11-20 06:43:41,368 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=9 HTTP/11" 200 None
+2024-11-20 06:43:41,755 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=10 HTTP/11" 200 None
+2024-11-20 06:43:42,147 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=11 HTTP/11" 200 None
+2024-11-20 06:43:42,546 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=12 HTTP/11" 200 None
+2024-11-20 06:43:42,933 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=13 HTTP/11" 200 None
+2024-11-20 06:43:43,312 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repositories/482456870/contributors?page=14 HTTP/11" 200 None
+2024-11-20 06:43:43,729 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/commits HTTP/11" 200 None
+2024-11-20 06:43:44,095 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/Marlin/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:43:44,099 - portfolio.cache - DEBUG - Cached data for repo_Marlin
+2024-11-20 06:43:44,099 - portfolio.cache - DEBUG - Cache expired for repo_ESP3D-Configurator
+2024-11-20 06:43:44,099 - portfolio.github - INFO - Collecting data for repository: ESP3D-Configurator
+2024-11-20 06:43:44,438 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:44,793 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator HTTP/11" 200 None
+2024-11-20 06:43:45,120 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/branches/main HTTP/11" 200 None
+2024-11-20 06:43:45,513 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:45,864 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/issues/16 HTTP/11" 200 None
+2024-11-20 06:43:46,231 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/issues/5 HTTP/11" 200 None
+2024-11-20 06:43:46,574 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/contributors HTTP/11" 200 None
+2024-11-20 06:43:46,959 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/commits HTTP/11" 200 None
+2024-11-20 06:43:47,317 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP3D-Configurator/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:43:47,319 - portfolio.cache - DEBUG - Cached data for repo_ESP3D-Configurator
+2024-11-20 06:43:47,319 - portfolio.cache - DEBUG - Cache expired for repo_esp3d.io
+2024-11-20 06:43:47,319 - portfolio.github - INFO - Collecting data for repository: esp3d.io
+2024-11-20 06:43:47,634 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:43:48,016 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io HTTP/11" 200 None
+2024-11-20 06:43:48,363 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/branches/main HTTP/11" 200 None
+2024-11-20 06:43:48,737 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/issues?state=open HTTP/11" 200 None
+2024-11-20 06:43:49,103 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/issues/8 HTTP/11" 200 None
+2024-11-20 06:43:51,381 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/issues/6 HTTP/11" 200 None
+2024-11-20 06:43:51,741 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/contributors HTTP/11" 200 None
+2024-11-20 06:43:52,091 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/commits HTTP/11" 200 None
+2024-11-20 06:43:52,450 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:43:54,543 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:43:56,633 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:43:58,749 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:00,834 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:02,936 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:05,028 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:07,130 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:09,227 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:11,387 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:13,478 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 202 2
+2024-11-20 06:44:15,569 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp3d.io/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:44:15,571 - portfolio.cache - DEBUG - Cached data for repo_esp3d.io
+2024-11-20 06:44:15,571 - portfolio.cache - DEBUG - Cache expired for repo_ESP32SSDP
+2024-11-20 06:44:15,571 - portfolio.github - INFO - Collecting data for repository: ESP32SSDP
+2024-11-20 06:44:15,898 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:44:16,260 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP HTTP/11" 200 None
+2024-11-20 06:44:16,600 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/branches/v2.x HTTP/11" 200 None
+2024-11-20 06:44:16,974 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/issues?state=open HTTP/11" 200 None
+2024-11-20 06:44:17,359 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/issues/35 HTTP/11" 200 None
+2024-11-20 06:44:17,720 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/issues/9 HTTP/11" 200 None
+2024-11-20 06:44:18,082 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/contributors HTTP/11" 200 None
+2024-11-20 06:44:18,500 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/commits HTTP/11" 200 None
+2024-11-20 06:44:18,849 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/ESP32SSDP/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:44:18,851 - portfolio.cache - DEBUG - Cached data for repo_ESP32SSDP
+2024-11-20 06:44:18,851 - portfolio.cache - DEBUG - Cache expired for repo_SSDP_IDF
+2024-11-20 06:44:18,851 - portfolio.github - INFO - Collecting data for repository: SSDP_IDF
+2024-11-20 06:44:19,192 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:44:19,540 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF HTTP/11" 200 None
+2024-11-20 06:44:19,899 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF/branches/main HTTP/11" 200 None
+2024-11-20 06:44:20,276 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF/issues?state=open HTTP/11" 200 None
+2024-11-20 06:44:20,623 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF/issues/1 HTTP/11" 200 None
+2024-11-20 06:44:21,001 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF/contributors HTTP/11" 200 None
+2024-11-20 06:44:21,368 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF/commits HTTP/11" 200 None
+2024-11-20 06:44:21,693 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/SSDP_IDF/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:44:21,695 - portfolio.cache - DEBUG - Cached data for repo_SSDP_IDF
+2024-11-20 06:44:21,695 - portfolio.cache - DEBUG - Cache expired for repo_esp32-usb-serial
+2024-11-20 06:44:21,696 - portfolio.github - INFO - Collecting data for repository: esp32-usb-serial
+2024-11-20 06:44:22,031 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:44:22,420 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp32-usb-serial HTTP/11" 200 None
+2024-11-20 06:44:22,775 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp32-usb-serial/branches/main HTTP/11" 200 None
+2024-11-20 06:44:23,108 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp32-usb-serial/issues?state=open HTTP/11" 200 2
+2024-11-20 06:44:23,461 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp32-usb-serial/contributors HTTP/11" 200 None
+2024-11-20 06:44:23,816 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp32-usb-serial/commits HTTP/11" 200 None
+2024-11-20 06:44:24,148 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/esp32-usb-serial/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:44:24,150 - portfolio.cache - DEBUG - Cached data for repo_esp32-usb-serial
+2024-11-20 06:44:24,150 - portfolio.cache - DEBUG - Cache expired for repo_EspLuaEngine
+2024-11-20 06:44:24,150 - portfolio.github - INFO - Collecting data for repository: EspLuaEngine
+2024-11-20 06:44:24,478 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /user HTTP/11" 200 None
+2024-11-20 06:44:24,841 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/EspLuaEngine HTTP/11" 200 None
+2024-11-20 06:44:25,200 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/EspLuaEngine/branches/main HTTP/11" 200 None
+2024-11-20 06:44:25,534 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/EspLuaEngine/issues?state=open HTTP/11" 200 2
+2024-11-20 06:44:25,890 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/EspLuaEngine/contributors HTTP/11" 200 None
+2024-11-20 06:44:26,241 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/EspLuaEngine/commits HTTP/11" 200 None
+2024-11-20 06:44:26,606 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /repos/luc-github/EspLuaEngine/stats/commit_activity HTTP/11" 200 None
+2024-11-20 06:44:26,608 - portfolio.cache - DEBUG - Cached data for repo_EspLuaEngine
+2024-11-20 06:44:26,921 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /rate_limit HTTP/11" 200 None
+2024-11-20 06:44:26,921 - portfolio.analyzer - INFO - Processing collected data
+2024-11-20 06:44:26,930 - portfolio.analyzer - INFO - Generating reports
+2024-11-20 06:44:26,932 - portfolio.analyzer - INFO - Saved report: README.md
+2024-11-20 06:44:26,946 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-11-20 06:44:26,947 - portfolio.analyzer - INFO - Analysis completed successfully
