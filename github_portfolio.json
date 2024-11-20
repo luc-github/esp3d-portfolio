@@ -22,110 +22,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 1058,
-              "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
-              "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
-              "state": "open",
-              "created_at": "2024-10-21T04:51:29+00:00",
-              "updated_at": "2024-10-21T04:51:29+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1058",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 30,
-              "days_since_update": 30,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1057,
-              "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
-              "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
-              "state": "open",
-              "created_at": "2024-10-21T04:39:58+00:00",
-              "updated_at": "2024-10-21T04:39:58+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1057",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 30,
-              "days_since_update": 30,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1056,
-              "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
-              "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
-              "state": "open",
-              "created_at": "2024-10-20T20:58:03+00:00",
-              "updated_at": "2024-10-21T01:22:20+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1056",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 30,
-              "days_since_update": 30,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 726,
-              "title": "[FEATURE REQUEST]\ud83e\udd84Notification using custom webhook ",
-              "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
-              "state": "open",
-              "created_at": "2022-02-28T05:28:21+00:00",
-              "updated_at": "2024-03-06T00:13:58+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/726",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 995,
-              "days_since_update": 259,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 576,
               "title": "[BenchMark]Web upload / Web Download on different FS and platform",
               "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
@@ -159,27 +55,25 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 1,
+            "open": 1,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 1
             },
             "ages": {
               "recent": 0,
-              "active": 3,
-              "stale": 2
+              "active": 0,
+              "stale": 1
             },
             "complexity": {
-              "medium": 5
+              "medium": 1
             },
             "size": {
-              "medium": 2,
-              "small": 2,
               "large": 1
             },
             "lifecycle": {
-              "new": 5
+              "new": 1
             }
           }
         },
@@ -195,6 +89,114 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 726,
+              "title": "[FEATURE REQUEST]\ud83e\udd84Notification using custom webhook ",
+              "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
+              "state": "open",
+              "created_at": "2022-02-28T05:28:21+00:00",
+              "updated_at": "2024-11-20T05:39:27+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/726",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "ESP-3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 996,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "high",
+              "lifecycle_stage": "new"
+            },
+            {
+              "number": 1056,
+              "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
+              "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
+              "state": "open",
+              "created_at": "2024-10-20T20:58:03+00:00",
+              "updated_at": "2024-11-20T05:38:49+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1056",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "ESP-3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 30,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
+              "number": 1057,
+              "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
+              "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
+              "state": "open",
+              "created_at": "2024-10-21T04:39:58+00:00",
+              "updated_at": "2024-11-20T05:38:34+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1057",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "ESP-3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 30,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
+              "number": 1058,
+              "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
+              "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
+              "state": "open",
+              "created_at": "2024-10-21T04:51:29+00:00",
+              "updated_at": "2024-11-20T05:35:39+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1058",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "ESP-3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 30,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 568,
               "title": "[FEATURE REQUEST]\ud83e\udd84USB Disk support using CH376S chip",
@@ -225,84 +227,6 @@
               "lifecycle_stage": "new"
             },
             {
-              "number": 1058,
-              "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
-              "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
-              "state": "open",
-              "created_at": "2024-10-21T04:51:29+00:00",
-              "updated_at": "2024-10-21T04:51:29+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1058",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 30,
-              "days_since_update": 30,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1057,
-              "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
-              "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
-              "state": "open",
-              "created_at": "2024-10-21T04:39:58+00:00",
-              "updated_at": "2024-10-21T04:39:58+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1057",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 30,
-              "days_since_update": 30,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1056,
-              "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
-              "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
-              "state": "open",
-              "created_at": "2024-10-20T20:58:03+00:00",
-              "updated_at": "2024-10-21T01:22:20+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1056",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 30,
-              "days_since_update": 30,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 888,
               "title": "[FEATURE REQUEST]\ud83e\udd84WhatsApp Notification",
               "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement",
@@ -319,7 +243,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 638,
-              "days_since_update": 171,
+              "days_since_update": 172,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -443,32 +367,6 @@
               "lifecycle_stage": "in_progress"
             },
             {
-              "number": 726,
-              "title": "[FEATURE REQUEST]\ud83e\udd84Notification using custom webhook ",
-              "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
-              "state": "open",
-              "created_at": "2022-02-28T05:28:21+00:00",
-              "updated_at": "2024-03-06T00:13:58+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/726",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 995,
-              "days_since_update": 259,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 795,
               "title": "[TODO]\u2611Code refactoring plan",
               "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\r\n\r\n* <s>Change GenLinkedList to vector</s>:+1:\r\n* Implement better file encapsulation class to cover any new file system and any new arch\r\n* Web server abstraction layer to allow to update smoothly to another solution\r\n* Add https support once there is an HTTP server that is implemented that support it \r\n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\r\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\r\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\r\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \r\n* TBD\r\n\r\n\r\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
@@ -565,9 +463,9 @@
               "normal": 13
             },
             "ages": {
-              "recent": 0,
-              "active": 4,
-              "stale": 9
+              "recent": 4,
+              "active": 1,
+              "stale": 8
             },
             "complexity": {
               "medium": 13
@@ -1432,69 +1330,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 79,
-              "title": "Bump braces and gulp in /embedded",
-              "body": "Bumps [braces](https://github.com/micromatch/braces) to 3.0.3 and updates ancestor dependency [gulp](https://github.com/gulpjs/gulp). These dependencies need to be updated together.\n\nUpdates `braces` from 3.0.2 to 3.0.3\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/micromatch/braces/commit/74b2db2938fad48a2ea54a9c8bf27a37a62c350d\"><code>74b2db2</code></a> 3.0.3</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/88f1429a0f47e1dd3813de35211fc97ffda27f9e\"><code>88f1429</code></a> update eslint. lint, fix unit tests.</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff\"><code>415d660</code></a> Snyk js braces 6838727 (<a href=\"https://redirect.github.com/micromatch/braces/issues/40\">#40</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/190510f79db1adf21d92798b0bb6fccc1f72c9d6\"><code>190510f</code></a> fix tests, skip 1 test in test/braces.expand</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/716eb9f12d820b145a831ad678618731927e8856\"><code>716eb9f</code></a> readme bump</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/a5851e57f45c3431a94d83fc565754bc10f5bbc3\"><code>a5851e5</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/braces/issues/37\">#37</a> from coderaiser/fix/vulnerability</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/2092bd1fb108d2c59bd62e243b70ad98db961538\"><code>2092bd1</code></a> feature: braces: add maxSymbols (<a href=\"https://github.com/micromatch/braces/issues/\">https://github.com/micromatch/braces/issues/</a>...</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/9f5b4cf47329351bcb64287223ffb6ecc9a5e6d3\"><code>9f5b4cf</code></a> fix: vulnerability (<a href=\"https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727\">https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/98414f9f1fabe021736e26836d8306d5de747e0d\"><code>98414f9</code></a> remove funding file</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/665ab5d561c017a38ba7aafd92cc6655b91d8c14\"><code>665ab5d</code></a> update keepEscaping doc (<a href=\"https://redirect.github.com/micromatch/braces/issues/27\">#27</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/micromatch/braces/compare/3.0.2...3.0.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `gulp` from 4.0.2 to 5.0.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/releases\">gulp's releases</a>.</em></p>\n<blockquote>\n<h2>gulp v5.0.0</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/HEAD/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>\u26a0 BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md\">gulp's changelog</a>.</em></p>\n<blockquote>\n<h2><a href=\"https://www.github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">5.0.0</a> (2024-03-29)</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/master/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>\u26a0 BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/5c4c5473c5582a8e4495c695ecd93b13f0852cbd\"><code>5c4c547</code></a> chore: Release 5.0.0 (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2762\">#2762</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/bf72116c5d5f613836b392fb83633ea6c14f3a65\"><code>bf72116</code></a> chore: Add index.mjs to files list</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\"><code>b00de68</code></a> feat: Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\"><code>72668c6</code></a> chore!: Normalize repository, dropping node &lt;10.13 support (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2758\">#2758</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/85896d4f099a80d58dd08d1f6d80586b07678995\"><code>85896d4</code></a> chore(docs): Update stream handbook link (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2711\">#2711</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/818bd73e5da1ad69f43eef84214c98d6392a73e4\"><code>818bd73</code></a> Docs: Remove gulp-sourcemaps because it is built-in (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2592\">#2592</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/598f971a6567401e5760f4fd0b84df0180c2e350\"><code>598f971</code></a> Docs: Fix broken link in recipe (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2571\">#2571</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/9877de07cf923c889d7f0661d87f3d6f8634eeb1\"><code>9877de0</code></a> Docs: Guide CustomRegistries to maintain properties on tasks (fixes <a href=\"https://redirect.github.com/gulpjs/gulp/issues/2561\">#2561</a>) (#...</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/f91c388beb265e5008202f11100309549162247a\"><code>f91c388</code></a> Docs: Remove typo in custom registry docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2543\">#2543</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/df252509b52acd712300b3b5d00bf7aedf0dbd40\"><code>df25250</code></a> Docs: Fix typo in task docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2524\">#2524</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3DLib/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2024-06-13T06:12:56+00:00",
-              "updated_at": "2024-06-13T06:12:56+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/pull/79",
-              "is_pr": true,
-              "labels": [
-                "dependencies"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 159,
-              "days_since_update": 159,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "2524",
-                "2561",
-                "2762",
-                "2758",
-                "2711",
-                "2543",
-                "2592",
-                "2760",
-                "2571",
-                "27",
-                "37",
-                "40"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 76,
-              "title": "3.0 refactoring",
-              "body": null,
-              "state": "open",
-              "created_at": "2024-01-03T02:55:35+00:00",
-              "updated_at": "2024-06-08T00:56:57+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/pull/76",
-              "is_pr": true,
-              "labels": [],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 322,
-              "days_since_update": 165,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 75,
               "title": "[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0",
               "body": "https://github.com/MarlinFirmware/Marlin/commit/fecadaca82e49c2558b42684382ede121274bfea removed all configurations flags access for ESP3DLib \r\n\r\n### In Configuration_adv.h\r\nLatest changes prevent  ESP3D_WIFISUPPORT  to use :\r\n```\r\n#define WEBSUPPORT          // Start a webserver (which may include auto-discovery) using SPIFFS\r\n#define OTASUPPORT          // Support over-the-air firmware updates\r\n#define WIFI_CUSTOM_COMMAND // Accept feature config commands (e.g., WiFi ESP3D) from the host\r\n```\r\n\r\nYou need to replace/put back:\r\n`#if ENABLED(WIFISUPPORT)` by `#if ANY(WIFISUPPORT, ESP3D_WIFISUPPORT)`\r\n\r\nOr add the flags outside of the `#if ENABLED(WIFISUPPORT)`\r\n\r\nIf not, ESP3DLib cannot communicate with Marlin and is not setup for web access \r\n\r\n### In SanityCheck.h\r\nchange \r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif defined(WIFI_SSID) || defined(WIFI_PWD)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nby\r\n\r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif (defined(WIFI_SSID) || defined(WIFI_PWD)) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nOr compilation will failed \r\n\r\n",
@@ -1524,26 +1359,25 @@
             }
           ],
           "issue_summary": {
-            "total": 3,
-            "open": 3,
+            "total": 1,
+            "open": 1,
             "closed": 0,
             "priorities": {
-              "normal": 3
+              "normal": 1
             },
             "ages": {
               "recent": 0,
               "active": 0,
-              "stale": 3
+              "stale": 1
             },
             "complexity": {
-              "medium": 3
+              "medium": 1
             },
             "size": {
-              "large": 2,
-              "small": 1
+              "large": 1
             },
             "lifecycle": {
-              "new": 3
+              "new": 1
             }
           }
         },
@@ -1559,6 +1393,32 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 76,
+              "title": "3.0 refactoring",
+              "body": null,
+              "state": "open",
+              "created_at": "2024-01-03T02:55:35+00:00",
+              "updated_at": "2024-11-20T05:42:13+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3DLib/pull/76",
+              "is_pr": true,
+              "labels": [
+                "3.0"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 322,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "high",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 39,
               "title": "[FEATURE REQUEST]ESP3DLib 3.0",
@@ -1586,94 +1446,30 @@
               "related_issues": [],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
-            },
-            {
-              "number": 79,
-              "title": "Bump braces and gulp in /embedded",
-              "body": "Bumps [braces](https://github.com/micromatch/braces) to 3.0.3 and updates ancestor dependency [gulp](https://github.com/gulpjs/gulp). These dependencies need to be updated together.\n\nUpdates `braces` from 3.0.2 to 3.0.3\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/micromatch/braces/commit/74b2db2938fad48a2ea54a9c8bf27a37a62c350d\"><code>74b2db2</code></a> 3.0.3</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/88f1429a0f47e1dd3813de35211fc97ffda27f9e\"><code>88f1429</code></a> update eslint. lint, fix unit tests.</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff\"><code>415d660</code></a> Snyk js braces 6838727 (<a href=\"https://redirect.github.com/micromatch/braces/issues/40\">#40</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/190510f79db1adf21d92798b0bb6fccc1f72c9d6\"><code>190510f</code></a> fix tests, skip 1 test in test/braces.expand</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/716eb9f12d820b145a831ad678618731927e8856\"><code>716eb9f</code></a> readme bump</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/a5851e57f45c3431a94d83fc565754bc10f5bbc3\"><code>a5851e5</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/braces/issues/37\">#37</a> from coderaiser/fix/vulnerability</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/2092bd1fb108d2c59bd62e243b70ad98db961538\"><code>2092bd1</code></a> feature: braces: add maxSymbols (<a href=\"https://github.com/micromatch/braces/issues/\">https://github.com/micromatch/braces/issues/</a>...</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/9f5b4cf47329351bcb64287223ffb6ecc9a5e6d3\"><code>9f5b4cf</code></a> fix: vulnerability (<a href=\"https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727\">https://security.snyk.io/vuln/SNYK-JS-BRACES-6838727</a>)</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/98414f9f1fabe021736e26836d8306d5de747e0d\"><code>98414f9</code></a> remove funding file</li>\n<li><a href=\"https://github.com/micromatch/braces/commit/665ab5d561c017a38ba7aafd92cc6655b91d8c14\"><code>665ab5d</code></a> update keepEscaping doc (<a href=\"https://redirect.github.com/micromatch/braces/issues/27\">#27</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/micromatch/braces/compare/3.0.2...3.0.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `gulp` from 4.0.2 to 5.0.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/releases\">gulp's releases</a>.</em></p>\n<blockquote>\n<h2>gulp v5.0.0</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/HEAD/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>\u26a0 BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md\">gulp's changelog</a>.</em></p>\n<blockquote>\n<h2><a href=\"https://www.github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">5.0.0</a> (2024-03-29)</h2>\n<p>We've tried to provide a high-level changelog for gulp v5 below, but it\ndoesn't contain all changes from the 60+ dependencies that we maintain.</p>\n<p>Please see <a href=\"https://github.com/gulpjs/gulp/blob/master/#individual-changelogs\">individual changelogs</a> to drill down\ninto all changes that were made.</p>\n<h3>\u26a0 BREAKING CHANGES</h3>\n<ul>\n<li>Drop support for Node.js &lt;10.13</li>\n<li>Default stream encoding to UTF-8</li>\n<li>Standardized on <code>anymatch</code> library for globbing paths. All globs should work the same between <code>src</code> and <code>watch</code> now!</li>\n<li>Removed support for ordered globs. This aligns with the chokidar globbing implementation. If you need your globs to be ordered, you can use <code>ordered-read-stream</code></li>\n<li>All globs and paths are normalized to unix-like filepaths</li>\n<li>Only allow JS variants for <code>.gulp.*</code> config files</li>\n<li>Removed support for alpha releases of v4 from <code>gulp-cli</code></li>\n<li>Removed the <code>--verify</code> flag</li>\n<li>Renamed the <code>--require</code> flag to <code>--preload</code> to avoid conflicting with Node.js flags</li>\n<li>Removed many legacy and deprecated loaders</li>\n<li>Upgrade to chokidar v3</li>\n<li>Clone <code>Vinyl</code> objects with stream contents using <code>teex</code>, but no longer wait for all streams to flow before cloned streams will receive data</li>\n<li>Stop using <code>process.umask()</code> to make directories, instead falling back to Node's default mode</li>\n<li>Throw on non-function, non-string option coercers</li>\n<li>Drop support of Node.js snake_case flags</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> namespace to the store</li>\n<li>Use a Symbol for attaching the <code>gulplog</code> store to the global</li>\n<li>Use sha256 to hash the <code>v8flags</code> cache into a filename</li>\n</ul>\n<h3>Features</h3>\n<ul>\n<li>Streamlined the dependency tree</li>\n<li>Switch all streams implementation to Streamx</li>\n<li>Rewrote <code>glob-stream</code> to use a custom directory walk that relies on newer Node.js features and is more performant than old implementation</li>\n<li>Implement translation support for all CLI messages and all messages passing through gulplog</li>\n<li>Allow users to customize or remove the timestamp from their logs</li>\n<li>Upgraded gulplog to v2. Messages logged via v1 will also display a deprecated warning. Plugins should update to v2 as the community upgrades to gulp 5</li>\n<li>Added support for <code>gulpile.cjs</code> and <code>gulpfile.mjs</code></li>\n<li>Add support for <code>swc</code>, <code>esbuild</code>, <code>sucrase</code>, and <code>mdx</code> loaders</li>\n<li>Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>) (<a href=\"https://www.github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\">b00de68</a>)</li>\n<li>Support sourcemap handling on streaming <code>Vinyl</code> contents</li>\n<li>Support <code>extends</code> syntax for <code>.gulp.*</code> config file</li>\n<li>Allow overriding <code>gulpfile</code> and <code>preloads</code> via <code>.gulp.*</code> config file</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Resolve bugs related to symlinks on various platforms</li>\n<li>Resolved some reported ReDoS CVEs and improved performance in glob-parent</li>\n<li>Rework errors surfaced when encountering files or symlinks when trying to create directories</li>\n<li>Ensure watch allows japanese characters in globs (<a href=\"https://www.github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\">72668c6</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/5c4c5473c5582a8e4495c695ecd93b13f0852cbd\"><code>5c4c547</code></a> chore: Release 5.0.0 (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2762\">#2762</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/bf72116c5d5f613836b392fb83633ea6c14f3a65\"><code>bf72116</code></a> chore: Add index.mjs to files list</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/b00de681f5ef6ade283d544f62f770f6b27a9e52\"><code>b00de68</code></a> feat: Provide an ESM export (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2760\">#2760</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d\"><code>72668c6</code></a> chore!: Normalize repository, dropping node &lt;10.13 support (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2758\">#2758</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/85896d4f099a80d58dd08d1f6d80586b07678995\"><code>85896d4</code></a> chore(docs): Update stream handbook link (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2711\">#2711</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/818bd73e5da1ad69f43eef84214c98d6392a73e4\"><code>818bd73</code></a> Docs: Remove gulp-sourcemaps because it is built-in (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2592\">#2592</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/598f971a6567401e5760f4fd0b84df0180c2e350\"><code>598f971</code></a> Docs: Fix broken link in recipe (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2571\">#2571</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/9877de07cf923c889d7f0661d87f3d6f8634eeb1\"><code>9877de0</code></a> Docs: Guide CustomRegistries to maintain properties on tasks (fixes <a href=\"https://redirect.github.com/gulpjs/gulp/issues/2561\">#2561</a>) (#...</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/f91c388beb265e5008202f11100309549162247a\"><code>f91c388</code></a> Docs: Remove typo in custom registry docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2543\">#2543</a>)</li>\n<li><a href=\"https://github.com/gulpjs/gulp/commit/df252509b52acd712300b3b5d00bf7aedf0dbd40\"><code>df25250</code></a> Docs: Fix typo in task docs (<a href=\"https://redirect.github.com/gulpjs/gulp/issues/2524\">#2524</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3DLib/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2024-06-13T06:12:56+00:00",
-              "updated_at": "2024-06-13T06:12:56+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/pull/79",
-              "is_pr": true,
-              "labels": [
-                "dependencies"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 159,
-              "days_since_update": 159,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "2524",
-                "2561",
-                "2762",
-                "2758",
-                "2711",
-                "2543",
-                "2592",
-                "2760",
-                "2571",
-                "27",
-                "37",
-                "40"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 76,
-              "title": "3.0 refactoring",
-              "body": null,
-              "state": "open",
-              "created_at": "2024-01-03T02:55:35+00:00",
-              "updated_at": "2024-06-08T00:56:57+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/pull/76",
-              "is_pr": true,
-              "labels": [],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 322,
-              "days_since_update": 165,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
             }
           ],
           "issue_summary": {
-            "total": 3,
-            "open": 3,
+            "total": 2,
+            "open": 2,
             "closed": 0,
             "priorities": {
-              "normal": 3
+              "normal": 2
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
-              "stale": 3
+              "stale": 1
             },
             "complexity": {
-              "low": 1,
-              "medium": 2
+              "medium": 1,
+              "low": 1
             },
             "size": {
-              "medium": 1,
-              "large": 1,
-              "small": 1
+              "small": 1,
+              "medium": 1
             },
             "lifecycle": {
-              "new": 3
+              "new": 2
             }
           }
         }
@@ -2463,10 +2259,10 @@
         ]
       },
       "statistics": {
-        "size": 7672,
+        "size": 7656,
         "stars": 100,
         "forks": 32,
-        "open_issues": 4,
+        "open_issues": 3,
         "watchers": 100,
         "default_branch": "master",
         "license": "GNU General Public License v3.0"
@@ -8435,8 +8231,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 630,
-              "days_since_update": 630,
+              "age_days": 631,
+              "days_since_update": 631,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8461,8 +8257,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 630,
-              "days_since_update": 630,
+              "age_days": 631,
+              "days_since_update": 631,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12610,13 +12406,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4679,
-      "reset": "2024-11-20T05:26:36+00:00"
+      "remaining": 4826,
+      "reset": "2024-11-20T07:42:36+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-20T05:21:01+00:00"
+      "reset": "2024-11-20T06:45:26+00:00"
     }
   },
   "stats": {
@@ -12630,7 +12426,7 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 694213,
+      "total_size": 694197,
       "total_stars": 2768,
       "total_forks": 873,
       "branches": {
@@ -12640,19 +12436,19 @@
       }
     },
     "issues": {
-      "total_count": 48,
-      "open_count": 48,
+      "total_count": 41,
+      "open_count": 41,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 700.2942892319753,
+      "avg_age_days": 777.7588335543047,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 48
+        "normal": 41
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 1,
-        "last_month": 2
+        "last_day": 5,
+        "last_week": 6,
+        "last_month": 7
       }
     },
     "activity": {
@@ -12860,7 +12656,7 @@
         },
         {
           "date": "2024-09",
-          "count": 7
+          "count": 4
         },
         {
           "date": "2024-08",
@@ -12876,7 +12672,7 @@
         },
         {
           "date": "2024-05",
-          "count": 3
+          "count": 1
         },
         {
           "date": "2024-04",
@@ -12896,7 +12692,7 @@
         },
         {
           "date": "2023-12",
-          "count": 5
+          "count": 4
         },
         {
           "date": "2023-11",
@@ -13164,5 +12960,508 @@
         }
       ]
     }
+  },
+  "activity_ranking": {
+    "daily": [
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      }
+    ],
+    "weekly": [
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      }
+    ],
+    "monthly": [
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "score": {
+          "commits": 8,
+          "issues": 0,
+          "comments": 0,
+          "total": 24
+        },
+        "details": {
+          "commits": 8,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      },
+      {
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0
+        }
+      }
+    ]
   }
 }

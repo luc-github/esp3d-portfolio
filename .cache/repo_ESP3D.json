@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732079933.3522084,
+  "timestamp": 1732084992.271946,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,70 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1058,
-            "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
-            "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
-            "state": "open",
-            "created_at": "2024-10-21T04:51:29+00:00",
-            "updated_at": "2024-10-21T04:51:29+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1058",
-            "is_pr": false,
-            "labels": [
-              "Feature request"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 1057,
-            "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
-            "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
-            "state": "open",
-            "created_at": "2024-10-21T04:39:58+00:00",
-            "updated_at": "2024-10-21T04:39:58+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1057",
-            "is_pr": false,
-            "labels": [
-              "Feature request"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 1056,
-            "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
-            "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
-            "state": "open",
-            "created_at": "2024-10-20T20:58:03+00:00",
-            "updated_at": "2024-10-21T01:22:20+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1056",
-            "is_pr": false,
-            "labels": [
-              "Feature request"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 726,
-            "title": "[FEATURE REQUEST]\ud83e\udd84Notification using custom webhook ",
-            "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
-            "state": "open",
-            "created_at": "2022-02-28T05:28:21+00:00",
-            "updated_at": "2024-03-06T00:13:58+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/726",
-            "is_pr": false,
-            "labels": [
-              "Feature request"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 576,
             "title": "[BenchMark]Web upload / Web Download on different FS and platform",
@@ -127,12 +63,13 @@
             "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
             "state": "open",
             "created_at": "2024-10-21T04:51:29+00:00",
-            "updated_at": "2024-10-21T04:51:29+00:00",
+            "updated_at": "2024-11-20T05:35:39+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1058",
             "is_pr": false,
             "labels": [
-              "Feature request"
+              "Feature request",
+              "ESP-3.X"
             ],
             "priority": "normal",
             "assignee": null
@@ -143,12 +80,13 @@
             "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
             "state": "open",
             "created_at": "2024-10-21T04:39:58+00:00",
-            "updated_at": "2024-10-21T04:39:58+00:00",
+            "updated_at": "2024-11-20T05:38:34+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1057",
             "is_pr": false,
             "labels": [
-              "Feature request"
+              "Feature request",
+              "ESP-3.X"
             ],
             "priority": "normal",
             "assignee": null
@@ -159,12 +97,13 @@
             "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
             "state": "open",
             "created_at": "2024-10-20T20:58:03+00:00",
-            "updated_at": "2024-10-21T01:22:20+00:00",
+            "updated_at": "2024-11-20T05:38:49+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1056",
             "is_pr": false,
             "labels": [
-              "Feature request"
+              "Feature request",
+              "ESP-3.X"
             ],
             "priority": "normal",
             "assignee": null
@@ -247,12 +186,13 @@
             "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
             "state": "open",
             "created_at": "2022-02-28T05:28:21+00:00",
-            "updated_at": "2024-03-06T00:13:58+00:00",
+            "updated_at": "2024-11-20T05:39:27+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/726",
             "is_pr": false,
             "labels": [
-              "Feature request"
+              "Feature request",
+              "ESP-3.X"
             ],
             "priority": "normal",
             "assignee": null
