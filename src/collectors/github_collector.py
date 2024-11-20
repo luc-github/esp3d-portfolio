@@ -109,6 +109,10 @@ class GitHubCollector:
         try:
             issues = self._retry_on_failure(repo.get_issues, state=state)
             
+            # Récupérer toutes les configurations de branches pour ce repo
+            repo_config = self.config.get_repository_config(repo.name)
+            all_branch_configs = repo_config.branches if repo_config else []
+            
             for issue in issues:
                 # Skip pull requests if not configured to include them
                 if issue.pull_request and not self.config.get_option('options', 'include_pull_requests'):
@@ -121,10 +125,10 @@ class GitHubCollector:
                 # Récupérer les labels de l'issue
                 issue_labels = [label.name for label in issue.labels]
                 
-                # Si la branche a un issue_label configuré
+                # Si la branche courante a un issue_label configuré
                 if branch_config.issue_label:
                     # Vérifier si l'issue a un label de version (de n'importe quelle branche)
-                    all_version_labels = {b.issue_label for b in repo.branches 
+                    all_version_labels = {b.issue_label for b in all_branch_configs 
                                     if b.issue_label is not None}
                     has_version_label = any(label in all_version_labels for label in issue_labels)
                     
@@ -134,7 +138,7 @@ class GitHubCollector:
                 # Si la branche n'a pas d'issue_label configuré
                 else:
                     # Si l'issue a un label de version, l'ignorer pour cette branche
-                    other_branch_labels = {b.issue_label for b in repo.branches 
+                    other_branch_labels = {b.issue_label for b in all_branch_configs 
                                         if b.issue_label is not None}
                     if any(label in other_branch_labels for label in issue_labels):
                         continue
@@ -160,7 +164,6 @@ class GitHubCollector:
             self.logger.error(f"Error collecting issues: {e}")
             
         return issues_data
-        
     def _collect_contributors_data(self, repo) -> List[Dict]:
         """Collect contributor statistics"""
         if not self.config.get_option('options', 'show_contributors'):
