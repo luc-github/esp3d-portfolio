@@ -9,44 +9,37 @@ from src.utils.logger import setup_logger
 from src.utils.config_manager import ConfigManager
 
 def main():
-    # Setup console for rich output
-    console = Console()
-    
-    try:
-        # Setup logging
-        logger = setup_logger()
-        logger.info("Starting ESP3D Portfolio analysis")
+    # Load configuration
+    config_path = Path("config/portfolio_config.json")
+    if not config_path.exists():
+        print(f"ERROR: Configuration file not found at {config_path}")
+        return
         
-        # Load configuration
-        config_path = Path("config/portfolio_config.json")
-        if not config_path.exists():
-            console.print("[red]Configuration file not found![/red]")
-            sys.exit(1)
-            
+    try:
         config_manager = ConfigManager(config_path)
         
-        # Check for GitHub token
+        # Setup logging with config
+        logger = setup_logger(config_manager)
+        logger.info("Starting ESP3D Portfolio analysis")
+        
+        # Vérifier que le token GitHub est configuré
         github_token = os.getenv('GITHUB_TOKEN')
         if not github_token:
-            console.print("[red]GitHub token not found! Please set GITHUB_TOKEN environment variable.[/red]")
-            sys.exit(1)
-            
+            logger.error("GITHUB_TOKEN environment variable is not set")
+            return
+        
         # Initialize analyzer
         analyzer = PortfolioAnalyzer(github_token, config_manager)
         
-        # Run analysis with progress tracking
-        with console.status("[bold green]Analyzing repositories...") as status:
-            analyzer.run_analysis()
-            
-        console.print("[green]Analysis completed successfully![/green]")
+        # Run analysis
+        analyzer.run_analysis()
         
-    except KeyboardInterrupt:
-        console.print("\n[yellow]Analysis interrupted by user[/yellow]")
-        sys.exit(0)
+        logger.info("Analysis completed successfully")
+        
     except Exception as e:
-        console.print(f"[red]Error during analysis: {str(e)}[/red]")
-        logger.exception("Error during analysis")
-        sys.exit(1)
+        print(f"Error during analysis: {str(e)}")
+        if logger:
+            logger.exception("Error during analysis")
 
 if __name__ == "__main__":
     main()

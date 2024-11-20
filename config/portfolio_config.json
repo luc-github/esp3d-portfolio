@@ -223,5 +223,12 @@
         "enabled": true,
         "directory": ".cache",
         "max_age": 3600
+    },
+    "logging": {
+        "enabled": true,
+        "level": "INFO",
+        "max_files": 7,
+        "file_logging": false,
+        "console_logging": true
     }
 }
