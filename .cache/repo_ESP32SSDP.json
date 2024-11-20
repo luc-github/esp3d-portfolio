@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732064453.5331793,
+  "timestamp": 1732076975.6308625,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -20,41 +20,7 @@
           "date": "2024-08-24T08:13:51+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 35,
-            "title": "[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server",
-            "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
-            "state": "open",
-            "created_at": "2023-05-16T01:56:16+00:00",
-            "updated_at": "2023-05-16T01:56:27+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP32SSDP/issues/35",
-            "is_pr": false,
-            "labels": [
-              "bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 9,
-            "title": "[FEATURE REQUEST] Respont to multiple device types or callback?",
-            "body": "Currently the API accepts a single device type. UPNP clients normally look for a root device then read device xml. The xml contains the real device type but the search target header is \r\n\"ST: upnp:rootdevice\"\r\n\r\nSo setting the device SSDP.setDeviceType() to say upnp:rootdevice works for discovery to start but fails because the xml device info schema will contain the wrong device type.\r\n\\<deviceType\\>upnp:rootdevice\\</deviceType\\>\r\n\r\nIn my case my actual device type is \"urn:schemas-upnp-org:device:Basic:1\" but I need to respond to \"upnp:rootdevice\" and \"ssdp:all\" also the search term reply header is supposed to be the same as the ST in the search regardless of the actual device type. \r\n\r\nMaybe this is best handled in a callback of some type? The ability to respond to multiple device types is a good feature but in most cases just one is enough provided the above rootdevice and ssdp:all are also returning a valid reply.\r\n\r\n",
-            "state": "open",
-            "created_at": "2020-02-05T03:26:28+00:00",
-            "updated_at": "2020-02-21T09:59:12+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP32SSDP/issues/9",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "Planned"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       }
     ],
     "contributors": [
