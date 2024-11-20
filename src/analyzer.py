@@ -76,6 +76,11 @@ class PortfolioAnalyzer:
         for repo in portfolio_data['repositories']:
             repo['health_score'] = self.stats_calculator.calculate_repository_health(repo)
         
+        # Calculate activity rankings
+        portfolio_data['activity_ranking'] = self.stats_calculator.calculate_activity_kpi(
+            portfolio_data['repositories']
+        )
+        
         return portfolio_data
     
     def _generate_reports(self, processed_data: Dict[str, Any]) -> None:
@@ -88,6 +93,7 @@ class PortfolioAnalyzer:
         
         # Save raw data
         self._save_report(processed_data, 'github_portfolio.json', is_json=True)
+
     def _save_report(self, content: Any, filename: str, is_json: bool = False) -> None:
         """Save report to file."""
         def json_serial(obj):
@@ -110,6 +116,7 @@ class PortfolioAnalyzer:
         except Exception as e:
             self.logger.error(f"Error saving report {filename}: {e}")
             raise
+
     def cleanup(self) -> None:
         """Cleanup resources and temporary files."""
         try:

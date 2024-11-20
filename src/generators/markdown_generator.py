@@ -17,6 +17,9 @@ class MarkdownGenerator:
         
         # Navigation section
         content.extend(self._generate_navigation(data))
+
+        # Activity KPI section
+        content.extend(self._generate_activity_kpi_section(data))
         
         # Statistics section
         content.extend(self._generate_statistics(data))
@@ -475,6 +478,76 @@ class MarkdownGenerator:
             chart.append(f"{period:8} {activity_levels[period][level]:<30} ({value:.1f} commits)")
         
         return '\n'.join(chart)
+
+    def _generate_activity_kpi_section(self, data: Dict) -> List[str]:
+        """Generate activity KPI section"""
+        content = [
+            '## 📊 Activity Rankings',
+            '',
+            'Repository activity rankings based on commits, issues, and overall engagement.',
+            ''
+        ]
+        
+        periods = {
+            'daily': '24 Hours',
+            'weekly': '7 Days',
+            'monthly': '30 Days'
+        }
+        
+        for period, label in periods.items():
+            content.extend([
+                f'### Last {label}',
+                '',
+                '<div class="activity-ranking">',
+                '',
+                '| Rank | Repository | Type | Activity Score | Details |',
+                '|------|------------|------|----------------|----------|'
+            ])
+            
+            rankings = data['activity_ranking'][period]
+            for rank, repo in enumerate(rankings, 1):
+                # Définir une icône basée sur le rang
+                rank_icon = "🥇" if rank == 1 else "🥈" if rank == 2 else "🥉" if rank == 3 else "▪️"
+                
+                # Créer une barre de progression en emoji
+                score = repo['score']['total']
+                max_score = rankings[0]['score']['total'] if rankings else 1
+                progress_length = 10  # Longueur maximale de la barre
+                filled_length = int((score / max_score) * progress_length) if max_score > 0 else 0
+                progress_bar = "🟦" * filled_length + "⬜" * (progress_length - filled_length)
+                
+                # Formatter les détails
+                details = (
+                    f"Commits: {repo['details']['commits']}, "
+                    f"Issues: {repo['details']['issues']}"
+                )
+                
+                # Ajouter la ligne du repository
+                content.append(
+                    f"| {rank_icon} {rank} | "
+                    f"[{repo['name']}](#{repo['name'].lower()}) | "
+                    f"{repo['type'].title()} | "
+                    f"{progress_bar} ({score}) | "
+                    f"{details} |"
+                )
+            
+            content.extend([
+                '',
+                '</div>',
+                ''
+            ])
+        
+        # Ajouter une légende
+        content.extend([
+            '### Legend',
+            '',
+            '- 🟦 Activity Score (relative to most active repository)',
+            '- Activity Score = (Commits × 3) + (Issues × 2) + (Comments × 1)',
+            '- Higher score indicates more activity',
+            ''
+        ])
+        
+        return content
 
 
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
