@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732064436.6253138,
+  "timestamp": 1732076964.2478964,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -20,40 +20,7 @@
           "date": "2024-11-02T15:07:21+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 16,
-            "title": "[FEATURE REQUEST]Web Flasher Tool",
-            "body": "May be use : https://esphome.github.io/esp-web-tools/",
-            "state": "open",
-            "created_at": "2023-05-18T01:28:29+00:00",
-            "updated_at": "2023-05-18T01:28:29+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-Configurator/issues/16",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 5,
-            "title": "[Information]Devt status",
-            "body": "The configurator is now in beta state \ud83c\udf86 \r\nThe current version is compatible with ESP3D 3.0 only\r\n\r\nIt still need to get improved text content (suggestions/contributions are more than welcome) and add translations support once text is ready.\r\n \r\nThe offline behavior seems not consistent across browsers - so only online version is currently usable=> under investigation\r\n\r\nEdit: offline mode is now fixed and prebuild is available in `build` directory",
-            "state": "open",
-            "created_at": "2022-06-18T06:49:19+00:00",
-            "updated_at": "2022-08-18T01:28:03+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-Configurator/issues/5",
-            "is_pr": false,
-            "labels": [
-              "documentation",
-              "help wanted",
-              "Work in progress"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       }
     ],
     "contributors": [

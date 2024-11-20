@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732064460.516506,
+  "timestamp": 1732076979.0743036,
   "data": {
     "name": "SSDP_IDF",
     "type": "dependency",
@@ -20,24 +20,7 @@
           "date": "2024-05-30T08:15:39+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 1,
-            "title": "[BUG]Miss send notify : NTS: ssdp:byebye when stopping ssdp server #35",
-            "body": "when closing should send  a notification broadcast with : ` NTS: ssdp:byebye` \r\nIt is not a big issue but better fix it to clear others devices cache more quickly",
-            "state": "open",
-            "created_at": "2023-05-16T01:57:52+00:00",
-            "updated_at": "2023-05-16T01:58:17+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/SSDP_IDF/issues/1",
-            "is_pr": false,
-            "labels": [
-              "bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       }
     ],
     "contributors": [
