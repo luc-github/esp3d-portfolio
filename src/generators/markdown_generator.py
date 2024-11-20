@@ -484,24 +484,25 @@ class MarkdownGenerator:
         content = [
             '## 📊 Activity Rankings',
             '',
-            'Repository activity rankings based on commits, issues, and overall engagement.',
+            'Repository activity rankings based on activity over different time periods.',
             ''
         ]
         
         periods = {
-            'daily': '24 Hours',
-            'weekly': '7 Days',
-            'monthly': '30 Days'
+            'daily': 'Last 24 Hours',
+            'weekly': 'Last 7 Days',
+            'monthly': 'Last 30 Days',
+            'yearly': 'Last 365 Days'
         }
         
         for period, label in periods.items():
             content.extend([
-                f'### Last {label}',
+                f'### {label}',
                 '',
                 '<div class="activity-ranking">',
                 '',
-                '| Rank | Repository | Type | Activity Score | Details |',
-                '|------|------------|------|----------------|----------|'
+                '| Rank | Repository | Type | Score | Commits | Issues | Activity/Day |',
+                '|------|------------|------|--------|---------|---------|-------------|'
             ])
             
             rankings = data['activity_ranking'][period]
@@ -516,19 +517,20 @@ class MarkdownGenerator:
                 filled_length = int((score / max_score) * progress_length) if max_score > 0 else 0
                 progress_bar = "🟦" * filled_length + "⬜" * (progress_length - filled_length)
                 
-                # Formatter les détails
-                details = (
-                    f"Commits: {repo['details']['commits']}, "
-                    f"Issues: {repo['details']['issues']}"
-                )
+                # Calculer l'activité par jour
+                commits_per_day = repo['details']['commits_per_day']
+                issues_per_day = repo['details']['issues_per_day']
+                daily_activity = commits_per_day * 3 + issues_per_day * 2  # Utiliser les mêmes poids
                 
-                # Ajouter la ligne du repository
+                # Formatter la ligne
                 content.append(
                     f"| {rank_icon} {rank} | "
-                    f"[{repo['name']}](#{repo['name'].lower()}) | "
+                    f"[{repo['name']}]({repo.get('url', '#')}) | "
                     f"{repo['type'].title()} | "
                     f"{progress_bar} ({score}) | "
-                    f"{details} |"
+                    f"{repo['details']['commits']} | "
+                    f"{repo['details']['issues']} | "
+                    f"{daily_activity:.1f} |"
                 )
             
             content.extend([
@@ -537,19 +539,18 @@ class MarkdownGenerator:
                 ''
             ])
         
-        # Ajouter une légende
+        # Ajouter une légende plus détaillée
         content.extend([
             '### Legend',
             '',
-            '- 🟦 Activity Score (relative to most active repository)',
-            '- Activity Score = (Commits × 3) + (Issues × 2) + (Comments × 1)',
-            '- Higher score indicates more activity',
+            '- 🟦 Activity Score relative to most active repository',
+            '- Score = (Commits × 3) + (Issues × 2) + (Comments × 1)',
+            '- Activity/Day = Average daily activity score for the period',
+            '- Higher scores indicate more activity',
             ''
         ])
         
         return content
-
-
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
         """Generate colored activity heatmap"""
         if not heatmap_data:

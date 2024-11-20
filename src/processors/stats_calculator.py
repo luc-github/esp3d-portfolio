@@ -510,9 +510,10 @@ class StatsCalculator:
         """Calculate activity KPIs for all repositories"""
         now = datetime.now(timezone.utc)
         activity_ranking = {
-            'daily': [],
-            'weekly': [],
-            'monthly': []
+            'daily': [],     # Dernières 24h
+            'weekly': [],    # 7 derniers jours
+            'monthly': [],   # 30 derniers jours
+            'yearly': []     # 365 derniers jours
         }
         
         for repo in repositories:
@@ -521,50 +522,37 @@ class StatsCalculator:
             for branch in repo.get('branches', []):
                 issues.extend(branch.get('issues', []))
             
-            # Calculer l'activité
-            daily_activity = self._calculate_period_activity(repo, commits, issues, days=1)
-            weekly_activity = self._calculate_period_activity(repo, commits, issues, days=7)
-            monthly_activity = self._calculate_period_activity(repo, commits, issues, days=30)
+            # Calculer l'activité pour toutes les périodes
+            periods = {
+                'daily': 1,
+                'weekly': 7,
+                'monthly': 30,
+                'yearly': 365
+            }
             
-            # Ajouter aux classements
-            activity_ranking['daily'].append({
-                'name': repo['name'],
-                'type': repo['type'],
-                'score': daily_activity,
-                'details': {
-                    'commits': daily_activity['commits'],
-                    'issues': daily_activity['issues'],
-                    'comments': daily_activity['comments']
-                }
-            })
-            
-            activity_ranking['weekly'].append({
-                'name': repo['name'],
-                'type': repo['type'],
-                'score': weekly_activity,
-                'details': {
-                    'commits': weekly_activity['commits'],
-                    'issues': weekly_activity['issues'],
-                    'comments': weekly_activity['comments']
-                }
-            })
-            
-            activity_ranking['monthly'].append({
-                'name': repo['name'],
-                'type': repo['type'],
-                'score': monthly_activity,
-                'details': {
-                    'commits': monthly_activity['commits'],
-                    'issues': monthly_activity['issues'],
-                    'comments': monthly_activity['comments']
-                }
-            })
+            for period_name, days in periods.items():
+                period_activity = self._calculate_period_activity(repo, commits, issues, days)
+                
+                activity_ranking[period_name].append({
+                    'name': repo['name'],
+                    'type': repo['type'],
+                    'description': repo.get('description', ''),
+                    'url': repo.get('url', ''),
+                    'score': period_activity,
+                    'details': {
+                        'commits': period_activity['commits'],
+                        'issues': period_activity['issues'],
+                        'comments': period_activity['comments'],
+                        'commits_per_day': period_activity['commits'] / days,
+                        'issues_per_day': period_activity['issues'] / days
+                    }
+                })
         
         # Trier chaque période par score d'activité
         for period in activity_ranking:
             activity_ranking[period] = sorted(
                 activity_ranking[period],
-                key=lambda x: x['score']['total'],
+                key=lambda x: (x['score']['total'], x['details']['commits_per_day']),  # Tri secondaire sur la fréquence des commits
                 reverse=True
             )
         
@@ -579,12 +567,19 @@ class StatsCalculator:
         commit_count = sum(1 for commit in commits 
                         if datetime.fromisoformat(commit['date'].replace('Z', '+00:00')) > start_date)
         
-        # Compter les issues et commentaires
+        # Compter les issues actives (créées ou mises à jour)
         issue_count = sum(1 for issue in issues 
-                        if datetime.fromisoformat(issue['created_at'].replace('Z', '+00:00')) > start_date)
+                        if datetime.fromisoformat(issue['created_at'].replace('Z', '+00:00')) > start_date
+                        or (issue.get('updated_at') 
+                            and datetime.fromisoformat(issue['updated_at'].replace('Z', '+00:00')) > start_date))
         
-        # Calculer le score total
-        # Les poids peuvent être ajustés selon l'importance relative
+        # Compter les commentaires (si disponibles)
+        comment_count = sum(
+            len(issue.get('comments', []))
+            for issue in issues
+            if issue.get('comments')
+        )
+        
         weights = {
             'commits': 3,    # Un commit vaut 3 points
             'issues': 2,     # Une issue vaut 2 points
@@ -594,9 +589,11 @@ class StatsCalculator:
         activity_score = {
             'commits': commit_count,
             'issues': issue_count,
-            'comments': 0,  # À implémenter si vous voulez compter les commentaires
+            'comments': comment_count,
+            'period_days': days,
             'total': (commit_count * weights['commits'] + 
-                    issue_count * weights['issues'])
+                    issue_count * weights['issues'] + 
+                    comment_count * weights['comments'])
         }
         
         return activity_score
