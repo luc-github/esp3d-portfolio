@@ -3487,7 +3487,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 307,
-              "days_since_update": 82,
+              "days_since_update": 83,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7382,7 +7382,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 885,
+              "age_days": 886,
               "days_since_update": 825,
               "is_stale": true,
               "is_recent": false,
@@ -12406,13 +12406,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4826,
+      "remaining": 4824,
       "reset": "2024-11-20T07:42:36+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-20T06:45:26+00:00"
+      "reset": "2024-11-20T06:54:48+00:00"
     }
   },
   "stats": {
@@ -12440,7 +12440,7 @@
       "open_count": 41,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 777.7588335543047,
+      "avg_age_days": 777.7653306081936,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 41
@@ -12966,333 +12966,443 @@
       {
         "name": "ESP3D",
         "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 4,
           "comments": 0,
-          "total": 0
+          "period_days": 1,
+          "total": 8
         },
         "details": {
           "commits": 0,
-          "issues": 0,
-          "comments": 0
+          "issues": 4,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 4.0
         }
       },
       {
         "name": "ESP3DLib",
         "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
-          "total": 0
+          "period_days": 1,
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
-          "comments": 0
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
         }
       },
       {
         "name": "ESP3D-WEBUI",
         "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP3D-TFT",
         "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "Marlin",
         "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP3D-Configurator",
         "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "esp3d.io",
         "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP32SSDP",
         "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "SSDP_IDF",
         "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "esp32-usb-serial",
         "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "EspLuaEngine",
         "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 1,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       }
     ],
     "weekly": [
       {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 0,
+          "issues": 4,
+          "comments": 0,
+          "period_days": 7,
+          "total": 8
+        },
+        "details": {
+          "commits": 0,
+          "issues": 4,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.5714285714285714
+        }
+      },
+      {
         "name": "esp3d.io",
         "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 1,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 3
         },
         "details": {
           "commits": 1,
           "issues": 0,
-          "comments": 0
-        }
-      },
-      {
-        "name": "ESP3D",
-        "type": "main",
-        "score": {
-          "commits": 0,
-          "issues": 0,
           "comments": 0,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0
+          "commits_per_day": 0.14285714285714285,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP3DLib",
         "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
-          "total": 0
+          "period_days": 7,
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
-          "comments": 0
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "score": {
-          "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
         "name": "ESP3D-TFT",
         "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 7,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.14285714285714285
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "Marlin",
         "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP3D-Configurator",
         "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP32SSDP",
         "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "SSDP_IDF",
         "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "esp32-usb-serial",
         "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "EspLuaEngine",
         "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 7,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       }
     ],
@@ -13300,166 +13410,443 @@
       {
         "name": "esp3d.io",
         "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 8,
           "issues": 0,
           "comments": 0,
+          "period_days": 30,
           "total": 24
         },
         "details": {
           "commits": 8,
           "issues": 0,
-          "comments": 0
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "score": {
-          "commits": 1,
-          "issues": 0,
           "comments": 0,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0
-        }
-      },
-      {
-        "name": "esp32-usb-serial",
-        "type": "dependency",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "score": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "total": 2
-        },
-        "details": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0
+          "commits_per_day": 0.26666666666666666,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP3D",
         "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 5,
           "comments": 0,
-          "total": 0
+          "period_days": 30,
+          "total": 10
         },
         "details": {
           "commits": 0,
+          "issues": 5,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.16666666666666666
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 1,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "period_days": 30,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.03333333333333333,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.03333333333333333,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP3DLib",
         "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
-          "total": 0
+          "period_days": 30,
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
-          "comments": 0
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.03333333333333333
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 30,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
         "name": "ESP3D-WEBUI",
         "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 30,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "Marlin",
         "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 30,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "ESP32SSDP",
         "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 30,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "SSDP_IDF",
         "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 30,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
         }
       },
       {
         "name": "EspLuaEngine",
         "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
         "score": {
           "commits": 0,
           "issues": 0,
           "comments": 0,
+          "period_days": 30,
           "total": 0
         },
         "details": {
           "commits": 0,
           "issues": 0,
-          "comments": 0
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      }
+    ],
+    "yearly": [
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 10,
+          "issues": 12,
+          "comments": 0,
+          "period_days": 365,
+          "total": 54
+        },
+        "details": {
+          "commits": 10,
+          "issues": 12,
+          "comments": 0,
+          "commits_per_day": 0.0273972602739726,
+          "issues_per_day": 0.03287671232876712
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "score": {
+          "commits": 10,
+          "issues": 7,
+          "comments": 0,
+          "period_days": 365,
+          "total": 44
+        },
+        "details": {
+          "commits": 10,
+          "issues": 7,
+          "comments": 0,
+          "commits_per_day": 0.0273972602739726,
+          "issues_per_day": 0.019178082191780823
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 8,
+          "issues": 5,
+          "comments": 0,
+          "period_days": 365,
+          "total": 34
+        },
+        "details": {
+          "commits": 8,
+          "issues": 5,
+          "comments": 0,
+          "commits_per_day": 0.021917808219178082,
+          "issues_per_day": 0.0136986301369863
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 30
+        },
+        "details": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0273972602739726,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "score": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 30
+        },
+        "details": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0273972602739726,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
+        "score": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 30
+        },
+        "details": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0273972602739726,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
+        "score": {
+          "commits": 7,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 21
+        },
+        "details": {
+          "commits": 7,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.019178082191780823,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "score": {
+          "commits": 3,
+          "issues": 3,
+          "comments": 0,
+          "period_days": 365,
+          "total": 15
+        },
+        "details": {
+          "commits": 3,
+          "issues": 3,
+          "comments": 0,
+          "commits_per_day": 0.00821917808219178,
+          "issues_per_day": 0.00821917808219178
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "score": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 12
+        },
+        "details": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.010958904109589041,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
+        "score": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 9
+        },
+        "details": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.00821917808219178,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0027397260273972603,
+          "issues_per_day": 0.0
         }
       }
     ]

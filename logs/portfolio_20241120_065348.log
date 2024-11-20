@@ -1,0 +1,23 @@
+2024-11-20 06:53:48,206 - portfolio - INFO - Starting ESP3D Portfolio analysis
+2024-11-20 06:53:48,209 - portfolio.config - INFO - Loaded configuration from config/portfolio_config.json
+2024-11-20 06:53:48,210 - portfolio.cache - INFO - Cache initialized in .cache
+2024-11-20 06:53:48,212 - portfolio.analyzer - INFO - Portfolio analyzer initialized
+2024-11-20 06:53:48,213 - portfolio.analyzer - INFO - Starting data collection
+2024-11-20 06:53:48,215 - portfolio.cache - DEBUG - Cache hit for repo_ESP3D
+2024-11-20 06:53:48,215 - portfolio.cache - DEBUG - Cache hit for repo_ESP3DLib
+2024-11-20 06:53:48,215 - portfolio.cache - DEBUG - Cache hit for repo_ESP3D-WEBUI
+2024-11-20 06:53:48,216 - portfolio.cache - DEBUG - Cache hit for repo_ESP3D-TFT
+2024-11-20 06:53:48,216 - portfolio.cache - DEBUG - Cache hit for repo_Marlin
+2024-11-20 06:53:48,216 - portfolio.cache - DEBUG - Cache hit for repo_ESP3D-Configurator
+2024-11-20 06:53:48,216 - portfolio.cache - DEBUG - Cache hit for repo_esp3d.io
+2024-11-20 06:53:48,217 - portfolio.cache - DEBUG - Cache hit for repo_ESP32SSDP
+2024-11-20 06:53:48,217 - portfolio.cache - DEBUG - Cache hit for repo_SSDP_IDF
+2024-11-20 06:53:48,217 - portfolio.cache - DEBUG - Cache hit for repo_esp32-usb-serial
+2024-11-20 06:53:48,217 - portfolio.cache - DEBUG - Cache hit for repo_EspLuaEngine
+2024-11-20 06:53:48,218 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-11-20 06:53:48,266 - urllib3.connectionpool - DEBUG - https://api.github.com:443 "GET /rate_limit HTTP/11" 200 None
+2024-11-20 06:53:48,267 - portfolio.analyzer - INFO - Processing collected data
+2024-11-20 06:53:48,276 - portfolio.analyzer - INFO - Generating reports
+2024-11-20 06:53:48,278 - portfolio.analyzer - INFO - Saved report: README.md
+2024-11-20 06:53:48,290 - portfolio.analyzer - INFO - Saved report: github_portfolio.json
+2024-11-20 06:53:48,291 - portfolio.analyzer - INFO - Analysis completed successfully
