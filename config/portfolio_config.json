@@ -11,12 +11,14 @@
                 {
                     "name": "2.1.x",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "ESP-2.X"
                 },
                 {
                     "name": "3.0",
                     "label": "Development",
-                    "is_production": false
+                    "is_production": false,
+                    "issue_label": "ESP-3.X"
                 }
             ]
         },
@@ -31,12 +33,14 @@
                 {
                     "name": "master",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "1.0"
                 },
                 {
                     "name": "3.0",
                     "label": "Development",
-                    "is_production": false
+                    "is_production": false,
+                    "issue_label": "3.0"
                 }
             ]
         },
@@ -56,7 +60,8 @@
                 {
                     "name": "3.0",
                     "label": "Development",
-                    "is_production": false
+                    "is_production": false,
+                    "issue_label": "3.0"
                 }
             ]
         },
@@ -71,7 +76,8 @@
                 {
                     "name": "main",
                     "label": "Development",
-                    "is_production": false
+                    "is_production": false,
+                    "issue_label": "1.0"
                 }
             ]
         },
@@ -86,12 +92,14 @@
                 {
                     "name": "ESP3DLib-V3-bugfix-2.1.x",
                     "label": "Development",
-                    "is_production": false
+                    "is_production": false,
+                    "issue_label": "Bugfix-2.1.X"
                 },
                 {
                     "name": "ESP3DLib-V3-2.1.2",
                     "label": "Development",
-                    "is_production": false
+                    "is_production": false,
+                    "issue_label": "2.1.X"
                 }
             ]
         },
@@ -106,7 +114,8 @@
                 {
                     "name": "main",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "1.0"
                 }
             ]
         },
@@ -121,7 +130,8 @@
                 {
                     "name": "main",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "1.0"
                 }
             ]
         },
@@ -136,7 +146,8 @@
                 {
                     "name": "v2.x",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "2.0"
                 }
             ]
         },
@@ -151,7 +162,8 @@
                 {
                     "name": "main",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "1.0"
                 }
             ]
         },
@@ -166,7 +178,8 @@
                 {
                     "name": "main",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "1.0"
                 }
             ]
         },
@@ -181,7 +194,8 @@
                 {
                     "name": "main",
                     "label": "Production",
-                    "is_production": true
+                    "is_production": true,
+                    "issue_label": "1.0"
                 }
             ]
         }

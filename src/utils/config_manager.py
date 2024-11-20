@@ -10,6 +10,7 @@ class BranchConfig:
     name: str
     label: str
     is_production: bool
+    issue_label: str = None
     ignore_labels: list = None
     tracked_labels: list = None
     highlight_labels: list = None

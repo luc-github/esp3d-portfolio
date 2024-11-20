@@ -117,7 +117,28 @@ class GitHubCollector:
                 # Skip issues with ignored labels
                 if any(label.name in branch_config.ignore_labels for label in issue.labels):
                     continue
+
+                # Récupérer les labels de l'issue
+                issue_labels = [label.name for label in issue.labels]
+                
+                # Si la branche a un issue_label configuré
+                if branch_config.issue_label:
+                    # Vérifier si l'issue a un label de version (de n'importe quelle branche)
+                    all_version_labels = {b.issue_label for b in repo.branches 
+                                    if b.issue_label is not None}
+                    has_version_label = any(label in all_version_labels for label in issue_labels)
                     
+                    # Ignorer l'issue si elle a un label de version différent de celui de la branche
+                    if has_version_label and branch_config.issue_label not in issue_labels:
+                        continue
+                # Si la branche n'a pas d'issue_label configuré
+                else:
+                    # Si l'issue a un label de version, l'ignorer pour cette branche
+                    other_branch_labels = {b.issue_label for b in repo.branches 
+                                        if b.issue_label is not None}
+                    if any(label in other_branch_labels for label in issue_labels):
+                        continue
+                        
                 issue_data = {
                     'number': issue.number,
                     'title': issue.title,
@@ -128,7 +149,7 @@ class GitHubCollector:
                     'closed_at': issue.closed_at.isoformat() if issue.closed_at else None,
                     'url': issue.html_url,
                     'is_pr': bool(issue.pull_request),
-                    'labels': [label.name for label in issue.labels],
+                    'labels': issue_labels,
                     'priority': self._determine_issue_priority(issue, branch_config),
                     'assignee': issue.assignee.login if issue.assignee else None
                 }
