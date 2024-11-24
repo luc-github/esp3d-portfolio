@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732323502.5351038,
+  "timestamp": 1732410261.9978821,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "0b0116f",
-          "message": "update packages",
+          "sha": "cabfd29",
+          "message": "Better notification to extensions for isVisible\n\nAdd notification to extension: isConnected to track WS status and inform extensions\nBump version",
           "author": "Luc",
-          "date": "2024-10-13T07:34:05+00:00"
+          "date": "2024-11-23T07:52:27+00:00"
         },
         "protected": false,
         "issues": [
@@ -307,19 +307,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-11-26T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-12-03T00:00:00+00:00",
           "total": 1,
@@ -982,11 +969,24 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2024-11-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 109971,
+      "size": 110690,
       "stars": 771,
       "forks": 306,
       "open_issues": 8,

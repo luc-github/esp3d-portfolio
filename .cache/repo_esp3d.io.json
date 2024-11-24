@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732323539.8896525,
+  "timestamp": 1732410290.54749,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2024-11-18T00:44:12+00:00",
+    "updated_at": "2024-11-23T08:06:19+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "3641b57",
-          "message": "fix path of screenshots",
+          "sha": "039e431",
+          "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
           "author": "Luc",
-          "date": "2024-11-18T00:44:05+00:00"
+          "date": "2024-11-23T08:06:11+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 179,
+        "contributions": 180,
         "url": "https://github.com/luc-github"
       },
       {
@@ -105,6 +105,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "039e431",
+          "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
+          "author": "Luc",
+          "date": "2024-11-23T08:06:11+00:00"
+        },
         {
           "sha": "3641b57",
           "message": "fix path of screenshots",
@@ -158,28 +164,9 @@
           "message": "Update Xiao Sense S3",
           "author": "Luc",
           "date": "2024-10-21T05:39:11+00:00"
-        },
-        {
-          "sha": "5aa25e3",
-          "message": "Add ttgo eth lite",
-          "author": "Luc",
-          "date": "2024-10-21T05:36:34+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-11-26T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-12-03T00:00:00+00:00",
           "total": 6,
@@ -832,10 +819,23 @@
         },
         {
           "week": "2024-11-17T00:00:00+00:00",
-          "total": 1,
+          "total": 2,
           "days": [
             0,
             1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2024-11-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
             0,
             0,
             0,
@@ -846,7 +846,7 @@
       ]
     },
     "statistics": {
-      "size": 114484,
+      "size": 114491,
       "stars": 6,
       "forks": 21,
       "open_issues": 2,
