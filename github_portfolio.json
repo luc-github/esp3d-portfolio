@@ -22,32 +22,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 1060,
-              "title": "Get/Set pin value",
-              "body": "\r\nhi\r\ni try use this command [ESP201]P4 V0\r\nbut i hav this massage \r\n'Missing pin'",
-              "state": "open",
-              "created_at": "2024-11-23T23:22:58+00:00",
-              "updated_at": "2024-11-23T23:23:20+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1060",
-              "is_pr": false,
-              "labels": [
-                "bug"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 576,
               "title": "[BenchMark]Web upload / Web Download on different FS and platform",
               "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
@@ -68,8 +42,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1389,
-              "days_since_update": 817,
+              "age_days": 1390,
+              "days_since_update": 818,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -81,26 +55,25 @@
             }
           ],
           "issue_summary": {
-            "total": 2,
-            "open": 2,
+            "total": 1,
+            "open": 1,
             "closed": 0,
             "priorities": {
-              "normal": 2
+              "normal": 1
             },
             "ages": {
-              "recent": 1,
+              "recent": 0,
               "active": 0,
               "stale": 1
             },
             "complexity": {
-              "medium": 2
+              "medium": 1
             },
             "size": {
-              "small": 1,
               "large": 1
             },
             "lifecycle": {
-              "new": 2
+              "new": 1
             }
           }
         },
@@ -117,26 +90,83 @@
           "protected": false,
           "issues": [
             {
-              "number": 1060,
-              "title": "Get/Set pin value",
-              "body": "\r\nhi\r\ni try use this command [ESP201]P4 V0\r\nbut i hav this massage \r\n'Missing pin'",
+              "number": 955,
+              "title": "[FEATURE REQUEST]\ud83e\udd84Change ESP_DIRECT_SD to ESP_NOT_SHARED_SD for consistency",
+              "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
               "state": "open",
-              "created_at": "2024-11-23T23:22:58+00:00",
-              "updated_at": "2024-11-23T23:23:20+00:00",
+              "created_at": "2023-10-12T01:00:43+00:00",
+              "updated_at": "2024-11-25T00:10:48+00:00",
               "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1060",
+              "url": "https://github.com/luc-github/ESP3D/issues/955",
               "is_pr": false,
               "labels": [
-                "bug"
+                "Feature request",
+                "ESP-3.X",
+                "Planned",
+                "SD Card"
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 0,
+              "age_days": 410,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "high",
+              "lifecycle_stage": "new"
+            },
+            {
+              "number": 1057,
+              "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
+              "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
+              "state": "open",
+              "created_at": "2024-10-21T04:39:58+00:00",
+              "updated_at": "2024-11-25T00:06:14+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1057",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "ESP-3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 34,
               "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
               "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
+              "number": 1058,
+              "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
+              "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
+              "state": "open",
+              "created_at": "2024-10-21T04:51:29+00:00",
+              "updated_at": "2024-11-25T00:04:38+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1058",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "ESP-3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 34,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
@@ -158,8 +188,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 999,
-              "days_since_update": 3,
+              "age_days": 1000,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -167,87 +197,6 @@
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "high",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1056,
-              "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
-              "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
-              "state": "open",
-              "created_at": "2024-10-20T20:58:03+00:00",
-              "updated_at": "2024-11-20T05:38:49+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1056",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 34,
-              "days_since_update": 3,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1057,
-              "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
-              "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
-              "state": "open",
-              "created_at": "2024-10-21T04:39:58+00:00",
-              "updated_at": "2024-11-20T05:38:34+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1057",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 33,
-              "days_since_update": 3,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1058,
-              "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
-              "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
-              "state": "open",
-              "created_at": "2024-10-21T04:51:29+00:00",
-              "updated_at": "2024-11-20T05:35:39+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1058",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 33,
-              "days_since_update": 3,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
               "lifecycle_stage": "new"
             },
             {
@@ -268,8 +217,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1399,
-              "days_since_update": 26,
+              "age_days": 1400,
+              "days_since_update": 27,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -295,8 +244,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 642,
-              "days_since_update": 175,
+              "age_days": 643,
+              "days_since_update": 176,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -323,37 +272,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2324,
-              "days_since_update": 175,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 955,
-              "title": "[FEATURE REQUEST]\ud83e\udd84Change ESP_DIRECT_SD to ESP_ONLY_SD for consistency",
-              "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
-              "state": "open",
-              "created_at": "2023-10-12T01:00:43+00:00",
-              "updated_at": "2024-05-16T12:44:09+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/955",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X",
-                "Planned",
-                "SD Card"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 409,
-              "days_since_update": 191,
+              "age_days": 2325,
+              "days_since_update": 176,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -380,8 +300,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1887,
-              "days_since_update": 263,
+              "age_days": 1888,
+              "days_since_update": 264,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -408,8 +328,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1391,
-              "days_since_update": 263,
+              "age_days": 1392,
+              "days_since_update": 264,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -437,8 +357,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 850,
-              "days_since_update": 264,
+              "age_days": 851,
+              "days_since_update": 265,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -464,8 +384,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 640,
-              "days_since_update": 264,
+              "age_days": 641,
+              "days_since_update": 265,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -496,8 +416,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1389,
-              "days_since_update": 817,
+              "age_days": 1390,
+              "days_since_update": 818,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -509,27 +429,27 @@
             }
           ],
           "issue_summary": {
-            "total": 14,
-            "open": 14,
+            "total": 12,
+            "open": 12,
             "closed": 0,
             "priorities": {
-              "normal": 14
+              "normal": 12
             },
             "ages": {
-              "recent": 5,
+              "recent": 4,
               "active": 1,
-              "stale": 8
+              "stale": 7
             },
             "complexity": {
-              "medium": 14
+              "medium": 12
             },
             "size": {
-              "small": 6,
               "medium": 5,
+              "small": 4,
               "large": 3
             },
             "lifecycle": {
-              "new": 13,
+              "new": 11,
               "in_progress": 1
             }
           }
@@ -1347,8 +1267,8 @@
       "statistics": {
         "size": 134708,
         "stars": 1775,
-        "forks": 465,
-        "open_issues": 14,
+        "forks": 466,
+        "open_issues": 12,
         "watchers": 1775,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
@@ -1399,8 +1319,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 344,
-              "days_since_update": 246,
+              "age_days": 345,
+              "days_since_update": 247,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1461,8 +1381,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 325,
-              "days_since_update": 3,
+              "age_days": 326,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1489,8 +1409,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1026,
-              "days_since_update": 44,
+              "age_days": 1027,
+              "days_since_update": 45,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2395,8 +2315,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1505,
-              "days_since_update": 41,
+              "age_days": 1506,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2424,8 +2344,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1585,
-              "days_since_update": 41,
+              "age_days": 1586,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2456,8 +2376,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 174,
-              "days_since_update": 41,
+              "age_days": 175,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2485,8 +2405,8 @@
               ],
               "priority": "normal",
               "assignee": "sp5iou",
-              "age_days": 924,
-              "days_since_update": 41,
+              "age_days": 925,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2513,8 +2433,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 797,
-              "days_since_update": 41,
+              "age_days": 798,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2541,8 +2461,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1785,
-              "days_since_update": 831,
+              "age_days": 1786,
+              "days_since_update": 832,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2569,8 +2489,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 871,
-              "days_since_update": 833,
+              "age_days": 872,
+              "days_since_update": 834,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2599,8 +2519,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 928,
-              "days_since_update": 901,
+              "age_days": 929,
+              "days_since_update": 902,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3486,11 +3406,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 30,
-              "days_since_update": 7,
+              "age_days": 31,
+              "days_since_update": 8,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
@@ -3512,8 +3432,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 41,
-              "days_since_update": 41,
+              "age_days": 42,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3539,8 +3459,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 311,
-              "days_since_update": 86,
+              "age_days": 312,
+              "days_since_update": 87,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3567,8 +3487,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 101,
-              "days_since_update": 101,
+              "age_days": 102,
+              "days_since_update": 102,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3593,8 +3513,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 216,
-              "days_since_update": 103,
+              "age_days": 217,
+              "days_since_update": 104,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3621,8 +3541,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 309,
-              "days_since_update": 308,
+              "age_days": 310,
+              "days_since_update": 309,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3648,8 +3568,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 321,
-              "days_since_update": 321,
+              "age_days": 322,
+              "days_since_update": 322,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3674,8 +3594,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 642,
-              "days_since_update": 642,
+              "age_days": 643,
+              "days_since_update": 643,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3703,8 +3623,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 785,
-              "days_since_update": 785,
+              "age_days": 786,
+              "days_since_update": 786,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3723,8 +3643,8 @@
               "normal": 9
             },
             "ages": {
-              "recent": 1,
-              "active": 0,
+              "recent": 0,
+              "active": 1,
               "stale": 8
             },
             "complexity": {
@@ -7407,8 +7327,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 555,
-              "days_since_update": 555,
+              "age_days": 556,
+              "days_since_update": 556,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7435,8 +7355,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 889,
-              "days_since_update": 828,
+              "age_days": 890,
+              "days_since_update": 829,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8284,8 +8204,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 634,
-              "days_since_update": 634,
+              "age_days": 635,
+              "days_since_update": 635,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8310,8 +8230,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 634,
-              "days_since_update": 634,
+              "age_days": 635,
+              "days_since_update": 635,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9188,8 +9108,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 557,
-              "days_since_update": 557,
+              "age_days": 558,
+              "days_since_update": 558,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9215,8 +9135,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1753,
-              "days_since_update": 1737,
+              "age_days": 1754,
+              "days_since_update": 1738,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10065,8 +9985,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 557,
-              "days_since_update": 557,
+              "age_days": 558,
+              "days_since_update": 558,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12459,13 +12379,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4799,
-      "reset": "2024-11-24T02:03:16+00:00"
+      "remaining": 4809,
+      "reset": "2024-11-25T01:29:06+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-24T01:06:34+00:00"
+      "reset": "2024-11-25T01:03:48+00:00"
     }
   },
   "stats": {
@@ -12481,7 +12401,7 @@
       },
       "total_size": 694923,
       "total_stars": 2770,
-      "total_forks": 871,
+      "total_forks": 872,
       "branches": {
         "production": 9,
         "development": 6,
@@ -12489,19 +12409,19 @@
       }
     },
     "issues": {
-      "total_count": 43,
-      "open_count": 43,
+      "total_count": 40,
+      "open_count": 40,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 745.1768906848472,
+      "avg_age_days": 801.2053780293287,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 43
+        "normal": 40
       },
       "recent_activity": {
-        "last_day": 2,
-        "last_week": 7,
-        "last_month": 9
+        "last_day": 3,
+        "last_week": 5,
+        "last_month": 7
       }
     },
     "activity": {
@@ -12705,11 +12625,11 @@
       "issue_creation_trend": [
         {
           "date": "2024-10",
-          "count": 2
+          "count": 0
         },
         {
           "date": "2024-09",
-          "count": 5
+          "count": 4
         },
         {
           "date": "2024-08",
@@ -12748,7 +12668,7 @@
           "count": 4
         },
         {
-          "date": "2023-11",
+          "date": "2023-12",
           "count": 1
         }
       ],
@@ -12798,7 +12718,7 @@
           "count": 0
         },
         {
-          "date": "2023-11",
+          "date": "2023-12",
           "count": 0
         }
       ],
@@ -13023,37 +12943,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 3,
           "comments": 0,
           "period_days": 1,
-          "total": 4
+          "total": 6
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 2.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 1.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 3.0
         }
       },
       {
@@ -13141,6 +13041,26 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13245,17 +13165,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 6,
+          "issues": 4,
           "comments": 0,
           "period_days": 7,
-          "total": 12
+          "total": 8
         },
         "details": {
           "commits": 0,
-          "issues": 6,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.8571428571428571
+          "issues_per_day": 0.5714285714285714
         }
       },
       {
@@ -13264,17 +13184,17 @@
         "description": "Documentation of ESP3D Ecosystem",
         "url": "https://github.com/luc-github/esp3d.io",
         "score": {
-          "commits": 2,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 6
+          "total": 3
         },
         "details": {
-          "commits": 2,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.2857142857142857,
+          "commits_per_day": 0.14285714285714285,
           "issues_per_day": 0.0
         }
       },
@@ -13487,17 +13407,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 7,
+          "issues": 5,
           "comments": 0,
           "period_days": 30,
-          "total": 14
+          "total": 10
         },
         "details": {
           "commits": 0,
-          "issues": 7,
+          "issues": 5,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.23333333333333334
+          "issues_per_day": 0.16666666666666666
         }
       },
       {
@@ -13689,17 +13609,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 10,
-          "issues": 14,
+          "issues": 11,
           "comments": 0,
           "period_days": 365,
-          "total": 58
+          "total": 52
         },
         "details": {
           "commits": 10,
-          "issues": 14,
+          "issues": 11,
           "comments": 0,
           "commits_per_day": 0.0273972602739726,
-          "issues_per_day": 0.038356164383561646
+          "issues_per_day": 0.030136986301369864
         }
       },
       {

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732410227.8602846,
+  "timestamp": 1732496468.83968,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,22 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1060,
-            "title": "Get/Set pin value",
-            "body": "\r\nhi\r\ni try use this command [ESP201]P4 V0\r\nbut i hav this massage \r\n'Missing pin'",
-            "state": "open",
-            "created_at": "2024-11-23T23:22:58+00:00",
-            "updated_at": "2024-11-23T23:23:20+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1060",
-            "is_pr": false,
-            "labels": [
-              "bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 576,
             "title": "[BenchMark]Web upload / Web Download on different FS and platform",
@@ -74,28 +58,12 @@
         "protected": false,
         "issues": [
           {
-            "number": 1060,
-            "title": "Get/Set pin value",
-            "body": "\r\nhi\r\ni try use this command [ESP201]P4 V0\r\nbut i hav this massage \r\n'Missing pin'",
-            "state": "open",
-            "created_at": "2024-11-23T23:22:58+00:00",
-            "updated_at": "2024-11-23T23:23:20+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1060",
-            "is_pr": false,
-            "labels": [
-              "bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
             "number": 1058,
             "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
             "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
             "state": "open",
             "created_at": "2024-10-21T04:51:29+00:00",
-            "updated_at": "2024-11-20T05:35:39+00:00",
+            "updated_at": "2024-11-25T00:04:38+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1058",
             "is_pr": false,
@@ -112,7 +80,7 @@
             "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
             "state": "open",
             "created_at": "2024-10-21T04:39:58+00:00",
-            "updated_at": "2024-11-20T05:38:34+00:00",
+            "updated_at": "2024-11-25T00:06:14+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1057",
             "is_pr": false,
@@ -124,29 +92,12 @@
             "assignee": null
           },
           {
-            "number": 1056,
-            "title": "[FEATURE REQUEST]Add ADXL345 accelerometer for input shaping",
-            "body": "If it is possible to add an adxl345 accelerometer (even just among the plugins) to calculate the resonant frequencies of the printer to be inserted in the input shaping parameter",
-            "state": "open",
-            "created_at": "2024-10-20T20:58:03+00:00",
-            "updated_at": "2024-11-20T05:38:49+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1056",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "ESP-3.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
             "number": 955,
-            "title": "[FEATURE REQUEST]\ud83e\udd84Change ESP_DIRECT_SD to ESP_ONLY_SD for consistency",
+            "title": "[FEATURE REQUEST]\ud83e\udd84Change ESP_DIRECT_SD to ESP_NOT_SHARED_SD for consistency",
             "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
             "state": "open",
             "created_at": "2023-10-12T01:00:43+00:00",
-            "updated_at": "2024-05-16T12:44:09+00:00",
+            "updated_at": "2024-11-25T00:10:48+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/955",
             "is_pr": false,
@@ -1139,8 +1090,8 @@
     "statistics": {
       "size": 134708,
       "stars": 1775,
-      "forks": 465,
-      "open_issues": 14,
+      "forks": 466,
+      "open_issues": 12,
       "watchers": 1775,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
