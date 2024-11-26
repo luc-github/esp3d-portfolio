@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732496468.83968,
+  "timestamp": 1732582808.4185216,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2024-11-22T21:10:58+00:00",
+    "updated_at": "2024-11-25T15:03:53+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -20,40 +20,17 @@
           "date": "2024-05-30T00:07:00+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 576,
-            "title": "[BenchMark]Web upload / Web Download on different FS and platform",
-            "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
-            "state": "open",
-            "created_at": "2021-02-03T11:37:13+00:00",
-            "updated_at": "2022-08-29T03:50:43+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/576",
-            "is_pr": false,
-            "labels": [
-              "Help Welcome",
-              "Compatibility",
-              "Documentation",
-              "Testing",
-              "ESP8266",
-              "ESP32",
-              "Planned"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       },
       {
         "name": "3.0",
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "ff3dff0",
-          "message": "Update esp32_usb_serial.cpp",
+          "sha": "d9f6ea6",
+          "message": "close #888",
           "author": "Luc",
-          "date": "2024-11-04T21:11:02+00:00"
+          "date": "2024-11-25T07:45:09+00:00"
         },
         "protected": false,
         "issues": [
@@ -63,12 +40,13 @@
             "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
             "state": "open",
             "created_at": "2024-10-21T04:51:29+00:00",
-            "updated_at": "2024-11-25T00:04:38+00:00",
+            "updated_at": "2024-11-25T01:04:06+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1058",
             "is_pr": false,
             "labels": [
               "Feature request",
+              "On Hold",
               "ESP-3.X"
             ],
             "priority": "normal",
@@ -80,65 +58,13 @@
             "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
             "state": "open",
             "created_at": "2024-10-21T04:39:58+00:00",
-            "updated_at": "2024-11-25T00:06:14+00:00",
+            "updated_at": "2024-11-25T01:04:17+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1057",
             "is_pr": false,
             "labels": [
               "Feature request",
-              "ESP-3.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 955,
-            "title": "[FEATURE REQUEST]\ud83e\udd84Change ESP_DIRECT_SD to ESP_NOT_SHARED_SD for consistency",
-            "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
-            "state": "open",
-            "created_at": "2023-10-12T01:00:43+00:00",
-            "updated_at": "2024-11-25T00:10:48+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/955",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "ESP-3.X",
-              "Planned",
-              "SD Card"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 891,
-            "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
-            "body": "the APi is described  here : https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-1p01\r\nand here : https://gist.github.com/Birdie0/78ee79402a4301b1faf412ab5f1cdcf9",
-            "state": "open",
-            "created_at": "2023-02-22T13:17:35+00:00",
-            "updated_at": "2024-03-04T04:40:50+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/891",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "ESP-3.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 888,
-            "title": "[FEATURE REQUEST]\ud83e\udd84WhatsApp Notification",
-            "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement",
-            "state": "open",
-            "created_at": "2023-02-20T06:57:26+00:00",
-            "updated_at": "2024-06-01T05:42:16+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/888",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
+              "On Hold",
               "ESP-3.X"
             ],
             "priority": "normal",
@@ -158,45 +84,6 @@
               "Help Welcome",
               "Code Simplification",
               "ESP-3.X",
-              "Planned"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 726,
-            "title": "[FEATURE REQUEST]\ud83e\udd84Notification using custom webhook ",
-            "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
-            "state": "open",
-            "created_at": "2022-02-28T05:28:21+00:00",
-            "updated_at": "2024-11-20T05:39:27+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/726",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "ESP-3.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 576,
-            "title": "[BenchMark]Web upload / Web Download on different FS and platform",
-            "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
-            "state": "open",
-            "created_at": "2021-02-03T11:37:13+00:00",
-            "updated_at": "2022-08-29T03:50:43+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/576",
-            "is_pr": false,
-            "labels": [
-              "Help Welcome",
-              "Compatibility",
-              "Documentation",
-              "Testing",
-              "ESP8266",
-              "ESP32",
               "Planned"
             ],
             "priority": "normal",
@@ -235,24 +122,6 @@
               "ESP-3.X",
               "Planned",
               "USB"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 376,
-            "title": "[FEATURE REQUEST]\ud83e\udd84autodetection",
-            "body": "Add some diagnostic/autodetect process for:\r\n* Baudrate\r\n* Fw printer and version\r\n* TBD",
-            "state": "open",
-            "created_at": "2019-09-24T07:53:09+00:00",
-            "updated_at": "2024-03-06T00:17:01+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/376",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "ESP-3.X",
-              "Planned"
             ],
             "priority": "normal",
             "assignee": null
@@ -1088,11 +957,11 @@
       ]
     },
     "statistics": {
-      "size": 134708,
-      "stars": 1775,
+      "size": 134727,
+      "stars": 1776,
       "forks": 466,
-      "open_issues": 12,
-      "watchers": 1775,
+      "open_issues": 6,
+      "watchers": 1776,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
     }

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732496527.4303706,
+  "timestamp": 1732582875.096828,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-Configurator",
     "language": "JavaScript",
     "created_at": "2022-06-03T07:30:48+00:00",
-    "updated_at": "2024-11-16T04:53:43+00:00",
+    "updated_at": "2024-11-25T02:06:47+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "f94f253",
-          "message": "Fix usb serial\n\nFix missing C6 entries",
+          "sha": "be7576e",
+          "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
           "author": "Luc",
-          "date": "2024-11-02T15:07:21+00:00"
+          "date": "2024-11-25T02:06:39+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 99,
+        "contributions": 100,
         "url": "https://github.com/luc-github"
       },
       {
@@ -75,6 +75,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "be7576e",
+          "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
+          "author": "Luc",
+          "date": "2024-11-25T02:06:39+00:00"
+        },
         {
           "sha": "f94f253",
           "message": "Fix usb serial\n\nFix missing C6 entries",
@@ -128,12 +134,6 @@
           "message": "Fix SENSOR PIN appear for BMP/BME Sensor",
           "author": "Luc",
           "date": "2024-05-28T05:01:42+00:00"
-        },
-        {
-          "sha": "572b130",
-          "message": "Add Seeed Studio Xiao S3 sense Camera\n\nSet Memory type if PSRAM and S3 only",
-          "author": "Luc",
-          "date": "2024-02-11T05:52:36+00:00"
         }
       ],
       "commit_activity": [
@@ -802,10 +802,10 @@
         },
         {
           "week": "2024-11-24T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -816,7 +816,7 @@
       ]
     },
     "statistics": {
-      "size": 757,
+      "size": 773,
       "stars": 8,
       "forks": 5,
       "open_issues": 2,

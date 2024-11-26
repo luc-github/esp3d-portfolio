@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C++",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2024-11-22T21:10:58+00:00",
+      "updated_at": "2024-11-25T15:03:53+00:00",
       "branches": [
         {
           "name": "2.1.x",
@@ -20,61 +20,20 @@
             "date": "2024-05-30T00:07:00+00:00"
           },
           "protected": false,
-          "issues": [
-            {
-              "number": 576,
-              "title": "[BenchMark]Web upload / Web Download on different FS and platform",
-              "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
-              "state": "open",
-              "created_at": "2021-02-03T11:37:13+00:00",
-              "updated_at": "2022-08-29T03:50:43+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/576",
-              "is_pr": false,
-              "labels": [
-                "Help Welcome",
-                "Compatibility",
-                "Documentation",
-                "Testing",
-                "ESP8266",
-                "ESP32",
-                "Planned"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1390,
-              "days_since_update": 818,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            }
-          ],
+          "issues": [],
           "issue_summary": {
-            "total": 1,
-            "open": 1,
+            "total": 0,
+            "open": 0,
             "closed": 0,
-            "priorities": {
-              "normal": 1
-            },
+            "priorities": {},
             "ages": {
               "recent": 0,
               "active": 0,
-              "stale": 1
+              "stale": 0
             },
-            "complexity": {
-              "medium": 1
-            },
-            "size": {
-              "large": 1
-            },
-            "lifecycle": {
-              "new": 1
-            }
+            "complexity": {},
+            "size": {},
+            "lifecycle": {}
           }
         },
         {
@@ -82,59 +41,31 @@
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "ff3dff0",
-            "message": "Update esp32_usb_serial.cpp",
+            "sha": "d9f6ea6",
+            "message": "close #888",
             "author": "Luc",
-            "date": "2024-11-04T21:11:02+00:00"
+            "date": "2024-11-25T07:45:09+00:00"
           },
           "protected": false,
           "issues": [
-            {
-              "number": 955,
-              "title": "[FEATURE REQUEST]\ud83e\udd84Change ESP_DIRECT_SD to ESP_NOT_SHARED_SD for consistency",
-              "body": "in configuration.h\r\n```\r\n/* SD card connection\r\n* ESP_NO_SD //(default)\r\n* ESP_DIRECT_SD //Only your ESP board is connected to SDCard\r\n* ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\r\n* Does your system has SD card and how it is connected to your ESP3D\r\n*/\r\n```\r\nESP_DIRECT_SD seems confusing for users and is often used when ESP_SHARED_SD should be used, the configurator must be updated also\r\n",
-              "state": "open",
-              "created_at": "2023-10-12T01:00:43+00:00",
-              "updated_at": "2024-11-25T00:10:48+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/955",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X",
-                "Planned",
-                "SD Card"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 410,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "high",
-              "lifecycle_stage": "new"
-            },
             {
               "number": 1057,
               "title": "[FEATURE REQUEST]Add support for TTGO T-Lite W5500 ESP32 with SSD1306 ",
               "body": "Add support for TTGO T-Lite W5500 ESP32 Main Chip SSD1306 0.96 Inch Oled Type-c Usb Programming Development Board\r\n\r\nEthernet support is ready but pinout for TFT need to be documented and tested",
               "state": "open",
               "created_at": "2024-10-21T04:39:58+00:00",
-              "updated_at": "2024-11-25T00:06:14+00:00",
+              "updated_at": "2024-11-25T01:04:17+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3D/issues/1057",
               "is_pr": false,
               "labels": [
                 "Feature request",
+                "On Hold",
                 "ESP-3.X"
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 34,
+              "age_days": 35,
               "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
@@ -151,17 +82,18 @@
               "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
               "state": "open",
               "created_at": "2024-10-21T04:51:29+00:00",
-              "updated_at": "2024-11-25T00:04:38+00:00",
+              "updated_at": "2024-11-25T01:04:06+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3D/issues/1058",
               "is_pr": false,
               "labels": [
                 "Feature request",
+                "On Hold",
                 "ESP-3.X"
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 34,
+              "age_days": 35,
               "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
@@ -170,33 +102,6 @@
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 726,
-              "title": "[FEATURE REQUEST]\ud83e\udd84Notification using custom webhook ",
-              "body": "as suggested by @cyberiano https://github.com/luc-github/ESP3D/pull/708#issuecomment-1047456970\r\n\r\nthe issue is to fit all data in 3 slots : (not including message content)\r\nToken 1 = 63 chars (hidden in settings)\r\nToken 2 = 63 chars (hidden in settings)\r\nToken extra = 128 chars fully visible\r\n\r\nalso what the AUTO_NOTIFICATION behaviour should do with such notification ? should be disabled ?\r\nor need to change the content of\r\n\r\n#define NOTIFICATION_ESP_ONLINE \"Hi, %ESP_NAME% is now online at %ESP_IP%\"\r\nwhich mean the webhook is actually hardcoded which I would like to avoid as much as possible\r\n\r\nAnother possibility would be to allow more variables in message and also use [ESP600] to define id and value\r\nlike `[ESP600]ID=msg MSG=Hi, %ESP_NAME% is now online at %ESP_IP%`\r\nanother possibility would be to allow template message file on FS and use it  if present \r\n* autonotif.tpl \r\n",
-              "state": "open",
-              "created_at": "2022-02-28T05:28:21+00:00",
-              "updated_at": "2024-11-20T05:39:27+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/726",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1000,
-              "days_since_update": 4,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "high",
               "lifecycle_stage": "new"
             },
             {
@@ -217,39 +122,12 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1400,
-              "days_since_update": 27,
+              "age_days": 1401,
+              "days_since_update": 28,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 888,
-              "title": "[FEATURE REQUEST]\ud83e\udd84WhatsApp Notification",
-              "body": "How to do is here https://www.callmebot.com/blog/free-api-whatsapp-messages/ - it is free and it use same way as others - so it is easy to implement",
-              "state": "open",
-              "created_at": "2023-02-20T06:57:26+00:00",
-              "updated_at": "2024-06-01T05:42:16+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/888",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 643,
-              "days_since_update": 176,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "small",
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
@@ -272,40 +150,12 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2325,
-              "days_since_update": 176,
+              "age_days": 2326,
+              "days_since_update": 177,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
               "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 376,
-              "title": "[FEATURE REQUEST]\ud83e\udd84autodetection",
-              "body": "Add some diagnostic/autodetect process for:\r\n* Baudrate\r\n* Fw printer and version\r\n* TBD",
-              "state": "open",
-              "created_at": "2019-09-24T07:53:09+00:00",
-              "updated_at": "2024-03-06T00:17:01+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/376",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X",
-                "Planned"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1888,
-              "days_since_update": 264,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "small",
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
@@ -328,8 +178,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1392,
-              "days_since_update": 264,
+              "age_days": 1393,
+              "days_since_update": 265,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -357,67 +207,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 851,
-              "days_since_update": 265,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 891,
-              "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
-              "body": "the APi is described  here : https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-1p01\r\nand here : https://gist.github.com/Birdie0/78ee79402a4301b1faf412ab5f1cdcf9",
-              "state": "open",
-              "created_at": "2023-02-22T13:17:35+00:00",
-              "updated_at": "2024-03-04T04:40:50+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/891",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP-3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 641,
-              "days_since_update": 265,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 576,
-              "title": "[BenchMark]Web upload / Web Download on different FS and platform",
-              "body": "I think it would be very informative to bench the speed of upload / download a file using FTP / WebDav / Webserver\r\nto LocalFS / SD  on ESP32 and ESP8266\r\nusing MCVE to be sure the comparaison is correct\r\n\r\nTarget | Speed KB/S | Note \r\n-|-|- \r\nESP32 + WEBSERVER + FAT|56.01 | \r\nESP32 + WEBSERVER + LITTLEFS|59.60 | \r\nESP8266 + WEBSERVER + LITTLEFS| | \r\nESP32 + WEBSERVER + SD native|75.06 | \r\nESP8266 + WEBSERVER + SD native| | \r\nESP32 + WEBSERVER + SD Fat|101.9 ~122.4 | SDFAT 2.1.2\r\nESP8266 + WEBSERVER + SD Fat| | \r\nESP32 + WEBSERVER + SDIO| | \r\nESP8266 + WEBSERVER + SDIO| | \r\nESP32 + WEBDAV+ LITTLEFS| | \r\nESP8266 + WEBDAV+ LITTLEFS| | \r\nESP32 + WEBDAV+ SD native| | \r\nESP8266 + WEBDAV+ SD native| | \r\nESP32 + WEBDAV+ SD Fat| | \r\nESP8266 + WEBDAV+ SD Fat| | \r\nESP32 + WEBDAV+ SDIO| | \r\nESP8266 + WEBDAV+ SDIO| | \r\nESP32 + FTP+ LITTLEFS| | \r\nESP8266 + FTP+ LITTLEFS| | \r\nESP32 + FTP+ SD native| | \r\nESP8266 + FTP+ SD native| | \r\nESP32 + FTP+ SD Fat| | \r\nESP8266 + FTP+ SD Fat| | \r\nESP32 + FTP+ SDIO| | \r\nESP8266 + FTP+ SDIO| | \r\n\r\nOthers FW:\r\n\r\nFW | Target | Speed KB/S | Note \r\n-|-|-|- \r\ngrblHAL | ESP32 + FatFS + SDCard + WebDAV|300~350| \r\ngrblHAL | iMXRT1062 (Teensy4) + FatFS + SDCard + WebDAV|1127| Ethernet\r\ngrblHAL | STM32F7xx + FatFS + SDCard + WebDAV|350| Ethernet\r\n\r\nAdding `with PSRAM` could also be a thing to check on ESP32\r\n\r\nOnce done need to compare with speed in ESP3D / ESP3DLib and GRBL_ESP32 to see what must be improved and how\r\nThis is based on feedback ESP32 WebServer upload is very slow compare to ESP8266 \r\n\r\nUsing any asyncwebserver / external webserver is not the current target so it is out of scope - the goal is to do a status of current situation to plan improvements / changes",
-              "state": "open",
-              "created_at": "2021-02-03T11:37:13+00:00",
-              "updated_at": "2022-08-29T03:50:43+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/576",
-              "is_pr": false,
-              "labels": [
-                "Help Welcome",
-                "Compatibility",
-                "Documentation",
-                "Testing",
-                "ESP8266",
-                "ESP32",
-                "Planned"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1390,
-              "days_since_update": 818,
+              "age_days": 852,
+              "days_since_update": 266,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -429,27 +220,27 @@
             }
           ],
           "issue_summary": {
-            "total": 12,
-            "open": 12,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 12
+              "normal": 6
             },
             "ages": {
-              "recent": 4,
+              "recent": 2,
               "active": 1,
-              "stale": 7
+              "stale": 3
             },
             "complexity": {
-              "medium": 12
+              "medium": 6
             },
             "size": {
-              "medium": 5,
-              "small": 4,
-              "large": 3
+              "small": 1,
+              "medium": 3,
+              "large": 2
             },
             "lifecycle": {
-              "new": 11,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -1265,11 +1056,11 @@
         ]
       },
       "statistics": {
-        "size": 134708,
-        "stars": 1775,
+        "size": 134727,
+        "stars": 1776,
         "forks": 466,
-        "open_issues": 12,
-        "watchers": 1775,
+        "open_issues": 6,
+        "watchers": 1776,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
       },
@@ -1319,8 +1110,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 345,
-              "days_since_update": 247,
+              "age_days": 346,
+              "days_since_update": 248,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1381,8 +1172,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 326,
-              "days_since_update": 4,
+              "age_days": 327,
+              "days_since_update": 5,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1409,8 +1200,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1027,
-              "days_since_update": 45,
+              "age_days": 1028,
+              "days_since_update": 46,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2297,6 +2088,35 @@
           "protected": false,
           "issues": [
             {
+              "number": 244,
+              "title": "CNC process visualization functionality",
+              "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
+              "state": "open",
+              "created_at": "2022-05-14T20:46:19+00:00",
+              "updated_at": "2024-11-25T08:18:44+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "3.0",
+                "Work in progress",
+                "Extension"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 926,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "high",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 122,
               "title": "[FEATURE REQUEST]PCB and Engraving Milling autoleveling",
               "body": "**Is your feature request related to a problem? Please describe.**\r\nI would like the ability to probe a surface and modify the loaded g code to account for surface inconsistencies\r\n\r\n**Describe the solution you'd like**\r\nI'd like to be able to specify a grid of points that could be probed and generate a mesh. this mesh could then be used to correct uploaded gcode files to account for z height inconsistencies. This mesh should be able to be applied to multiple files via a button and the height should be able to be downloaded for future use.\r\n\r\n**Describe alternatives you've considered**\r\nRight now the only work around is to attached the GRBL ESP32 to a computer and run one of the programs that can do this. These are\r\nOpenCNCpilot, bCNC, Universal G code Sender.\r\n\r\nIdeally I would like to be able to run this self contained\r\n\r\n**Additional context**\r\n\r\n",
@@ -2315,8 +2135,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1506,
-              "days_since_update": 42,
+              "age_days": 1507,
+              "days_since_update": 43,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2344,8 +2164,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1586,
-              "days_since_update": 42,
+              "age_days": 1587,
+              "days_since_update": 43,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2376,8 +2196,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 175,
-              "days_since_update": 42,
+              "age_days": 176,
+              "days_since_update": 43,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2386,35 +2206,6 @@
               "related_issues": [],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
-            },
-            {
-              "number": 244,
-              "title": "CNC process visualization functionality",
-              "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
-              "state": "open",
-              "created_at": "2022-05-14T20:46:19+00:00",
-              "updated_at": "2024-10-13T08:02:23+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "3.0",
-                "Work in progress",
-                "Extension"
-              ],
-              "priority": "normal",
-              "assignee": "sp5iou",
-              "age_days": 925,
-              "days_since_update": 42,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "in_progress"
             },
             {
               "number": 265,
@@ -2433,8 +2224,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 798,
-              "days_since_update": 42,
+              "age_days": 799,
+              "days_since_update": 43,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2461,8 +2252,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1786,
-              "days_since_update": 832,
+              "age_days": 1787,
+              "days_since_update": 833,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2489,8 +2280,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 872,
-              "days_since_update": 834,
+              "age_days": 873,
+              "days_since_update": 835,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2519,8 +2310,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 929,
-              "days_since_update": 902,
+              "age_days": 930,
+              "days_since_update": 903,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2539,9 +2330,9 @@
               "normal": 8
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
-              "stale": 8
+              "stale": 7
             },
             "complexity": {
               "medium": 7,
@@ -2552,8 +2343,7 @@
               "small": 4
             },
             "lifecycle": {
-              "new": 7,
-              "in_progress": 1
+              "new": 8
             }
           }
         }
@@ -3406,8 +3196,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 31,
-              "days_since_update": 8,
+              "age_days": 32,
+              "days_since_update": 9,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3432,8 +3222,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 42,
-              "days_since_update": 42,
+              "age_days": 43,
+              "days_since_update": 43,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3459,8 +3249,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 312,
-              "days_since_update": 87,
+              "age_days": 313,
+              "days_since_update": 88,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3487,8 +3277,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 102,
-              "days_since_update": 102,
+              "age_days": 103,
+              "days_since_update": 103,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3513,8 +3303,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 217,
-              "days_since_update": 104,
+              "age_days": 218,
+              "days_since_update": 105,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3541,8 +3331,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 310,
-              "days_since_update": 309,
+              "age_days": 311,
+              "days_since_update": 310,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3568,8 +3358,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 322,
-              "days_since_update": 322,
+              "age_days": 323,
+              "days_since_update": 323,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3594,8 +3384,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 643,
-              "days_since_update": 643,
+              "age_days": 644,
+              "days_since_update": 644,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3623,8 +3413,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 786,
-              "days_since_update": 786,
+              "age_days": 787,
+              "days_since_update": 787,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7300,17 +7090,17 @@
       "url": "https://github.com/luc-github/ESP3D-Configurator",
       "language": "JavaScript",
       "created_at": "2022-06-03T07:30:48+00:00",
-      "updated_at": "2024-11-16T04:53:43+00:00",
+      "updated_at": "2024-11-25T02:06:47+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "f94f253",
-            "message": "Fix usb serial\n\nFix missing C6 entries",
+            "sha": "be7576e",
+            "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
             "author": "Luc",
-            "date": "2024-11-02T15:07:21+00:00"
+            "date": "2024-11-25T02:06:39+00:00"
           },
           "protected": false,
           "issues": [
@@ -7327,8 +7117,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 556,
-              "days_since_update": 556,
+              "age_days": 557,
+              "days_since_update": 557,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7355,8 +7145,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 890,
-              "days_since_update": 829,
+              "age_days": 891,
+              "days_since_update": 830,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7395,7 +7185,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 99,
+          "contributions": 100,
           "url": "https://github.com/luc-github"
         },
         {
@@ -7411,6 +7201,12 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "be7576e",
+            "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
+            "author": "Luc",
+            "date": "2024-11-25T02:06:39+00:00"
+          },
           {
             "sha": "f94f253",
             "message": "Fix usb serial\n\nFix missing C6 entries",
@@ -7464,12 +7260,6 @@
             "message": "Fix SENSOR PIN appear for BMP/BME Sensor",
             "author": "Luc",
             "date": "2024-05-28T05:01:42+00:00"
-          },
-          {
-            "sha": "572b130",
-            "message": "Add Seeed Studio Xiao S3 sense Camera\n\nSet Memory type if PSRAM and S3 only",
-            "author": "Luc",
-            "date": "2024-02-11T05:52:36+00:00"
           }
         ],
         "commit_activity": [
@@ -8138,10 +7928,10 @@
           },
           {
             "week": "2024-11-24T00:00:00+00:00",
-            "total": 0,
+            "total": 1,
             "days": [
               0,
-              0,
+              1,
               0,
               0,
               0,
@@ -8152,7 +7942,7 @@
         ]
       },
       "statistics": {
-        "size": 757,
+        "size": 773,
         "stars": 8,
         "forks": 5,
         "open_issues": 2,
@@ -8175,17 +7965,17 @@
       "url": "https://github.com/luc-github/esp3d.io",
       "language": "HTML",
       "created_at": "2023-01-29T00:46:38+00:00",
-      "updated_at": "2024-11-23T08:06:19+00:00",
+      "updated_at": "2024-11-25T09:25:53+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "039e431",
-            "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
+            "sha": "77aebda",
+            "message": "Fix typo in sample command for notification, spaces are not escaped",
             "author": "Luc",
-            "date": "2024-11-23T08:06:11+00:00"
+            "date": "2024-11-25T09:25:46+00:00"
           },
           "protected": false,
           "issues": [
@@ -8204,8 +7994,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 635,
-              "days_since_update": 635,
+              "age_days": 636,
+              "days_since_update": 636,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8230,8 +8020,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 635,
-              "days_since_update": 635,
+              "age_days": 636,
+              "days_since_update": 636,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8269,7 +8059,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 180,
+          "contributions": 184,
           "url": "https://github.com/luc-github"
         },
         {
@@ -8316,6 +8106,30 @@
       "activity": {
         "recent_commits": [
           {
+            "sha": "77aebda",
+            "message": "Fix typo in sample command for notification, spaces are not escaped",
+            "author": "Luc",
+            "date": "2024-11-25T09:25:46+00:00"
+          },
+          {
+            "sha": "7e34ac1",
+            "message": "Update mkdocs.yml",
+            "author": "Luc",
+            "date": "2024-11-25T09:05:18+00:00"
+          },
+          {
+            "sha": "4d1b495",
+            "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
+            "author": "Luc",
+            "date": "2024-11-25T07:46:51+00:00"
+          },
+          {
+            "sha": "888d280",
+            "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
+            "author": "Luc",
+            "date": "2024-11-25T02:10:01+00:00"
+          },
+          {
             "sha": "039e431",
             "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
             "author": "Luc",
@@ -8350,30 +8164,6 @@
             "message": "Update NodeMCU with pinout",
             "author": "Luc",
             "date": "2024-10-28T04:04:27+00:00"
-          },
-          {
-            "sha": "9414745",
-            "message": "Doc for ESP32-S3-LCD-1.47 - WIP",
-            "author": "Luc",
-            "date": "2024-10-28T03:48:59+00:00"
-          },
-          {
-            "sha": "bd6dd4a",
-            "message": "Add some notes to clarify connection",
-            "author": "Luc",
-            "date": "2024-10-21T08:54:36+00:00"
-          },
-          {
-            "sha": "84c20c7",
-            "message": "Update as now USB Serial OTG is supported",
-            "author": "Luc",
-            "date": "2024-10-21T08:46:37+00:00"
-          },
-          {
-            "sha": "1ab5f55",
-            "message": "Update Xiao Sense S3",
-            "author": "Luc",
-            "date": "2024-10-21T05:39:11+00:00"
           }
         ],
         "commit_activity": [
@@ -9042,10 +8832,10 @@
           },
           {
             "week": "2024-11-24T00:00:00+00:00",
-            "total": 0,
+            "total": 4,
             "days": [
               0,
-              0,
+              4,
               0,
               0,
               0,
@@ -9056,7 +8846,7 @@
         ]
       },
       "statistics": {
-        "size": 114491,
+        "size": 112609,
         "stars": 6,
         "forks": 21,
         "open_issues": 2,
@@ -9108,8 +8898,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 558,
-              "days_since_update": 558,
+              "age_days": 559,
+              "days_since_update": 559,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9135,8 +8925,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1754,
-              "days_since_update": 1738,
+              "age_days": 1755,
+              "days_since_update": 1739,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9985,8 +9775,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 558,
-              "days_since_update": 558,
+              "age_days": 559,
+              "days_since_update": 559,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12379,13 +12169,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4809,
-      "reset": "2024-11-25T01:29:06+00:00"
+      "remaining": 4801,
+      "reset": "2024-11-26T01:11:00+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-11-25T01:03:48+00:00"
+      "reset": "2024-11-26T01:03:01+00:00"
     }
   },
   "stats": {
@@ -12399,8 +12189,8 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 694923,
-      "total_stars": 2770,
+      "total_size": 693076,
+      "total_stars": 2771,
       "total_forks": 872,
       "branches": {
         "production": 9,
@@ -12409,27 +12199,27 @@
       }
     },
     "issues": {
-      "total_count": 40,
-      "open_count": 40,
+      "total_count": 33,
+      "open_count": 33,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 801.2053780293287,
+      "avg_age_days": 748.9485575647022,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 40
+        "normal": 33
       },
       "recent_activity": {
         "last_day": 3,
-        "last_week": 5,
-        "last_month": 7
+        "last_week": 4,
+        "last_month": 6
       }
     },
     "activity": {
       "total_commits": 107,
       "commit_frequency": {
-        "daily": 0.8818681318681318,
-        "weekly": 6.173076923076923,
-        "monthly": 24.692307692307693
+        "daily": 0.8956043956043956,
+        "weekly": 6.26923076923077,
+        "monthly": 25.07692307692308
       },
       "active_contributors": {
         "last_week": 0,
@@ -12464,30 +12254,30 @@
           1.916666666666667
         ],
         [
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667,
+          2.291666666666667
         ],
         [
           2.708333333333332,
@@ -12656,7 +12446,7 @@
           "count": 1
         },
         {
-          "date": "2024-02",
+          "date": "2024-03",
           "count": 0
         },
         {
@@ -12664,7 +12454,7 @@
           "count": 0
         },
         {
-          "date": "2023-12",
+          "date": "2024-01",
           "count": 4
         },
         {
@@ -12706,7 +12496,7 @@
           "count": 0
         },
         {
-          "date": "2024-02",
+          "date": "2024-03",
           "count": 0
         },
         {
@@ -12714,7 +12504,7 @@
           "count": 0
         },
         {
-          "date": "2023-12",
+          "date": "2024-01",
           "count": 0
         },
         {
@@ -12929,7 +12719,7 @@
         },
         {
           "date": "2024-11-24",
-          "count": 0
+          "count": 5
         }
       ]
     }
@@ -12937,42 +12727,62 @@
   "activity_ranking": {
     "daily": [
       {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "score": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 12
+        },
+        "details": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 4.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 3,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 6
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 3,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 3.0
+          "issues_per_day": 2.0
         }
       },
       {
-        "name": "ESP3DLib",
+        "name": "ESP3D-Configurator",
         "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 3
         },
         "details": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 1.0,
           "issues_per_day": 0.0
         }
       },
@@ -12981,6 +12791,26 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13021,46 +12851,6 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13159,30 +12949,50 @@
     ],
     "weekly": [
       {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "score": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 15
+        },
+        "details": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.7142857142857143,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 4,
+          "issues": 2,
           "comments": 0,
           "period_days": 7,
-          "total": 8
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 4,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.5714285714285714
+          "issues_per_day": 0.2857142857142857
         }
       },
       {
-        "name": "esp3d.io",
+        "name": "ESP3D-Configurator",
         "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
           "commits": 1,
           "issues": 0,
@@ -13225,17 +13035,17 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -13263,26 +13073,6 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13386,17 +13176,37 @@
         "description": "Documentation of ESP3D Ecosystem",
         "url": "https://github.com/luc-github/esp3d.io",
         "score": {
-          "commits": 7,
+          "commits": 10,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 21
+          "total": 30
         },
         "details": {
-          "commits": 7,
+          "commits": 10,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.23333333333333334,
+          "commits_per_day": 0.3333333333333333,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
           "issues_per_day": 0.0
         }
       },
@@ -13407,37 +13217,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 5,
+          "issues": 3,
           "comments": 0,
           "period_days": 30,
-          "total": 10
+          "total": 6
         },
         "details": {
           "commits": 0,
-          "issues": 5,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.16666666666666666
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.03333333333333333,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.1
         }
       },
       {
@@ -13481,6 +13271,26 @@
         }
       },
       {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 30,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.03333333333333333
+        }
+      },
+      {
         "name": "ESP3D-TFT",
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
@@ -13498,26 +13308,6 @@
           "comments": 0,
           "commits_per_day": 0.0,
           "issues_per_day": 0.03333333333333333
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
         }
       },
       {
@@ -13603,26 +13393,6 @@
     ],
     "yearly": [
       {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "score": {
-          "commits": 10,
-          "issues": 11,
-          "comments": 0,
-          "period_days": 365,
-          "total": 52
-        },
-        "details": {
-          "commits": 10,
-          "issues": 11,
-          "comments": 0,
-          "commits_per_day": 0.0273972602739726,
-          "issues_per_day": 0.030136986301369864
-        }
-      },
-      {
         "name": "ESP3D-TFT",
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
@@ -13640,6 +13410,26 @@
           "comments": 0,
           "commits_per_day": 0.0273972602739726,
           "issues_per_day": 0.019178082191780823
+        }
+      },
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 10,
+          "issues": 6,
+          "comments": 0,
+          "period_days": 365,
+          "total": 42
+        },
+        "details": {
+          "commits": 10,
+          "issues": 6,
+          "comments": 0,
+          "commits_per_day": 0.0273972602739726,
+          "issues_per_day": 0.01643835616438356
         }
       },
       {

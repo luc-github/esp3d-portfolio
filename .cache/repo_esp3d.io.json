@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732496535.5511687,
+  "timestamp": 1732582883.2717025,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2024-11-23T08:06:19+00:00",
+    "updated_at": "2024-11-25T09:25:53+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "039e431",
-          "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
+          "sha": "77aebda",
+          "message": "Fix typo in sample command for notification, spaces are not escaped",
           "author": "Luc",
-          "date": "2024-11-23T08:06:11+00:00"
+          "date": "2024-11-25T09:25:46+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 180,
+        "contributions": 184,
         "url": "https://github.com/luc-github"
       },
       {
@@ -106,6 +106,30 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "77aebda",
+          "message": "Fix typo in sample command for notification, spaces are not escaped",
+          "author": "Luc",
+          "date": "2024-11-25T09:25:46+00:00"
+        },
+        {
+          "sha": "7e34ac1",
+          "message": "Update mkdocs.yml",
+          "author": "Luc",
+          "date": "2024-11-25T09:05:18+00:00"
+        },
+        {
+          "sha": "4d1b495",
+          "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
+          "author": "Luc",
+          "date": "2024-11-25T07:46:51+00:00"
+        },
+        {
+          "sha": "888d280",
+          "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
+          "author": "Luc",
+          "date": "2024-11-25T02:10:01+00:00"
+        },
+        {
           "sha": "039e431",
           "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
           "author": "Luc",
@@ -140,30 +164,6 @@
           "message": "Update NodeMCU with pinout",
           "author": "Luc",
           "date": "2024-10-28T04:04:27+00:00"
-        },
-        {
-          "sha": "9414745",
-          "message": "Doc for ESP32-S3-LCD-1.47 - WIP",
-          "author": "Luc",
-          "date": "2024-10-28T03:48:59+00:00"
-        },
-        {
-          "sha": "bd6dd4a",
-          "message": "Add some notes to clarify connection",
-          "author": "Luc",
-          "date": "2024-10-21T08:54:36+00:00"
-        },
-        {
-          "sha": "84c20c7",
-          "message": "Update as now USB Serial OTG is supported",
-          "author": "Luc",
-          "date": "2024-10-21T08:46:37+00:00"
-        },
-        {
-          "sha": "1ab5f55",
-          "message": "Update Xiao Sense S3",
-          "author": "Luc",
-          "date": "2024-10-21T05:39:11+00:00"
         }
       ],
       "commit_activity": [
@@ -832,10 +832,10 @@
         },
         {
           "week": "2024-11-24T00:00:00+00:00",
-          "total": 0,
+          "total": 4,
           "days": [
             0,
-            0,
+            4,
             0,
             0,
             0,
@@ -846,7 +846,7 @@
       ]
     },
     "statistics": {
-      "size": 114491,
+      "size": 112609,
       "stars": 6,
       "forks": 21,
       "open_issues": 2,

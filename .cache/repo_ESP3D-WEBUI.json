@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732496494.6255035,
+  "timestamp": 1732582838.3921814,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -98,7 +98,7 @@
             "body": "**Is your feature request related to a problem? Please describe.**\r\nCurrent release doesn't have milling / printing progress visualization as is available in some CNC controlling applications i.e. Universal gcode sender or LaserGRBL. It would be great to have it in this web UI\r\n\r\n**Describe the solution you'd like**\r\nDevelop graphical visualization of CNC process progress to see in quasi-real time drill / nozzle position XYZ and in different color\r\n what has been already milled / printed / plotted.\r\n\r\n**Describe alternatives you've considered**\r\nI am using other software Universal gcode sender or LaserGRBL, for my grbl-ESP32 based plotter, but they do not have web based UI and do not show shapes plotted from SD card connected to my plotter. \r\n\r\n**Additional context**\r\nSee on the picture below what I mean.\r\n![UGS_UI](https://user-images.githubusercontent.com/102630094/168447459-cfdca6b6-33c6-48ba-9e05-dcc6ebbfe21f.jpg)\r\n\r\n",
             "state": "open",
             "created_at": "2022-05-14T20:46:19+00:00",
-            "updated_at": "2024-10-13T08:02:23+00:00",
+            "updated_at": "2024-11-25T08:18:44+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/244",
             "is_pr": false,
@@ -109,7 +109,7 @@
               "Extension"
             ],
             "priority": "normal",
-            "assignee": "sp5iou"
+            "assignee": null
           },
           {
             "number": 242,
