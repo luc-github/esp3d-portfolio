@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732669244.1506433,
+  "timestamp": 1732755667.5767822,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "d9f6ea6",
-          "message": "close #888",
+          "sha": "be5e3f9",
+          "message": "Add missing WhatsApp setting in ESP400\n\nBump version",
           "author": "Luc",
-          "date": "2024-11-25T07:45:09+00:00"
+          "date": "2024-11-27T01:07:52+00:00"
         },
         "protected": false,
         "issues": [
@@ -957,7 +957,7 @@
       ]
     },
     "statistics": {
-      "size": 134727,
+      "size": 134733,
       "stars": 1776,
       "forks": 466,
       "open_issues": 6,
