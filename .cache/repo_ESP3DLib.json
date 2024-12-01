@@ -1,5 +1,5 @@
 {
-  "timestamp": 1732928368.5792415,
+  "timestamp": 1733015480.307751,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3DLib",
     "language": "C++",
     "created_at": "2019-12-16T13:18:03+00:00",
-    "updated_at": "2024-11-27T21:00:26+00:00",
+    "updated_at": "2024-11-30T05:53:55+00:00",
     "branches": [
       {
         "name": "master",
@@ -196,19 +196,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-12-03T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-12-10T00:00:00+00:00",
           "total": 0,
@@ -871,15 +858,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2024-12-01T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 7656,
-      "stars": 101,
+      "stars": 100,
       "forks": 32,
       "open_issues": 3,
-      "watchers": 101,
+      "watchers": 100,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"
     }
