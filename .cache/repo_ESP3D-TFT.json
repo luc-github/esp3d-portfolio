@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733015507.7993402,
+  "timestamp": 1733101446.791147,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-TFT",
     "language": "C",
     "created_at": "2022-08-24T05:55:10+00:00",
-    "updated_at": "2024-09-14T07:20:11+00:00",
+    "updated_at": "2024-12-01T08:22:57+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "7ccc509",
-          "message": "Add Waveshare 7 TFT Support\n\n* Extract hardware target from common make to define resolution\r\n* Fix compilation failed if disable Time\r\n* Fix compilation issue if nothing is enabled but SD and WiFi\r\n* Fix warning  if nothing is enabled but SD and WiFi\r\n* Update esp3d_version.h",
+          "sha": "5dca9c4",
+          "message": "Add version badge",
           "author": "Luc",
-          "date": "2024-08-14T04:19:07+00:00"
+          "date": "2024-12-01T08:22:44+00:00"
         },
         "protected": false,
         "issues": [
@@ -181,7 +181,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 829,
+        "contributions": 830,
         "url": "https://github.com/luc-github"
       },
       {
@@ -207,6 +207,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "5dca9c4",
+          "message": "Add version badge",
+          "author": "Luc",
+          "date": "2024-12-01T08:22:44+00:00"
+        },
         {
           "sha": "7ccc509",
           "message": "Add Waveshare 7 TFT Support\n\n* Extract hardware target from common make to define resolution\r\n* Fix compilation failed if disable Time\r\n* Fix compilation issue if nothing is enabled but SD and WiFi\r\n* Fix warning  if nothing is enabled but SD and WiFi\r\n* Update esp3d_version.h",
@@ -260,12 +266,6 @@
           "message": "Change start variable collection\n\nRevert not working fix for usb_serial disabled\nAdd more log",
           "author": "Luc",
           "date": "2024-05-01T14:50:12+00:00"
-        },
-        {
-          "sha": "11a831d",
-          "message": "Update CMakeLists.txt\n\nFix  if USB-SERIAL is disabled in CMakeLists.txt",
-          "author": "Luc",
-          "date": "2024-05-01T13:05:34+00:00"
         }
       ],
       "commit_activity": [
@@ -934,9 +934,9 @@
         },
         {
           "week": "2024-12-01T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
-            0,
+            1,
             0,
             0,
             0,
@@ -948,7 +948,7 @@
       ]
     },
     "statistics": {
-      "size": 100280,
+      "size": 100291,
       "stars": 38,
       "forks": 9,
       "open_issues": 9,
