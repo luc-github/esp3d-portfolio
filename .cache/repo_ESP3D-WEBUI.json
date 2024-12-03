@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733101428.146966,
+  "timestamp": 1733187757.6973164,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "193447d",
-          "message": "Add version badge",
+          "sha": "dae9c6d",
+          "message": "Make MX state multiple instead of unique\n\nAdd M6 for Tool change\nBump version\nBuild package\nUpdate grbl test server to have changing $G report",
           "author": "Luc",
-          "date": "2024-12-01T08:13:27+00:00"
+          "date": "2024-12-03T00:16:41+00:00"
         },
         "protected": false,
         "issues": [
@@ -986,7 +986,7 @@
       ]
     },
     "statistics": {
-      "size": 110693,
+      "size": 111399,
       "stars": 774,
       "forks": 306,
       "open_issues": 8,
