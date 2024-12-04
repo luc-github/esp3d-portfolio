@@ -43,10 +43,10 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (12) | 4 | 0 | 12.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 7 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -63,8 +63,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
-| 🥈 2 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
+| 🥇 1 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (15) | 5 | 0 | 2.1 |
+| 🥈 2 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
 | 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -84,7 +84,7 @@ Repository activity rankings based on activity over different time periods.
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (27) | 9 | 0 | 0.9 |
-| 🥈 2 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (5) | 1 | 1 | 0.2 |
+| 🥈 2 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (17) | 5 | 1 | 0.6 |
 | 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 0.1 |
 | ▪️ 4 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 5 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
@@ -105,7 +105,7 @@ Repository activity rankings based on activity over different time periods.
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (44) | 10 | 7 | 0.1 |
 | 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜ (42) | 10 | 6 | 0.1 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (34) | 8 | 5 | 0.1 |
+| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (31) | 7 | 5 | 0.1 |
 | ▪️ 4 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (30) | 10 | 0 | 0.1 |
 | ▪️ 5 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (30) | 10 | 0 | 0.1 |
 | ▪️ 6 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (30) | 10 | 0 | 0.1 |
@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2779 |
+| Total Stars | 2780 |
 | Total Forks | 873 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 33 |
 | Closed Issues | 0 |
-| Average Age | 756.0 days |
+| Average Age | 757.0 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -154,8 +154,8 @@ Repository activity rankings based on activity over different time periods.
 Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.9 commits)
-Weekly   🟦 Few (1-10 commits)           (6.1 commits)
-Monthly  🟦 Few (1-25 commits)           (24.5 commits)
+Weekly   🟦 Few (1-10 commits)           (6.2 commits)
+Monthly  🟦 Few (1-25 commits)           (24.8 commits)
 ```
 
 </details>
@@ -258,7 +258,7 @@ Author: Luc
 <summary><h4>🔧 Development Branch (`main`)</h4></summary>
 
 ```
-Last commit: 2024-12-01 (#5dca9c4)
+Last commit: 2024-12-03 (#e45f643)
 Author: Luc
 ```
 
@@ -958,7 +958,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2024-12-03 01:04:16 UTC*
+*🔄 Last updated: 2024-12-04 01:04:31 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

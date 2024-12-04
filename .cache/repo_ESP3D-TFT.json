@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733187767.7729018,
+  "timestamp": 1733274179.9494715,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-TFT",
     "language": "C",
     "created_at": "2022-08-24T05:55:10+00:00",
-    "updated_at": "2024-12-01T08:22:57+00:00",
+    "updated_at": "2024-12-03T13:52:18+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "5dca9c4",
-          "message": "Add version badge",
+          "sha": "e45f643",
+          "message": "Update esp3d_gcode_parser_service.cpp",
           "author": "Luc",
-          "date": "2024-12-01T08:22:44+00:00"
+          "date": "2024-12-03T12:19:48+00:00"
         },
         "protected": false,
         "issues": [
@@ -181,7 +181,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 830,
+        "contributions": 834,
         "url": "https://github.com/luc-github"
       },
       {
@@ -207,6 +207,30 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "e45f643",
+          "message": "Update esp3d_gcode_parser_service.cpp",
+          "author": "Luc",
+          "date": "2024-12-03T12:19:48+00:00"
+        },
+        {
+          "sha": "e0e717b",
+          "message": "Fix abort command is ignored",
+          "author": "Luc",
+          "date": "2024-12-03T12:19:43+00:00"
+        },
+        {
+          "sha": "bca0a15",
+          "message": "Update esp_flash_littleFs.cpp",
+          "author": "Luc",
+          "date": "2024-12-03T08:26:17+00:00"
+        },
+        {
+          "sha": "a625ebd",
+          "message": "Idf 5.1.5 (#78)\n\n* Use idf 5.1.5\r\n* Change vTaskDelay by esp3d_hal::wait for consistency\r\n* Fix Scan not working due to API change\r\n* Fix missing .enum_filter_cb for USB due to API change\r\n* Add info.json and badge version\r\n* Improve detection of connection to avoid race condition\r\n* Add more flexible ack detection in case of data corruption\r\n* Update littlefs from 1.6.0 to v1.14.8\r\n* Update USB definition struct due to new API\r\n* Update idf-setup.sh to use idf 5.1.5 in CI\r\n* Adjust versions in code / readme / json\r\n\r\n---------\r\n\r\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2024-12-03T03:16:11+00:00"
+        },
         {
           "sha": "5dca9c4",
           "message": "Add version badge",
@@ -242,30 +266,6 @@
           "message": "Add scripts to format code (c/cpp/h/js/css/scss)\n\nAdd .prettierrc as js/scss/css format configuration\nApply style to code source",
           "author": "Luc",
           "date": "2024-05-30T01:26:02+00:00"
-        },
-        {
-          "sha": "34ef4bc",
-          "message": "Code reformating  (#72)\n\nFix some wrong icons in fonts\r\nRefactor screens\r\nUpdate some styles\r\nAdd screen capture",
-          "author": "Luc",
-          "date": "2024-05-29T23:43:54+00:00"
-        },
-        {
-          "sha": "bc04175",
-          "message": "Update ESP32S3_ZX3D50CE02S_USRC_4832.cmake",
-          "author": "Luc",
-          "date": "2024-05-02T08:51:35+00:00"
-        },
-        {
-          "sha": "ea33417",
-          "message": "Fix Conpilation failed if USB-SERIAL is disabled on S3",
-          "author": "Luc",
-          "date": "2024-05-02T03:31:21+00:00"
-        },
-        {
-          "sha": "e5fdfb7",
-          "message": "Change start variable collection\n\nRevert not working fix for usb_serial disabled\nAdd more log",
-          "author": "Luc",
-          "date": "2024-05-01T14:50:12+00:00"
         }
       ],
       "commit_activity": [
@@ -934,11 +934,11 @@
         },
         {
           "week": "2024-12-01T00:00:00+00:00",
-          "total": 1,
+          "total": 5,
           "days": [
             1,
             0,
-            0,
+            4,
             0,
             0,
             0,
@@ -948,7 +948,7 @@
       ]
     },
     "statistics": {
-      "size": 100326,
+      "size": 100356,
       "stars": 38,
       "forks": 9,
       "open_issues": 9,
