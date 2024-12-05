@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733274167.9184203,
+  "timestamp": 1733360590.4598963,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "dae9c6d",
-          "message": "Make MX state multiple instead of unique\n\nAdd M6 for Tool change\nBump version\nBuild package\nUpdate grbl test server to have changing $G report",
+          "sha": "a57ec62",
+          "message": "Update P1 to P0 for consistency  for probe",
           "author": "Luc",
-          "date": "2024-12-03T00:16:41+00:00"
+          "date": "2024-12-04T12:24:30+00:00"
         },
         "protected": false,
         "issues": [
