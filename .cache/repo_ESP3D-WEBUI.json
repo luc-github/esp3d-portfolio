@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733706270.6552093,
+  "timestamp": 1733792611.1743076,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2024-12-07T21:24:32+00:00",
+    "updated_at": "2024-12-09T02:40:39+00:00",
     "branches": [
       {
         "name": "2.1",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "0b80ee0",
-          "message": "Update README.md",
+          "sha": "4db9ff2",
+          "message": "Update README.md\n\nremove travis badge",
           "author": "Luc",
-          "date": "2024-10-01T04:14:29+00:00"
+          "date": "2024-12-09T02:40:34+00:00"
         },
         "protected": false,
         "issues": []
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "c8debd7",
-          "message": "Update 3D printer conditions for displaying settings",
+          "sha": "8033f62",
+          "message": "Build packages\n\nClose #249",
           "author": "Luc",
-          "date": "2024-12-08T12:40:05+00:00"
+          "date": "2024-12-09T02:38:18+00:00"
         },
         "protected": false,
         "issues": [
@@ -70,24 +70,6 @@
               "Feature request",
               "3.0",
               "Work in progress"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 249,
-            "title": "[Enhancement]Clean up Interface UI according usage",
-            "body": "Multiple conditions is now supported - so in Settings->Intefaces some controls could be hidden if not in usage context\r\n\r\n",
-            "state": "open",
-            "created_at": "2022-07-06T07:13:52+00:00",
-            "updated_at": "2022-08-13T20:00:02+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/249",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "3.0",
-              "Planned"
             ],
             "priority": "normal",
             "assignee": null
@@ -194,7 +176,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 216,
+        "contributions": 217,
         "url": "https://github.com/luc-github"
       },
       {
@@ -245,6 +227,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "4db9ff2",
+          "message": "Update README.md\n\nremove travis badge",
+          "author": "Luc",
+          "date": "2024-12-09T02:40:34+00:00"
+        },
         {
           "sha": "0b80ee0",
           "message": "Update README.md",
@@ -298,12 +286,6 @@
           "message": "Update 3.0 CI badge",
           "author": "Luc",
           "date": "2023-10-03T06:32:01+00:00"
-        },
-        {
-          "sha": "7e2618e",
-          "message": "docs: add jamespearson04 as a contributor for code, and ideas (#365)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-          "author": "allcontributors[bot]",
-          "date": "2023-10-03T05:19:49+00:00"
         }
       ],
       "commit_activity": [
@@ -972,10 +954,10 @@
         },
         {
           "week": "2024-12-08T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -986,10 +968,10 @@
       ]
     },
     "statistics": {
-      "size": 112143,
+      "size": 112789,
       "stars": 778,
       "forks": 306,
-      "open_issues": 8,
+      "open_issues": 7,
       "watchers": 778,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"

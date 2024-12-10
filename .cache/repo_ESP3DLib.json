@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733706250.9304235,
+  "timestamp": 1733792598.3891332,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -20,26 +20,7 @@
           "date": "2024-06-01T13:29:37+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 75,
-            "title": "[BUG NOTE]Marlin 2.1.2.2/ bugfix 2.1.x is broken for ESP3DLib 1.0",
-            "body": "https://github.com/MarlinFirmware/Marlin/commit/fecadaca82e49c2558b42684382ede121274bfea removed all configurations flags access for ESP3DLib \r\n\r\n### In Configuration_adv.h\r\nLatest changes prevent  ESP3D_WIFISUPPORT  to use :\r\n```\r\n#define WEBSUPPORT          // Start a webserver (which may include auto-discovery) using SPIFFS\r\n#define OTASUPPORT          // Support over-the-air firmware updates\r\n#define WIFI_CUSTOM_COMMAND // Accept feature config commands (e.g., WiFi ESP3D) from the host\r\n```\r\n\r\nYou need to replace/put back:\r\n`#if ENABLED(WIFISUPPORT)` by `#if ANY(WIFISUPPORT, ESP3D_WIFISUPPORT)`\r\n\r\nOr add the flags outside of the `#if ENABLED(WIFISUPPORT)`\r\n\r\nIf not, ESP3DLib cannot communicate with Marlin and is not setup for web access \r\n\r\n### In SanityCheck.h\r\nchange \r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif defined(WIFI_SSID) || defined(WIFI_PWD)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nby\r\n\r\n```\r\n/**\r\n * Sanity check WiFi options\r\n */\r\n#if ALL(WIFISUPPORT, ESP3D_WIFISUPPORT)\r\n  #error \"Enable only one of WIFISUPPORT or ESP3D_WIFISUPPORT.\"\r\n#elif ENABLED(ESP3D_WIFISUPPORT) && DISABLED(ARDUINO_ARCH_ESP32)\r\n  #error \"ESP3D_WIFISUPPORT requires an ESP32 motherboard.\"\r\n#elif ALL(ARDUINO_ARCH_ESP32, WIFISUPPORT)\r\n  #if !(defined(WIFI_SSID) && defined(WIFI_PWD))\r\n    #error \"ESP32 motherboard with WIFISUPPORT requires WIFI_SSID and WIFI_PWD.\"\r\n  #endif\r\n#elif ENABLED(WIFI_CUSTOM_COMMAND) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_CUSTOM_COMMAND requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif ENABLED(OTASUPPORT) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"OTASUPPORT requires an ESP32 motherboard and WIFISUPPORT.\"\r\n#elif (defined(WIFI_SSID) || defined(WIFI_PWD)) && DISABLED(ESP3D_WIFISUPPORT) && DISABLED(WIFISUPPORT)\r\n  #error \"WIFI_SSID and WIFI_PWD only apply to ESP32 motherboard with WIFISUPPORT.\"\r\n#endif\r\n```\r\n\r\nOr compilation will failed \r\n\r\n",
-            "state": "open",
-            "created_at": "2023-12-15T12:07:14+00:00",
-            "updated_at": "2024-03-22T21:50:06+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3DLib/issues/75",
-            "is_pr": false,
-            "labels": [
-              "bug",
-              "1.0",
-              "Compatibility"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       },
       {
         "name": "3.0",
@@ -75,7 +56,7 @@
             "body": "Here features that will be covered by ESP3DLib 3.0 : \r\n- Webui <s>2.1</s> 3.0 support\r\n-  Move to SSDP asyncudp library\r\n- Move ESP32 core to 2.0.2 / 2.0.3\r\n- Move from SPIFFS to LittleFS\r\n- AP mode setup reviewed\r\n- New embedded page\r\n- Add Telnet server support\r\n- Add Notifications support\r\n- Add MKS Cura pluggin support for file upload\r\n- Move SD support from Marlin SD Lib to SDFat 2.0 for better performance (TBC),\r\nNote: Marlin itself will still use Marlin SD Lib as only ESP3DLib will be affected. \r\n\r\n\r\nTesting boards:\r\n1 - MRR_ESPA V1.3 without display\r\n2 - FYSETC V1.0 + MKS TFT32_L V4.0 (With BTT FW)\r\n3 - MKS TinyBee V1.0 + MKS Mini12864 V3.0\r\n4 - Panda Zhu V1.2\r\n\r\nMarlin Code base should be 2.0.9.3 bugfix  2.0.9.4? (TBD)\r\n",
             "state": "open",
             "created_at": "2022-02-01T07:02:41+00:00",
-            "updated_at": "2024-10-10T04:59:46+00:00",
+            "updated_at": "2024-12-09T04:54:48+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3DLib/issues/39",
             "is_pr": false,
@@ -878,7 +859,7 @@
       "size": 7656,
       "stars": 102,
       "forks": 32,
-      "open_issues": 3,
+      "open_issues": 2,
       "watchers": 102,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"
