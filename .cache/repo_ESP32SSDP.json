@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733792669.7179654,
+  "timestamp": 1733879021.4402688,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -14,10 +14,10 @@
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "cbc3183",
-          "message": "Make backward compatible for the warning fix",
+          "sha": "311f536",
+          "message": "Add started API\n\nFix IP not correct for ethernet\nMove localIP to public to check configuration\nBump version",
           "author": "Luc",
-          "date": "2024-08-24T08:13:51+00:00"
+          "date": "2024-12-10T11:02:30+00:00"
         },
         "protected": false,
         "issues": [
@@ -817,7 +817,7 @@
       ]
     },
     "statistics": {
-      "size": 119,
+      "size": 120,
       "stars": 49,
       "forks": 23,
       "open_issues": 2,

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1733792591.9115436,
+  "timestamp": 1733878927.4031386,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -20,53 +20,20 @@
           "date": "2024-05-30T00:07:00+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 1065,
-            "title": "esp3d and grblhal connecting using ioSender",
-            "body": "**Describe the bug**\r\n\r\nHi, i connected board running esp3d to other board running GRBLHal STM32F407 when connect using ioSender not work telnet o websocket. when test lightburn works correctly, The problem has been found by @terjeio I attach the conversation and more details\r\n\r\n**To Reproduce**\r\n\r\nconnect te grblhal-serial to esp3d and connecting using telnet from ioSender\r\n\r\n**Expected behavior**\r\n\r\nwhen connect using ioSender show error.\r\n\r\n**Screenshots**\r\n\r\n\r\n**ESP3D Firmware:**\r\n\r\n- ESP3D FW version: v3.0\r\n- ESP3D-WebUI Version: v3.0\r\n- Wifi mode: STA\r\n- Flash method: PlatformIO\r\n- Any change done in FW: N/A\r\n\r\n**Target Firmware:**\r\n\r\n- Name: GRBLHal\r\n- Version: latest\r\n\r\n**Board used (please complete the following information):**\r\n\r\n- MCU: ESP32\r\n- Name: dev\r\n- Flash size: 4M\r\n\r\n**Additional context**\r\n\r\nhttps://github.com/terjeio/ioSender/discussions/417",
-            "state": "open",
-            "created_at": "2024-12-09T17:16:34+00:00",
-            "updated_at": "2024-12-09T17:48:48+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1065",
-            "is_pr": false,
-            "labels": [
-              "bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       },
       {
         "name": "3.0",
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "d6a58d5",
-          "message": "Update esp3d_version.h",
+          "sha": "0f55c19",
+          "message": "Fix compilation for esp8266",
           "author": "Luc",
-          "date": "2024-12-09T09:47:31+00:00"
+          "date": "2024-12-10T12:27:39+00:00"
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1065,
-            "title": "esp3d and grblhal connecting using ioSender",
-            "body": "**Describe the bug**\r\n\r\nHi, i connected board running esp3d to other board running GRBLHal STM32F407 when connect using ioSender not work telnet o websocket. when test lightburn works correctly, The problem has been found by @terjeio I attach the conversation and more details\r\n\r\n**To Reproduce**\r\n\r\nconnect te grblhal-serial to esp3d and connecting using telnet from ioSender\r\n\r\n**Expected behavior**\r\n\r\nwhen connect using ioSender show error.\r\n\r\n**Screenshots**\r\n\r\n\r\n**ESP3D Firmware:**\r\n\r\n- ESP3D FW version: v3.0\r\n- ESP3D-WebUI Version: v3.0\r\n- Wifi mode: STA\r\n- Flash method: PlatformIO\r\n- Any change done in FW: N/A\r\n\r\n**Target Firmware:**\r\n\r\n- Name: GRBLHal\r\n- Version: latest\r\n\r\n**Board used (please complete the following information):**\r\n\r\n- MCU: ESP32\r\n- Name: dev\r\n- Flash size: 4M\r\n\r\n**Additional context**\r\n\r\nhttps://github.com/terjeio/ioSender/discussions/417",
-            "state": "open",
-            "created_at": "2024-12-09T17:16:34+00:00",
-            "updated_at": "2024-12-09T17:48:48+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1065",
-            "is_pr": false,
-            "labels": [
-              "bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 1058,
             "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
@@ -972,10 +939,10 @@
       ]
     },
     "statistics": {
-      "size": 134818,
+      "size": 134859,
       "stars": 1783,
       "forks": 467,
-      "open_issues": 6,
+      "open_issues": 5,
       "watchers": 1783,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
