@@ -43,10 +43,10 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (2) | 0 | 1 | 2.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 7 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -66,8 +66,8 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
 | 🥈 2 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
 | 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
-| ▪️ 4 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
+| ▪️ 5 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 7 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -84,7 +84,7 @@ Repository activity rankings based on activity over different time periods.
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (27) | 9 | 0 | 0.9 |
-| 🥈 2 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (17) | 5 | 1 | 0.6 |
+| 🥈 2 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (19) | 5 | 2 | 0.6 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (5) | 1 | 1 | 0.2 |
 | ▪️ 4 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 0.1 |
 | ▪️ 5 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 30 |
 | Closed Issues | 0 |
-| Average Age | 800.0 days |
+| Average Age | 801.0 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -154,8 +154,8 @@ Repository activity rankings based on activity over different time periods.
 Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.9 commits)
-Weekly   🟦 Few (1-10 commits)           (6.3 commits)
-Monthly  🟩 Some (26-50 commits)         (25.1 commits)
+Weekly   🟦 Few (1-10 commits)           (6.2 commits)
+Monthly  🟦 Few (1-25 commits)           (24.9 commits)
 ```
 
 </details>
@@ -263,12 +263,12 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-12-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#77: <a href="https://github.com/luc-github/ESP3D-TFT/issues/77">Very slow communication with connected device to usb host</a></td><td><code>2024-10-24</code></td><td><code>2024-11-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#76: <a href="https://github.com/luc-github/ESP3D-TFT/issues/76">[FEATURE REQUEST]Add Lua interpreter support like in ESP3D</a></td><td><code>2024-10-13</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#54: <a href="https://github.com/luc-github/ESP3D-TFT/issues/54">[FEATURE REQUEST]Move to lvgl 9.0</a></td><td><code>2024-01-17</code></td><td><code>2024-08-29</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#74: <a href="https://github.com/luc-github/ESP3D-TFT/issues/74">[FEATURE REQUEST]Add BTT GCODE thumbnails</a></td><td><code>2024-08-14</code></td><td><code>2024-08-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#67: <a href="https://github.com/luc-github/ESP3D-TFT/issues/67">[FEATURE REQUEST]Add support of macro defined by webui on screen</a></td><td><code>2024-04-21</code></td><td><code>2024-08-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-01-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#53: <a href="https://github.com/luc-github/ESP3D-TFT/issues/53">[FEATURE REQUEST]Do better snapshot code with no memory need</a></td><td><code>2024-01-07</code></td><td><code>2024-01-07</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#12: <a href="https://github.com/luc-github/ESP3D-TFT/issues/12">[FEATURE REQUEST]WhatsApp Notification</a></td><td><code>2023-02-20</code></td><td><code>2023-02-20</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#5: <a href="https://github.com/luc-github/ESP3D-TFT/issues/5">[ENHANCEMENT]Add Pin interrupt support on FT5X06 when supported to save mcu time instead of doing permanent polling</a></td><td><code>2022-10-01</code></td><td><code>2022-10-01</code></td><td style="color: #000000">normal</td></tr>
@@ -705,12 +705,12 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-12-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#77: <a href="https://github.com/luc-github/ESP3D-TFT/issues/77">Very slow communication with connected device to usb host</a></td><td><code>2024-10-24</code></td><td><code>2024-11-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#76: <a href="https://github.com/luc-github/ESP3D-TFT/issues/76">[FEATURE REQUEST]Add Lua interpreter support like in ESP3D</a></td><td><code>2024-10-13</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#54: <a href="https://github.com/luc-github/ESP3D-TFT/issues/54">[FEATURE REQUEST]Move to lvgl 9.0</a></td><td><code>2024-01-17</code></td><td><code>2024-08-29</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#74: <a href="https://github.com/luc-github/ESP3D-TFT/issues/74">[FEATURE REQUEST]Add BTT GCODE thumbnails</a></td><td><code>2024-08-14</code></td><td><code>2024-08-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#67: <a href="https://github.com/luc-github/ESP3D-TFT/issues/67">[FEATURE REQUEST]Add support of macro defined by webui on screen</a></td><td><code>2024-04-21</code></td><td><code>2024-08-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 main</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-01-21</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#53: <a href="https://github.com/luc-github/ESP3D-TFT/issues/53">[FEATURE REQUEST]Do better snapshot code with no memory need</a></td><td><code>2024-01-07</code></td><td><code>2024-01-07</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#12: <a href="https://github.com/luc-github/ESP3D-TFT/issues/12">[FEATURE REQUEST]WhatsApp Notification</a></td><td><code>2023-02-20</code></td><td><code>2023-02-20</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#5: <a href="https://github.com/luc-github/ESP3D-TFT/issues/5">[ENHANCEMENT]Add Pin interrupt support on FT5X06 when supported to save mcu time instead of doing permanent polling</a></td><td><code>2022-10-01</code></td><td><code>2022-10-01</code></td><td style="color: #000000">normal</td></tr>
@@ -923,7 +923,7 @@ Author: Luc
 | Activity | Count |
 |----------|--------|
 | Commits | 107 |
-| New Issues | 1 |
+| New Issues | 2 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
 
@@ -950,7 +950,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2024-12-14 01:02:16 UTC*
+*🔄 Last updated: 2024-12-15 01:08:53 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
