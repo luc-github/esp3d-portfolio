@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734224826.118994,
+  "timestamp": 1734311067.765669,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -20,7 +20,24 @@
           "date": "2024-06-01T13:29:37+00:00"
         },
         "protected": false,
-        "issues": []
+        "issues": [
+          {
+            "number": 82,
+            "title": "enable 3 serial connexion : {USB, MKS TFT24, WIFI}",
+            "body": "Hello,\r\n\r\nI like to use 3 connexions for tinybee motherboard (USB, MKS TFT24, WIFI).\r\n\r\nI have been able to configure and uses 2 connexions (USB, MKS TFT24)\r\n\r\nBy the way, I had to invert mkstft24 Tx and Rx, as they are not in the same pin order.\r\n\r\nBut when I activate ESP3D_WIFISUPPORT, i loose the mks tft24 connexion.\r\n\r\nI supose that esp3Dlib overwrite the port number 2. But that just an asumption.\r\n\r\nI have test with Marlin bugfix 2.1 and native mks tnybee firmware 2.0.9.2.\r\n\r\nCan you help on this?\r\n\r\nRegards",
+            "state": "open",
+            "created_at": "2024-12-15T18:52:42+00:00",
+            "updated_at": "2024-12-15T18:53:09+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/issues/82",
+            "is_pr": false,
+            "labels": [
+              "Feature request"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
       },
       {
         "name": "3.0",
@@ -34,6 +51,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 82,
+            "title": "enable 3 serial connexion : {USB, MKS TFT24, WIFI}",
+            "body": "Hello,\r\n\r\nI like to use 3 connexions for tinybee motherboard (USB, MKS TFT24, WIFI).\r\n\r\nI have been able to configure and uses 2 connexions (USB, MKS TFT24)\r\n\r\nBy the way, I had to invert mkstft24 Tx and Rx, as they are not in the same pin order.\r\n\r\nBut when I activate ESP3D_WIFISUPPORT, i loose the mks tft24 connexion.\r\n\r\nI supose that esp3Dlib overwrite the port number 2. But that just an asumption.\r\n\r\nI have test with Marlin bugfix 2.1 and native mks tnybee firmware 2.0.9.2.\r\n\r\nCan you help on this?\r\n\r\nRegards",
+            "state": "open",
+            "created_at": "2024-12-15T18:52:42+00:00",
+            "updated_at": "2024-12-15T18:53:09+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/issues/82",
+            "is_pr": false,
+            "labels": [
+              "Feature request"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 76,
             "title": "3.0 refactoring",
@@ -859,7 +892,7 @@
       "size": 7656,
       "stars": 103,
       "forks": 32,
-      "open_issues": 2,
+      "open_issues": 3,
       "watchers": 103,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"
