@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734311079.446443,
+  "timestamp": 1734397355.6227658,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "8033f62",
-          "message": "Build packages\n\nClose #249",
+          "sha": "f9dbf5c",
+          "message": "generate template",
           "author": "Luc",
-          "date": "2024-12-09T02:38:18+00:00"
+          "date": "2024-12-16T08:24:04+00:00"
         },
         "protected": false,
         "issues": [
@@ -968,7 +968,7 @@
       ]
     },
     "statistics": {
-      "size": 112789,
+      "size": 112809,
       "stars": 781,
       "forks": 306,
       "open_issues": 7,

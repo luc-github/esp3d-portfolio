@@ -65,7 +65,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 55,
+              "age_days": 56,
               "days_since_update": 21,
               "is_stale": false,
               "is_recent": false,
@@ -94,8 +94,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1421,
-              "days_since_update": 48,
+              "age_days": 1422,
+              "days_since_update": 49,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -122,8 +122,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2346,
-              "days_since_update": 197,
+              "age_days": 2347,
+              "days_since_update": 198,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -150,8 +150,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1413,
-              "days_since_update": 285,
+              "age_days": 1414,
+              "days_since_update": 286,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -179,8 +179,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 872,
-              "days_since_update": 286,
+              "age_days": 873,
+              "days_since_update": 287,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1063,55 +1063,20 @@
             "date": "2024-06-01T13:29:37+00:00"
           },
           "protected": false,
-          "issues": [
-            {
-              "number": 82,
-              "title": "enable 3 serial connexion : {USB, MKS TFT24, WIFI}",
-              "body": "Hello,\r\n\r\nI like to use 3 connexions for tinybee motherboard (USB, MKS TFT24, WIFI).\r\n\r\nI have been able to configure and uses 2 connexions (USB, MKS TFT24)\r\n\r\nBy the way, I had to invert mkstft24 Tx and Rx, as they are not in the same pin order.\r\n\r\nBut when I activate ESP3D_WIFISUPPORT, i loose the mks tft24 connexion.\r\n\r\nI supose that esp3Dlib overwrite the port number 2. But that just an asumption.\r\n\r\nI have test with Marlin bugfix 2.1 and native mks tnybee firmware 2.0.9.2.\r\n\r\nCan you help on this?\r\n\r\nRegards",
-              "state": "open",
-              "created_at": "2024-12-15T18:52:42+00:00",
-              "updated_at": "2024-12-15T18:53:09+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/issues/82",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "medium",
-              "complexity": "low",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            }
-          ],
+          "issues": [],
           "issue_summary": {
-            "total": 1,
-            "open": 1,
+            "total": 0,
+            "open": 0,
             "closed": 0,
-            "priorities": {
-              "normal": 1
-            },
+            "priorities": {},
             "ages": {
-              "recent": 1,
+              "recent": 0,
               "active": 0,
               "stale": 0
             },
-            "complexity": {
-              "low": 1
-            },
-            "size": {
-              "medium": 1
-            },
-            "lifecycle": {
-              "new": 1
-            }
+            "complexity": {},
+            "size": {},
+            "lifecycle": {}
           }
         },
         {
@@ -1132,16 +1097,18 @@
               "body": "Hello,\r\n\r\nI like to use 3 connexions for tinybee motherboard (USB, MKS TFT24, WIFI).\r\n\r\nI have been able to configure and uses 2 connexions (USB, MKS TFT24)\r\n\r\nBy the way, I had to invert mkstft24 Tx and Rx, as they are not in the same pin order.\r\n\r\nBut when I activate ESP3D_WIFISUPPORT, i loose the mks tft24 connexion.\r\n\r\nI supose that esp3Dlib overwrite the port number 2. But that just an asumption.\r\n\r\nI have test with Marlin bugfix 2.1 and native mks tnybee firmware 2.0.9.2.\r\n\r\nCan you help on this?\r\n\r\nRegards",
               "state": "open",
               "created_at": "2024-12-15T18:52:42+00:00",
-              "updated_at": "2024-12-15T18:53:09+00:00",
+              "updated_at": "2024-12-16T23:27:51+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3DLib/issues/82",
               "is_pr": false,
               "labels": [
+                "Fixed",
+                "3.0",
                 "Feature request"
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 0,
+              "age_days": 1,
               "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
@@ -1169,8 +1136,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1048,
-              "days_since_update": 3,
+              "age_days": 1049,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1195,8 +1162,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 347,
-              "days_since_update": 25,
+              "age_days": 348,
+              "days_since_update": 26,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2075,10 +2042,10 @@
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "8033f62",
-            "message": "Build packages\n\nClose #249",
+            "sha": "f9dbf5c",
+            "message": "generate template",
             "author": "Luc",
-            "date": "2024-12-09T02:38:18+00:00"
+            "date": "2024-12-16T08:24:04+00:00"
           },
           "protected": false,
           "issues": [
@@ -2100,8 +2067,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 946,
-              "days_since_update": 20,
+              "age_days": 947,
+              "days_since_update": 21,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2130,8 +2097,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1527,
-              "days_since_update": 63,
+              "age_days": 1528,
+              "days_since_update": 64,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2159,8 +2126,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1607,
-              "days_since_update": 63,
+              "age_days": 1608,
+              "days_since_update": 64,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2191,8 +2158,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 196,
-              "days_since_update": 63,
+              "age_days": 197,
+              "days_since_update": 64,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2219,8 +2186,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 819,
-              "days_since_update": 63,
+              "age_days": 820,
+              "days_since_update": 64,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2247,8 +2214,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1807,
-              "days_since_update": 853,
+              "age_days": 1808,
+              "days_since_update": 854,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2277,8 +2244,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 950,
-              "days_since_update": 923,
+              "age_days": 951,
+              "days_since_update": 924,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3110,7 +3077,7 @@
         ]
       },
       "statistics": {
-        "size": 112789,
+        "size": 112809,
         "stars": 781,
         "forks": 306,
         "open_issues": 7,
@@ -3164,8 +3131,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 331,
-              "days_since_update": 1,
+              "age_days": 332,
+              "days_since_update": 2,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -3191,8 +3158,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 52,
-              "days_since_update": 29,
+              "age_days": 53,
+              "days_since_update": 30,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3217,8 +3184,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 63,
-              "days_since_update": 63,
+              "age_days": 64,
+              "days_since_update": 64,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3244,8 +3211,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 333,
-              "days_since_update": 108,
+              "age_days": 334,
+              "days_since_update": 109,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3272,8 +3239,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 123,
-              "days_since_update": 123,
+              "age_days": 124,
+              "days_since_update": 124,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3298,8 +3265,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 238,
-              "days_since_update": 125,
+              "age_days": 239,
+              "days_since_update": 126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3325,8 +3292,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 343,
-              "days_since_update": 343,
+              "age_days": 344,
+              "days_since_update": 344,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3351,8 +3318,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 664,
-              "days_since_update": 664,
+              "age_days": 665,
+              "days_since_update": 665,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3380,8 +3347,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 807,
-              "days_since_update": 807,
+              "age_days": 808,
+              "days_since_update": 808,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7084,8 +7051,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 577,
-              "days_since_update": 577,
+              "age_days": 578,
+              "days_since_update": 578,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7112,8 +7079,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 911,
-              "days_since_update": 850,
+              "age_days": 912,
+              "days_since_update": 851,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7932,17 +7899,17 @@
       "url": "https://github.com/luc-github/esp3d.io",
       "language": "HTML",
       "created_at": "2023-01-29T00:46:38+00:00",
-      "updated_at": "2024-12-09T09:48:50+00:00",
+      "updated_at": "2024-12-16T08:22:12+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "3566a58",
-            "message": "Update index.md",
+            "sha": "65207dc",
+            "message": "make pages list order consistent with menu order for documentation",
             "author": "Luc",
-            "date": "2024-12-09T09:48:44+00:00"
+            "date": "2024-12-16T08:22:05+00:00"
           },
           "protected": false,
           "issues": [
@@ -7961,8 +7928,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 656,
-              "days_since_update": 656,
+              "age_days": 657,
+              "days_since_update": 657,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7987,8 +7954,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 656,
-              "days_since_update": 656,
+              "age_days": 657,
+              "days_since_update": 657,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8026,7 +7993,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 187,
+          "contributions": 188,
           "url": "https://github.com/luc-github"
         },
         {
@@ -8072,6 +8039,12 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "65207dc",
+            "message": "make pages list order consistent with menu order for documentation",
+            "author": "Luc",
+            "date": "2024-12-16T08:22:05+00:00"
+          },
           {
             "sha": "3566a58",
             "message": "Update index.md",
@@ -8125,12 +8098,6 @@
             "message": "fix path of screenshots",
             "author": "Luc",
             "date": "2024-11-18T00:44:05+00:00"
-          },
-          {
-            "sha": "c63cd3f",
-            "message": "Update index.md",
-            "author": "Luc",
-            "date": "2024-11-04T21:05:03+00:00"
           }
         ],
         "commit_activity": [
@@ -8799,10 +8766,10 @@
           },
           {
             "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
+            "total": 1,
             "days": [
               0,
-              0,
+              1,
               0,
               0,
               0,
@@ -8813,7 +8780,7 @@
         ]
       },
       "statistics": {
-        "size": 113820,
+        "size": 113839,
         "stars": 6,
         "forks": 24,
         "open_issues": 2,
@@ -8865,8 +8832,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 579,
-              "days_since_update": 579,
+              "age_days": 580,
+              "days_since_update": 580,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8892,8 +8859,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1775,
-              "days_since_update": 1759,
+              "age_days": 1776,
+              "days_since_update": 1760,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9742,8 +9709,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 579,
-              "days_since_update": 579,
+              "age_days": 580,
+              "days_since_update": 580,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12136,13 +12103,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4822,
-      "reset": "2024-12-16T01:21:14+00:00"
+      "remaining": 4834,
+      "reset": "2024-12-17T02:02:05+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-12-16T01:07:18+00:00"
+      "reset": "2024-12-17T01:04:47+00:00"
     }
   },
   "stats": {
@@ -12156,7 +12123,7 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 696595,
+      "total_size": 696634,
       "total_stars": 2794,
       "total_forks": 878,
       "branches": {
@@ -12166,27 +12133,27 @@
       }
     },
     "issues": {
-      "total_count": 32,
-      "open_count": 32,
+      "total_count": 31,
+      "open_count": 31,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 751.868198135301,
+      "avg_age_days": 777.1118914629924,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 32
+        "normal": 31
       },
       "recent_activity": {
-        "last_day": 2,
-        "last_week": 4,
-        "last_month": 8
+        "last_day": 1,
+        "last_week": 3,
+        "last_month": 6
       }
     },
     "activity": {
       "total_commits": 107,
       "commit_frequency": {
-        "daily": 0.8901098901098902,
-        "weekly": 6.230769230769231,
-        "monthly": 24.923076923076923
+        "daily": 0.8928571428571429,
+        "weekly": 6.25,
+        "monthly": 25.0
       },
       "active_contributors": {
         "last_week": 0,
@@ -12221,30 +12188,30 @@
           1.8333333333333335
         ],
         [
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333,
-          2.083333333333333
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996,
+          2.1249999999999996
         ],
         [
           2.833333333333332,
@@ -12382,7 +12349,7 @@
       "issue_creation_trend": [
         {
           "date": "2024-11",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2024-10",
@@ -12686,7 +12653,7 @@
         },
         {
           "date": "2024-12-15",
-          "count": 0
+          "count": 1
         }
       ]
     }
@@ -12694,23 +12661,43 @@
   "activity_ranking": {
     "daily": [
       {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 1.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "ESP3DLib",
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 4
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 2.0
+          "issues_per_day": 1.0
         }
       },
       {
@@ -12798,26 +12785,6 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -12922,37 +12889,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 3,
+          "issues": 2,
           "comments": 0,
           "period_days": 7,
-          "total": 6
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 3,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.42857142857142855
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.14285714285714285,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.2857142857142857
         }
       },
       {
@@ -13000,6 +12947,26 @@
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13143,17 +13110,17 @@
         "description": "Documentation of ESP3D Ecosystem",
         "url": "https://github.com/luc-github/esp3d.io",
         "score": {
-          "commits": 9,
+          "commits": 10,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 27
+          "total": 30
         },
         "details": {
-          "commits": 9,
+          "commits": 10,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.3,
+          "commits_per_day": 0.3333333333333333,
           "issues_per_day": 0.0
         }
       },
@@ -13164,17 +13131,17 @@
         "url": "https://github.com/luc-github/ESP3D-TFT",
         "score": {
           "commits": 5,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 19
+          "total": 17
         },
         "details": {
           "commits": 5,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.16666666666666666,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -13184,17 +13151,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "period_days": 30,
-          "total": 8
+          "total": 6
         },
         "details": {
           "commits": 0,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.13333333333333333
+          "issues_per_day": 0.1
         }
       },
       {
@@ -13506,17 +13473,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 3,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 17
+          "total": 15
         },
         "details": {
           "commits": 3,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.00821917808219178,
-          "issues_per_day": 0.010958904109589041
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
