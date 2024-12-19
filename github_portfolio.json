@@ -41,10 +41,10 @@
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "0f55c19",
-            "message": "Fix compilation for esp8266",
+            "sha": "880ab40",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
             "author": "Luc",
-            "date": "2024-12-10T12:27:39+00:00"
+            "date": "2024-12-18T04:19:04+00:00"
           },
           "protected": false,
           "issues": [
@@ -65,8 +65,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 57,
-              "days_since_update": 22,
+              "age_days": 58,
+              "days_since_update": 24,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -94,8 +94,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1423,
-              "days_since_update": 50,
+              "age_days": 1424,
+              "days_since_update": 51,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -122,8 +122,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2348,
-              "days_since_update": 199,
+              "age_days": 2349,
+              "days_since_update": 200,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -150,8 +150,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1415,
-              "days_since_update": 287,
+              "age_days": 1416,
+              "days_since_update": 288,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -179,8 +179,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 874,
-              "days_since_update": 288,
+              "age_days": 875,
+              "days_since_update": 289,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1027,7 +1027,7 @@
         ]
       },
       "statistics": {
-        "size": 134859,
+        "size": 134870,
         "stars": 1784,
         "forks": 468,
         "open_issues": 5,
@@ -1108,8 +1108,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1050,
-              "days_since_update": 5,
+              "age_days": 1051,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1134,8 +1134,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 349,
-              "days_since_update": 27,
+              "age_days": 350,
+              "days_since_update": 28,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -1993,20 +1993,55 @@
             "date": "2024-12-09T02:40:34+00:00"
           },
           "protected": false,
-          "issues": [],
+          "issues": [
+            {
+              "number": 401,
+              "title": "Documentation does not explain how to upload index.html.gz",
+              "body": "Documentation does not explain how to upload index.html.gz\r\n\r\n![image](https://github.com/user-attachments/assets/dcf6e8cd-86ca-40c5-b35a-8b620b32a563)\r\n\r\nIt should be mentioned here:\r\nhttps://esp3d.io/ESP3D/Version_3.X/installation/vscode-platformio/\r\n\r\nBelow \"Compile and flash your module\".",
+              "state": "open",
+              "created_at": "2024-12-18T16:30:48+00:00",
+              "updated_at": "2024-12-18T16:31:14+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/401",
+              "is_pr": false,
+              "labels": [
+                "Bug"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            }
+          ],
           "issue_summary": {
-            "total": 0,
-            "open": 0,
+            "total": 1,
+            "open": 1,
             "closed": 0,
-            "priorities": {},
+            "priorities": {
+              "normal": 1
+            },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 0
             },
-            "complexity": {},
-            "size": {},
-            "lifecycle": {}
+            "complexity": {
+              "low": 1
+            },
+            "size": {
+              "small": 1
+            },
+            "lifecycle": {
+              "new": 1
+            }
           }
         },
         {
@@ -2014,13 +2049,39 @@
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "68501a1",
-            "message": "Add SENSOR:  to verbose trigger",
+            "sha": "c145b01",
+            "message": "Update README.md",
             "author": "Luc",
-            "date": "2024-12-17T23:56:53+00:00"
+            "date": "2024-12-18T04:20:05+00:00"
           },
           "protected": false,
           "issues": [
+            {
+              "number": 401,
+              "title": "Documentation does not explain how to upload index.html.gz",
+              "body": "Documentation does not explain how to upload index.html.gz\r\n\r\n![image](https://github.com/user-attachments/assets/dcf6e8cd-86ca-40c5-b35a-8b620b32a563)\r\n\r\nIt should be mentioned here:\r\nhttps://esp3d.io/ESP3D/Version_3.X/installation/vscode-platformio/\r\n\r\nBelow \"Compile and flash your module\".",
+              "state": "open",
+              "created_at": "2024-12-18T16:30:48+00:00",
+              "updated_at": "2024-12-18T16:31:14+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/401",
+              "is_pr": false,
+              "labels": [
+                "Bug"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 244,
               "title": "CNC process visualization functionality",
@@ -2039,8 +2100,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 948,
-              "days_since_update": 22,
+              "age_days": 949,
+              "days_since_update": 23,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2069,8 +2130,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1529,
-              "days_since_update": 65,
+              "age_days": 1530,
+              "days_since_update": 66,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2098,8 +2159,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1609,
-              "days_since_update": 65,
+              "age_days": 1610,
+              "days_since_update": 66,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2130,8 +2191,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 198,
-              "days_since_update": 65,
+              "age_days": 199,
+              "days_since_update": 66,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2158,8 +2219,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 821,
-              "days_since_update": 65,
+              "age_days": 822,
+              "days_since_update": 66,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2186,8 +2247,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1809,
-              "days_since_update": 855,
+              "age_days": 1810,
+              "days_since_update": 856,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2216,8 +2277,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 952,
-              "days_since_update": 925,
+              "age_days": 953,
+              "days_since_update": 926,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2229,27 +2290,28 @@
             }
           ],
           "issue_summary": {
-            "total": 7,
-            "open": 7,
+            "total": 8,
+            "open": 8,
             "closed": 0,
             "priorities": {
-              "normal": 7
+              "normal": 8
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 1,
               "stale": 6
             },
             "complexity": {
+              "low": 1,
               "medium": 6,
               "high": 1
             },
             "size": {
-              "medium": 4,
-              "small": 3
+              "small": 4,
+              "medium": 4
             },
             "lifecycle": {
-              "new": 7
+              "new": 8
             }
           }
         }
@@ -3049,10 +3111,10 @@
         ]
       },
       "statistics": {
-        "size": 113883,
+        "size": 114519,
         "stars": 781,
         "forks": 306,
-        "open_issues": 7,
+        "open_issues": 8,
         "watchers": 781,
         "default_branch": "2.1",
         "license": "GNU General Public License v3.0"
@@ -3103,8 +3165,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 333,
-              "days_since_update": 3,
+              "age_days": 334,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -3130,8 +3192,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 54,
-              "days_since_update": 31,
+              "age_days": 55,
+              "days_since_update": 32,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3156,8 +3218,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 65,
-              "days_since_update": 65,
+              "age_days": 66,
+              "days_since_update": 66,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3183,8 +3245,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 335,
-              "days_since_update": 110,
+              "age_days": 336,
+              "days_since_update": 111,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3211,8 +3273,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 125,
-              "days_since_update": 125,
+              "age_days": 126,
+              "days_since_update": 126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3237,8 +3299,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 240,
-              "days_since_update": 127,
+              "age_days": 241,
+              "days_since_update": 128,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3264,8 +3326,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 345,
-              "days_since_update": 345,
+              "age_days": 346,
+              "days_since_update": 346,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3290,8 +3352,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 666,
-              "days_since_update": 666,
+              "age_days": 667,
+              "days_since_update": 667,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3319,8 +3381,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 809,
-              "days_since_update": 809,
+              "age_days": 810,
+              "days_since_update": 810,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -6996,17 +7058,17 @@
       "url": "https://github.com/luc-github/ESP3D-Configurator",
       "language": "JavaScript",
       "created_at": "2022-06-03T07:30:48+00:00",
-      "updated_at": "2024-11-25T02:06:47+00:00",
+      "updated_at": "2024-12-18T20:23:22+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "be7576e",
-            "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
+            "sha": "600598d",
+            "message": "use arduino core 3.0.4 / pioarduino",
             "author": "Luc",
-            "date": "2024-11-25T02:06:39+00:00"
+            "date": "2024-12-18T20:23:13+00:00"
           },
           "protected": false,
           "issues": [
@@ -7023,8 +7085,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 579,
-              "days_since_update": 579,
+              "age_days": 580,
+              "days_since_update": 580,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7051,8 +7113,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 913,
-              "days_since_update": 852,
+              "age_days": 914,
+              "days_since_update": 853,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7091,7 +7153,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 100,
+          "contributions": 101,
           "url": "https://github.com/luc-github"
         },
         {
@@ -7107,6 +7169,12 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "600598d",
+            "message": "use arduino core 3.0.4 / pioarduino",
+            "author": "Luc",
+            "date": "2024-12-18T20:23:13+00:00"
+          },
           {
             "sha": "be7576e",
             "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
@@ -7160,12 +7228,6 @@
             "message": "Add script to format js/scss/css/json files using prettier\n\nUpdate .prettierrc config file to be same as others projects\nUpdate style using updated .prettierrc file",
             "author": "Luc",
             "date": "2024-05-29T10:50:17+00:00"
-          },
-          {
-            "sha": "23edd02",
-            "message": "Fix SENSOR PIN appear for BMP/BME Sensor",
-            "author": "Luc",
-            "date": "2024-05-28T05:01:42+00:00"
           }
         ],
         "commit_activity": [
@@ -7834,13 +7896,13 @@
           },
           {
             "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
+            "total": 1,
             "days": [
               0,
               0,
               0,
               0,
-              0,
+              1,
               0,
               0
             ]
@@ -7848,7 +7910,7 @@
         ]
       },
       "statistics": {
-        "size": 773,
+        "size": 938,
         "stars": 8,
         "forks": 5,
         "open_issues": 2,
@@ -7900,8 +7962,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 658,
-              "days_since_update": 658,
+              "age_days": 659,
+              "days_since_update": 659,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7926,8 +7988,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 658,
-              "days_since_update": 658,
+              "age_days": 659,
+              "days_since_update": 659,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8804,8 +8866,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 581,
-              "days_since_update": 581,
+              "age_days": 582,
+              "days_since_update": 582,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8831,8 +8893,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1777,
-              "days_since_update": 1761,
+              "age_days": 1778,
+              "days_since_update": 1762,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9681,8 +9743,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 581,
-              "days_since_update": 581,
+              "age_days": 582,
+              "days_since_update": 582,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10490,7 +10552,7 @@
       "url": "https://github.com/luc-github/esp32-usb-serial",
       "language": "C++",
       "created_at": "2024-02-12T12:39:24+00:00",
-      "updated_at": "2024-11-16T04:51:53+00:00",
+      "updated_at": "2024-12-18T06:17:37+00:00",
       "branches": [
         {
           "name": "main",
@@ -11271,10 +11333,10 @@
       },
       "statistics": {
         "size": 109,
-        "stars": 10,
+        "stars": 11,
         "forks": 4,
         "open_issues": 0,
-        "watchers": 10,
+        "watchers": 11,
         "default_branch": "main",
         "license": "Apache License 2.0"
       },
@@ -11282,8 +11344,8 @@
         "documentation_score": 0.0,
         "maintenance_score": 0.5,
         "activity_score": 0.0,
-        "community_score": 0.3933333333333333,
-        "overall_score": 0.21433333333333332
+        "community_score": 0.4033333333333333,
+        "overall_score": 0.21533333333333332
       }
     },
     {
@@ -12075,13 +12137,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4827,
-      "reset": "2024-12-18T01:59:29+00:00"
+      "remaining": 4744,
+      "reset": "2024-12-19T01:24:02+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2024-12-18T01:02:36+00:00"
+      "reset": "2024-12-19T01:05:54+00:00"
     }
   },
   "stats": {
@@ -12095,8 +12157,8 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 697708,
-      "total_stars": 2794,
+      "total_size": 698520,
+      "total_stars": 2795,
       "total_forks": 878,
       "branches": {
         "production": 9,
@@ -12105,27 +12167,27 @@
       }
     },
     "issues": {
-      "total_count": 30,
-      "open_count": 30,
+      "total_count": 32,
+      "open_count": 32,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 803.9721836744945,
+      "avg_age_days": 754.6858843087963,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 30
+        "normal": 32
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 2,
-        "last_month": 5
+        "last_day": 2,
+        "last_week": 4,
+        "last_month": 7
       }
     },
     "activity": {
       "total_commits": 107,
       "commit_frequency": {
-        "daily": 0.8928571428571429,
-        "weekly": 6.25,
-        "monthly": 25.0
+        "daily": 0.8956043956043956,
+        "weekly": 6.269230769230769,
+        "monthly": 25.076923076923077
       },
       "active_contributors": {
         "last_week": 0,
@@ -12238,30 +12300,30 @@
           1.5416666666666672
         ],
         [
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004,
-          2.1250000000000004
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667,
+          2.166666666666667
         ],
         [
           1.3750000000000002,
@@ -12321,7 +12383,7 @@
       "issue_creation_trend": [
         {
           "date": "2024-11",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2024-10",
@@ -12625,13 +12687,53 @@
         },
         {
           "date": "2024-12-15",
-          "count": 1
+          "count": 2
         }
       ]
     }
   },
   "activity_ranking": {
     "daily": [
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 1,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 2.0
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 1.0,
+          "issues_per_day": 0.0
+        }
+      },
       {
         "name": "ESP3D",
         "type": "main",
@@ -12673,26 +12775,6 @@
         }
       },
       {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D-TFT",
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
@@ -12717,26 +12799,6 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -12855,6 +12917,46 @@
     ],
     "weekly": [
       {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 7,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.2857142857142857
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.14285714285714285,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "esp3d.io",
         "type": "main",
         "description": "Documentation of ESP3D Ecosystem",
@@ -12935,50 +13037,10 @@
         }
       },
       {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "Marlin",
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13123,17 +13185,37 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 1,
-          "issues": 1,
+          "issues": 3,
           "comments": 0,
           "period_days": 30,
-          "total": 5
+          "total": 9
         },
         "details": {
           "commits": 1,
-          "issues": 1,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.03333333333333333,
-          "issues_per_day": 0.03333333333333333
+          "issues_per_day": 0.1
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
+          "issues_per_day": 0.0
         }
       },
       {
@@ -13154,26 +13236,6 @@
           "comments": 0,
           "commits_per_day": 0.0,
           "issues_per_day": 0.06666666666666667
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.03333333333333333,
-          "issues_per_day": 0.0
         }
       },
       {
@@ -13345,17 +13407,17 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 8,
-          "issues": 5,
+          "issues": 7,
           "comments": 0,
           "period_days": 365,
-          "total": 34
+          "total": 38
         },
         "details": {
           "commits": 8,
-          "issues": 5,
+          "issues": 7,
           "comments": 0,
           "commits_per_day": 0.021917808219178082,
-          "issues_per_day": 0.0136986301369863
+          "issues_per_day": 0.019178082191780823
         }
       },
       {

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734483656.4793074,
+  "timestamp": 1734570133.371719,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-Configurator",
     "language": "JavaScript",
     "created_at": "2022-06-03T07:30:48+00:00",
-    "updated_at": "2024-11-25T02:06:47+00:00",
+    "updated_at": "2024-12-18T20:23:22+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "be7576e",
-          "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
+          "sha": "600598d",
+          "message": "use arduino core 3.0.4 / pioarduino",
           "author": "Luc",
-          "date": "2024-11-25T02:06:39+00:00"
+          "date": "2024-12-18T20:23:13+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 100,
+        "contributions": 101,
         "url": "https://github.com/luc-github"
       },
       {
@@ -75,6 +75,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "600598d",
+          "message": "use arduino core 3.0.4 / pioarduino",
+          "author": "Luc",
+          "date": "2024-12-18T20:23:13+00:00"
+        },
         {
           "sha": "be7576e",
           "message": "Fix https://github.com/luc-github/ESP3D/issues/955",
@@ -128,12 +134,6 @@
           "message": "Add script to format js/scss/css/json files using prettier\n\nUpdate .prettierrc config file to be same as others projects\nUpdate style using updated .prettierrc file",
           "author": "Luc",
           "date": "2024-05-29T10:50:17+00:00"
-        },
-        {
-          "sha": "23edd02",
-          "message": "Fix SENSOR PIN appear for BMP/BME Sensor",
-          "author": "Luc",
-          "date": "2024-05-28T05:01:42+00:00"
         }
       ],
       "commit_activity": [
@@ -802,13 +802,13 @@
         },
         {
           "week": "2024-12-15T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
             0,
-            0,
+            1,
             0,
             0
           ]
@@ -816,7 +816,7 @@
       ]
     },
     "statistics": {
-      "size": 773,
+      "size": 938,
       "stars": 8,
       "forks": 5,
       "open_issues": 2,
