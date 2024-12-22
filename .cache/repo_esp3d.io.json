@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734742617.3818228,
+  "timestamp": 1734829343.1440086,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2024-12-16T08:22:12+00:00",
+    "updated_at": "2024-12-21T03:37:45+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "65207dc",
-          "message": "make pages list order consistent with menu order for documentation",
+          "sha": "88a5403",
+          "message": "Update translation.md",
           "author": "Luc",
-          "date": "2024-12-16T08:22:05+00:00"
+          "date": "2024-12-21T03:37:36+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 188,
+        "contributions": 189,
         "url": "https://github.com/luc-github"
       },
       {
@@ -105,6 +105,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "88a5403",
+          "message": "Update translation.md",
+          "author": "Luc",
+          "date": "2024-12-21T03:37:36+00:00"
+        },
         {
           "sha": "65207dc",
           "message": "make pages list order consistent with menu order for documentation",
@@ -158,28 +164,9 @@
           "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
           "author": "Luc",
           "date": "2024-11-23T08:06:11+00:00"
-        },
-        {
-          "sha": "3641b57",
-          "message": "fix path of screenshots",
-          "author": "Luc",
-          "date": "2024-11-18T00:44:05+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-12-24T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-12-31T00:00:00+00:00",
           "total": 0,
@@ -832,10 +819,23 @@
         },
         {
           "week": "2024-12-15T00:00:00+00:00",
-          "total": 1,
+          "total": 2,
           "days": [
             0,
             1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2024-12-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
             0,
             0,
             0,
@@ -846,7 +846,7 @@
       ]
     },
     "statistics": {
-      "size": 113839,
+      "size": 113841,
       "stars": 6,
       "forks": 25,
       "open_issues": 2,

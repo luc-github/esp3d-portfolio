@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734742572.1984622,
+  "timestamp": 1734829303.5014596,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -35,28 +35,12 @@
         "protected": false,
         "issues": [
           {
-            "number": 76,
-            "title": "3.0 refactoring",
-            "body": null,
-            "state": "open",
-            "created_at": "2024-01-03T02:55:35+00:00",
-            "updated_at": "2024-11-20T05:42:13+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3DLib/pull/76",
-            "is_pr": true,
-            "labels": [
-              "3.0"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
             "number": 39,
             "title": "[FEATURE REQUEST]ESP3DLib 3.0",
             "body": "Here features that will be covered by ESP3DLib 3.0 : \r\n- Webui <s>2.1</s> 3.0 support\r\n-  Move to SSDP asyncudp library\r\n- Move ESP32 core to 2.0.2 / 2.0.3\r\n- Move from SPIFFS to LittleFS\r\n- AP mode setup reviewed\r\n- New embedded page\r\n- Add Telnet server support\r\n- Add Notifications support\r\n- Add MKS Cura pluggin support for file upload\r\n- Move SD support from Marlin SD Lib to SDFat 2.0 for better performance (TBC),\r\nNote: Marlin itself will still use Marlin SD Lib as only ESP3DLib will be affected. \r\n\r\n\r\nTesting boards:\r\n1 - MRR_ESPA V1.3 without display\r\n2 - FYSETC V1.0 + MKS TFT32_L V4.0 (With BTT FW)\r\n3 - MKS TinyBee V1.0 + MKS Mini12864 V3.0\r\n4 - Panda Zhu V1.2\r\n\r\nMarlin Code base should be 2.0.9.3 bugfix  2.0.9.4? (TBD)\r\n",
             "state": "open",
             "created_at": "2022-02-01T07:02:41+00:00",
-            "updated_at": "2024-12-12T02:40:11+00:00",
+            "updated_at": "2024-12-21T04:01:47+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3DLib/issues/39",
             "is_pr": false,
@@ -177,19 +161,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-12-24T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-12-31T00:00:00+00:00",
           "total": 0,
@@ -852,6 +823,19 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2024-12-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -859,7 +843,7 @@
       "size": 7656,
       "stars": 103,
       "forks": 32,
-      "open_issues": 2,
+      "open_issues": 1,
       "watchers": 103,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"

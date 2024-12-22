@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734742585.6111276,
+  "timestamp": 1734829316.6789217,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -44,10 +44,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "c145b01",
-          "message": "Update README.md",
+          "sha": "046b037",
+          "message": "Add more supported languages\n\nAdd new scripts to build language packs",
           "author": "Luc",
-          "date": "2024-12-18T04:20:05+00:00"
+          "date": "2024-12-21T03:02:34+00:00"
         },
         "protected": false,
         "issues": [
@@ -322,19 +322,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2023-12-24T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2023-12-31T00:00:00+00:00",
           "total": 0,
@@ -997,13 +984,26 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2024-12-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 114519,
+      "size": 115106,
       "stars": 782,
-      "forks": 306,
+      "forks": 307,
       "open_issues": 8,
       "watchers": 782,
       "default_branch": "2.1",
