@@ -1,5 +1,5 @@
 {
-  "timestamp": 1734829343.1440086,
+  "timestamp": 1734915598.4481065,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2024-12-21T03:37:45+00:00",
+    "updated_at": "2024-12-22T08:11:44+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "88a5403",
-          "message": "Update translation.md",
+          "sha": "110aa7a",
+          "message": "Add giscus forum",
           "author": "Luc",
-          "date": "2024-12-21T03:37:36+00:00"
+          "date": "2024-12-22T08:11:37+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 189,
+        "contributions": 190,
         "url": "https://github.com/luc-github"
       },
       {
@@ -105,6 +105,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "110aa7a",
+          "message": "Add giscus forum",
+          "author": "Luc",
+          "date": "2024-12-22T08:11:37+00:00"
+        },
         {
           "sha": "88a5403",
           "message": "Update translation.md",
@@ -158,12 +164,6 @@
           "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
           "author": "Luc",
           "date": "2024-11-25T02:10:01+00:00"
-        },
-        {
-          "sha": "039e431",
-          "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
-          "author": "Luc",
-          "date": "2024-11-23T08:06:11+00:00"
         }
       ],
       "commit_activity": [
@@ -832,9 +832,9 @@
         },
         {
           "week": "2024-12-22T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
-            0,
+            1,
             0,
             0,
             0,
@@ -846,9 +846,9 @@
       ]
     },
     "statistics": {
-      "size": 113841,
+      "size": 113846,
       "stars": 6,
-      "forks": 25,
+      "forks": 26,
       "open_issues": 2,
       "watchers": 6,
       "default_branch": "main",
