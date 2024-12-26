@@ -1,5 +1,5 @@
 {
-  "timestamp": 1735088204.6783068,
+  "timestamp": 1735174614.3812952,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -44,10 +44,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "046b037",
-          "message": "Add more supported languages\n\nAdd new scripts to build language packs",
+          "sha": "3e0e7d1",
+          "message": "Fix autorefresh ignored in extra content\n\nBump version\nBuild package",
           "author": "Luc",
-          "date": "2024-12-21T03:02:34+00:00"
+          "date": "2024-12-25T12:04:11+00:00"
         },
         "protected": false,
         "issues": [
@@ -1001,9 +1001,9 @@
       ]
     },
     "statistics": {
-      "size": 115106,
+      "size": 115740,
       "stars": 782,
-      "forks": 307,
+      "forks": 308,
       "open_issues": 8,
       "watchers": 782,
       "default_branch": "2.1",
