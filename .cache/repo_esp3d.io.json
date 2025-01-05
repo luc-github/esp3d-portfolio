@@ -1,5 +1,5 @@
 {
-  "timestamp": 1735952226.4432764,
+  "timestamp": 1736039017.8028517,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2024-12-22T08:11:44+00:00",
+    "updated_at": "2025-01-04T12:15:49+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "110aa7a",
-          "message": "Add giscus forum",
+          "sha": "b73f60f",
+          "message": "host code for forum.html",
           "author": "Luc",
-          "date": "2024-12-22T08:11:37+00:00"
+          "date": "2025-01-04T12:15:43+00:00"
         },
         "protected": false,
         "issues": [
@@ -59,7 +59,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 190,
+        "contributions": 195,
         "url": "https://github.com/luc-github"
       },
       {
@@ -106,6 +106,36 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "b73f60f",
+          "message": "host code for forum.html",
+          "author": "Luc",
+          "date": "2025-01-04T12:15:43+00:00"
+        },
+        {
+          "sha": "2ec1268",
+          "message": "Fix typo",
+          "author": "Luc",
+          "date": "2025-01-04T11:20:31+00:00"
+        },
+        {
+          "sha": "4130bb8",
+          "message": "Add @levak extension",
+          "author": "Luc",
+          "date": "2025-01-04T10:38:25+00:00"
+        },
+        {
+          "sha": "9b30017",
+          "message": "Code base for Forum",
+          "author": "Luc",
+          "date": "2025-01-04T09:45:27+00:00"
+        },
+        {
+          "sha": "42447f5",
+          "message": "Make page wider",
+          "author": "Luc",
+          "date": "2024-12-31T03:34:56+00:00"
+        },
+        {
           "sha": "110aa7a",
           "message": "Add giscus forum",
           "author": "Luc",
@@ -134,52 +164,9 @@
           "message": "Fix markdown typo",
           "author": "Luc",
           "date": "2024-12-05T04:14:19+00:00"
-        },
-        {
-          "sha": "a197646",
-          "message": "Add extensions in Showcases for webui 3.0",
-          "author": "Luc",
-          "date": "2024-11-28T06:59:08+00:00"
-        },
-        {
-          "sha": "77aebda",
-          "message": "Fix typo in sample command for notification, spaces are not escaped",
-          "author": "Luc",
-          "date": "2024-11-25T09:25:46+00:00"
-        },
-        {
-          "sha": "7e34ac1",
-          "message": "Update mkdocs.yml",
-          "author": "Luc",
-          "date": "2024-11-25T09:05:18+00:00"
-        },
-        {
-          "sha": "4d1b495",
-          "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
-          "author": "Luc",
-          "date": "2024-11-25T07:46:51+00:00"
-        },
-        {
-          "sha": "888d280",
-          "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
-          "author": "Luc",
-          "date": "2024-11-25T02:10:01+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2024-01-07T00:00:00+00:00",
-          "total": 1,
-          "days": [
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2024-01-14T00:00:00+00:00",
           "total": 1,
@@ -832,6 +819,19 @@
         },
         {
           "week": "2024-12-29T00:00:00+00:00",
+          "total": 5,
+          "days": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "week": "2025-01-05T00:00:00+00:00",
           "total": 0,
           "days": [
             0,
@@ -846,7 +846,7 @@
       ]
     },
     "statistics": {
-      "size": 113846,
+      "size": 114109,
       "stars": 6,
       "forks": 26,
       "open_issues": 2,
