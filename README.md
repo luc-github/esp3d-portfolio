@@ -43,13 +43,13 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 3.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 9 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 10 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -63,13 +63,13 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 9 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 10 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -83,7 +83,7 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (21) | 7 | 0 | 0.7 |
+| 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (24) | 8 | 0 | 0.8 |
 | 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 0.1 |
 | 🥉 3 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 4 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2814 |
+| Total Stars | 2817 |
 | Total Forks | 887 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 31 |
 | Closed Issues | 0 |
-| Average Age | 795.7 days |
+| Average Age | 796.7 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -155,7 +155,7 @@ Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.9 commits)
 Weekly   🟦 Few (1-10 commits)           (6.2 commits)
-Monthly  🟦 Few (1-25 commits)           (24.6 commits)
+Monthly  🟦 Few (1-25 commits)           (24.7 commits)
 ```
 
 </details>
@@ -349,7 +349,7 @@ Author: Luc
 <summary><h4>🚀 Production Branch (`main`)</h4></summary>
 
 ```
-Last commit: 2025-01-04 (#b73f60f)
+Last commit: 2025-01-17 (#bb69524)
 Author: Luc
 ```
 
@@ -456,7 +456,7 @@ Author: Luc
 **Type**: Dependency<br>
 **Description**: Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components<br>
 **Language**: C++<br>
-**Health Score**: <span style="color: #ff0000">21.6%</span>
+**Health Score**: <span style="color: #ff0000">21.7%</span>
 
 </td></tr></table>
 
@@ -954,7 +954,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-01-16 00:57:25 UTC*
+*🔄 Last updated: 2025-01-17 00:57:03 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
