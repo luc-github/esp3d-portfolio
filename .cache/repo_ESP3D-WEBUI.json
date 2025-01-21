@@ -1,5 +1,5 @@
 {
-  "timestamp": 1737334629.5773556,
+  "timestamp": 1737420954.9745824,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-01-19T02:55:17+00:00",
+    "updated_at": "2025-01-20T22:24:18+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -44,10 +44,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "de47622",
-          "message": "Do not show delete sd command in setting if MKS protocol",
+          "sha": "333b6fc",
+          "message": "Add MPG-ENABLE-TOGGLE (0x8b )real time command  to grblHAL",
           "author": "Luc",
-          "date": "2025-01-19T00:41:57+00:00"
+          "date": "2025-01-20T12:35:47+00:00"
         },
         "protected": false,
         "issues": [
@@ -1001,11 +1001,11 @@
       ]
     },
     "statistics": {
-      "size": 115142,
-      "stars": 784,
-      "forks": 310,
+      "size": 115231,
+      "stars": 783,
+      "forks": 311,
       "open_issues": 8,
-      "watchers": 784,
+      "watchers": 783,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"
     }
