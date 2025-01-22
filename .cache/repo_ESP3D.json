@@ -1,5 +1,5 @@
 {
-  "timestamp": 1737420923.752213,
+  "timestamp": 1737507418.567466,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "880ab40",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "sha": "ed2d713",
+          "message": "Update embedded for help link to go to esp3d.io",
           "author": "Luc",
-          "date": "2024-12-18T04:19:04+00:00"
+          "date": "2025-01-21T09:09:02+00:00"
         },
         "protected": false,
         "issues": [
@@ -939,7 +939,7 @@
       ]
     },
     "statistics": {
-      "size": 134766,
+      "size": 134810,
       "stars": 1798,
       "forks": 471,
       "open_issues": 5,
