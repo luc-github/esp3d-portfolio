@@ -1,5 +1,5 @@
 {
-  "timestamp": 1737853052.452961,
+  "timestamp": 1737939418.1395996,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "ed2d713",
-          "message": "Update embedded for help link to go to esp3d.io",
+          "sha": "c222ba8",
+          "message": "smaller svg logo",
           "author": "Luc",
-          "date": "2025-01-21T09:09:02+00:00"
+          "date": "2025-01-26T02:37:53+00:00"
         },
         "protected": false,
         "issues": [
@@ -939,7 +939,7 @@
       ]
     },
     "statistics": {
-      "size": 134810,
+      "size": 134813,
       "stars": 1799,
       "forks": 471,
       "open_issues": 5,

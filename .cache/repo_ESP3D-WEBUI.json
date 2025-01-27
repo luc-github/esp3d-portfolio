@@ -1,5 +1,5 @@
 {
-  "timestamp": 1737853088.6657715,
+  "timestamp": 1737939441.7956,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -44,10 +44,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "333b6fc",
-          "message": "Add MPG-ENABLE-TOGGLE (0x8b )real time command  to grblHAL",
+          "sha": "5439ca8",
+          "message": "smaller logo",
           "author": "Luc",
-          "date": "2025-01-20T12:35:47+00:00"
+          "date": "2025-01-26T02:37:29+00:00"
         },
         "protected": false,
         "issues": [
@@ -1001,7 +1001,7 @@
       ]
     },
     "statistics": {
-      "size": 115231,
+      "size": 116468,
       "stars": 786,
       "forks": 311,
       "open_issues": 8,
