@@ -1,5 +1,5 @@
 {
-  "timestamp": 1738025759.741883,
+  "timestamp": 1738112144.3017793,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -20,7 +20,24 @@
           "date": "2024-05-30T00:07:00+00:00"
         },
         "protected": false,
-        "issues": []
+        "issues": [
+          {
+            "number": 1072,
+            "title": "[BUG]ESP3D will not compile without errors for ESP32dev",
+            "body": "using VS Code\nWhile compiling for Defualt Environment: ESP8266 everything compiles with no errors, when changed to ESP32dev, compile errors develope: \n\n\"Archiving .pioenvs\\esp32dev\\libb3c\\libESPmDNS.a\nArchiving .pioenvs\\esp32dev\\libFrameworkArduino.a\nLinking .pioenvs\\esp32dev\\firmware.elf\n.pioenvs\\esp32dev\\libFrameworkArduino.a(main.cpp.o):(.literal._Z8loopTaskPv+0x4): undefined reference to `setup()'\n.pioenvs\\esp32dev\\libFrameworkArduino.a(main.cpp.o):(.literal._Z8loopTaskPv+0x8): undefined reference to `loop()'\n.pioenvs\\esp32dev\\libFrameworkArduino.a(main.cpp.o): In function `loopTask(void*)':\nC:\\Users\\koger\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32/main.cpp:14: undefined reference to `setup()'\nC:\\Users\\koger\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32/main.cpp:17: undefined reference to `loop()'\ncollect2.exe: error: ld returned 1 exit status\n*** [.pioenvs\\esp32dev\\firmware.elf] Error 1\n======================================================== [FAILED] Took 9.57 seconds ========================================================\"\n\nEnvironment    Status    Duration\n-------------  --------  ------------\nesp32dev       FAILED    00:00:09.567\n\n\n**To Reproduce**\n\n<!--Steps to reproduce the behavior:-->\n1. Change default_envs from ESP8266 to ESP32dev \n2. Compile\n4. See errors\n\n**Expected behavior**\n\n<!--I was hoping when i changed default_envs to ESP32dev i would get the same output i did with ESP8266.-->\n\n**ESP3D Firmware:**\n\nESP3D-2.1.x\n\n**Target Firmware:**\n\nN/A\n\n**Board used (please complete the following information):**\n\nESP32dev\n\n\n",
+            "state": "open",
+            "created_at": "2025-01-28T19:24:12+00:00",
+            "updated_at": "2025-01-28T21:13:25+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1072",
+            "is_pr": false,
+            "labels": [
+              "bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
       },
       {
         "name": "3.0",
@@ -34,6 +51,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1072,
+            "title": "[BUG]ESP3D will not compile without errors for ESP32dev",
+            "body": "using VS Code\nWhile compiling for Defualt Environment: ESP8266 everything compiles with no errors, when changed to ESP32dev, compile errors develope: \n\n\"Archiving .pioenvs\\esp32dev\\libb3c\\libESPmDNS.a\nArchiving .pioenvs\\esp32dev\\libFrameworkArduino.a\nLinking .pioenvs\\esp32dev\\firmware.elf\n.pioenvs\\esp32dev\\libFrameworkArduino.a(main.cpp.o):(.literal._Z8loopTaskPv+0x4): undefined reference to `setup()'\n.pioenvs\\esp32dev\\libFrameworkArduino.a(main.cpp.o):(.literal._Z8loopTaskPv+0x8): undefined reference to `loop()'\n.pioenvs\\esp32dev\\libFrameworkArduino.a(main.cpp.o): In function `loopTask(void*)':\nC:\\Users\\koger\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32/main.cpp:14: undefined reference to `setup()'\nC:\\Users\\koger\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32/main.cpp:17: undefined reference to `loop()'\ncollect2.exe: error: ld returned 1 exit status\n*** [.pioenvs\\esp32dev\\firmware.elf] Error 1\n======================================================== [FAILED] Took 9.57 seconds ========================================================\"\n\nEnvironment    Status    Duration\n-------------  --------  ------------\nesp32dev       FAILED    00:00:09.567\n\n\n**To Reproduce**\n\n<!--Steps to reproduce the behavior:-->\n1. Change default_envs from ESP8266 to ESP32dev \n2. Compile\n4. See errors\n\n**Expected behavior**\n\n<!--I was hoping when i changed default_envs to ESP32dev i would get the same output i did with ESP8266.-->\n\n**ESP3D Firmware:**\n\nESP3D-2.1.x\n\n**Target Firmware:**\n\nN/A\n\n**Board used (please complete the following information):**\n\nESP32dev\n\n\n",
+            "state": "open",
+            "created_at": "2025-01-28T19:24:12+00:00",
+            "updated_at": "2025-01-28T21:13:25+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1072",
+            "is_pr": false,
+            "labels": [
+              "bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 1058,
             "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
@@ -942,7 +975,7 @@
       "size": 134813,
       "stars": 1800,
       "forks": 472,
-      "open_issues": 5,
+      "open_issues": 6,
       "watchers": 1800,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
