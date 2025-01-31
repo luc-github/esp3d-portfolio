@@ -1,5 +1,5 @@
 {
-  "timestamp": 1738198503.1778305,
+  "timestamp": 1738284963.5856423,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -49,10 +49,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "c222ba8",
-          "message": "smaller svg logo",
+          "sha": "750ef32",
+          "message": "Update wificonfig.cpp",
           "author": "Luc",
-          "date": "2025-01-26T02:37:53+00:00"
+          "date": "2025-01-30T08:51:56+00:00"
         },
         "protected": false,
         "issues": [
@@ -961,7 +961,7 @@
       ]
     },
     "statistics": {
-      "size": 134813,
+      "size": 134815,
       "stars": 1800,
       "forks": 472,
       "open_issues": 6,
