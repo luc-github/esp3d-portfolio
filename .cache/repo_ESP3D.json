@@ -1,5 +1,5 @@
 {
-  "timestamp": 1738889822.9731958,
+  "timestamp": 1738976113.6902215,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -20,7 +20,24 @@
           "date": "2024-05-30T00:07:00+00:00"
         },
         "protected": false,
-        "issues": []
+        "issues": [
+          {
+            "number": 1073,
+            "title": "[BUG] Uploading is successful but file is 0 bytes",
+            "body": "i have Esp3d hooked up to chitu v5 board's UART1 i first slice the file on cura default settings and then it slices the file as gcode file, i am aware of the 8.3 filesystem so i rename the file to be *****.GCO and the file extension is converted the i open the webui and i try to upload this file it starts uploading with no issues and then the file is uploaded to the SD Cardwith only the name with an empty file with 0 bytes and no content and when i try to print this file nothing happens\n\n\n**ESP3D Firmware:**\n\n- ESP3D FW version: [FW: 1.0]\n- ESP3D-WebUI Version:[UI: 2.0c31]\n- Flash method: [Arduino Ide]  \n- Name: [Marlin]\n- Version [02010200]\n**Board used**: Chitu v5.1\n\n- MCU:[ESP8266 small Wifi module]\n- Flash size: [1M]\n\n![Image](https://github.com/user-attachments/assets/0b99139f-447a-47a0-987a-7e72fb0c2e5a)\n\n![Image](https://github.com/user-attachments/assets/001e2b31-26f0-4c9f-8e7c-c1810595f963)\n\n![Image](https://github.com/user-attachments/assets/de2a64af-f48b-4f40-aff0-408ce08058a9)\n\n![Image](https://github.com/user-attachments/assets/64a90b3b-ebcf-406c-99f7-3821f05a87c9)",
+            "state": "open",
+            "created_at": "2025-02-07T23:49:35+00:00",
+            "updated_at": "2025-02-08T00:05:54+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1073",
+            "is_pr": false,
+            "labels": [
+              "bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
       },
       {
         "name": "3.0",
@@ -34,6 +51,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1073,
+            "title": "[BUG] Uploading is successful but file is 0 bytes",
+            "body": "i have Esp3d hooked up to chitu v5 board's UART1 i first slice the file on cura default settings and then it slices the file as gcode file, i am aware of the 8.3 filesystem so i rename the file to be *****.GCO and the file extension is converted the i open the webui and i try to upload this file it starts uploading with no issues and then the file is uploaded to the SD Cardwith only the name with an empty file with 0 bytes and no content and when i try to print this file nothing happens\n\n\n**ESP3D Firmware:**\n\n- ESP3D FW version: [FW: 1.0]\n- ESP3D-WebUI Version:[UI: 2.0c31]\n- Flash method: [Arduino Ide]  \n- Name: [Marlin]\n- Version [02010200]\n**Board used**: Chitu v5.1\n\n- MCU:[ESP8266 small Wifi module]\n- Flash size: [1M]\n\n![Image](https://github.com/user-attachments/assets/0b99139f-447a-47a0-987a-7e72fb0c2e5a)\n\n![Image](https://github.com/user-attachments/assets/001e2b31-26f0-4c9f-8e7c-c1810595f963)\n\n![Image](https://github.com/user-attachments/assets/de2a64af-f48b-4f40-aff0-408ce08058a9)\n\n![Image](https://github.com/user-attachments/assets/64a90b3b-ebcf-406c-99f7-3821f05a87c9)",
+            "state": "open",
+            "created_at": "2025-02-07T23:49:35+00:00",
+            "updated_at": "2025-02-08T00:05:54+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1073",
+            "is_pr": false,
+            "labels": [
+              "bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 1058,
             "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
@@ -942,7 +975,7 @@
       "size": 134815,
       "stars": 1802,
       "forks": 474,
-      "open_issues": 5,
+      "open_issues": 6,
       "watchers": 1802,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
