@@ -1,5 +1,5 @@
 {
-  "timestamp": 1739408276.3360455,
+  "timestamp": 1739494641.429575,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-02-13T00:19:59+00:00",
+    "updated_at": "2025-02-13T06:27:53+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -20,24 +20,7 @@
           "date": "2025-02-07T13:58:16+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 401,
-            "title": "Documentation does not explain how to upload index.html.gz",
-            "body": "Documentation does not explain how to upload index.html.gz\r\n\r\n![image](https://github.com/user-attachments/assets/dcf6e8cd-86ca-40c5-b35a-8b620b32a563)\r\n\r\nIt should be mentioned here:\r\nhttps://esp3d.io/ESP3D/Version_3.X/installation/vscode-platformio/\r\n\r\nBelow \"Compile and flash your module\".",
-            "state": "open",
-            "created_at": "2024-12-18T16:30:48+00:00",
-            "updated_at": "2024-12-18T16:31:14+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/401",
-            "is_pr": false,
-            "labels": [
-              "Bug"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       },
       {
         "name": "3.0",
@@ -52,17 +35,19 @@
         "protected": false,
         "issues": [
           {
-            "number": 401,
-            "title": "Documentation does not explain how to upload index.html.gz",
-            "body": "Documentation does not explain how to upload index.html.gz\r\n\r\n![image](https://github.com/user-attachments/assets/dcf6e8cd-86ca-40c5-b35a-8b620b32a563)\r\n\r\nIt should be mentioned here:\r\nhttps://esp3d.io/ESP3D/Version_3.X/installation/vscode-platformio/\r\n\r\nBelow \"Compile and flash your module\".",
+            "number": 406,
+            "title": "[BUG]The status panel is redraw when getting repport even no change",
+            "body": "For each status repport the  status panel is redraw even no change in data - which give glitch effect  - need to memo the data to evoid unecessary redraw of the status panel",
             "state": "open",
-            "created_at": "2024-12-18T16:30:48+00:00",
-            "updated_at": "2024-12-18T16:31:14+00:00",
+            "created_at": "2025-02-13T08:54:07+00:00",
+            "updated_at": "2025-02-13T08:54:07+00:00",
             "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/401",
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/406",
             "is_pr": false,
             "labels": [
-              "Bug"
+              "Bug",
+              "3.0",
+              "CNC"
             ],
             "priority": "normal",
             "assignee": null
@@ -1002,10 +987,10 @@
     },
     "statistics": {
       "size": 116717,
-      "stars": 792,
-      "forks": 314,
+      "stars": 793,
+      "forks": 315,
       "open_issues": 8,
-      "watchers": 792,
+      "watchers": 793,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"
     }
