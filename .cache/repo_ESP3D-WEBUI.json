@@ -1,5 +1,5 @@
 {
-  "timestamp": 1740272550.5847652,
+  "timestamp": 1740358776.706147,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-02-22T10:30:40+00:00",
+    "updated_at": "2025-02-23T11:29:00+00:00",
     "branches": [
       {
         "name": "2.1",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "3342543",
-          "message": "docs: add jeyeager65 as a contributor for financial (#407)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-          "author": "allcontributors[bot]",
-          "date": "2025-02-22T10:30:35+00:00"
+          "sha": "773e3ed",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-02-23T11:28:56+00:00"
         },
         "protected": false,
         "issues": []
@@ -195,12 +195,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 220,
+        "contributions": 224,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 32,
+        "contributions": 34,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -247,6 +247,42 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "773e3ed",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-02-23T11:28:56+00:00"
+        },
+        {
+          "sha": "7127719",
+          "message": "docs: add makerbase-mks as a contributor for financial, and platform (#409)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>\nCo-authored-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2025-02-23T11:22:13+00:00"
+        },
+        {
+          "sha": "d45eca5",
+          "message": "docs: add abcpibot as a contributor for financial, and platform (#410)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2025-02-23T11:19:19+00:00"
+        },
+        {
+          "sha": "b3abd33",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-02-23T11:14:33+00:00"
+        },
+        {
+          "sha": "9ed3f5f",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-02-23T11:02:24+00:00"
+        },
+        {
+          "sha": "1d354dc",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-02-23T05:49:56+00:00"
+        },
+        {
           "sha": "3342543",
           "message": "docs: add jeyeager65 as a contributor for financial (#407)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
           "author": "allcontributors[bot]",
@@ -269,42 +305,6 @@
           "message": "add pibot sponsor",
           "author": "Luc",
           "date": "2025-02-07T13:27:13+00:00"
-        },
-        {
-          "sha": "4db9ff2",
-          "message": "Update README.md\n\nremove travis badge",
-          "author": "Luc",
-          "date": "2024-12-09T02:40:34+00:00"
-        },
-        {
-          "sha": "0b80ee0",
-          "message": "Update README.md",
-          "author": "Luc",
-          "date": "2024-10-01T04:14:29+00:00"
-        },
-        {
-          "sha": "0229794",
-          "message": "Update logo to avoid quality lost at resize",
-          "author": "Luc",
-          "date": "2024-10-01T04:11:33+00:00"
-        },
-        {
-          "sha": "80d64a5",
-          "message": "Add Anolex",
-          "author": "Luc",
-          "date": "2024-10-01T04:06:37+00:00"
-        },
-        {
-          "sha": "9725ab2",
-          "message": "Bump micromatch, gulp-cli and gulp (#400)\n\nBumps [micromatch](https://github.com/micromatch/micromatch) to 4.0.8 and updates ancestor dependencies [micromatch](https://github.com/micromatch/micromatch), [gulp-cli](https://github.com/gulpjs/gulp-cli) and [gulp](https://github.com/gulpjs/gulp). These dependencies need to be updated together.\r\n\r\n\r\nUpdates `micromatch` from 4.0.4 to 4.0.8\r\n- [Release notes](https://github.com/micromatch/micromatch/releases)\r\n- [Changelog](https://github.com/micromatch/micromatch/blob/4.0.8/CHANGELOG.md)\r\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.4...4.0.8)\r\n\r\nUpdates `gulp-cli` from 2.3.0 to 3.0.0\r\n- [Release notes](https://github.com/gulpjs/gulp-cli/releases)\r\n- [Changelog](https://github.com/gulpjs/gulp-cli/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/gulpjs/gulp-cli/compare/v2.3.0...v3.0.0)\r\n\r\nUpdates `gulp` from 4.0.2 to 5.0.0\r\n- [Release notes](https://github.com/gulpjs/gulp/releases)\r\n- [Changelog](https://github.com/gulpjs/gulp/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/gulpjs/gulp/compare/v4.0.2...v5.0.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: micromatch\r\n  dependency-type: indirect\r\n- dependency-name: gulp-cli\r\n  dependency-type: direct:production\r\n- dependency-name: gulp\r\n  dependency-type: direct:development\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "author": "dependabot[bot]",
-          "date": "2024-08-26T13:47:24+00:00"
-        },
-        {
-          "sha": "5e05641",
-          "message": "Update README.md",
-          "author": "Luc",
-          "date": "2024-03-23T01:19:57+00:00"
         }
       ],
       "commit_activity": [
@@ -973,9 +973,9 @@
         },
         {
           "week": "2025-02-23T00:00:00+00:00",
-          "total": 0,
+          "total": 6,
           "days": [
-            0,
+            6,
             0,
             0,
             0,
@@ -987,7 +987,7 @@
       ]
     },
     "statistics": {
-      "size": 116736,
+      "size": 116780,
       "stars": 800,
       "forks": 317,
       "open_issues": 8,

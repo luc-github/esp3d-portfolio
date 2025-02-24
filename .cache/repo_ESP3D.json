@@ -1,5 +1,5 @@
 {
-  "timestamp": 1740272515.7522368,
+  "timestamp": 1740358754.9966388,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-02-21T02:35:55+00:00",
+    "updated_at": "2025-02-23T11:25:58+00:00",
     "branches": [
       {
         "name": "2.1.x",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "2530634",
-          "message": "Update README.md",
+          "sha": "24924cd",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2024-05-30T00:07:00+00:00"
+          "date": "2025-02-23T11:25:53+00:00"
         },
         "protected": false,
         "issues": []
@@ -132,7 +132,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 455,
+        "contributions": 456,
         "url": "https://github.com/luc-github"
       },
       {
@@ -199,6 +199,12 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "24924cd",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-02-23T11:25:53+00:00"
+        },
+        {
           "sha": "2530634",
           "message": "Update README.md",
           "author": "Luc",
@@ -251,12 +257,6 @@
           "message": "docs: add rondlh as a contributor for code, and bug (#997)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
           "author": "allcontributors[bot]",
           "date": "2024-02-05T06:13:30+00:00"
-        },
-        {
-          "sha": "8360bf9",
-          "message": "docs: add Engineer2Designer as a contributor for code, and bug (#990)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-          "author": "allcontributors[bot]",
-          "date": "2024-01-04T09:07:27+00:00"
         }
       ],
       "commit_activity": [
@@ -925,9 +925,9 @@
         },
         {
           "week": "2025-02-23T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
-            0,
+            1,
             0,
             0,
             0,
@@ -939,9 +939,9 @@
       ]
     },
     "statistics": {
-      "size": 134815,
+      "size": 134823,
       "stars": 1811,
-      "forks": 475,
+      "forks": 476,
       "open_issues": 5,
       "watchers": 1811,
       "default_branch": "2.1.x",
