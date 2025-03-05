@@ -20,20 +20,57 @@
             "date": "2025-02-23T11:25:53+00:00"
           },
           "protected": false,
-          "issues": [],
+          "issues": [
+            {
+              "number": 1074,
+              "title": "[BUG-FIX]  The problem with the SSD1306wire library and its solution (add to the main code)",
+              "body": "**Describe the bug**\n\n<!--A clear and concise description of what the bug is.-->\n\nThe problem is with compiling the code for the esp32-c3 with the enabled oled ssd1306 wire feature in the PlatformIO.\n\nI was able to fix the code myself, and therefore I will attach a file with the corrected .cpp code. The rest can be taken from the original library.\n\n`\n#include <Wire.h>\n\n#include \"SSD1306wire.h\"\n\n\n\ntypedef void prog_void;\ntypedef char prog_char;\ntypedef unsigned char prog_uchar;\ntypedef char prog_int8_t;\ntypedef unsigned char prog_uint8_t;\ntypedef short prog_int16_t;\ntypedef unsigned short prog_uint16_t;\ntypedef long prog_int32_t;\ntypedef unsigned long prog_uint32_t;\n\n#define PROGMEM\n#define PGM_P        const char *\n#define PGM_VOID_P   const void *\n#define PSTR(s)      (s)\n#define _SFR_BYTE(n) (n)\n\n#define pgm_read_byte(addr) (*(const unsigned char *)(addr))\n#define pgm_read_word(addr)           \\\n  ({                                  \\\n    typeof(addr) _addr = (addr);      \\\n    *(const unsigned short *)(_addr); \\\n  })\n#define pgm_read_dword(addr)         \\\n  ({                                 \\\n    typeof(addr) _addr = (addr);     \\\n    *(const unsigned long *)(_addr); \\\n  })\n#define pgm_read_float(addr)     \\\n  ({                             \\\n    typeof(addr) _addr = (addr); \\\n    *(const float *)(_addr);     \\\n  })\n#define pgm_read_ptr(addr)       \\\n  ({                             \\\n    typeof(addr) _addr = (addr); \\\n    *(void *const *)(_addr);     \\\n  })\n\n#define pgm_get_far_address(x) ((uint32_t)(&(x)))\n\n#define pgm_read_byte_near(addr)  pgm_read_byte(addr)\n#define pgm_read_word_near(addr)  pgm_read_word(addr)\n#define pgm_read_dword_near(addr) pgm_read_dword(addr)\n#define pgm_read_float_near(addr) pgm_read_float(addr)\n#define pgm_read_ptr_near(addr)   pgm_read_ptr(addr)\n#define pgm_read_byte_far(addr)   pgm_read_byte(addr)\n#define pgm_read_word_far(addr)   pgm_read_word(addr)\n#define pgm_read_dword_far(addr)  pgm_read_dword(addr)\n#define pgm_read_float_far(addr)  pgm_read_float(addr)\n#define pgm_read_ptr_far(addr)    pgm_read_ptr(addr)\n\n#define memcmp_P      memcmp\n#define memccpy_P     memccpy\n#define memmem_P      memmem\n#define memcpy_P      memcpy\n#define strcpy_P      strcpy\n#define strncpy_P     strncpy\n#define strcat_P      strcat\n#define strncat_P     strncat\n#define strcmp_P      strcmp\n#define strncmp_P     strncmp\n#define strcasecmp_P  strcasecmp\n#define strncasecmp_P strncasecmp\n#define strlen_P      strlen\n#define strnlen_P     strnlen\n#define strstr_P      strstr\n#define printf_P      printf\n#define sprintf_P     sprintf\n#define snprintf_P    snprintf\n#define vsnprintf_P   vsnprintf\n\n\n\nvoid SSD1306wire::begin(const SSD1306wire_display* display, uint8_t i2c_addr) {\n    _i2c_addr = i2c_addr;\n    Wire.begin();\n    _max_columns = pgm_read_byte(&display->width);\n    _max_rows = pgm_read_byte(&display->height) >> 3;\n    const uint8_t* init_sequence = (const uint8_t*)pgm_read_word(&display->init_sequence);\n    uint8_t init_sequence_size = pgm_read_byte(&display->init_sequence_size);\n    Wire.beginTransmission(_i2c_addr);\n    Wire.write(SSD1306_COMMAND);\n    for(uint8_t i = 0; i < init_sequence_size; i++) {\n        WireSend(SSD1306_COMMAND, pgm_read_byte(init_sequence + i));\n    }\n    Wire.endTransmission();\n    setCursor(0, 0);\n}\n\n\nvoid SSD1306wire::set400kHz() {\n\tWire.setClock(400000);\n}\n\nsize_t SSD1306wire::write(uint8_t character) {\n\tif((_column >= _max_columns) || (_row >= _max_rows))\n\t\treturn 1;\n\tif(_font == 0)\n\t\treturn 1;\n\n\tuint8_t font_min_width = pgm_read_byte(_font);\n\tuint8_t font_rows = pgm_read_byte(_font + 1);\n\tuint8_t font_first_char = pgm_read_byte(_font + 2);\n\tuint8_t font_last_char = pgm_read_byte(_font + 3);\n\n\tuint8_t char_width = 0;\n\tconst uint8_t *char_offset = _font + 5 + font_last_char - font_first_char;\n\tif((character >= font_first_char) && (character <= font_last_char)) {\n\t\tchar_width = pgm_read_byte(_font + 4 + character - font_first_char) / font_rows;\n\t\tfor(uint8_t i = character - font_first_char; i > 0; --i) {\n\t\t\tchar_offset += pgm_read_byte(_font + 3 + i);\n\t\t}\n\t}\n\n\tuint8_t max_rows = _row + font_rows;\n\tif (max_rows > _max_rows)\n\t\tmax_rows = _max_rows;\n\n\tfor(uint8_t row = _row; row < max_rows; ++row) {\n\t\tSetColumn(_column);\n\t\tSetRow(row);\n\n\t\tuint8_t c;\n\t\tuint8_t i = 0;\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(SSD1306_DATA);\n\t\twhile(i < char_width) {\n\t\t\tif (i + _column >= _max_columns)\n\t\t\t\tbreak;\n\t\t\tc = pgm_read_byte(char_offset + i);\n\t\t\tif(_inv_font) c = ~ c;\n\t\t\tWire.write(c);\n\t\t\t++i;\n\t\t}\n\t\tc = 0;\n\t\tif(_inv_font) c = ~ c;\n\t\twhile(i < font_min_width) {\n\t\t\tif (i + _column >= _max_columns)\n\t\t\t\tbreak;\n\t\t\tWire.write(c);\n\t\t\t++i;\n\t\t}\n\t\tWire.endTransmission();\n\n\t\tchar_offset += char_width;\n\t}\n\n\tif(char_width < font_min_width)\n\t\tchar_width = font_min_width;\n\t_column += char_width;\n\tif(_column > _max_columns)\n\t\t_column = _max_columns;\n\n\treturn 1;\n}\n\nsize_t SSD1306wire::write(const uint8_t *buffer, size_t size) {\n\tsize_t outchars = 0;\n\n\tfor(int c = 0; c < size; c++) {\n\t\toutchars += write(*(buffer + c));\n\t}\n\n\treturn outchars;\n}\n\nvoid SSD1306wire::syncCursor() {\n\tif(_column < _max_columns)\n\t\tSetColumn(_column);\n\tif(_row < _max_rows)\n\t\tSetRow(_row);\n}\n\nvoid SSD1306wire::setPower(bool on) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(on ? 0xAF : 0xAE);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::setContrast(uint8_t contrast) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(0x81);\n\tWire.write(contrast);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::inverseDisplay(bool inverse) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(inverse ? 0xA7 : 0xA6);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::SetColumn(uint8_t column) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(0x00 | (column & 0x0F));\n\tWire.write(0x10 | (column >> 4));\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::SetRow(uint8_t row) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(0xB0 | row);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::clear() {\n\tSetColumn(0);\n\n\tfor(uint8_t row = 0; row < _max_rows; ++row) {\n\t\tSetRow(row);\n\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(SSD1306_DATA);\n\t\tfor(uint8_t col = 0; col < _max_columns; ++col) {\n\t\t\tWireSend(SSD1306_DATA, 0);\n\t\t}\n\t\tWire.endTransmission();\n\t}\n\n\tsetCursorForce(0, 0);\n}\n\nvoid SSD1306wire::clearToEOL() {\n\tif((_column >= _max_columns) || (_row >= _max_rows))\n\t\treturn;\n\tif(_font == 0)\n\t\treturn;\n\n\tuint8_t max_rows = _row + pgm_read_byte(_font + 1);\n\tif (max_rows > _max_rows)\n\t\tmax_rows = _max_rows;\n\n\tuint8_t c = 0;\n\tif(_inv_font) c = ~ c;\n\n\tfor(uint8_t row = _row; row < max_rows; ++row) {\n\t\tSetColumn(_column);\n\t\tSetRow(row);\n\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(SSD1306_DATA);\n\t\tfor(uint8_t col = _column; col < _max_columns; ++col) {\n\t\t\tWireSend(SSD1306_DATA, c);\n\t\t}\n\t\tWire.endTransmission();\n\t}\n\t_column = _max_columns;\n}\n\nvoid SSD1306wire::WireSend(uint8_t type, uint8_t value) {\n\tif(Wire.write(value) == 0) {\n\t\tWire.endTransmission();\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(type);\n\t\tWire.write(value);\n\t}\n}`\n\nAhem, I'm sorry, the code can't be inserted otherwise........",
+              "state": "open",
+              "created_at": "2025-03-04T18:34:57+00:00",
+              "updated_at": "2025-03-04T18:47:56+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1074",
+              "is_pr": false,
+              "labels": [
+                "bug",
+                "Waiting for details",
+                "ESP32-C3"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            }
+          ],
           "issue_summary": {
-            "total": 0,
-            "open": 0,
+            "total": 1,
+            "open": 1,
             "closed": 0,
-            "priorities": {},
+            "priorities": {
+              "normal": 1
+            },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 0
             },
-            "complexity": {},
-            "size": {},
-            "lifecycle": {}
+            "complexity": {
+              "low": 1
+            },
+            "size": {
+              "large": 1
+            },
+            "lifecycle": {
+              "new": 1
+            }
           }
         },
         {
@@ -48,6 +85,34 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 1074,
+              "title": "[BUG-FIX]  The problem with the SSD1306wire library and its solution (add to the main code)",
+              "body": "**Describe the bug**\n\n<!--A clear and concise description of what the bug is.-->\n\nThe problem is with compiling the code for the esp32-c3 with the enabled oled ssd1306 wire feature in the PlatformIO.\n\nI was able to fix the code myself, and therefore I will attach a file with the corrected .cpp code. The rest can be taken from the original library.\n\n`\n#include <Wire.h>\n\n#include \"SSD1306wire.h\"\n\n\n\ntypedef void prog_void;\ntypedef char prog_char;\ntypedef unsigned char prog_uchar;\ntypedef char prog_int8_t;\ntypedef unsigned char prog_uint8_t;\ntypedef short prog_int16_t;\ntypedef unsigned short prog_uint16_t;\ntypedef long prog_int32_t;\ntypedef unsigned long prog_uint32_t;\n\n#define PROGMEM\n#define PGM_P        const char *\n#define PGM_VOID_P   const void *\n#define PSTR(s)      (s)\n#define _SFR_BYTE(n) (n)\n\n#define pgm_read_byte(addr) (*(const unsigned char *)(addr))\n#define pgm_read_word(addr)           \\\n  ({                                  \\\n    typeof(addr) _addr = (addr);      \\\n    *(const unsigned short *)(_addr); \\\n  })\n#define pgm_read_dword(addr)         \\\n  ({                                 \\\n    typeof(addr) _addr = (addr);     \\\n    *(const unsigned long *)(_addr); \\\n  })\n#define pgm_read_float(addr)     \\\n  ({                             \\\n    typeof(addr) _addr = (addr); \\\n    *(const float *)(_addr);     \\\n  })\n#define pgm_read_ptr(addr)       \\\n  ({                             \\\n    typeof(addr) _addr = (addr); \\\n    *(void *const *)(_addr);     \\\n  })\n\n#define pgm_get_far_address(x) ((uint32_t)(&(x)))\n\n#define pgm_read_byte_near(addr)  pgm_read_byte(addr)\n#define pgm_read_word_near(addr)  pgm_read_word(addr)\n#define pgm_read_dword_near(addr) pgm_read_dword(addr)\n#define pgm_read_float_near(addr) pgm_read_float(addr)\n#define pgm_read_ptr_near(addr)   pgm_read_ptr(addr)\n#define pgm_read_byte_far(addr)   pgm_read_byte(addr)\n#define pgm_read_word_far(addr)   pgm_read_word(addr)\n#define pgm_read_dword_far(addr)  pgm_read_dword(addr)\n#define pgm_read_float_far(addr)  pgm_read_float(addr)\n#define pgm_read_ptr_far(addr)    pgm_read_ptr(addr)\n\n#define memcmp_P      memcmp\n#define memccpy_P     memccpy\n#define memmem_P      memmem\n#define memcpy_P      memcpy\n#define strcpy_P      strcpy\n#define strncpy_P     strncpy\n#define strcat_P      strcat\n#define strncat_P     strncat\n#define strcmp_P      strcmp\n#define strncmp_P     strncmp\n#define strcasecmp_P  strcasecmp\n#define strncasecmp_P strncasecmp\n#define strlen_P      strlen\n#define strnlen_P     strnlen\n#define strstr_P      strstr\n#define printf_P      printf\n#define sprintf_P     sprintf\n#define snprintf_P    snprintf\n#define vsnprintf_P   vsnprintf\n\n\n\nvoid SSD1306wire::begin(const SSD1306wire_display* display, uint8_t i2c_addr) {\n    _i2c_addr = i2c_addr;\n    Wire.begin();\n    _max_columns = pgm_read_byte(&display->width);\n    _max_rows = pgm_read_byte(&display->height) >> 3;\n    const uint8_t* init_sequence = (const uint8_t*)pgm_read_word(&display->init_sequence);\n    uint8_t init_sequence_size = pgm_read_byte(&display->init_sequence_size);\n    Wire.beginTransmission(_i2c_addr);\n    Wire.write(SSD1306_COMMAND);\n    for(uint8_t i = 0; i < init_sequence_size; i++) {\n        WireSend(SSD1306_COMMAND, pgm_read_byte(init_sequence + i));\n    }\n    Wire.endTransmission();\n    setCursor(0, 0);\n}\n\n\nvoid SSD1306wire::set400kHz() {\n\tWire.setClock(400000);\n}\n\nsize_t SSD1306wire::write(uint8_t character) {\n\tif((_column >= _max_columns) || (_row >= _max_rows))\n\t\treturn 1;\n\tif(_font == 0)\n\t\treturn 1;\n\n\tuint8_t font_min_width = pgm_read_byte(_font);\n\tuint8_t font_rows = pgm_read_byte(_font + 1);\n\tuint8_t font_first_char = pgm_read_byte(_font + 2);\n\tuint8_t font_last_char = pgm_read_byte(_font + 3);\n\n\tuint8_t char_width = 0;\n\tconst uint8_t *char_offset = _font + 5 + font_last_char - font_first_char;\n\tif((character >= font_first_char) && (character <= font_last_char)) {\n\t\tchar_width = pgm_read_byte(_font + 4 + character - font_first_char) / font_rows;\n\t\tfor(uint8_t i = character - font_first_char; i > 0; --i) {\n\t\t\tchar_offset += pgm_read_byte(_font + 3 + i);\n\t\t}\n\t}\n\n\tuint8_t max_rows = _row + font_rows;\n\tif (max_rows > _max_rows)\n\t\tmax_rows = _max_rows;\n\n\tfor(uint8_t row = _row; row < max_rows; ++row) {\n\t\tSetColumn(_column);\n\t\tSetRow(row);\n\n\t\tuint8_t c;\n\t\tuint8_t i = 0;\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(SSD1306_DATA);\n\t\twhile(i < char_width) {\n\t\t\tif (i + _column >= _max_columns)\n\t\t\t\tbreak;\n\t\t\tc = pgm_read_byte(char_offset + i);\n\t\t\tif(_inv_font) c = ~ c;\n\t\t\tWire.write(c);\n\t\t\t++i;\n\t\t}\n\t\tc = 0;\n\t\tif(_inv_font) c = ~ c;\n\t\twhile(i < font_min_width) {\n\t\t\tif (i + _column >= _max_columns)\n\t\t\t\tbreak;\n\t\t\tWire.write(c);\n\t\t\t++i;\n\t\t}\n\t\tWire.endTransmission();\n\n\t\tchar_offset += char_width;\n\t}\n\n\tif(char_width < font_min_width)\n\t\tchar_width = font_min_width;\n\t_column += char_width;\n\tif(_column > _max_columns)\n\t\t_column = _max_columns;\n\n\treturn 1;\n}\n\nsize_t SSD1306wire::write(const uint8_t *buffer, size_t size) {\n\tsize_t outchars = 0;\n\n\tfor(int c = 0; c < size; c++) {\n\t\toutchars += write(*(buffer + c));\n\t}\n\n\treturn outchars;\n}\n\nvoid SSD1306wire::syncCursor() {\n\tif(_column < _max_columns)\n\t\tSetColumn(_column);\n\tif(_row < _max_rows)\n\t\tSetRow(_row);\n}\n\nvoid SSD1306wire::setPower(bool on) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(on ? 0xAF : 0xAE);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::setContrast(uint8_t contrast) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(0x81);\n\tWire.write(contrast);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::inverseDisplay(bool inverse) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(inverse ? 0xA7 : 0xA6);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::SetColumn(uint8_t column) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(0x00 | (column & 0x0F));\n\tWire.write(0x10 | (column >> 4));\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::SetRow(uint8_t row) {\n\tWire.beginTransmission(_i2c_addr);\n\tWire.write(SSD1306_COMMAND);\n\tWire.write(0xB0 | row);\n\tWire.endTransmission();\n}\n\nvoid SSD1306wire::clear() {\n\tSetColumn(0);\n\n\tfor(uint8_t row = 0; row < _max_rows; ++row) {\n\t\tSetRow(row);\n\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(SSD1306_DATA);\n\t\tfor(uint8_t col = 0; col < _max_columns; ++col) {\n\t\t\tWireSend(SSD1306_DATA, 0);\n\t\t}\n\t\tWire.endTransmission();\n\t}\n\n\tsetCursorForce(0, 0);\n}\n\nvoid SSD1306wire::clearToEOL() {\n\tif((_column >= _max_columns) || (_row >= _max_rows))\n\t\treturn;\n\tif(_font == 0)\n\t\treturn;\n\n\tuint8_t max_rows = _row + pgm_read_byte(_font + 1);\n\tif (max_rows > _max_rows)\n\t\tmax_rows = _max_rows;\n\n\tuint8_t c = 0;\n\tif(_inv_font) c = ~ c;\n\n\tfor(uint8_t row = _row; row < max_rows; ++row) {\n\t\tSetColumn(_column);\n\t\tSetRow(row);\n\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(SSD1306_DATA);\n\t\tfor(uint8_t col = _column; col < _max_columns; ++col) {\n\t\t\tWireSend(SSD1306_DATA, c);\n\t\t}\n\t\tWire.endTransmission();\n\t}\n\t_column = _max_columns;\n}\n\nvoid SSD1306wire::WireSend(uint8_t type, uint8_t value) {\n\tif(Wire.write(value) == 0) {\n\t\tWire.endTransmission();\n\t\tWire.beginTransmission(_i2c_addr);\n\t\tWire.write(type);\n\t\tWire.write(value);\n\t}\n}`\n\nAhem, I'm sorry, the code can't be inserted otherwise........",
+              "state": "open",
+              "created_at": "2025-03-04T18:34:57+00:00",
+              "updated_at": "2025-03-04T18:47:56+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1074",
+              "is_pr": false,
+              "labels": [
+                "bug",
+                "Waiting for details",
+                "ESP32-C3"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 1058,
               "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
@@ -65,8 +130,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 133,
-              "days_since_update": 98,
+              "age_days": 134,
+              "days_since_update": 99,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -94,8 +159,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1499,
-              "days_since_update": 126,
+              "age_days": 1500,
+              "days_since_update": 127,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -122,8 +187,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2424,
-              "days_since_update": 275,
+              "age_days": 2425,
+              "days_since_update": 276,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -150,8 +215,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1491,
-              "days_since_update": 363,
+              "age_days": 1492,
+              "days_since_update": 364,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -179,8 +244,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 950,
-              "days_since_update": 364,
+              "age_days": 951,
+              "days_since_update": 365,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -192,26 +257,27 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 6
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 5
             },
             "complexity": {
+              "low": 1,
               "medium": 5
             },
             "size": {
-              "medium": 3,
-              "large": 2
+              "large": 3,
+              "medium": 3
             },
             "lifecycle": {
-              "new": 4,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -1029,8 +1095,8 @@
       "statistics": {
         "size": 134823,
         "stars": 1809,
-        "forks": 477,
-        "open_issues": 5,
+        "forks": 476,
+        "open_issues": 6,
         "watchers": 1809,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
@@ -1063,20 +1129,55 @@
             "date": "2025-02-23T11:30:44+00:00"
           },
           "protected": false,
-          "issues": [],
+          "issues": [
+            {
+              "number": 85,
+              "title": "[Question] how Controlling esp32 with wifi serial using slicers",
+              "body": "Hello;\nI have simple esp32(30pin devkit v1) as main board controller for 3dprinter, and I enabled esp3d.\nI can use browser to control 3d printer, and upload gcode etc...\n\nBut if I want to connect it with slicer over wifi, and send data with wifi gcode, I can't.\nI think maybe there are disabled feature that I don't know, or maybe I must use wifi support instead of esp3d.\n\nSecond: I don't know esp3d and wifisupport difference in marlin...\n\nThird : Also when processing the gcode on the SD card by esp32 I can't send any command by esp3d, it gives an error: busy.... What to do to control the flow speed and feed rate?\n\n\ni try to use esp3dlib v3.x in marlin2.1.2.4(changing ini/feature.ini esp3dlib's link) but it error when compiling.\n\nbut Someone suggested me: \"What your looking for is \"Serial/Wifi bridge using configurable port 8888\" part of esp3d\"\n\nbut I don't know what this is and what it has to do with this issue.\n\n\n[Configuration.txt](https://github.com/user-attachments/files/19077213/Configuration.txt)\n[Configuration_adv.txt](https://github.com/user-attachments/files/19077221/Configuration_adv.txt)",
+              "state": "open",
+              "created_at": "2025-03-04T20:31:51+00:00",
+              "updated_at": "2025-03-04T20:35:29+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3DLib/issues/85",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            }
+          ],
           "issue_summary": {
-            "total": 0,
-            "open": 0,
+            "total": 1,
+            "open": 1,
             "closed": 0,
-            "priorities": {},
+            "priorities": {
+              "normal": 1
+            },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 0
             },
-            "complexity": {},
-            "size": {},
-            "lifecycle": {}
+            "complexity": {
+              "low": 1
+            },
+            "size": {
+              "large": 1
+            },
+            "lifecycle": {
+              "new": 1
+            }
           }
         },
         {
@@ -1091,6 +1192,32 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 85,
+              "title": "[Question] how Controlling esp32 with wifi serial using slicers",
+              "body": "Hello;\nI have simple esp32(30pin devkit v1) as main board controller for 3dprinter, and I enabled esp3d.\nI can use browser to control 3d printer, and upload gcode etc...\n\nBut if I want to connect it with slicer over wifi, and send data with wifi gcode, I can't.\nI think maybe there are disabled feature that I don't know, or maybe I must use wifi support instead of esp3d.\n\nSecond: I don't know esp3d and wifisupport difference in marlin...\n\nThird : Also when processing the gcode on the SD card by esp32 I can't send any command by esp3d, it gives an error: busy.... What to do to control the flow speed and feed rate?\n\n\ni try to use esp3dlib v3.x in marlin2.1.2.4(changing ini/feature.ini esp3dlib's link) but it error when compiling.\n\nbut Someone suggested me: \"What your looking for is \"Serial/Wifi bridge using configurable port 8888\" part of esp3d\"\n\nbut I don't know what this is and what it has to do with this issue.\n\n\n[Configuration.txt](https://github.com/user-attachments/files/19077213/Configuration.txt)\n[Configuration_adv.txt](https://github.com/user-attachments/files/19077221/Configuration_adv.txt)",
+              "state": "open",
+              "created_at": "2025-03-04T20:31:51+00:00",
+              "updated_at": "2025-03-04T20:35:29+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3DLib/issues/85",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 84,
               "title": "[BUG]pioarduino compatibility seems broken in bugfix and  2.1.3 prereleases",
@@ -1109,8 +1236,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 39,
-              "days_since_update": 39,
+              "age_days": 40,
+              "days_since_update": 40,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1137,8 +1264,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1126,
-              "days_since_update": 72,
+              "age_days": 1127,
+              "days_since_update": 73,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1150,26 +1277,26 @@
             }
           ],
           "issue_summary": {
-            "total": 2,
-            "open": 2,
+            "total": 3,
+            "open": 3,
             "closed": 0,
             "priorities": {
-              "normal": 2
+              "normal": 3
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 2
             },
             "complexity": {
-              "low": 2
+              "low": 3
             },
             "size": {
-              "large": 1,
+              "large": 2,
               "medium": 1
             },
             "lifecycle": {
-              "new": 2
+              "new": 3
             }
           }
         }
@@ -1957,7 +2084,7 @@
         "size": 11547,
         "stars": 105,
         "forks": 32,
-        "open_issues": 2,
+        "open_issues": 3,
         "watchers": 105,
         "default_branch": "master",
         "license": "GNU General Public License v3.0"
@@ -2036,8 +2163,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 18,
-              "days_since_update": 17,
+              "age_days": 19,
+              "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2065,8 +2192,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1024,
-              "days_since_update": 98,
+              "age_days": 1025,
+              "days_since_update": 99,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2095,8 +2222,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1605,
-              "days_since_update": 141,
+              "age_days": 1606,
+              "days_since_update": 142,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2124,8 +2251,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1685,
-              "days_since_update": 141,
+              "age_days": 1686,
+              "days_since_update": 142,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2156,8 +2283,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 274,
-              "days_since_update": 141,
+              "age_days": 275,
+              "days_since_update": 142,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2184,8 +2311,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 897,
-              "days_since_update": 141,
+              "age_days": 898,
+              "days_since_update": 142,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2212,8 +2339,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1885,
-              "days_since_update": 931,
+              "age_days": 1886,
+              "days_since_update": 932,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2242,8 +2369,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1028,
-              "days_since_update": 1001,
+              "age_days": 1029,
+              "days_since_update": 1002,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3129,8 +3256,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 409,
-              "days_since_update": 79,
+              "age_days": 410,
+              "days_since_update": 80,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3156,8 +3283,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 130,
-              "days_since_update": 107,
+              "age_days": 131,
+              "days_since_update": 108,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3182,8 +3309,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 141,
-              "days_since_update": 141,
+              "age_days": 142,
+              "days_since_update": 142,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3209,8 +3336,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 411,
-              "days_since_update": 186,
+              "age_days": 412,
+              "days_since_update": 187,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3237,8 +3364,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 201,
-              "days_since_update": 201,
+              "age_days": 202,
+              "days_since_update": 202,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3263,8 +3390,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 316,
-              "days_since_update": 203,
+              "age_days": 317,
+              "days_since_update": 204,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3290,8 +3417,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 421,
-              "days_since_update": 421,
+              "age_days": 422,
+              "days_since_update": 422,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3316,8 +3443,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 742,
-              "days_since_update": 742,
+              "age_days": 743,
+              "days_since_update": 743,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3345,8 +3472,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 885,
-              "days_since_update": 885,
+              "age_days": 886,
+              "days_since_update": 886,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7001,7 +7128,7 @@
       "statistics": {
         "size": 244796,
         "stars": 6,
-        "forks": 4,
+        "forks": 5,
         "open_issues": 0,
         "watchers": 6,
         "default_branch": "ESP3DLib-V3-2.1.2",
@@ -7011,8 +7138,8 @@
         "documentation_score": 0.0,
         "maintenance_score": 0.2,
         "activity_score": 0.0,
-        "community_score": 0.6200000000000001,
-        "overall_score": 0.132
+        "community_score": 0.66,
+        "overall_score": 0.136
       }
     },
     {
@@ -7049,8 +7176,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 655,
-              "days_since_update": 655,
+              "age_days": 656,
+              "days_since_update": 656,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7077,8 +7204,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 989,
-              "days_since_update": 928,
+              "age_days": 990,
+              "days_since_update": 929,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7926,8 +8053,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -7952,8 +8079,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 734,
-              "days_since_update": 734,
+              "age_days": 735,
+              "days_since_update": 735,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7978,8 +8105,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 734,
-              "days_since_update": 734,
+              "age_days": 735,
+              "days_since_update": 735,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8856,8 +8983,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 657,
-              "days_since_update": 657,
+              "age_days": 658,
+              "days_since_update": 658,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8883,8 +9010,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1853,
-              "days_since_update": 1837,
+              "age_days": 1854,
+              "days_since_update": 1838,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9733,8 +9860,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 657,
-              "days_since_update": 657,
+              "age_days": 658,
+              "days_since_update": 658,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12127,13 +12254,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4838,
-      "reset": "2025-03-04T01:59:12+00:00"
+      "remaining": 4827,
+      "reset": "2025-03-05T01:12:39+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2025-03-04T01:02:11+00:00"
+      "reset": "2025-03-05T01:02:12+00:00"
     }
   },
   "stats": {
@@ -12157,19 +12284,19 @@
       }
     },
     "issues": {
-      "total_count": 32,
-      "open_count": 32,
+      "total_count": 36,
+      "open_count": 36,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 813.6818369316088,
+      "avg_age_days": 724.1869414450334,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 32
+        "normal": 36
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 1,
-        "last_month": 2
+        "last_day": 4,
+        "last_week": 5,
+        "last_month": 6
       }
     },
     "activity": {
@@ -12373,7 +12500,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-02",
-          "count": 2
+          "count": 6
         },
         {
           "date": "2025-01",
@@ -12691,17 +12818,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
@@ -12711,17 +12838,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
@@ -12907,6 +13034,46 @@
     ],
     "weekly": [
       {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 7,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.2857142857142857
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 7,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.2857142857142857
+        }
+      },
+      {
         "name": "esp3d.io",
         "type": "main",
         "description": "Documentation of ESP3D Ecosystem",
@@ -12924,46 +13091,6 @@
           "comments": 0,
           "commits_per_day": 0.0,
           "issues_per_day": 0.14285714285714285
-        }
-      },
-      {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
         }
       },
       {
@@ -13149,6 +13276,46 @@
         }
       },
       {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 1,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 30,
+          "total": 7
+        },
+        "details": {
+          "commits": 1,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.03333333333333333,
+          "issues_per_day": 0.06666666666666667
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "score": {
+          "commits": 1,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 30,
+          "total": 7
+        },
+        "details": {
+          "commits": 1,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.03333333333333333,
+          "issues_per_day": 0.06666666666666667
+        }
+      },
+      {
         "name": "ESP3D-TFT",
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
@@ -13165,46 +13332,6 @@
           "issues": 0,
           "comments": 0,
           "commits_per_day": 0.06666666666666667,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.03333333333333333,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.03333333333333333,
           "issues_per_day": 0.0
         }
       },
@@ -13396,18 +13523,18 @@
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
-          "commits": 9,
-          "issues": 5,
+          "commits": 8,
+          "issues": 6,
           "comments": 0,
           "period_days": 365,
-          "total": 37
+          "total": 36
         },
         "details": {
-          "commits": 9,
-          "issues": 5,
+          "commits": 8,
+          "issues": 6,
           "comments": 0,
-          "commits_per_day": 0.024657534246575342,
-          "issues_per_day": 0.0136986301369863
+          "commits_per_day": 0.021917808219178082,
+          "issues_per_day": 0.01643835616438356
         }
       },
       {
@@ -13477,17 +13604,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 4,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "period_days": 365,
-          "total": 16
+          "total": 20
         },
         "details": {
           "commits": 4,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.010958904109589041,
-          "issues_per_day": 0.005479452054794521
+          "issues_per_day": 0.010958904109589041
         }
       },
       {
