@@ -43,8 +43,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
+| 🥇 1 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -65,11 +65,11 @@ Repository activity rankings based on activity over different time periods.
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 0.6 |
 | 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 0.6 |
-| 🥉 3 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
-| ▪️ 4 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 9 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 10 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -105,7 +105,7 @@ Repository activity rankings based on activity over different time periods.
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (42) | 10 | 6 | 0.1 |
 | 🥈 2 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (42) | 10 | 6 | 0.1 |
-| 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (36) | 8 | 6 | 0.1 |
+| 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (34) | 8 | 5 | 0.1 |
 | ▪️ 4 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (32) | 10 | 1 | 0.1 |
 | ▪️ 5 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (30) | 10 | 0 | 0.1 |
 | ▪️ 6 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (21) | 7 | 0 | 0.1 |
@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2852 |
+| Total Stars | 2851 |
 | Total Forks | 914 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 36 |
 | Closed Issues | 0 |
-| Average Age | 724.2 days |
+| Average Age | 725.1 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -389,7 +389,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#85: <a href="https://github.com/luc-github/ESP3DLib/issues/85">[Question] how Controlling esp32 with wifi serial using slicers</a></td><td><code>2025-03-04</code></td><td><code>2025-03-04</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#86: <a href="https://github.com/luc-github/ESP3DLib/issues/86">[BUG] soc/rtc_wdt.h not found error</a></td><td><code>2025-03-05</code></td><td><code>2025-03-05</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -404,7 +404,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#85: <a href="https://github.com/luc-github/ESP3DLib/issues/85">[Question] how Controlling esp32 with wifi serial using slicers</a></td><td><code>2025-03-04</code></td><td><code>2025-03-04</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#86: <a href="https://github.com/luc-github/ESP3DLib/issues/86">[BUG] soc/rtc_wdt.h not found error</a></td><td><code>2025-03-05</code></td><td><code>2025-03-05</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#84: <a href="https://github.com/luc-github/ESP3DLib/issues/84">[BUG]pioarduino compatibility seems broken in bugfix and  2.1.3 prereleases</a></td><td><code>2025-01-23</code></td><td><code>2025-01-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-12-21</code></td><td style="color: #000000">normal</td></tr>
 </table>
@@ -630,8 +630,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 master</td><td>#85: <a href="https://github.com/luc-github/ESP3DLib/issues/85">[Question] how Controlling esp32 with wifi serial using slicers</a></td><td><code>2025-03-04</code></td><td><code>2025-03-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#85: <a href="https://github.com/luc-github/ESP3DLib/issues/85">[Question] how Controlling esp32 with wifi serial using slicers</a></td><td><code>2025-03-04</code></td><td><code>2025-03-04</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 master</td><td>#86: <a href="https://github.com/luc-github/ESP3DLib/issues/86">[BUG] soc/rtc_wdt.h not found error</a></td><td><code>2025-03-05</code></td><td><code>2025-03-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#86: <a href="https://github.com/luc-github/ESP3DLib/issues/86">[BUG] soc/rtc_wdt.h not found error</a></td><td><code>2025-03-05</code></td><td><code>2025-03-05</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#84: <a href="https://github.com/luc-github/ESP3DLib/issues/84">[BUG]pioarduino compatibility seems broken in bugfix and  2.1.3 prereleases</a></td><td><code>2025-01-23</code></td><td><code>2025-01-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-12-21</code></td><td style="color: #000000">normal</td></tr>
 </table>
@@ -939,7 +939,7 @@ Author: Luc
 | Activity | Count |
 |----------|--------|
 | Commits | 107 |
-| New Issues | 5 |
+| New Issues | 4 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
 
@@ -966,7 +966,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-03-05 01:01:12 UTC*
+*🔄 Last updated: 2025-03-06 01:01:05 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
