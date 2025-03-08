@@ -1,5 +1,5 @@
 {
-  "timestamp": 1741309252.5802062,
+  "timestamp": 1741394793.3765903,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -34,25 +34,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 86,
-            "title": "[BUG] soc/rtc_wdt.h not found error",
-            "body": "**Describe the bug**\nA clear and concise description of what the bug is.\n#include <soc/rtc_wdt.h> line gives error.\n\n**To Reproduce**\nCompile Marlin fork of Luc with ESP32 Dev Board and ESP32Lib 3.0.\n\n**Expected behavior**\nCompile without error.\n\n**Screenshots**\nIf applicable, add screenshots to help explain your problem.\n\n**Marlin Firmware:**\n- Marlin Branch/Version:[635d22c](https://github.com/luc-github/Marlin/commit/635d22c1e1e6b1be1d8e065aaf35dd457243c8f8)\n- Any change done in Marlin code/configuration:\nAdded custom board\n\n**ESP3DLib :**\n- ESP3DLib Branch/Version:[b5c99e2](https://github.com/luc-github/ESP3DLib/commit/b5c99e2ca8d089660ae588b521f5fe4f55f24373)\n- Web UI Version:unknown\n- Wifi mode:unknown\n- Any change done in ESP3DLib code/configuration: Enabled Arduino IDE as advised in [#81](https://github.com/luc-github/ESP3DLib/issues/81#issuecomment-2456849499)\n**Board used (please complete the following information):**\n - BOARD: ESP32 Dev Board\n - Flash size: 4M\n - partitions: default\n\n**Additional context**\n```\nArduino:1.8.19 (Linux), Kart:\"ESP32 Dev Module, Disabled, Disabled, Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS), 240MHz (WiFi/BT), QIO, 80MHz, 4MB (32Mb), 921600, Core 1, Core 1, None, Disabled, Disabled\"\n\n\n/home/ahakkoca07/Belgeler/arduino-1.8.19/libraries/ESP3DLib/src/core/hal.cpp:30:10: fatal error: soc/rtc_wdt.h: No such file or directory\n   30 | #include <soc/rtc_wdt.h>\n      |          ^~~~~~~~~~~~~~~\ncompilation terminated.\n\"WiFi.h\" i\u00e7in birden fazla library bulundu\nKullan\u0131l\u0131yor: /home/ahakkoca07/.arduino15/packages/esp32/hardware/esp32/3.1.3/libraries/WiFi\nKullan\u0131lm\u0131yor: /home/ahakkoca07/Belgeler/arduino-1.8.19/libraries/WiFi\nexit status 1\nESP32 Dev Module kart\u0131 i\u00e7in derleme hatas\u0131.\n\nThis report would have more information with\n\"Show verbose output during compilation\"\noption enabled in File -> Preferences.\n\n```\n\nI think we can solve this like the following: https://github.com/espressif/arduino-esp32/discussions/9800\nI currently tried removing the \"soc/\" from the #include <soc/rtc_wdt.h>, now it is compiling again. I will update when it complies/gives error again.\n\nWell, as i was about to post this, it gave another error:\n```\n/home/ahakkoca07/Belgeler/arduino-1.8.19/libraries/ESP3DLib/src/esp3dlib.cpp:34:10: fatal error: soc/rtc_wdt.h: No such file or directory\n   34 | #include <soc/rtc_wdt.h>\n      |          ^~~~~~~~~~~~~~~\n```\nIt got past the previous error, so i will create a PR about this once i find all the errors.",
-            "state": "open",
-            "created_at": "2025-03-05T21:47:43+00:00",
-            "updated_at": "2025-03-06T23:07:24+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3DLib/issues/86",
-            "is_pr": false,
-            "labels": [
-              "bug",
-              "3.0",
-              "Waiting for details",
-              "Marlin 2.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 84,
             "title": "[BUG]pioarduino compatibility seems broken in bugfix and  2.1.3 prereleases",
@@ -876,7 +857,7 @@
       "size": 11547,
       "stars": 104,
       "forks": 32,
-      "open_issues": 3,
+      "open_issues": 2,
       "watchers": 104,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"
