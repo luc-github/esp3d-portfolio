@@ -1,5 +1,5 @@
 {
-  "timestamp": 1741567914.5206456,
+  "timestamp": 1741654886.8802912,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 28,
+            "title": "[FEATURE REQUEST] Configure Client mode",
+            "body": "Its possible make a configuration for work in client mode?\u00bf\n",
+            "state": "open",
+            "created_at": "2025-03-10T18:10:37+00:00",
+            "updated_at": "2025-03-10T18:11:05+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-Configurator/issues/28",
+            "is_pr": false,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 16,
             "title": "[FEATURE REQUEST]Web Flasher Tool",
@@ -819,7 +833,7 @@
       "size": 938,
       "stars": 8,
       "forks": 5,
-      "open_issues": 2,
+      "open_issues": 3,
       "watchers": 8,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
