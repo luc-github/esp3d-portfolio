@@ -1,5 +1,5 @@
 {
-  "timestamp": 1741741185.6041408,
+  "timestamp": 1741827640.389814,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,10 +27,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "c841a90",
-          "message": "Update for grblHAL to allow to use flash as gcode source",
+          "sha": "4026fee",
+          "message": "Update info.json",
           "author": "Luc",
-          "date": "2025-02-26T08:02:58+00:00"
+          "date": "2025-03-12T07:04:07+00:00"
         },
         "protected": false,
         "issues": [
@@ -987,7 +987,7 @@
       ]
     },
     "statistics": {
-      "size": 116835,
+      "size": 116836,
       "stars": 803,
       "forks": 318,
       "open_issues": 8,

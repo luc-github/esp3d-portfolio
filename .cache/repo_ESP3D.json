@@ -1,5 +1,5 @@
 {
-  "timestamp": 1741741153.3270574,
+  "timestamp": 1741827616.1772418,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-03-11T09:49:25+00:00",
+    "updated_at": "2025-03-12T18:33:37+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -27,7 +27,7 @@
             "body": "**Describe the bug**\nUsing ESP3D V3.0, I noticed that when a lot of serial data is generated during the startup of ESP3D then the board might lockup or restart.\n\nI recently developed a motherboard bootloader that I put into test mode to see if everything works reliably.\nDuring the test the bootloader repeatedly send some text like below to the ESP3D.\n\n```\nBootloader started\nDevice mounted\nComparing firmware to flash contents.\n======================================================== Equal\nFirmware file and flash contents are equal, no update required\n```\nThis message repeats about once a second. The ===... are send 1 character at a time like a progress bar.\n\nI noticed that the ESP3D will not connect as a client to the wifi network if this serial data is send during its startup process. I also noticed that if I block the messages and let the ESP3D connect to the wifi network, that the serial messages are never shown on the web terminal.\n\n**Expected behavior**\n1. Connect to the Wifi as AP even if serial data is incoming\n2. Show the serial data in the web terminal even if the data is send quite quickly\n\n**ESP3D Firmware:**\n- ESP3D FW version: 3.0.0-4b1.M2.1\n- ESP3D-WebUI Version: 3.0.0.2b1\n- Wifi mode: AP\n- Flash method: build in PlatformIO, flashed OTA\n\n**Target Firmware:**\n- Name:  Marlin\n- Version 2.0\n\n**Board used (please complete the following information):**\n\n- MCU: ESP32-S2\n- Name: Wemos ESP32-S2 mini V1.0.0\n- Flash size: 4M + 2MB PSram\n\n========================================================\nI have a quick look into the code and found a potential issue in serial_service_esp32.cpp\n\n```\nvoid ESP3DSerialService::receiveCb() {\n  if (!started()) {\n    return;\n  }\n  if (xSemaphoreTake(_mutex, portMAX_DELAY)) {\n    uint32_t now = millis();\n    while ((millis() - now) < SERIAL_COMMUNICATION_TIMEOUT) {\n      if (Serials[_serialIndex]->available()) {\n        _buffer[_buffer_size] = Serials[_serialIndex]->read();\n        now = millis();\n        if (esp3d_string::isRealTimeCommand(_buffer[_buffer_size])) {\n          flushChar(_buffer[_buffer_size]);\n          _buffer[_buffer_size] = '\\0'; //remove realtime command from buffer\n        } else {\n          _buffer_size++;\n          if (_buffer_size > ESP3D_SERIAL_BUFFER_SIZE ||\n              _buffer[_buffer_size - 1] == '\\n') {\n            flushBuffer();\n          }\n        }\n      }\n    }\n    xSemaphoreGive(_mutex);\n  } else {\n    esp3d_log_e(\"Mutex not taken\");\n  }\n}\n```\nreceiveCb() will never exit when serial data is send at a fast rate (faster than SERIAL_COMMUNICATION_TIMEOUT = 500 ms). I'm not sure if this will call a buffer overrun and cause the crash/restart that I'm seeing.\nIn normal 3D printer/CNC operation this can probably never happen.\nPerhaps it's better to exit the while loop when the buffer is full (_buffer_size > ESP3D_SERIAL_BUFFER_SIZE).",
             "state": "open",
             "created_at": "2025-03-10T18:30:06+00:00",
-            "updated_at": "2025-03-11T22:43:17+00:00",
+            "updated_at": "2025-03-12T02:08:19+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1077",
             "is_pr": false,
@@ -158,10 +158,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "750ef32",
-          "message": "Update wificonfig.cpp",
+          "sha": "dc8e221",
+          "message": "Update info.json\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-01-30T08:51:56+00:00"
+          "date": "2025-03-12T07:02:33+00:00"
         },
         "protected": false,
         "issues": [
@@ -171,7 +171,7 @@
             "body": "**Describe the bug**\nUsing ESP3D V3.0, I noticed that when a lot of serial data is generated during the startup of ESP3D then the board might lockup or restart.\n\nI recently developed a motherboard bootloader that I put into test mode to see if everything works reliably.\nDuring the test the bootloader repeatedly send some text like below to the ESP3D.\n\n```\nBootloader started\nDevice mounted\nComparing firmware to flash contents.\n======================================================== Equal\nFirmware file and flash contents are equal, no update required\n```\nThis message repeats about once a second. The ===... are send 1 character at a time like a progress bar.\n\nI noticed that the ESP3D will not connect as a client to the wifi network if this serial data is send during its startup process. I also noticed that if I block the messages and let the ESP3D connect to the wifi network, that the serial messages are never shown on the web terminal.\n\n**Expected behavior**\n1. Connect to the Wifi as AP even if serial data is incoming\n2. Show the serial data in the web terminal even if the data is send quite quickly\n\n**ESP3D Firmware:**\n- ESP3D FW version: 3.0.0-4b1.M2.1\n- ESP3D-WebUI Version: 3.0.0.2b1\n- Wifi mode: AP\n- Flash method: build in PlatformIO, flashed OTA\n\n**Target Firmware:**\n- Name:  Marlin\n- Version 2.0\n\n**Board used (please complete the following information):**\n\n- MCU: ESP32-S2\n- Name: Wemos ESP32-S2 mini V1.0.0\n- Flash size: 4M + 2MB PSram\n\n========================================================\nI have a quick look into the code and found a potential issue in serial_service_esp32.cpp\n\n```\nvoid ESP3DSerialService::receiveCb() {\n  if (!started()) {\n    return;\n  }\n  if (xSemaphoreTake(_mutex, portMAX_DELAY)) {\n    uint32_t now = millis();\n    while ((millis() - now) < SERIAL_COMMUNICATION_TIMEOUT) {\n      if (Serials[_serialIndex]->available()) {\n        _buffer[_buffer_size] = Serials[_serialIndex]->read();\n        now = millis();\n        if (esp3d_string::isRealTimeCommand(_buffer[_buffer_size])) {\n          flushChar(_buffer[_buffer_size]);\n          _buffer[_buffer_size] = '\\0'; //remove realtime command from buffer\n        } else {\n          _buffer_size++;\n          if (_buffer_size > ESP3D_SERIAL_BUFFER_SIZE ||\n              _buffer[_buffer_size - 1] == '\\n') {\n            flushBuffer();\n          }\n        }\n      }\n    }\n    xSemaphoreGive(_mutex);\n  } else {\n    esp3d_log_e(\"Mutex not taken\");\n  }\n}\n```\nreceiveCb() will never exit when serial data is send at a fast rate (faster than SERIAL_COMMUNICATION_TIMEOUT = 500 ms). I'm not sure if this will call a buffer overrun and cause the crash/restart that I'm seeing.\nIn normal 3D printer/CNC operation this can probably never happen.\nPerhaps it's better to exit the while loop when the buffer is full (_buffer_size > ESP3D_SERIAL_BUFFER_SIZE).",
             "state": "open",
             "created_at": "2025-03-10T18:30:06+00:00",
-            "updated_at": "2025-03-11T22:43:17+00:00",
+            "updated_at": "2025-03-12T02:08:19+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1077",
             "is_pr": false,
@@ -1108,11 +1108,11 @@
       ]
     },
     "statistics": {
-      "size": 134823,
-      "stars": 1812,
+      "size": 134929,
+      "stars": 1813,
       "forks": 476,
       "open_issues": 7,
-      "watchers": 1812,
+      "watchers": 1813,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
     }
