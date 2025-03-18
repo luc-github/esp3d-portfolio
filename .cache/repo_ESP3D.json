@@ -1,5 +1,5 @@
 {
-  "timestamp": 1742173319.2561903,
+  "timestamp": 1742259597.1003468,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -158,10 +158,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "d0bde79",
-          "message": "Fixed FTP client connection logic with accept(); updated service config format. (#1082)",
+          "sha": "8104887",
+          "message": "Fixed the issue that ESP201 cannot display the ANALOG pin value. (#1083)",
           "author": "E2D",
-          "date": "2025-03-16T09:02:39+00:00"
+          "date": "2025-03-17T07:19:39+00:00"
         },
         "protected": false,
         "issues": [
@@ -1108,9 +1108,9 @@
       ]
     },
     "statistics": {
-      "size": 134934,
+      "size": 134936,
       "stars": 1813,
-      "forks": 475,
+      "forks": 473,
       "open_issues": 7,
       "watchers": 1813,
       "default_branch": "2.1.x",
