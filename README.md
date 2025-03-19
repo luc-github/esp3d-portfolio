@@ -43,7 +43,7 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
 | 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2857 |
+| Total Stars | 2858 |
 | Total Forks | 911 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 42 |
 | Closed Issues | 0 |
-| Average Age | 788.2 days |
+| Average Age | 789.2 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -184,7 +184,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-14</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-19</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1074: <a href="https://github.com/luc-github/ESP3D/issues/1074">[BUG-FIX]  The problem with the SSD1306wire library and its solution (add to the main code)</a></td><td><code>2025-03-04</code></td><td><code>2025-03-10</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -205,7 +205,7 @@ Author: E2D
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-14</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-19</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1074: <a href="https://github.com/luc-github/ESP3D/issues/1074">[BUG-FIX]  The problem with the SSD1306wire library and its solution (add to the main code)</a></td><td><code>2025-03-04</code></td><td><code>2025-03-10</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -588,8 +588,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-14</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-14</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-19</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1077: <a href="https://github.com/luc-github/ESP3D/issues/1077">[BUG] Startup problems when lots of serial data is send to the ESP3D board during startup</a></td><td><code>2025-03-10</code></td><td><code>2025-03-19</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1074: <a href="https://github.com/luc-github/ESP3D/issues/1074">[BUG-FIX]  The problem with the SSD1306wire library and its solution (add to the main code)</a></td><td><code>2025-03-04</code></td><td><code>2025-03-10</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#1074: <a href="https://github.com/luc-github/ESP3D/issues/1074">[BUG-FIX]  The problem with the SSD1306wire library and its solution (add to the main code)</a></td><td><code>2025-03-04</code></td><td><code>2025-03-10</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
@@ -976,7 +976,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-03-18 01:01:28 UTC*
+*🔄 Last updated: 2025-03-19 01:02:46 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
