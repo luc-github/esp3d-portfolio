@@ -5,7 +5,7 @@
 ![Repositories](https://img.shields.io/badge/Repositories-11-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-7-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-4-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-40-yellow)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-38-yellow)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -43,7 +43,7 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
 | 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -136,16 +136,16 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2863 |
+| Total Stars | 2864 |
 | Total Forks | 910 |
 
 ### Issue Statistics
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 40 |
+| Open Issues | 38 |
 | Closed Issues | 0 |
-| Average Age | 832.9 days |
+| Average Age | 877.5 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -184,12 +184,11 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1084: <a href="https://github.com/luc-github/ESP3D/issues/1084">[Improvement]SD Card Code rafactorization</a></td><td><code>2025-03-22</code></td><td><code>2025-03-22</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -198,18 +197,17 @@ Author: Luc
 <summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-03-19 (#5501e78)
+Last commit: 2025-03-26 (#3f60af3)
 Author: Luc
 ```
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1084: <a href="https://github.com/luc-github/ESP3D/issues/1084">[Improvement]SD Card Code rafactorization</a></td><td><code>2025-03-22</code></td><td><code>2025-03-22</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -259,7 +257,7 @@ Author: Luc
 **Type**: Main<br>
 **Description**: ESP3D Firmware for ESP32 based TFT <br>
 **Language**: C<br>
-**Health Score**: <span style="color: #ff0000">32.5%</span>
+**Health Score**: <span style="color: #ff0000">25.5%</span>
 
 </td></tr></table>
 
@@ -381,7 +379,7 @@ Author: Luc
 **Type**: Main<br>
 **Description**: ESP3D library for Marlin and ESP32 boards<br>
 **Language**: C++<br>
-**Health Score**: <span style="color: #ff0000">32.5%</span>
+**Health Score**: <span style="color: #ff0000">25.5%</span>
 
 </td></tr></table>
 
@@ -586,8 +584,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1084: <a href="https://github.com/luc-github/ESP3D/issues/1084">[Improvement]SD Card Code rafactorization</a></td><td><code>2025-03-22</code></td><td><code>2025-03-22</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1084: <a href="https://github.com/luc-github/ESP3D/issues/1084">[Improvement]SD Card Code rafactorization</a></td><td><code>2025-03-22</code></td><td><code>2025-03-22</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1.x</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -596,8 +594,6 @@ Author: Luc
 <tr><td>⭕</td><td>🔧 3.0</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2024-06-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2024-03-04</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -972,7 +968,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-03-26 01:02:44 UTC*
+*🔄 Last updated: 2025-03-27 01:02:19 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

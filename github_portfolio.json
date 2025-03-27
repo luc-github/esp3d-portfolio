@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C++",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2025-03-21T02:57:20+00:00",
+      "updated_at": "2025-03-26T16:23:48+00:00",
       "branches": [
         {
           "name": "2.1.x",
@@ -22,33 +22,32 @@
           "protected": false,
           "issues": [
             {
-              "number": 1084,
-              "title": "[Improvement]SD Card Code rafactorization",
-              "body": "ESP3DLib has some issue due to current SD abstraction layer not fully hiding drivers code:  https://github.com/luc-github/ESP3DLib/issues/87\n\nNeed to refactorize code to avoid any specific drivers related code (include, class, etc...) to be visible in interface layer esp_sd.h / esp3d_sd.cpp",
+              "number": 795,
+              "title": "[TODO]\u2611Code refactoring plan",
+              "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\n\n* <s>Change GenLinkedList to vector</s>:+1:\n*<s> Implement better file encapsulation class to cover any new file system and any new arch</s>:+1:\n* Web server abstraction layer to allow to update smoothly to another solution\n* Add https support once there is an HTTP server that is implemented that support it \n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \n* TBD\n\n\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
               "state": "open",
-              "created_at": "2025-03-22T07:18:34+00:00",
-              "updated_at": "2025-03-22T07:19:42+00:00",
+              "created_at": "2022-07-28T00:34:00+00:00",
+              "updated_at": "2025-03-26T06:51:44+00:00",
               "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1084",
+              "url": "https://github.com/luc-github/ESP3D/issues/795",
               "is_pr": false,
               "labels": [
-                "enhancement",
-                "Work in progress",
-                "Compatibility",
+                "Help Welcome",
                 "Code Simplification",
-                "ESP3D 3.X"
+                "ESP3D 3.X",
+                "Planned"
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3,
-              "days_since_update": 3,
+              "age_days": 973,
+              "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
-              "size_estimate": "small",
+              "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
-              "suggested_priority": "medium",
+              "suggested_priority": "high",
               "lifecycle_stage": "new"
             },
             {
@@ -68,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 155,
-              "days_since_update": 120,
+              "age_days": 156,
+              "days_since_update": 121,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -97,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1521,
-              "days_since_update": 148,
+              "age_days": 1522,
+              "days_since_update": 149,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -125,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2446,
-              "days_since_update": 297,
+              "age_days": 2447,
+              "days_since_update": 298,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -153,36 +152,7 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1513,
-              "days_since_update": 385,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "in_progress"
-            },
-            {
-              "number": 795,
-              "title": "[TODO]\u2611Code refactoring plan",
-              "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\r\n\r\n* <s>Change GenLinkedList to vector</s>:+1:\r\n* Implement better file encapsulation class to cover any new file system and any new arch\r\n* Web server abstraction layer to allow to update smoothly to another solution\r\n* Add https support once there is an HTTP server that is implemented that support it \r\n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\r\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\r\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\r\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \r\n* TBD\r\n\r\n\r\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
-              "state": "open",
-              "created_at": "2022-07-28T00:34:00+00:00",
-              "updated_at": "2024-03-04T04:49:46+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/795",
-              "is_pr": false,
-              "labels": [
-                "Help Welcome",
-                "Code Simplification",
-                "ESP3D 3.X",
-                "Planned"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 972,
+              "age_days": 1514,
               "days_since_update": 386,
               "is_stale": true,
               "is_recent": false,
@@ -191,31 +161,30 @@
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
-              "lifecycle_stage": "new"
+              "lifecycle_stage": "in_progress"
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 5,
+            "open": 5,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 5
             },
             "ages": {
               "recent": 1,
               "active": 0,
-              "stale": 5
+              "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 5
             },
             "size": {
-              "small": 1,
-              "medium": 3,
-              "large": 2
+              "large": 2,
+              "medium": 3
             },
             "lifecycle": {
-              "new": 5,
+              "new": 4,
               "in_progress": 1
             }
           }
@@ -225,41 +194,40 @@
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "5501e78",
-            "message": "Improve serial Service thanks @rondlh\n\nBump version due to latest fixes",
+            "sha": "3f60af3",
+            "message": "Update esp_sd.cpp",
             "author": "Luc",
-            "date": "2025-03-19T03:37:34+00:00"
+            "date": "2025-03-26T07:15:46+00:00"
           },
           "protected": false,
           "issues": [
             {
-              "number": 1084,
-              "title": "[Improvement]SD Card Code rafactorization",
-              "body": "ESP3DLib has some issue due to current SD abstraction layer not fully hiding drivers code:  https://github.com/luc-github/ESP3DLib/issues/87\n\nNeed to refactorize code to avoid any specific drivers related code (include, class, etc...) to be visible in interface layer esp_sd.h / esp3d_sd.cpp",
+              "number": 795,
+              "title": "[TODO]\u2611Code refactoring plan",
+              "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\n\n* <s>Change GenLinkedList to vector</s>:+1:\n*<s> Implement better file encapsulation class to cover any new file system and any new arch</s>:+1:\n* Web server abstraction layer to allow to update smoothly to another solution\n* Add https support once there is an HTTP server that is implemented that support it \n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \n* TBD\n\n\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
               "state": "open",
-              "created_at": "2025-03-22T07:18:34+00:00",
-              "updated_at": "2025-03-22T07:19:42+00:00",
+              "created_at": "2022-07-28T00:34:00+00:00",
+              "updated_at": "2025-03-26T06:51:44+00:00",
               "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1084",
+              "url": "https://github.com/luc-github/ESP3D/issues/795",
               "is_pr": false,
               "labels": [
-                "enhancement",
-                "Work in progress",
-                "Compatibility",
+                "Help Welcome",
                 "Code Simplification",
-                "ESP3D 3.X"
+                "ESP3D 3.X",
+                "Planned"
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3,
-              "days_since_update": 3,
+              "age_days": 973,
+              "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
-              "size_estimate": "small",
+              "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
-              "suggested_priority": "medium",
+              "suggested_priority": "high",
               "lifecycle_stage": "new"
             },
             {
@@ -279,8 +247,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 155,
-              "days_since_update": 120,
+              "age_days": 156,
+              "days_since_update": 121,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -308,8 +276,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1521,
-              "days_since_update": 148,
+              "age_days": 1522,
+              "days_since_update": 149,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -336,8 +304,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2446,
-              "days_since_update": 297,
+              "age_days": 2447,
+              "days_since_update": 298,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -364,36 +332,7 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1513,
-              "days_since_update": 385,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "in_progress"
-            },
-            {
-              "number": 795,
-              "title": "[TODO]\u2611Code refactoring plan",
-              "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\r\n\r\n* <s>Change GenLinkedList to vector</s>:+1:\r\n* Implement better file encapsulation class to cover any new file system and any new arch\r\n* Web server abstraction layer to allow to update smoothly to another solution\r\n* Add https support once there is an HTTP server that is implemented that support it \r\n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\r\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\r\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\r\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \r\n* TBD\r\n\r\n\r\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
-              "state": "open",
-              "created_at": "2022-07-28T00:34:00+00:00",
-              "updated_at": "2024-03-04T04:49:46+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/795",
-              "is_pr": false,
-              "labels": [
-                "Help Welcome",
-                "Code Simplification",
-                "ESP3D 3.X",
-                "Planned"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 972,
+              "age_days": 1514,
               "days_since_update": 386,
               "is_stale": true,
               "is_recent": false,
@@ -402,31 +341,30 @@
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
-              "lifecycle_stage": "new"
+              "lifecycle_stage": "in_progress"
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 5,
+            "open": 5,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 5
             },
             "ages": {
               "recent": 1,
               "active": 0,
-              "stale": 5
+              "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 5
             },
             "size": {
-              "small": 1,
-              "medium": 3,
-              "large": 2
+              "large": 2,
+              "medium": 3
             },
             "lifecycle": {
-              "new": 5,
+              "new": 4,
               "in_progress": 1
             }
           }
@@ -1242,11 +1180,11 @@
         ]
       },
       "statistics": {
-        "size": 134946,
-        "stars": 1816,
+        "size": 134947,
+        "stars": 1817,
         "forks": 473,
-        "open_issues": 6,
-        "watchers": 1816,
+        "open_issues": 5,
+        "watchers": 1817,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
       },
@@ -1325,8 +1263,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3,
-              "days_since_update": 3,
+              "age_days": 4,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1353,8 +1291,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1148,
-              "days_since_update": 94,
+              "age_days": 1149,
+              "days_since_update": 95,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2170,7 +2108,7 @@
         ]
       },
       "statistics": {
-        "size": 11551,
+        "size": 11556,
         "stars": 104,
         "forks": 32,
         "open_issues": 2,
@@ -2180,10 +2118,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.7,
+        "maintenance_score": 0.5,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.32499999999999996
+        "overall_score": 0.255
       }
     },
     {
@@ -2252,8 +2190,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 40,
-              "days_since_update": 39,
+              "age_days": 41,
+              "days_since_update": 40,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2281,8 +2219,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1046,
-              "days_since_update": 120,
+              "age_days": 1047,
+              "days_since_update": 121,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2311,8 +2249,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1627,
-              "days_since_update": 163,
+              "age_days": 1628,
+              "days_since_update": 164,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2340,8 +2278,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1707,
-              "days_since_update": 163,
+              "age_days": 1708,
+              "days_since_update": 164,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2372,8 +2310,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 296,
-              "days_since_update": 163,
+              "age_days": 297,
+              "days_since_update": 164,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2400,8 +2338,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 919,
-              "days_since_update": 163,
+              "age_days": 920,
+              "days_since_update": 164,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2428,8 +2366,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1907,
-              "days_since_update": 953,
+              "age_days": 1908,
+              "days_since_update": 954,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2458,8 +2396,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1050,
-              "days_since_update": 1023,
+              "age_days": 1051,
+              "days_since_update": 1024,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3345,8 +3283,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 431,
-              "days_since_update": 101,
+              "age_days": 432,
+              "days_since_update": 102,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3372,8 +3310,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 152,
-              "days_since_update": 129,
+              "age_days": 153,
+              "days_since_update": 130,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3398,8 +3336,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 163,
-              "days_since_update": 163,
+              "age_days": 164,
+              "days_since_update": 164,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3425,8 +3363,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 433,
-              "days_since_update": 208,
+              "age_days": 434,
+              "days_since_update": 209,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3453,8 +3391,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 223,
-              "days_since_update": 223,
+              "age_days": 224,
+              "days_since_update": 224,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3479,8 +3417,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 338,
-              "days_since_update": 225,
+              "age_days": 339,
+              "days_since_update": 226,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3506,8 +3444,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 443,
-              "days_since_update": 443,
+              "age_days": 444,
+              "days_since_update": 444,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3532,8 +3470,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 764,
-              "days_since_update": 764,
+              "age_days": 765,
+              "days_since_update": 765,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3561,8 +3499,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 907,
-              "days_since_update": 907,
+              "age_days": 908,
+              "days_since_update": 908,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4380,10 +4318,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.7,
+        "maintenance_score": 0.5,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.32499999999999996
+        "overall_score": 0.255
       }
     },
     {
@@ -7210,7 +7148,7 @@
         ]
       },
       "statistics": {
-        "size": 248872,
+        "size": 248876,
         "stars": 7,
         "forks": 5,
         "open_issues": 0,
@@ -7260,8 +7198,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 15,
-              "days_since_update": 15,
+              "age_days": 16,
+              "days_since_update": 16,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -7284,8 +7222,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 677,
-              "days_since_update": 677,
+              "age_days": 678,
+              "days_since_update": 678,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7312,8 +7250,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1011,
-              "days_since_update": 950,
+              "age_days": 1012,
+              "days_since_update": 951,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8161,8 +8099,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 27,
-              "days_since_update": 27,
+              "age_days": 28,
+              "days_since_update": 28,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -8187,8 +8125,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 756,
-              "days_since_update": 756,
+              "age_days": 757,
+              "days_since_update": 757,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8213,8 +8151,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 756,
-              "days_since_update": 756,
+              "age_days": 757,
+              "days_since_update": 757,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9091,8 +9029,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 679,
-              "days_since_update": 679,
+              "age_days": 680,
+              "days_since_update": 680,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9118,8 +9056,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1875,
-              "days_since_update": 1859,
+              "age_days": 1876,
+              "days_since_update": 1860,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9968,8 +9906,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 679,
-              "days_since_update": 679,
+              "age_days": 680,
+              "days_since_update": 680,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12362,13 +12300,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4816,
-      "reset": "2025-03-26T01:29:46+00:00"
+      "remaining": 4822,
+      "reset": "2025-03-27T01:30:30+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2025-03-26T01:03:44+00:00"
+      "reset": "2025-03-27T01:03:19+00:00"
     }
   },
   "stats": {
@@ -12382,8 +12320,8 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 728361,
-      "total_stars": 2863,
+      "total_size": 728371,
+      "total_stars": 2864,
       "total_forks": 910,
       "branches": {
         "production": 9,
@@ -12392,17 +12330,17 @@
       }
     },
     "issues": {
-      "total_count": 40,
-      "open_count": 40,
+      "total_count": 38,
+      "open_count": 38,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 832.8877454871412,
+      "avg_age_days": 877.5268627403617,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 40
+        "normal": 38
       },
       "recent_activity": {
-        "last_day": 0,
+        "last_day": 2,
         "last_week": 3,
         "last_month": 5
       }
@@ -12608,7 +12546,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-02",
-          "count": 5
+          "count": 3
         },
         {
           "date": "2025-01",
@@ -12647,11 +12585,11 @@
           "count": 1
         },
         {
-          "date": "2024-04",
+          "date": "2024-05",
           "count": 0
         },
         {
-          "date": "2024-03",
+          "date": "2024-04",
           "count": 1
         }
       ],
@@ -12697,11 +12635,11 @@
           "count": 0
         },
         {
-          "date": "2024-04",
+          "date": "2024-05",
           "count": 0
         },
         {
-          "date": "2024-03",
+          "date": "2024-04",
           "count": 0
         }
       ],
@@ -12926,17 +12864,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
