@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C++",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2025-03-27T07:20:52+00:00",
+      "updated_at": "2025-03-28T21:12:49+00:00",
       "branches": [
         {
           "name": "2.1.x",
@@ -21,6 +21,32 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 1087,
+              "title": "[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4",
+              "body": "What is your question ?\nWhat I can change either within ESP3D v3 or in Marlin v2 to make wifi start on power on?\n\nWifi is starting when module is in USB programmer, but not on board.\n\nThank you\nJindra",
+              "state": "open",
+              "created_at": "2025-03-28T04:04:18+00:00",
+              "updated_at": "2025-03-28T05:20:47+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1087",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 795,
               "title": "[TODO]\u2611Code refactoring plan",
@@ -39,8 +65,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 974,
-              "days_since_update": 1,
+              "age_days": 975,
+              "days_since_update": 2,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -67,8 +93,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 157,
-              "days_since_update": 122,
+              "age_days": 158,
+              "days_since_update": 123,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +122,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1523,
-              "days_since_update": 150,
+              "age_days": 1524,
+              "days_since_update": 151,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +150,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2448,
-              "days_since_update": 299,
+              "age_days": 2449,
+              "days_since_update": 300,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -152,8 +178,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1515,
-              "days_since_update": 387,
+              "age_days": 1516,
+              "days_since_update": 388,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -165,26 +191,27 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 6
             },
             "ages": {
-              "recent": 1,
+              "recent": 2,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 5
+              "medium": 6
             },
             "size": {
+              "small": 1,
               "large": 2,
               "medium": 3
             },
             "lifecycle": {
-              "new": 4,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -202,6 +229,32 @@
           "protected": false,
           "issues": [
             {
+              "number": 1087,
+              "title": "[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4",
+              "body": "What is your question ?\nWhat I can change either within ESP3D v3 or in Marlin v2 to make wifi start on power on?\n\nWifi is starting when module is in USB programmer, but not on board.\n\nThank you\nJindra",
+              "state": "open",
+              "created_at": "2025-03-28T04:04:18+00:00",
+              "updated_at": "2025-03-28T05:20:47+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1087",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 795,
               "title": "[TODO]\u2611Code refactoring plan",
               "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\n\n* <s>Change GenLinkedList to vector</s>:+1:\n*<s> Implement better file encapsulation class to cover any new file system and any new arch</s>:+1:\n* Web server abstraction layer to allow to update smoothly to another solution\n* Add https support once there is an HTTP server that is implemented that support it \n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \n* TBD\n\n\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
@@ -219,8 +272,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 974,
-              "days_since_update": 1,
+              "age_days": 975,
+              "days_since_update": 2,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -247,8 +300,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 157,
-              "days_since_update": 122,
+              "age_days": 158,
+              "days_since_update": 123,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -276,8 +329,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1523,
-              "days_since_update": 150,
+              "age_days": 1524,
+              "days_since_update": 151,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -304,8 +357,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2448,
-              "days_since_update": 299,
+              "age_days": 2449,
+              "days_since_update": 300,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -332,8 +385,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1515,
-              "days_since_update": 387,
+              "age_days": 1516,
+              "days_since_update": 388,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -345,26 +398,27 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 6
             },
             "ages": {
-              "recent": 1,
+              "recent": 2,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 5
+              "medium": 6
             },
             "size": {
+              "small": 1,
               "large": 2,
               "medium": 3
             },
             "lifecycle": {
-              "new": 4,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -1181,10 +1235,10 @@
       },
       "statistics": {
         "size": 134947,
-        "stars": 1816,
-        "forks": 473,
-        "open_issues": 5,
-        "watchers": 1816,
+        "stars": 1818,
+        "forks": 474,
+        "open_issues": 6,
+        "watchers": 1818,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
       },
@@ -1263,8 +1317,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1291,8 +1345,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1150,
-              "days_since_update": 96,
+              "age_days": 1151,
+              "days_since_update": 97,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2190,8 +2244,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 42,
-              "days_since_update": 41,
+              "age_days": 43,
+              "days_since_update": 42,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2219,8 +2273,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1048,
-              "days_since_update": 122,
+              "age_days": 1049,
+              "days_since_update": 123,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2249,8 +2303,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1629,
-              "days_since_update": 165,
+              "age_days": 1630,
+              "days_since_update": 166,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2278,8 +2332,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1709,
-              "days_since_update": 165,
+              "age_days": 1710,
+              "days_since_update": 166,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2310,8 +2364,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 298,
-              "days_since_update": 165,
+              "age_days": 299,
+              "days_since_update": 166,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2338,8 +2392,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 921,
-              "days_since_update": 165,
+              "age_days": 922,
+              "days_since_update": 166,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2366,8 +2420,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1909,
-              "days_since_update": 955,
+              "age_days": 1910,
+              "days_since_update": 956,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2396,8 +2450,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1052,
-              "days_since_update": 1025,
+              "age_days": 1053,
+              "days_since_update": 1026,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3283,8 +3337,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 433,
-              "days_since_update": 103,
+              "age_days": 434,
+              "days_since_update": 104,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3310,8 +3364,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 154,
-              "days_since_update": 131,
+              "age_days": 155,
+              "days_since_update": 132,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3336,8 +3390,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 165,
-              "days_since_update": 165,
+              "age_days": 166,
+              "days_since_update": 166,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3363,8 +3417,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 435,
-              "days_since_update": 210,
+              "age_days": 436,
+              "days_since_update": 211,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3391,8 +3445,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 225,
-              "days_since_update": 225,
+              "age_days": 226,
+              "days_since_update": 226,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3417,8 +3471,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 340,
-              "days_since_update": 227,
+              "age_days": 341,
+              "days_since_update": 228,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3444,8 +3498,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 445,
-              "days_since_update": 445,
+              "age_days": 446,
+              "days_since_update": 446,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3470,8 +3524,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 766,
-              "days_since_update": 766,
+              "age_days": 767,
+              "days_since_update": 767,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3499,8 +3553,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 909,
-              "days_since_update": 909,
+              "age_days": 910,
+              "days_since_update": 910,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7148,7 +7202,7 @@
         ]
       },
       "statistics": {
-        "size": 248876,
+        "size": 249555,
         "stars": 7,
         "forks": 5,
         "open_issues": 0,
@@ -7198,8 +7252,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 17,
-              "days_since_update": 17,
+              "age_days": 18,
+              "days_since_update": 18,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -7222,8 +7276,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 679,
-              "days_since_update": 679,
+              "age_days": 680,
+              "days_since_update": 680,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7250,8 +7304,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1013,
-              "days_since_update": 952,
+              "age_days": 1014,
+              "days_since_update": 953,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8099,8 +8153,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 29,
-              "days_since_update": 29,
+              "age_days": 30,
+              "days_since_update": 30,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -8125,8 +8179,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 758,
-              "days_since_update": 758,
+              "age_days": 759,
+              "days_since_update": 759,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8151,8 +8205,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 758,
-              "days_since_update": 758,
+              "age_days": 759,
+              "days_since_update": 759,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9029,8 +9083,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 681,
-              "days_since_update": 681,
+              "age_days": 682,
+              "days_since_update": 682,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9056,8 +9110,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1877,
-              "days_since_update": 1861,
+              "age_days": 1878,
+              "days_since_update": 1862,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9906,8 +9960,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 681,
-              "days_since_update": 681,
+              "age_days": 682,
+              "days_since_update": 682,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12300,13 +12354,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4817,
-      "reset": "2025-03-28T01:42:07+00:00"
+      "remaining": 4833,
+      "reset": "2025-03-29T01:58:38+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2025-03-28T01:03:51+00:00"
+      "reset": "2025-03-29T01:03:01+00:00"
     }
   },
   "stats": {
@@ -12320,9 +12374,9 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 728376,
-      "total_stars": 2863,
-      "total_forks": 910,
+      "total_size": 729055,
+      "total_stars": 2865,
+      "total_forks": 911,
       "branches": {
         "production": 9,
         "development": 6,
@@ -12330,19 +12384,19 @@
       }
     },
     "issues": {
-      "total_count": 38,
-      "open_count": 38,
+      "total_count": 40,
+      "open_count": 40,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 878.5272327211488,
+      "avg_age_days": 835.5939878263889,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 38
+        "normal": 40
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 3,
-        "last_month": 5
+        "last_day": 2,
+        "last_week": 5,
+        "last_month": 6
       }
     },
     "activity": {
@@ -12546,11 +12600,11 @@
       "issue_creation_trend": [
         {
           "date": "2025-02",
-          "count": 3
+          "count": 4
         },
         {
           "date": "2025-01",
-          "count": 1
+          "count": 2
         },
         {
           "date": "2024-12",
@@ -12573,7 +12627,7 @@
           "count": 0
         },
         {
-          "date": "2024-07",
+          "date": "2024-08",
           "count": 1
         },
         {
@@ -12623,7 +12677,7 @@
           "count": 0
         },
         {
-          "date": "2024-07",
+          "date": "2024-08",
           "count": 0
         },
         {
@@ -12864,17 +12918,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
@@ -13086,17 +13140,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "period_days": 7,
-          "total": 4
+          "total": 8
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.2857142857142857
+          "issues_per_day": 0.5714285714285714
         }
       },
       {
@@ -13308,17 +13362,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "period_days": 30,
-          "total": 4
+          "total": 8
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.13333333333333333
         }
       },
       {
@@ -13346,26 +13400,6 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "score": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "period_days": 30,
-          "total": 2
-        },
-        "details": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.03333333333333333
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 0,
           "issues": 1,
@@ -13426,6 +13460,26 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13610,17 +13664,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 4,
-          "issues": 8,
+          "issues": 10,
           "comments": 0,
           "period_days": 365,
-          "total": 28
+          "total": 32
         },
         "details": {
           "commits": 4,
-          "issues": 8,
+          "issues": 10,
           "comments": 0,
           "commits_per_day": 0.010958904109589041,
-          "issues_per_day": 0.021917808219178082
+          "issues_per_day": 0.0273972602739726
         }
       },
       {
