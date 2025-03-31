@@ -22,6 +22,35 @@
           "protected": false,
           "issues": [
             {
+              "number": 1088,
+              "title": "[BUG] Polling command does not check response",
+              "body": "**Describe the bug**\n\nI have Anet A8 printer with added ESP3D. Added is filament sensor. Marlin is updated to 2.0.4 with filament sensor support.  \n\nI set polling every 5 seconds with M105 command to display temperatures. The problem appears when printer is paused for filament change. After change and resuming print, there is message \"Click to resume ...\". I found this is due to buffer overflow caused by M105 command.\nhttps://3dprinting.stackexchange.com/questions/7217/what-triggers-marlins-click-to-resume\n\nSeems that ESP3D does not check command response and blindly send next commands. This produce buffer overflow in printer controller.\n\n**To Reproduce**\n\n1. Start printing\n2. Click pause printing or remove filament to start Change filament procedure\n3. Wait couple of minutes\n4. Resume print\n\n**Expected behavior**\n\nAfter resume print this message should not be seen and print should resume without additional operator input.\n\n**ESP3D Firmware:**\n\n- ESP3D FW version: 3.0.0.2b1\n- ESP3D-WebUI Version: 3.0.0-4b1.M2.1\n- Flash method: PlatformIO  \n- Any change done in FW:\nNone\n\n**Target Firmware:**\n\n- Name: Marlin\n- Version: 2.0.4\n\n**Board used (please complete the following information):**\n\n- MCU: ESP8266\n- Name: ESP-01\n- Flash size: 1M\n",
+              "state": "open",
+              "created_at": "2025-03-30T07:17:16+00:00",
+              "updated_at": "2025-03-30T12:18:02+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1088",
+              "is_pr": false,
+              "labels": [
+                "bug",
+                "Marlin 2.X",
+                "Not a bug",
+                "Not related to ESP3D"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 1087,
               "title": "[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4",
               "body": "What is your question ?\nWhat I can change either within ESP3D v3 or in Marlin v2 to make wifi start on power on?\n\nWifi is starting when module is in USB programmer, but not on board.\n\nThank you\nJindra",
@@ -36,8 +65,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1,
-              "days_since_update": 1,
+              "age_days": 2,
+              "days_since_update": 2,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -65,8 +94,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 976,
-              "days_since_update": 3,
+              "age_days": 977,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -93,8 +122,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 159,
-              "days_since_update": 125,
+              "age_days": 160,
+              "days_since_update": 126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -122,8 +151,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1525,
-              "days_since_update": 152,
+              "age_days": 1526,
+              "days_since_update": 153,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -150,8 +179,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2450,
-              "days_since_update": 301,
+              "age_days": 2451,
+              "days_since_update": 302,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -178,8 +207,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1517,
-              "days_since_update": 389,
+              "age_days": 1518,
+              "days_since_update": 390,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -191,27 +220,27 @@
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 7,
+            "open": 7,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 7
             },
             "ages": {
-              "recent": 2,
+              "recent": 3,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 7
             },
             "size": {
+              "large": 3,
               "small": 1,
-              "large": 2,
               "medium": 3
             },
             "lifecycle": {
-              "new": 5,
+              "new": 6,
               "in_progress": 1
             }
           }
@@ -229,6 +258,35 @@
           "protected": false,
           "issues": [
             {
+              "number": 1088,
+              "title": "[BUG] Polling command does not check response",
+              "body": "**Describe the bug**\n\nI have Anet A8 printer with added ESP3D. Added is filament sensor. Marlin is updated to 2.0.4 with filament sensor support.  \n\nI set polling every 5 seconds with M105 command to display temperatures. The problem appears when printer is paused for filament change. After change and resuming print, there is message \"Click to resume ...\". I found this is due to buffer overflow caused by M105 command.\nhttps://3dprinting.stackexchange.com/questions/7217/what-triggers-marlins-click-to-resume\n\nSeems that ESP3D does not check command response and blindly send next commands. This produce buffer overflow in printer controller.\n\n**To Reproduce**\n\n1. Start printing\n2. Click pause printing or remove filament to start Change filament procedure\n3. Wait couple of minutes\n4. Resume print\n\n**Expected behavior**\n\nAfter resume print this message should not be seen and print should resume without additional operator input.\n\n**ESP3D Firmware:**\n\n- ESP3D FW version: 3.0.0.2b1\n- ESP3D-WebUI Version: 3.0.0-4b1.M2.1\n- Flash method: PlatformIO  \n- Any change done in FW:\nNone\n\n**Target Firmware:**\n\n- Name: Marlin\n- Version: 2.0.4\n\n**Board used (please complete the following information):**\n\n- MCU: ESP8266\n- Name: ESP-01\n- Flash size: 1M\n",
+              "state": "open",
+              "created_at": "2025-03-30T07:17:16+00:00",
+              "updated_at": "2025-03-30T12:18:02+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1088",
+              "is_pr": false,
+              "labels": [
+                "bug",
+                "Marlin 2.X",
+                "Not a bug",
+                "Not related to ESP3D"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 1087,
               "title": "[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4",
               "body": "What is your question ?\nWhat I can change either within ESP3D v3 or in Marlin v2 to make wifi start on power on?\n\nWifi is starting when module is in USB programmer, but not on board.\n\nThank you\nJindra",
@@ -243,8 +301,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1,
-              "days_since_update": 1,
+              "age_days": 2,
+              "days_since_update": 2,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -272,8 +330,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 976,
-              "days_since_update": 3,
+              "age_days": 977,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -300,8 +358,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 159,
-              "days_since_update": 125,
+              "age_days": 160,
+              "days_since_update": 126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -329,8 +387,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1525,
-              "days_since_update": 152,
+              "age_days": 1526,
+              "days_since_update": 153,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -357,8 +415,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2450,
-              "days_since_update": 301,
+              "age_days": 2451,
+              "days_since_update": 302,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -385,8 +443,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1517,
-              "days_since_update": 389,
+              "age_days": 1518,
+              "days_since_update": 390,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -398,27 +456,27 @@
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 7,
+            "open": 7,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 7
             },
             "ages": {
-              "recent": 2,
+              "recent": 3,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 7
             },
             "size": {
+              "large": 3,
               "small": 1,
-              "large": 2,
               "medium": 3
             },
             "lifecycle": {
-              "new": 5,
+              "new": 6,
               "in_progress": 1
             }
           }
@@ -1237,7 +1295,7 @@
         "size": 134947,
         "stars": 1818,
         "forks": 474,
-        "open_issues": 6,
+        "open_issues": 7,
         "watchers": 1818,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
@@ -1317,11 +1375,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 7,
-              "days_since_update": 7,
+              "age_days": 8,
+              "days_since_update": 8,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
@@ -1345,8 +1403,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1152,
-              "days_since_update": 98,
+              "age_days": 1153,
+              "days_since_update": 99,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1365,8 +1423,8 @@
               "normal": 2
             },
             "ages": {
-              "recent": 1,
-              "active": 0,
+              "recent": 0,
+              "active": 1,
               "stale": 1
             },
             "complexity": {
@@ -2185,7 +2243,7 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2025-03-22T11:16:32+00:00",
+      "updated_at": "2025-03-30T08:06:40+00:00",
       "branches": [
         {
           "name": "2.1",
@@ -2227,6 +2285,35 @@
           "protected": false,
           "issues": [
             {
+              "number": 411,
+              "title": "[FEATURE REQUEST] Flexible panels customizations to optimize empty space",
+              "body": "**Is your feature request related to a problem? Please describe.**\nCurrent screen layout contains a lot of unused space. When more panels are visible the screen must be scrolled up/down to see all of them.\nFor example, Print status panel contains only 2 lines and all other space is empty.\n\n**Describe the solution you'd like**\nI have 2 proposals:\n1. Option to resize panels to fit to contained items.\n2. Option to move items to other panels. For example, all items from Temperatures panel can fit well in empty space in Printer status panel or vice-versa.\n\nThis way screen space can be used a lot more effective.",
+              "state": "open",
+              "created_at": "2025-03-30T07:53:41+00:00",
+              "updated_at": "2025-03-30T07:56:40+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/411",
+              "is_pr": false,
+              "labels": [
+                "help welcome",
+                "Feature request",
+                "3.0",
+                "help wanted"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 406,
               "title": "[BUG]The status panel is redraw when getting repport even no change",
               "body": "For each status repport the  status panel is redraw even no change in data - which give glitch effect  - need to memo the data to evoid unecessary redraw of the status panel",
@@ -2244,8 +2331,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 44,
-              "days_since_update": 43,
+              "age_days": 45,
+              "days_since_update": 44,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2273,8 +2360,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1050,
-              "days_since_update": 124,
+              "age_days": 1051,
+              "days_since_update": 125,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2303,8 +2390,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1631,
-              "days_since_update": 167,
+              "age_days": 1632,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2332,8 +2419,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1711,
-              "days_since_update": 167,
+              "age_days": 1712,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2364,8 +2451,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 300,
-              "days_since_update": 167,
+              "age_days": 301,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2392,8 +2479,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 923,
-              "days_since_update": 167,
+              "age_days": 924,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2420,8 +2507,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1911,
-              "days_since_update": 957,
+              "age_days": 1912,
+              "days_since_update": 958,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2450,8 +2537,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1054,
-              "days_since_update": 1027,
+              "age_days": 1055,
+              "days_since_update": 1028,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2463,27 +2550,27 @@
             }
           ],
           "issue_summary": {
-            "total": 8,
-            "open": 8,
+            "total": 9,
+            "open": 9,
             "closed": 0,
             "priorities": {
-              "normal": 8
+              "normal": 9
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 8
             },
             "complexity": {
-              "medium": 7,
+              "medium": 8,
               "high": 1
             },
             "size": {
-              "small": 4,
-              "medium": 4
+              "medium": 5,
+              "small": 4
             },
             "lifecycle": {
-              "new": 8
+              "new": 9
             }
           }
         }
@@ -3286,7 +3373,7 @@
         "size": 116836,
         "stars": 806,
         "forks": 317,
-        "open_issues": 8,
+        "open_issues": 9,
         "watchers": 806,
         "default_branch": "2.1",
         "license": "GNU General Public License v3.0"
@@ -3337,8 +3424,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 435,
-              "days_since_update": 105,
+              "age_days": 436,
+              "days_since_update": 106,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3364,8 +3451,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 156,
-              "days_since_update": 133,
+              "age_days": 157,
+              "days_since_update": 134,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3390,8 +3477,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 167,
-              "days_since_update": 167,
+              "age_days": 168,
+              "days_since_update": 168,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3417,8 +3504,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 437,
-              "days_since_update": 212,
+              "age_days": 438,
+              "days_since_update": 213,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3445,8 +3532,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 227,
-              "days_since_update": 227,
+              "age_days": 228,
+              "days_since_update": 228,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3471,8 +3558,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 342,
-              "days_since_update": 229,
+              "age_days": 343,
+              "days_since_update": 230,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3498,8 +3585,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 447,
-              "days_since_update": 447,
+              "age_days": 448,
+              "days_since_update": 448,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3524,8 +3611,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 768,
-              "days_since_update": 768,
+              "age_days": 769,
+              "days_since_update": 769,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3553,8 +3640,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 911,
-              "days_since_update": 911,
+              "age_days": 912,
+              "days_since_update": 912,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7252,8 +7339,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 19,
-              "days_since_update": 19,
+              "age_days": 20,
+              "days_since_update": 20,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -7276,8 +7363,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 681,
-              "days_since_update": 681,
+              "age_days": 682,
+              "days_since_update": 682,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7304,8 +7391,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1015,
-              "days_since_update": 954,
+              "age_days": 1016,
+              "days_since_update": 955,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8153,8 +8240,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 31,
-              "days_since_update": 31,
+              "age_days": 32,
+              "days_since_update": 32,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8179,8 +8266,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 760,
-              "days_since_update": 760,
+              "age_days": 761,
+              "days_since_update": 761,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8205,8 +8292,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 760,
-              "days_since_update": 760,
+              "age_days": 761,
+              "days_since_update": 761,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9083,8 +9170,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 683,
-              "days_since_update": 683,
+              "age_days": 684,
+              "days_since_update": 684,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9110,8 +9197,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1879,
-              "days_since_update": 1863,
+              "age_days": 1880,
+              "days_since_update": 1864,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9960,8 +10047,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 683,
-              "days_since_update": 683,
+              "age_days": 684,
+              "days_since_update": 684,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12354,13 +12441,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4795,
-      "reset": "2025-03-30T01:59:43+00:00"
+      "remaining": 4807,
+      "reset": "2025-03-31T01:32:40+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2025-03-30T01:09:40+00:00"
+      "reset": "2025-03-31T01:07:46+00:00"
     }
   },
   "stats": {
@@ -12384,19 +12471,19 @@
       }
     },
     "issues": {
-      "total_count": 40,
-      "open_count": 40,
+      "total_count": 43,
+      "open_count": 43,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 836.5986099998379,
+      "avg_age_days": 779.211493887741,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 40
+        "normal": 43
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 4,
-        "last_month": 6
+        "last_day": 3,
+        "last_week": 7,
+        "last_month": 9
       }
     },
     "activity": {
@@ -12599,8 +12686,8 @@
     "trends": {
       "issue_creation_trend": [
         {
-          "date": "2025-02",
-          "count": 4
+          "date": "2025-03",
+          "count": 7
         },
         {
           "date": "2025-01",
@@ -12611,11 +12698,11 @@
           "count": 0
         },
         {
-          "date": "2024-11",
+          "date": "2024-12",
           "count": 0
         },
         {
-          "date": "2024-10",
+          "date": "2024-11",
           "count": 0
         },
         {
@@ -12649,7 +12736,7 @@
       ],
       "issue_resolution_trend": [
         {
-          "date": "2025-02",
+          "date": "2025-03",
           "count": 0
         },
         {
@@ -12661,11 +12748,11 @@
           "count": 0
         },
         {
-          "date": "2024-11",
+          "date": "2024-12",
           "count": 0
         },
         {
-          "date": "2024-10",
+          "date": "2024-11",
           "count": 0
         },
         {
@@ -12918,37 +13005,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
@@ -12956,6 +13023,26 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13140,37 +13227,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 4,
+          "issues": 6,
           "comments": 0,
           "period_days": 7,
-          "total": 8
+          "total": 12
         },
         "details": {
           "commits": 0,
-          "issues": 4,
+          "issues": 6,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.5714285714285714
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.8571428571428571
         }
       },
       {
@@ -13178,6 +13245,26 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 7,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.14285714285714285
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
           "issues": 0,
@@ -13362,17 +13449,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 4,
+          "issues": 6,
           "comments": 0,
           "period_days": 30,
-          "total": 8
+          "total": 12
         },
         "details": {
           "commits": 0,
-          "issues": 4,
+          "issues": 6,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.13333333333333333
+          "issues_per_day": 0.2
         }
       },
       {
@@ -13380,6 +13467,26 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 30,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.03333333333333333
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 0,
           "issues": 1,
@@ -13413,26 +13520,6 @@
           "comments": 0,
           "commits_per_day": 0.0,
           "issues_per_day": 0.03333333333333333
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
         }
       },
       {
@@ -13584,17 +13671,17 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
           "commits": 10,
-          "issues": 6,
+          "issues": 7,
           "comments": 0,
           "period_days": 365,
-          "total": 42
+          "total": 44
         },
         "details": {
           "commits": 10,
-          "issues": 6,
+          "issues": 7,
           "comments": 0,
           "commits_per_day": 0.0273972602739726,
-          "issues_per_day": 0.01643835616438356
+          "issues_per_day": 0.019178082191780823
         }
       },
       {
@@ -13615,6 +13702,26 @@
           "comments": 0,
           "commits_per_day": 0.0273972602739726,
           "issues_per_day": 0.01643835616438356
+        }
+      },
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "score": {
+          "commits": 4,
+          "issues": 12,
+          "comments": 0,
+          "period_days": 365,
+          "total": 36
+        },
+        "details": {
+          "commits": 4,
+          "issues": 12,
+          "comments": 0,
+          "commits_per_day": 0.010958904109589041,
+          "issues_per_day": 0.03287671232876712
         }
       },
       {
@@ -13655,26 +13762,6 @@
           "comments": 0,
           "commits_per_day": 0.0273972602739726,
           "issues_per_day": 0.0027397260273972603
-        }
-      },
-      {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "score": {
-          "commits": 4,
-          "issues": 10,
-          "comments": 0,
-          "period_days": 365,
-          "total": 32
-        },
-        "details": {
-          "commits": 4,
-          "issues": 10,
-          "comments": 0,
-          "commits_per_day": 0.010958904109589041,
-          "issues_per_day": 0.0273972602739726
         }
       },
       {

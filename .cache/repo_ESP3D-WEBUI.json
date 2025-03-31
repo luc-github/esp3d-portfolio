@@ -1,5 +1,5 @@
 {
-  "timestamp": 1743296823.6826634,
+  "timestamp": 1743383103.6366837,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-03-22T11:16:32+00:00",
+    "updated_at": "2025-03-30T08:06:40+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -34,6 +34,25 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 411,
+            "title": "[FEATURE REQUEST] Flexible panels customizations to optimize empty space",
+            "body": "**Is your feature request related to a problem? Please describe.**\nCurrent screen layout contains a lot of unused space. When more panels are visible the screen must be scrolled up/down to see all of them.\nFor example, Print status panel contains only 2 lines and all other space is empty.\n\n**Describe the solution you'd like**\nI have 2 proposals:\n1. Option to resize panels to fit to contained items.\n2. Option to move items to other panels. For example, all items from Temperatures panel can fit well in empty space in Printer status panel or vice-versa.\n\nThis way screen space can be used a lot more effective.",
+            "state": "open",
+            "created_at": "2025-03-30T07:53:41+00:00",
+            "updated_at": "2025-03-30T07:56:40+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/411",
+            "is_pr": false,
+            "labels": [
+              "help welcome",
+              "Feature request",
+              "3.0",
+              "help wanted"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 406,
             "title": "[BUG]The status panel is redraw when getting repport even no change",
@@ -990,7 +1009,7 @@
       "size": 116836,
       "stars": 806,
       "forks": 317,
-      "open_issues": 8,
+      "open_issues": 9,
       "watchers": 806,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"
