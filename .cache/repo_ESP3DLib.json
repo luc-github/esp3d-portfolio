@@ -1,5 +1,5 @@
 {
-  "timestamp": 1743642113.631194,
+  "timestamp": 1743728488.9206362,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -20,7 +20,24 @@
           "date": "2025-02-23T11:30:44+00:00"
         },
         "protected": false,
-        "issues": []
+        "issues": [
+          {
+            "number": 88,
+            "title": "[Question]Where platformio.ini file?",
+            "body": "Hi everyone! Where i can see platformio.ini file for compile it?",
+            "state": "open",
+            "created_at": "2025-04-03T09:45:32+00:00",
+            "updated_at": "2025-04-03T12:19:15+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/issues/88",
+            "is_pr": false,
+            "labels": [
+              "question"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
       },
       {
         "name": "3.0",
@@ -34,6 +51,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 88,
+            "title": "[Question]Where platformio.ini file?",
+            "body": "Hi everyone! Where i can see platformio.ini file for compile it?",
+            "state": "open",
+            "created_at": "2025-04-03T09:45:32+00:00",
+            "updated_at": "2025-04-03T12:19:15+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/issues/88",
+            "is_pr": false,
+            "labels": [
+              "question"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 87,
             "title": "[Compatibility issue]SDFat library  in ESP3D 3.0 conflict with latest Marlin SD implementation",
@@ -858,7 +891,7 @@
       "size": 11561,
       "stars": 104,
       "forks": 32,
-      "open_issues": 2,
+      "open_issues": 3,
       "watchers": 104,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"

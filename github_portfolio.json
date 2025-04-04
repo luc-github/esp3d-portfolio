@@ -22,6 +22,32 @@
           "protected": false,
           "issues": [
             {
+              "number": 1089,
+              "title": "[Question] Compile ESP3d for MKS-TinyBee",
+              "body": "Hi everyone! Help me. please. Can't installl esp3d in MKS-TinyBee (https://github.com/makerbase-mks/MKS-TinyBee/tree/main).\nI Downloaded the sources: https://github.com/luc-github/ESP3D/archive/refs/heads/3.0.zip\nOpened the sources in Visual Studio Code. Config the:\n\n[configuration copy.zip](https://github.com/user-attachments/files/19583374/configuration.copy.zip)\n\n> In Visual Studio Code: Platformio/esp32dev/upload:\n> \n> > ```\n> > \n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP118.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP120.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP121.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP0.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP100.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP101.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP102.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP103.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP104.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP106.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP105.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP107.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP108.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP110.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP111.cpp:21:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP112.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP114.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP115.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP116.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP117.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP118.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP120.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP121.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP130.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP131.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP140.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP150.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP160.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP161.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP170.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP171.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP180.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP181.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP190.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP191.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP200.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP201.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP202.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP210.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP212.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP214.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP215.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP220.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP131.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP140.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP130.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP150.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP160.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP161.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP170.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP171.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP180.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP181.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP190.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP191.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP200.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP201.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP202.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP210.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP212.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP215.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP214.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP220.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP250.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP290.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP300.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP301.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP400.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP401.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP402.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP410.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP420.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP444.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP450.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP500.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP510.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP550.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP555.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP600.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP610.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP620.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP700.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP701.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP250.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP290.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP300.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP301.cpp:21:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP400.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP710.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP715.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP720.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP401.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP402.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP410.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP420.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP444.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP730.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP450.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP500.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP510.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP550.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP555.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP600.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP610.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP620.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP700.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP701.cpp:21:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP740.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP750.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP780.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP790.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP800.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP900.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP901.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP902.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP910.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP710.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP720.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP715.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP930.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP999.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_benchmark.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_commands.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP730.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP740.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_hal.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_log.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_message.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP750.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP780.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP790.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_settings.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_string.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP800.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP900.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP901.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP902.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP910.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP930.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP931.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP950.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP999.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d.cpp:29:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_benchmark.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../modules/authentication/../../core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/../modules/authentication/../../core/esp3d_message.h:30,\n> >                  from esp3d/src/core/../modules/authentication/authentication_service.h:27,\n> >                  from esp3d/src/core/esp3d_commands.h:25,\n> >                  from esp3d/src/core/esp3d_commands.cpp:21:\n> > esp3d/src/core/../modules/authentication/../../core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../modules/authentication/../../core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../modules/authentication/../../core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\authentication\\authentication_service.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\bluetooth\\BT_service.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\boot_delay\\boot_delay.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\buzzer\\buzzer.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_hal.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\camera\\camera.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_log.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_message.h:30,\n> >                  from esp3d/src/core/esp3d_message.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\devices\\devices_services.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\OLED_I2C_SSD1306_128X64\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\OLED_I2C_SSDSH1106_132X64\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\TFT_SPI_ST7789_135X240\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\TFT_SPI_ST7789_240X240\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\display.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_settings.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\ethernet\\ethconfig.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\esp_filesystem.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\esp_globalFS.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\esp_sd.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_string.cpp:24:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\flash\\fat_esp32_filesystem.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\flash\\littlefs_esp32_filesystem.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\flash\\littlefs_esp8266_filesystem.cpp.o\n> > In file included from esp3d/src/modules/authentication/../../core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/authentication/../../core/esp3d_message.h:30,\n> >                  from esp3d/src/modules/authentication/authentication_service.h:27,\n> >                  from esp3d/src/modules/authentication/authentication_service.cpp:21:\n> > esp3d/src/modules/authentication/../../core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/authentication/../../core/../include/esp3d_config.h:25:\n> > esp3d/src/modules/authentication/../../core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/bluetooth/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/bluetooth/BT_service.cpp:23:\n> > esp3d/src/modules/bluetooth/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/bluetooth/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/bluetooth/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/esp3d_message.h:30,\n> >                  from esp3d/src/modules/boot_delay/../../core/../modules/authentication/authentication_service.h:27,\n> >                  from esp3d/src/modules/boot_delay/../../core/esp3d_commands.h:25,\n> >                  from esp3d/src/modules/boot_delay/boot_delay.cpp:23:\n> > esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/esp3d_config.h:25:\n> > esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > esp3d/src/core/esp3d_settings.cpp: In static member function 'static const char* ESP3DSettings::GetFirmwareTargetShortName()':\n> > esp3d/src/core/esp3d_settings.cpp:329:39: error: expected primary-expression before ')' token\n> >   329 |   } else if (_FirmwareTarget == MARLIN) {\n> >       |                                       ^\n> > esp3d/src/core/esp3d_settings.cpp: In static member function 'static bool ESP3DSettings::isValidByteSetting(uint8_t, ESP3DSettingIndex)':\n> > esp3d/src/core/esp3d_settings.cpp:1055:48: error: expected primary-expression before '||' token\n> >  1055 |       if (value == REPETIER || value == MARLIN || value == UNKNOWN_FW ||\n> >       |                                                ^~\n> > *** [.pioenvs\\esp32dev\\src\\src\\core\\esp3d_settings.cpp.o] Error 1\n> > In file included from esp3d/src/modules/buzzer/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/buzzer/buzzer.cpp:21:\n> > esp3d/src/modules/buzzer/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/buzzer/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/buzzer/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/camera/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/camera/camera.cpp:21:\n> > esp3d/src/modules/camera/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/camera/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/camera/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/devices/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/devices/devices_services.cpp:21:\n> > esp3d/src/modules/devices/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/devices/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/devices/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/display.cpp:21:\n> > esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/display.cpp:21:\n> > esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/TFT_SPI_ST7789_135X240/display.cpp:21:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/TFT_SPI_ST7789_240X240/display.cpp:21:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/display.cpp:21:\n> > esp3d/src/modules/display/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/ethernet/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/ethernet/ethconfig.cpp:21:\n> > esp3d/src/modules/ethernet/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/ethernet/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/ethernet/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/esp_filesystem.cpp:20:\n> > esp3d/src/modules/filesystem/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/esp_globalFS.cpp:21:\n> > esp3d/src/modules/filesystem/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/esp_sd.cpp:21:\n> > esp3d/src/modules/filesystem/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/flash/fat_esp32_filesystem.cpp:21:\n> > esp3d/src/modules/filesystem/flash/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/flash/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/flash/littlefs_esp8266_filesystem.cpp:20:\n> > esp3d/src/modules/filesystem/flash/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/flash/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/flash/littlefs_esp32_filesystem.cpp:21:\n> > esp3d/src/modules/filesystem/flash/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/flash/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > ================================================================================================= [FAILED] Took 57.37 seconds =================================================================================================\n> > \n> > Environment    Status    Duration\n> > -------------  --------  ------------\n> > esp32dev       FAILED    00:00:57.370\n> > ============================================================================================ 1 failed, 0 succeeded in 00:00:57.370 ============================================================================================ \n> > ```",
+              "state": "open",
+              "created_at": "2025-04-03T08:57:50+00:00",
+              "updated_at": "2025-04-03T09:21:33+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1089",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 1088,
               "title": "[BUG] Polling command does not check response",
               "body": "**Describe the bug**\n\nI have Anet A8 printer with added ESP3D. Added is filament sensor. Marlin is updated to 2.0.4 with filament sensor support.  \n\nI set polling every 5 seconds with M105 command to display temperatures. The problem appears when printer is paused for filament change. After change and resuming print, there is message \"Click to resume ...\". I found this is due to buffer overflow caused by M105 command.\nhttps://3dprinting.stackexchange.com/questions/7217/what-triggers-marlins-click-to-resume\n\nSeems that ESP3D does not check command response and blindly send next commands. This produce buffer overflow in printer controller.\n\n**To Reproduce**\n\n1. Start printing\n2. Click pause printing or remove filament to start Change filament procedure\n3. Wait couple of minutes\n4. Resume print\n\n**Expected behavior**\n\nAfter resume print this message should not be seen and print should resume without additional operator input.\n\n**ESP3D Firmware:**\n\n- ESP3D FW version: 3.0.0.2b1\n- ESP3D-WebUI Version: 3.0.0-4b1.M2.1\n- Flash method: PlatformIO  \n- Any change done in FW:\nNone\n\n**Target Firmware:**\n\n- Name: Marlin\n- Version: 2.0.4\n\n**Board used (please complete the following information):**\n\n- MCU: ESP8266\n- Name: ESP-01\n- Flash size: 1M\n",
@@ -39,8 +65,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3,
-              "days_since_update": 3,
+              "age_days": 4,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -65,8 +91,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -94,11 +120,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 980,
-              "days_since_update": 7,
+              "age_days": 981,
+              "days_since_update": 8,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
@@ -122,8 +148,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 163,
-              "days_since_update": 128,
+              "age_days": 164,
+              "days_since_update": 129,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -151,8 +177,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1529,
-              "days_since_update": 156,
+              "age_days": 1530,
+              "days_since_update": 157,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -179,8 +205,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2454,
-              "days_since_update": 305,
+              "age_days": 2455,
+              "days_since_update": 306,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -207,8 +233,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1521,
-              "days_since_update": 393,
+              "age_days": 1522,
+              "days_since_update": 394,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -220,27 +246,27 @@
             }
           ],
           "issue_summary": {
-            "total": 7,
-            "open": 7,
+            "total": 8,
+            "open": 8,
             "closed": 0,
             "priorities": {
-              "normal": 7
+              "normal": 8
             },
             "ages": {
               "recent": 3,
-              "active": 0,
+              "active": 1,
               "stale": 4
             },
             "complexity": {
-              "medium": 7
+              "medium": 8
             },
             "size": {
-              "large": 3,
+              "large": 4,
               "small": 1,
               "medium": 3
             },
             "lifecycle": {
-              "new": 6,
+              "new": 7,
               "in_progress": 1
             }
           }
@@ -258,6 +284,32 @@
           "protected": false,
           "issues": [
             {
+              "number": 1089,
+              "title": "[Question] Compile ESP3d for MKS-TinyBee",
+              "body": "Hi everyone! Help me. please. Can't installl esp3d in MKS-TinyBee (https://github.com/makerbase-mks/MKS-TinyBee/tree/main).\nI Downloaded the sources: https://github.com/luc-github/ESP3D/archive/refs/heads/3.0.zip\nOpened the sources in Visual Studio Code. Config the:\n\n[configuration copy.zip](https://github.com/user-attachments/files/19583374/configuration.copy.zip)\n\n> In Visual Studio Code: Platformio/esp32dev/upload:\n> \n> > ```\n> > \n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP118.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP120.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP121.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP0.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP100.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP101.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP102.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP103.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP104.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP106.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP105.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP107.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP108.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP110.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP111.cpp:21:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP112.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP114.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP115.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP116.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP117.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP118.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP120.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP121.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP130.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP131.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP140.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP150.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP160.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP161.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP170.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP171.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP180.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP181.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP190.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP191.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP200.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP201.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP202.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP210.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP212.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP214.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP215.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP220.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP131.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP140.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP130.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP150.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP160.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP161.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP170.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP171.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP180.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP181.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP190.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP191.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP200.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP201.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP202.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP210.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP212.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP215.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       | \n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP214.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP220.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP250.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP290.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP300.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP301.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP400.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP401.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP402.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP410.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP420.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP444.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP450.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP500.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP510.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP550.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP555.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP600.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP610.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP620.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP700.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP701.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP250.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP290.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP300.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP301.cpp:21:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP400.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP710.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP715.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP720.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP401.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP402.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP410.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP420.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP444.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP730.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP450.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP500.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP510.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP550.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP555.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP600.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP610.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP620.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP700.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP701.cpp:21:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP740.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP750.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP780.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP790.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP800.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP900.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP901.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP902.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP910.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP710.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP720.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP715.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP930.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\commands\\ESP999.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_benchmark.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_commands.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP730.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP740.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_hal.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_log.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_message.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP750.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP780.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP790.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_settings.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\core\\esp3d_string.cpp.o\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP800.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP900.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP901.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP902.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP910.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP930.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP931.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP950.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/commands/ESP999.cpp:20:\n> > esp3d/src/core/commands/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/commands/../../include/esp3d_config.h:25:\n> > esp3d/src/core/commands/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d.cpp:29:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_benchmark.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../modules/authentication/../../core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/../modules/authentication/../../core/esp3d_message.h:30,\n> >                  from esp3d/src/core/../modules/authentication/authentication_service.h:27,\n> >                  from esp3d/src/core/esp3d_commands.h:25,\n> >                  from esp3d/src/core/esp3d_commands.cpp:21:\n> > esp3d/src/core/../modules/authentication/../../core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../modules/authentication/../../core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../modules/authentication/../../core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\authentication\\authentication_service.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\bluetooth\\BT_service.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\boot_delay\\boot_delay.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\buzzer\\buzzer.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_hal.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\camera\\camera.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_log.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_message.h:30,\n> >                  from esp3d/src/core/esp3d_message.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\devices\\devices_services.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\OLED_I2C_SSD1306_128X64\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\OLED_I2C_SSDSH1106_132X64\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\TFT_SPI_ST7789_135X240\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\TFT_SPI_ST7789_240X240\\display.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\display\\display.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_settings.cpp:21:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\ethernet\\ethconfig.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\esp_filesystem.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\esp_globalFS.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\esp_sd.cpp.o\n> > In file included from esp3d/src/core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/core/esp3d_string.cpp:24:\n> > esp3d/src/core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/core/../include/esp3d_config.h:25:\n> > esp3d/src/core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\flash\\fat_esp32_filesystem.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\flash\\littlefs_esp32_filesystem.cpp.o\n> > Compiling .pioenvs\\esp32dev\\src\\src\\modules\\filesystem\\flash\\littlefs_esp8266_filesystem.cpp.o\n> > In file included from esp3d/src/modules/authentication/../../core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/authentication/../../core/esp3d_message.h:30,\n> >                  from esp3d/src/modules/authentication/authentication_service.h:27,\n> >                  from esp3d/src/modules/authentication/authentication_service.cpp:21:\n> > esp3d/src/modules/authentication/../../core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/authentication/../../core/../include/esp3d_config.h:25:\n> > esp3d/src/modules/authentication/../../core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/bluetooth/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/bluetooth/BT_service.cpp:23:\n> > esp3d/src/modules/bluetooth/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/bluetooth/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/bluetooth/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/esp3d_message.h:30,\n> >                  from esp3d/src/modules/boot_delay/../../core/../modules/authentication/authentication_service.h:27,\n> >                  from esp3d/src/modules/boot_delay/../../core/esp3d_commands.h:25,\n> >                  from esp3d/src/modules/boot_delay/boot_delay.cpp:23:\n> > esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/esp3d_config.h:25:\n> > esp3d/src/modules/boot_delay/../../core/../modules/authentication/../../core/../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > esp3d/src/core/esp3d_settings.cpp: In static member function 'static const char* ESP3DSettings::GetFirmwareTargetShortName()':\n> > esp3d/src/core/esp3d_settings.cpp:329:39: error: expected primary-expression before ')' token\n> >   329 |   } else if (_FirmwareTarget == MARLIN) {\n> >       |                                       ^\n> > esp3d/src/core/esp3d_settings.cpp: In static member function 'static bool ESP3DSettings::isValidByteSetting(uint8_t, ESP3DSettingIndex)':\n> > esp3d/src/core/esp3d_settings.cpp:1055:48: error: expected primary-expression before '||' token\n> >  1055 |       if (value == REPETIER || value == MARLIN || value == UNKNOWN_FW ||\n> >       |                                                ^~\n> > *** [.pioenvs\\esp32dev\\src\\src\\core\\esp3d_settings.cpp.o] Error 1\n> > In file included from esp3d/src/modules/buzzer/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/buzzer/buzzer.cpp:21:\n> > esp3d/src/modules/buzzer/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/buzzer/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/buzzer/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/camera/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/camera/camera.cpp:21:\n> > esp3d/src/modules/camera/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/camera/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/camera/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/devices/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/devices/devices_services.cpp:21:\n> > esp3d/src/modules/devices/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/devices/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/devices/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/display.cpp:21:\n> > esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/OLED_I2C_SSD1306_128X64/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/display.cpp:21:\n> > esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/OLED_I2C_SSDSH1106_132X64/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/TFT_SPI_ST7789_135X240/display.cpp:21:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_135X240/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/TFT_SPI_ST7789_240X240/display.cpp:21:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/display/display.cpp:21:\n> > esp3d/src/modules/display/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/TFT_SPI_ST7789_240X240/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/display/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/display/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/ethernet/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/ethernet/ethconfig.cpp:21:\n> > esp3d/src/modules/ethernet/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/ethernet/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/ethernet/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/esp_filesystem.cpp:20:\n> > esp3d/src/modules/filesystem/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/esp_globalFS.cpp:21:\n> > esp3d/src/modules/filesystem/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/esp_sd.cpp:21:\n> > esp3d/src/modules/filesystem/../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/flash/fat_esp32_filesystem.cpp:21:\n> > esp3d/src/modules/filesystem/flash/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/flash/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/flash/littlefs_esp8266_filesystem.cpp:20:\n> > esp3d/src/modules/filesystem/flash/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/flash/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:29,\n> >                  from esp3d/src/modules/filesystem/flash/littlefs_esp32_filesystem.cpp:21:\n> > esp3d/src/modules/filesystem/flash/../../../include/../../configuration.h:111: warning: \"MARLIN\" redefined\n> >   111 | #define MARLIN\n> >       |\n> > In file included from esp3d/src/modules/filesystem/flash/../../../include/esp3d_config.h:25:\n> > esp3d/src/modules/filesystem/flash/../../../include/../include/esp3d_defines.h:31: note: this is the location of the previous definition\n> >    31 | #define MARLIN 20\n> >       |\n> > ================================================================================================= [FAILED] Took 57.37 seconds =================================================================================================\n> > \n> > Environment    Status    Duration\n> > -------------  --------  ------------\n> > esp32dev       FAILED    00:00:57.370\n> > ============================================================================================ 1 failed, 0 succeeded in 00:00:57.370 ============================================================================================ \n> > ```",
+              "state": "open",
+              "created_at": "2025-04-03T08:57:50+00:00",
+              "updated_at": "2025-04-03T09:21:33+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1089",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 1088,
               "title": "[BUG] Polling command does not check response",
               "body": "**Describe the bug**\n\nI have Anet A8 printer with added ESP3D. Added is filament sensor. Marlin is updated to 2.0.4 with filament sensor support.  \n\nI set polling every 5 seconds with M105 command to display temperatures. The problem appears when printer is paused for filament change. After change and resuming print, there is message \"Click to resume ...\". I found this is due to buffer overflow caused by M105 command.\nhttps://3dprinting.stackexchange.com/questions/7217/what-triggers-marlins-click-to-resume\n\nSeems that ESP3D does not check command response and blindly send next commands. This produce buffer overflow in printer controller.\n\n**To Reproduce**\n\n1. Start printing\n2. Click pause printing or remove filament to start Change filament procedure\n3. Wait couple of minutes\n4. Resume print\n\n**Expected behavior**\n\nAfter resume print this message should not be seen and print should resume without additional operator input.\n\n**ESP3D Firmware:**\n\n- ESP3D FW version: 3.0.0.2b1\n- ESP3D-WebUI Version: 3.0.0-4b1.M2.1\n- Flash method: PlatformIO  \n- Any change done in FW:\nNone\n\n**Target Firmware:**\n\n- Name: Marlin\n- Version: 2.0.4\n\n**Board used (please complete the following information):**\n\n- MCU: ESP8266\n- Name: ESP-01\n- Flash size: 1M\n",
@@ -275,8 +327,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3,
-              "days_since_update": 3,
+              "age_days": 4,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -301,8 +353,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -330,11 +382,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 980,
-              "days_since_update": 7,
+              "age_days": 981,
+              "days_since_update": 8,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
@@ -358,8 +410,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 163,
-              "days_since_update": 128,
+              "age_days": 164,
+              "days_since_update": 129,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -387,8 +439,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1529,
-              "days_since_update": 156,
+              "age_days": 1530,
+              "days_since_update": 157,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -415,8 +467,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2454,
-              "days_since_update": 305,
+              "age_days": 2455,
+              "days_since_update": 306,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -443,8 +495,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1521,
-              "days_since_update": 393,
+              "age_days": 1522,
+              "days_since_update": 394,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -456,27 +508,27 @@
             }
           ],
           "issue_summary": {
-            "total": 7,
-            "open": 7,
+            "total": 8,
+            "open": 8,
             "closed": 0,
             "priorities": {
-              "normal": 7
+              "normal": 8
             },
             "ages": {
               "recent": 3,
-              "active": 0,
+              "active": 1,
               "stale": 4
             },
             "complexity": {
-              "medium": 7
+              "medium": 8
             },
             "size": {
-              "large": 3,
+              "large": 4,
               "small": 1,
               "medium": 3
             },
             "lifecycle": {
-              "new": 6,
+              "new": 7,
               "in_progress": 1
             }
           }
@@ -1295,7 +1347,7 @@
         "size": 134947,
         "stars": 1818,
         "forks": 474,
-        "open_issues": 7,
+        "open_issues": 8,
         "watchers": 1818,
         "default_branch": "2.1.x",
         "license": "GNU General Public License v3.0"
@@ -1328,20 +1380,55 @@
             "date": "2025-02-23T11:30:44+00:00"
           },
           "protected": false,
-          "issues": [],
+          "issues": [
+            {
+              "number": 88,
+              "title": "[Question]Where platformio.ini file?",
+              "body": "Hi everyone! Where i can see platformio.ini file for compile it?",
+              "state": "open",
+              "created_at": "2025-04-03T09:45:32+00:00",
+              "updated_at": "2025-04-03T12:19:15+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3DLib/issues/88",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            }
+          ],
           "issue_summary": {
-            "total": 0,
-            "open": 0,
+            "total": 1,
+            "open": 1,
             "closed": 0,
-            "priorities": {},
+            "priorities": {
+              "normal": 1
+            },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 0
             },
-            "complexity": {},
-            "size": {},
-            "lifecycle": {}
+            "complexity": {
+              "medium": 1
+            },
+            "size": {
+              "small": 1
+            },
+            "lifecycle": {
+              "new": 1
+            }
           }
         },
         {
@@ -1356,6 +1443,32 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 88,
+              "title": "[Question]Where platformio.ini file?",
+              "body": "Hi everyone! Where i can see platformio.ini file for compile it?",
+              "state": "open",
+              "created_at": "2025-04-03T09:45:32+00:00",
+              "updated_at": "2025-04-03T12:19:15+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3DLib/issues/88",
+              "is_pr": false,
+              "labels": [
+                "question"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "small",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 87,
               "title": "[Compatibility issue]SDFat library  in ESP3D 3.0 conflict with latest Marlin SD implementation",
@@ -1375,8 +1488,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 11,
-              "days_since_update": 11,
+              "age_days": 12,
+              "days_since_update": 12,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -1403,8 +1516,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1156,
-              "days_since_update": 102,
+              "age_days": 1157,
+              "days_since_update": 103,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1416,26 +1529,27 @@
             }
           ],
           "issue_summary": {
-            "total": 2,
-            "open": 2,
+            "total": 3,
+            "open": 3,
             "closed": 0,
             "priorities": {
-              "normal": 2
+              "normal": 3
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 1,
               "stale": 1
             },
             "complexity": {
-              "medium": 1,
+              "medium": 2,
               "low": 1
             },
             "size": {
+              "small": 1,
               "medium": 2
             },
             "lifecycle": {
-              "new": 2
+              "new": 3
             }
           }
         }
@@ -2223,7 +2337,7 @@
         "size": 11561,
         "stars": 104,
         "forks": 32,
-        "open_issues": 2,
+        "open_issues": 3,
         "watchers": 104,
         "default_branch": "master",
         "license": "GNU General Public License v3.0"
@@ -2302,8 +2416,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3,
-              "days_since_update": 3,
+              "age_days": 4,
+              "days_since_update": 4,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -2331,8 +2445,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 48,
-              "days_since_update": 47,
+              "age_days": 49,
+              "days_since_update": 48,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2360,8 +2474,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1054,
-              "days_since_update": 128,
+              "age_days": 1055,
+              "days_since_update": 129,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2390,8 +2504,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1635,
-              "days_since_update": 171,
+              "age_days": 1636,
+              "days_since_update": 172,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2419,8 +2533,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1715,
-              "days_since_update": 171,
+              "age_days": 1716,
+              "days_since_update": 172,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2451,8 +2565,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 304,
-              "days_since_update": 171,
+              "age_days": 305,
+              "days_since_update": 172,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2479,8 +2593,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 927,
-              "days_since_update": 171,
+              "age_days": 928,
+              "days_since_update": 172,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2507,8 +2621,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1915,
-              "days_since_update": 961,
+              "age_days": 1916,
+              "days_since_update": 962,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2537,8 +2651,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1058,
-              "days_since_update": 1031,
+              "age_days": 1059,
+              "days_since_update": 1032,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3424,8 +3538,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 439,
-              "days_since_update": 109,
+              "age_days": 440,
+              "days_since_update": 110,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3451,8 +3565,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 160,
-              "days_since_update": 137,
+              "age_days": 161,
+              "days_since_update": 138,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3477,8 +3591,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 171,
-              "days_since_update": 171,
+              "age_days": 172,
+              "days_since_update": 172,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3504,8 +3618,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 441,
-              "days_since_update": 216,
+              "age_days": 442,
+              "days_since_update": 217,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3532,8 +3646,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 231,
-              "days_since_update": 231,
+              "age_days": 232,
+              "days_since_update": 232,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3558,8 +3672,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 346,
-              "days_since_update": 233,
+              "age_days": 347,
+              "days_since_update": 234,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3585,8 +3699,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 451,
-              "days_since_update": 451,
+              "age_days": 452,
+              "days_since_update": 452,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3611,8 +3725,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 772,
-              "days_since_update": 772,
+              "age_days": 773,
+              "days_since_update": 773,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3640,8 +3754,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 915,
-              "days_since_update": 915,
+              "age_days": 916,
+              "days_since_update": 916,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7289,7 +7403,7 @@
         ]
       },
       "statistics": {
-        "size": 250899,
+        "size": 250753,
         "stars": 7,
         "forks": 5,
         "open_issues": 0,
@@ -7339,8 +7453,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 23,
-              "days_since_update": 23,
+              "age_days": 24,
+              "days_since_update": 24,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -7363,8 +7477,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 685,
-              "days_since_update": 685,
+              "age_days": 686,
+              "days_since_update": 686,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7391,8 +7505,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1019,
-              "days_since_update": 958,
+              "age_days": 1020,
+              "days_since_update": 959,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8240,8 +8354,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 35,
-              "days_since_update": 35,
+              "age_days": 36,
+              "days_since_update": 36,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8266,8 +8380,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 764,
-              "days_since_update": 764,
+              "age_days": 765,
+              "days_since_update": 765,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8292,8 +8406,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 764,
-              "days_since_update": 764,
+              "age_days": 765,
+              "days_since_update": 765,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9170,8 +9284,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 687,
-              "days_since_update": 687,
+              "age_days": 688,
+              "days_since_update": 688,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9197,8 +9311,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1883,
-              "days_since_update": 1867,
+              "age_days": 1884,
+              "days_since_update": 1868,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10047,8 +10161,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 687,
-              "days_since_update": 687,
+              "age_days": 688,
+              "days_since_update": 688,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12441,13 +12555,13 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4825,
-      "reset": "2025-04-03T01:43:33+00:00"
+      "remaining": 4815,
+      "reset": "2025-04-04T01:15:01+00:00"
     },
     "search": {
       "limit": 30,
       "remaining": 30,
-      "reset": "2025-04-03T01:04:13+00:00"
+      "reset": "2025-04-04T01:04:11+00:00"
     }
   },
   "stats": {
@@ -12461,7 +12575,7 @@
         "C": 3,
         "HTML": 1
       },
-      "total_size": 730399,
+      "total_size": 730253,
       "total_stars": 2867,
       "total_forks": 911,
       "branches": {
@@ -12471,19 +12585,19 @@
       }
     },
     "issues": {
-      "total_count": 43,
-      "open_count": 43,
+      "total_count": 47,
+      "open_count": 47,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 782.2090353142571,
+      "avg_age_days": 716.6085701452317,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 43
+        "normal": 47
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 5,
-        "last_month": 9
+        "last_day": 4,
+        "last_week": 9,
+        "last_month": 13
       }
     },
     "activity": {
@@ -12687,7 +12801,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-03",
-          "count": 7
+          "count": 11
         },
         {
           "date": "2025-02",
@@ -13005,17 +13119,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
@@ -13025,17 +13139,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 2.0
         }
       },
       {
@@ -13227,17 +13341,37 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 4,
+          "issues": 6,
           "comments": 0,
           "period_days": 7,
-          "total": 8
+          "total": 12
         },
         "details": {
           "commits": 0,
-          "issues": 4,
+          "issues": 6,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.5714285714285714
+          "issues_per_day": 0.8571428571428571
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 7,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.2857142857142857
         }
       },
       {
@@ -13258,26 +13392,6 @@
           "comments": 0,
           "commits_per_day": 0.0,
           "issues_per_day": 0.14285714285714285
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
         }
       },
       {
@@ -13449,17 +13563,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 0,
-          "issues": 6,
+          "issues": 8,
           "comments": 0,
           "period_days": 30,
-          "total": 12
+          "total": 16
         },
         "details": {
           "commits": 0,
-          "issues": 6,
+          "issues": 8,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.2
+          "issues_per_day": 0.26666666666666666
         }
       },
       {
@@ -13469,17 +13583,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 3,
           "comments": 0,
           "period_days": 30,
-          "total": 2
+          "total": 6
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.03333333333333333
+          "issues_per_day": 0.1
         }
       },
       {
@@ -13711,17 +13825,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
           "commits": 4,
-          "issues": 12,
+          "issues": 14,
           "comments": 0,
           "period_days": 365,
-          "total": 36
+          "total": 40
         },
         "details": {
           "commits": 4,
-          "issues": 12,
+          "issues": 14,
           "comments": 0,
           "commits_per_day": 0.010958904109589041,
-          "issues_per_day": 0.03287671232876712
+          "issues_per_day": 0.038356164383561646
         }
       },
       {
@@ -13791,17 +13905,17 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "score": {
           "commits": 3,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "period_days": 365,
-          "total": 13
+          "total": 17
         },
         "details": {
           "commits": 3,
-          "issues": 2,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.00821917808219178,
-          "issues_per_day": 0.005479452054794521
+          "issues_per_day": 0.010958904109589041
         }
       },
       {
