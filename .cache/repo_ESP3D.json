@@ -1,5 +1,5 @@
 {
-  "timestamp": 1743728479.5227065,
+  "timestamp": 1743814830.131319,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-03-28T21:12:49+00:00",
+    "updated_at": "2025-04-05T00:55:19+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -21,6 +21,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1090,
+            "title": "[Question] FYSETC SD-WIFI-PRO compile with SD support",
+            "body": "Hello, im trying to flash a FYSETC SD-WIFI-PRO with ESP3D (v3) with the configuration.h/ ini provided [here](https://esp3d.io/ESP3D/Version_3.X/hardware/esp_boards/esp32-pico/sd-wifi-pro/); \n\nWhile compiling i ran into an issue with some usb related library, so after some tries i deleted the folder /libraries/esp32-usb-serial-1.0.1 and suddenly flashing worked!\n\nThis was the error;\n```Compiling .pioenvs\\esp32_4MB_wifi\\lib144\\esp32-usb-serial-1.0.1\\usb_host_vcp.cpp.o\nIn file included from libraries/esp32-usb-serial-1.0.1/src/esp32_usb_serial.h:22,\n                 from libraries/esp32-usb-serial-1.0.1/src/esp32_usb_serial.cpp:24:\nlibraries/esp32-usb-serial-1.0.1/src/usb/cdc_acm_host.h:10:10: fatal error: usb/usb_host.h: No such file or directory\n   10 | #include \"usb/usb_host.h\"\n      |          ^~~~~~~~~~~~~~~~\n```\nNow the only problem that remains; SD card access does not seem to function;\n\n![Image](https://github.com/user-attachments/assets/71183ed0-4e76-47dd-9f4e-1f97d273c690)\n\nIs that because i removed that library, or is there something else that needs to be changed?",
+            "state": "open",
+            "created_at": "2025-04-04T09:06:05+00:00",
+            "updated_at": "2025-04-04T11:11:14+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1090",
+            "is_pr": false,
+            "labels": [
+              "question"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 1089,
             "title": "[Question] Compile ESP3d for MKS-TinyBee",
@@ -178,6 +194,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1090,
+            "title": "[Question] FYSETC SD-WIFI-PRO compile with SD support",
+            "body": "Hello, im trying to flash a FYSETC SD-WIFI-PRO with ESP3D (v3) with the configuration.h/ ini provided [here](https://esp3d.io/ESP3D/Version_3.X/hardware/esp_boards/esp32-pico/sd-wifi-pro/); \n\nWhile compiling i ran into an issue with some usb related library, so after some tries i deleted the folder /libraries/esp32-usb-serial-1.0.1 and suddenly flashing worked!\n\nThis was the error;\n```Compiling .pioenvs\\esp32_4MB_wifi\\lib144\\esp32-usb-serial-1.0.1\\usb_host_vcp.cpp.o\nIn file included from libraries/esp32-usb-serial-1.0.1/src/esp32_usb_serial.h:22,\n                 from libraries/esp32-usb-serial-1.0.1/src/esp32_usb_serial.cpp:24:\nlibraries/esp32-usb-serial-1.0.1/src/usb/cdc_acm_host.h:10:10: fatal error: usb/usb_host.h: No such file or directory\n   10 | #include \"usb/usb_host.h\"\n      |          ^~~~~~~~~~~~~~~~\n```\nNow the only problem that remains; SD card access does not seem to function;\n\n![Image](https://github.com/user-attachments/assets/71183ed0-4e76-47dd-9f4e-1f97d273c690)\n\nIs that because i removed that library, or is there something else that needs to be changed?",
+            "state": "open",
+            "created_at": "2025-04-04T09:06:05+00:00",
+            "updated_at": "2025-04-04T11:11:14+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1090",
+            "is_pr": false,
+            "labels": [
+              "question"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 1089,
             "title": "[Question] Compile ESP3d for MKS-TinyBee",
@@ -1135,10 +1167,10 @@
     },
     "statistics": {
       "size": 134947,
-      "stars": 1818,
+      "stars": 1820,
       "forks": 474,
-      "open_issues": 8,
-      "watchers": 1818,
+      "open_issues": 9,
+      "watchers": 1820,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
     }

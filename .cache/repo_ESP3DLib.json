@@ -1,5 +1,5 @@
 {
-  "timestamp": 1743728488.9206362,
+  "timestamp": 1743814838.2439065,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3DLib",
     "language": "C++",
     "created_at": "2019-12-16T13:18:03+00:00",
-    "updated_at": "2025-03-05T15:03:51+00:00",
+    "updated_at": "2025-04-04T13:27:56+00:00",
     "branches": [
       {
         "name": "master",
@@ -21,6 +21,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 89,
+            "title": "[Question]Do Telnet have answer?",
+            "body": "Does Telnet be able to return the response from G-Code?\nI send the teams to the ESP3DLIB Teln, they reach perfectly, but do not return anything. Can Telnet be taught to return the commands? I did not find WebSocket in ESP3DLIB V3.0\nI send the M114 command to Telnet and expect an answer: X: 0.00 Y: 0.00 Z: 170.00 E: 0.00 Count X: 0 Y: 0 Z: 15111016 in Telnet (I Can See in Terminal Esp3web)\n\n![Image](https://github.com/user-attachments/assets/0ba530c3-6c94-4f6e-8511-c320f183d9a0)\n\n![Image](https://github.com/user-attachments/assets/812be276-60c2-4358-bb9d-e0102f533f65)",
+            "state": "open",
+            "created_at": "2025-04-04T10:48:30+00:00",
+            "updated_at": "2025-04-04T11:08:21+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/issues/89",
+            "is_pr": false,
+            "labels": [
+              "question"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 88,
             "title": "[Question]Where platformio.ini file?",
@@ -51,6 +67,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 89,
+            "title": "[Question]Do Telnet have answer?",
+            "body": "Does Telnet be able to return the response from G-Code?\nI send the teams to the ESP3DLIB Teln, they reach perfectly, but do not return anything. Can Telnet be taught to return the commands? I did not find WebSocket in ESP3DLIB V3.0\nI send the M114 command to Telnet and expect an answer: X: 0.00 Y: 0.00 Z: 170.00 E: 0.00 Count X: 0 Y: 0 Z: 15111016 in Telnet (I Can See in Terminal Esp3web)\n\n![Image](https://github.com/user-attachments/assets/0ba530c3-6c94-4f6e-8511-c320f183d9a0)\n\n![Image](https://github.com/user-attachments/assets/812be276-60c2-4358-bb9d-e0102f533f65)",
+            "state": "open",
+            "created_at": "2025-04-04T10:48:30+00:00",
+            "updated_at": "2025-04-04T11:08:21+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/issues/89",
+            "is_pr": false,
+            "labels": [
+              "question"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 88,
             "title": "[Question]Where platformio.ini file?",
@@ -889,10 +921,10 @@
     },
     "statistics": {
       "size": 11561,
-      "stars": 104,
+      "stars": 105,
       "forks": 32,
-      "open_issues": 3,
-      "watchers": 104,
+      "open_issues": 4,
+      "watchers": 105,
       "default_branch": "master",
       "license": "GNU General Public License v3.0"
     }
