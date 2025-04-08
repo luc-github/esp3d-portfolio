@@ -43,8 +43,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 51 |
 | Closed Issues | 0 |
-| Average Age | 663.4 days |
+| Average Age | 664.4 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -402,7 +402,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-07</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#88: <a href="https://github.com/luc-github/ESP3DLib/issues/88">[Question]Where platformio.ini file?</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
@@ -418,7 +418,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-07</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#88: <a href="https://github.com/luc-github/ESP3DLib/issues/88">[Question]Where platformio.ini file?</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#87: <a href="https://github.com/luc-github/ESP3DLib/issues/87">[Compatibility issue]SDFat library  in ESP3D 3.0 conflict with latest Marlin SD implementation</a></td><td><code>2025-03-22</code></td><td><code>2025-03-22</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#39: <a href="https://github.com/luc-github/ESP3DLib/issues/39">[FEATURE REQUEST]ESP3DLib 3.0</a></td><td><code>2022-02-01</code></td><td><code>2024-12-21</code></td><td style="color: #000000">normal</td></tr>
@@ -656,8 +656,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 master</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 master</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-07</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#89: <a href="https://github.com/luc-github/ESP3DLib/issues/89">[Question]Do Telnet have answer?</a></td><td><code>2025-04-04</code></td><td><code>2025-04-07</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 master</td><td>#88: <a href="https://github.com/luc-github/ESP3DLib/issues/88">[Question]Where platformio.ini file?</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#88: <a href="https://github.com/luc-github/ESP3DLib/issues/88">[Question]Where platformio.ini file?</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#87: <a href="https://github.com/luc-github/ESP3DLib/issues/87">[Compatibility issue]SDFat library  in ESP3D 3.0 conflict with latest Marlin SD implementation</a></td><td><code>2025-03-22</code></td><td><code>2025-03-22</code></td><td style="color: #000000">normal</td></tr>
@@ -996,7 +996,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-04-07 01:05:34 UTC*
+*🔄 Last updated: 2025-04-08 01:04:39 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

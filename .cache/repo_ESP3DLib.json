@@ -1,5 +1,5 @@
 {
-  "timestamp": 1743987854.120202,
+  "timestamp": 1744074143.5867546,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -27,7 +27,7 @@
             "body": "Does Telnet be able to return the response from G-Code?\nI send the teams to the ESP3DLIB Teln, they reach perfectly, but do not return anything. Can Telnet be taught to return the commands? I did not find WebSocket in ESP3DLIB V3.0\nI send the M114 command to Telnet and expect an answer: X: 0.00 Y: 0.00 Z: 170.00 E: 0.00 Count X: 0 Y: 0 Z: 15111016 in Telnet (I Can See in Terminal Esp3web)\n\n![Image](https://github.com/user-attachments/assets/0ba530c3-6c94-4f6e-8511-c320f183d9a0)\n\n![Image](https://github.com/user-attachments/assets/812be276-60c2-4358-bb9d-e0102f533f65)",
             "state": "open",
             "created_at": "2025-04-04T10:48:30+00:00",
-            "updated_at": "2025-04-04T11:08:21+00:00",
+            "updated_at": "2025-04-07T05:08:40+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3DLib/issues/89",
             "is_pr": false,
@@ -73,7 +73,7 @@
             "body": "Does Telnet be able to return the response from G-Code?\nI send the teams to the ESP3DLIB Teln, they reach perfectly, but do not return anything. Can Telnet be taught to return the commands? I did not find WebSocket in ESP3DLIB V3.0\nI send the M114 command to Telnet and expect an answer: X: 0.00 Y: 0.00 Z: 170.00 E: 0.00 Count X: 0 Y: 0 Z: 15111016 in Telnet (I Can See in Terminal Esp3web)\n\n![Image](https://github.com/user-attachments/assets/0ba530c3-6c94-4f6e-8511-c320f183d9a0)\n\n![Image](https://github.com/user-attachments/assets/812be276-60c2-4358-bb9d-e0102f533f65)",
             "state": "open",
             "created_at": "2025-04-04T10:48:30+00:00",
-            "updated_at": "2025-04-04T11:08:21+00:00",
+            "updated_at": "2025-04-07T05:08:40+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3DLib/issues/89",
             "is_pr": false,
