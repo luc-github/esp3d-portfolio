@@ -63,8 +63,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 0.6 |
-| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -137,7 +137,7 @@ Repository activity rankings based on activity over different time periods.
 | Main Projects | 7 |
 | Dependencies | 4 |
 | Total Stars | 2877 |
-| Total Forks | 914 |
+| Total Forks | 915 |
 
 ### Issue Statistics
 
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 51 |
 | Closed Issues | 0 |
-| Average Age | 670.4 days |
+| Average Age | 671.4 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -201,7 +201,7 @@ Author: Luc
 <summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-04-13 (#6e43923)
+Last commit: 2025-04-14 (#1a0928e)
 Author: Luc
 ```
 
@@ -538,7 +538,7 @@ Author: Luc
 **Type**: Dependency<br>
 **Description**: Add Lua engine to your firmware using ESP boards<br>
 **Language**: C<br>
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 </td></tr></table>
 
@@ -621,7 +621,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -633,11 +633,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -666,7 +666,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -678,11 +678,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -714,7 +714,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -726,11 +726,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -762,7 +762,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -774,11 +774,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -804,7 +804,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -816,11 +816,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -846,7 +846,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -858,11 +858,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -887,7 +887,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -899,11 +899,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -927,7 +927,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">16.0%</span>
+**Health Score**: <span style="color: #ff0000">9.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -939,11 +939,11 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 40.0% | 🟡 Good |
+| Maintenance | 20.0% | 🔴 Needs Attention |
 **Maintenance Suggestions:**
-- Improve test coverage
-- Regular dependency updates
-- Set up branch protection
+- Increase commit frequency
+- Address stale issues
+- Set up automated testing
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
@@ -969,7 +969,7 @@ Author: Luc
 | Activity | Count |
 |----------|--------|
 | Commits | 107 |
-| New Issues | 2 |
+| New Issues | 0 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
 
@@ -996,7 +996,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-04-14 01:06:54 UTC*
+*🔄 Last updated: 2025-04-15 01:05:47 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

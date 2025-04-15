@@ -1,5 +1,5 @@
 {
-  "timestamp": 1744592697.765088,
+  "timestamp": 1744679033.5496726,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -187,10 +187,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "6e43923",
-          "message": "Fix WDT error message when doing formating\n\nBum version",
+          "sha": "1a0928e",
+          "message": "Fix serial2socket module lock after a while",
           "author": "Luc",
-          "date": "2025-04-13T06:40:44+00:00"
+          "date": "2025-04-14T08:59:01+00:00"
         },
         "protected": false,
         "issues": [
@@ -1166,7 +1166,7 @@
       ]
     },
     "statistics": {
-      "size": 134952,
+      "size": 134955,
       "stars": 1825,
       "forks": 475,
       "open_issues": 9,
