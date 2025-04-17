@@ -1,5 +1,5 @@
 {
-  "timestamp": 1744765465.5527275,
+  "timestamp": 1744851822.3316908,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-TFT",
     "language": "C",
     "created_at": "2022-08-24T05:55:10+00:00",
-    "updated_at": "2025-04-02T07:53:52+00:00",
+    "updated_at": "2025-04-16T11:26:59+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "bbaad69",
-          "message": "docs: add makerbase-mks as a contributor for financial, and platform (#80)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-          "author": "allcontributors[bot]",
-          "date": "2025-02-23T11:37:12+00:00"
+          "sha": "3f2d9d0",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-04-16T11:26:50+00:00"
         },
         "protected": false,
         "issues": [
@@ -181,7 +181,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 835,
+        "contributions": 836,
         "url": "https://github.com/luc-github"
       },
       {
@@ -207,6 +207,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "3f2d9d0",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-04-16T11:26:50+00:00"
+        },
         {
           "sha": "bbaad69",
           "message": "docs: add makerbase-mks as a contributor for financial, and platform (#80)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
@@ -260,12 +266,6 @@
           "message": "Display IDF version during compilation",
           "author": "Luc",
           "date": "2024-07-24T01:23:34+00:00"
-        },
-        {
-          "sha": "0ef520f",
-          "message": "Refactorization of make files to make them more readable (comment/ colors / status)\n\nAdd development define to disable telnet welcome message if necessary\nbump version",
-          "author": "Luc",
-          "date": "2024-07-09T03:07:15+00:00"
         }
       ],
       "commit_activity": [
@@ -934,12 +934,12 @@
         },
         {
           "week": "2025-04-13T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
-            0,
+            1,
             0,
             0,
             0
@@ -948,7 +948,7 @@
       ]
     },
     "statistics": {
-      "size": 100364,
+      "size": 100369,
       "stars": 44,
       "forks": 10,
       "open_issues": 9,
