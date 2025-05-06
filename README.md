@@ -5,7 +5,7 @@
 ![Repositories](https://img.shields.io/badge/Repositories-11-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-7-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-4-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-51-yellow)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-45-yellow)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -43,7 +43,7 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
 | 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -63,7 +63,7 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 0.6 |
 | 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -83,8 +83,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (7) | 1 | 2 | 0.2 |
-| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
+| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (7) | 1 | 2 | 0.2 |
+| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (7) | 1 | 2 | 0.2 |
 | 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -105,9 +105,9 @@ Repository activity rankings based on activity over different time periods.
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (44) | 10 | 7 | 0.1 |
 | 🥈 2 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜ (42) | 10 | 6 | 0.1 |
-| 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜ (41) | 3 | 16 | 0.1 |
-| ▪️ 4 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (32) | 10 | 1 | 0.1 |
-| ▪️ 5 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (32) | 10 | 1 | 0.1 |
+| 🥉 3 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (32) | 10 | 1 | 0.1 |
+| ▪️ 4 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (32) | 10 | 1 | 0.1 |
+| ▪️ 5 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (29) | 3 | 10 | 0.1 |
 | ▪️ 6 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (24) | 4 | 6 | 0.1 |
 | ▪️ 7 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (21) | 7 | 0 | 0.1 |
 | ▪️ 8 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 0.0 |
@@ -136,16 +136,16 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2897 |
+| Total Stars | 2898 |
 | Total Forks | 921 |
 
 ### Issue Statistics
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 51 |
+| Open Issues | 45 |
 | Closed Issues | 0 |
-| Average Age | 691.4 days |
+| Average Age | 778.5 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -184,10 +184,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1090: <a href="https://github.com/luc-github/ESP3D/issues/1090">[Question] FYSETC SD-WIFI-PRO compile with SD support</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1089: <a href="https://github.com/luc-github/ESP3D/issues/1089">[Question] Compile ESP3d for MKS-TinyBee</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1088: <a href="https://github.com/luc-github/ESP3D/issues/1088">[BUG] Polling command does not check response</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1087: <a href="https://github.com/luc-github/ESP3D/issues/1087">[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4</a></td><td><code>2025-03-28</code></td><td><code>2025-03-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -207,10 +204,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1090: <a href="https://github.com/luc-github/ESP3D/issues/1090">[Question] FYSETC SD-WIFI-PRO compile with SD support</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1089: <a href="https://github.com/luc-github/ESP3D/issues/1089">[Question] Compile ESP3d for MKS-TinyBee</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1088: <a href="https://github.com/luc-github/ESP3D/issues/1088">[BUG] Polling command does not check response</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#1087: <a href="https://github.com/luc-github/ESP3D/issues/1087">[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4</a></td><td><code>2025-03-28</code></td><td><code>2025-03-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -355,7 +349,7 @@ Author: Luc
 **Type**: Main<br>
 **Description**: Documentation of ESP3D Ecosystem<br>
 **Language**: HTML<br>
-**Health Score**: <span style="color: #ff0000">31.1%</span>
+**Health Score**: <span style="color: #ff0000">24.1%</span>
 
 </td></tr></table>
 
@@ -599,14 +593,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1090: <a href="https://github.com/luc-github/ESP3D/issues/1090">[Question] FYSETC SD-WIFI-PRO compile with SD support</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1090: <a href="https://github.com/luc-github/ESP3D/issues/1090">[Question] FYSETC SD-WIFI-PRO compile with SD support</a></td><td><code>2025-04-04</code></td><td><code>2025-04-04</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1089: <a href="https://github.com/luc-github/ESP3D/issues/1089">[Question] Compile ESP3d for MKS-TinyBee</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1089: <a href="https://github.com/luc-github/ESP3D/issues/1089">[Question] Compile ESP3d for MKS-TinyBee</a></td><td><code>2025-04-03</code></td><td><code>2025-04-03</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1088: <a href="https://github.com/luc-github/ESP3D/issues/1088">[BUG] Polling command does not check response</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1088: <a href="https://github.com/luc-github/ESP3D/issues/1088">[BUG] Polling command does not check response</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1087: <a href="https://github.com/luc-github/ESP3D/issues/1087">[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4</a></td><td><code>2025-03-28</code></td><td><code>2025-03-28</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1087: <a href="https://github.com/luc-github/ESP3D/issues/1087">[Question]WiFi is not starting when ESP01 inserted onto Marlin v2 SKR1.4</a></td><td><code>2025-03-28</code></td><td><code>2025-03-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
@@ -969,7 +957,7 @@ Author: Luc
 | Activity | Count |
 |----------|--------|
 | Commits | 107 |
-| New Issues | 0 |
+| New Issues | 2 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
 
@@ -996,7 +984,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-05-05 01:09:09 UTC*
+*🔄 Last updated: 2025-05-06 01:06:12 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
