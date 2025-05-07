@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2898 |
+| Total Stars | 2900 |
 | Total Forks | 921 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 45 |
 | Closed Issues | 0 |
-| Average Age | 778.5 days |
+| Average Age | 779.5 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -184,7 +184,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -204,7 +204,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -593,8 +593,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 2.1.x</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-06</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 3.0</td><td>#1092: <a href="https://github.com/luc-github/ESP3D/issues/1092">[Question]use of readData() on lua interpreter</a></td><td><code>2025-05-05</code></td><td><code>2025-05-06</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1.x</td><td>#1058: <a href="https://github.com/luc-github/ESP3D/issues/1058">[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172×320, Dual-Core Processor, With RGB LED</a></td><td><code>2024-10-21</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
@@ -984,7 +984,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-05-06 01:06:12 UTC*
+*🔄 Last updated: 2025-05-07 01:07:00 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
