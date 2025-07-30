@@ -1,5 +1,5 @@
 {
-  "timestamp": 1753752059.1160955,
+  "timestamp": 1753838049.7321959,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-07-27T21:41:33+00:00",
+    "updated_at": "2025-07-29T01:33:27+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -21,22 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1092,
-            "title": "[Question]use of readData() on lua interpreter",
-            "body": "local pin = readData([ESP201] P=4)\nif pin == 1 then\n    print(\"[ESP201] P=4 V=0 \")\nelse\n    print(\"[ESP201] P=4 V=1 \")\nend\n\nI'm writing a couple of scripts like this one (just change state of flash on esp32cam). I know this can be just a digitalRead, but its about using readData() , this doesnt work, I missed something?\ncan readData used to read serial, like M27 data?\n\nany help please to clarify it",
-            "state": "open",
-            "created_at": "2025-05-05T05:26:08+00:00",
-            "updated_at": "2025-06-29T22:55:07+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1092",
-            "is_pr": false,
-            "labels": [
-              "question"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 1058,
             "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
@@ -143,22 +127,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1092,
-            "title": "[Question]use of readData() on lua interpreter",
-            "body": "local pin = readData([ESP201] P=4)\nif pin == 1 then\n    print(\"[ESP201] P=4 V=0 \")\nelse\n    print(\"[ESP201] P=4 V=1 \")\nend\n\nI'm writing a couple of scripts like this one (just change state of flash on esp32cam). I know this can be just a digitalRead, but its about using readData() , this doesnt work, I missed something?\ncan readData used to read serial, like M27 data?\n\nany help please to clarify it",
-            "state": "open",
-            "created_at": "2025-05-05T05:26:08+00:00",
-            "updated_at": "2025-06-29T22:55:07+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1092",
-            "is_pr": false,
-            "labels": [
-              "question"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 1058,
             "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
@@ -1065,10 +1033,10 @@
     },
     "statistics": {
       "size": 134970,
-      "stars": 1859,
+      "stars": 1860,
       "forks": 479,
-      "open_issues": 6,
-      "watchers": 1859,
+      "open_issues": 5,
+      "watchers": 1860,
       "default_branch": "2.1.x",
       "license": "GNU General Public License v3.0"
     }
