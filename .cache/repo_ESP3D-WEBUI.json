@@ -1,5 +1,5 @@
 {
-  "timestamp": 1756602430.8229854,
+  "timestamp": 1756689213.554108,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -20,7 +20,24 @@
           "date": "2025-04-16T11:25:33+00:00"
         },
         "protected": false,
-        "issues": []
+        "issues": [
+          {
+            "number": 414,
+            "title": "[FEATURE REQUEST]Add filament runout sensor status to WEB UI",
+            "body": "It will be excellent if there is possibility to monitor filament sensor status in Marlin messages and display it in WEB UI\n\nFor example if filament is OK, display green sign, when runs out, display red sign and some message.",
+            "state": "open",
+            "created_at": "2025-08-31T16:17:27+00:00",
+            "updated_at": "2025-09-01T01:12:02+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/414",
+            "is_pr": false,
+            "labels": [
+              "Feature request"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
       },
       {
         "name": "3.0",
@@ -34,6 +51,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 414,
+            "title": "[FEATURE REQUEST]Add filament runout sensor status to WEB UI",
+            "body": "It will be excellent if there is possibility to monitor filament sensor status in Marlin messages and display it in WEB UI\n\nFor example if filament is OK, display green sign, when runs out, display red sign and some message.",
+            "state": "open",
+            "created_at": "2025-08-31T16:17:27+00:00",
+            "updated_at": "2025-09-01T01:12:02+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/414",
+            "is_pr": false,
+            "labels": [
+              "Feature request"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 411,
             "title": "[FEATURE REQUEST] Flexible panels customizations to optimize empty space",
@@ -1008,8 +1041,8 @@
     "statistics": {
       "size": 116841,
       "stars": 828,
-      "forks": 326,
-      "open_issues": 9,
+      "forks": 327,
+      "open_issues": 10,
       "watchers": 828,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"
