@@ -1,5 +1,5 @@
 {
-  "timestamp": 1757120462.8493571,
+  "timestamp": 1757207166.0844445,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-08-24T13:43:34+00:00",
+    "updated_at": "2025-09-06T06:16:30+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -360,19 +360,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2024-09-08T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2024-09-15T00:00:00+00:00",
           "total": 0,
@@ -1035,15 +1022,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2025-09-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 116841,
-      "stars": 828,
+      "stars": 829,
       "forks": 328,
       "open_issues": 10,
-      "watchers": 828,
+      "watchers": 829,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"
     }
