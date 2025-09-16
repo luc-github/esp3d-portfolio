@@ -1,5 +1,5 @@
 {
-  "timestamp": 1757898316.3581252,
+  "timestamp": 1757984404.8465009,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C++",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-09-11T17:27:17+00:00",
+    "updated_at": "2025-09-15T09:57:27+00:00",
     "branches": [
       {
         "name": "2.1.x",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "d7b3ab4",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "sha": "80d5ed1",
+          "message": "Update platinum-0 image source in README\n\nUpdated the image source for platinum-0 sponsorship.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-04-16T11:24:38+00:00"
+          "date": "2025-09-15T09:57:21+00:00"
         },
         "protected": false,
         "issues": [
@@ -225,7 +225,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 457,
+        "contributions": 458,
         "url": "https://github.com/luc-github"
       },
       {
@@ -292,6 +292,12 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "80d5ed1",
+          "message": "Update platinum-0 image source in README\n\nUpdated the image source for platinum-0 sponsorship.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-09-15T09:57:21+00:00"
+        },
+        {
           "sha": "d7b3ab4",
           "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
@@ -344,12 +350,6 @@
           "message": "Fix typo in platformio\n\nThanks @ilko-k for pointing this out",
           "author": "Luc",
           "date": "2024-03-22T02:23:30+00:00"
-        },
-        {
-          "sha": "2b5981b",
-          "message": "docs: add Levak as a contributor for code, and bug (#1007)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-          "author": "allcontributors[bot]",
-          "date": "2024-03-04T01:35:23+00:00"
         }
       ],
       "commit_activity": [
@@ -1018,10 +1018,10 @@
         },
         {
           "week": "2025-09-14T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -1032,7 +1032,7 @@
       ]
     },
     "statistics": {
-      "size": 134970,
+      "size": 134979,
       "stars": 1880,
       "forks": 481,
       "open_issues": 5,
