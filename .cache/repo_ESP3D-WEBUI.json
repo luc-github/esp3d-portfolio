@@ -1,5 +1,5 @@
 {
-  "timestamp": 1758243721.0497074,
+  "timestamp": 1758329962.2251008,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-09-18T14:41:40+00:00",
+    "updated_at": "2025-09-19T01:06:12+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -21,6 +21,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 415,
+            "title": "Not Usable on grblHAL",
+            "body": "When installed (in version 3.0) on stm32f407vgt6 with grblHAL, when eg send setting in grblHAL tab stm totally freeze same when lunch features tab, and then it showing error with parsing json, but curl -s with same command showing all proprly, unless we open webgui ...\n\n**To Reproduce**\nSteps to reproduce the behavior:\ninstall grblHAL on stm32f407vgt6\nsave index.html.gz inside www folder on sd formatted to FAT32 (webui 3.0)\ngo to settings and save some options in grblHAL tab or just try to open features tab(not loading)\n\n**Expected behavior**\neverything working, when sending settings, i want them to save properly and not freeze stm,\nwhen i'm trying to open features tab, it's opening and showing features\n\n<img width=\"493\" height=\"779\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/b302692d-d84f-45f2-904c-7c05bdd45baa\" />",
+            "state": "open",
+            "created_at": "2025-09-19T13:15:00+00:00",
+            "updated_at": "2025-09-20T00:52:36+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/415",
+            "is_pr": false,
+            "labels": [
+              "Bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 414,
             "title": "[FEATURE REQUEST]Add filament runout sensor status to WEB UI",
@@ -51,6 +67,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 415,
+            "title": "Not Usable on grblHAL",
+            "body": "When installed (in version 3.0) on stm32f407vgt6 with grblHAL, when eg send setting in grblHAL tab stm totally freeze same when lunch features tab, and then it showing error with parsing json, but curl -s with same command showing all proprly, unless we open webgui ...\n\n**To Reproduce**\nSteps to reproduce the behavior:\ninstall grblHAL on stm32f407vgt6\nsave index.html.gz inside www folder on sd formatted to FAT32 (webui 3.0)\ngo to settings and save some options in grblHAL tab or just try to open features tab(not loading)\n\n**Expected behavior**\neverything working, when sending settings, i want them to save properly and not freeze stm,\nwhen i'm trying to open features tab, it's opening and showing features\n\n<img width=\"493\" height=\"779\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/b302692d-d84f-45f2-904c-7c05bdd45baa\" />",
+            "state": "open",
+            "created_at": "2025-09-19T13:15:00+00:00",
+            "updated_at": "2025-09-20T00:52:36+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/415",
+            "is_pr": false,
+            "labels": [
+              "Bug"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 414,
             "title": "[FEATURE REQUEST]Add filament runout sensor status to WEB UI",
@@ -1040,10 +1072,10 @@
     },
     "statistics": {
       "size": 116839,
-      "stars": 833,
+      "stars": 834,
       "forks": 328,
-      "open_issues": 10,
-      "watchers": 833,
+      "open_issues": 11,
+      "watchers": 834,
       "default_branch": "2.1",
       "license": "GNU General Public License v3.0"
     }
