@@ -39,8 +39,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1150,
-              "days_since_update": 177,
+              "age_days": 1151,
+              "days_since_update": 178,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -67,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 333,
-              "days_since_update": 298,
+              "age_days": 334,
+              "days_since_update": 300,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1699,
-              "days_since_update": 326,
+              "age_days": 1700,
+              "days_since_update": 327,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2624,
-              "days_since_update": 475,
+              "age_days": 2625,
+              "days_since_update": 476,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -152,8 +152,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1691,
-              "days_since_update": 563,
+              "age_days": 1692,
+              "days_since_update": 564,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -219,8 +219,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1150,
-              "days_since_update": 177,
+              "age_days": 1151,
+              "days_since_update": 178,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -247,8 +247,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 333,
-              "days_since_update": 298,
+              "age_days": 334,
+              "days_since_update": 300,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -276,8 +276,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1699,
-              "days_since_update": 326,
+              "age_days": 1700,
+              "days_since_update": 327,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -304,8 +304,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2624,
-              "days_since_update": 475,
+              "age_days": 2625,
+              "days_since_update": 476,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -332,8 +332,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1691,
-              "days_since_update": 563,
+              "age_days": 1692,
+              "days_since_update": 564,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -501,19 +501,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
@@ -1176,13 +1163,26 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
       "statistics": {
         "size": 134979,
         "stars": 1884,
-        "forks": 483,
+        "forks": 482,
         "open_issues": 5,
         "watchers": 1884,
         "default_branch": "2.1.x",
@@ -1263,8 +1263,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 181,
-              "days_since_update": 181,
+              "age_days": 182,
+              "days_since_update": 182,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1291,8 +1291,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1326,
-              "days_since_update": 272,
+              "age_days": 1327,
+              "days_since_update": 273,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1429,19 +1429,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
@@ -2104,6 +2091,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -2146,18 +2146,16 @@
           "protected": false,
           "issues": [
             {
-              "number": 415,
-              "title": "Not Usable on grblHAL",
-              "body": "When installed (in version 3.0) on stm32f407vgt6 with grblHAL, when eg send setting in grblHAL tab stm totally freeze same when lunch features tab, and then it showing error with parsing json, but curl -s with same command showing all proprly, unless we open webgui ...\n\n**To Reproduce**\nSteps to reproduce the behavior:\ninstall grblHAL on stm32f407vgt6\nsave index.html.gz inside www folder on sd formatted to FAT32 (webui 3.0)\ngo to settings and save some options in grblHAL tab or just try to open features tab(not loading)\n\n**Expected behavior**\neverything working, when sending settings, i want them to save properly and not freeze stm,\nwhen i'm trying to open features tab, it's opening and showing features\n\n<img width=\"493\" height=\"779\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/b302692d-d84f-45f2-904c-7c05bdd45baa\" />",
+              "number": 418,
+              "title": "Updated to 2.1.3c0 version",
+              "body": "### Changes include:\r\n- [x] Bootstrap update to v3.4.1\r\n- [x] many appearance changes aimed at: **unification** (elements that look the same now have the same HTML code and classes), **alignment** (e.g. button dimensions adapted to other elements in the line, appearance of the panels), **spaces**, **readability** (e.g. button colors and some icons, enlarged temperature diagram),\r\n- [x] tabs look and work as it should,\r\n- [x] removed unused CSS classes,\r\n- [x] some new IDs and Classes added,\r\n- [x] HTML code error corrected,\r\n- [x] omitted phrases were included in the translation,\r\n- [x] filename `tab_bar.html` changed to `tabbar.html` (nomenclature as `navbar.html` and `dashbar.html` without an `_` inside).\r\n\r\n> [!TIP]\r\n> **If you approve the changes,** `tab_bar.html` **is unnecessary. Please remove the file manually.**\r\n\r\n> [!IMPORTANT]\r\n> **The operation and functionality of the user interface have not changed.**\r\n\r\n> [!NOTE]\r\n> **The code was repeatedly compiled and tested on a test ESP01s and finally tested on a second ESP01s placed in the printer. I found no defects.**\r\n\r\n### The changes are best seen in the pictures below.\r\nBefore changes:\r\n<img width=\"1903\" height=\"1196\" alt=\"2 1 3b0_Dashboard\" src=\"https://github.com/user-attachments/assets/77fb9a52-e5ee-46da-a1c3-ab15967de4d4\" />\r\nAfter changes:\r\n<img width=\"1903\" height=\"1120\" alt=\"2 1 3c0_Dashboard\" src=\"https://github.com/user-attachments/assets/748dd0aa-1ede-418a-ade3-5375700ca6ac\" />\r\n",
               "state": "open",
-              "created_at": "2025-09-19T13:15:00+00:00",
-              "updated_at": "2025-09-20T00:52:36+00:00",
+              "created_at": "2025-09-20T14:45:06+00:00",
+              "updated_at": "2025-09-20T23:00:52+00:00",
               "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/415",
-              "is_pr": false,
-              "labels": [
-                "Bug"
-              ],
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/418",
+              "is_pr": true,
+              "labels": [],
               "priority": "normal",
               "assignee": null,
               "age_days": 0,
@@ -2165,7 +2163,7 @@
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
-              "size_estimate": "medium",
+              "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
@@ -2186,8 +2184,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 19,
-              "days_since_update": 18,
+              "age_days": 20,
+              "days_since_update": 19,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2214,7 +2212,7 @@
               "medium": 2
             },
             "size": {
-              "medium": 1,
+              "large": 1,
               "small": 1
             },
             "lifecycle": {
@@ -2235,18 +2233,16 @@
           "protected": false,
           "issues": [
             {
-              "number": 415,
-              "title": "Not Usable on grblHAL",
-              "body": "When installed (in version 3.0) on stm32f407vgt6 with grblHAL, when eg send setting in grblHAL tab stm totally freeze same when lunch features tab, and then it showing error with parsing json, but curl -s with same command showing all proprly, unless we open webgui ...\n\n**To Reproduce**\nSteps to reproduce the behavior:\ninstall grblHAL on stm32f407vgt6\nsave index.html.gz inside www folder on sd formatted to FAT32 (webui 3.0)\ngo to settings and save some options in grblHAL tab or just try to open features tab(not loading)\n\n**Expected behavior**\neverything working, when sending settings, i want them to save properly and not freeze stm,\nwhen i'm trying to open features tab, it's opening and showing features\n\n<img width=\"493\" height=\"779\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/b302692d-d84f-45f2-904c-7c05bdd45baa\" />",
+              "number": 418,
+              "title": "Updated to 2.1.3c0 version",
+              "body": "### Changes include:\r\n- [x] Bootstrap update to v3.4.1\r\n- [x] many appearance changes aimed at: **unification** (elements that look the same now have the same HTML code and classes), **alignment** (e.g. button dimensions adapted to other elements in the line, appearance of the panels), **spaces**, **readability** (e.g. button colors and some icons, enlarged temperature diagram),\r\n- [x] tabs look and work as it should,\r\n- [x] removed unused CSS classes,\r\n- [x] some new IDs and Classes added,\r\n- [x] HTML code error corrected,\r\n- [x] omitted phrases were included in the translation,\r\n- [x] filename `tab_bar.html` changed to `tabbar.html` (nomenclature as `navbar.html` and `dashbar.html` without an `_` inside).\r\n\r\n> [!TIP]\r\n> **If you approve the changes,** `tab_bar.html` **is unnecessary. Please remove the file manually.**\r\n\r\n> [!IMPORTANT]\r\n> **The operation and functionality of the user interface have not changed.**\r\n\r\n> [!NOTE]\r\n> **The code was repeatedly compiled and tested on a test ESP01s and finally tested on a second ESP01s placed in the printer. I found no defects.**\r\n\r\n### The changes are best seen in the pictures below.\r\nBefore changes:\r\n<img width=\"1903\" height=\"1196\" alt=\"2 1 3b0_Dashboard\" src=\"https://github.com/user-attachments/assets/77fb9a52-e5ee-46da-a1c3-ab15967de4d4\" />\r\nAfter changes:\r\n<img width=\"1903\" height=\"1120\" alt=\"2 1 3c0_Dashboard\" src=\"https://github.com/user-attachments/assets/748dd0aa-1ede-418a-ade3-5375700ca6ac\" />\r\n",
               "state": "open",
-              "created_at": "2025-09-19T13:15:00+00:00",
-              "updated_at": "2025-09-20T00:52:36+00:00",
+              "created_at": "2025-09-20T14:45:06+00:00",
+              "updated_at": "2025-09-20T23:00:52+00:00",
               "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/415",
-              "is_pr": false,
-              "labels": [
-                "Bug"
-              ],
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/418",
+              "is_pr": true,
+              "labels": [],
               "priority": "normal",
               "assignee": null,
               "age_days": 0,
@@ -2254,7 +2250,7 @@
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
-              "size_estimate": "medium",
+              "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
@@ -2275,8 +2271,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 19,
-              "days_since_update": 18,
+              "age_days": 20,
+              "days_since_update": 19,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2304,8 +2300,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 173,
-              "days_since_update": 173,
+              "age_days": 174,
+              "days_since_update": 174,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2333,8 +2329,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 218,
-              "days_since_update": 217,
+              "age_days": 219,
+              "days_since_update": 218,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2362,8 +2358,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1224,
-              "days_since_update": 298,
+              "age_days": 1225,
+              "days_since_update": 299,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2392,8 +2388,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1805,
-              "days_since_update": 341,
+              "age_days": 1806,
+              "days_since_update": 342,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2421,8 +2417,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1885,
-              "days_since_update": 341,
+              "age_days": 1886,
+              "days_since_update": 342,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2453,8 +2449,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 474,
-              "days_since_update": 341,
+              "age_days": 475,
+              "days_since_update": 342,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2481,8 +2477,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1097,
-              "days_since_update": 341,
+              "age_days": 1098,
+              "days_since_update": 342,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2509,8 +2505,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2085,
-              "days_since_update": 1131,
+              "age_days": 2086,
+              "days_since_update": 1132,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2539,8 +2535,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1228,
-              "days_since_update": 1201,
+              "age_days": 1229,
+              "days_since_update": 1202,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2568,8 +2564,9 @@
               "high": 1
             },
             "size": {
-              "medium": 6,
-              "small": 5
+              "large": 1,
+              "small": 5,
+              "medium": 5
             },
             "lifecycle": {
               "new": 11
@@ -2693,19 +2690,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 3,
@@ -3368,13 +3352,26 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
       "statistics": {
         "size": 116839,
         "stars": 834,
-        "forks": 328,
+        "forks": 329,
         "open_issues": 11,
         "watchers": 834,
         "default_branch": "2.1",
@@ -3424,8 +3421,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 123,
-              "days_since_update": 52,
+              "age_days": 124,
+              "days_since_update": 53,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3451,8 +3448,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 611,
-              "days_since_update": 134,
+              "age_days": 612,
+              "days_since_update": 135,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3479,8 +3476,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 609,
-              "days_since_update": 279,
+              "age_days": 610,
+              "days_since_update": 280,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3505,8 +3502,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 341,
-              "days_since_update": 341,
+              "age_days": 342,
+              "days_since_update": 342,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3533,8 +3530,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 401,
-              "days_since_update": 401,
+              "age_days": 402,
+              "days_since_update": 402,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3559,8 +3556,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 516,
-              "days_since_update": 403,
+              "age_days": 517,
+              "days_since_update": 404,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3586,8 +3583,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 621,
-              "days_since_update": 621,
+              "age_days": 622,
+              "days_since_update": 622,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3612,8 +3609,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 942,
-              "days_since_update": 942,
+              "age_days": 943,
+              "days_since_update": 943,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3641,8 +3638,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1085,
-              "days_since_update": 1085,
+              "age_days": 1086,
+              "days_since_update": 1086,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3771,19 +3768,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
@@ -4436,6 +4420,19 @@
           },
           {
             "week": "2025-09-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -6612,19 +6609,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -7286,6 +7270,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -7340,8 +7337,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 193,
-              "days_since_update": 193,
+              "age_days": 194,
+              "days_since_update": 194,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7364,8 +7361,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 855,
-              "days_since_update": 855,
+              "age_days": 856,
+              "days_since_update": 856,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7392,8 +7389,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1189,
-              "days_since_update": 1128,
+              "age_days": 1190,
+              "days_since_update": 1129,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7511,19 +7508,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -8185,6 +8169,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -8241,8 +8238,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 205,
-              "days_since_update": 205,
+              "age_days": 206,
+              "days_since_update": 206,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8267,8 +8264,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 934,
-              "days_since_update": 934,
+              "age_days": 935,
+              "days_since_update": 935,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8293,8 +8290,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 934,
-              "days_since_update": 934,
+              "age_days": 935,
+              "days_since_update": 935,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8440,19 +8437,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
@@ -9115,6 +9099,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -9171,8 +9168,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 116,
-              "days_since_update": 116,
+              "age_days": 117,
+              "days_since_update": 117,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9197,8 +9194,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 857,
-              "days_since_update": 857,
+              "age_days": 858,
+              "days_since_update": 858,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9224,8 +9221,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2053,
-              "days_since_update": 2037,
+              "age_days": 2054,
+              "days_since_update": 2038,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9343,19 +9340,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
@@ -10018,6 +10002,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -10074,8 +10071,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 857,
-              "days_since_update": 857,
+              "age_days": 858,
+              "days_since_update": 858,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10181,19 +10178,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
@@ -10846,6 +10830,19 @@
           },
           {
             "week": "2025-09-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -10985,19 +10982,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -11649,6 +11633,19 @@
           },
           {
             "week": "2025-09-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -11770,19 +11767,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-09-22T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-09-29T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -12444,6 +12428,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-09-21T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -12491,7 +12488,7 @@
       "open_count": 44,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 913.5248965631871,
+      "avg_age_days": 914.4826014147612,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 44
@@ -12802,10 +12799,6 @@
       ],
       "commit_trend": [
         {
-          "date": "2024-09-22",
-          "count": 0
-        },
-        {
           "date": "2024-09-29",
           "count": 3
         },
@@ -13008,6 +13001,10 @@
         {
           "date": "2025-09-14",
           "count": 2
+        },
+        {
+          "date": "2025-09-21",
+          "count": 0
         }
       ]
     }

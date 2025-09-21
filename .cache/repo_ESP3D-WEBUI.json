@@ -1,5 +1,5 @@
 {
-  "timestamp": 1758329962.2251008,
+  "timestamp": 1758416843.3442674,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -22,18 +22,16 @@
         "protected": false,
         "issues": [
           {
-            "number": 415,
-            "title": "Not Usable on grblHAL",
-            "body": "When installed (in version 3.0) on stm32f407vgt6 with grblHAL, when eg send setting in grblHAL tab stm totally freeze same when lunch features tab, and then it showing error with parsing json, but curl -s with same command showing all proprly, unless we open webgui ...\n\n**To Reproduce**\nSteps to reproduce the behavior:\ninstall grblHAL on stm32f407vgt6\nsave index.html.gz inside www folder on sd formatted to FAT32 (webui 3.0)\ngo to settings and save some options in grblHAL tab or just try to open features tab(not loading)\n\n**Expected behavior**\neverything working, when sending settings, i want them to save properly and not freeze stm,\nwhen i'm trying to open features tab, it's opening and showing features\n\n<img width=\"493\" height=\"779\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/b302692d-d84f-45f2-904c-7c05bdd45baa\" />",
+            "number": 418,
+            "title": "Updated to 2.1.3c0 version",
+            "body": "### Changes include:\r\n- [x] Bootstrap update to v3.4.1\r\n- [x] many appearance changes aimed at: **unification** (elements that look the same now have the same HTML code and classes), **alignment** (e.g. button dimensions adapted to other elements in the line, appearance of the panels), **spaces**, **readability** (e.g. button colors and some icons, enlarged temperature diagram),\r\n- [x] tabs look and work as it should,\r\n- [x] removed unused CSS classes,\r\n- [x] some new IDs and Classes added,\r\n- [x] HTML code error corrected,\r\n- [x] omitted phrases were included in the translation,\r\n- [x] filename `tab_bar.html` changed to `tabbar.html` (nomenclature as `navbar.html` and `dashbar.html` without an `_` inside).\r\n\r\n> [!TIP]\r\n> **If you approve the changes,** `tab_bar.html` **is unnecessary. Please remove the file manually.**\r\n\r\n> [!IMPORTANT]\r\n> **The operation and functionality of the user interface have not changed.**\r\n\r\n> [!NOTE]\r\n> **The code was repeatedly compiled and tested on a test ESP01s and finally tested on a second ESP01s placed in the printer. I found no defects.**\r\n\r\n### The changes are best seen in the pictures below.\r\nBefore changes:\r\n<img width=\"1903\" height=\"1196\" alt=\"2 1 3b0_Dashboard\" src=\"https://github.com/user-attachments/assets/77fb9a52-e5ee-46da-a1c3-ab15967de4d4\" />\r\nAfter changes:\r\n<img width=\"1903\" height=\"1120\" alt=\"2 1 3c0_Dashboard\" src=\"https://github.com/user-attachments/assets/748dd0aa-1ede-418a-ade3-5375700ca6ac\" />\r\n",
             "state": "open",
-            "created_at": "2025-09-19T13:15:00+00:00",
-            "updated_at": "2025-09-20T00:52:36+00:00",
+            "created_at": "2025-09-20T14:45:06+00:00",
+            "updated_at": "2025-09-20T23:00:52+00:00",
             "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/415",
-            "is_pr": false,
-            "labels": [
-              "Bug"
-            ],
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/418",
+            "is_pr": true,
+            "labels": [],
             "priority": "normal",
             "assignee": null
           },
@@ -68,18 +66,16 @@
         "protected": false,
         "issues": [
           {
-            "number": 415,
-            "title": "Not Usable on grblHAL",
-            "body": "When installed (in version 3.0) on stm32f407vgt6 with grblHAL, when eg send setting in grblHAL tab stm totally freeze same when lunch features tab, and then it showing error with parsing json, but curl -s with same command showing all proprly, unless we open webgui ...\n\n**To Reproduce**\nSteps to reproduce the behavior:\ninstall grblHAL on stm32f407vgt6\nsave index.html.gz inside www folder on sd formatted to FAT32 (webui 3.0)\ngo to settings and save some options in grblHAL tab or just try to open features tab(not loading)\n\n**Expected behavior**\neverything working, when sending settings, i want them to save properly and not freeze stm,\nwhen i'm trying to open features tab, it's opening and showing features\n\n<img width=\"493\" height=\"779\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/b302692d-d84f-45f2-904c-7c05bdd45baa\" />",
+            "number": 418,
+            "title": "Updated to 2.1.3c0 version",
+            "body": "### Changes include:\r\n- [x] Bootstrap update to v3.4.1\r\n- [x] many appearance changes aimed at: **unification** (elements that look the same now have the same HTML code and classes), **alignment** (e.g. button dimensions adapted to other elements in the line, appearance of the panels), **spaces**, **readability** (e.g. button colors and some icons, enlarged temperature diagram),\r\n- [x] tabs look and work as it should,\r\n- [x] removed unused CSS classes,\r\n- [x] some new IDs and Classes added,\r\n- [x] HTML code error corrected,\r\n- [x] omitted phrases were included in the translation,\r\n- [x] filename `tab_bar.html` changed to `tabbar.html` (nomenclature as `navbar.html` and `dashbar.html` without an `_` inside).\r\n\r\n> [!TIP]\r\n> **If you approve the changes,** `tab_bar.html` **is unnecessary. Please remove the file manually.**\r\n\r\n> [!IMPORTANT]\r\n> **The operation and functionality of the user interface have not changed.**\r\n\r\n> [!NOTE]\r\n> **The code was repeatedly compiled and tested on a test ESP01s and finally tested on a second ESP01s placed in the printer. I found no defects.**\r\n\r\n### The changes are best seen in the pictures below.\r\nBefore changes:\r\n<img width=\"1903\" height=\"1196\" alt=\"2 1 3b0_Dashboard\" src=\"https://github.com/user-attachments/assets/77fb9a52-e5ee-46da-a1c3-ab15967de4d4\" />\r\nAfter changes:\r\n<img width=\"1903\" height=\"1120\" alt=\"2 1 3c0_Dashboard\" src=\"https://github.com/user-attachments/assets/748dd0aa-1ede-418a-ade3-5375700ca6ac\" />\r\n",
             "state": "open",
-            "created_at": "2025-09-19T13:15:00+00:00",
-            "updated_at": "2025-09-20T00:52:36+00:00",
+            "created_at": "2025-09-20T14:45:06+00:00",
+            "updated_at": "2025-09-20T23:00:52+00:00",
             "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/415",
-            "is_pr": false,
-            "labels": [
-              "Bug"
-            ],
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/418",
+            "is_pr": true,
+            "labels": [],
             "priority": "normal",
             "assignee": null
           },
@@ -392,19 +388,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2024-09-22T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2024-09-29T00:00:00+00:00",
           "total": 3,
@@ -1067,13 +1050,26 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2025-09-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 116839,
       "stars": 834,
-      "forks": 328,
+      "forks": 329,
       "open_issues": 11,
       "watchers": 834,
       "default_branch": "2.1",
