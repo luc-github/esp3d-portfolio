@@ -43,9 +43,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (4) | 0 | 2 | 4.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 2979 |
+| Total Stars | 2980 |
 | Total Forks | 948 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 44 |
 | Closed Issues | 0 |
-| Average Age | 916.5 days |
+| Average Age | 917.5 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -310,7 +310,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>🔄</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
@@ -326,7 +326,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>🔄</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#411: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/411">[FEATURE REQUEST] Flexible panels customizations to optimize empty space</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#406: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/406">[BUG]The status panel is redraw when getting repport even no change</a></td><td><code>2025-02-13</code></td><td><code>2025-02-14</code></td><td style="color: #000000">normal</td></tr>
@@ -682,8 +682,8 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>🔄</td><td>🚀 2.1</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-20</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🔧 3.0</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-20</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>🚀 2.1</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>🔧 3.0</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 2.1</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 3.0</td><td>#411: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/411">[FEATURE REQUEST] Flexible panels customizations to optimize empty space</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
@@ -982,7 +982,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-09-23 01:01:45 UTC*
+*🔄 Last updated: 2025-09-24 01:02:43 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
