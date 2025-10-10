@@ -1,13 +1,13 @@
 {
-  "timestamp": 1759971694.2349494,
+  "timestamp": 1760058062.890229,
   "data": {
     "name": "ESP3D",
     "type": "main",
     "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
     "url": "https://github.com/luc-github/ESP3D",
-    "language": "C++",
+    "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-10-07T23:36:09+00:00",
+    "updated_at": "2025-10-10T00:32:49+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -120,10 +120,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "3c14543",
-          "message": "Fix BT Service is no set a started due to wrong API usage",
+          "sha": "4fe0c31",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-06-18T14:02:02+00:00"
+          "date": "2025-10-09T06:20:05+00:00"
         },
         "protected": false,
         "issues": [
@@ -225,12 +225,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 458,
+        "contributions": 549,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 26,
+        "contributions": 22,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -240,8 +240,13 @@
       },
       {
         "login": "dependabot[bot]",
-        "contributions": 9,
+        "contributions": 8,
         "url": "https://github.com/apps/dependabot"
+      },
+      {
+        "login": "Engineer2Designer",
+        "contributions": 7,
+        "url": "https://github.com/Engineer2Designer"
       },
       {
         "login": "j0hnlittle",
@@ -254,19 +259,24 @@
         "url": "https://github.com/AustinSaintAubin"
       },
       {
-        "login": "alhirzel",
-        "contributions": 1,
-        "url": "https://github.com/alhirzel"
-      },
-      {
         "login": "KingBain",
         "contributions": 1,
         "url": "https://github.com/KingBain"
       },
       {
+        "login": "Levak",
+        "contributions": 1,
+        "url": "https://github.com/Levak"
+      },
+      {
         "login": "A7F",
         "contributions": 1,
         "url": "https://github.com/A7F"
+      },
+      {
+        "login": "mhoyer",
+        "contributions": 1,
+        "url": "https://github.com/mhoyer"
       },
       {
         "login": "gitter-badger",
@@ -292,70 +302,70 @@
     "activity": {
       "recent_commits": [
         {
-          "sha": "80d5ed1",
-          "message": "Update platinum-0 image source in README\n\nUpdated the image source for platinum-0 sponsorship.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2025-09-15T09:57:21+00:00"
-        },
-        {
-          "sha": "d7b3ab4",
+          "sha": "4fe0c31",
           "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-04-16T11:24:38+00:00"
+          "date": "2025-10-09T06:20:05+00:00"
         },
         {
-          "sha": "24924cd",
+          "sha": "9f20f8b",
+          "message": "Prepare version for release",
+          "author": "Luc",
+          "date": "2025-10-09T05:21:33+00:00"
+        },
+        {
+          "sha": "e4ab6ff",
           "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-02-23T11:25:53+00:00"
+          "date": "2025-10-09T05:18:41+00:00"
         },
         {
-          "sha": "2530634",
-          "message": "Update README.md",
+          "sha": "3c14543",
+          "message": "Fix BT Service is no set a started due to wrong API usage",
           "author": "Luc",
-          "date": "2024-05-30T00:07:00+00:00"
+          "date": "2025-06-18T14:02:02+00:00"
         },
         {
-          "sha": "cb9021f",
-          "message": "s/athentication/authentication/ (#1019)\n\nSigned-off-by: Alex Hirzel <alex@hirzel.us>",
-          "author": "Alex Hirzel",
-          "date": "2024-04-28T14:26:35+00:00"
-        },
-        {
-          "sha": "e211c0e",
-          "message": "Update README.md",
+          "sha": "041658d",
+          "message": "fix missing sanity check if BT",
           "author": "Luc",
-          "date": "2024-04-28T14:24:41+00:00"
+          "date": "2025-06-18T05:06:33+00:00"
         },
         {
-          "sha": "4cab149",
-          "message": "Bump version for release",
+          "sha": "0b8dc3a",
+          "message": "Update esp3d_commands.cpp\n\nOverride new behavior in Marlin that prevent error to update screen e.g: No SD Card -> IP is not displayed because M117 is locked, so always unlock M117 output\nDo not affect M111 because it is user key, so he can type M117 first to unlock if necessary, the fix only apply to auto M117 output",
           "author": "Luc",
-          "date": "2024-03-24T02:52:00+00:00"
+          "date": "2025-04-26T06:18:50+00:00"
         },
         {
-          "sha": "8cff8c4",
-          "message": "Update the typo in name that make the exclude not working",
+          "sha": "1a0928e",
+          "message": "Fix serial2socket module lock after a while",
           "author": "Luc",
-          "date": "2024-03-24T02:48:12+00:00"
+          "date": "2025-04-14T08:59:01+00:00"
         },
         {
-          "sha": "344945d",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "sha": "6e43923",
+          "message": "Fix WDT error message when doing formating\n\nBum version",
           "author": "Luc",
-          "date": "2024-03-23T01:18:38+00:00"
+          "date": "2025-04-13T06:40:44+00:00"
         },
         {
-          "sha": "590626f",
-          "message": "Fix typo in platformio\n\nThanks @ilko-k for pointing this out",
+          "sha": "3f60af3",
+          "message": "Update esp_sd.cpp",
           "author": "Luc",
-          "date": "2024-03-22T02:23:30+00:00"
+          "date": "2025-03-26T07:15:46+00:00"
+        },
+        {
+          "sha": "a63243d",
+          "message": "Update info.json",
+          "author": "Luc",
+          "date": "2025-03-26T06:55:08+00:00"
         }
       ],
       "commit_activity": [
         {
           "week": "2024-10-13T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
@@ -363,14 +373,14 @@
             0,
             0,
             0,
-            0
+            1
           ]
         },
         {
           "week": "2024-10-20T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
-            0,
+            2,
             0,
             0,
             0,
@@ -394,10 +404,10 @@
         },
         {
           "week": "2024-11-03T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
-            0,
-            0,
+            1,
+            1,
             0,
             0,
             0,
@@ -433,12 +443,12 @@
         },
         {
           "week": "2024-11-24T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
+            2,
             0,
-            0,
-            0,
+            1,
             0,
             0,
             0
@@ -446,9 +456,9 @@
         },
         {
           "week": "2024-12-01T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
-            0,
+            2,
             0,
             0,
             0,
@@ -459,11 +469,11 @@
         },
         {
           "week": "2024-12-08T00:00:00+00:00",
-          "total": 0,
+          "total": 6,
           "days": [
-            0,
-            0,
-            0,
+            1,
+            2,
+            3,
             0,
             0,
             0,
@@ -472,12 +482,12 @@
         },
         {
           "week": "2024-12-15T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
-            0,
+            3,
             0,
             0,
             0
@@ -537,11 +547,11 @@
         },
         {
           "week": "2025-01-19T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -550,13 +560,13 @@
         },
         {
           "week": "2025-01-26T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
+            1,
             0,
             0,
             0,
-            0,
-            0,
+            1,
             0,
             0
           ]
@@ -602,9 +612,9 @@
         },
         {
           "week": "2025-02-23T00:00:00+00:00",
-          "total": 1,
+          "total": 0,
           "days": [
-            1,
+            0,
             0,
             0,
             0,
@@ -628,25 +638,25 @@
         },
         {
           "week": "2025-03-09T00:00:00+00:00",
-          "total": 0,
+          "total": 4,
           "days": [
             0,
             0,
             0,
+            3,
             0,
-            0,
-            0,
+            1,
             0
           ]
         },
         {
           "week": "2025-03-16T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
+            1,
+            1,
             0,
-            0,
-            0,
-            0,
+            1,
             0,
             0,
             0
@@ -654,12 +664,12 @@
         },
         {
           "week": "2025-03-23T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
-            0,
+            3,
             0,
             0,
             0
@@ -693,12 +703,12 @@
         },
         {
           "week": "2025-04-13T00:00:00+00:00",
-          "total": 1,
+          "total": 2,
           "days": [
-            0,
-            0,
-            0,
             1,
+            1,
+            0,
+            0,
             0,
             0,
             0
@@ -706,7 +716,7 @@
         },
         {
           "week": "2025-04-20T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
@@ -714,7 +724,7 @@
             0,
             0,
             0,
-            0
+            1
           ]
         },
         {
@@ -810,12 +820,12 @@
         },
         {
           "week": "2025-06-15T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
             0,
-            0,
+            2,
             0,
             0,
             0
@@ -979,10 +989,10 @@
         },
         {
           "week": "2025-09-14T00:00:00+00:00",
-          "total": 1,
+          "total": 0,
           "days": [
             0,
-            1,
+            0,
             0,
             0,
             0,
@@ -1018,13 +1028,13 @@
         },
         {
           "week": "2025-10-05T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
             0,
-            0,
+            3,
             0,
             0
           ]
@@ -1032,13 +1042,12 @@
       ]
     },
     "statistics": {
-      "size": 134979,
-      "stars": 1896,
+      "size": 134967,
+      "stars": 1897,
       "forks": 481,
       "open_issues": 5,
-      "watchers": 1896,
-      "default_branch": "2.1.x",
-      "license": "GNU General Public License v3.0"
+      "watchers": 1897,
+      "default_branch": "3.0"
     }
   }
 }
