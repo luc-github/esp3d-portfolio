@@ -1,5 +1,5 @@
 {
-  "timestamp": 1761613339.2489843,
+  "timestamp": 1761700035.491043,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,24 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1058,
-            "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
-            "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
-            "state": "open",
-            "created_at": "2024-10-21T04:51:29+00:00",
-            "updated_at": "2024-11-25T01:04:06+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1058",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "On Hold",
-              "ESP3D 3.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -127,24 +109,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1058,
-            "title": "[FEATURE REQUEST]Waveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, With RGB LED",
-            "body": "This board as screen / sd card / 8 PSRAM and 16MB Flash\r\nWaveshare ESP32-S3 1.47inch Display Development Board, 172\u00d7320, Dual-Core Processor, Supports WiFi & Bluetooth, With RGB LED\r\nhttps://www.waveshare.com/esp32-s3-lcd-1.47.htm\r\nhttps://www.waveshare.com/wiki/ESP32-S3-LCD-1.47\r\nI think if the USB port is the OTG port it would be the perfect device to stream GCODE and be the reference board for it",
-            "state": "open",
-            "created_at": "2024-10-21T04:51:29+00:00",
-            "updated_at": "2024-11-25T01:04:06+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1058",
-            "is_pr": false,
-            "labels": [
-              "Feature request",
-              "On Hold",
-              "ESP3D 3.X"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -1045,7 +1009,7 @@
       "size": 134968,
       "stars": 1904,
       "forks": 484,
-      "open_issues": 5,
+      "open_issues": 4,
       "watchers": 1904,
       "default_branch": "3.0"
     }
