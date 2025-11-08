@@ -1,5 +1,5 @@
 {
-  "timestamp": 1762477519.9860082,
+  "timestamp": 1762563741.6066198,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,20 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1105,
-            "title": "Question: Odd Marlin M117 code in esp3d_commands.cpp",
-            "body": "Just a question to help me understand a section of code that causes some unwanted side effects I encountered.\n\nI have a ESP3D (ESP32 dev board, V3.0.1 FW) connected to a TFT Touchscreen (https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware). This display has a serial connection to Marlin to control the 3D printer and send gcode commands and gcode files to the Marlin.\nFor some time I have noticed that the display shows an empty notification before receiving the IP address at startup of the ESP3D.\nI have setup this hook in the ESP3D configuration.h: #define ESP_GOT_IP_HOOK \"[ESP212]IP:%ESP_IP%\"\nThis will send the IP address to the screen for display once ESP3D receives an IP address.\n\nAfter some digging I found the code that causes my issue in esp3d_commands.cpp:\n\n```\n#ifdef PRINTER_HAS_DISPLAY\n    case ESP3DClientType::remote_screen:\n      if (ESP3DSettings::GetFirmwareTarget() == GRBL ||\n      ESP3DSettings::GetFirmwareTarget() == GRBLHAL) {\n        esp3d_log_e(\"Remote screen message is not supported for GRBL\");\n        sendOk = false;\n        break;\n      }\n      esp3d_log(\"Remote screen message\");\n      // change target to output client\n      msg->target = getOutputClient();\n      // change text to GCODE M117\n      tmp = \"M117 \";\n      tmp += (const char *)msg->data;\n      // replace end of line with space\n      tmp.replace(\"\\n\", \" \");\n      tmp.replace(\"\\r\", \"\");\n      tmp += \"\\n\";\n      //Override lock from Marlin if error was displayed previouly preventing any update\n      if (ESP3DSettings::GetFirmwareTarget() == MARLIN ||\n          ESP3DSettings::GetFirmwareTarget() == MARLIN_EMBEDDED) {\n        tmp = \"M117\\n\" + tmp;\n      } \n      if (esp3d_message_manager.setDataContent(msg, (uint8_t *)tmp.c_str(),\n                                              tmp.length())) {\n        return dispatch(msg);\n      }\n      sendOk = false;\n      esp3d_log_e(\"Cannot set data content for remote screen\");\n      break;\n#endif  // PRINTER_HAS_DISPLAY\n```\n\nThere are a 2 items I feel that are a bit odd in this code, when ESP3D sends a message to the display, this happens:\n1. A '\\n' is replaced by a space ' ', '\\r' is removed, then '\\n' is added to the end. Why do we need this extra space character?\n2. I run Marlin, so then then \"M117\\n\" is added to the command which already looks something like \"M117 MESSAGE \\n\", to become \"M117\\nM117 MESSAGE \\n\". This added \"M117\\n\" is the cause for the issue I noticed. The code is explained by a comment: \"//Override lock from Marlin if error was displayed previouly preventing any update\". I'm not sure if this is needed for (SPI) displays directly controlled by Marlin, but for my (serial) display this is not needed as messages are just queued and displayed one after the other. What is going on here?\n\nBTW: \"previouly\" should probably be \"previously\".\n\n**Used hardware/software:**\nESP32 Dev board\ndefault_envs = esp32_4_4_7\nESP3D V3.0.1 (October 2025 with baud rate fix)\nWebUI 3.0.0-4b1.M2.1\n",
-            "state": "open",
-            "created_at": "2025-10-30T12:21:55+00:00",
-            "updated_at": "2025-10-31T16:14:56+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1105",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -123,20 +109,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1105,
-            "title": "Question: Odd Marlin M117 code in esp3d_commands.cpp",
-            "body": "Just a question to help me understand a section of code that causes some unwanted side effects I encountered.\n\nI have a ESP3D (ESP32 dev board, V3.0.1 FW) connected to a TFT Touchscreen (https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware). This display has a serial connection to Marlin to control the 3D printer and send gcode commands and gcode files to the Marlin.\nFor some time I have noticed that the display shows an empty notification before receiving the IP address at startup of the ESP3D.\nI have setup this hook in the ESP3D configuration.h: #define ESP_GOT_IP_HOOK \"[ESP212]IP:%ESP_IP%\"\nThis will send the IP address to the screen for display once ESP3D receives an IP address.\n\nAfter some digging I found the code that causes my issue in esp3d_commands.cpp:\n\n```\n#ifdef PRINTER_HAS_DISPLAY\n    case ESP3DClientType::remote_screen:\n      if (ESP3DSettings::GetFirmwareTarget() == GRBL ||\n      ESP3DSettings::GetFirmwareTarget() == GRBLHAL) {\n        esp3d_log_e(\"Remote screen message is not supported for GRBL\");\n        sendOk = false;\n        break;\n      }\n      esp3d_log(\"Remote screen message\");\n      // change target to output client\n      msg->target = getOutputClient();\n      // change text to GCODE M117\n      tmp = \"M117 \";\n      tmp += (const char *)msg->data;\n      // replace end of line with space\n      tmp.replace(\"\\n\", \" \");\n      tmp.replace(\"\\r\", \"\");\n      tmp += \"\\n\";\n      //Override lock from Marlin if error was displayed previouly preventing any update\n      if (ESP3DSettings::GetFirmwareTarget() == MARLIN ||\n          ESP3DSettings::GetFirmwareTarget() == MARLIN_EMBEDDED) {\n        tmp = \"M117\\n\" + tmp;\n      } \n      if (esp3d_message_manager.setDataContent(msg, (uint8_t *)tmp.c_str(),\n                                              tmp.length())) {\n        return dispatch(msg);\n      }\n      sendOk = false;\n      esp3d_log_e(\"Cannot set data content for remote screen\");\n      break;\n#endif  // PRINTER_HAS_DISPLAY\n```\n\nThere are a 2 items I feel that are a bit odd in this code, when ESP3D sends a message to the display, this happens:\n1. A '\\n' is replaced by a space ' ', '\\r' is removed, then '\\n' is added to the end. Why do we need this extra space character?\n2. I run Marlin, so then then \"M117\\n\" is added to the command which already looks something like \"M117 MESSAGE \\n\", to become \"M117\\nM117 MESSAGE \\n\". This added \"M117\\n\" is the cause for the issue I noticed. The code is explained by a comment: \"//Override lock from Marlin if error was displayed previouly preventing any update\". I'm not sure if this is needed for (SPI) displays directly controlled by Marlin, but for my (serial) display this is not needed as messages are just queued and displayed one after the other. What is going on here?\n\nBTW: \"previouly\" should probably be \"previously\".\n\n**Used hardware/software:**\nESP32 Dev board\ndefault_envs = esp32_4_4_7\nESP3D V3.0.1 (October 2025 with baud rate fix)\nWebUI 3.0.0-4b1.M2.1\n",
-            "state": "open",
-            "created_at": "2025-10-30T12:21:55+00:00",
-            "updated_at": "2025-10-31T16:14:56+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1105",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -1037,7 +1009,7 @@
       "size": 134971,
       "stars": 1907,
       "forks": 485,
-      "open_issues": 5,
+      "open_issues": 4,
       "watchers": 1907,
       "default_branch": "3.0"
     }
