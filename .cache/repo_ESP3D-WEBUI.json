@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764119262.2977803,
+  "timestamp": 1764205562.5360386,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-11-23T13:19:35+00:00",
+    "updated_at": "2025-11-26T23:42:36+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -58,10 +58,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "ba58141",
-          "message": "Update README.md",
-          "author": "Luc",
-          "date": "2025-11-02T08:21:59+00:00"
+          "sha": "9865b53",
+          "message": "Bump node-forge from 1.3.1 to 1.3.2 (#431)\n\nBumps [node-forge](https://github.com/digitalbazaar/forge) from 1.3.1 to 1.3.2.\n- [Changelog](https://github.com/digitalbazaar/forge/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/digitalbazaar/forge/compare/v1.3.1...v1.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-forge\n  dependency-version: 1.3.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "author": "dependabot[bot]",
+          "date": "2025-11-26T23:42:31+00:00"
         },
         "protected": false,
         "issues": [
@@ -270,14 +270,14 @@
         "url": "https://github.com/cotepat"
       },
       {
+        "login": "dependabot[bot]",
+        "contributions": 5,
+        "url": "https://github.com/apps/dependabot"
+      },
+      {
         "login": "dbuezas",
         "contributions": 4,
         "url": "https://github.com/dbuezas"
-      },
-      {
-        "login": "dependabot[bot]",
-        "contributions": 4,
-        "url": "https://github.com/apps/dependabot"
       },
       {
         "login": "leseaw",
@@ -312,6 +312,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "9865b53",
+          "message": "Bump node-forge from 1.3.1 to 1.3.2 (#431)\n\nBumps [node-forge](https://github.com/digitalbazaar/forge) from 1.3.1 to 1.3.2.\n- [Changelog](https://github.com/digitalbazaar/forge/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/digitalbazaar/forge/compare/v1.3.1...v1.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-forge\n  dependency-version: 1.3.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "author": "dependabot[bot]",
+          "date": "2025-11-26T23:42:31+00:00"
+        },
         {
           "sha": "ba58141",
           "message": "Update README.md",
@@ -365,12 +371,6 @@
           "message": "Add missing texts for error, alarm and settings for grblHAL/grbl",
           "author": "Luc",
           "date": "2025-02-09T07:51:25+00:00"
-        },
-        {
-          "sha": "5439ca8",
-          "message": "smaller logo",
-          "author": "Luc",
-          "date": "2025-01-26T02:37:29+00:00"
         }
       ],
       "commit_activity": [
@@ -1039,13 +1039,13 @@
         },
         {
           "week": "2025-11-23T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
             0,
-            0,
+            1,
             0,
             0
           ]
@@ -1053,7 +1053,7 @@
       ]
     },
     "statistics": {
-      "size": 116843,
+      "size": 117010,
       "stars": 846,
       "forks": 331,
       "open_issues": 10,
