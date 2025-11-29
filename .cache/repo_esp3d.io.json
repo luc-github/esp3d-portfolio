@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764291961.8880062,
+  "timestamp": 1764378409.855069,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2025-11-13T06:45:22+00:00",
+    "updated_at": "2025-11-28T10:33:49+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "f3a1168",
-          "message": "Update batch files",
+          "sha": "b5c3204",
+          "message": "Update sponsoring.html",
           "author": "Luc",
-          "date": "2025-11-13T06:45:14+00:00"
+          "date": "2025-11-28T10:33:43+00:00"
         },
         "protected": false,
         "issues": [
@@ -75,7 +75,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 205,
+        "contributions": 206,
         "url": "https://github.com/luc-github"
       },
       {
@@ -121,6 +121,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "b5c3204",
+          "message": "Update sponsoring.html",
+          "author": "Luc",
+          "date": "2025-11-28T10:33:43+00:00"
+        },
         {
           "sha": "f3a1168",
           "message": "Update batch files",
@@ -174,12 +180,6 @@
           "message": "Update SD WiFi",
           "author": "Luc",
           "date": "2025-04-04T10:28:28+00:00"
-        },
-        {
-          "sha": "bb69524",
-          "message": "Add Lua script sample code",
-          "author": "Luc",
-          "date": "2025-01-17T00:17:38+00:00"
         }
       ],
       "commit_activity": [
@@ -848,14 +848,14 @@
         },
         {
           "week": "2025-11-23T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
             0,
             0,
-            0,
+            1,
             0
           ]
         }
