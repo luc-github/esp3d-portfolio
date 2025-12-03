@@ -43,9 +43,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (12) | 4 | 0 | 12.0 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -63,9 +63,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
-| 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
-| 🥉 3 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
+| 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (15) | 5 | 0 | 2.1 |
+| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
+| 🥉 3 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
 | ▪️ 4 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -84,7 +84,7 @@ Repository activity rankings based on activity over different time periods.
 | Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
 |------|------------|------|--------|---------|---------|-------------|
 | 🥇 1 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (18) | 6 | 0 | 0.6 |
-| 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 0.3 |
+| 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (15) | 5 | 0 | 0.5 |
 | 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 4 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -136,7 +136,7 @@ Repository activity rankings based on activity over different time periods.
 | Total Repositories | 11 |
 | Main Projects | 7 |
 | Dependencies | 4 |
-| Total Stars | 3031 |
+| Total Stars | 3032 |
 | Total Forks | 962 |
 
 ### Issue Statistics
@@ -145,7 +145,7 @@ Repository activity rankings based on activity over different time periods.
 |--------|-------|
 | Open Issues | 41 |
 | Closed Issues | 0 |
-| Average Age | 1031.7 days |
+| Average Age | 1032.7 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -153,9 +153,9 @@ Repository activity rankings based on activity over different time periods.
 ```
 Commit Activity:
 
-Daily    🟦 Few (1-2 commits)            (0.2 commits)
-Weekly   🟦 Few (1-10 commits)           (1.7 commits)
-Monthly  🟦 Few (1-25 commits)           (7.0 commits)
+Daily    🟦 Few (1-2 commits)            (0.3 commits)
+Weekly   🟦 Few (1-10 commits)           (1.8 commits)
+Monthly  🟦 Few (1-25 commits)           (7.2 commits)
 ```
 
 </details>
@@ -318,8 +318,8 @@ Author: Luc
 <summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-11-26 (#9865b53)
-Author: dependabot[bot]
+Last commit: 2025-12-02 (#50cbca2)
+Author: Luc
 ```
 
 <table>
@@ -976,7 +976,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-12-02 01:13:51 UTC*
+*🔄 Last updated: 2025-12-03 01:11:36 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

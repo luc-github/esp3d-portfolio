@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764637841.5429935,
+  "timestamp": 1764724122.3198082,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-12-02T00:00:01+00:00",
+    "updated_at": "2025-12-02T11:33:56+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -58,10 +58,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "9865b53",
-          "message": "Bump node-forge from 1.3.1 to 1.3.2 (#431)\n\nBumps [node-forge](https://github.com/digitalbazaar/forge) from 1.3.1 to 1.3.2.\n- [Changelog](https://github.com/digitalbazaar/forge/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/digitalbazaar/forge/compare/v1.3.1...v1.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-forge\n  dependency-version: 1.3.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "author": "dependabot[bot]",
-          "date": "2025-11-26T23:42:31+00:00"
+          "sha": "50cbca2",
+          "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D-WEBUI into 3.0",
+          "author": "Luc",
+          "date": "2025-12-02T11:33:45+00:00"
         },
         "protected": false,
         "issues": [
@@ -256,12 +256,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 335,
+        "contributions": 337,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 28,
+        "contributions": 29,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -300,6 +300,11 @@
         "url": "https://github.com/vivian-ng"
       },
       {
+        "login": "1001Rem",
+        "contributions": 1,
+        "url": "https://github.com/1001Rem"
+      },
+      {
         "login": "Engineer2Designer",
         "contributions": 1,
         "url": "https://github.com/Engineer2Designer"
@@ -312,6 +317,30 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "50cbca2",
+          "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D-WEBUI into 3.0",
+          "author": "Luc",
+          "date": "2025-12-02T11:33:45+00:00"
+        },
+        {
+          "sha": "e722c5e",
+          "message": "Bump version and rebuild package",
+          "author": "Luc",
+          "date": "2025-12-02T11:33:28+00:00"
+        },
+        {
+          "sha": "4c23633",
+          "message": "docs: add 1001Rem as a contributor for code, and bug (#434)\n\n* docs: update README.md [skip ci]\n\n* docs: create .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2025-12-02T11:32:46+00:00"
+        },
+        {
+          "sha": "f021a1c",
+          "message": "Fix: Navbar clipping outside of viewport on mobile (#433)",
+          "author": "1001Rem",
+          "date": "2025-12-02T11:27:59+00:00"
+        },
         {
           "sha": "9865b53",
           "message": "Bump node-forge from 1.3.1 to 1.3.2 (#431)\n\nBumps [node-forge](https://github.com/digitalbazaar/forge) from 1.3.1 to 1.3.2.\n- [Changelog](https://github.com/digitalbazaar/forge/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/digitalbazaar/forge/compare/v1.3.1...v1.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-forge\n  dependency-version: 1.3.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
@@ -347,30 +376,6 @@
           "message": "Prepare code for release",
           "author": "Luc",
           "date": "2025-10-09T05:27:08+00:00"
-        },
-        {
-          "sha": "4026fee",
-          "message": "Update info.json",
-          "author": "Luc",
-          "date": "2025-03-12T07:04:07+00:00"
-        },
-        {
-          "sha": "c841a90",
-          "message": "Update for grblHAL to allow to use flash as gcode source",
-          "author": "Luc",
-          "date": "2025-02-26T08:02:58+00:00"
-        },
-        {
-          "sha": "e7b9c7c",
-          "message": "Fix $337 setting validation in $$",
-          "author": "Luc",
-          "date": "2025-02-09T08:45:55+00:00"
-        },
-        {
-          "sha": "5cf34ef",
-          "message": "Add missing texts for error, alarm and settings for grblHAL/grbl",
-          "author": "Luc",
-          "date": "2025-02-09T07:51:25+00:00"
         }
       ],
       "commit_activity": [
@@ -1039,11 +1044,11 @@
         },
         {
           "week": "2025-11-30T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
-            0,
+            3,
             0,
             0,
             0,
@@ -1053,9 +1058,9 @@
       ]
     },
     "statistics": {
-      "size": 117010,
+      "size": 117657,
       "stars": 849,
-      "forks": 331,
+      "forks": 332,
       "open_issues": 10,
       "watchers": 849,
       "default_branch": "3.0",
