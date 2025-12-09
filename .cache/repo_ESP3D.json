@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765156106.7112916,
+  "timestamp": 1765242444.2580144,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-12-03T20:44:04+00:00",
+    "updated_at": "2025-12-08T03:48:03+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -83,7 +83,7 @@
             "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
             "state": "open",
             "created_at": "2018-07-14T13:24:33+00:00",
-            "updated_at": "2024-06-01T03:17:55+00:00",
+            "updated_at": "2025-12-08T08:56:32+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/243",
             "is_pr": false,
@@ -171,7 +171,7 @@
             "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
             "state": "open",
             "created_at": "2018-07-14T13:24:33+00:00",
-            "updated_at": "2024-06-01T03:17:55+00:00",
+            "updated_at": "2025-12-08T08:56:32+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/243",
             "is_pr": false,
@@ -1007,10 +1007,10 @@
     },
     "statistics": {
       "size": 135123,
-      "stars": 1917,
-      "forks": 483,
+      "stars": 1919,
+      "forks": 484,
       "open_issues": 4,
-      "watchers": 1917,
+      "watchers": 1919,
       "default_branch": "3.0"
     }
   }
