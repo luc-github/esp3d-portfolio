@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2025-12-11T10:00:50+00:00",
+      "updated_at": "2025-12-13T12:00:12+00:00",
       "branches": [
         {
           "name": "2.1.x",
@@ -38,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2708,
-              "days_since_update": 4,
+              "age_days": 2709,
+              "days_since_update": 5,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -67,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1234,
-              "days_since_update": 261,
+              "age_days": 1235,
+              "days_since_update": 262,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1783,
-              "days_since_update": 410,
+              "age_days": 1784,
+              "days_since_update": 411,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1775,
-              "days_since_update": 647,
+              "age_days": 1776,
+              "days_since_update": 648,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -190,8 +190,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2708,
-              "days_since_update": 4,
+              "age_days": 2709,
+              "days_since_update": 5,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -219,8 +219,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1234,
-              "days_since_update": 261,
+              "age_days": 1235,
+              "days_since_update": 262,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -248,8 +248,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1783,
-              "days_since_update": 410,
+              "age_days": 1784,
+              "days_since_update": 411,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -276,8 +276,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1775,
-              "days_since_update": 647,
+              "age_days": 1776,
+              "days_since_update": 648,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -455,19 +455,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 3,
-            "days": [
-              0,
-              0,
-              0,
-              3,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
@@ -1130,15 +1117,28 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
       "statistics": {
         "size": 135123,
-        "stars": 1921,
-        "forks": 485,
+        "stars": 1923,
+        "forks": 486,
         "open_issues": 4,
-        "watchers": 1921,
+        "watchers": 1923,
         "default_branch": "3.0"
       },
       "health_score": {
@@ -1216,8 +1216,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 265,
-              "days_since_update": 265,
+              "age_days": 266,
+              "days_since_update": 266,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1244,8 +1244,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1410,
-              "days_since_update": 356,
+              "age_days": 1411,
+              "days_since_update": 357,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1382,19 +1382,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
@@ -2057,6 +2044,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -2084,7 +2084,7 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2025-12-05T16:09:39+00:00",
+      "updated_at": "2025-12-13T23:20:22+00:00",
       "branches": [
         {
           "name": "2.1",
@@ -2111,8 +2111,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 83,
-              "days_since_update": 80,
+              "age_days": 84,
+              "days_since_update": 81,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2137,8 +2137,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 103,
-              "days_since_update": 102,
+              "age_days": 104,
+              "days_since_update": 103,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2198,8 +2198,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 83,
-              "days_since_update": 80,
+              "age_days": 84,
+              "days_since_update": 81,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2224,8 +2224,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 103,
-              "days_since_update": 102,
+              "age_days": 104,
+              "days_since_update": 103,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2253,8 +2253,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 257,
-              "days_since_update": 257,
+              "age_days": 258,
+              "days_since_update": 258,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2282,8 +2282,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1308,
-              "days_since_update": 382,
+              "age_days": 1309,
+              "days_since_update": 383,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2312,8 +2312,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1889,
-              "days_since_update": 425,
+              "age_days": 1890,
+              "days_since_update": 426,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2341,8 +2341,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1969,
-              "days_since_update": 425,
+              "age_days": 1970,
+              "days_since_update": 426,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2373,8 +2373,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 558,
-              "days_since_update": 425,
+              "age_days": 559,
+              "days_since_update": 426,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2401,8 +2401,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1181,
-              "days_since_update": 425,
+              "age_days": 1182,
+              "days_since_update": 426,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2429,8 +2429,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2169,
-              "days_since_update": 1215,
+              "age_days": 2170,
+              "days_since_update": 1216,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2459,8 +2459,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1312,
-              "days_since_update": 1285,
+              "age_days": 1313,
+              "days_since_update": 1286,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2625,19 +2625,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 7,
-            "days": [
-              0,
-              1,
-              1,
-              4,
-              0,
-              0,
-              1
-            ]
-          },
-          {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 1,
             "days": [
@@ -3299,15 +3286,28 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
       "statistics": {
         "size": 117657,
-        "stars": 849,
+        "stars": 850,
         "forks": 334,
         "open_issues": 10,
-        "watchers": 849,
+        "watchers": 850,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
       },
@@ -3355,8 +3355,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 207,
-              "days_since_update": 136,
+              "age_days": 208,
+              "days_since_update": 137,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3382,8 +3382,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 695,
-              "days_since_update": 218,
+              "age_days": 696,
+              "days_since_update": 219,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3410,8 +3410,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 693,
-              "days_since_update": 363,
+              "age_days": 694,
+              "days_since_update": 364,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3436,8 +3436,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 425,
-              "days_since_update": 425,
+              "age_days": 426,
+              "days_since_update": 426,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3464,8 +3464,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 485,
-              "days_since_update": 485,
+              "age_days": 486,
+              "days_since_update": 486,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3490,8 +3490,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 600,
-              "days_since_update": 487,
+              "age_days": 601,
+              "days_since_update": 488,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3517,8 +3517,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 705,
-              "days_since_update": 705,
+              "age_days": 706,
+              "days_since_update": 706,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3543,8 +3543,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1026,
-              "days_since_update": 1026,
+              "age_days": 1027,
+              "days_since_update": 1027,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3572,8 +3572,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1169,
-              "days_since_update": 1169,
+              "age_days": 1170,
+              "days_since_update": 1170,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3703,19 +3703,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -4367,6 +4354,19 @@
           },
           {
             "week": "2025-12-07T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -6538,19 +6538,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -7212,6 +7199,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -7266,8 +7266,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 277,
-              "days_since_update": 277,
+              "age_days": 278,
+              "days_since_update": 278,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7290,8 +7290,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 939,
-              "days_since_update": 939,
+              "age_days": 940,
+              "days_since_update": 940,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7318,8 +7318,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1273,
-              "days_since_update": 1212,
+              "age_days": 1274,
+              "days_since_update": 1213,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7437,19 +7437,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 1,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              1,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -8111,6 +8098,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -8167,8 +8167,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 289,
-              "days_since_update": 289,
+              "age_days": 290,
+              "days_since_update": 290,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8193,8 +8193,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1018,
-              "days_since_update": 1018,
+              "age_days": 1019,
+              "days_since_update": 1019,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8219,8 +8219,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1018,
-              "days_since_update": 1018,
+              "age_days": 1019,
+              "days_since_update": 1019,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8366,19 +8366,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 2,
-            "days": [
-              0,
-              1,
-              0,
-              0,
-              0,
-              0,
-              1
-            ]
-          },
           {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 1,
@@ -9041,13 +9028,26 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
       "statistics": {
         "size": 114193,
         "stars": 9,
-        "forks": 54,
+        "forks": 55,
         "open_issues": 3,
         "watchers": 9,
         "default_branch": "main",
@@ -9097,8 +9097,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 200,
-              "days_since_update": 200,
+              "age_days": 201,
+              "days_since_update": 201,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9123,8 +9123,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 941,
-              "days_since_update": 941,
+              "age_days": 942,
+              "days_since_update": 942,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9150,8 +9150,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2137,
-              "days_since_update": 2121,
+              "age_days": 2138,
+              "days_since_update": 2122,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9269,19 +9269,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
@@ -9944,6 +9931,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -10000,8 +10000,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 941,
-              "days_since_update": 941,
+              "age_days": 942,
+              "days_since_update": 942,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10107,19 +10107,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
@@ -10772,6 +10759,19 @@
           },
           {
             "week": "2025-12-07T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -10911,19 +10911,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -11575,6 +11562,19 @@
           },
           {
             "week": "2025-12-07T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -11696,19 +11696,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2024-12-15T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2024-12-22T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -12370,6 +12357,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2025-12-14T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -12404,8 +12404,8 @@
         "HTML": 1
       },
       "total_size": 732362,
-      "total_stars": 3034,
-      "total_forks": 966,
+      "total_stars": 3037,
+      "total_forks": 968,
       "branches": {
         "production": 9,
         "development": 6,
@@ -12417,7 +12417,7 @@
       "open_count": 41,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1042.705667155745,
+      "avg_age_days": 1043.7100494382914,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 41
@@ -12431,9 +12431,9 @@
     "activity": {
       "total_commits": 107,
       "commit_frequency": {
-        "daily": 0.21978021978021978,
-        "weekly": 1.5384615384615385,
-        "monthly": 6.153846153846154
+        "daily": 0.18406593406593405,
+        "weekly": 1.2884615384615383,
+        "monthly": 5.153846153846153
       },
       "active_contributors": {
         "last_week": 0,
@@ -12468,6 +12468,32 @@
           0.6249999999999999
         ],
         [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
           0.20833333333333331,
           0.20833333333333331,
           0.20833333333333331,
@@ -12494,82 +12520,56 @@
           0.20833333333333331
         ],
         [
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997,
-          0.24999999999999997
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665,
+          0.6666666666666665
         ],
         [
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333,
-          0.958333333333333
-        ],
-        [
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667,
-          0.6666666666666667
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625,
+          0.625
         ],
         [
           0.24999999999999997,
@@ -12598,30 +12598,30 @@
           0.24999999999999997
         ],
         [
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663,
+          0.29166666666666663
         ]
       ]
     },
@@ -12727,10 +12727,6 @@
         }
       ],
       "commit_trend": [
-        {
-          "date": "2024-12-15",
-          "count": 13
-        },
         {
           "date": "2024-12-22",
           "count": 2
@@ -12933,6 +12929,10 @@
         },
         {
           "date": "2025-12-07",
+          "count": 0
+        },
+        {
+          "date": "2025-12-14",
           "count": 0
         }
       ]
@@ -13385,26 +13385,6 @@
     ],
     "monthly": [
       {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
-        "score": {
-          "commits": 6,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 18
-        },
-        "details": {
-          "commits": 6,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.2,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D-WEBUI",
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
@@ -13442,6 +13422,26 @@
           "comments": 0,
           "commits_per_day": 0.03333333333333333,
           "issues_per_day": 0.06666666666666667
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.03333333333333333,
+          "issues_per_day": 0.0
         }
       },
       {

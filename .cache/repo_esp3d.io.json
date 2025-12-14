@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765588118.9016702,
+  "timestamp": 1765675033.5025885,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -183,19 +183,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2024-12-15T00:00:00+00:00",
-          "total": 2,
-          "days": [
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1
-          ]
-        },
         {
           "week": "2024-12-22T00:00:00+00:00",
           "total": 1,
@@ -858,13 +845,26 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2025-12-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 114193,
       "stars": 9,
-      "forks": 54,
+      "forks": 55,
       "open_issues": 3,
       "watchers": 9,
       "default_branch": "main",
