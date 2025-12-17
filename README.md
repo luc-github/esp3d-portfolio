@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-35-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2017%2010:30%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2017%2010:45%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -16,23 +16,23 @@
 
 <div align="center">
 
-| Section | Type | Description |
-|---------|------|-------------|
-| [⭐ ESP3D](#user-content-esp3d) | Main Project | FW for ESP8266/ESP8285/ESP32 used with 3D printer |
-| [⭐ ESP3DLib](#user-content-esp3dlib) | Main Project | ESP3D library for Marlin and ESP32 boards |
-| [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
-| [⭐ ESP3D-TFT](#user-content-esp3d-tft) | Main Project | ESP3D Firmware for ESP32 based TFT  |
-| [⭐ Marlin](#user-content-marlin) | Main Project | Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine. |
-| [⭐ ESP3D-Configurator](#user-content-esp3d-configurator) | Main Project | Configurator for ESP3D Firmware |
-| [⭐ esp3d.io](#user-content-esp3d.io) | Main Project | Documentation of ESP3D Ecosystem |
-| [⭐ esp3d-webinstaller](#user-content-esp3d-webinstaller) | Main Project | Web Installer for ESP32 projects |
-| [🔗 ESP32SSDP](#user-content-esp32ssdp) | Dependency | Simple SSDP library for ESP32 |
-| [🔗 SSDP_IDF](#user-content-ssdp_idf) | Dependency | SSDP IDF component for ESP32 |
-| [🔗 esp32-usb-serial](#user-content-esp32-usb-serial) | Dependency | Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components |
-| [🔗 EspLuaEngine](#user-content-espluaengine) | Dependency | Add Lua engine to your firmware using ESP boards |
-| [🔗 plugin_oled_display](#user-content-plugin_oled_display) | Dependency | grblHAL plugin for oled display |
-| [📋 Global Issues](#-global-issues) | Overview | All open issues across projects |
-| [📊 Statistics](#-statistics) | Metrics | Project health and activity metrics |
+| Section | Type | Version | Description |
+|---------|------|---------|-------------|
+| [⭐ ESP3D](#user-content-esp3d) | Main Project | missing | FW for ESP8266/ESP8285/ESP32 used with 3D printer |
+| [⭐ ESP3DLib](#user-content-esp3dlib) | Main Project | missing | ESP3D library for Marlin and ESP32 boards |
+| [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | missing | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
+| [⭐ ESP3D-TFT](#user-content-esp3d-tft) | Main Project | missing | ESP3D Firmware for ESP32 based TFT  |
+| [⭐ Marlin](#user-content-marlin) | Main Project | missing | Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine. |
+| [⭐ ESP3D-Configurator](#user-content-esp3d-configurator) | Main Project | missing | Configurator for ESP3D Firmware |
+| [⭐ esp3d.io](#user-content-esp3d.io) | Main Project | missing | Documentation of ESP3D Ecosystem |
+| [⭐ esp3d-webinstaller](#user-content-esp3d-webinstaller) | Main Project | missing | Web Installer for ESP32 projects |
+| [🔗 ESP32SSDP](#user-content-esp32ssdp) | Dependency | missing | Simple SSDP library for ESP32 |
+| [🔗 SSDP_IDF](#user-content-ssdp_idf) | Dependency | missing | SSDP IDF component for ESP32 |
+| [🔗 esp32-usb-serial](#user-content-esp32-usb-serial) | Dependency | missing | Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components |
+| [🔗 EspLuaEngine](#user-content-espluaengine) | Dependency | missing | Add Lua engine to your firmware using ESP boards |
+| [🔗 plugin_oled_display](#user-content-plugin_oled_display) | Dependency | missing | grblHAL plugin for oled display |
+| [📋 Global Issues](#-global-issues) | Overview | - | All open issues across projects |
+| [📊 Statistics](#-statistics) | Metrics | - | Project health and activity metrics |
 
 </div>
 
@@ -207,6 +207,7 @@ Monthly  🟦 Few (1-25 commits)           (11.6 commits)
 
 **Project**: [ESP3D](https://github.com/luc-github/ESP3D)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: FW for ESP8266/ESP8285/ESP32 used with 3D printer<br>
 **Language**: C<br>
 **Health Score**: <span style="color: #ff0000">32.5%</span>
@@ -241,6 +242,7 @@ Author: Luc
 
 **Project**: [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: Configurator for ESP3D Firmware<br>
 **Language**: JavaScript<br>
 **Health Score**: <span style="color: #ff0000">31.3%</span>
@@ -274,6 +276,7 @@ Author: Luc
 
 **Project**: [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: ESP3D Firmware for ESP32 based TFT <br>
 **Language**: C<br>
 **Health Score**: <span style="color: #ff0000">32.5%</span>
@@ -313,6 +316,7 @@ Author: Luc
 
 **Project**: [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: Web Installer for ESP32 projects<br>
 **Language**: JavaScript<br>
 **Health Score**: <span style="color: #ff0000">25.9%</span>
@@ -341,6 +345,7 @@ Author: Luc
 
 **Project**: [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC<br>
 **Language**: JavaScript<br>
 **Health Score**: <span style="color: #ff0000">32.5%</span>
@@ -381,6 +386,7 @@ Author: Luc
 
 **Project**: [esp3d.io](https://github.com/luc-github/esp3d.io)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: Documentation of ESP3D Ecosystem<br>
 **Language**: HTML<br>
 **Health Score**: <span style="color: #ff0000">31.4%</span>
@@ -414,6 +420,7 @@ Author: Luc
 
 **Project**: [ESP3DLib](https://github.com/luc-github/ESP3DLib)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: ESP3D library for Marlin and ESP32 boards<br>
 **Language**: C++<br>
 **Health Score**: <span style="color: #ff0000">32.5%</span>
@@ -458,6 +465,7 @@ Author: Luc
 
 **Project**: [Marlin](https://github.com/luc-github/Marlin)<br>
 **Type**: Main<br>
+**Version**: ⚪ missing<br>
 **Description**: Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.<br>
 **Language**: C++<br>
 **Health Score**: <span style="color: #ff0000">13.9%</span>
@@ -498,6 +506,7 @@ Author: Luc
 
 **Project**: [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial)<br>
 **Type**: Dependency<br>
+**Version**: ⚪ missing<br>
 **Description**: Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components<br>
 **Language**: C++<br>
 **Health Score**: <span style="color: #ff0000">29.6%</span>
@@ -526,6 +535,7 @@ Author: Luc
 
 **Project**: [ESP32SSDP](https://github.com/luc-github/ESP32SSDP)<br>
 **Type**: Dependency<br>
+**Version**: ⚪ missing<br>
 **Description**: Simple SSDP library for ESP32<br>
 **Language**: C++<br>
 **Health Score**: <span style="color: #ff0000">32.5%</span>
@@ -559,6 +569,7 @@ Author: Luc
 
 **Project**: [EspLuaEngine](https://github.com/luc-github/EspLuaEngine)<br>
 **Type**: Dependency<br>
+**Version**: ⚪ missing<br>
 **Description**: Add Lua engine to your firmware using ESP boards<br>
 **Language**: C<br>
 **Health Score**: <span style="color: #ff0000">26.5%</span>
@@ -587,6 +598,7 @@ Author: Luc
 
 **Project**: [plugin_oled_display](https://github.com/luc-github/plugin_oled_display)<br>
 **Type**: Dependency<br>
+**Version**: ⚪ missing<br>
 **Description**: grblHAL plugin for oled display<br>
 **Language**: Python<br>
 **Health Score**: <span style="color: #ff0000">26.0%</span>
@@ -615,6 +627,7 @@ Author: Luc
 
 **Project**: [Private Project #1](None)<br>
 **Type**: Private<br>
+**Version**: ⚪ missing<br>
 **Description**: No description<br>
 **Language**: Not specified<br>
 **Health Score**: <span style="color: #ff0000">0.0%</span>
@@ -643,6 +656,7 @@ Author: Private
 
 **Project**: [SSDP_IDF](https://github.com/luc-github/SSDP_IDF)<br>
 **Type**: Dependency<br>
+**Version**: ⚪ missing<br>
 **Description**: SSDP IDF component for ESP32<br>
 **Language**: C<br>
 **Health Score**: <span style="color: #ff0000">27.3%</span>
@@ -1059,7 +1073,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-12-17 10:30:46 UTC*
+*🔄 Last updated: 2025-12-17 10:45:50 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
