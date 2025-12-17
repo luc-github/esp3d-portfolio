@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765966843.3171268,
+  "timestamp": 1765967373.274106,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -584,6 +584,12 @@
           "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
           "author": "Luc",
           "date": "2024-08-16T05:37:49+00:00"
+        },
+        {
+          "sha": "16ce347",
+          "message": "Fix typo in status panel that make it crash\n\nAdd sanity check if extension has no body",
+          "author": "Luc",
+          "date": "2024-08-15T08:29:49+00:00"
         }
       ],
       "commit_activity": [

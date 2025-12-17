@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765966946.7225351,
+  "timestamp": 1765967393.2775116,
   "data": {
     "name": "Marlin",
     "type": "main",
@@ -2361,6 +2361,12 @@
           "message": "\u26a1\ufe0f Input Shaping improvements (#24951)",
           "author": "tombrazier",
           "date": "2022-11-28T03:38:15+00:00"
+        },
+        {
+          "sha": "d2ece1e",
+          "message": "\ud83d\udc1b Fix missing va_end in UnwPrintf (#25027)",
+          "author": "Trivalik",
+          "date": "2022-11-28T01:06:44+00:00"
         }
       ],
       "commit_activity": [

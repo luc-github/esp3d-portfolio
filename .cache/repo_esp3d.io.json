@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967116.7188425,
+  "timestamp": 1765967403.7401736,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -432,6 +432,12 @@
           "message": "Add hooks and variables documentation for ESP3D V3.0",
           "author": "Luc",
           "date": "2024-08-19T12:01:45+00:00"
+        },
+        {
+          "sha": "fffe0f6",
+          "message": "Fix typo\n\nAdd rewrite for previews website compaitibility",
+          "author": "Luc",
+          "date": "2024-08-19T10:26:20+00:00"
         }
       ],
       "commit_activity": [

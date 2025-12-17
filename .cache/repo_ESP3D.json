@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765966813.8087943,
+  "timestamp": 1765967358.1925402,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -488,6 +488,12 @@
           "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
           "author": "Luc",
           "date": "2024-10-19T10:13:45+00:00"
+        },
+        {
+          "sha": "9bac144",
+          "message": "Update esp3d_version.h",
+          "author": "Luc",
+          "date": "2024-09-12T03:38:50+00:00"
         }
       ],
       "commit_activity": [
