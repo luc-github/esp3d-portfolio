@@ -56,8 +56,9 @@ class GitHubCollector:
     def collect_private_repositories_data(self) -> List[Dict]:
         """Collect data for private repositories (commits only, anonymized)"""
         private_repos_data = []
-        self.logger.info("Collecting 'private_repositories'")
-        private_config = self.config.get_option('private_repositories', None)
+        
+        # Access private_repositories config section directly (not via get_option which expects section+key)
+        private_config = self.config.config.get('private_repositories', None)
         if not private_config:
             self.logger.info("No 'private_repositories' section in config")
             return []
@@ -78,7 +79,7 @@ class GitHubCollector:
                 cache_key = f"private_repo_{idx}"  # Anonymized cache key
                 cached_data = self.cache.get(cache_key)
                 if cached_data:
-                    self.logger.info(f"Using cached data for private repository #{idx}")
+                    self.logger.debug(f"Using cached data for private repository #{idx}")
                     private_repos_data.append(cached_data)
                     continue
                 
@@ -86,7 +87,7 @@ class GitHubCollector:
                 
                 # Try to get the repo - this will fail if repo doesn't exist or token lacks permission
                 full_repo_name = f"{self.username}/{repo_name}"
-                self.logger.info(f"Attempting to access: {full_repo_name}")
+                self.logger.debug(f"Attempting to access: {full_repo_name}")
                 
                 repo = self._retry_on_failure(
                     self.github.get_repo, 
