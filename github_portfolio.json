@@ -552,6 +552,12 @@
             "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
             "author": "Luc",
             "date": "2024-10-19T10:13:45+00:00"
+          },
+          {
+            "sha": "9bac144",
+            "message": "Update esp3d_version.h",
+            "author": "Luc",
+            "date": "2024-09-12T03:38:50+00:00"
           }
         ],
         "commit_activity": [
@@ -1731,6 +1737,12 @@
             "message": "Update sd_ESP32.h",
             "author": "Eduard Sukharev",
             "date": "2022-08-23T19:42:27+00:00"
+          },
+          {
+            "sha": "645cb10",
+            "message": "Update sd_ESP32.cpp",
+            "author": "Eduard Sukharev",
+            "date": "2022-08-23T19:41:40+00:00"
           }
         ],
         "commit_activity": [
@@ -3138,6 +3150,12 @@
             "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
             "author": "Luc",
             "date": "2024-08-16T05:37:49+00:00"
+          },
+          {
+            "sha": "16ce347",
+            "message": "Fix typo in status panel that make it crash\n\nAdd sanity check if extension has no body",
+            "author": "Luc",
+            "date": "2024-08-15T08:29:49+00:00"
           }
         ],
         "commit_activity": [
@@ -4468,6 +4486,12 @@
             "message": "Add full clean everywhere\n\nStart by ESP32-S3 then ESP32",
             "author": "Luc",
             "date": "2024-04-16T01:10:24+00:00"
+          },
+          {
+            "sha": "3ccef88",
+            "message": "Enable CI back",
+            "author": "Luc",
+            "date": "2024-04-16T00:47:07+00:00"
           }
         ],
         "commit_activity": [
@@ -7555,6 +7579,12 @@
             "message": "\u26a1\ufe0f Input Shaping improvements (#24951)",
             "author": "tombrazier",
             "date": "2022-11-28T03:38:15+00:00"
+          },
+          {
+            "sha": "d2ece1e",
+            "message": "\ud83d\udc1b Fix missing va_end in UnwPrintf (#25027)",
+            "author": "Trivalik",
+            "date": "2022-11-28T01:06:44+00:00"
           }
         ],
         "commit_activity": [
@@ -8706,6 +8736,12 @@
             "message": "Add default pins for each mcu\n\nAdd pins for SPI screens\nAdd platformio.ini generation",
             "author": "Luc",
             "date": "2022-06-25T09:35:07+00:00"
+          },
+          {
+            "sha": "3564810",
+            "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
+            "author": "Luc",
+            "date": "2022-06-22T12:56:59+00:00"
           }
         ],
         "commit_activity": [
@@ -9888,6 +9924,12 @@
             "message": "Add hooks and variables documentation for ESP3D V3.0",
             "author": "Luc",
             "date": "2024-08-19T12:01:45+00:00"
+          },
+          {
+            "sha": "fffe0f6",
+            "message": "Fix typo\n\nAdd rewrite for previews website compaitibility",
+            "author": "Luc",
+            "date": "2024-08-19T10:26:20+00:00"
           }
         ],
         "commit_activity": [
@@ -11929,6 +11971,12 @@
             "message": "Update .travis.yml",
             "author": "Luc",
             "date": "2020-02-07T04:53:26+00:00"
+          },
+          {
+            "sha": "2af5fff",
+            "message": "add travis for arduino and platformIO",
+            "author": "Luc",
+            "date": "2020-02-07T04:19:17+00:00"
           }
         ],
         "commit_activity": [
@@ -16143,14 +16191,371 @@
         "community_score": 0.15333333333333332,
         "overall_score": 0.2603333333333333
       }
+    },
+    {
+      "name": "Private Project #1",
+      "type": "private",
+      "is_private": true,
+      "description": null,
+      "url": null,
+      "language": null,
+      "created_at": "2025-05-27T04:25:42+00:00",
+      "updated_at": "2025-12-16T12:53:30+00:00",
+      "branches": [
+        {
+          "name": "main",
+          "label": "Default",
+          "is_production": true,
+          "last_commit": {
+            "sha": "97dbe9b",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-16T12:48:07+00:00"
+          },
+          "protected": false,
+          "issues": []
+        }
+      ],
+      "contributors": [],
+      "activity": {
+        "recent_commits": [
+          {
+            "sha": "97dbe9b",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-16T12:48:07+00:00"
+          },
+          {
+            "sha": "099ff86",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-13T09:05:10+00:00"
+          },
+          {
+            "sha": "6771b2d",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-13T06:58:56+00:00"
+          },
+          {
+            "sha": "016e6cc",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-13T05:28:18+00:00"
+          },
+          {
+            "sha": "33c2b91",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-12T14:11:31+00:00"
+          },
+          {
+            "sha": "dad3494",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T13:59:01+00:00"
+          },
+          {
+            "sha": "3c91035",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T13:35:47+00:00"
+          },
+          {
+            "sha": "834ded8",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T12:19:49+00:00"
+          },
+          {
+            "sha": "6c682d6",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T12:11:20+00:00"
+          },
+          {
+            "sha": "3ca9df3",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T12:10:24+00:00"
+          },
+          {
+            "sha": "f952d50",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T09:41:21+00:00"
+          },
+          {
+            "sha": "ce04948",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T09:40:53+00:00"
+          },
+          {
+            "sha": "3057cd6",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T09:40:09+00:00"
+          },
+          {
+            "sha": "fef6056",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T09:39:03+00:00"
+          },
+          {
+            "sha": "faeaf9f",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T09:19:37+00:00"
+          },
+          {
+            "sha": "cfcecf0",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T04:45:02+00:00"
+          },
+          {
+            "sha": "663c4df",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T04:16:13+00:00"
+          },
+          {
+            "sha": "2bee17c",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T02:49:09+00:00"
+          },
+          {
+            "sha": "fe6dc35",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-11T02:48:58+00:00"
+          },
+          {
+            "sha": "2f1b6a6",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-10T12:42:59+00:00"
+          },
+          {
+            "sha": "e32e052",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-10T12:19:57+00:00"
+          },
+          {
+            "sha": "5d2fa80",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T16:03:26+00:00"
+          },
+          {
+            "sha": "fc281f9",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T15:35:48+00:00"
+          },
+          {
+            "sha": "3206675",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T15:08:27+00:00"
+          },
+          {
+            "sha": "415131f",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T13:42:49+00:00"
+          },
+          {
+            "sha": "3ba09c3",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T13:31:40+00:00"
+          },
+          {
+            "sha": "49c8677",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T10:41:30+00:00"
+          },
+          {
+            "sha": "ebfa943",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T10:23:09+00:00"
+          },
+          {
+            "sha": "83b7786",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T10:16:41+00:00"
+          },
+          {
+            "sha": "87d2ee7",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-09T01:57:01+00:00"
+          },
+          {
+            "sha": "abb9182",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-08T13:43:10+00:00"
+          },
+          {
+            "sha": "b7a48fd",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-08T12:08:01+00:00"
+          },
+          {
+            "sha": "2aaa801",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T13:05:09+00:00"
+          },
+          {
+            "sha": "d73e295",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T13:05:00+00:00"
+          },
+          {
+            "sha": "09b39cd",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T08:58:26+00:00"
+          },
+          {
+            "sha": "919f71e",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T05:51:25+00:00"
+          },
+          {
+            "sha": "ce017bd",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T05:51:15+00:00"
+          },
+          {
+            "sha": "cf55d98",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T05:44:53+00:00"
+          },
+          {
+            "sha": "b20b8ec",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T05:43:59+00:00"
+          },
+          {
+            "sha": "405feee",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T04:15:47+00:00"
+          },
+          {
+            "sha": "c090c4f",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-07T02:34:46+00:00"
+          },
+          {
+            "sha": "31dd512",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-06T17:14:29+00:00"
+          },
+          {
+            "sha": "184ae29",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-06T14:21:08+00:00"
+          },
+          {
+            "sha": "1a47d64",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-06T11:54:37+00:00"
+          },
+          {
+            "sha": "944e239",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T08:54:48+00:00"
+          },
+          {
+            "sha": "956383f",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T06:28:46+00:00"
+          },
+          {
+            "sha": "596e0cf",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T06:21:04+00:00"
+          },
+          {
+            "sha": "380a20d",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T06:02:20+00:00"
+          },
+          {
+            "sha": "7294d8b",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T04:35:58+00:00"
+          },
+          {
+            "sha": "f6d1d16",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T02:41:38+00:00"
+          },
+          {
+            "sha": "13397b8",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-04T00:21:44+00:00"
+          },
+          {
+            "sha": "1c70165",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-12-03T15:38:12+00:00"
+          },
+          {
+            "sha": "fc594f6",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-11-29T13:12:05+00:00"
+          }
+        ],
+        "commit_activity": [],
+        "last_commit": {
+          "sha": "97dbe9b",
+          "message": "Private commit",
+          "author": "Private",
+          "date": "2025-12-16T12:48:07+00:00"
+        }
+      },
+      "statistics": {},
+      "health_score": {}
     }
   ],
   "rate_limit": {},
   "stats": {
     "repositories": {
-      "total_count": 13,
+      "total_count": 14,
       "main_projects": 8,
-      "dependencies": 5,
+      "dependencies": 6,
       "languages": {
         "C": 4,
         "C++": 4,
@@ -16162,7 +16567,7 @@
       "total_stars": 3042,
       "total_forks": 968,
       "branches": {
-        "production": 11,
+        "production": 12,
         "development": 4,
         "protected": 0
       }
@@ -16172,7 +16577,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1006.1804597293419,
+      "avg_age_days": 1006.1827466967609,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
@@ -16184,7 +16589,7 @@
       }
     },
     "activity": {
-      "total_commits": 56,
+      "total_commits": 77,
       "commit_frequency": {
         "daily": 0.4148351648351649,
         "weekly": 2.9038461538461533,
@@ -16193,12 +16598,12 @@
       "active_contributors": {
         "last_week": 1,
         "last_month": 4,
-        "total": 452
+        "total": 453
       },
       "activity_heatmap": [
         [
           3,
-          5,
+          6,
           9,
           8,
           4,
@@ -16207,10 +16612,10 @@
           7,
           5,
           13,
-          2,
+          3,
           0,
-          6,
-          2,
+          7,
+          3,
           0,
           1,
           0,
@@ -16223,8 +16628,8 @@
           2
         ],
         [
-          3,
-          1,
+          4,
+          2,
           1,
           9,
           2,
@@ -16233,16 +16638,16 @@
           10,
           7,
           3,
-          5,
+          8,
           10,
+          5,
           4,
-          2,
+          1,
+          3,
           1,
           1,
           0,
-          1,
-          0,
-          2,
+          3,
           0,
           0,
           0,
@@ -16261,10 +16666,10 @@
           6,
           4,
           5,
-          7,
+          10,
           1,
           2,
-          1,
+          2,
           1,
           0,
           1,
@@ -16275,20 +16680,20 @@
           4
         ],
         [
-          0,
+          1,
           14,
-          1,
-          11,
-          18,
-          5,
+          4,
           12,
-          7,
-          10,
+          21,
           5,
+          15,
+          7,
+          12,
+          10,
           8,
           1,
-          1,
-          0,
+          4,
+          2,
           1,
           1,
           0,
@@ -16305,7 +16710,7 @@
           6,
           2,
           0,
-          5,
+          6,
           11,
           5,
           1,
@@ -16315,7 +16720,7 @@
           2,
           1,
           5,
-          0,
+          1,
           1,
           0,
           0,
@@ -16332,19 +16737,19 @@
           0,
           2,
           2,
-          2,
-          5,
+          3,
+          6,
           2,
           8,
-          5,
+          6,
           2,
-          5,
+          6,
           3,
-          2,
-          2,
+          3,
+          3,
           4,
           0,
-          2,
+          3,
           0,
           0,
           0,
@@ -16355,18 +16760,18 @@
         [
           2,
           9,
-          6,
+          7,
           3,
-          2,
-          1,
+          3,
+          5,
           5,
           11,
-          7,
+          8,
           4,
           1,
           4,
           6,
-          0,
+          2,
           1,
           0,
           1,
@@ -17063,6 +17468,27 @@
         }
       },
       {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 1.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "Marlin",
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
@@ -17124,6 +17550,27 @@
           "issues": 0,
           "comments": 0,
           "commits_per_day": 3.2857142857142856,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 21,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 63
+        },
+        "details": {
+          "commits": 21,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 3.0,
           "issues_per_day": 0.0
         }
       },
@@ -17381,6 +17828,27 @@
       }
     ],
     "monthly": [
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 53,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 159
+        },
+        "details": {
+          "commits": 53,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 1.7666666666666666,
+          "issues_per_day": 0.0
+        }
+      },
       {
         "name": "esp3d-webinstaller",
         "type": "main",
@@ -17656,6 +18124,27 @@
       }
     ],
     "yearly": [
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 53,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 159
+        },
+        "details": {
+          "commits": 53,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.14520547945205478,
+          "issues_per_day": 0.0
+        }
+      },
       {
         "name": "ESP3D",
         "type": "main",

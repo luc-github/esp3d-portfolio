@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967185.3592384,
+  "timestamp": 1765967414.7630007,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -408,6 +408,12 @@
           "message": "Update .travis.yml",
           "author": "Luc",
           "date": "2020-02-07T04:53:26+00:00"
+        },
+        {
+          "sha": "2af5fff",
+          "message": "add travis for arduino and platformIO",
+          "author": "Luc",
+          "date": "2020-02-07T04:19:17+00:00"
         }
       ],
       "commit_activity": [
