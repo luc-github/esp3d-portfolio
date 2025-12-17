@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951773.5783172,
+  "timestamp": 1765967185.3592384,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP32SSDP",
     "language": "C++",
     "created_at": "2018-03-20T12:53:31+00:00",
-    "updated_at": "2025-10-07T18:42:36+00:00",
+    "updated_at": "2025-12-17T09:08:17+00:00",
     "branches": [
       {
         "name": "v2.x",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "669df24",
-          "message": "Initialize ip if out of scope thanks @folkertvanheusden for raising it",
+          "sha": "0dbf33a",
+          "message": "Update README with badges and copyright info",
           "author": "Luc",
-          "date": "2025-05-14T05:21:09+00:00"
+          "date": "2025-12-17T09:08:13+00:00"
         },
         "protected": false,
         "issues": [
@@ -76,33 +76,92 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 38,
+        "contributions": 47,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 4,
+        "contributions": 3,
         "url": "https://github.com/apps/allcontributors"
       },
       {
         "login": "CriPstian",
         "contributions": 1,
         "url": "https://github.com/CriPstian"
+      },
+      {
+        "login": "mathertel",
+        "contributions": 1,
+        "url": "https://github.com/mathertel"
       }
     ],
     "activity": {
       "recent_commits": [
         {
-          "sha": "b86e3e1",
-          "message": "docs: add mathertel as a contributor for code (#45)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-          "author": "allcontributors[bot]",
-          "date": "2025-01-22T06:06:25+00:00"
+          "sha": "0dbf33a",
+          "message": "Update README with badges and copyright info",
+          "author": "Luc",
+          "date": "2025-12-17T09:08:13+00:00"
         },
         {
-          "sha": "32a4e0c",
-          "message": "Update README.md (#42)",
+          "sha": "f6b896a",
+          "message": "Create info.json",
           "author": "Luc",
-          "date": "2024-06-01T08:59:33+00:00"
+          "date": "2025-12-17T09:04:40+00:00"
+        },
+        {
+          "sha": "669df24",
+          "message": "Initialize ip if out of scope thanks @folkertvanheusden for raising it",
+          "author": "Luc",
+          "date": "2025-05-14T05:21:09+00:00"
+        },
+        {
+          "sha": "311f536",
+          "message": "Add started API\n\nFix IP not correct for ethernet\nMove localIP to public to check configuration\nBump version",
+          "author": "Luc",
+          "date": "2024-12-10T11:02:30+00:00"
+        },
+        {
+          "sha": "cbc3183",
+          "message": "Make backward compatible for the warning fix",
+          "author": "Luc",
+          "date": "2024-08-24T08:13:51+00:00"
+        },
+        {
+          "sha": "c568b80",
+          "message": "Fix warning\n\nBump version",
+          "author": "Luc",
+          "date": "2024-08-23T07:12:46+00:00"
+        },
+        {
+          "sha": "ee4d42c",
+          "message": "V2.x compatible to ESP32 Core 2.x (#44)",
+          "author": "Matthias Hertel",
+          "date": "2024-06-18T00:30:57+00:00"
+        },
+        {
+          "sha": "c4e4919",
+          "message": "Fix some typos",
+          "author": "Luc",
+          "date": "2024-06-01T08:25:01+00:00"
+        },
+        {
+          "sha": "b879533",
+          "message": "Update readme and ci for V2.x",
+          "author": "Luc",
+          "date": "2024-06-01T08:19:52+00:00"
+        },
+        {
+          "sha": "f8e0894",
+          "message": "Remove deprecated functions\n\nAdd missing ttl parameter to listenMulticast",
+          "author": "Luc",
+          "date": "2024-06-01T08:03:22+00:00"
+        },
+        {
+          "sha": "69cf328",
+          "message": "Fixes for ESP32 core V3.0.0",
+          "author": "Luc",
+          "date": "2024-06-01T07:40:30+00:00"
         },
         {
           "sha": "3f5b0b5",
@@ -349,54 +408,6 @@
           "message": "Update .travis.yml",
           "author": "Luc",
           "date": "2020-02-07T04:53:26+00:00"
-        },
-        {
-          "sha": "2af5fff",
-          "message": "add travis for arduino and platformIO",
-          "author": "Luc",
-          "date": "2020-02-07T04:19:17+00:00"
-        },
-        {
-          "sha": "4ac65d8",
-          "message": "add template, workflow and stale",
-          "author": "Luc",
-          "date": "2020-02-02T10:36:40+00:00"
-        },
-        {
-          "sha": "4c22345",
-          "message": "Update FUNDING.yml",
-          "author": "Luc",
-          "date": "2019-10-22T06:21:45+00:00"
-        },
-        {
-          "sha": "2df63b7",
-          "message": "Create FUNDING.yml",
-          "author": "Luc",
-          "date": "2019-10-22T06:20:17+00:00"
-        },
-        {
-          "sha": "fd1cebf",
-          "message": "Ensure it compile only with ESP32\n\nto simplify platformIO.ini with ESP8266",
-          "author": "Luc",
-          "date": "2019-07-01T06:30:32+00:00"
-        },
-        {
-          "sha": "968e295",
-          "message": "Add ethernet support\n\nonly WIFI-STA and ETH-STA are supported",
-          "author": "Luc",
-          "date": "2019-01-21T15:06:39+00:00"
-        },
-        {
-          "sha": "5635ba5",
-          "message": "Update to leverage on https://github.com/esp8266/Arduino/pull/5607\n\nAdd proper end() function\nAdd `SSDP.setDeviceType(\"upnp:rootdevice\"); ` in sample as it may not be obvious that it is an option to appear in Windows Network Panel",
-          "author": "Luc",
-          "date": "2019-01-14T19:28:02+00:00"
-        },
-        {
-          "sha": "ce7e723",
-          "message": "Fix Warning for unused variable",
-          "author": "Luc",
-          "date": "2018-11-18T14:36:42+00:00"
         }
       ],
       "commit_activity": [
@@ -454,12 +465,12 @@
         },
         {
           "week": "2025-01-19T00:00:00+00:00",
-          "total": 1,
+          "total": 0,
           "days": [
             0,
             0,
             0,
-            1,
+            0,
             0,
             0,
             0
@@ -662,12 +673,12 @@
         },
         {
           "week": "2025-05-11T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
-            0,
+            1,
             0,
             0,
             0
@@ -1065,12 +1076,12 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
             0,
-            0,
+            2,
             0,
             0,
             0
@@ -1079,12 +1090,12 @@
       ]
     },
     "statistics": {
-      "size": 124,
+      "size": 128,
       "stars": 53,
       "forks": 27,
       "open_issues": 3,
       "watchers": 53,
-      "default_branch": "master",
+      "default_branch": "v2.x",
       "license": "GNU General Public License v3.0"
     }
   }

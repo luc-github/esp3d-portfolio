@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951763.0754645,
+  "timestamp": 1765967109.6414218,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-Configurator",
     "language": "JavaScript",
     "created_at": "2022-06-03T07:30:48+00:00",
-    "updated_at": "2024-12-18T20:23:22+00:00",
+    "updated_at": "2025-12-17T08:40:21+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "600598d",
-          "message": "use arduino core 3.0.4 / pioarduino",
+          "sha": "644f37a",
+          "message": "Include disclaimer in README\n\nAdded a disclaimer about software usage and liability.",
           "author": "Luc",
-          "date": "2024-12-18T20:23:13+00:00"
+          "date": "2025-12-17T08:40:18+00:00"
         },
         "protected": false,
         "issues": [
@@ -73,7 +73,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 101,
+        "contributions": 103,
         "url": "https://github.com/luc-github"
       },
       {
@@ -89,6 +89,18 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "644f37a",
+          "message": "Include disclaimer in README\n\nAdded a disclaimer about software usage and liability.",
+          "author": "Luc",
+          "date": "2025-12-17T08:40:18+00:00"
+        },
+        {
+          "sha": "b197d92",
+          "message": "Add version tracker",
+          "author": "Luc",
+          "date": "2025-12-17T07:05:37+00:00"
+        },
         {
           "sha": "600598d",
           "message": "use arduino core 3.0.4 / pioarduino",
@@ -388,12 +400,6 @@
           "message": "Add default pins for each mcu\n\nAdd pins for SPI screens\nAdd platformio.ini generation",
           "author": "Luc",
           "date": "2022-06-25T09:35:07+00:00"
-        },
-        {
-          "sha": "3564810",
-          "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
-          "author": "Luc",
-          "date": "2022-06-22T12:56:59+00:00"
         }
       ],
       "commit_activity": [
@@ -1062,12 +1068,12 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
             0,
-            0,
+            2,
             0,
             0,
             0
@@ -1076,7 +1082,7 @@
       ]
     },
     "statistics": {
-      "size": 938,
+      "size": 942,
       "stars": 8,
       "forks": 5,
       "open_issues": 3,

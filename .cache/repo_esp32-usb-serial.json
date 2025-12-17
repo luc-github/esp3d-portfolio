@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951778.9598715,
+  "timestamp": 1765967226.7706811,
   "data": {
     "name": "esp32-usb-serial",
     "type": "dependency",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp32-usb-serial",
     "language": "C++",
     "created_at": "2024-02-12T12:39:24+00:00",
-    "updated_at": "2025-10-12T20:26:00+00:00",
+    "updated_at": "2025-12-17T08:41:07+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "e40590e",
-          "message": "Update esp32_usb_serial.cpp",
+          "sha": "f76066f",
+          "message": "Revise disclaimer for software warranty and liability\n\nUpdated the disclaimer section to clarify the software's warranty status and usage conditions.",
           "author": "Luc",
-          "date": "2024-11-04T21:11:43+00:00"
+          "date": "2025-12-17T08:41:03+00:00"
         },
         "protected": false,
         "issues": []
@@ -26,12 +26,30 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 12,
+        "contributions": 15,
         "url": "https://github.com/luc-github"
       }
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "f76066f",
+          "message": "Revise disclaimer for software warranty and liability\n\nUpdated the disclaimer section to clarify the software's warranty status and usage conditions.",
+          "author": "Luc",
+          "date": "2025-12-17T08:41:03+00:00"
+        },
+        {
+          "sha": "fe77c33",
+          "message": "Enhance README with version badges\n\nUpdated README to include version badge and IDF version badge.",
+          "author": "Luc",
+          "date": "2025-12-17T08:29:03+00:00"
+        },
+        {
+          "sha": "04383e0",
+          "message": "Create info.json",
+          "author": "Luc",
+          "date": "2025-12-17T08:25:01+00:00"
+        },
         {
           "sha": "e40590e",
           "message": "Update esp32_usb_serial.cpp",
@@ -771,12 +789,12 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
-            0,
+            3,
             0,
             0,
             0
@@ -785,7 +803,7 @@
       ]
     },
     "statistics": {
-      "size": 109,
+      "size": 114,
       "stars": 18,
       "forks": 5,
       "open_issues": 0,

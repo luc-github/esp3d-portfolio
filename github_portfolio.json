@@ -7,17 +7,17 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2025-12-17T05:28:18+00:00",
+      "updated_at": "2025-12-17T08:55:47+00:00",
       "branches": [
         {
           "name": "3.0",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "67bba4b",
-            "message": "Bump firmware version from 3.0.1 to 3.0.2dev\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "sha": "cee8abb",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
             "author": "Luc",
-            "date": "2025-12-17T05:28:13+00:00"
+            "date": "2025-12-17T08:55:42+00:00"
           },
           "protected": false,
           "issues": [
@@ -39,7 +39,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 2712,
-              "days_since_update": 8,
+              "days_since_update": 9,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -68,7 +68,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1238,
-              "days_since_update": 265,
+              "days_since_update": 266,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -165,7 +165,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 559,
+          "contributions": 560,
           "url": "https://github.com/luc-github"
         },
         {
@@ -241,6 +241,12 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "cee8abb",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T08:55:42+00:00"
+          },
           {
             "sha": "67bba4b",
             "message": "Bump firmware version from 3.0.1 to 3.0.2dev\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -1214,12 +1220,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 6,
+            "total": 7,
             "days": [
               0,
               0,
               1,
-              5,
+              6,
               0,
               0,
               0
@@ -1228,7 +1234,7 @@
         ]
       },
       "statistics": {
-        "size": 135147,
+        "size": 135156,
         "stars": 1924,
         "forks": 485,
         "open_issues": 4,
@@ -1250,17 +1256,17 @@
       "url": "https://github.com/luc-github/ESP3DLib",
       "language": "C++",
       "created_at": "2019-12-16T13:18:03+00:00",
-      "updated_at": "2025-12-03T09:27:52+00:00",
+      "updated_at": "2025-12-17T08:17:02+00:00",
       "branches": [
         {
           "name": "master",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "6d62f76",
-            "message": "Merge pull request #91 from ellensp/fix-typo\n\nfix typo, pull/90 followup",
+            "sha": "515c62d",
+            "message": "Change Marlin badge style to plastic\n\nUpdated badge style for Marlin in README.md.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
             "author": "Luc",
-            "date": "2025-05-09T13:56:58+00:00"
+            "date": "2025-12-17T08:16:58+00:00"
           },
           "protected": false,
           "issues": [],
@@ -1310,8 +1316,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 269,
-              "days_since_update": 269,
+              "age_days": 270,
+              "days_since_update": 270,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1338,7 +1344,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1414,
+              "age_days": 1415,
               "days_since_update": 361,
               "is_stale": true,
               "is_recent": false,
@@ -1378,7 +1384,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 100,
+          "contributions": 103,
           "url": "https://github.com/luc-github"
         },
         {
@@ -1414,6 +1420,24 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "515c62d",
+            "message": "Change Marlin badge style to plastic\n\nUpdated badge style for Marlin in README.md.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T08:16:58+00:00"
+          },
+          {
+            "sha": "5460896",
+            "message": "Revise README badges and version details\n\nUpdated badge links and version information in README.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T08:12:10+00:00"
+          },
+          {
+            "sha": "05ef524",
+            "message": "Create info.json",
+            "author": "Luc",
+            "date": "2025-12-17T07:25:47+00:00"
+          },
           {
             "sha": "6d62f76",
             "message": "Merge pull request #91 from ellensp/fix-typo\n\nfix typo, pull/90 followup",
@@ -1707,18 +1731,6 @@
             "message": "Update sd_ESP32.h",
             "author": "Eduard Sukharev",
             "date": "2022-08-23T19:42:27+00:00"
-          },
-          {
-            "sha": "645cb10",
-            "message": "Update sd_ESP32.cpp",
-            "author": "Eduard Sukharev",
-            "date": "2022-08-23T19:41:40+00:00"
-          },
-          {
-            "sha": "f6fb0b8",
-            "message": "Update README.md",
-            "author": "Luc",
-            "date": "2022-08-14T12:46:41+00:00"
           }
         ],
         "commit_activity": [
@@ -2387,12 +2399,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 3,
             "days": [
               0,
               0,
               0,
-              0,
+              3,
               0,
               0,
               0
@@ -2401,7 +2413,7 @@
         ]
       },
       "statistics": {
-        "size": 11599,
+        "size": 11618,
         "stars": 113,
         "forks": 35,
         "open_issues": 2,
@@ -2411,10 +2423,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.15000000000000002
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -2478,7 +2490,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 107,
-              "days_since_update": 106,
+              "days_since_update": 107,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2506,8 +2518,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 261,
-              "days_since_update": 261,
+              "age_days": 262,
+              "days_since_update": 262,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2536,7 +2548,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1312,
-              "days_since_update": 386,
+              "days_since_update": 387,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2566,7 +2578,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1893,
-              "days_since_update": 429,
+              "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2595,7 +2607,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1973,
-              "days_since_update": 429,
+              "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2627,7 +2639,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 562,
-              "days_since_update": 429,
+              "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2655,7 +2667,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1186,
-              "days_since_update": 429,
+              "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2713,7 +2725,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1317,
-              "days_since_update": 1289,
+              "days_since_update": 1290,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2754,7 +2766,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 340,
+          "contributions": 342,
           "url": "https://github.com/luc-github"
         },
         {
@@ -3120,6 +3132,12 @@
             "message": "Bump version\n\nBuild packages",
             "author": "Luc",
             "date": "2024-08-16T05:40:42+00:00"
+          },
+          {
+            "sha": "f49016a",
+            "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
+            "author": "Luc",
+            "date": "2024-08-16T05:37:49+00:00"
           }
         ],
         "commit_activity": [
@@ -3802,7 +3820,7 @@
         ]
       },
       "statistics": {
-        "size": 118184,
+        "size": 118191,
         "stars": 851,
         "forks": 335,
         "open_issues": 10,
@@ -3825,17 +3843,17 @@
       "url": "https://github.com/luc-github/ESP3D-TFT",
       "language": "C",
       "created_at": "2022-08-24T05:55:10+00:00",
-      "updated_at": "2025-09-17T13:40:13+00:00",
+      "updated_at": "2025-12-17T06:36:13+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "3f2d9d0",
-            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "sha": "48c6ef0",
+            "message": "Update cache action version in CI workflow\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
             "author": "Luc",
-            "date": "2025-04-16T11:26:50+00:00"
+            "date": "2025-12-17T06:36:08+00:00"
           },
           "protected": false,
           "issues": [
@@ -3855,7 +3873,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 211,
-              "days_since_update": 140,
+              "days_since_update": 141,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3910,7 +3928,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 698,
-              "days_since_update": 367,
+              "days_since_update": 368,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3935,8 +3953,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 429,
-              "days_since_update": 429,
+              "age_days": 430,
+              "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4042,8 +4060,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1030,
-              "days_since_update": 1030,
+              "age_days": 1031,
+              "days_since_update": 1031,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4113,7 +4131,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 836,
+          "contributions": 839,
           "url": "https://github.com/luc-github"
         },
         {
@@ -4139,6 +4157,24 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "48c6ef0",
+            "message": "Update cache action version in CI workflow\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T06:36:08+00:00"
+          },
+          {
+            "sha": "28b38ec",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T06:31:42+00:00"
+          },
+          {
+            "sha": "cde921c",
+            "message": "Add 'devt' field to info.json\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T06:25:48+00:00"
+          },
           {
             "sha": "3f2d9d0",
             "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -4432,18 +4468,6 @@
             "message": "Add full clean everywhere\n\nStart by ESP32-S3 then ESP32",
             "author": "Luc",
             "date": "2024-04-16T01:10:24+00:00"
-          },
-          {
-            "sha": "3ccef88",
-            "message": "Enable CI back",
-            "author": "Luc",
-            "date": "2024-04-16T00:47:07+00:00"
-          },
-          {
-            "sha": "fa6e2ce",
-            "message": "POC add Marlin Logo during splash to highlight FW target",
-            "author": "Luc",
-            "date": "2024-04-15T09:17:51+00:00"
           }
         ],
         "commit_activity": [
@@ -5112,12 +5136,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 3,
             "days": [
               0,
               0,
               0,
-              0,
+              3,
               0,
               0,
               0
@@ -5126,7 +5150,7 @@
         ]
       },
       "statistics": {
-        "size": 100369,
+        "size": 100378,
         "stars": 48,
         "forks": 12,
         "open_issues": 9,
@@ -5136,10 +5160,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.15000000000000002
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -7525,6 +7549,12 @@
             "message": "\u26a1\ufe0f More SCURVE cycles on unoptimized cortex-m0 (#24955)",
             "author": "Chris Bagwell",
             "date": "2022-11-28T03:40:11+00:00"
+          },
+          {
+            "sha": "57f6c93",
+            "message": "\u26a1\ufe0f Input Shaping improvements (#24951)",
+            "author": "tombrazier",
+            "date": "2022-11-28T03:38:15+00:00"
           }
         ],
         "commit_activity": [
@@ -8230,17 +8260,17 @@
       "url": "https://github.com/luc-github/ESP3D-Configurator",
       "language": "JavaScript",
       "created_at": "2022-06-03T07:30:48+00:00",
-      "updated_at": "2024-12-18T20:23:22+00:00",
+      "updated_at": "2025-12-17T08:40:21+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "600598d",
-            "message": "use arduino core 3.0.4 / pioarduino",
+            "sha": "644f37a",
+            "message": "Include disclaimer in README\n\nAdded a disclaimer about software usage and liability.",
             "author": "Luc",
-            "date": "2024-12-18T20:23:13+00:00"
+            "date": "2025-12-17T08:40:18+00:00"
           },
           "protected": false,
           "issues": [
@@ -8309,7 +8339,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1277,
+              "age_days": 1278,
               "days_since_update": 1217,
               "is_stale": true,
               "is_recent": false,
@@ -8349,7 +8379,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 101,
+          "contributions": 103,
           "url": "https://github.com/luc-github"
         },
         {
@@ -8365,6 +8395,18 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "644f37a",
+            "message": "Include disclaimer in README\n\nAdded a disclaimer about software usage and liability.",
+            "author": "Luc",
+            "date": "2025-12-17T08:40:18+00:00"
+          },
+          {
+            "sha": "b197d92",
+            "message": "Add version tracker",
+            "author": "Luc",
+            "date": "2025-12-17T07:05:37+00:00"
+          },
           {
             "sha": "600598d",
             "message": "use arduino core 3.0.4 / pioarduino",
@@ -8664,12 +8706,6 @@
             "message": "Add default pins for each mcu\n\nAdd pins for SPI screens\nAdd platformio.ini generation",
             "author": "Luc",
             "date": "2022-06-25T09:35:07+00:00"
-          },
-          {
-            "sha": "3564810",
-            "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
-            "author": "Luc",
-            "date": "2022-06-22T12:56:59+00:00"
           }
         ],
         "commit_activity": [
@@ -9338,12 +9374,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 2,
             "days": [
               0,
               0,
               0,
-              0,
+              2,
               0,
               0,
               0
@@ -9352,7 +9388,7 @@
         ]
       },
       "statistics": {
-        "size": 938,
+        "size": 942,
         "stars": 8,
         "forks": 5,
         "open_issues": 3,
@@ -9362,10 +9398,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.68,
-        "overall_score": 0.138
+        "overall_score": 0.31299999999999994
       }
     },
     {
@@ -9430,8 +9466,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1022,
-              "days_since_update": 1022,
+              "age_days": 1023,
+              "days_since_update": 1023,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9456,8 +9492,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1022,
-              "days_since_update": 1022,
+              "age_days": 1023,
+              "days_since_update": 1023,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9846,6 +9882,12 @@
             "message": "Add variables page to TFT",
             "author": "Luc",
             "date": "2024-08-19T23:15:18+00:00"
+          },
+          {
+            "sha": "c962090",
+            "message": "Add hooks and variables documentation for ESP3D V3.0",
+            "author": "Luc",
+            "date": "2024-08-19T12:01:45+00:00"
           }
         ],
         "commit_activity": [
@@ -10551,17 +10593,17 @@
       "url": "https://github.com/luc-github/esp3d-webinstaller",
       "language": "JavaScript",
       "created_at": "2025-12-14T01:52:22+00:00",
-      "updated_at": "2025-12-15T13:38:31+00:00",
+      "updated_at": "2025-12-17T08:41:59+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "c680aa5",
-            "message": "Update script.js\n\nBetter handle case : browser not supported",
+            "sha": "68f6222",
+            "message": "Update README.md",
             "author": "Luc",
-            "date": "2025-12-15T13:33:49+00:00"
+            "date": "2025-12-17T08:41:55+00:00"
           },
           "protected": false,
           "issues": [],
@@ -10584,12 +10626,24 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 21,
+          "contributions": 23,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "68f6222",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2025-12-17T08:41:55+00:00"
+          },
+          {
+            "sha": "69c8b7b",
+            "message": "Add version tracker",
+            "author": "Luc",
+            "date": "2025-12-17T07:10:32+00:00"
+          },
           {
             "sha": "c680aa5",
             "message": "Update script.js\n\nBetter handle case : browser not supported",
@@ -11383,12 +11437,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 21,
+            "total": 23,
             "days": [
               8,
               13,
               0,
-              0,
+              2,
               0,
               0,
               0
@@ -11397,7 +11451,7 @@
         ]
       },
       "statistics": {
-        "size": 3554,
+        "size": 3573,
         "stars": 1,
         "forks": 0,
         "open_issues": 0,
@@ -11420,17 +11474,17 @@
       "url": "https://github.com/luc-github/ESP32SSDP",
       "language": "C++",
       "created_at": "2018-03-20T12:53:31+00:00",
-      "updated_at": "2025-10-07T18:42:36+00:00",
+      "updated_at": "2025-12-17T09:08:17+00:00",
       "branches": [
         {
           "name": "v2.x",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "669df24",
-            "message": "Initialize ip if out of scope thanks @folkertvanheusden for raising it",
+            "sha": "0dbf33a",
+            "message": "Update README with badges and copyright info",
             "author": "Luc",
-            "date": "2025-05-14T05:21:09+00:00"
+            "date": "2025-12-17T09:08:13+00:00"
           },
           "protected": false,
           "issues": [
@@ -11449,8 +11503,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 204,
-              "days_since_update": 204,
+              "age_days": 205,
+              "days_since_update": 205,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11503,7 +11557,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 2142,
-              "days_since_update": 2125,
+              "days_since_update": 2126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11543,33 +11597,92 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 38,
+          "contributions": 47,
           "url": "https://github.com/luc-github"
         },
         {
           "login": "allcontributors[bot]",
-          "contributions": 4,
+          "contributions": 3,
           "url": "https://github.com/apps/allcontributors"
         },
         {
           "login": "CriPstian",
           "contributions": 1,
           "url": "https://github.com/CriPstian"
+        },
+        {
+          "login": "mathertel",
+          "contributions": 1,
+          "url": "https://github.com/mathertel"
         }
       ],
       "activity": {
         "recent_commits": [
           {
-            "sha": "b86e3e1",
-            "message": "docs: add mathertel as a contributor for code (#45)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\n---------\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
-            "author": "allcontributors[bot]",
-            "date": "2025-01-22T06:06:25+00:00"
+            "sha": "0dbf33a",
+            "message": "Update README with badges and copyright info",
+            "author": "Luc",
+            "date": "2025-12-17T09:08:13+00:00"
           },
           {
-            "sha": "32a4e0c",
-            "message": "Update README.md (#42)",
+            "sha": "f6b896a",
+            "message": "Create info.json",
             "author": "Luc",
-            "date": "2024-06-01T08:59:33+00:00"
+            "date": "2025-12-17T09:04:40+00:00"
+          },
+          {
+            "sha": "669df24",
+            "message": "Initialize ip if out of scope thanks @folkertvanheusden for raising it",
+            "author": "Luc",
+            "date": "2025-05-14T05:21:09+00:00"
+          },
+          {
+            "sha": "311f536",
+            "message": "Add started API\n\nFix IP not correct for ethernet\nMove localIP to public to check configuration\nBump version",
+            "author": "Luc",
+            "date": "2024-12-10T11:02:30+00:00"
+          },
+          {
+            "sha": "cbc3183",
+            "message": "Make backward compatible for the warning fix",
+            "author": "Luc",
+            "date": "2024-08-24T08:13:51+00:00"
+          },
+          {
+            "sha": "c568b80",
+            "message": "Fix warning\n\nBump version",
+            "author": "Luc",
+            "date": "2024-08-23T07:12:46+00:00"
+          },
+          {
+            "sha": "ee4d42c",
+            "message": "V2.x compatible to ESP32 Core 2.x (#44)",
+            "author": "Matthias Hertel",
+            "date": "2024-06-18T00:30:57+00:00"
+          },
+          {
+            "sha": "c4e4919",
+            "message": "Fix some typos",
+            "author": "Luc",
+            "date": "2024-06-01T08:25:01+00:00"
+          },
+          {
+            "sha": "b879533",
+            "message": "Update readme and ci for V2.x",
+            "author": "Luc",
+            "date": "2024-06-01T08:19:52+00:00"
+          },
+          {
+            "sha": "f8e0894",
+            "message": "Remove deprecated functions\n\nAdd missing ttl parameter to listenMulticast",
+            "author": "Luc",
+            "date": "2024-06-01T08:03:22+00:00"
+          },
+          {
+            "sha": "69cf328",
+            "message": "Fixes for ESP32 core V3.0.0",
+            "author": "Luc",
+            "date": "2024-06-01T07:40:30+00:00"
           },
           {
             "sha": "3f5b0b5",
@@ -11816,54 +11929,6 @@
             "message": "Update .travis.yml",
             "author": "Luc",
             "date": "2020-02-07T04:53:26+00:00"
-          },
-          {
-            "sha": "2af5fff",
-            "message": "add travis for arduino and platformIO",
-            "author": "Luc",
-            "date": "2020-02-07T04:19:17+00:00"
-          },
-          {
-            "sha": "4ac65d8",
-            "message": "add template, workflow and stale",
-            "author": "Luc",
-            "date": "2020-02-02T10:36:40+00:00"
-          },
-          {
-            "sha": "4c22345",
-            "message": "Update FUNDING.yml",
-            "author": "Luc",
-            "date": "2019-10-22T06:21:45+00:00"
-          },
-          {
-            "sha": "2df63b7",
-            "message": "Create FUNDING.yml",
-            "author": "Luc",
-            "date": "2019-10-22T06:20:17+00:00"
-          },
-          {
-            "sha": "fd1cebf",
-            "message": "Ensure it compile only with ESP32\n\nto simplify platformIO.ini with ESP8266",
-            "author": "Luc",
-            "date": "2019-07-01T06:30:32+00:00"
-          },
-          {
-            "sha": "968e295",
-            "message": "Add ethernet support\n\nonly WIFI-STA and ETH-STA are supported",
-            "author": "Luc",
-            "date": "2019-01-21T15:06:39+00:00"
-          },
-          {
-            "sha": "5635ba5",
-            "message": "Update to leverage on https://github.com/esp8266/Arduino/pull/5607\n\nAdd proper end() function\nAdd `SSDP.setDeviceType(\"upnp:rootdevice\"); ` in sample as it may not be obvious that it is an option to appear in Windows Network Panel",
-            "author": "Luc",
-            "date": "2019-01-14T19:28:02+00:00"
-          },
-          {
-            "sha": "ce7e723",
-            "message": "Fix Warning for unused variable",
-            "author": "Luc",
-            "date": "2018-11-18T14:36:42+00:00"
           }
         ],
         "commit_activity": [
@@ -11921,12 +11986,12 @@
           },
           {
             "week": "2025-01-19T00:00:00+00:00",
-            "total": 1,
+            "total": 0,
             "days": [
               0,
               0,
               0,
-              1,
+              0,
               0,
               0,
               0
@@ -12129,12 +12194,12 @@
           },
           {
             "week": "2025-05-11T00:00:00+00:00",
-            "total": 0,
+            "total": 1,
             "days": [
               0,
               0,
               0,
-              0,
+              1,
               0,
               0,
               0
@@ -12532,12 +12597,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 2,
             "days": [
               0,
               0,
               0,
-              0,
+              2,
               0,
               0,
               0
@@ -12546,20 +12611,20 @@
         ]
       },
       "statistics": {
-        "size": 124,
+        "size": 128,
         "stars": 53,
         "forks": 27,
         "open_issues": 3,
         "watchers": 53,
-        "default_branch": "master",
+        "default_branch": "v2.x",
         "license": "GNU General Public License v3.0"
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.15000000000000002
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -12569,17 +12634,17 @@
       "url": "https://github.com/luc-github/SSDP_IDF",
       "language": "C",
       "created_at": "2022-12-20T07:39:49+00:00",
-      "updated_at": "2025-08-29T14:58:10+00:00",
+      "updated_at": "2025-12-17T09:56:46+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "b33c81b",
-            "message": "Update README.md",
+            "sha": "c65c52c",
+            "message": "Add version badge to README\n\nAdded version badge to README for SSDP IDF component.",
             "author": "Luc",
-            "date": "2024-05-30T08:15:39+00:00"
+            "date": "2025-12-17T09:56:42+00:00"
           },
           "protected": false,
           "issues": [
@@ -12637,12 +12702,24 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 27,
+          "contributions": 29,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "c65c52c",
+            "message": "Add version badge to README\n\nAdded version badge to README for SSDP IDF component.",
+            "author": "Luc",
+            "date": "2025-12-17T09:56:42+00:00"
+          },
+          {
+            "sha": "b44577f",
+            "message": "Create info.json",
+            "author": "Luc",
+            "date": "2025-12-17T09:53:02+00:00"
+          },
           {
             "sha": "b33c81b",
             "message": "Update README.md",
@@ -13472,12 +13549,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 2,
             "days": [
               0,
               0,
               0,
-              0,
+              2,
               0,
               0,
               0
@@ -13496,10 +13573,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.2833333333333333,
-        "overall_score": 0.09833333333333333
+        "overall_score": 0.2733333333333333
       }
     },
     {
@@ -13509,17 +13586,17 @@
       "url": "https://github.com/luc-github/esp32-usb-serial",
       "language": "C++",
       "created_at": "2024-02-12T12:39:24+00:00",
-      "updated_at": "2025-10-12T20:26:00+00:00",
+      "updated_at": "2025-12-17T08:41:07+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "e40590e",
-            "message": "Update esp32_usb_serial.cpp",
+            "sha": "f76066f",
+            "message": "Revise disclaimer for software warranty and liability\n\nUpdated the disclaimer section to clarify the software's warranty status and usage conditions.",
             "author": "Luc",
-            "date": "2024-11-04T21:11:43+00:00"
+            "date": "2025-12-17T08:41:03+00:00"
           },
           "protected": false,
           "issues": [],
@@ -13542,12 +13619,30 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 12,
+          "contributions": 15,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "f76066f",
+            "message": "Revise disclaimer for software warranty and liability\n\nUpdated the disclaimer section to clarify the software's warranty status and usage conditions.",
+            "author": "Luc",
+            "date": "2025-12-17T08:41:03+00:00"
+          },
+          {
+            "sha": "fe77c33",
+            "message": "Enhance README with version badges\n\nUpdated README to include version badge and IDF version badge.",
+            "author": "Luc",
+            "date": "2025-12-17T08:29:03+00:00"
+          },
+          {
+            "sha": "04383e0",
+            "message": "Create info.json",
+            "author": "Luc",
+            "date": "2025-12-17T08:25:01+00:00"
+          },
           {
             "sha": "e40590e",
             "message": "Update esp32_usb_serial.cpp",
@@ -14287,12 +14382,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 3,
             "days": [
               0,
               0,
               0,
-              0,
+              3,
               0,
               0,
               0
@@ -14301,7 +14396,7 @@
         ]
       },
       "statistics": {
-        "size": 109,
+        "size": 114,
         "stars": 18,
         "forks": 5,
         "open_issues": 0,
@@ -14311,10 +14406,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.5133333333333333,
-        "overall_score": 0.12133333333333332
+        "overall_score": 0.2963333333333333
       }
     },
     {
@@ -14324,17 +14419,17 @@
       "url": "https://github.com/luc-github/EspLuaEngine",
       "language": "C",
       "created_at": "2024-08-17T11:15:11+00:00",
-      "updated_at": "2024-11-16T04:52:08+00:00",
+      "updated_at": "2025-12-17T10:04:11+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "db9521c",
-            "message": "Fix initialisation of variable\n\nAdd clearError() to fix race condition\nBump version",
+            "sha": "586fa78",
+            "message": "Add version tracker",
             "author": "Luc",
-            "date": "2024-10-15T10:41:09+00:00"
+            "date": "2025-12-17T10:04:02+00:00"
           },
           "protected": false,
           "issues": [],
@@ -14357,12 +14452,18 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 7,
+          "contributions": 8,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "586fa78",
+            "message": "Add version tracker",
+            "author": "Luc",
+            "date": "2025-12-17T10:04:02+00:00"
+          },
           {
             "sha": "db9521c",
             "message": "Fix initialisation of variable\n\nAdd clearError() to fix race condition\nBump version",
@@ -15072,12 +15173,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 1,
             "days": [
               0,
               0,
               0,
-              0,
+              1,
               0,
               0,
               0
@@ -15096,10 +15197,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.2,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.20333333333333334,
-        "overall_score": 0.09033333333333332
+        "overall_score": 0.2653333333333333
       }
     },
     {
@@ -15109,17 +15210,17 @@
       "url": "https://github.com/luc-github/plugin_oled_display",
       "language": "Python",
       "created_at": "2025-02-19T01:49:29+00:00",
-      "updated_at": "2025-12-17T02:44:58+00:00",
+      "updated_at": "2025-12-17T08:39:28+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "f4369b0",
-            "message": "Fix header formatting in README.md",
+            "sha": "e6f37b2",
+            "message": "Include disclaimer in README.md\n\nAdded a disclaimer about software warranty and usage.",
             "author": "Luc",
-            "date": "2025-12-17T02:44:55+00:00"
+            "date": "2025-12-17T08:39:24+00:00"
           },
           "protected": false,
           "issues": [],
@@ -15142,12 +15243,18 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 32,
+          "contributions": 33,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "e6f37b2",
+            "message": "Include disclaimer in README.md\n\nAdded a disclaimer about software warranty and usage.",
+            "author": "Luc",
+            "date": "2025-12-17T08:39:24+00:00"
+          },
           {
             "sha": "f4369b0",
             "message": "Fix header formatting in README.md",
@@ -16007,12 +16114,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 3,
+            "total": 4,
             "days": [
               0,
               0,
               0,
-              3,
+              4,
               0,
               0,
               0
@@ -16021,7 +16128,7 @@
         ]
       },
       "statistics": {
-        "size": 12687,
+        "size": 12690,
         "stars": 2,
         "forks": 0,
         "open_issues": 0,
@@ -16051,7 +16158,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749154,
+      "total_size": 749233,
       "total_stars": 3042,
       "total_forks": 968,
       "branches": {
@@ -16065,7 +16172,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1006.0014770832307,
+      "avg_age_days": 1006.1804597293419,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
@@ -16077,39 +16184,39 @@
       }
     },
     "activity": {
-      "total_commits": 36,
+      "total_commits": 56,
       "commit_frequency": {
-        "daily": 0.3598901098901099,
-        "weekly": 2.519230769230769,
-        "monthly": 10.076923076923077
+        "daily": 0.4148351648351649,
+        "weekly": 2.9038461538461533,
+        "monthly": 11.615384615384613
       },
       "active_contributors": {
         "last_week": 1,
         "last_month": 4,
-        "total": 450
+        "total": 452
       },
       "activity_heatmap": [
         [
           3,
           5,
           9,
-          7,
+          8,
           4,
           8,
-          2,
+          1,
           7,
           5,
-          14,
+          13,
           2,
           0,
-          5,
-          2,
-          0,
+          6,
           2,
           0,
           1,
           0,
           1,
+          0,
+          0,
           1,
           5,
           2,
@@ -16122,12 +16229,12 @@
           9,
           2,
           2,
-          6,
+          4,
           10,
           7,
           3,
           5,
-          9,
+          10,
           4,
           2,
           1,
@@ -16135,7 +16242,7 @@
           0,
           1,
           0,
-          3,
+          2,
           0,
           0,
           0,
@@ -16147,14 +16254,14 @@
           3,
           7,
           7,
-          4,
-          6,
-          5,
-          2,
-          2,
-          3,
           5,
           8,
+          8,
+          11,
+          6,
+          4,
+          5,
+          7,
           1,
           2,
           1,
@@ -16198,10 +16305,10 @@
           6,
           2,
           0,
-          6,
-          10,
           5,
-          0,
+          11,
+          5,
+          1,
           1,
           0,
           2,
@@ -16227,8 +16334,8 @@
           2,
           2,
           5,
-          1,
-          5,
+          2,
+          8,
           5,
           2,
           5,
@@ -16256,11 +16363,11 @@
           11,
           7,
           4,
-          2,
+          1,
           4,
-          7,
+          6,
           0,
-          2,
+          1,
           0,
           1,
           0,
@@ -16309,11 +16416,11 @@
         },
         {
           "date": "2025-03",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2025-02",
-          "count": 2
+          "count": 3
         },
         {
           "date": "2025-01",
@@ -16393,7 +16500,7 @@
         },
         {
           "date": "2025-01-19",
-          "count": 4
+          "count": 3
         },
         {
           "date": "2025-01-26",
@@ -16457,7 +16564,7 @@
         },
         {
           "date": "2025-05-11",
-          "count": 1
+          "count": 2
         },
         {
           "date": "2025-05-18",
@@ -16581,7 +16688,7 @@
         },
         {
           "date": "2025-12-14",
-          "count": 35
+          "count": 55
         },
         {
           "date": "2025-03-15",
@@ -16731,25 +16838,25 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 5,
+          "commits": 6,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 15
+          "total": 18
         },
         "details": {
-          "commits": 5,
+          "commits": 6,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 5.0,
+          "commits_per_day": 6.0,
           "issues_per_day": 0.0
         }
       },
       {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "name": "plugin_oled_display",
+        "type": "dependency",
+        "description": "grblHAL plugin for oled display",
+        "url": "https://github.com/luc-github/plugin_oled_display",
         "is_private": false,
         "score": {
           "commits": 4,
@@ -16767,10 +16874,10 @@
         }
       },
       {
-        "name": "plugin_oled_display",
-        "type": "dependency",
-        "description": "grblHAL plugin for oled display",
-        "url": "https://github.com/luc-github/plugin_oled_display",
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "is_private": false,
         "score": {
           "commits": 3,
@@ -16788,65 +16895,65 @@
         }
       },
       {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D-TFT",
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
         "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 9
         },
         "details": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 3.0,
           "issues_per_day": 0.0
         }
       },
       {
-        "name": "Marlin",
-        "type": "main",
-        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
-        "url": "https://github.com/luc-github/Marlin",
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 9
         },
         "details": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 3.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -16855,6 +16962,111 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 2.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d-webinstaller",
+        "type": "main",
+        "description": "Web Installer for ESP32 projects",
+        "url": "https://github.com/luc-github/esp3d-webinstaller",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 2.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 2.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 2.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
+        "is_private": false,
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 1.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -16891,111 +17103,6 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
-      },
-      {
-        "name": "esp3d-webinstaller",
-        "type": "main",
-        "description": "Web Installer for ESP32 projects",
-        "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "SSDP_IDF",
-        "type": "dependency",
-        "description": "SSDP IDF component for ESP32",
-        "url": "https://github.com/luc-github/SSDP_IDF",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp32-usb-serial",
-        "type": "dependency",
-        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
-        "url": "https://github.com/luc-github/esp32-usb-serial",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "EspLuaEngine",
-        "type": "dependency",
-        "description": "Add Lua engine to your firmware using ESP boards",
-        "url": "https://github.com/luc-github/EspLuaEngine",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
       }
     ],
     "weekly": [
@@ -17006,17 +17113,17 @@
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 21,
+          "commits": 23,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 63
+          "total": 69
         },
         "details": {
-          "commits": 21,
+          "commits": 23,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.0,
+          "commits_per_day": 3.2857142857142856,
           "issues_per_day": 0.0
         }
       },
@@ -17027,17 +17134,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 7,
+          "commits": 8,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 21
+          "total": 24
         },
         "details": {
-          "commits": 7,
+          "commits": 8,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.0,
+          "commits_per_day": 1.1428571428571428,
           "issues_per_day": 0.0
         }
       },
@@ -17069,6 +17176,27 @@
         "url": "https://github.com/luc-github/plugin_oled_display",
         "is_private": false,
         "score": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 12
+        },
+        "details": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.5714285714285714,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "is_private": false,
+        "score": {
           "commits": 3,
           "issues": 0,
           "comments": 0,
@@ -17084,65 +17212,44 @@
         }
       },
       {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D-TFT",
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
         "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 9
         },
         "details": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.42857142857142855,
           "issues_per_day": 0.0
         }
       },
       {
-        "name": "Marlin",
-        "type": "main",
-        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
-        "url": "https://github.com/luc-github/Marlin",
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 9
         },
         "details": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.42857142857142855,
           "issues_per_day": 0.0
         }
       },
@@ -17151,6 +17258,90 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.2857142857142857,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.2857142857142857,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.2857142857142857,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
+        "is_private": false,
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.14285714285714285,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17187,90 +17378,6 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
-      },
-      {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "SSDP_IDF",
-        "type": "dependency",
-        "description": "SSDP IDF component for ESP32",
-        "url": "https://github.com/luc-github/SSDP_IDF",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp32-usb-serial",
-        "type": "dependency",
-        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
-        "url": "https://github.com/luc-github/esp32-usb-serial",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "EspLuaEngine",
-        "type": "dependency",
-        "description": "Add Lua engine to your firmware using ESP boards",
-        "url": "https://github.com/luc-github/EspLuaEngine",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
       }
     ],
     "monthly": [
@@ -17281,17 +17388,17 @@
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 21,
+          "commits": 23,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 63
+          "total": 69
         },
         "details": {
-          "commits": 21,
+          "commits": 23,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.7,
+          "commits_per_day": 0.7666666666666667,
           "issues_per_day": 0.0
         }
       },
@@ -17323,17 +17430,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 8,
+          "commits": 9,
           "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 26
+          "total": 29
         },
         "details": {
-          "commits": 8,
+          "commits": 9,
           "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.26666666666666666,
+          "commits_per_day": 0.3,
           "issues_per_day": 0.03333333333333333
         }
       },
@@ -17342,6 +17449,27 @@
         "type": "dependency",
         "description": "grblHAL plugin for oled display",
         "url": "https://github.com/luc-github/plugin_oled_display",
+        "is_private": false,
+        "score": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 12
+        },
+        "details": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.13333333333333333,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "is_private": false,
         "score": {
           "commits": 3,
@@ -17355,6 +17483,111 @@
           "issues": 0,
           "comments": 0,
           "commits_per_day": 0.1,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 9
+        },
+        "details": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.1,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
+        "is_private": false,
+        "score": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 9
+        },
+        "details": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.1,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-Configurator",
+        "type": "main",
+        "description": "Configurator for ESP3D Firmware",
+        "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "SSDP_IDF",
+        "type": "dependency",
+        "description": "SSDP IDF component for ESP32",
+        "url": "https://github.com/luc-github/SSDP_IDF",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
           "issues_per_day": 0.0
         }
       },
@@ -17380,44 +17613,23 @@
         }
       },
       {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
+        "name": "EspLuaEngine",
+        "type": "dependency",
+        "description": "Add Lua engine to your firmware using ESP boards",
+        "url": "https://github.com/luc-github/EspLuaEngine",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 0
+          "total": 3
         },
         "details": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.03333333333333333,
           "issues_per_day": 0.0
         }
       },
@@ -17426,111 +17638,6 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-Configurator",
-        "type": "main",
-        "description": "Configurator for ESP3D Firmware",
-        "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "SSDP_IDF",
-        "type": "dependency",
-        "description": "SSDP IDF component for ESP32",
-        "url": "https://github.com/luc-github/SSDP_IDF",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp32-usb-serial",
-        "type": "dependency",
-        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
-        "url": "https://github.com/luc-github/esp32-usb-serial",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "EspLuaEngine",
-        "type": "dependency",
-        "description": "Add Lua engine to your firmware using ESP boards",
-        "url": "https://github.com/luc-github/EspLuaEngine",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17556,17 +17663,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 35,
+          "commits": 36,
           "issues": 2,
           "comments": 0,
           "period_days": 365,
-          "total": 109
+          "total": 112
         },
         "details": {
-          "commits": 35,
+          "commits": 36,
           "issues": 2,
           "comments": 0,
-          "commits_per_day": 0.0958904109589041,
+          "commits_per_day": 0.09863013698630137,
           "issues_per_day": 0.005479452054794521
         }
       },
@@ -17577,17 +17684,17 @@
         "url": "https://github.com/luc-github/plugin_oled_display",
         "is_private": false,
         "score": {
-          "commits": 32,
+          "commits": 33,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 96
+          "total": 99
         },
         "details": {
-          "commits": 32,
+          "commits": 33,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.08767123287671233,
+          "commits_per_day": 0.09041095890410959,
           "issues_per_day": 0.0
         }
       },
@@ -17598,17 +17705,17 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
-          "commits": 29,
+          "commits": 28,
           "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 93
+          "total": 90
         },
         "details": {
-          "commits": 29,
+          "commits": 28,
           "issues": 3,
           "comments": 0,
-          "commits_per_day": 0.07945205479452055,
+          "commits_per_day": 0.07671232876712329,
           "issues_per_day": 0.00821917808219178
         }
       },
@@ -17619,17 +17726,17 @@
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 21,
+          "commits": 23,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 63
+          "total": 69
         },
         "details": {
-          "commits": 21,
+          "commits": 23,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.057534246575342465,
+          "commits_per_day": 0.06301369863013699,
           "issues_per_day": 0.0
         }
       },
@@ -17661,6 +17768,27 @@
         "url": "https://github.com/luc-github/ESP3DLib",
         "is_private": false,
         "score": {
+          "commits": 9,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 365,
+          "total": 31
+        },
+        "details": {
+          "commits": 9,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.024657534246575342,
+          "issues_per_day": 0.005479452054794521
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
           "commits": 6,
           "issues": 2,
           "comments": 0,
@@ -17676,44 +17804,23 @@
         }
       },
       {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
-        "is_private": false,
-        "score": {
-          "commits": 3,
-          "issues": 2,
-          "comments": 0,
-          "period_days": 365,
-          "total": 13
-        },
-        "details": {
-          "commits": 3,
-          "issues": 2,
-          "comments": 0,
-          "commits_per_day": 0.00821917808219178,
-          "issues_per_day": 0.005479452054794521
-        }
-      },
-      {
         "name": "ESP3D-Configurator",
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
         "is_private": false,
         "score": {
-          "commits": 1,
+          "commits": 3,
           "issues": 1,
           "comments": 0,
           "period_days": 365,
-          "total": 5
+          "total": 11
         },
         "details": {
-          "commits": 1,
+          "commits": 3,
           "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.0027397260273972603,
+          "commits_per_day": 0.00821917808219178,
           "issues_per_day": 0.0027397260273972603
         }
       },
@@ -17724,38 +17831,38 @@
         "url": "https://github.com/luc-github/ESP32SSDP",
         "is_private": false,
         "score": {
-          "commits": 1,
+          "commits": 3,
           "issues": 1,
           "comments": 0,
           "period_days": 365,
-          "total": 5
+          "total": 11
         },
         "details": {
-          "commits": 1,
+          "commits": 3,
           "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.0027397260273972603,
+          "commits_per_day": 0.00821917808219178,
           "issues_per_day": 0.0027397260273972603
         }
       },
       {
-        "name": "Marlin",
-        "type": "main",
-        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
-        "url": "https://github.com/luc-github/Marlin",
+        "name": "esp32-usb-serial",
+        "type": "dependency",
+        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
+        "url": "https://github.com/luc-github/esp32-usb-serial",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 0
+          "total": 9
         },
         "details": {
-          "commits": 0,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.00821917808219178,
           "issues_per_day": 0.0
         }
       },
@@ -17766,38 +17873,17 @@
         "url": "https://github.com/luc-github/SSDP_IDF",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 0
+          "total": 6
         },
         "details": {
-          "commits": 0,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp32-usb-serial",
-        "type": "dependency",
-        "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
-        "url": "https://github.com/luc-github/esp32-usb-serial",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 365,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.005479452054794521,
           "issues_per_day": 0.0
         }
       },
@@ -17806,6 +17892,27 @@
         "type": "dependency",
         "description": "Add Lua engine to your firmware using ESP boards",
         "url": "https://github.com/luc-github/EspLuaEngine",
+        "is_private": false,
+        "score": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 365,
+          "total": 3
+        },
+        "details": {
+          "commits": 1,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0027397260273972603,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "Marlin",
+        "type": "main",
+        "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
+        "url": "https://github.com/luc-github/Marlin",
         "is_private": false,
         "score": {
           "commits": 0,

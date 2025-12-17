@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951737.1065652,
+  "timestamp": 1765966824.4765239,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3DLib",
     "language": "C++",
     "created_at": "2019-12-16T13:18:03+00:00",
-    "updated_at": "2025-12-03T09:27:52+00:00",
+    "updated_at": "2025-12-17T08:17:02+00:00",
     "branches": [
       {
         "name": "master",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "6d62f76",
-          "message": "Merge pull request #91 from ellensp/fix-typo\n\nfix typo, pull/90 followup",
+          "sha": "515c62d",
+          "message": "Change Marlin badge style to plastic\n\nUpdated badge style for Marlin in README.md.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-05-09T13:56:58+00:00"
+          "date": "2025-12-17T08:16:58+00:00"
         },
         "protected": false,
         "issues": []
@@ -78,7 +78,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 100,
+        "contributions": 103,
         "url": "https://github.com/luc-github"
       },
       {
@@ -114,6 +114,24 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "515c62d",
+          "message": "Change Marlin badge style to plastic\n\nUpdated badge style for Marlin in README.md.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-12-17T08:16:58+00:00"
+        },
+        {
+          "sha": "5460896",
+          "message": "Revise README badges and version details\n\nUpdated badge links and version information in README.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-12-17T08:12:10+00:00"
+        },
+        {
+          "sha": "05ef524",
+          "message": "Create info.json",
+          "author": "Luc",
+          "date": "2025-12-17T07:25:47+00:00"
+        },
         {
           "sha": "6d62f76",
           "message": "Merge pull request #91 from ellensp/fix-typo\n\nfix typo, pull/90 followup",
@@ -407,18 +425,6 @@
           "message": "Update sd_ESP32.h",
           "author": "Eduard Sukharev",
           "date": "2022-08-23T19:42:27+00:00"
-        },
-        {
-          "sha": "645cb10",
-          "message": "Update sd_ESP32.cpp",
-          "author": "Eduard Sukharev",
-          "date": "2022-08-23T19:41:40+00:00"
-        },
-        {
-          "sha": "f6fb0b8",
-          "message": "Update README.md",
-          "author": "Luc",
-          "date": "2022-08-14T12:46:41+00:00"
         }
       ],
       "commit_activity": [
@@ -1087,12 +1093,12 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
-            0,
+            3,
             0,
             0,
             0
@@ -1101,7 +1107,7 @@
       ]
     },
     "statistics": {
-      "size": 11599,
+      "size": 11618,
       "stars": 113,
       "forks": 35,
       "open_issues": 2,

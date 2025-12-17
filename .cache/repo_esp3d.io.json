@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951767.0605292,
+  "timestamp": 1765967116.7188425,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -426,6 +426,12 @@
           "message": "Add variables page to TFT",
           "author": "Luc",
           "date": "2024-08-19T23:15:18+00:00"
+        },
+        {
+          "sha": "c962090",
+          "message": "Add hooks and variables documentation for ESP3D V3.0",
+          "author": "Luc",
+          "date": "2024-08-19T12:01:45+00:00"
         }
       ],
       "commit_activity": [
