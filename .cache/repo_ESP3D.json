@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765847527.4715571,
+  "timestamp": 1765929780.7243977,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-12-16T00:56:49+00:00",
+    "updated_at": "2025-12-16T03:19:43+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -102,10 +102,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "2f51b8b",
-          "message": "Bump node-forge from 1.3.1 to 1.3.2 in /embedded (#1106)\n\nBumps [node-forge](https://github.com/digitalbazaar/forge) from 1.3.1 to 1.3.2.\n- [Changelog](https://github.com/digitalbazaar/forge/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/digitalbazaar/forge/compare/v1.3.1...v1.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-forge\n  dependency-version: 1.3.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "author": "dependabot[bot]",
-          "date": "2025-11-26T23:42:56+00:00"
+          "sha": "1691de4",
+          "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D into 3.0",
+          "author": "Luc",
+          "date": "2025-12-16T03:19:24+00:00"
         },
         "protected": false,
         "issues": [
@@ -189,7 +189,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 552,
+        "contributions": 554,
         "url": "https://github.com/luc-github"
       },
       {
@@ -266,6 +266,18 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "1691de4",
+          "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D into 3.0",
+          "author": "Luc",
+          "date": "2025-12-16T03:19:24+00:00"
+        },
+        {
+          "sha": "22e903b",
+          "message": "Prepare release",
+          "author": "Luc",
+          "date": "2025-12-16T03:19:09+00:00"
+        },
+        {
           "sha": "2f51b8b",
           "message": "Bump node-forge from 1.3.1 to 1.3.2 in /embedded (#1106)\n\nBumps [node-forge](https://github.com/digitalbazaar/forge) from 1.3.1 to 1.3.2.\n- [Changelog](https://github.com/digitalbazaar/forge/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/digitalbazaar/forge/compare/v1.3.1...v1.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-forge\n  dependency-version: 1.3.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
           "author": "dependabot[bot]",
@@ -312,18 +324,6 @@
           "message": "Fix BT Service is no set a started due to wrong API usage",
           "author": "Luc",
           "date": "2025-06-18T14:02:02+00:00"
-        },
-        {
-          "sha": "041658d",
-          "message": "fix missing sanity check if BT",
-          "author": "Luc",
-          "date": "2025-06-18T05:06:33+00:00"
-        },
-        {
-          "sha": "0b8dc3a",
-          "message": "Update esp3d_commands.cpp\n\nOverride new behavior in Marlin that prevent error to update screen e.g: No SD Card -> IP is not displayed because M117 is locked, so always unlock M117 output\nDo not affect M111 because it is user key, so he can type M117 first to unlock if necessary, the fix only apply to auto M117 output",
-          "author": "Luc",
-          "date": "2025-04-26T06:18:50+00:00"
         }
       ],
       "commit_activity": [
@@ -992,11 +992,11 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -1006,7 +1006,7 @@
       ]
     },
     "statistics": {
-      "size": 135123,
+      "size": 135127,
       "stars": 1924,
       "forks": 485,
       "open_issues": 4,
