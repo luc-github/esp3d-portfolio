@@ -225,7 +225,8 @@
         "show_activity_graph": true,
         "highlight_recent_updates": true,
         "max_retries": 3,
-        "retry_delay": 5
+        "retry_delay": 5,
+        "max_recent_commits": 50
     },
     "display": {
         "sort_issues_by": "updated_at",
