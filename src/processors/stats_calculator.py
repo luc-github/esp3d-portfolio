@@ -504,25 +504,29 @@ class StatsCalculator:
                 
         return list(sorted_data.values())
     
-    # Dans stats_calculator.py
+    # In stats_calculator.py
 
     def calculate_activity_kpi(self, repositories: List[Dict]) -> Dict[str, List[Dict]]:
         """Calculate activity KPIs for all repositories"""
         now = datetime.now(timezone.utc)
         activity_ranking = {
-            'daily': [],     # Dernières 24h
-            'weekly': [],    # 7 derniers jours
-            'monthly': [],   # 30 derniers jours
-            'yearly': []     # 365 derniers jours
+            'daily': [],     # Last 24h
+            'weekly': [],    # Last 7 days
+            'monthly': [],   # Last 30 days
+            'yearly': []     # Last 365 days
         }
         
         for repo in repositories:
             commits = repo.get('activity', {}).get('recent_commits', [])
-            issues = []
-            for branch in repo.get('branches', []):
-                issues.extend(branch.get('issues', []))
+            is_private = repo.get('is_private', False)
             
-            # Calculer l'activité pour toutes les périodes
+            # For private repos, don't include issues
+            issues = []
+            if not is_private:
+                for branch in repo.get('branches', []):
+                    issues.extend(branch.get('issues', []))
+            
+            # Calculate activity for all periods
             periods = {
                 'daily': 1,
                 'weekly': 7,
@@ -533,11 +537,18 @@ class StatsCalculator:
             for period_name, days in periods.items():
                 period_activity = self._calculate_period_activity(repo, commits, issues, days)
                 
+                # For private repos, only show commits (no issues)
+                if is_private:
+                    period_activity['issues'] = 0
+                    period_activity['comments'] = 0
+                    period_activity['total'] = period_activity['commits'] * 3  # Only commits count
+                
                 activity_ranking[period_name].append({
                     'name': repo['name'],
                     'type': repo['type'],
-                    'description': repo.get('description', ''),
-                    'url': repo.get('url', ''),
+                    'description': repo.get('description', '') if not is_private else '',
+                    'url': repo.get('url', '') if not is_private else '',
+                    'is_private': is_private,
                     'score': period_activity,
                     'details': {
                         'commits': period_activity['commits'],
@@ -548,11 +559,11 @@ class StatsCalculator:
                     }
                 })
         
-        # Trier chaque période par score d'activité
+        # Sort each period by activity score
         for period in activity_ranking:
             activity_ranking[period] = sorted(
                 activity_ranking[period],
-                key=lambda x: (x['score']['total'], x['details']['commits_per_day']),  # Tri secondaire sur la fréquence des commits
+                key=lambda x: (x['score']['total'], x['details']['commits_per_day']),
                 reverse=True
             )
         

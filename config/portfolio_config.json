@@ -214,6 +214,22 @@
                     "issue_label": "1.0"
                 }
             ]
+        },
+        {
+            "name": "plugin_oled_display",
+            "type": "dependency",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true,
+                    "issue_label": "1.0"
+                }
+            ]
         }
     ],
     "options": {
@@ -227,6 +243,14 @@
         "max_retries": 3,
         "retry_delay": 5,
         "max_recent_commits": 50
+    },
+    "private_repositories": {
+        "enabled": true,
+        "display_prefix": "Private Project",
+        "hide_issues": true,
+        "hide_commits": true,
+        "hide_description": true,
+        "show_in_popularity": false
     },
     "display": {
         "sort_issues_by": "updated_at",

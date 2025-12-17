@@ -47,12 +47,23 @@ class PortfolioAnalyzer:
         self.logger.info("Starting data collection")
         
         repositories_data = []
+        
+        # Collect public repositories
         for repo_config in self.config.get_repositories():
             try:
                 repo_data = self.github_collector.collect_repository_data(repo_config['name'])
                 repositories_data.append(repo_data)
             except Exception as e:
                 self.logger.error(f"Error collecting data for {repo_config['name']}: {e}")
+        
+        # Collect private repositories (from environment variable)
+        try:
+            private_repos_data = self.github_collector.collect_private_repositories_data()
+            repositories_data.extend(private_repos_data)
+            if private_repos_data:
+                self.logger.info(f"Collected data for {len(private_repos_data)} private repositories")
+        except Exception as e:
+            self.logger.error(f"Error collecting private repositories: {e}")
         
         return {
             'repositories': repositories_data,
@@ -63,18 +74,22 @@ class PortfolioAnalyzer:
         """Process collected data."""
         self.logger.info("Processing collected data")
         
-        # Process issues for each repository
+        # Process issues for each repository (skip private repos)
         for repo in portfolio_data['repositories']:
-            repo = self.issue_processor.process_repository_issues(repo)
+            if not repo.get('is_private', False):
+                repo = self.issue_processor.process_repository_issues(repo)
         
         # Calculate overall statistics
         portfolio_data['stats'] = self.stats_calculator.calculate_portfolio_stats(
             portfolio_data['repositories']
         )
         
-        # Calculate health scores for each repository
+        # Calculate health scores for each repository (skip private repos)
         for repo in portfolio_data['repositories']:
-            repo['health_score'] = self.stats_calculator.calculate_repository_health(repo)
+            if not repo.get('is_private', False):
+                repo['health_score'] = self.stats_calculator.calculate_repository_health(repo)
+            else:
+                repo['health_score'] = {}  # No health score for private repos
         
         # Calculate activity rankings
         portfolio_data['activity_ranking'] = self.stats_calculator.calculate_activity_kpi(
@@ -91,8 +106,21 @@ class PortfolioAnalyzer:
         readme_content = self.markdown_generator.generate_readme(processed_data)
         self._save_report(readme_content, 'README.md')
         
-        # Save raw data
-        self._save_report(processed_data, 'github_portfolio.json', is_json=True)
+        # Save raw data (exclude private repo real names)
+        sanitized_data = self._sanitize_data_for_export(processed_data)
+        self._save_report(sanitized_data, 'github_portfolio.json', is_json=True)
+
+    def _sanitize_data_for_export(self, data: Dict[str, Any]) -> Dict[str, Any]:
+        """Remove sensitive information before exporting to JSON."""
+        import copy
+        sanitized = copy.deepcopy(data)
+        
+        for repo in sanitized.get('repositories', []):
+            if repo.get('is_private', False):
+                # Remove real name from export
+                repo.pop('real_name', None)
+        
+        return sanitized
 
     def _save_report(self, content: Any, filename: str, is_json: bool = False) -> None:
         """Save report to file."""

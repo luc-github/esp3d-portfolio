@@ -21,6 +21,9 @@ class MarkdownGenerator:
         # Activity KPI section
         content.extend(self._generate_activity_kpi_section(data))
         
+        # Popularity Rankings section (NEW)
+        content.extend(self._generate_popularity_section(data))
+        
         # Statistics section
         content.extend(self._generate_statistics(data))
         
@@ -42,6 +45,11 @@ class MarkdownGenerator:
         """Generate header section with badges"""
         stats = data['stats']
         
+        # Generate last update timestamp for badge
+        now = datetime.now(timezone.utc)
+        update_date = now.strftime("%Y--%%20%m--%%20%d%%20%H:%M%%20UTC").replace("--", "-")
+        update_display = now.strftime("%Y-%m-%d %H:%M UTC")
+        
         return [
             '# 🛠️ ESP3D Portfolio',
             '',
@@ -51,6 +59,7 @@ class MarkdownGenerator:
             f'![Main Projects](https://img.shields.io/badge/Main%20Projects-{stats["repositories"]["main_projects"]}-orange)',
             f'![Dependencies](https://img.shields.io/badge/Dependencies-{stats["repositories"]["dependencies"]}-green)',
             f'![Open Issues](https://img.shields.io/badge/Open%20Issues-{stats["issues"]["open_count"]}-yellow)',
+            f'![Last Update](https://img.shields.io/badge/Last%20Update-{update_date}-lightgrey)',
             '',
             '📑 Real-time status and analysis of ESP3D-related projects',
             '',
@@ -71,7 +80,7 @@ class MarkdownGenerator:
         
         # Add main projects first
         for repo in data['repositories']:
-            if repo['type'].lower() == ProjectType.MAIN.value:  # Comparaison insensible à la casse
+            if repo['type'].lower() == ProjectType.MAIN.value:
                 type_emoji = STATUS_EMOJIS['main_project']
                 content.append(
                     f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Main Project | '
@@ -80,7 +89,7 @@ class MarkdownGenerator:
         
         # Then add dependencies
         for repo in data['repositories']:
-            if repo['type'].lower() == ProjectType.DEPENDENCY.value:  # Comparaison insensible à la casse
+            if repo['type'].lower() == ProjectType.DEPENDENCY.value:
                 type_emoji = STATUS_EMOJIS['dependency']
                 content.append(
                     f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Dependency | '
@@ -90,6 +99,56 @@ class MarkdownGenerator:
         content.extend([
             '| [📋 Global Issues](#-global-issues) | Overview | All open issues across projects |',
             '| [📊 Statistics](#-statistics) | Metrics | Project health and activity metrics |',
+            '',
+            '</div>',
+            ''
+        ])
+        
+        return content
+    
+    def _generate_popularity_section(self, data: Dict) -> List[str]:
+        """Generate popularity rankings section based on stars and forks"""
+        content = [
+            '## ⭐ Popularity Rankings',
+            '',
+            'Repository popularity based on GitHub stars and forks.',
+            '',
+            '<div class="popularity-ranking">',
+            '',
+            '| Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |',
+            '|:------------|------------|------|---------|---------|-------------|'
+        ]
+        
+        # Filter out private repos from popularity ranking and sort by stars (descending)
+        public_repos = [r for r in data['repositories'] if not r.get('is_private', False)]
+        sorted_repos = sorted(
+            public_repos,
+            key=lambda x: x.get('statistics', {}).get('stars', 0),
+            reverse=True
+        )
+        
+        for rank, repo in enumerate(sorted_repos, 1):
+            stats = repo.get('statistics', {})
+            stars = stats.get('stars', 0)
+            forks = stats.get('forks', 0)
+            watchers = stats.get('watchers', 0)
+            
+            # Rank icon
+            rank_icon = "🥇" if rank == 1 else "🥈" if rank == 2 else "🥉" if rank == 3 else "▪️"
+            
+            # Type emoji
+            type_str = repo['type'].title()
+            
+            content.append(
+                f"| {rank_icon} {rank:<2} | "
+                f"[{repo['name']}]({repo.get('url', '#')}) | "
+                f"{type_str} | "
+                f"{stars:,} | "
+                f"{forks:,} | "
+                f"{watchers:,} |"
+            )
+        
+        content.extend([
             '',
             '</div>',
             ''
@@ -454,7 +513,7 @@ class MarkdownGenerator:
         chart = []
         chart.append("Commit Activity:\n")
         
-        # Générer les barres avec des seuils spécifiques pour chaque période
+        # Generate bars with specific thresholds for each period
         for period, value in data.items():
             if period == 'Daily':
                 if value == 0: level = 0
@@ -501,31 +560,40 @@ class MarkdownGenerator:
                 '',
                 '<div class="activity-ranking">',
                 '',
-                '| Rank | Repository | Type | Score | Commits | Issues | Activity/Day |',
-                '|------|------------|------|--------|---------|---------|-------------|'
+                '| Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |',
+                '|:------------|------------|------|--------|---------|---------|-------------|'
             ])
             
             rankings = data['activity_ranking'][period]
             for rank, repo in enumerate(rankings, 1):
-                # Définir une icône basée sur le rang
+                # Define icon based on rank
                 rank_icon = "🥇" if rank == 1 else "🥈" if rank == 2 else "🥉" if rank == 3 else "▪️"
                 
-                # Créer une barre de progression en emoji
+                # Create progress bar with emojis
                 score = repo['score']['total']
                 max_score = rankings[0]['score']['total'] if rankings else 1
-                progress_length = 10  # Longueur maximale de la barre
+                progress_length = 10  # Maximum bar length
                 filled_length = int((score / max_score) * progress_length) if max_score > 0 else 0
                 progress_bar = "🟦" * filled_length + "⬜" * (progress_length - filled_length)
                 
-                # Calculer l'activité par jour
+                # Calculate activity per day
                 commits_per_day = repo['details']['commits_per_day']
                 issues_per_day = repo['details']['issues_per_day']
-                daily_activity = commits_per_day * 3 + issues_per_day * 2  # Utiliser les mêmes poids
+                daily_activity = commits_per_day * 3 + issues_per_day * 2  # Use same weights
                 
-                # Formatter la ligne
+                # Check if this is a private repo
+                is_private = repo.get('is_private', False)
+                
+                # Format repository name/link based on privacy
+                if is_private:
+                    repo_display = repo['name']  # Already anonymized (e.g., "Private Project #1")
+                else:
+                    repo_display = f"[{repo['name']}]({repo.get('url', '#')})"
+                
+                # Format the line with fixed-width rank
                 content.append(
-                    f"| {rank_icon} {rank} | "
-                    f"[{repo['name']}]({repo.get('url', '#')}) | "
+                    f"| {rank_icon} {rank:<2} | "
+                    f"{repo_display} | "
                     f"{repo['type'].title()} | "
                     f"{progress_bar} ({score}) | "
                     f"{repo['details']['commits']} | "
@@ -539,7 +607,7 @@ class MarkdownGenerator:
                 ''
             ])
         
-        # Ajouter une légende plus détaillée
+        # Add more detailed legend
         content.extend([
             '### Legend',
             '',
@@ -551,6 +619,7 @@ class MarkdownGenerator:
         ])
         
         return content
+
     def _generate_heatmap(self, heatmap_data: List[List[int]]) -> str:
         """Generate colored activity heatmap"""
         if not heatmap_data:
@@ -559,7 +628,7 @@ class MarkdownGenerator:
         days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
         hours = [f'{h:02d}' for h in range(0, 24, 3)]
         
-        # Plus explicite et plus coloré
+        # More explicit and colorful
         activity_levels = {
             0: ("⬜", "No activity"),
             1: ("🟦", "Low (1-2 commits)"),
@@ -605,6 +674,7 @@ class MarkdownGenerator:
         ])
             
         return '\n'.join(heatmap)
+
     def _get_issue_state_marker(self, issue: Dict) -> str:
         """Get appropriate emoji marker for issue state"""
         if issue.get('is_pr'):
