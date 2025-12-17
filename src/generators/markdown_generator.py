@@ -74,31 +74,35 @@ class MarkdownGenerator:
             '',
             '<div align="center">',
             '',
-            '| Section | Type | Description |',
-            '|---------|------|-------------|'
+            '| Section | Type | Version | Description |',
+            '|---------|------|---------|-------------|'
         ]
         
         # Add main projects first
         for repo in data['repositories']:
             if repo['type'].lower() == ProjectType.MAIN.value:
                 type_emoji = STATUS_EMOJIS['main_project']
+                version_info = repo.get('version_info', {})
+                version_display = version_info.get('display', 'missing')
                 content.append(
                     f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Main Project | '
-                    f'{repo["description"] or "Project status and issues"} |'
+                    f'{version_display} | {repo["description"] or "Project status and issues"} |'
                 )
         
         # Then add dependencies
         for repo in data['repositories']:
             if repo['type'].lower() == ProjectType.DEPENDENCY.value:
                 type_emoji = STATUS_EMOJIS['dependency']
+                version_info = repo.get('version_info', {})
+                version_display = version_info.get('display', 'missing')
                 content.append(
                     f'| [{type_emoji} {repo["name"]}](#user-content-{repo["name"].lower()}) | Dependency | '
-                    f'{repo["description"] or "Project status and issues"} |'
+                    f'{version_display} | {repo["description"] or "Project status and issues"} |'
                 )
         
         content.extend([
-            '| [📋 Global Issues](#-global-issues) | Overview | All open issues across projects |',
-            '| [📊 Statistics](#-statistics) | Metrics | Project health and activity metrics |',
+            '| [📋 Global Issues](#-global-issues) | Overview | - | All open issues across projects |',
+            '| [📊 Statistics](#-statistics) | Metrics | - | Project health and activity metrics |',
             '',
             '</div>',
             ''
@@ -215,6 +219,21 @@ class MarkdownGenerator:
     def _generate_repository_section(self, repo: Dict) -> List[str]:
         """Generate section for a single repository"""
         type_emoji = STATUS_EMOJIS['main_project'] if repo['type'] == 'main' else STATUS_EMOJIS['dependency']
+        
+        # Get version info
+        version_info = repo.get('version_info', {})
+        version_display = version_info.get('display', 'missing')
+        version_status = version_info.get('status', 'missing')
+        
+        # Format version with color/style based on status
+        if version_status == 'production':
+            version_badge = f'🟢 {version_display}'
+        elif version_status == 'development':
+            version_badge = f'🟡 {version_display}'
+        elif version_status == 'both':
+            version_badge = f'🔵 {version_display}'
+        else:  # missing
+            version_badge = '⚪ missing'
        
         content = [
             f'<details open id="{repo["name"].lower()}">\n<summary><h3>{type_emoji} {repo["name"]}</h3></summary>'
@@ -223,6 +242,7 @@ class MarkdownGenerator:
             '',
             f'**Project**: [{repo["name"]}]({repo["url"]})<br>',
             f'**Type**: {repo["type"].title()}<br>',
+            f'**Version**: {version_badge}<br>',
             f'**Description**: {repo["description"] or "No description"}<br>',
             f'**Language**: {repo["language"] or "Not specified"}<br>',
             f'**Health Score**: {self._generate_health_score_badge(repo)}',

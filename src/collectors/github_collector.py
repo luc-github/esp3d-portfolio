@@ -238,7 +238,8 @@ class GitHubCollector:
                 'branches': self._collect_branches_data(repo, repo_config),
                 'contributors': self._collect_contributors_data(repo),
                 'activity': self._collect_activity_data(repo),
-                'statistics': self._collect_repository_statistics(repo)
+                'statistics': self._collect_repository_statistics(repo),
+                'version_info': self._collect_version_info(repo)
             }
             
             self.cache.set(cache_key, repo_data)
@@ -247,6 +248,86 @@ class GitHubCollector:
         except Exception as e:
             self.logger.error(f"Error collecting data for {repo_name}: {e}")
             raise
+
+    def _collect_version_info(self, repo) -> Dict:
+        """Collect version information from info.json at repository root.
+        
+        Returns a dict with:
+        - version: production version (or None if development only)
+        - devt: development version (or None if production only)
+        - display: formatted string for display
+        - status: 'production', 'development', 'both', or 'missing'
+        """
+        try:
+            # Try to get info.json from repository root
+            contents = repo.get_contents("info.json")
+            import json
+            import base64
+            
+            # Decode content (GitHub returns base64 encoded content)
+            if contents.encoding == 'base64':
+                content_str = base64.b64decode(contents.content).decode('utf-8')
+            else:
+                content_str = contents.content
+            
+            info_data = json.loads(content_str)
+            
+            version = info_data.get('version')
+            devt = info_data.get('devt')
+            
+            # Determine status and display format
+            if version and devt:
+                if version == devt:
+                    # Same version for both - just show version
+                    return {
+                        'version': version,
+                        'devt': devt,
+                        'display': f"v{version}",
+                        'status': 'production'
+                    }
+                else:
+                    # Different versions
+                    return {
+                        'version': version,
+                        'devt': devt,
+                        'display': f"v{version} / dev:{devt}",
+                        'status': 'both'
+                    }
+            elif version and not devt:
+                # Production only
+                return {
+                    'version': version,
+                    'devt': None,
+                    'display': f"v{version}",
+                    'status': 'production'
+                }
+            elif devt and not version:
+                # Development only
+                return {
+                    'version': None,
+                    'devt': devt,
+                    'display': f"dev:{devt}",
+                    'status': 'development'
+                }
+            else:
+                # info.json exists but no version info
+                return {
+                    'version': None,
+                    'devt': None,
+                    'display': 'missing',
+                    'status': 'missing'
+                }
+                
+        except Exception as e:
+            # info.json doesn't exist or can't be read
+            self.logger.debug(f"Could not read info.json for {repo.name}: {e}")
+            return {
+                'version': None,
+                'devt': None,
+                'display': 'missing',
+                'status': 'missing'
+            }
+
     def _collect_branches_data(self, repo, repo_config) -> List[Dict]:
         """Collect data for configured branches"""
         branches_data = []
@@ -453,19 +534,36 @@ class GitHubCollector:
     def get_rate_limit_info(self) -> Dict:
         """Get GitHub API rate limit information"""
         try:
-            limits = self.github.get_rate_limit()
+            rate_limit = self.github.get_rate_limit()
+            # PyGithub API changed - access rate attribute first
+            core = rate_limit.core
+            search = rate_limit.search
             return {
                 'core': {
-                    'limit': limits.core.limit,
-                    'remaining': limits.core.remaining,
-                    'reset': limits.core.reset.isoformat()
+                    'limit': core.limit,
+                    'remaining': core.remaining,
+                    'reset': core.reset.isoformat() if core.reset else None
                 },
                 'search': {
-                    'limit': limits.search.limit,
-                    'remaining': limits.search.remaining,
-                    'reset': limits.search.reset.isoformat()
+                    'limit': search.limit,
+                    'remaining': search.remaining,
+                    'reset': search.reset.isoformat() if search.reset else None
                 }
             }
+        except AttributeError:
+            # Fallback for different PyGithub versions
+            try:
+                rate_limit = self.github.get_rate_limit()
+                return {
+                    'core': {
+                        'limit': rate_limit.rate.limit,
+                        'remaining': rate_limit.rate.remaining,
+                        'reset': rate_limit.rate.reset.isoformat() if rate_limit.rate.reset else None
+                    }
+                }
+            except Exception as e:
+                self.logger.warning(f"Could not get rate limit info: {e}")
+                return {}
         except Exception as e:
             self.logger.error(f"Error getting rate limit info: {e}")
             return {}
