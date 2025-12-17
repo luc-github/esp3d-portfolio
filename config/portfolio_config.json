@@ -136,6 +136,22 @@
             ]
         },
         {
+            "name": "esp3d-webinstaller",
+            "type": "main",
+            "priority": 1,
+            "tracked_labels": ["bug", "enhancement", "feature", "critical"],
+            "ignore_labels": ["wontfix", "duplicate", "invalid"],
+            "highlight_labels": ["critical", "priority"],
+            "branches": [
+                {
+                    "name": "main",
+                    "label": "Production",
+                    "is_production": true,
+                    "issue_label": "1.0"
+                }
+            ]
+        },
+        {
             "name": "ESP32SSDP",
             "type": "dependency",
             "priority": 1,
