@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967436.3925374,
+  "timestamp": 1765969700.8823245,
   "data": {
     "name": "EspLuaEngine",
     "type": "dependency",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/EspLuaEngine",
     "language": "C",
     "created_at": "2024-08-17T11:15:11+00:00",
-    "updated_at": "2025-12-17T10:04:11+00:00",
+    "updated_at": "2025-12-17T10:33:55+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "586fa78",
-          "message": "Add version tracker",
+          "sha": "e4c3f46",
+          "message": "Add disclaimer about software warranty and usage\n\nAdded a disclaimer section to the README file to clarify the software's warranty and usage conditions.",
           "author": "Luc",
-          "date": "2025-12-17T10:04:02+00:00"
+          "date": "2025-12-17T10:33:51+00:00"
         },
         "protected": false,
         "issues": []
@@ -26,12 +26,18 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 8,
+        "contributions": 9,
         "url": "https://github.com/luc-github"
       }
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "e4c3f46",
+          "message": "Add disclaimer about software warranty and usage\n\nAdded a disclaimer section to the README file to clarify the software's warranty and usage conditions.",
+          "author": "Luc",
+          "date": "2025-12-17T10:33:51+00:00"
+        },
         {
           "sha": "586fa78",
           "message": "Add version tracker",
@@ -747,12 +753,12 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 1,
+          "total": 2,
           "days": [
             0,
             0,
             0,
-            1,
+            2,
             0,
             0,
             0
@@ -761,13 +767,19 @@
       ]
     },
     "statistics": {
-      "size": 418,
+      "size": 425,
       "stars": 3,
       "forks": 1,
       "open_issues": 0,
       "watchers": 3,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "1.0.3",
+      "devt": "1.0.3",
+      "display": "v1.0.3",
+      "status": "production"
     }
   }
 }

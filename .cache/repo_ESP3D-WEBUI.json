@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967373.274106,
+  "timestamp": 1765969533.111368,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -590,6 +590,12 @@
           "message": "Fix typo in status panel that make it crash\n\nAdd sanity check if extension has no body",
           "author": "Luc",
           "date": "2024-08-15T08:29:49+00:00"
+        },
+        {
+          "sha": "72742a9",
+          "message": "Fix typo on extra SD due to #396 thanks to DaKoarli for raising it",
+          "author": "Luc",
+          "date": "2024-08-12T02:59:03+00:00"
         }
       ],
       "commit_activity": [
@@ -1279,6 +1285,12 @@
       "watchers": 851,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "3.0.1",
+      "devt": "3.0.2",
+      "display": "v3.0.1 / dev:3.0.2",
+      "status": "both"
     }
   }
 }

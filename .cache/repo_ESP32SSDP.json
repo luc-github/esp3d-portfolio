@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967414.7630007,
+  "timestamp": 1765969650.2904825,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -414,6 +414,12 @@
           "message": "add travis for arduino and platformIO",
           "author": "Luc",
           "date": "2020-02-07T04:19:17+00:00"
+        },
+        {
+          "sha": "4ac65d8",
+          "message": "add template, workflow and stale",
+          "author": "Luc",
+          "date": "2020-02-02T10:36:40+00:00"
         }
       ],
       "commit_activity": [
@@ -1103,6 +1109,12 @@
       "watchers": 53,
       "default_branch": "v2.x",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "2.0.4",
+      "devt": "2.0.4",
+      "display": "v2.0.4",
+      "status": "production"
     }
   }
 }

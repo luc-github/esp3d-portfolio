@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967418.9437835,
+  "timestamp": 1765969670.8647692,
   "data": {
     "name": "SSDP_IDF",
     "type": "dependency",
@@ -904,13 +904,19 @@
       ]
     },
     "statistics": {
-      "size": 93,
+      "size": 96,
       "stars": 3,
       "forks": 3,
       "open_issues": 1,
       "watchers": 3,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "1.0.0",
+      "devt": "1.0.0",
+      "display": "v1.0.0",
+      "status": "production"
     }
   }
 }

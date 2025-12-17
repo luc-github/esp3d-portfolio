@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967424.3510172,
+  "timestamp": 1765969678.3051555,
   "data": {
     "name": "esp32-usb-serial",
     "type": "dependency",
@@ -810,6 +810,12 @@
       "watchers": 18,
       "default_branch": "main",
       "license": "Apache License 2.0"
+    },
+    "version_info": {
+      "version": "1.0.1",
+      "devt": "1.0.1",
+      "display": "v1.0.1",
+      "status": "production"
     }
   }
 }

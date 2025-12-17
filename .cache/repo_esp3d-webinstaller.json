@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967409.1715386,
+  "timestamp": 1765969572.577906,
   "data": {
     "name": "esp3d-webinstaller",
     "type": "main",
@@ -858,6 +858,12 @@
       "watchers": 1,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "1.0.0",
+      "devt": "1.0.2",
+      "display": "v1.0.0 / dev:1.0.2",
+      "status": "both"
     }
   }
 }

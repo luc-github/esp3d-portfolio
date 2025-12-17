@@ -558,6 +558,12 @@
             "message": "Update esp3d_version.h",
             "author": "Luc",
             "date": "2024-09-12T03:38:50+00:00"
+          },
+          {
+            "sha": "35f9cf8",
+            "message": "Fix W5500 Compilation issue (#1049)",
+            "author": "Luc",
+            "date": "2024-09-11T13:19:26+00:00"
           }
         ],
         "commit_activity": [
@@ -1247,6 +1253,12 @@
         "watchers": 1924,
         "default_branch": "3.0"
       },
+      "version_info": {
+        "version": "3.0.1",
+        "devt": "3.0.2",
+        "display": "v3.0.1 / dev:3.0.2",
+        "status": "both"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
@@ -1743,6 +1755,12 @@
             "message": "Update sd_ESP32.cpp",
             "author": "Eduard Sukharev",
             "date": "2022-08-23T19:41:40+00:00"
+          },
+          {
+            "sha": "f6fb0b8",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2022-08-14T12:46:41+00:00"
           }
         ],
         "commit_activity": [
@@ -2432,6 +2450,12 @@
         "watchers": 113,
         "default_branch": "master",
         "license": "GNU General Public License v3.0"
+      },
+      "version_info": {
+        "version": "1.0.0",
+        "devt": null,
+        "display": "v1.0.0",
+        "status": "production"
       },
       "health_score": {
         "documentation_score": 0.0,
@@ -3156,6 +3180,12 @@
             "message": "Fix typo in status panel that make it crash\n\nAdd sanity check if extension has no body",
             "author": "Luc",
             "date": "2024-08-15T08:29:49+00:00"
+          },
+          {
+            "sha": "72742a9",
+            "message": "Fix typo on extra SD due to #396 thanks to DaKoarli for raising it",
+            "author": "Luc",
+            "date": "2024-08-12T02:59:03+00:00"
           }
         ],
         "commit_activity": [
@@ -3846,6 +3876,12 @@
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
       },
+      "version_info": {
+        "version": "3.0.1",
+        "devt": "3.0.2",
+        "display": "v3.0.1 / dev:3.0.2",
+        "status": "both"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
@@ -4492,6 +4528,12 @@
             "message": "Enable CI back",
             "author": "Luc",
             "date": "2024-04-16T00:47:07+00:00"
+          },
+          {
+            "sha": "fa6e2ce",
+            "message": "POC add Marlin Logo during splash to highlight FW target",
+            "author": "Luc",
+            "date": "2024-04-15T09:17:51+00:00"
           }
         ],
         "commit_activity": [
@@ -5181,6 +5223,12 @@
         "watchers": 48,
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
+      },
+      "version_info": {
+        "version": "3.0.0.a26",
+        "devt": "3.0.0.a26",
+        "display": "v3.0.0.a26",
+        "status": "production"
       },
       "health_score": {
         "documentation_score": 0.0,
@@ -7585,6 +7633,12 @@
             "message": "\ud83d\udc1b Fix missing va_end in UnwPrintf (#25027)",
             "author": "Trivalik",
             "date": "2022-11-28T01:06:44+00:00"
+          },
+          {
+            "sha": "1201788",
+            "message": "\ud83d\udc1b Fix MILLISECONDS_PREHEAT_TIME / mintemp (#24967)",
+            "author": "studiodyne",
+            "date": "2022-11-27T03:29:13+00:00"
           }
         ],
         "commit_activity": [
@@ -8275,6 +8329,12 @@
         "default_branch": "ESP3DLib-V3-2.1.2",
         "license": "GNU General Public License v3.0"
       },
+      "version_info": {
+        "version": null,
+        "devt": null,
+        "display": "missing",
+        "status": "missing"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.2,
@@ -8742,6 +8802,12 @@
             "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
             "author": "Luc",
             "date": "2022-06-22T12:56:59+00:00"
+          },
+          {
+            "sha": "15893a2",
+            "message": "Update index.html",
+            "author": "Luc",
+            "date": "2022-06-22T02:52:09+00:00"
           }
         ],
         "commit_activity": [
@@ -9432,6 +9498,12 @@
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
       },
+      "version_info": {
+        "version": "1.0.34",
+        "devt": null,
+        "display": "v1.0.34",
+        "status": "production"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
@@ -9447,17 +9519,17 @@
       "url": "https://github.com/luc-github/esp3d.io",
       "language": "HTML",
       "created_at": "2023-01-29T00:46:38+00:00",
-      "updated_at": "2025-11-28T10:33:49+00:00",
+      "updated_at": "2025-12-17T10:33:24+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "b5c3204",
-            "message": "Update sponsoring.html",
+            "sha": "759f2d9",
+            "message": "Update README with version badge and disclaimer\n\nAdded version badge and updated disclaimer section.",
             "author": "Luc",
-            "date": "2025-11-28T10:33:43+00:00"
+            "date": "2025-12-17T10:33:20+00:00"
           },
           "protected": false,
           "issues": [
@@ -9567,7 +9639,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 206,
+          "contributions": 208,
           "url": "https://github.com/luc-github"
         },
         {
@@ -9613,6 +9685,18 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "759f2d9",
+            "message": "Update README with version badge and disclaimer\n\nAdded version badge and updated disclaimer section.",
+            "author": "Luc",
+            "date": "2025-12-17T10:33:20+00:00"
+          },
+          {
+            "sha": "0df4c28",
+            "message": "Create info.json",
+            "author": "Luc",
+            "date": "2025-12-17T10:31:24+00:00"
+          },
           {
             "sha": "b5c3204",
             "message": "Update sponsoring.html",
@@ -9924,12 +10008,6 @@
             "message": "Add hooks and variables documentation for ESP3D V3.0",
             "author": "Luc",
             "date": "2024-08-19T12:01:45+00:00"
-          },
-          {
-            "sha": "fffe0f6",
-            "message": "Fix typo\n\nAdd rewrite for previews website compaitibility",
-            "author": "Luc",
-            "date": "2024-08-19T10:26:20+00:00"
           }
         ],
         "commit_activity": [
@@ -10598,12 +10676,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 0,
+            "total": 2,
             "days": [
               0,
               0,
               0,
-              0,
+              2,
               0,
               0,
               0
@@ -10619,6 +10697,12 @@
         "watchers": 9,
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
+      },
+      "version_info": {
+        "version": "2.1.0",
+        "devt": null,
+        "display": "v2.1.0",
+        "status": "production"
       },
       "health_score": {
         "documentation_score": 0.0,
@@ -11501,6 +11585,12 @@
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
       },
+      "version_info": {
+        "version": "1.0.0",
+        "devt": "1.0.2",
+        "display": "v1.0.0 / dev:1.0.2",
+        "status": "both"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
@@ -11977,6 +12067,12 @@
             "message": "add travis for arduino and platformIO",
             "author": "Luc",
             "date": "2020-02-07T04:19:17+00:00"
+          },
+          {
+            "sha": "4ac65d8",
+            "message": "add template, workflow and stale",
+            "author": "Luc",
+            "date": "2020-02-02T10:36:40+00:00"
           }
         ],
         "commit_activity": [
@@ -12666,6 +12762,12 @@
         "watchers": 53,
         "default_branch": "v2.x",
         "license": "GNU General Public License v3.0"
+      },
+      "version_info": {
+        "version": "2.0.4",
+        "devt": "2.0.4",
+        "display": "v2.0.4",
+        "status": "production"
       },
       "health_score": {
         "documentation_score": 0.0,
@@ -13611,13 +13713,19 @@
         ]
       },
       "statistics": {
-        "size": 93,
+        "size": 96,
         "stars": 3,
         "forks": 3,
         "open_issues": 1,
         "watchers": 3,
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
+      },
+      "version_info": {
+        "version": "1.0.0",
+        "devt": "1.0.0",
+        "display": "v1.0.0",
+        "status": "production"
       },
       "health_score": {
         "documentation_score": 0.0,
@@ -14452,6 +14560,12 @@
         "default_branch": "main",
         "license": "Apache License 2.0"
       },
+      "version_info": {
+        "version": "1.0.1",
+        "devt": "1.0.1",
+        "display": "v1.0.1",
+        "status": "production"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
@@ -14467,17 +14581,17 @@
       "url": "https://github.com/luc-github/EspLuaEngine",
       "language": "C",
       "created_at": "2024-08-17T11:15:11+00:00",
-      "updated_at": "2025-12-17T10:04:11+00:00",
+      "updated_at": "2025-12-17T10:33:55+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "586fa78",
-            "message": "Add version tracker",
+            "sha": "e4c3f46",
+            "message": "Add disclaimer about software warranty and usage\n\nAdded a disclaimer section to the README file to clarify the software's warranty and usage conditions.",
             "author": "Luc",
-            "date": "2025-12-17T10:04:02+00:00"
+            "date": "2025-12-17T10:33:51+00:00"
           },
           "protected": false,
           "issues": [],
@@ -14500,12 +14614,18 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 8,
+          "contributions": 9,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "e4c3f46",
+            "message": "Add disclaimer about software warranty and usage\n\nAdded a disclaimer section to the README file to clarify the software's warranty and usage conditions.",
+            "author": "Luc",
+            "date": "2025-12-17T10:33:51+00:00"
+          },
           {
             "sha": "586fa78",
             "message": "Add version tracker",
@@ -15221,12 +15341,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 1,
+            "total": 2,
             "days": [
               0,
               0,
               0,
-              1,
+              2,
               0,
               0,
               0
@@ -15235,13 +15355,19 @@
         ]
       },
       "statistics": {
-        "size": 418,
+        "size": 425,
         "stars": 3,
         "forks": 1,
         "open_issues": 0,
         "watchers": 3,
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
+      },
+      "version_info": {
+        "version": "1.0.3",
+        "devt": "1.0.3",
+        "display": "v1.0.3",
+        "status": "production"
       },
       "health_score": {
         "documentation_score": 0.0,
@@ -16184,6 +16310,12 @@
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
       },
+      "version_info": {
+        "version": "1.0.1",
+        "devt": null,
+        "display": "v1.0.1",
+        "status": "production"
+      },
       "health_score": {
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
@@ -16536,6 +16668,12 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2025-11-29T13:12:05+00:00"
+          },
+          {
+            "sha": "ace3fe5",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2025-11-29T13:00:06+00:00"
           }
         ],
         "commit_activity": [],
@@ -16553,8 +16691,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4419,
-      "reset": "2025-12-17T10:53:02+00:00"
+      "remaining": 4688,
+      "reset": "2025-12-17T12:01:45+00:00"
     }
   },
   "stats": {
@@ -16569,7 +16707,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749233,
+      "total_size": 749243,
       "total_stars": 3042,
       "total_forks": 968,
       "branches": {
@@ -16583,7 +16721,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1006.1932162187862,
+      "avg_age_days": 1006.2090284220733,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
@@ -16595,11 +16733,11 @@
       }
     },
     "activity": {
-      "total_commits": 77,
+      "total_commits": 80,
       "commit_frequency": {
-        "daily": 0.4148351648351649,
-        "weekly": 2.9038461538461533,
-        "monthly": 11.615384615384613
+        "daily": 0.42307692307692313,
+        "weekly": 2.9615384615384612,
+        "monthly": 11.846153846153845
       },
       "active_contributors": {
         "last_week": 1,
@@ -16610,15 +16748,15 @@
         [
           3,
           6,
-          9,
+          10,
           8,
           4,
           8,
           1,
           7,
           5,
-          13,
-          3,
+          14,
+          2,
           0,
           7,
           3,
@@ -16662,7 +16800,7 @@
         [
           1,
           10,
-          3,
+          4,
           7,
           7,
           5,
@@ -16670,10 +16808,10 @@
           8,
           11,
           6,
-          4,
+          7,
           5,
           10,
-          1,
+          2,
           2,
           2,
           1,
@@ -16751,7 +16889,7 @@
           2,
           6,
           3,
-          3,
+          4,
           3,
           4,
           0,
@@ -16767,16 +16905,16 @@
           2,
           9,
           7,
-          3,
+          4,
           3,
           5,
           5,
           11,
           8,
           4,
-          1,
+          2,
           4,
-          6,
+          7,
           2,
           1,
           0,
@@ -17099,7 +17237,7 @@
         },
         {
           "date": "2025-12-14",
-          "count": 55
+          "count": 58
         },
         {
           "date": "2025-03-15",
@@ -17390,6 +17528,27 @@
         }
       },
       {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 2.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "esp3d-webinstaller",
         "type": "main",
         "description": "Web Installer for ESP32 projects",
@@ -17459,17 +17618,17 @@
         "url": "https://github.com/luc-github/EspLuaEngine",
         "is_private": false,
         "score": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 3
+          "total": 6
         },
         "details": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.0,
+          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -17499,27 +17658,6 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17728,6 +17866,27 @@
         }
       },
       {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.2857142857142857,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "ESP32SSDP",
         "type": "dependency",
         "description": "Simple SSDP library for ESP32",
@@ -17776,17 +17935,17 @@
         "url": "https://github.com/luc-github/EspLuaEngine",
         "is_private": false,
         "score": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 3
+          "total": 6
         },
         "details": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.14285714285714285,
+          "commits_per_day": 0.2857142857142857,
           "issues_per_day": 0.0
         }
       },
@@ -17795,27 +17954,6 @@
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17841,17 +17979,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 53,
+          "commits": 54,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 159
+          "total": 162
         },
         "details": {
-          "commits": 53,
+          "commits": 54,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.7666666666666666,
+          "commits_per_day": 1.8,
           "issues_per_day": 0.0
         }
       },
@@ -17982,6 +18120,27 @@
         }
       },
       {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "is_private": false,
+        "score": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 9
+        },
+        "details": {
+          "commits": 3,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.1,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "esp32-usb-serial",
         "type": "dependency",
         "description": "Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components",
@@ -18066,44 +18225,23 @@
         }
       },
       {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
-        "is_private": false,
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.03333333333333333,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "EspLuaEngine",
         "type": "dependency",
         "description": "Add Lua engine to your firmware using ESP boards",
         "url": "https://github.com/luc-github/EspLuaEngine",
         "is_private": false,
         "score": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 3
+          "total": 6
         },
         "details": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.03333333333333333,
+          "commits_per_day": 0.06666666666666667,
           "issues_per_day": 0.0
         }
       },
@@ -18137,17 +18275,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 53,
+          "commits": 54,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 159
+          "total": 162
         },
         "details": {
-          "commits": 53,
+          "commits": 54,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.14520547945205478,
+          "commits_per_day": 0.14794520547945206,
           "issues_per_day": 0.0
         }
       },
@@ -18242,17 +18380,17 @@
         "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
-          "commits": 18,
+          "commits": 20,
           "issues": 1,
           "comments": 0,
           "period_days": 365,
-          "total": 56
+          "total": 62
         },
         "details": {
-          "commits": 18,
+          "commits": 20,
           "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.049315068493150684,
+          "commits_per_day": 0.0547945205479452,
           "issues_per_day": 0.0027397260273972603
         }
       },
@@ -18389,17 +18527,17 @@
         "url": "https://github.com/luc-github/EspLuaEngine",
         "is_private": false,
         "score": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 3
+          "total": 6
         },
         "details": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0027397260273972603,
+          "commits_per_day": 0.005479452054794521,
           "issues_per_day": 0.0
         }
       },

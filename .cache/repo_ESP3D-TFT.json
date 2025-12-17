@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967381.3517368,
+  "timestamp": 1765969540.6233487,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -523,6 +523,12 @@
           "message": "Enable CI back",
           "author": "Luc",
           "date": "2024-04-16T00:47:07+00:00"
+        },
+        {
+          "sha": "fa6e2ce",
+          "message": "POC add Marlin Logo during splash to highlight FW target",
+          "author": "Luc",
+          "date": "2024-04-15T09:17:51+00:00"
         }
       ],
       "commit_activity": [
@@ -1212,6 +1218,12 @@
       "watchers": 48,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "3.0.0.a26",
+      "devt": "3.0.0.a26",
+      "display": "v3.0.0.a26",
+      "status": "production"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967444.4488542,
+  "timestamp": 1765969715.1563666,
   "data": {
     "name": "plugin_oled_display",
     "type": "dependency",
@@ -918,6 +918,12 @@
       "watchers": 2,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "1.0.1",
+      "devt": null,
+      "display": "v1.0.1",
+      "status": "production"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967358.1925402,
+  "timestamp": 1765969415.357682,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -494,6 +494,12 @@
           "message": "Update esp3d_version.h",
           "author": "Luc",
           "date": "2024-09-12T03:38:50+00:00"
+        },
+        {
+          "sha": "35f9cf8",
+          "message": "Fix W5500 Compilation issue (#1049)",
+          "author": "Luc",
+          "date": "2024-09-11T13:19:26+00:00"
         }
       ],
       "commit_activity": [
@@ -1182,6 +1188,12 @@
       "open_issues": 4,
       "watchers": 1924,
       "default_branch": "3.0"
+    },
+    "version_info": {
+      "version": "3.0.1",
+      "devt": "3.0.2",
+      "display": "v3.0.1 / dev:3.0.2",
+      "status": "both"
     }
   }
 }

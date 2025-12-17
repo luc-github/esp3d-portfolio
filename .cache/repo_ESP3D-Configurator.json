@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765967398.4607842,
+  "timestamp": 1765969556.1670523,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -406,6 +406,12 @@
           "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
           "author": "Luc",
           "date": "2022-06-22T12:56:59+00:00"
+        },
+        {
+          "sha": "15893a2",
+          "message": "Update index.html",
+          "author": "Luc",
+          "date": "2022-06-22T02:52:09+00:00"
         }
       ],
       "commit_activity": [
@@ -1095,6 +1101,12 @@
       "watchers": 8,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
+    },
+    "version_info": {
+      "version": "1.0.34",
+      "devt": null,
+      "display": "v1.0.34",
+      "status": "production"
     }
   }
 }
