@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765938627.3971705,
+  "timestamp": 1765942884.7310028,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-12-16T03:19:43+00:00",
+    "updated_at": "2025-12-17T03:31:53+00:00",
     "branches": [
       {
         "name": "2.1.x",
@@ -102,10 +102,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "1691de4",
-          "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D into 3.0",
+          "sha": "51971e4",
+          "message": "Revise README for ESP3D V3.0 updates\n\nUpdated README.md to reflect changes in ESP3D version and added relevant badges.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
-          "date": "2025-12-16T03:19:24+00:00"
+          "date": "2025-12-17T03:31:50+00:00"
         },
         "protected": false,
         "issues": [
@@ -189,7 +189,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 554,
+        "contributions": 558,
         "url": "https://github.com/luc-github"
       },
       {
@@ -265,6 +265,30 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "51971e4",
+          "message": "Revise README for ESP3D V3.0 updates\n\nUpdated README.md to reflect changes in ESP3D version and added relevant badges.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-12-17T03:31:50+00:00"
+        },
+        {
+          "sha": "ee0dafa",
+          "message": "Change development badge color to green\n\nUpdated the development badge color to green in README.md.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-12-17T03:11:43+00:00"
+        },
+        {
+          "sha": "2f7dd32",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-12-17T03:09:15+00:00"
+        },
+        {
+          "sha": "c644994",
+          "message": "Update info.json",
+          "author": "Luc",
+          "date": "2025-12-17T03:03:28+00:00"
+        },
         {
           "sha": "1691de4",
           "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D into 3.0",
@@ -540,30 +564,6 @@
           "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
           "author": "Luc",
           "date": "2024-10-19T10:13:45+00:00"
-        },
-        {
-          "sha": "9bac144",
-          "message": "Update esp3d_version.h",
-          "author": "Luc",
-          "date": "2024-09-12T03:38:50+00:00"
-        },
-        {
-          "sha": "35f9cf8",
-          "message": "Fix W5500 Compilation issue (#1049)",
-          "author": "Luc",
-          "date": "2024-09-11T13:19:26+00:00"
-        },
-        {
-          "sha": "ae2dec2",
-          "message": "Serial refactoring and idf 4.4.7 for ESP32 (#1048)\n\n* Split esp32 code from esp8266 for Serial\r\n\r\n* split receive serial message and processing serial message in esp32 in different task\r\n\r\n* Make the esp32 code backward compatible with Arduino esp32 2.0.17 / IDF 4.4.7",
-          "author": "Luc",
-          "date": "2024-09-11T12:57:56+00:00"
-        },
-        {
-          "sha": "bd5f96d",
-          "message": "Fix server name are not in fixed location\n\nUpdate esp8266 time code for consistency with esp32",
-          "author": "Luc",
-          "date": "2024-09-10T02:18:31+00:00"
         }
       ],
       "commit_activity": [
@@ -1232,12 +1232,12 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 1,
+          "total": 5,
           "days": [
             0,
             0,
             1,
-            0,
+            4,
             0,
             0,
             0
