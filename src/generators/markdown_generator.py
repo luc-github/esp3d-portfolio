@@ -47,7 +47,7 @@ class MarkdownGenerator:
         
         # Generate last update timestamp for badge
         now = datetime.now(timezone.utc)
-        update_date = now.strftime("%Y--%%20%m--%%20%d%%20%H:%M%%20UTC").replace("--", "-")
+        update_date = now.strftime("%Y--%%20%m--%%20%d%%20%H:%M%%20UTC").replace("--", "%2F")
         update_display = now.strftime("%Y-%m-%d %H:%M UTC")
         
         return [
