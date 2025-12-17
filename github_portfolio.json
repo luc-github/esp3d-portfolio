@@ -452,6 +452,246 @@
             "message": "Fix BT Service is no set a started due to wrong API usage",
             "author": "Luc",
             "date": "2025-06-18T14:02:02+00:00"
+          },
+          {
+            "sha": "041658d",
+            "message": "fix missing sanity check if BT",
+            "author": "Luc",
+            "date": "2025-06-18T05:06:33+00:00"
+          },
+          {
+            "sha": "0b8dc3a",
+            "message": "Update esp3d_commands.cpp\n\nOverride new behavior in Marlin that prevent error to update screen e.g: No SD Card -> IP is not displayed because M117 is locked, so always unlock M117 output\nDo not affect M111 because it is user key, so he can type M117 first to unlock if necessary, the fix only apply to auto M117 output",
+            "author": "Luc",
+            "date": "2025-04-26T06:18:50+00:00"
+          },
+          {
+            "sha": "1a0928e",
+            "message": "Fix serial2socket module lock after a while",
+            "author": "Luc",
+            "date": "2025-04-14T08:59:01+00:00"
+          },
+          {
+            "sha": "6e43923",
+            "message": "Fix WDT error message when doing formating\n\nBum version",
+            "author": "Luc",
+            "date": "2025-04-13T06:40:44+00:00"
+          },
+          {
+            "sha": "3f60af3",
+            "message": "Update esp_sd.cpp",
+            "author": "Luc",
+            "date": "2025-03-26T07:15:46+00:00"
+          },
+          {
+            "sha": "a63243d",
+            "message": "Update info.json",
+            "author": "Luc",
+            "date": "2025-03-26T06:55:08+00:00"
+          },
+          {
+            "sha": "8a6334e",
+            "message": "Sd refactoring (#1086)",
+            "author": "Luc",
+            "date": "2025-03-26T06:49:45+00:00"
+          },
+          {
+            "sha": "5501e78",
+            "message": "Improve serial Service thanks @rondlh\n\nBump version due to latest fixes",
+            "author": "Luc",
+            "date": "2025-03-19T03:37:34+00:00"
+          },
+          {
+            "sha": "8104887",
+            "message": "Fixed the issue that ESP201 cannot display the ANALOG pin value. (#1083)",
+            "author": "E2D",
+            "date": "2025-03-17T07:19:39+00:00"
+          },
+          {
+            "sha": "d0bde79",
+            "message": "Fixed FTP client connection logic with accept(); updated service config format. (#1082)",
+            "author": "E2D",
+            "date": "2025-03-16T09:02:39+00:00"
+          },
+          {
+            "sha": "429007b",
+            "message": "Buzzer bug fixed. (#1081)\n\n* Adjusted buzzer initialization logic to support ESP-IDF 5.1.1, added conditional compilation to be compatible with older versions\n\n* Update buzzer.cpp",
+            "author": "E2D",
+            "date": "2025-03-14T15:17:13+00:00"
+          },
+          {
+            "sha": "dc8e221",
+            "message": "Update info.json\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-03-12T07:02:33+00:00"
+          },
+          {
+            "sha": "8b70bb5",
+            "message": "Update esp3d_version.h\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-03-12T07:01:42+00:00"
+          },
+          {
+            "sha": "a57850a",
+            "message": "Fixed the issue where Ethernet static IP cannot be set. (#1080)",
+            "author": "E2D",
+            "date": "2025-03-12T07:00:40+00:00"
+          },
+          {
+            "sha": "750ef32",
+            "message": "Update wificonfig.cpp",
+            "author": "Luc",
+            "date": "2025-01-30T08:51:56+00:00"
+          },
+          {
+            "sha": "c222ba8",
+            "message": "smaller svg logo",
+            "author": "Luc",
+            "date": "2025-01-26T02:37:53+00:00"
+          },
+          {
+            "sha": "ed2d713",
+            "message": "Update embedded for help link to go to esp3d.io",
+            "author": "Luc",
+            "date": "2025-01-21T09:09:02+00:00"
+          },
+          {
+            "sha": "880ab40",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2024-12-18T04:19:04+00:00"
+          },
+          {
+            "sha": "6c10293",
+            "message": "Fix version in readme and json orz\n\nUpdate readme",
+            "author": "Luc",
+            "date": "2024-12-18T04:07:34+00:00"
+          },
+          {
+            "sha": "8293833",
+            "message": "Bump version for beta 1",
+            "author": "Luc",
+            "date": "2024-12-18T03:40:33+00:00"
+          },
+          {
+            "sha": "0f55c19",
+            "message": "Fix compilation for esp8266",
+            "author": "Luc",
+            "date": "2024-12-10T12:27:39+00:00"
+          },
+          {
+            "sha": "00ed692",
+            "message": "Update configuration.h",
+            "author": "Luc",
+            "date": "2024-12-10T11:53:48+00:00"
+          },
+          {
+            "sha": "3bb05c9",
+            "message": "Update ESP32SSDP library to access started state and ethernet fix\n\nAdd SSDP ad mDNS to ESP420 report|\nAdd waiting loop to get the ethernet IP in DHCP in STA mode to be sure network services start with proper IP\nChange debug log to verbose log\n\nBump version",
+            "author": "Luc",
+            "date": "2024-12-10T11:14:46+00:00"
+          },
+          {
+            "sha": "d6a58d5",
+            "message": "Update esp3d_version.h",
+            "author": "Luc",
+            "date": "2024-12-09T09:47:31+00:00"
+          },
+          {
+            "sha": "539d9fe",
+            "message": "Ajust code for ethernet\n\nBump version",
+            "author": "Luc",
+            "date": "2024-12-09T09:46:55+00:00"
+          },
+          {
+            "sha": "fe23f0c",
+            "message": "Grbl grblHAL better support for realtime commands (#1064)\n\n* Add a realtime command detector \r\n* Move `\\r` as printable char and not replaced as `\\n`\r\n* Refactorize Serial service code to avoid redondant code between esp32 and esp8266\r\n* Implement isrealtimeCommand check for serial and centralize function in string helper\r\n* Add new type message : realtimecmd\r\n* Update simulator to handle commands and realtime commands\r\n* Add simple serial test tool\r\n*  Generate error if use HAS_DISPLAY with grbl/grblHAL\r\n* Implement isRealTimeCommand for BT client\r\n* Simplify BT push2buffer code\r\n* Implement support for realtimecommand in telnet\r\n* Implement isRealTimeCommand on websocket RX\r\n* Simplify push2RXbuffer for websocket\r\n* Implement isRealTimeCommand for USB serial\r\n* Bump version",
+            "author": "Luc",
+            "date": "2024-12-08T09:26:19+00:00"
+          },
+          {
+            "sha": "7b99d8a",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2024-12-01T08:07:16+00:00"
+          },
+          {
+            "sha": "2e24f5e",
+            "message": "Create info.json",
+            "author": "Luc",
+            "date": "2024-12-01T06:12:49+00:00"
+          },
+          {
+            "sha": "be5e3f9",
+            "message": "Add missing WhatsApp setting in ESP400\n\nBump version",
+            "author": "Luc",
+            "date": "2024-11-27T01:07:52+00:00"
+          },
+          {
+            "sha": "d9f6ea6",
+            "message": "close #888",
+            "author": "Luc",
+            "date": "2024-11-25T07:45:09+00:00"
+          },
+          {
+            "sha": "d2c52ac",
+            "message": "Close #955\n\nAdd more default settings for SPI W5500 Ethernet\nBump version for tracking",
+            "author": "Luc",
+            "date": "2024-11-25T02:06:15+00:00"
+          },
+          {
+            "sha": "ff3dff0",
+            "message": "Update esp32_usb_serial.cpp",
+            "author": "Luc",
+            "date": "2024-11-04T21:11:02+00:00"
+          },
+          {
+            "sha": "b6a7add",
+            "message": "Remove wrong sanity check\n\nFix confusing comment",
+            "author": "Luc",
+            "date": "2024-11-03T16:56:37+00:00"
+          },
+          {
+            "sha": "b892b3f",
+            "message": "Add more data in ESP420 for USB Port  when connected",
+            "author": "Luc",
+            "date": "2024-10-20T12:59:59+00:00"
+          },
+          {
+            "sha": "9f303ca",
+            "message": "Add auto notification to USB Serial",
+            "author": "Luc",
+            "date": "2024-10-20T12:21:57+00:00"
+          },
+          {
+            "sha": "b409371",
+            "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
+            "author": "Luc",
+            "date": "2024-10-19T10:13:45+00:00"
+          },
+          {
+            "sha": "9bac144",
+            "message": "Update esp3d_version.h",
+            "author": "Luc",
+            "date": "2024-09-12T03:38:50+00:00"
+          },
+          {
+            "sha": "35f9cf8",
+            "message": "Fix W5500 Compilation issue (#1049)",
+            "author": "Luc",
+            "date": "2024-09-11T13:19:26+00:00"
+          },
+          {
+            "sha": "ae2dec2",
+            "message": "Serial refactoring and idf 4.4.7 for ESP32 (#1048)\n\n* Split esp32 code from esp8266 for Serial\r\n\r\n* split receive serial message and processing serial message in esp32 in different task\r\n\r\n* Make the esp32 code backward compatible with Arduino esp32 2.0.17 / IDF 4.4.7",
+            "author": "Luc",
+            "date": "2024-09-11T12:57:56+00:00"
+          },
+          {
+            "sha": "bd5f96d",
+            "message": "Fix server name are not in fixed location\n\nUpdate esp8266 time code for consistency with esp32",
+            "author": "Luc",
+            "date": "2024-09-10T02:18:31+00:00"
           }
         ],
         "commit_activity": [
@@ -1379,6 +1619,246 @@
             "message": "Merge pull request #73 from luc-github/dependabot/npm_and_yarn/embedded/fsevents-1.2.13\n\nBump fsevents from 1.2.9 to 1.2.13 in /embedded",
             "author": "Luc",
             "date": "2023-10-10T23:18:12+00:00"
+          },
+          {
+            "sha": "5950cdc",
+            "message": "Bump fsevents from 1.2.9 to 1.2.13 in /embedded\n\nBumps [fsevents](https://github.com/fsevents/fsevents) from 1.2.9 to 1.2.13.\n- [Release notes](https://github.com/fsevents/fsevents/releases)\n- [Commits](https://github.com/fsevents/fsevents/compare/v1.2.9...v1.2.13)\n\n---\nupdated-dependencies:\n- dependency-name: fsevents\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+            "author": "dependabot[bot]",
+            "date": "2023-10-10T12:45:20+00:00"
+          },
+          {
+            "sha": "dc0f3d9",
+            "message": "Merge pull request #68 from thinkyhead/relocate_marlin_hal_PR\n\nAllow Marlin to relocate its HAL",
+            "author": "Luc",
+            "date": "2023-04-25T07:16:52+00:00"
+          },
+          {
+            "sha": "f67e259",
+            "message": "Version: Please 'git tag 1.0.12' (and 1.0.11)",
+            "author": "Scott Lahteine",
+            "date": "2023-04-25T07:01:17+00:00"
+          },
+          {
+            "sha": "db27917",
+            "message": "Add a block for testing",
+            "author": "Scott Lahteine",
+            "date": "2023-04-25T06:56:45+00:00"
+          },
+          {
+            "sha": "6178abd",
+            "message": "Allow Marlin to relocate its HAL",
+            "author": "Scott Lahteine",
+            "date": "2023-04-25T06:03:27+00:00"
+          },
+          {
+            "sha": "687fc59",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2023-02-16T06:53:24+00:00"
+          },
+          {
+            "sha": "1454795",
+            "message": "Create patrickS.png",
+            "author": "Luc",
+            "date": "2023-02-16T06:51:22+00:00"
+          },
+          {
+            "sha": "e980223",
+            "message": "Merge pull request #63 from luc-github/all-contributors/add-PendulumPit\n\ndocs: add PendulumPit as a contributor for financial",
+            "author": "Luc",
+            "date": "2023-02-16T06:19:07+00:00"
+          },
+          {
+            "sha": "9383a72",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T06:18:53+00:00"
+          },
+          {
+            "sha": "7360262",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T06:18:52+00:00"
+          },
+          {
+            "sha": "be5a9b3",
+            "message": "Merge pull request #62 from luc-github/all-contributors/add-FYSETC\n\ndocs: add FYSETC as a contributor for financial, bug, and platform",
+            "author": "Luc",
+            "date": "2023-02-16T04:12:07+00:00"
+          },
+          {
+            "sha": "dbf7c18",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:11:52+00:00"
+          },
+          {
+            "sha": "72ffaf9",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:11:51+00:00"
+          },
+          {
+            "sha": "068ef7a",
+            "message": "Merge pull request #60 from luc-github/all-contributors/add-markniu\n\ndocs: add markniu as a contributor for platform",
+            "author": "Luc",
+            "date": "2023-02-16T04:09:40+00:00"
+          },
+          {
+            "sha": "1d4800f",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:09:00+00:00"
+          },
+          {
+            "sha": "35b9ee7",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:08:59+00:00"
+          },
+          {
+            "sha": "1b8feae",
+            "message": "Merge pull request #58 from luc-github/all-contributors/add-vivian-ng\n\ndocs: add vivian-ng as a contributor for code, bug, and platform",
+            "author": "Luc",
+            "date": "2023-02-16T04:06:07+00:00"
+          },
+          {
+            "sha": "357da64",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:05:56+00:00"
+          },
+          {
+            "sha": "064d48b",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:05:55+00:00"
+          },
+          {
+            "sha": "3136f9e",
+            "message": "Merge pull request #56 from luc-github/all-contributors/add-makerbase-mks\n\ndocs: add makerbase-mks as a contributor for financial, bug, and platform",
+            "author": "Luc",
+            "date": "2023-02-16T04:04:13+00:00"
+          },
+          {
+            "sha": "3f97b02",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:04:01+00:00"
+          },
+          {
+            "sha": "2073021",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T04:04:00+00:00"
+          },
+          {
+            "sha": "eba1512",
+            "message": "Merge pull request #54 from luc-github/all-contributors/add-MitchBradley\n\ndocs: add MitchBradley as a contributor for bug, and code",
+            "author": "Luc",
+            "date": "2023-02-16T03:05:11+00:00"
+          },
+          {
+            "sha": "8dd683a",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T03:04:59+00:00"
+          },
+          {
+            "sha": "cf523c7",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T03:04:58+00:00"
+          },
+          {
+            "sha": "7e3ad8a",
+            "message": "Merge pull request #53 from luc-github/all-contributors/add-eduard-sukharev\n\ndocs: add eduard-sukharev as a contributor for code",
+            "author": "Luc",
+            "date": "2023-02-16T03:03:30+00:00"
+          },
+          {
+            "sha": "ef238a2",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T03:03:18+00:00"
+          },
+          {
+            "sha": "615c766",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T03:03:17+00:00"
+          },
+          {
+            "sha": "7c45849",
+            "message": "Merge pull request #52 from luc-github/all-contributors/add-ellensp\n\ndocs: add ellensp as a contributor for bug",
+            "author": "Luc",
+            "date": "2023-02-16T01:34:15+00:00"
+          },
+          {
+            "sha": "f7f27f1",
+            "message": "docs: create .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T01:33:56+00:00"
+          },
+          {
+            "sha": "60578fb",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T01:33:55+00:00"
+          },
+          {
+            "sha": "902e42a",
+            "message": "Merge pull request #50 from luc-github/dependabot/npm_and_yarn/embedded/minimatch-3.0.8\n\nBump minimatch from 3.0.4 to 3.0.8 in /embedded",
+            "author": "Luc",
+            "date": "2022-12-05T05:21:29+00:00"
+          },
+          {
+            "sha": "dd5bb12",
+            "message": "Bump minimatch from 3.0.4 to 3.0.8 in /embedded\n\nBumps [minimatch](https://github.com/isaacs/minimatch) from 3.0.4 to 3.0.8.\n- [Release notes](https://github.com/isaacs/minimatch/releases)\n- [Changelog](https://github.com/isaacs/minimatch/blob/main/changelog.md)\n- [Commits](https://github.com/isaacs/minimatch/compare/v3.0.4...v3.0.8)\n\n---\nupdated-dependencies:\n- dependency-name: minimatch\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+            "author": "dependabot[bot]",
+            "date": "2022-12-05T05:21:05+00:00"
+          },
+          {
+            "sha": "df757c0",
+            "message": "Merge pull request #49 from luc-github/dependabot/npm_and_yarn/embedded/decode-uri-component-0.2.2\n\nBump decode-uri-component from 0.2.0 to 0.2.2 in /embedded",
+            "author": "Luc",
+            "date": "2022-12-05T05:20:23+00:00"
+          },
+          {
+            "sha": "4a85695",
+            "message": "Bump decode-uri-component from 0.2.0 to 0.2.2 in /embedded\n\nBumps [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component) from 0.2.0 to 0.2.2.\n- [Release notes](https://github.com/SamVerschueren/decode-uri-component/releases)\n- [Commits](https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: decode-uri-component\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+            "author": "dependabot[bot]",
+            "date": "2022-12-05T05:12:53+00:00"
+          },
+          {
+            "sha": "8dd41f3",
+            "message": "Merge pull request #47 from eduard-sukharev/patch-1\n\nFix MKS MINI 12864 blanking on SD write with MKS TinyBee",
+            "author": "Luc",
+            "date": "2022-09-14T22:15:44+00:00"
+          },
+          {
+            "sha": "afd2163",
+            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2022-08-29T01:21:09+00:00"
+          },
+          {
+            "sha": "5ed2275",
+            "message": "Update web_server.cpp",
+            "author": "Eduard Sukharev",
+            "date": "2022-08-23T19:51:57+00:00"
+          },
+          {
+            "sha": "12c86ba",
+            "message": "Update sd_ESP32.h",
+            "author": "Eduard Sukharev",
+            "date": "2022-08-23T19:42:27+00:00"
+          },
+          {
+            "sha": "645cb10",
+            "message": "Update sd_ESP32.cpp",
+            "author": "Eduard Sukharev",
+            "date": "2022-08-23T19:41:40+00:00"
           }
         ],
         "commit_activity": [
@@ -2401,7 +2881,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1185,
+              "age_days": 1186,
               "days_since_update": 429,
               "is_stale": true,
               "is_recent": false,
@@ -2621,6 +3101,246 @@
             "message": "Update README.md",
             "author": "Luc",
             "date": "2025-11-02T08:16:47+00:00"
+          },
+          {
+            "sha": "f675d47",
+            "message": "Fix table closing tag in README.md",
+            "author": "Luc",
+            "date": "2025-10-09T05:53:08+00:00"
+          },
+          {
+            "sha": "77c2a58",
+            "message": "Add sponsors section and update contributors list\n\nAdded a sponsors section with links and images for various sponsorship tiers. Updated contributors list with new entries.",
+            "author": "Luc",
+            "date": "2025-10-09T05:46:54+00:00"
+          },
+          {
+            "sha": "06247f5",
+            "message": "Prepare code for release",
+            "author": "Luc",
+            "date": "2025-10-09T05:27:08+00:00"
+          },
+          {
+            "sha": "4026fee",
+            "message": "Update info.json",
+            "author": "Luc",
+            "date": "2025-03-12T07:04:07+00:00"
+          },
+          {
+            "sha": "c841a90",
+            "message": "Update for grblHAL to allow to use flash as gcode source",
+            "author": "Luc",
+            "date": "2025-02-26T08:02:58+00:00"
+          },
+          {
+            "sha": "e7b9c7c",
+            "message": "Fix $337 setting validation in $$",
+            "author": "Luc",
+            "date": "2025-02-09T08:45:55+00:00"
+          },
+          {
+            "sha": "5cf34ef",
+            "message": "Add missing texts for error, alarm and settings for grblHAL/grbl",
+            "author": "Luc",
+            "date": "2025-02-09T07:51:25+00:00"
+          },
+          {
+            "sha": "5439ca8",
+            "message": "smaller logo",
+            "author": "Luc",
+            "date": "2025-01-26T02:37:29+00:00"
+          },
+          {
+            "sha": "333b6fc",
+            "message": "Add MPG-ENABLE-TOGGLE (0x8b )real time command  to grblHAL",
+            "author": "Luc",
+            "date": "2025-01-20T12:35:47+00:00"
+          },
+          {
+            "sha": "de47622",
+            "message": "Do not show delete sd command in setting if MKS protocol",
+            "author": "Luc",
+            "date": "2025-01-19T00:41:57+00:00"
+          },
+          {
+            "sha": "3e0e7d1",
+            "message": "Fix autorefresh ignored in extra content\n\nBump version\nBuild package",
+            "author": "Luc",
+            "date": "2024-12-25T12:04:11+00:00"
+          },
+          {
+            "sha": "046b037",
+            "message": "Add more supported languages\n\nAdd new scripts to build language packs",
+            "author": "Luc",
+            "date": "2024-12-21T03:02:34+00:00"
+          },
+          {
+            "sha": "c145b01",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2024-12-18T04:20:05+00:00"
+          },
+          {
+            "sha": "242f7b0",
+            "message": "Fix version in readme and json orz",
+            "author": "Luc",
+            "date": "2024-12-18T04:07:58+00:00"
+          },
+          {
+            "sha": "48dd220",
+            "message": "Bump version to beta 1\n\nRebuild packages",
+            "author": "Luc",
+            "date": "2024-12-18T03:08:09+00:00"
+          },
+          {
+            "sha": "68501a1",
+            "message": "Add SENSOR:  to verbose trigger",
+            "author": "Luc",
+            "date": "2024-12-17T23:56:53+00:00"
+          },
+          {
+            "sha": "8858149",
+            "message": "Fix sensor not displayed since reporting is in stream instead of core",
+            "author": "Luc",
+            "date": "2024-12-17T08:33:21+00:00"
+          },
+          {
+            "sha": "f9dbf5c",
+            "message": "generate template",
+            "author": "Luc",
+            "date": "2024-12-16T08:24:04+00:00"
+          },
+          {
+            "sha": "8033f62",
+            "message": "Build packages\n\nClose #249",
+            "author": "Luc",
+            "date": "2024-12-09T02:38:18+00:00"
+          },
+          {
+            "sha": "d7413c6",
+            "message": "Remove plotter as seems no more sustained\n\nUpdate SandTable UI",
+            "author": "Luc",
+            "date": "2024-12-09T02:36:18+00:00"
+          },
+          {
+            "sha": "d1c3f23",
+            "message": "per users request",
+            "author": "Luc",
+            "date": "2024-12-09T01:38:01+00:00"
+          },
+          {
+            "sha": "7266acf",
+            "message": "Update CNC settings display condition\n\nremove control-fieldset class from grblHAL dor Mask for consistency",
+            "author": "Luc",
+            "date": "2024-12-09T01:10:39+00:00"
+          },
+          {
+            "sha": "c8debd7",
+            "message": "Update 3D printer conditions for displaying settings",
+            "author": "Luc",
+            "date": "2024-12-08T12:40:05+00:00"
+          },
+          {
+            "sha": "4add780",
+            "message": "Update printer3D settings display conditions",
+            "author": "Luc",
+            "date": "2024-12-08T12:06:48+00:00"
+          },
+          {
+            "sha": "aba0f9d",
+            "message": "Update 3D printer jog settings panel conditions",
+            "author": "Luc",
+            "date": "2024-12-08T11:52:34+00:00"
+          },
+          {
+            "sha": "afc4148",
+            "message": "fix race condition that make extension to be loaded twice, use isLoadedState[id] instead of isLoading to prevent it",
+            "author": "Luc",
+            "date": "2024-12-05T04:51:17+00:00"
+          },
+          {
+            "sha": "a57ec62",
+            "message": "Update P1 to P0 for consistency  for probe",
+            "author": "Luc",
+            "date": "2024-12-04T12:24:30+00:00"
+          },
+          {
+            "sha": "dae9c6d",
+            "message": "Make MX state multiple instead of unique\n\nAdd M6 for Tool change\nBump version\nBuild package\nUpdate grbl test server to have changing $G report",
+            "author": "Luc",
+            "date": "2024-12-03T00:16:41+00:00"
+          },
+          {
+            "sha": "29daa79",
+            "message": "Fix empty icon width in icon selector is not consistent\n\nAdd online help to esp3d.io in info page",
+            "author": "Luc",
+            "date": "2024-12-02T05:45:28+00:00"
+          },
+          {
+            "sha": "193447d",
+            "message": "Add version badge",
+            "author": "Luc",
+            "date": "2024-12-01T08:13:27+00:00"
+          },
+          {
+            "sha": "260ac24",
+            "message": "Add extensions readme",
+            "author": "Luc",
+            "date": "2024-11-28T06:57:48+00:00"
+          },
+          {
+            "sha": "cabfd29",
+            "message": "Better notification to extensions for isVisible\n\nAdd notification to extension: isConnected to track WS status and inform extensions\nBump version",
+            "author": "Luc",
+            "date": "2024-11-23T07:52:27+00:00"
+          },
+          {
+            "sha": "0b0116f",
+            "message": "update packages",
+            "author": "Luc",
+            "date": "2024-10-13T07:34:05+00:00"
+          },
+          {
+            "sha": "2c14171",
+            "message": "Add more captive portal URL\n\nFix Marlin filter file settings not working for second SD and isolate normal SD and Direct SD setting to avoid duplicate item and so conflict value\nBump version",
+            "author": "Luc",
+            "date": "2024-10-13T07:29:50+00:00"
+          },
+          {
+            "sha": "27ba10f",
+            "message": "Add Missing translation\n\nFix typo for grblHAL/grbl",
+            "author": "Luc",
+            "date": "2024-09-23T06:38:36+00:00"
+          },
+          {
+            "sha": "79384ad",
+            "message": "Remove excessive bottom margin on pages",
+            "author": "Luc",
+            "date": "2024-08-21T10:51:25+00:00"
+          },
+          {
+            "sha": "0f530b5",
+            "message": "Better UI on landscape / portrait for GCode Viewer",
+            "author": "Luc",
+            "date": "2024-08-21T09:12:52+00:00"
+          },
+          {
+            "sha": "779883e",
+            "message": "remove .gz extension in url for local extension\n\nBump Version\nBuild packages",
+            "author": "Luc",
+            "date": "2024-08-21T01:15:54+00:00"
+          },
+          {
+            "sha": "3c8f38f",
+            "message": "Bump version\n\nBuild packages",
+            "author": "Luc",
+            "date": "2024-08-16T05:40:42+00:00"
+          },
+          {
+            "sha": "f49016a",
+            "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
+            "author": "Luc",
+            "date": "2024-08-16T05:37:49+00:00"
           }
         ],
         "commit_activity": [
@@ -3699,6 +4419,246 @@
             "message": "Display IDF version during compilation",
             "author": "Luc",
             "date": "2024-07-24T01:23:34+00:00"
+          },
+          {
+            "sha": "0ef520f",
+            "message": "Refactorization of make files to make them more readable (comment/ colors / status)\n\nAdd development define to disable telnet welcome message if necessary\nbump version",
+            "author": "Luc",
+            "date": "2024-07-09T03:07:15+00:00"
+          },
+          {
+            "sha": "f035f28",
+            "message": "FIx wrong single quote setting",
+            "author": "Luc",
+            "date": "2024-05-30T01:40:00+00:00"
+          },
+          {
+            "sha": "28747db",
+            "message": "Add scripts to format code (c/cpp/h/js/css/scss)\n\nAdd .prettierrc as js/scss/css format configuration\nApply style to code source",
+            "author": "Luc",
+            "date": "2024-05-30T01:26:02+00:00"
+          },
+          {
+            "sha": "34ef4bc",
+            "message": "Code reformating  (#72)\n\nFix some wrong icons in fonts\r\nRefactor screens\r\nUpdate some styles\r\nAdd screen capture",
+            "author": "Luc",
+            "date": "2024-05-29T23:43:54+00:00"
+          },
+          {
+            "sha": "bc04175",
+            "message": "Update ESP32S3_ZX3D50CE02S_USRC_4832.cmake",
+            "author": "Luc",
+            "date": "2024-05-02T08:51:35+00:00"
+          },
+          {
+            "sha": "ea33417",
+            "message": "Fix Conpilation failed if USB-SERIAL is disabled on S3",
+            "author": "Luc",
+            "date": "2024-05-02T03:31:21+00:00"
+          },
+          {
+            "sha": "e5fdfb7",
+            "message": "Change start variable collection\n\nRevert not working fix for usb_serial disabled\nAdd more log",
+            "author": "Luc",
+            "date": "2024-05-01T14:50:12+00:00"
+          },
+          {
+            "sha": "11a831d",
+            "message": "Update CMakeLists.txt\n\nFix  if USB-SERIAL is disabled in CMakeLists.txt",
+            "author": "Luc",
+            "date": "2024-05-01T13:05:34+00:00"
+          },
+          {
+            "sha": "74fc2f0",
+            "message": "Update esp32_camera.c\n\nFix compilation failed if log enabled",
+            "author": "Luc",
+            "date": "2024-05-01T12:52:55+00:00"
+          },
+          {
+            "sha": "8a8d4a1",
+            "message": "Resolve the issue of USB serial initialization failure (#68)\n\n* Fix camera id\r\n* Resolve the issue of USB serial initialization failure\r\n---------\r\n\r\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>\r\nCo-authored-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "liqijian101",
+            "date": "2024-04-22T00:23:30+00:00"
+          },
+          {
+            "sha": "d9af93a",
+            "message": "Improve sanity check to be sure only one target platform and one fw is enabled",
+            "author": "Luc",
+            "date": "2024-04-21T02:20:28+00:00"
+          },
+          {
+            "sha": "45847a8",
+            "message": "Update CMakeLists.txt",
+            "author": "Luc",
+            "date": "2024-04-21T01:31:58+00:00"
+          },
+          {
+            "sha": "6444f26",
+            "message": "Add missing `screens/`  for screens files",
+            "author": "Luc",
+            "date": "2024-04-20T13:55:17+00:00"
+          },
+          {
+            "sha": "ae854ef",
+            "message": "Update project-arch.md",
+            "author": "Luc",
+            "date": "2024-04-20T08:03:15+00:00"
+          },
+          {
+            "sha": "7571a64",
+            "message": "Simplify display files org by putting common screens files in one directory for all targets",
+            "author": "Luc",
+            "date": "2024-04-20T08:01:01+00:00"
+          },
+          {
+            "sha": "3348a7c",
+            "message": "Add proper target FW logo for each FW and resolution",
+            "author": "Luc",
+            "date": "2024-04-20T06:21:56+00:00"
+          },
+          {
+            "sha": "8c34f81",
+            "message": "Update menu_screen.cpp\n\nMove TFT setting to TFT line in menu screen and put disable motor to top (printer)  line",
+            "author": "Luc",
+            "date": "2024-04-19T01:16:34+00:00"
+          },
+          {
+            "sha": "63c9aa3",
+            "message": "Update CMakeLists.txt",
+            "author": "Luc",
+            "date": "2024-04-19T01:04:17+00:00"
+          },
+          {
+            "sha": "6f57ced",
+            "message": "Update CMakeLists.txt",
+            "author": "Luc",
+            "date": "2024-04-19T00:46:12+00:00"
+          },
+          {
+            "sha": "702f19d",
+            "message": "Update project-arch.md",
+            "author": "Luc",
+            "date": "2024-04-18T10:27:58+00:00"
+          },
+          {
+            "sha": "bf9861f",
+            "message": "do capture of symboles",
+            "author": "Luc",
+            "date": "2024-04-18T10:25:21+00:00"
+          },
+          {
+            "sha": "7acf0c9",
+            "message": "Update project-arch.md",
+            "author": "Luc",
+            "date": "2024-04-17T12:17:18+00:00"
+          },
+          {
+            "sha": "14d6787",
+            "message": "Merge branch 'main' of https://github.com/luc-github/ESP3D-TFT",
+            "author": "Luc",
+            "date": "2024-04-17T10:08:18+00:00"
+          },
+          {
+            "sha": "5d223cf",
+            "message": "Update project-arch.md",
+            "author": "Luc",
+            "date": "2024-04-17T06:16:11+00:00"
+          },
+          {
+            "sha": "9c90e52",
+            "message": "Modify ESP32S3-BZM-TFT35_GT911 to SPI screen (#64)\n\n* Modify ESP32S3-BZM-TFT35_GT911 to SPI screen\r\n\r\n---------\r\n\r\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>\r\nCo-authored-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "liqijian101",
+            "date": "2024-04-16T10:49:17+00:00"
+          },
+          {
+            "sha": "31bbd76",
+            "message": "Update build-ci.yml",
+            "author": "Luc",
+            "date": "2024-04-16T10:14:26+00:00"
+          },
+          {
+            "sha": "63c5760",
+            "message": "Update build-ci.yml",
+            "author": "Luc",
+            "date": "2024-04-16T10:11:36+00:00"
+          },
+          {
+            "sha": "36dc899",
+            "message": "Update build-ci.yml",
+            "author": "Luc",
+            "date": "2024-04-16T10:00:04+00:00"
+          },
+          {
+            "sha": "a5ac3fa",
+            "message": "Update build-ci.yml\n\nfix nodejs version 16",
+            "author": "Luc",
+            "date": "2024-04-16T09:56:09+00:00"
+          },
+          {
+            "sha": "04fe62b",
+            "message": "Fix Freenove Sed\n\nAdd ESP32_2432S028R in CI",
+            "author": "Luc",
+            "date": "2024-04-16T09:24:35+00:00"
+          },
+          {
+            "sha": "81692fd",
+            "message": "Add rotrix to ci\n\nchange default config of freenove",
+            "author": "Luc",
+            "date": "2024-04-16T08:51:33+00:00"
+          },
+          {
+            "sha": "090ab6d",
+            "message": "Simplify CI try 4",
+            "author": "Luc",
+            "date": "2024-04-16T08:30:49+00:00"
+          },
+          {
+            "sha": "c3727af",
+            "message": "Simplify CI try 3",
+            "author": "Luc",
+            "date": "2024-04-16T07:57:04+00:00"
+          },
+          {
+            "sha": "69728be",
+            "message": "simplify CI try 2",
+            "author": "Luc",
+            "date": "2024-04-16T07:42:05+00:00"
+          },
+          {
+            "sha": "058fd65",
+            "message": "Try to simplify ci",
+            "author": "Luc",
+            "date": "2024-04-16T06:48:55+00:00"
+          },
+          {
+            "sha": "86def49",
+            "message": "Fix wrong path for rotrix components",
+            "author": "Luc",
+            "date": "2024-04-16T04:47:41+00:00"
+          },
+          {
+            "sha": "b5c8fc7",
+            "message": "Update build-ci.yml",
+            "author": "Luc",
+            "date": "2024-04-16T03:37:03+00:00"
+          },
+          {
+            "sha": "77d33eb",
+            "message": "Change ci order do S3 first\n\nRenove CI for rotrix until rewriten",
+            "author": "Luc",
+            "date": "2024-04-16T02:19:36+00:00"
+          },
+          {
+            "sha": "17239cb",
+            "message": "Add full clean everywhere\n\nStart by ESP32-S3 then ESP32",
+            "author": "Luc",
+            "date": "2024-04-16T01:10:24+00:00"
+          },
+          {
+            "sha": "3ccef88",
+            "message": "Enable CI back",
+            "author": "Luc",
+            "date": "2024-04-16T00:47:07+00:00"
           }
         ],
         "commit_activity": [
@@ -6534,6 +7494,246 @@
             "message": "\ud83d\udc1b Fix DOGM time overflow, alignment (#25103)",
             "author": "EvilGremlin",
             "date": "2022-12-17T04:45:55+00:00"
+          },
+          {
+            "sha": "471330b",
+            "message": "\ud83c\udfa8 Suppress warning (#25101)",
+            "author": "ellensp",
+            "date": "2022-12-17T04:43:54+00:00"
+          },
+          {
+            "sha": "2a724bd",
+            "message": "\u2728 BTT Octopus with STM32-F407 (#25031)",
+            "author": "ellensp",
+            "date": "2022-12-16T21:01:14+00:00"
+          },
+          {
+            "sha": "cea2ab1",
+            "message": "\u2728 BigTreeTech EBB42 v1.1 (#24964)",
+            "author": "alextrical",
+            "date": "2022-12-16T20:45:14+00:00"
+          },
+          {
+            "sha": "5198a55",
+            "message": "\ud83d\udd27 Use multi-XYZ 'STOP' pins for MIN/MAX (#24855)\n\nCo-authored-by: Scott Lahteine <thinkyhead@users.noreply.github.com>",
+            "author": "ils15",
+            "date": "2022-12-16T20:37:56+00:00"
+          },
+          {
+            "sha": "cbb56e3",
+            "message": "\u2728 Robin Nano v1 CDC (USB mod)\n\nFollowup to #24619",
+            "author": "Scott Lahteine",
+            "date": "2022-08-24T15:15:57+00:00"
+          },
+          {
+            "sha": "b3f4eaf",
+            "message": "\ud83e\ude79 Fix M115_GEOMETRY_REPORT (#25092)",
+            "author": "Dipl.-Ing. Raoul Rubien, BSc",
+            "date": "2022-12-13T03:23:45+00:00"
+          },
+          {
+            "sha": "7815b20",
+            "message": "\ud83e\ude79 Inverted probe pin flag (K8400) (#25085)",
+            "author": "ellensp",
+            "date": "2022-12-12T23:01:45+00:00"
+          },
+          {
+            "sha": "ffbf6ac",
+            "message": "\ud83e\ude79 Fix M502 init of default motion\n\nFix regression from #25035",
+            "author": "Scott Lahteine",
+            "date": "2022-12-12T22:46:50+00:00"
+          },
+          {
+            "sha": "8bafc1d",
+            "message": "\ud83e\ude79 Use custom I2C pins for OLED (#24970)",
+            "author": "alextrical",
+            "date": "2022-12-12T22:11:09+00:00"
+          },
+          {
+            "sha": "ac05f0c",
+            "message": "\u2728 SAMD21 HAL / Minitronics v2.0 (#24976)",
+            "author": "Bart Meijer",
+            "date": "2022-12-12T21:36:50+00:00"
+          },
+          {
+            "sha": "ec6349f",
+            "message": "\u2728 TFT_COLOR_UI async DMA SPI (#24980)",
+            "author": "Alexander Gavrilenko",
+            "date": "2022-12-12T21:13:31+00:00"
+          },
+          {
+            "sha": "d082223",
+            "message": "\ud83d\udcdd  Replace Twitter with Fosstodon",
+            "author": "Scott Lahteine",
+            "date": "2022-12-12T01:46:55+00:00"
+          },
+          {
+            "sha": "e07a059",
+            "message": "\ud83d\udd27 Anycubic alternate Z1/Z2 wiring (#25071)",
+            "author": "Simon Pilepich",
+            "date": "2022-12-12T01:12:28+00:00"
+          },
+          {
+            "sha": "313716e",
+            "message": "\u2728 JyersUI TMC Settings (#25048)",
+            "author": "Krzysztof B\u0142a\u017cewicz",
+            "date": "2022-12-11T19:27:27+00:00"
+          },
+          {
+            "sha": "7265559",
+            "message": "\ud83d\udd27 Custom Menu Sanity Check (#25079)",
+            "author": "Keith Bennett",
+            "date": "2022-12-11T18:59:25+00:00"
+          },
+          {
+            "sha": "3ad684b",
+            "message": "\ud83d\udd28 Updated 'mfconfig init'",
+            "author": "Scott Lahteine",
+            "date": "2022-12-11T18:56:45+00:00"
+          },
+          {
+            "sha": "408a53b",
+            "message": "\ud83d\udd28 No env:mega1280 for MIGHTYBOARD_REVE (#25080)",
+            "author": "ellensp",
+            "date": "2022-12-10T17:44:09+00:00"
+          },
+          {
+            "sha": "eae339b",
+            "message": "\u26a1\ufe0f Better IS buffer size calc (#25035)",
+            "author": "tombrazier",
+            "date": "2022-12-10T17:28:48+00:00"
+          },
+          {
+            "sha": "79b8847",
+            "message": "\u2728 Two controller fans (#24995)",
+            "author": "Vovodroid",
+            "date": "2022-12-10T15:03:54+00:00"
+          },
+          {
+            "sha": "86a3362",
+            "message": "\ud83d\udccc Pins updates for Longer LK5, etc. (#25012)\n\nCo-authored-by: Scott Lahteine <thinkyhead@users.noreply.github.com>",
+            "author": "ellensp",
+            "date": "2022-12-10T15:00:51+00:00"
+          },
+          {
+            "sha": "0efeedf",
+            "message": "\ud83d\udeb8 Progress display followup (#24879)",
+            "author": "EvilGremlin",
+            "date": "2022-12-07T22:08:53+00:00"
+          },
+          {
+            "sha": "c86f200",
+            "message": "\u2728 M150 S default index (#23066)\n\nCo-authored-by: Scott Lahteine <thinkyhead@users.noreply.github.com>",
+            "author": "Sebastien BLAISOT",
+            "date": "2022-12-07T21:49:38+00:00"
+          },
+          {
+            "sha": "5a97ffc",
+            "message": "\ud83d\udd28 Return error on mftest exit",
+            "author": "Scott Lahteine",
+            "date": "2022-12-07T18:18:09+00:00"
+          },
+          {
+            "sha": "2737286",
+            "message": "\ud83d\udcdd Update config comments",
+            "author": "Scott Lahteine",
+            "date": "2022-12-05T17:01:08+00:00"
+          },
+          {
+            "sha": "86a10dc",
+            "message": "\ud83d\udc1b Fix Fast PWM on AVR (#25030)\n\nFollowup to #25005",
+            "author": "ellensp",
+            "date": "2022-12-05T03:38:23+00:00"
+          },
+          {
+            "sha": "ecdf07f",
+            "message": "\u270f\ufe0f Fix missing ) (#25055)",
+            "author": "kisslorand",
+            "date": "2022-12-04T22:04:11+00:00"
+          },
+          {
+            "sha": "686ce0c",
+            "message": "\ud83d\udd28 Fix CI Test clean step (2)",
+            "author": "Scott Lahteine",
+            "date": "2022-12-04T21:35:45+00:00"
+          },
+          {
+            "sha": "3c550e0",
+            "message": "\ud83c\udfa8 Misc. cleanup",
+            "author": "Scott Lahteine",
+            "date": "2022-12-04T02:49:46+00:00"
+          },
+          {
+            "sha": "071dae0",
+            "message": "\ud83d\udd28 Fix CI Test clean step",
+            "author": "Scott Lahteine",
+            "date": "2022-12-04T02:19:18+00:00"
+          },
+          {
+            "sha": "df2a248",
+            "message": "\ud83d\udc1b Fix TMC5160 + Input Shaping overcurrent (#25050)",
+            "author": "tombrazier",
+            "date": "2022-12-04T02:14:31+00:00"
+          },
+          {
+            "sha": "c3090bd",
+            "message": "\ud83e\ude79 Ender 3v2 DWIN MarlinUI Fixup (#24984)",
+            "author": "Taylor Talkington",
+            "date": "2022-12-04T01:20:19+00:00"
+          },
+          {
+            "sha": "0fadb56",
+            "message": "\ud83c\udfa8 Trailing whitespace",
+            "author": "Scott Lahteine",
+            "date": "2022-12-04T01:18:03+00:00"
+          },
+          {
+            "sha": "eb125c9",
+            "message": "\ud83d\udd28 Update renamed.ini (#25042)",
+            "author": "ellensp",
+            "date": "2022-12-04T01:09:02+00:00"
+          },
+          {
+            "sha": "26edeef",
+            "message": "\ud83e\ude79 Fix MSG_MOVE_N_MM substitution (#25043)",
+            "author": "ellensp",
+            "date": "2022-12-04T01:05:22+00:00"
+          },
+          {
+            "sha": "96b8c28",
+            "message": "\ud83d\udeb8 G30 move to logical XY (#24953)",
+            "author": "kisslorand",
+            "date": "2022-12-02T06:19:34+00:00"
+          },
+          {
+            "sha": "db38655",
+            "message": "\ud83c\udfa8 Misc. cleanup",
+            "author": "Scott Lahteine",
+            "date": "2022-12-02T05:39:17+00:00"
+          },
+          {
+            "sha": "51c1645",
+            "message": "\ud83e\uddd1\u200d\ud83d\udcbb Use spaces indent for Python",
+            "author": "Scott Lahteine",
+            "date": "2022-10-12T22:52:56+00:00"
+          },
+          {
+            "sha": "5eb39d5",
+            "message": "\ud83d\udcdd Formatted Team Overview (#25029)",
+            "author": "\u30c8\u30c8\u3082",
+            "date": "2022-11-28T04:52:06+00:00"
+          },
+          {
+            "sha": "0537e78",
+            "message": "\ud83d\udc1b Fix G-code resend race condition\n\nAs pointed out in #24972 by @silycr, but simplified.",
+            "author": "Scott Lahteine",
+            "date": "2022-11-28T05:23:00+00:00"
+          },
+          {
+            "sha": "95019bf",
+            "message": "\u2728 Ender-3 V2 DWIN for BTT Octopus V1.1 (#24983)",
+            "author": "Taylor Talkington",
+            "date": "2022-11-28T03:41:27+00:00"
           }
         ],
         "commit_activity": [
@@ -7290,8 +8490,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 943,
-              "days_since_update": 943,
+              "age_days": 944,
+              "days_since_update": 944,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7319,7 +8519,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1277,
-              "days_since_update": 1216,
+              "days_since_update": 1217,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7433,6 +8633,246 @@
             "message": "Add script to format js/scss/css/json files using prettier\n\nUpdate .prettierrc config file to be same as others projects\nUpdate style using updated .prettierrc file",
             "author": "Luc",
             "date": "2024-05-29T10:50:17+00:00"
+          },
+          {
+            "sha": "23edd02",
+            "message": "Fix SENSOR PIN appear for BMP/BME Sensor",
+            "author": "Luc",
+            "date": "2024-05-28T05:01:42+00:00"
+          },
+          {
+            "sha": "572b130",
+            "message": "Add Seeed Studio Xiao S3 sense Camera\n\nSet Memory type if PSRAM and S3 only",
+            "author": "Luc",
+            "date": "2024-02-11T05:52:36+00:00"
+          },
+          {
+            "sha": "3779752",
+            "message": "Update index.html",
+            "author": "Luc",
+            "date": "2024-02-10T15:08:20+00:00"
+          },
+          {
+            "sha": "c82e650",
+            "message": "Add missing dio_opi for PSRAM",
+            "author": "Luc",
+            "date": "2024-02-10T14:45:17+00:00"
+          },
+          {
+            "sha": "e3badf6",
+            "message": "Fix SDIO MODE 1 BIT show Pjns for 1/2/3 bits",
+            "author": "Luc",
+            "date": "2024-02-10T14:19:53+00:00"
+          },
+          {
+            "sha": "3ec9d36",
+            "message": "Add hooks support",
+            "author": "Luc",
+            "date": "2024-02-08T10:21:24+00:00"
+          },
+          {
+            "sha": "410b12c",
+            "message": "Fix typo",
+            "author": "Luc",
+            "date": "2024-02-05T02:28:44+00:00"
+          },
+          {
+            "sha": "aafac7e",
+            "message": "Update esp32 platformio to 6.2.0\n\nAdd some API description\nAdd esp8285 mcu\nAdd flash_mode, reset_method, memory_type, filesystem",
+            "author": "Luc",
+            "date": "2024-02-02T11:23:28+00:00"
+          },
+          {
+            "sha": "5999328",
+            "message": "Update libraries for nodejs\n\nAdjust new versions's parameters",
+            "author": "Luc",
+            "date": "2023-10-04T08:00:59+00:00"
+          },
+          {
+            "sha": "dcdb942",
+            "message": "Add version of targeted esp3d to avoid any confusion",
+            "author": "Luc",
+            "date": "2023-07-28T22:28:58+00:00"
+          },
+          {
+            "sha": "2494675",
+            "message": "Fix incorrect partition for esp32 camera",
+            "author": "Luc",
+            "date": "2023-02-20T15:00:12+00:00"
+          },
+          {
+            "sha": "40de52a",
+            "message": "Update PIO version for ESP32 and ESP8266\n\nUpdate ESP32 to 6.0.1 = idf 4.4.3 = ARDUINO CORE 2.0.6\nUpdate ESP8266 to 4.1.0 = ARDUINO CORE 3.1.1",
+            "author": "Luc",
+            "date": "2023-02-20T04:29:44+00:00"
+          },
+          {
+            "sha": "69d5f43",
+            "message": "Merge pull request #15 from luc-github/all-contributors/add-aj3t4m\n\ndocs: add aj3t4m as a contributor for code",
+            "author": "Luc",
+            "date": "2023-02-16T03:10:09+00:00"
+          },
+          {
+            "sha": "0ff1fa4",
+            "message": "docs: update .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T03:09:51+00:00"
+          },
+          {
+            "sha": "120b3d0",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T03:09:50+00:00"
+          },
+          {
+            "sha": "c484ebb",
+            "message": "Merge pull request #13 from luc-github/all-contributors/add-aj3t4m\n\ndocs: add aj3t4m as a contributor for bug",
+            "author": "Luc",
+            "date": "2023-02-16T01:32:12+00:00"
+          },
+          {
+            "sha": "34551f9",
+            "message": "docs: create .all-contributorsrc [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T01:31:56+00:00"
+          },
+          {
+            "sha": "560faa1",
+            "message": "docs: update README.md [skip ci]",
+            "author": "allcontributors[bot]",
+            "date": "2023-02-16T01:31:55+00:00"
+          },
+          {
+            "sha": "c7d318a",
+            "message": "Fix SENSOR_ADDR show on DHT devices",
+            "author": "Luc",
+            "date": "2023-02-02T14:42:26+00:00"
+          },
+          {
+            "sha": "828c9d6",
+            "message": "Fix #11",
+            "author": "Luc",
+            "date": "2023-01-31T23:50:19+00:00"
+          },
+          {
+            "sha": "2ade2cc",
+            "message": "Create index.html",
+            "author": "Luc",
+            "date": "2023-01-15T09:46:39+00:00"
+          },
+          {
+            "sha": "4a71e89",
+            "message": "change esp8266 core version to 4.0.1",
+            "author": "Luc",
+            "date": "2023-01-15T09:46:06+00:00"
+          },
+          {
+            "sha": "1772220",
+            "message": "Fix Serial bridge available for esp8266 but crash because only one serial available thank akir- from discord for pointing this out",
+            "author": "Luc",
+            "date": "2022-12-12T00:49:50+00:00"
+          },
+          {
+            "sha": "e4b3976",
+            "message": "Add ethernet configuration support",
+            "author": "Luc",
+            "date": "2022-11-13T01:56:40+00:00"
+          },
+          {
+            "sha": "0d6088c",
+            "message": "Do not show SPI pins MISO/MOSI/SCK on esp8266",
+            "author": "Luc",
+            "date": "2022-11-01T07:14:55+00:00"
+          },
+          {
+            "sha": "a889d84",
+            "message": "Do missing build after PR",
+            "author": "Luc",
+            "date": "2022-10-18T11:39:58+00:00"
+          },
+          {
+            "sha": "e181902",
+            "message": "Merge pull request #8 from aj3t4m/main\n\nComment out comments in platformio.ini",
+            "author": "Luc",
+            "date": "2022-09-20T17:30:44+00:00"
+          },
+          {
+            "sha": "a67f212",
+            "message": "Comment out comments in platformio.ini",
+            "author": "Tomasz Mateja",
+            "date": "2022-09-14T16:34:38+00:00"
+          },
+          {
+            "sha": "a66d0f4",
+            "message": "Add SDIO pins configuration",
+            "author": "Luc",
+            "date": "2022-09-07T01:57:32+00:00"
+          },
+          {
+            "sha": "1fd53d1",
+            "message": "Add Serial Bridge setting\n\nFix Pin reset defined if not pin is actually selected\nImplement same API for Serial port as for pin to auto clean selection",
+            "author": "Luc",
+            "date": "2022-08-18T01:13:31+00:00"
+          },
+          {
+            "sha": "3b1576c",
+            "message": "Bump platformio esp32 to 5.0.0",
+            "author": "Luc",
+            "date": "2022-07-23T05:17:52+00:00"
+          },
+          {
+            "sha": "539db6c",
+            "message": "Fix typo - thanks  to  Inspecteur Spie for raising it",
+            "author": "Luc",
+            "date": "2022-07-17T19:56:03+00:00"
+          },
+          {
+            "sha": "9c3f2d8",
+            "message": "Fix warning due to missing browserlist entry on package.json\n\nUpdate platformio.ini monitor echo flags according latest documentation : https://docs.platformio.org/en/latest/projectconf/section_env_monitor.html#monitor-echo as monitor_flags is not more supported",
+            "author": "Luc",
+            "date": "2022-07-17T07:57:26+00:00"
+          },
+          {
+            "sha": "756cde0",
+            "message": "Fix typo",
+            "author": "Luc",
+            "date": "2022-07-01T13:27:17+00:00"
+          },
+          {
+            "sha": "2b81808",
+            "message": "Fix wrong default value for SDIO MODE",
+            "author": "Luc",
+            "date": "2022-06-27T04:07:36+00:00"
+          },
+          {
+            "sha": "7c72ac5",
+            "message": "Fix missing env: in platformio.ini",
+            "author": "Luc",
+            "date": "2022-06-27T02:00:00+00:00"
+          },
+          {
+            "sha": "39cad20",
+            "message": "Remove ethernet feature if ESP01 form factor orz...",
+            "author": "Luc",
+            "date": "2022-06-26T03:17:12+00:00"
+          },
+          {
+            "sha": "9a7a7b9",
+            "message": "Add support of Esp01 Form Factor\n\nLimit pins according form factors (all or  ESP01 (0/2 for esp8266 and  2,8,9 for ESP32-C3)\nLimit settings according pins form factors\nAdd support for multiple depend\nAdd SD SPI pins customization\nChange None label for pin by Default according context\nBumb version",
+            "author": "Luc",
+            "date": "2022-06-26T03:10:31+00:00"
+          },
+          {
+            "sha": "3f6b085",
+            "message": "Fix typo",
+            "author": "Luc",
+            "date": "2022-06-25T09:38:47+00:00"
+          },
+          {
+            "sha": "28d4711",
+            "message": "Add default pins for each mcu\n\nAdd pins for SPI screens\nAdd platformio.ini generation",
+            "author": "Luc",
+            "date": "2022-06-25T09:35:07+00:00"
           }
         ],
         "commit_activity": [
@@ -8167,8 +9607,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 293,
-              "days_since_update": 293,
+              "age_days": 294,
+              "days_since_update": 294,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8363,6 +9803,246 @@
             "message": "Update SD WiFi",
             "author": "Luc",
             "date": "2025-04-04T10:28:28+00:00"
+          },
+          {
+            "sha": "bb69524",
+            "message": "Add Lua script sample code",
+            "author": "Luc",
+            "date": "2025-01-17T00:17:38+00:00"
+          },
+          {
+            "sha": "b73f60f",
+            "message": "host code for forum.html",
+            "author": "Luc",
+            "date": "2025-01-04T12:15:43+00:00"
+          },
+          {
+            "sha": "2ec1268",
+            "message": "Fix typo",
+            "author": "Luc",
+            "date": "2025-01-04T11:20:31+00:00"
+          },
+          {
+            "sha": "4130bb8",
+            "message": "Add @levak extension",
+            "author": "Luc",
+            "date": "2025-01-04T10:38:25+00:00"
+          },
+          {
+            "sha": "9b30017",
+            "message": "Code base for Forum",
+            "author": "Luc",
+            "date": "2025-01-04T09:45:27+00:00"
+          },
+          {
+            "sha": "42447f5",
+            "message": "Make page wider",
+            "author": "Luc",
+            "date": "2024-12-31T03:34:56+00:00"
+          },
+          {
+            "sha": "110aa7a",
+            "message": "Add giscus forum",
+            "author": "Luc",
+            "date": "2024-12-22T08:11:37+00:00"
+          },
+          {
+            "sha": "88a5403",
+            "message": "Update translation.md",
+            "author": "Luc",
+            "date": "2024-12-21T03:37:36+00:00"
+          },
+          {
+            "sha": "65207dc",
+            "message": "make pages list order consistent with menu order for documentation",
+            "author": "Luc",
+            "date": "2024-12-16T08:22:05+00:00"
+          },
+          {
+            "sha": "3566a58",
+            "message": "Update index.md",
+            "author": "Luc",
+            "date": "2024-12-09T09:48:44+00:00"
+          },
+          {
+            "sha": "94f237a",
+            "message": "Fix markdown typo",
+            "author": "Luc",
+            "date": "2024-12-05T04:14:19+00:00"
+          },
+          {
+            "sha": "a197646",
+            "message": "Add extensions in Showcases for webui 3.0",
+            "author": "Luc",
+            "date": "2024-11-28T06:59:08+00:00"
+          },
+          {
+            "sha": "77aebda",
+            "message": "Fix typo in sample command for notification, spaces are not escaped",
+            "author": "Luc",
+            "date": "2024-11-25T09:25:46+00:00"
+          },
+          {
+            "sha": "7e34ac1",
+            "message": "Update mkdocs.yml",
+            "author": "Luc",
+            "date": "2024-11-25T09:05:18+00:00"
+          },
+          {
+            "sha": "4d1b495",
+            "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
+            "author": "Luc",
+            "date": "2024-11-25T07:46:51+00:00"
+          },
+          {
+            "sha": "888d280",
+            "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
+            "author": "Luc",
+            "date": "2024-11-25T02:10:01+00:00"
+          },
+          {
+            "sha": "039e431",
+            "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
+            "author": "Luc",
+            "date": "2024-11-23T08:06:11+00:00"
+          },
+          {
+            "sha": "3641b57",
+            "message": "fix path of screenshots",
+            "author": "Luc",
+            "date": "2024-11-18T00:44:05+00:00"
+          },
+          {
+            "sha": "c63cd3f",
+            "message": "Update index.md",
+            "author": "Luc",
+            "date": "2024-11-04T21:05:03+00:00"
+          },
+          {
+            "sha": "0ab0c66",
+            "message": "add otg doc",
+            "author": "Luc",
+            "date": "2024-11-04T02:51:08+00:00"
+          },
+          {
+            "sha": "7fea8cf",
+            "message": "Update index.md",
+            "author": "Luc",
+            "date": "2024-10-30T11:23:11+00:00"
+          },
+          {
+            "sha": "6dd02c3",
+            "message": "Update NodeMCU with pinout",
+            "author": "Luc",
+            "date": "2024-10-28T04:04:27+00:00"
+          },
+          {
+            "sha": "9414745",
+            "message": "Doc for ESP32-S3-LCD-1.47 - WIP",
+            "author": "Luc",
+            "date": "2024-10-28T03:48:59+00:00"
+          },
+          {
+            "sha": "bd6dd4a",
+            "message": "Add some notes to clarify connection",
+            "author": "Luc",
+            "date": "2024-10-21T08:54:36+00:00"
+          },
+          {
+            "sha": "84c20c7",
+            "message": "Update as now USB Serial OTG is supported",
+            "author": "Luc",
+            "date": "2024-10-21T08:46:37+00:00"
+          },
+          {
+            "sha": "1ab5f55",
+            "message": "Update Xiao Sense S3",
+            "author": "Luc",
+            "date": "2024-10-21T05:39:11+00:00"
+          },
+          {
+            "sha": "5aa25e3",
+            "message": "Add ttgo eth lite",
+            "author": "Luc",
+            "date": "2024-10-21T05:36:34+00:00"
+          },
+          {
+            "sha": "b599e5a",
+            "message": "Add Lilygo T-ETH Lite",
+            "author": "Luc",
+            "date": "2024-09-11T09:33:44+00:00"
+          },
+          {
+            "sha": "422d519",
+            "message": "Add missing FAQ menu in ESP3D 3.X",
+            "author": "Luc",
+            "date": "2024-09-07T06:18:53+00:00"
+          },
+          {
+            "sha": "06345eb",
+            "message": "Update version of ESP32 Core for ESP3D 3.0\n\nFix some typos",
+            "author": "Luc",
+            "date": "2024-09-06T04:48:50+00:00"
+          },
+          {
+            "sha": "8401e34",
+            "message": "Add ESP116/117/118 commands\n\nAdd new settings",
+            "author": "Luc",
+            "date": "2024-09-05T01:28:01+00:00"
+          },
+          {
+            "sha": "3860adb",
+            "message": "Update ethernet docs\n\nFix some typo with markdown",
+            "author": "Luc",
+            "date": "2024-09-02T13:19:53+00:00"
+          },
+          {
+            "sha": "d624e2d",
+            "message": "Update index.md",
+            "author": "Luc",
+            "date": "2024-09-01T04:50:40+00:00"
+          },
+          {
+            "sha": "eaa8930",
+            "message": "Add C6 support",
+            "author": "Luc",
+            "date": "2024-09-01T01:57:07+00:00"
+          },
+          {
+            "sha": "f202907",
+            "message": "add partitions for reference",
+            "author": "Luc",
+            "date": "2024-08-24T05:01:23+00:00"
+          },
+          {
+            "sha": "0e9f0f1",
+            "message": "Merge branch 'main' of https://github.com/luc-github/esp3d.io",
+            "author": "Luc",
+            "date": "2024-08-23T04:22:18+00:00"
+          },
+          {
+            "sha": "9b06c87",
+            "message": "Add telnet and lua for ESP3D V3.0",
+            "author": "Luc",
+            "date": "2024-08-23T04:22:14+00:00"
+          },
+          {
+            "sha": "9eb49b2",
+            "message": "Update mkdocs.yml",
+            "author": "Luc",
+            "date": "2024-08-23T00:37:24+00:00"
+          },
+          {
+            "sha": "936dec3",
+            "message": "Fix typo do display  some Notes\n\nAdd mining menu to extra content in webui 3.0 documentation",
+            "author": "Luc",
+            "date": "2024-08-21T04:17:23+00:00"
+          },
+          {
+            "sha": "0796a92",
+            "message": "Update with extensions Description and API\n\nFIx some typo with Notes",
+            "author": "Luc",
+            "date": "2024-08-20T15:52:12+00:00"
           }
         ],
         "commit_activity": [
@@ -9166,6 +10846,72 @@
             "message": "Better multi language management\n\nAdd steps sounds",
             "author": "Luc",
             "date": "2025-12-15T07:02:44+00:00"
+          },
+          {
+            "sha": "18f4aeb",
+            "message": "Update style.css\n\nFix margin issue and responsivness rendering distord image on desktop view",
+            "author": "Luc",
+            "date": "2025-12-15T03:55:03+00:00"
+          },
+          {
+            "sha": "a69a2cd",
+            "message": "Update style.css\n\ndo not overlap panels in mobile view",
+            "author": "Luc",
+            "date": "2025-12-15T03:14:11+00:00"
+          },
+          {
+            "sha": "5bb917a",
+            "message": "Update style.css\n\nBetter rendering on mobile view but panels - wip",
+            "author": "Luc",
+            "date": "2025-12-15T03:02:03+00:00"
+          },
+          {
+            "sha": "fa5d15a",
+            "message": "Add static version\n\nAdd security for analytics\nUpdate Readme",
+            "author": "Luc",
+            "date": "2025-12-14T12:58:36+00:00"
+          },
+          {
+            "sha": "8412924",
+            "message": "Update files",
+            "author": "Luc",
+            "date": "2025-12-14T07:08:16+00:00"
+          },
+          {
+            "sha": "ea8c947",
+            "message": "Update config\n\nAdd missing file",
+            "author": "Luc",
+            "date": "2025-12-14T07:03:58+00:00"
+          },
+          {
+            "sha": "c652628",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2025-12-14T06:33:58+00:00"
+          },
+          {
+            "sha": "d774c28",
+            "message": "review readme",
+            "author": "Luc",
+            "date": "2025-12-14T06:26:51+00:00"
+          },
+          {
+            "sha": "c3344bb",
+            "message": "add more files\n\nadd Readme",
+            "author": "Luc",
+            "date": "2025-12-14T06:13:29+00:00"
+          },
+          {
+            "sha": "3116e0c",
+            "message": "initial commit",
+            "author": "Luc",
+            "date": "2025-12-14T01:54:34+00:00"
+          },
+          {
+            "sha": "732be0e",
+            "message": "Initial commit",
+            "author": "Luc",
+            "date": "2025-12-14T01:52:22+00:00"
           }
         ],
         "commit_activity": [
@@ -9926,8 +11672,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 945,
-              "days_since_update": 945,
+              "age_days": 946,
+              "days_since_update": 946,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10069,6 +11815,246 @@
             "message": "Update README.md",
             "author": "Luc",
             "date": "2022-12-30T02:10:52+00:00"
+          },
+          {
+            "sha": "7d71c83",
+            "message": "Fix regression issue : ttl is not actually used",
+            "author": "Luc",
+            "date": "2022-12-26T07:55:31+00:00"
+          },
+          {
+            "sha": "6d78df5",
+            "message": "Create LICENSE",
+            "author": "Luc",
+            "date": "2022-06-05T12:55:00+00:00"
+          },
+          {
+            "sha": "0919268",
+            "message": "Update build-ssdp.sh\n\nextra ball - same player - play again...",
+            "author": "Luc",
+            "date": "2022-03-25T01:45:48+00:00"
+          },
+          {
+            "sha": "1a11eaa",
+            "message": "Update prepare-libs.sh\n\n@#$ keyboard",
+            "author": "Luc",
+            "date": "2022-03-25T01:40:24+00:00"
+          },
+          {
+            "sha": "998bd28",
+            "message": "Update prepare-libs.sh\n\nFix ci",
+            "author": "Luc",
+            "date": "2022-03-25T01:37:25+00:00"
+          },
+          {
+            "sha": "b5fdc00",
+            "message": "Asyncudp (#30)\n\n* Change travis for github-action\r\n\r\nAdd try / catch for  parspacket per @wladwnt suggestion for some edge cases\r\nfixes #26\r\n\r\n* Update build-ci-dev.yml\r\n\r\n* separated http header & changed device types (#28)\r\n\r\n* separated http header & changed device types\r\n\r\n* corrected constructor and schema\r\n\r\n* added async example\r\n\r\nCo-authored-by: maDDin <aha@maddin.com>\r\n\r\n* Fix CI broken with new example\r\n\r\n* Bumb library version\r\n\r\n* Version 1.2.0 using AsyncUdp\r\n\r\n* Remove debug\r\n\r\nAdd missing function for backward compatibility\r\n\r\n* Remove unused code\r\n\r\n* Move sources to src directory\r\n\r\n* Update ESP32SSDP.cpp\r\n\r\nAdd some sanity check\r\n\r\n* Add debug feature if used with ESP3DLib and Marlin\r\n\r\nAdd some sanity check when allocate memory\r\n\r\nCo-authored-by: Bastler <73077761+B4stl3r@users.noreply.github.com>\r\nCo-authored-by: maDDin <aha@maddin.com>",
+            "author": "Luc",
+            "date": "2022-03-25T01:29:29+00:00"
+          },
+          {
+            "sha": "6cd752b",
+            "message": "Update FUNDING.yml",
+            "author": "Luc",
+            "date": "2022-03-08T00:14:55+00:00"
+          },
+          {
+            "sha": "f902c39",
+            "message": "Merge pull request #24 from luc-github/Dev\n\nUpdate README.md",
+            "author": "Luc",
+            "date": "2020-11-30T12:55:15+00:00"
+          },
+          {
+            "sha": "79ce6b0",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2020-11-30T12:54:43+00:00"
+          },
+          {
+            "sha": "e6e461e",
+            "message": "Merge pull request #23 from luc-github/Dev\n\nFix wrong type",
+            "author": "Luc",
+            "date": "2020-10-09T12:07:06+00:00"
+          },
+          {
+            "sha": "be5ec38",
+            "message": "Fix wrong type\n\nFix warnings",
+            "author": "Luc",
+            "date": "2020-10-09T11:51:00+00:00"
+          },
+          {
+            "sha": "e281a96",
+            "message": "clean",
+            "author": "Luc",
+            "date": "2020-10-01T08:19:38+00:00"
+          },
+          {
+            "sha": "8398d99",
+            "message": "Update wiki.yml",
+            "author": "Luc",
+            "date": "2020-10-01T08:17:11+00:00"
+          },
+          {
+            "sha": "f48d711",
+            "message": "Update Home.md",
+            "author": "Luc",
+            "date": "2020-10-01T08:08:03+00:00"
+          },
+          {
+            "sha": "8bbcc56",
+            "message": "Update Home.md",
+            "author": "Luc",
+            "date": "2020-10-01T08:06:33+00:00"
+          },
+          {
+            "sha": "bb44f8a",
+            "message": "add image in wiki",
+            "author": "Luc",
+            "date": "2020-10-01T08:00:47+00:00"
+          },
+          {
+            "sha": "46c98bc",
+            "message": "chane email",
+            "author": "Luc",
+            "date": "2020-10-01T07:37:21+00:00"
+          },
+          {
+            "sha": "aa0f49f",
+            "message": "Update Home.md",
+            "author": "Luc",
+            "date": "2020-10-01T07:33:54+00:00"
+          },
+          {
+            "sha": "1914014",
+            "message": "Update wiki.yml",
+            "author": "Luc",
+            "date": "2020-10-01T07:32:37+00:00"
+          },
+          {
+            "sha": "3428521",
+            "message": "Update Home.md",
+            "author": "Luc",
+            "date": "2020-10-01T07:22:47+00:00"
+          },
+          {
+            "sha": "df357a5",
+            "message": "Add wiki as repo",
+            "author": "Luc",
+            "date": "2020-10-01T07:17:13+00:00"
+          },
+          {
+            "sha": "bb690b1",
+            "message": "Move icon list tag inside device tag (#22)\n\nCo-authored-by: Cristian Popescu <cristian.popescu@esolutions.ro>",
+            "author": "Cristian Popescu",
+            "date": "2020-09-17T15:13:59+00:00"
+          },
+          {
+            "sha": "8979b54",
+            "message": "Fix typo thanks @MitchBradley",
+            "author": "Luc",
+            "date": "2020-09-09T06:15:02+00:00"
+          },
+          {
+            "sha": "803e713",
+            "message": "Fix wrong type thanks @datacute",
+            "author": "Luc",
+            "date": "2020-08-16T07:19:06+00:00"
+          },
+          {
+            "sha": "36420ca",
+            "message": "Merge Devt to master (#16)\n\n* Header parsings failes rfc7230 OWS specification.\r\nhttps://greenbytes.de/tech/webdav/rfc7230.html#header.fields\r\nhttps://greenbytes.de/tech/webdav/rfc7230.html#rule.OWS\r\nSmarThings HUB SSDP sends out its Host header with no white space after ':' causing\r\nthe library to fail to parse the message. This patch adds a new state to skip over OWS.\r\n\r\n* MX delay is only producing even seconds 0, 1, 2 etc.\r\nThis patch more accurately represents the specification. 'should be delayed a random duration between 0 and this many seconds to balance load'. The current code frequently returns 0 when choosing a random number between 0 and MX. Changing to ms allows for more entropy in delay between competing devices.\r\n\r\n* Save ST the same as _respondToAddr to respond with the same ST for the query.\r\n\r\n* Fix a debug formatting. Added port to debug report.\r\n\r\n* Update README.md\r\n\r\n* Improve USN and ST headers to closer match rfc. Echoing back the correct answer for the request for root or all. Testing with gupnp-universal-cp and a custom schema because the baked in schema still needs refactoring to be usable.\r\n\r\n* Better to process the entire HTTP body. If we parse the ST header and it is a mismatch then we can abort else it is better to process the entire header.\r\n\r\n* Warnings for dummy case STRIP so do just like with START just add it. Remove _all not going to do it that way.\r\n\r\n* Added TX queue. Added limits to packet sleep time. For consistency updated _respondType in class constructor.\r\n\r\n* reorder class init members.\r\n\r\n* Fixed compiler init warning.\r\n\r\n* Improve delay keep original delay when receiving multiple M-SEARCH queries.\r\n\r\n\r\n* Schema rewrite (#14)\r\n\r\nAdd functions to customize :\r\n* notify interval\r\n* server name and version\r\n* model description\r\n* uuid (root or full)\r\n* icons list\r\n* services list\r\nUpdate sample accordingly\r\nUpdate travis script\r\n\r\n* code format\r\n\r\n* Update library.properties\r\n\r\nCo-authored-by: f34rdotcom <coder@f34r.com>\r\nCo-authored-by: Luc <luc.@tech-hunters.com>",
+            "author": "Luc",
+            "date": "2020-06-18T10:42:11+00:00"
+          },
+          {
+            "sha": "c88e176",
+            "message": "Merge pull request #11 from luc-github/devt\n\nDevt add travis script and badges",
+            "author": "Luc",
+            "date": "2020-02-07T05:48:32+00:00"
+          },
+          {
+            "sha": "182da52",
+            "message": "fix markdown",
+            "author": "Luc",
+            "date": "2020-02-07T05:33:36+00:00"
+          },
+          {
+            "sha": "b9c0d6b",
+            "message": "Update README.rst",
+            "author": "Luc",
+            "date": "2020-02-07T05:28:53+00:00"
+          },
+          {
+            "sha": "bd65ed0",
+            "message": "Update README.rst",
+            "author": "Luc",
+            "date": "2020-02-07T05:27:33+00:00"
+          },
+          {
+            "sha": "798f886",
+            "message": "Update README.rst",
+            "author": "Luc",
+            "date": "2020-02-07T05:25:04+00:00"
+          },
+          {
+            "sha": "5cc8d5b",
+            "message": "Update .travis.yml",
+            "author": "Luc",
+            "date": "2020-02-07T05:15:39+00:00"
+          },
+          {
+            "sha": "14eaa04",
+            "message": "fix travis\n\nupdate readme",
+            "author": "Luc",
+            "date": "2020-02-07T05:07:02+00:00"
+          },
+          {
+            "sha": "7ddf0f2",
+            "message": "Update .travis.yml",
+            "author": "Luc",
+            "date": "2020-02-07T04:53:26+00:00"
+          },
+          {
+            "sha": "2af5fff",
+            "message": "add travis for arduino and platformIO",
+            "author": "Luc",
+            "date": "2020-02-07T04:19:17+00:00"
+          },
+          {
+            "sha": "4ac65d8",
+            "message": "add template, workflow and stale",
+            "author": "Luc",
+            "date": "2020-02-02T10:36:40+00:00"
+          },
+          {
+            "sha": "4c22345",
+            "message": "Update FUNDING.yml",
+            "author": "Luc",
+            "date": "2019-10-22T06:21:45+00:00"
+          },
+          {
+            "sha": "2df63b7",
+            "message": "Create FUNDING.yml",
+            "author": "Luc",
+            "date": "2019-10-22T06:20:17+00:00"
+          },
+          {
+            "sha": "fd1cebf",
+            "message": "Ensure it compile only with ESP32\n\nto simplify platformIO.ini with ESP8266",
+            "author": "Luc",
+            "date": "2019-07-01T06:30:32+00:00"
+          },
+          {
+            "sha": "968e295",
+            "message": "Add ethernet support\n\nonly WIFI-STA and ETH-STA are supported",
+            "author": "Luc",
+            "date": "2019-01-21T15:06:39+00:00"
+          },
+          {
+            "sha": "5635ba5",
+            "message": "Update to leverage on https://github.com/esp8266/Arduino/pull/5607\n\nAdd proper end() function\nAdd `SSDP.setDeviceType(\"upnp:rootdevice\"); ` in sample as it may not be obvious that it is an option to appear in Windows Network Panel",
+            "author": "Luc",
+            "date": "2019-01-14T19:28:02+00:00"
           }
         ],
         "commit_activity": [
@@ -10803,8 +12789,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 945,
-              "days_since_update": 945,
+              "age_days": 946,
+              "days_since_update": 946,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10907,6 +12893,108 @@
             "message": "Fix Stop leave system unstable",
             "author": "Luc",
             "date": "2023-08-01T07:55:02+00:00"
+          },
+          {
+            "sha": "64e21fc",
+            "message": "Fix another warning",
+            "author": "Luc",
+            "date": "2023-02-26T07:33:03+00:00"
+          },
+          {
+            "sha": "ff51a62",
+            "message": "Fix compilation warnings",
+            "author": "Luc",
+            "date": "2023-02-26T07:05:39+00:00"
+          },
+          {
+            "sha": "1f9f724",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2022-12-30T02:10:04+00:00"
+          },
+          {
+            "sha": "a45199f",
+            "message": "Merge branch 'main' of https://github.com/luc-github/SSDP_IDF",
+            "author": "Luc",
+            "date": "2022-12-29T09:27:11+00:00"
+          },
+          {
+            "sha": "1458ef7",
+            "message": "Add some templates",
+            "author": "Luc",
+            "date": "2022-12-29T09:27:01+00:00"
+          },
+          {
+            "sha": "e23d12b",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2022-12-29T09:13:31+00:00"
+          },
+          {
+            "sha": "2cef859",
+            "message": "Code cleaning\n\nFix NOTIFY not working\nFix wrong size for UUID root in sample",
+            "author": "Luc",
+            "date": "2022-12-29T09:11:50+00:00"
+          },
+          {
+            "sha": "18a5845",
+            "message": "Update ssdp.h\n\nFix wrong order in DEFAULT_CONFIG",
+            "author": "Luc",
+            "date": "2022-12-29T04:08:02+00:00"
+          },
+          {
+            "sha": "d84b8fa",
+            "message": "Add Notification messages\n\nFix UUID_ROOT to be root not full UUID\nRemove response slots because not necessary in full datagram mode\nAdd ssdp_millis() and ssdp_random( int lowval, int highval); functions for consistency with ESP32SSDP",
+            "author": "Luc",
+            "date": "2022-12-28T11:39:33+00:00"
+          },
+          {
+            "sha": "b153421",
+            "message": "Fix example code\n\nAdd several sanity check\nFix some typos\nNote - still WIP code is not usable - just multicast POC for the moment and component configuration  implementation",
+            "author": "Luc",
+            "date": "2022-12-23T08:17:29+00:00"
+          },
+          {
+            "sha": "81f9bad",
+            "message": "Fix compilations issues for base code",
+            "author": "Luc",
+            "date": "2022-12-23T04:54:39+00:00"
+          },
+          {
+            "sha": "ba8a0b0",
+            "message": "Add sample code for test",
+            "author": "Luc",
+            "date": "2022-12-22T01:14:20+00:00"
+          },
+          {
+            "sha": "e32de4c",
+            "message": "Add code base for SSDP configuration and task creation - WIP",
+            "author": "Luc",
+            "date": "2022-12-21T11:10:10+00:00"
+          },
+          {
+            "sha": "c506b94",
+            "message": "Code base for component and example",
+            "author": "Luc",
+            "date": "2022-12-21T01:41:38+00:00"
+          },
+          {
+            "sha": "d428170",
+            "message": "Basic elements for components",
+            "author": "Luc",
+            "date": "2022-12-21T00:22:01+00:00"
+          },
+          {
+            "sha": "98fe146",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2022-12-20T07:45:37+00:00"
+          },
+          {
+            "sha": "f8a9a01",
+            "message": "Initial commit",
+            "author": "Luc",
+            "date": "2022-12-20T07:39:50+00:00"
           }
         ],
         "commit_activity": [
@@ -11710,6 +13798,18 @@
             "message": "remove depency to _def.h",
             "author": "Luc",
             "date": "2024-02-13T03:58:27+00:00"
+          },
+          {
+            "sha": "eae4a7a",
+            "message": "initial import",
+            "author": "Luc",
+            "date": "2024-02-12T12:42:18+00:00"
+          },
+          {
+            "sha": "db58d62",
+            "message": "Initial commit",
+            "author": "Luc",
+            "date": "2024-02-12T12:39:25+00:00"
           }
         ],
         "commit_activity": [
@@ -13220,7 +15320,7 @@
       "open_count": 41,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1046.7019565653397,
+      "avg_age_days": 1046.760789980224,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 41
@@ -13232,7 +15332,7 @@
       }
     },
     "activity": {
-      "total_commits": 117,
+      "total_commits": 467,
       "commit_frequency": {
         "daily": 0.25274725274725274,
         "weekly": 1.7692307692307692,
@@ -14127,17 +16227,17 @@
         "description": "Web Installer for ESP32 projects",
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "score": {
-          "commits": 10,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 30
+          "total": 63
         },
         "details": {
-          "commits": 10,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.4285714285714286,
+          "commits_per_day": 3.0,
           "issues_per_day": 0.0
         }
       },
@@ -14369,17 +16469,17 @@
         "description": "Web Installer for ESP32 projects",
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "score": {
-          "commits": 10,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 30
+          "total": 63
         },
         "details": {
-          "commits": 10,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.3333333333333333,
+          "commits_per_day": 0.7,
           "issues_per_day": 0.0
         }
       },
@@ -14606,63 +16706,43 @@
     ],
     "yearly": [
       {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "score": {
-          "commits": 10,
-          "issues": 5,
-          "comments": 0,
-          "period_days": 365,
-          "total": 40
-        },
-        "details": {
-          "commits": 10,
-          "issues": 5,
-          "comments": 0,
-          "commits_per_day": 0.0273972602739726,
-          "issues_per_day": 0.0136986301369863
-        }
-      },
-      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
         "score": {
-          "commits": 10,
+          "commits": 30,
           "issues": 4,
           "comments": 0,
           "period_days": 365,
-          "total": 38
+          "total": 98
         },
         "details": {
-          "commits": 10,
+          "commits": 30,
           "issues": 4,
           "comments": 0,
-          "commits_per_day": 0.0273972602739726,
+          "commits_per_day": 0.0821917808219178,
           "issues_per_day": 0.010958904109589041
         }
       },
       {
-        "name": "esp3d.io",
+        "name": "ESP3D-WEBUI",
         "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "score": {
-          "commits": 10,
-          "issues": 1,
+          "commits": 27,
+          "issues": 5,
           "comments": 0,
           "period_days": 365,
-          "total": 32
+          "total": 91
         },
         "details": {
-          "commits": 10,
-          "issues": 1,
+          "commits": 27,
+          "issues": 5,
           "comments": 0,
-          "commits_per_day": 0.0273972602739726,
-          "issues_per_day": 0.0027397260273972603
+          "commits_per_day": 0.07397260273972603,
+          "issues_per_day": 0.0136986301369863
         }
       },
       {
@@ -14671,18 +16751,38 @@
         "description": "Web Installer for ESP32 projects",
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "score": {
-          "commits": 10,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 30
+          "total": 63
         },
         "details": {
-          "commits": 10,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0273972602739726,
+          "commits_per_day": 0.057534246575342465,
           "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "score": {
+          "commits": 18,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 365,
+          "total": 56
+        },
+        "details": {
+          "commits": 18,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.049315068493150684,
+          "issues_per_day": 0.0027397260273972603
         }
       },
       {

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765933590.7785823,
+  "timestamp": 1765938682.2742188,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -151,6 +151,246 @@
           "message": "Update README.md",
           "author": "Luc",
           "date": "2022-12-30T02:10:52+00:00"
+        },
+        {
+          "sha": "7d71c83",
+          "message": "Fix regression issue : ttl is not actually used",
+          "author": "Luc",
+          "date": "2022-12-26T07:55:31+00:00"
+        },
+        {
+          "sha": "6d78df5",
+          "message": "Create LICENSE",
+          "author": "Luc",
+          "date": "2022-06-05T12:55:00+00:00"
+        },
+        {
+          "sha": "0919268",
+          "message": "Update build-ssdp.sh\n\nextra ball - same player - play again...",
+          "author": "Luc",
+          "date": "2022-03-25T01:45:48+00:00"
+        },
+        {
+          "sha": "1a11eaa",
+          "message": "Update prepare-libs.sh\n\n@#$ keyboard",
+          "author": "Luc",
+          "date": "2022-03-25T01:40:24+00:00"
+        },
+        {
+          "sha": "998bd28",
+          "message": "Update prepare-libs.sh\n\nFix ci",
+          "author": "Luc",
+          "date": "2022-03-25T01:37:25+00:00"
+        },
+        {
+          "sha": "b5fdc00",
+          "message": "Asyncudp (#30)\n\n* Change travis for github-action\r\n\r\nAdd try / catch for  parspacket per @wladwnt suggestion for some edge cases\r\nfixes #26\r\n\r\n* Update build-ci-dev.yml\r\n\r\n* separated http header & changed device types (#28)\r\n\r\n* separated http header & changed device types\r\n\r\n* corrected constructor and schema\r\n\r\n* added async example\r\n\r\nCo-authored-by: maDDin <aha@maddin.com>\r\n\r\n* Fix CI broken with new example\r\n\r\n* Bumb library version\r\n\r\n* Version 1.2.0 using AsyncUdp\r\n\r\n* Remove debug\r\n\r\nAdd missing function for backward compatibility\r\n\r\n* Remove unused code\r\n\r\n* Move sources to src directory\r\n\r\n* Update ESP32SSDP.cpp\r\n\r\nAdd some sanity check\r\n\r\n* Add debug feature if used with ESP3DLib and Marlin\r\n\r\nAdd some sanity check when allocate memory\r\n\r\nCo-authored-by: Bastler <73077761+B4stl3r@users.noreply.github.com>\r\nCo-authored-by: maDDin <aha@maddin.com>",
+          "author": "Luc",
+          "date": "2022-03-25T01:29:29+00:00"
+        },
+        {
+          "sha": "6cd752b",
+          "message": "Update FUNDING.yml",
+          "author": "Luc",
+          "date": "2022-03-08T00:14:55+00:00"
+        },
+        {
+          "sha": "f902c39",
+          "message": "Merge pull request #24 from luc-github/Dev\n\nUpdate README.md",
+          "author": "Luc",
+          "date": "2020-11-30T12:55:15+00:00"
+        },
+        {
+          "sha": "79ce6b0",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2020-11-30T12:54:43+00:00"
+        },
+        {
+          "sha": "e6e461e",
+          "message": "Merge pull request #23 from luc-github/Dev\n\nFix wrong type",
+          "author": "Luc",
+          "date": "2020-10-09T12:07:06+00:00"
+        },
+        {
+          "sha": "be5ec38",
+          "message": "Fix wrong type\n\nFix warnings",
+          "author": "Luc",
+          "date": "2020-10-09T11:51:00+00:00"
+        },
+        {
+          "sha": "e281a96",
+          "message": "clean",
+          "author": "Luc",
+          "date": "2020-10-01T08:19:38+00:00"
+        },
+        {
+          "sha": "8398d99",
+          "message": "Update wiki.yml",
+          "author": "Luc",
+          "date": "2020-10-01T08:17:11+00:00"
+        },
+        {
+          "sha": "f48d711",
+          "message": "Update Home.md",
+          "author": "Luc",
+          "date": "2020-10-01T08:08:03+00:00"
+        },
+        {
+          "sha": "8bbcc56",
+          "message": "Update Home.md",
+          "author": "Luc",
+          "date": "2020-10-01T08:06:33+00:00"
+        },
+        {
+          "sha": "bb44f8a",
+          "message": "add image in wiki",
+          "author": "Luc",
+          "date": "2020-10-01T08:00:47+00:00"
+        },
+        {
+          "sha": "46c98bc",
+          "message": "chane email",
+          "author": "Luc",
+          "date": "2020-10-01T07:37:21+00:00"
+        },
+        {
+          "sha": "aa0f49f",
+          "message": "Update Home.md",
+          "author": "Luc",
+          "date": "2020-10-01T07:33:54+00:00"
+        },
+        {
+          "sha": "1914014",
+          "message": "Update wiki.yml",
+          "author": "Luc",
+          "date": "2020-10-01T07:32:37+00:00"
+        },
+        {
+          "sha": "3428521",
+          "message": "Update Home.md",
+          "author": "Luc",
+          "date": "2020-10-01T07:22:47+00:00"
+        },
+        {
+          "sha": "df357a5",
+          "message": "Add wiki as repo",
+          "author": "Luc",
+          "date": "2020-10-01T07:17:13+00:00"
+        },
+        {
+          "sha": "bb690b1",
+          "message": "Move icon list tag inside device tag (#22)\n\nCo-authored-by: Cristian Popescu <cristian.popescu@esolutions.ro>",
+          "author": "Cristian Popescu",
+          "date": "2020-09-17T15:13:59+00:00"
+        },
+        {
+          "sha": "8979b54",
+          "message": "Fix typo thanks @MitchBradley",
+          "author": "Luc",
+          "date": "2020-09-09T06:15:02+00:00"
+        },
+        {
+          "sha": "803e713",
+          "message": "Fix wrong type thanks @datacute",
+          "author": "Luc",
+          "date": "2020-08-16T07:19:06+00:00"
+        },
+        {
+          "sha": "36420ca",
+          "message": "Merge Devt to master (#16)\n\n* Header parsings failes rfc7230 OWS specification.\r\nhttps://greenbytes.de/tech/webdav/rfc7230.html#header.fields\r\nhttps://greenbytes.de/tech/webdav/rfc7230.html#rule.OWS\r\nSmarThings HUB SSDP sends out its Host header with no white space after ':' causing\r\nthe library to fail to parse the message. This patch adds a new state to skip over OWS.\r\n\r\n* MX delay is only producing even seconds 0, 1, 2 etc.\r\nThis patch more accurately represents the specification. 'should be delayed a random duration between 0 and this many seconds to balance load'. The current code frequently returns 0 when choosing a random number between 0 and MX. Changing to ms allows for more entropy in delay between competing devices.\r\n\r\n* Save ST the same as _respondToAddr to respond with the same ST for the query.\r\n\r\n* Fix a debug formatting. Added port to debug report.\r\n\r\n* Update README.md\r\n\r\n* Improve USN and ST headers to closer match rfc. Echoing back the correct answer for the request for root or all. Testing with gupnp-universal-cp and a custom schema because the baked in schema still needs refactoring to be usable.\r\n\r\n* Better to process the entire HTTP body. If we parse the ST header and it is a mismatch then we can abort else it is better to process the entire header.\r\n\r\n* Warnings for dummy case STRIP so do just like with START just add it. Remove _all not going to do it that way.\r\n\r\n* Added TX queue. Added limits to packet sleep time. For consistency updated _respondType in class constructor.\r\n\r\n* reorder class init members.\r\n\r\n* Fixed compiler init warning.\r\n\r\n* Improve delay keep original delay when receiving multiple M-SEARCH queries.\r\n\r\n\r\n* Schema rewrite (#14)\r\n\r\nAdd functions to customize :\r\n* notify interval\r\n* server name and version\r\n* model description\r\n* uuid (root or full)\r\n* icons list\r\n* services list\r\nUpdate sample accordingly\r\nUpdate travis script\r\n\r\n* code format\r\n\r\n* Update library.properties\r\n\r\nCo-authored-by: f34rdotcom <coder@f34r.com>\r\nCo-authored-by: Luc <luc.@tech-hunters.com>",
+          "author": "Luc",
+          "date": "2020-06-18T10:42:11+00:00"
+        },
+        {
+          "sha": "c88e176",
+          "message": "Merge pull request #11 from luc-github/devt\n\nDevt add travis script and badges",
+          "author": "Luc",
+          "date": "2020-02-07T05:48:32+00:00"
+        },
+        {
+          "sha": "182da52",
+          "message": "fix markdown",
+          "author": "Luc",
+          "date": "2020-02-07T05:33:36+00:00"
+        },
+        {
+          "sha": "b9c0d6b",
+          "message": "Update README.rst",
+          "author": "Luc",
+          "date": "2020-02-07T05:28:53+00:00"
+        },
+        {
+          "sha": "bd65ed0",
+          "message": "Update README.rst",
+          "author": "Luc",
+          "date": "2020-02-07T05:27:33+00:00"
+        },
+        {
+          "sha": "798f886",
+          "message": "Update README.rst",
+          "author": "Luc",
+          "date": "2020-02-07T05:25:04+00:00"
+        },
+        {
+          "sha": "5cc8d5b",
+          "message": "Update .travis.yml",
+          "author": "Luc",
+          "date": "2020-02-07T05:15:39+00:00"
+        },
+        {
+          "sha": "14eaa04",
+          "message": "fix travis\n\nupdate readme",
+          "author": "Luc",
+          "date": "2020-02-07T05:07:02+00:00"
+        },
+        {
+          "sha": "7ddf0f2",
+          "message": "Update .travis.yml",
+          "author": "Luc",
+          "date": "2020-02-07T04:53:26+00:00"
+        },
+        {
+          "sha": "2af5fff",
+          "message": "add travis for arduino and platformIO",
+          "author": "Luc",
+          "date": "2020-02-07T04:19:17+00:00"
+        },
+        {
+          "sha": "4ac65d8",
+          "message": "add template, workflow and stale",
+          "author": "Luc",
+          "date": "2020-02-02T10:36:40+00:00"
+        },
+        {
+          "sha": "4c22345",
+          "message": "Update FUNDING.yml",
+          "author": "Luc",
+          "date": "2019-10-22T06:21:45+00:00"
+        },
+        {
+          "sha": "2df63b7",
+          "message": "Create FUNDING.yml",
+          "author": "Luc",
+          "date": "2019-10-22T06:20:17+00:00"
+        },
+        {
+          "sha": "fd1cebf",
+          "message": "Ensure it compile only with ESP32\n\nto simplify platformIO.ini with ESP8266",
+          "author": "Luc",
+          "date": "2019-07-01T06:30:32+00:00"
+        },
+        {
+          "sha": "968e295",
+          "message": "Add ethernet support\n\nonly WIFI-STA and ETH-STA are supported",
+          "author": "Luc",
+          "date": "2019-01-21T15:06:39+00:00"
+        },
+        {
+          "sha": "5635ba5",
+          "message": "Update to leverage on https://github.com/esp8266/Arduino/pull/5607\n\nAdd proper end() function\nAdd `SSDP.setDeviceType(\"upnp:rootdevice\"); ` in sample as it may not be obvious that it is an option to appear in Windows Network Panel",
+          "author": "Luc",
+          "date": "2019-01-14T19:28:02+00:00"
         }
       ],
       "commit_activity": [

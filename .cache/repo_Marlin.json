@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765933571.5584998,
+  "timestamp": 1765938659.902752,
   "data": {
     "name": "Marlin",
     "type": "main",
@@ -2109,6 +2109,246 @@
           "message": "\ud83d\udc1b Fix DOGM time overflow, alignment (#25103)",
           "author": "EvilGremlin",
           "date": "2022-12-17T04:45:55+00:00"
+        },
+        {
+          "sha": "471330b",
+          "message": "\ud83c\udfa8 Suppress warning (#25101)",
+          "author": "ellensp",
+          "date": "2022-12-17T04:43:54+00:00"
+        },
+        {
+          "sha": "2a724bd",
+          "message": "\u2728 BTT Octopus with STM32-F407 (#25031)",
+          "author": "ellensp",
+          "date": "2022-12-16T21:01:14+00:00"
+        },
+        {
+          "sha": "cea2ab1",
+          "message": "\u2728 BigTreeTech EBB42 v1.1 (#24964)",
+          "author": "alextrical",
+          "date": "2022-12-16T20:45:14+00:00"
+        },
+        {
+          "sha": "5198a55",
+          "message": "\ud83d\udd27 Use multi-XYZ 'STOP' pins for MIN/MAX (#24855)\n\nCo-authored-by: Scott Lahteine <thinkyhead@users.noreply.github.com>",
+          "author": "ils15",
+          "date": "2022-12-16T20:37:56+00:00"
+        },
+        {
+          "sha": "cbb56e3",
+          "message": "\u2728 Robin Nano v1 CDC (USB mod)\n\nFollowup to #24619",
+          "author": "Scott Lahteine",
+          "date": "2022-08-24T15:15:57+00:00"
+        },
+        {
+          "sha": "b3f4eaf",
+          "message": "\ud83e\ude79 Fix M115_GEOMETRY_REPORT (#25092)",
+          "author": "Dipl.-Ing. Raoul Rubien, BSc",
+          "date": "2022-12-13T03:23:45+00:00"
+        },
+        {
+          "sha": "7815b20",
+          "message": "\ud83e\ude79 Inverted probe pin flag (K8400) (#25085)",
+          "author": "ellensp",
+          "date": "2022-12-12T23:01:45+00:00"
+        },
+        {
+          "sha": "ffbf6ac",
+          "message": "\ud83e\ude79 Fix M502 init of default motion\n\nFix regression from #25035",
+          "author": "Scott Lahteine",
+          "date": "2022-12-12T22:46:50+00:00"
+        },
+        {
+          "sha": "8bafc1d",
+          "message": "\ud83e\ude79 Use custom I2C pins for OLED (#24970)",
+          "author": "alextrical",
+          "date": "2022-12-12T22:11:09+00:00"
+        },
+        {
+          "sha": "ac05f0c",
+          "message": "\u2728 SAMD21 HAL / Minitronics v2.0 (#24976)",
+          "author": "Bart Meijer",
+          "date": "2022-12-12T21:36:50+00:00"
+        },
+        {
+          "sha": "ec6349f",
+          "message": "\u2728 TFT_COLOR_UI async DMA SPI (#24980)",
+          "author": "Alexander Gavrilenko",
+          "date": "2022-12-12T21:13:31+00:00"
+        },
+        {
+          "sha": "d082223",
+          "message": "\ud83d\udcdd  Replace Twitter with Fosstodon",
+          "author": "Scott Lahteine",
+          "date": "2022-12-12T01:46:55+00:00"
+        },
+        {
+          "sha": "e07a059",
+          "message": "\ud83d\udd27 Anycubic alternate Z1/Z2 wiring (#25071)",
+          "author": "Simon Pilepich",
+          "date": "2022-12-12T01:12:28+00:00"
+        },
+        {
+          "sha": "313716e",
+          "message": "\u2728 JyersUI TMC Settings (#25048)",
+          "author": "Krzysztof B\u0142a\u017cewicz",
+          "date": "2022-12-11T19:27:27+00:00"
+        },
+        {
+          "sha": "7265559",
+          "message": "\ud83d\udd27 Custom Menu Sanity Check (#25079)",
+          "author": "Keith Bennett",
+          "date": "2022-12-11T18:59:25+00:00"
+        },
+        {
+          "sha": "3ad684b",
+          "message": "\ud83d\udd28 Updated 'mfconfig init'",
+          "author": "Scott Lahteine",
+          "date": "2022-12-11T18:56:45+00:00"
+        },
+        {
+          "sha": "408a53b",
+          "message": "\ud83d\udd28 No env:mega1280 for MIGHTYBOARD_REVE (#25080)",
+          "author": "ellensp",
+          "date": "2022-12-10T17:44:09+00:00"
+        },
+        {
+          "sha": "eae339b",
+          "message": "\u26a1\ufe0f Better IS buffer size calc (#25035)",
+          "author": "tombrazier",
+          "date": "2022-12-10T17:28:48+00:00"
+        },
+        {
+          "sha": "79b8847",
+          "message": "\u2728 Two controller fans (#24995)",
+          "author": "Vovodroid",
+          "date": "2022-12-10T15:03:54+00:00"
+        },
+        {
+          "sha": "86a3362",
+          "message": "\ud83d\udccc Pins updates for Longer LK5, etc. (#25012)\n\nCo-authored-by: Scott Lahteine <thinkyhead@users.noreply.github.com>",
+          "author": "ellensp",
+          "date": "2022-12-10T15:00:51+00:00"
+        },
+        {
+          "sha": "0efeedf",
+          "message": "\ud83d\udeb8 Progress display followup (#24879)",
+          "author": "EvilGremlin",
+          "date": "2022-12-07T22:08:53+00:00"
+        },
+        {
+          "sha": "c86f200",
+          "message": "\u2728 M150 S default index (#23066)\n\nCo-authored-by: Scott Lahteine <thinkyhead@users.noreply.github.com>",
+          "author": "Sebastien BLAISOT",
+          "date": "2022-12-07T21:49:38+00:00"
+        },
+        {
+          "sha": "5a97ffc",
+          "message": "\ud83d\udd28 Return error on mftest exit",
+          "author": "Scott Lahteine",
+          "date": "2022-12-07T18:18:09+00:00"
+        },
+        {
+          "sha": "2737286",
+          "message": "\ud83d\udcdd Update config comments",
+          "author": "Scott Lahteine",
+          "date": "2022-12-05T17:01:08+00:00"
+        },
+        {
+          "sha": "86a10dc",
+          "message": "\ud83d\udc1b Fix Fast PWM on AVR (#25030)\n\nFollowup to #25005",
+          "author": "ellensp",
+          "date": "2022-12-05T03:38:23+00:00"
+        },
+        {
+          "sha": "ecdf07f",
+          "message": "\u270f\ufe0f Fix missing ) (#25055)",
+          "author": "kisslorand",
+          "date": "2022-12-04T22:04:11+00:00"
+        },
+        {
+          "sha": "686ce0c",
+          "message": "\ud83d\udd28 Fix CI Test clean step (2)",
+          "author": "Scott Lahteine",
+          "date": "2022-12-04T21:35:45+00:00"
+        },
+        {
+          "sha": "3c550e0",
+          "message": "\ud83c\udfa8 Misc. cleanup",
+          "author": "Scott Lahteine",
+          "date": "2022-12-04T02:49:46+00:00"
+        },
+        {
+          "sha": "071dae0",
+          "message": "\ud83d\udd28 Fix CI Test clean step",
+          "author": "Scott Lahteine",
+          "date": "2022-12-04T02:19:18+00:00"
+        },
+        {
+          "sha": "df2a248",
+          "message": "\ud83d\udc1b Fix TMC5160 + Input Shaping overcurrent (#25050)",
+          "author": "tombrazier",
+          "date": "2022-12-04T02:14:31+00:00"
+        },
+        {
+          "sha": "c3090bd",
+          "message": "\ud83e\ude79 Ender 3v2 DWIN MarlinUI Fixup (#24984)",
+          "author": "Taylor Talkington",
+          "date": "2022-12-04T01:20:19+00:00"
+        },
+        {
+          "sha": "0fadb56",
+          "message": "\ud83c\udfa8 Trailing whitespace",
+          "author": "Scott Lahteine",
+          "date": "2022-12-04T01:18:03+00:00"
+        },
+        {
+          "sha": "eb125c9",
+          "message": "\ud83d\udd28 Update renamed.ini (#25042)",
+          "author": "ellensp",
+          "date": "2022-12-04T01:09:02+00:00"
+        },
+        {
+          "sha": "26edeef",
+          "message": "\ud83e\ude79 Fix MSG_MOVE_N_MM substitution (#25043)",
+          "author": "ellensp",
+          "date": "2022-12-04T01:05:22+00:00"
+        },
+        {
+          "sha": "96b8c28",
+          "message": "\ud83d\udeb8 G30 move to logical XY (#24953)",
+          "author": "kisslorand",
+          "date": "2022-12-02T06:19:34+00:00"
+        },
+        {
+          "sha": "db38655",
+          "message": "\ud83c\udfa8 Misc. cleanup",
+          "author": "Scott Lahteine",
+          "date": "2022-12-02T05:39:17+00:00"
+        },
+        {
+          "sha": "51c1645",
+          "message": "\ud83e\uddd1\u200d\ud83d\udcbb Use spaces indent for Python",
+          "author": "Scott Lahteine",
+          "date": "2022-10-12T22:52:56+00:00"
+        },
+        {
+          "sha": "5eb39d5",
+          "message": "\ud83d\udcdd Formatted Team Overview (#25029)",
+          "author": "\u30c8\u30c8\u3082",
+          "date": "2022-11-28T04:52:06+00:00"
+        },
+        {
+          "sha": "0537e78",
+          "message": "\ud83d\udc1b Fix G-code resend race condition\n\nAs pointed out in #24972 by @silycr, but simplified.",
+          "author": "Scott Lahteine",
+          "date": "2022-11-28T05:23:00+00:00"
+        },
+        {
+          "sha": "95019bf",
+          "message": "\u2728 Ender-3 V2 DWIN for BTT Octopus V1.1 (#24983)",
+          "author": "Taylor Talkington",
+          "date": "2022-11-28T03:41:27+00:00"
         }
       ],
       "commit_activity": [

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765933560.334887,
+  "timestamp": 1765938650.516845,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -265,6 +265,246 @@
           "message": "Display IDF version during compilation",
           "author": "Luc",
           "date": "2024-07-24T01:23:34+00:00"
+        },
+        {
+          "sha": "0ef520f",
+          "message": "Refactorization of make files to make them more readable (comment/ colors / status)\n\nAdd development define to disable telnet welcome message if necessary\nbump version",
+          "author": "Luc",
+          "date": "2024-07-09T03:07:15+00:00"
+        },
+        {
+          "sha": "f035f28",
+          "message": "FIx wrong single quote setting",
+          "author": "Luc",
+          "date": "2024-05-30T01:40:00+00:00"
+        },
+        {
+          "sha": "28747db",
+          "message": "Add scripts to format code (c/cpp/h/js/css/scss)\n\nAdd .prettierrc as js/scss/css format configuration\nApply style to code source",
+          "author": "Luc",
+          "date": "2024-05-30T01:26:02+00:00"
+        },
+        {
+          "sha": "34ef4bc",
+          "message": "Code reformating  (#72)\n\nFix some wrong icons in fonts\r\nRefactor screens\r\nUpdate some styles\r\nAdd screen capture",
+          "author": "Luc",
+          "date": "2024-05-29T23:43:54+00:00"
+        },
+        {
+          "sha": "bc04175",
+          "message": "Update ESP32S3_ZX3D50CE02S_USRC_4832.cmake",
+          "author": "Luc",
+          "date": "2024-05-02T08:51:35+00:00"
+        },
+        {
+          "sha": "ea33417",
+          "message": "Fix Conpilation failed if USB-SERIAL is disabled on S3",
+          "author": "Luc",
+          "date": "2024-05-02T03:31:21+00:00"
+        },
+        {
+          "sha": "e5fdfb7",
+          "message": "Change start variable collection\n\nRevert not working fix for usb_serial disabled\nAdd more log",
+          "author": "Luc",
+          "date": "2024-05-01T14:50:12+00:00"
+        },
+        {
+          "sha": "11a831d",
+          "message": "Update CMakeLists.txt\n\nFix  if USB-SERIAL is disabled in CMakeLists.txt",
+          "author": "Luc",
+          "date": "2024-05-01T13:05:34+00:00"
+        },
+        {
+          "sha": "74fc2f0",
+          "message": "Update esp32_camera.c\n\nFix compilation failed if log enabled",
+          "author": "Luc",
+          "date": "2024-05-01T12:52:55+00:00"
+        },
+        {
+          "sha": "8a8d4a1",
+          "message": "Resolve the issue of USB serial initialization failure (#68)\n\n* Fix camera id\r\n* Resolve the issue of USB serial initialization failure\r\n---------\r\n\r\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>\r\nCo-authored-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "liqijian101",
+          "date": "2024-04-22T00:23:30+00:00"
+        },
+        {
+          "sha": "d9af93a",
+          "message": "Improve sanity check to be sure only one target platform and one fw is enabled",
+          "author": "Luc",
+          "date": "2024-04-21T02:20:28+00:00"
+        },
+        {
+          "sha": "45847a8",
+          "message": "Update CMakeLists.txt",
+          "author": "Luc",
+          "date": "2024-04-21T01:31:58+00:00"
+        },
+        {
+          "sha": "6444f26",
+          "message": "Add missing `screens/`  for screens files",
+          "author": "Luc",
+          "date": "2024-04-20T13:55:17+00:00"
+        },
+        {
+          "sha": "ae854ef",
+          "message": "Update project-arch.md",
+          "author": "Luc",
+          "date": "2024-04-20T08:03:15+00:00"
+        },
+        {
+          "sha": "7571a64",
+          "message": "Simplify display files org by putting common screens files in one directory for all targets",
+          "author": "Luc",
+          "date": "2024-04-20T08:01:01+00:00"
+        },
+        {
+          "sha": "3348a7c",
+          "message": "Add proper target FW logo for each FW and resolution",
+          "author": "Luc",
+          "date": "2024-04-20T06:21:56+00:00"
+        },
+        {
+          "sha": "8c34f81",
+          "message": "Update menu_screen.cpp\n\nMove TFT setting to TFT line in menu screen and put disable motor to top (printer)  line",
+          "author": "Luc",
+          "date": "2024-04-19T01:16:34+00:00"
+        },
+        {
+          "sha": "63c9aa3",
+          "message": "Update CMakeLists.txt",
+          "author": "Luc",
+          "date": "2024-04-19T01:04:17+00:00"
+        },
+        {
+          "sha": "6f57ced",
+          "message": "Update CMakeLists.txt",
+          "author": "Luc",
+          "date": "2024-04-19T00:46:12+00:00"
+        },
+        {
+          "sha": "702f19d",
+          "message": "Update project-arch.md",
+          "author": "Luc",
+          "date": "2024-04-18T10:27:58+00:00"
+        },
+        {
+          "sha": "bf9861f",
+          "message": "do capture of symboles",
+          "author": "Luc",
+          "date": "2024-04-18T10:25:21+00:00"
+        },
+        {
+          "sha": "7acf0c9",
+          "message": "Update project-arch.md",
+          "author": "Luc",
+          "date": "2024-04-17T12:17:18+00:00"
+        },
+        {
+          "sha": "14d6787",
+          "message": "Merge branch 'main' of https://github.com/luc-github/ESP3D-TFT",
+          "author": "Luc",
+          "date": "2024-04-17T10:08:18+00:00"
+        },
+        {
+          "sha": "5d223cf",
+          "message": "Update project-arch.md",
+          "author": "Luc",
+          "date": "2024-04-17T06:16:11+00:00"
+        },
+        {
+          "sha": "9c90e52",
+          "message": "Modify ESP32S3-BZM-TFT35_GT911 to SPI screen (#64)\n\n* Modify ESP32S3-BZM-TFT35_GT911 to SPI screen\r\n\r\n---------\r\n\r\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>\r\nCo-authored-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "liqijian101",
+          "date": "2024-04-16T10:49:17+00:00"
+        },
+        {
+          "sha": "31bbd76",
+          "message": "Update build-ci.yml",
+          "author": "Luc",
+          "date": "2024-04-16T10:14:26+00:00"
+        },
+        {
+          "sha": "63c5760",
+          "message": "Update build-ci.yml",
+          "author": "Luc",
+          "date": "2024-04-16T10:11:36+00:00"
+        },
+        {
+          "sha": "36dc899",
+          "message": "Update build-ci.yml",
+          "author": "Luc",
+          "date": "2024-04-16T10:00:04+00:00"
+        },
+        {
+          "sha": "a5ac3fa",
+          "message": "Update build-ci.yml\n\nfix nodejs version 16",
+          "author": "Luc",
+          "date": "2024-04-16T09:56:09+00:00"
+        },
+        {
+          "sha": "04fe62b",
+          "message": "Fix Freenove Sed\n\nAdd ESP32_2432S028R in CI",
+          "author": "Luc",
+          "date": "2024-04-16T09:24:35+00:00"
+        },
+        {
+          "sha": "81692fd",
+          "message": "Add rotrix to ci\n\nchange default config of freenove",
+          "author": "Luc",
+          "date": "2024-04-16T08:51:33+00:00"
+        },
+        {
+          "sha": "090ab6d",
+          "message": "Simplify CI try 4",
+          "author": "Luc",
+          "date": "2024-04-16T08:30:49+00:00"
+        },
+        {
+          "sha": "c3727af",
+          "message": "Simplify CI try 3",
+          "author": "Luc",
+          "date": "2024-04-16T07:57:04+00:00"
+        },
+        {
+          "sha": "69728be",
+          "message": "simplify CI try 2",
+          "author": "Luc",
+          "date": "2024-04-16T07:42:05+00:00"
+        },
+        {
+          "sha": "058fd65",
+          "message": "Try to simplify ci",
+          "author": "Luc",
+          "date": "2024-04-16T06:48:55+00:00"
+        },
+        {
+          "sha": "86def49",
+          "message": "Fix wrong path for rotrix components",
+          "author": "Luc",
+          "date": "2024-04-16T04:47:41+00:00"
+        },
+        {
+          "sha": "b5c8fc7",
+          "message": "Update build-ci.yml",
+          "author": "Luc",
+          "date": "2024-04-16T03:37:03+00:00"
+        },
+        {
+          "sha": "77d33eb",
+          "message": "Change ci order do S3 first\n\nRenove CI for rotrix until rewriten",
+          "author": "Luc",
+          "date": "2024-04-16T02:19:36+00:00"
+        },
+        {
+          "sha": "17239cb",
+          "message": "Add full clean everywhere\n\nStart by ESP32-S3 then ESP32",
+          "author": "Luc",
+          "date": "2024-04-16T01:10:24+00:00"
+        },
+        {
+          "sha": "3ccef88",
+          "message": "Enable CI back",
+          "author": "Luc",
+          "date": "2024-04-16T00:47:07+00:00"
         }
       ],
       "commit_activity": [

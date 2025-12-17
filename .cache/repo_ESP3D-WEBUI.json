@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765933552.7867513,
+  "timestamp": 1765938643.9372077,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -376,6 +376,246 @@
           "message": "Update README.md",
           "author": "Luc",
           "date": "2025-11-02T08:16:47+00:00"
+        },
+        {
+          "sha": "f675d47",
+          "message": "Fix table closing tag in README.md",
+          "author": "Luc",
+          "date": "2025-10-09T05:53:08+00:00"
+        },
+        {
+          "sha": "77c2a58",
+          "message": "Add sponsors section and update contributors list\n\nAdded a sponsors section with links and images for various sponsorship tiers. Updated contributors list with new entries.",
+          "author": "Luc",
+          "date": "2025-10-09T05:46:54+00:00"
+        },
+        {
+          "sha": "06247f5",
+          "message": "Prepare code for release",
+          "author": "Luc",
+          "date": "2025-10-09T05:27:08+00:00"
+        },
+        {
+          "sha": "4026fee",
+          "message": "Update info.json",
+          "author": "Luc",
+          "date": "2025-03-12T07:04:07+00:00"
+        },
+        {
+          "sha": "c841a90",
+          "message": "Update for grblHAL to allow to use flash as gcode source",
+          "author": "Luc",
+          "date": "2025-02-26T08:02:58+00:00"
+        },
+        {
+          "sha": "e7b9c7c",
+          "message": "Fix $337 setting validation in $$",
+          "author": "Luc",
+          "date": "2025-02-09T08:45:55+00:00"
+        },
+        {
+          "sha": "5cf34ef",
+          "message": "Add missing texts for error, alarm and settings for grblHAL/grbl",
+          "author": "Luc",
+          "date": "2025-02-09T07:51:25+00:00"
+        },
+        {
+          "sha": "5439ca8",
+          "message": "smaller logo",
+          "author": "Luc",
+          "date": "2025-01-26T02:37:29+00:00"
+        },
+        {
+          "sha": "333b6fc",
+          "message": "Add MPG-ENABLE-TOGGLE (0x8b )real time command  to grblHAL",
+          "author": "Luc",
+          "date": "2025-01-20T12:35:47+00:00"
+        },
+        {
+          "sha": "de47622",
+          "message": "Do not show delete sd command in setting if MKS protocol",
+          "author": "Luc",
+          "date": "2025-01-19T00:41:57+00:00"
+        },
+        {
+          "sha": "3e0e7d1",
+          "message": "Fix autorefresh ignored in extra content\n\nBump version\nBuild package",
+          "author": "Luc",
+          "date": "2024-12-25T12:04:11+00:00"
+        },
+        {
+          "sha": "046b037",
+          "message": "Add more supported languages\n\nAdd new scripts to build language packs",
+          "author": "Luc",
+          "date": "2024-12-21T03:02:34+00:00"
+        },
+        {
+          "sha": "c145b01",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2024-12-18T04:20:05+00:00"
+        },
+        {
+          "sha": "242f7b0",
+          "message": "Fix version in readme and json orz",
+          "author": "Luc",
+          "date": "2024-12-18T04:07:58+00:00"
+        },
+        {
+          "sha": "48dd220",
+          "message": "Bump version to beta 1\n\nRebuild packages",
+          "author": "Luc",
+          "date": "2024-12-18T03:08:09+00:00"
+        },
+        {
+          "sha": "68501a1",
+          "message": "Add SENSOR:  to verbose trigger",
+          "author": "Luc",
+          "date": "2024-12-17T23:56:53+00:00"
+        },
+        {
+          "sha": "8858149",
+          "message": "Fix sensor not displayed since reporting is in stream instead of core",
+          "author": "Luc",
+          "date": "2024-12-17T08:33:21+00:00"
+        },
+        {
+          "sha": "f9dbf5c",
+          "message": "generate template",
+          "author": "Luc",
+          "date": "2024-12-16T08:24:04+00:00"
+        },
+        {
+          "sha": "8033f62",
+          "message": "Build packages\n\nClose #249",
+          "author": "Luc",
+          "date": "2024-12-09T02:38:18+00:00"
+        },
+        {
+          "sha": "d7413c6",
+          "message": "Remove plotter as seems no more sustained\n\nUpdate SandTable UI",
+          "author": "Luc",
+          "date": "2024-12-09T02:36:18+00:00"
+        },
+        {
+          "sha": "d1c3f23",
+          "message": "per users request",
+          "author": "Luc",
+          "date": "2024-12-09T01:38:01+00:00"
+        },
+        {
+          "sha": "7266acf",
+          "message": "Update CNC settings display condition\n\nremove control-fieldset class from grblHAL dor Mask for consistency",
+          "author": "Luc",
+          "date": "2024-12-09T01:10:39+00:00"
+        },
+        {
+          "sha": "c8debd7",
+          "message": "Update 3D printer conditions for displaying settings",
+          "author": "Luc",
+          "date": "2024-12-08T12:40:05+00:00"
+        },
+        {
+          "sha": "4add780",
+          "message": "Update printer3D settings display conditions",
+          "author": "Luc",
+          "date": "2024-12-08T12:06:48+00:00"
+        },
+        {
+          "sha": "aba0f9d",
+          "message": "Update 3D printer jog settings panel conditions",
+          "author": "Luc",
+          "date": "2024-12-08T11:52:34+00:00"
+        },
+        {
+          "sha": "afc4148",
+          "message": "fix race condition that make extension to be loaded twice, use isLoadedState[id] instead of isLoading to prevent it",
+          "author": "Luc",
+          "date": "2024-12-05T04:51:17+00:00"
+        },
+        {
+          "sha": "a57ec62",
+          "message": "Update P1 to P0 for consistency  for probe",
+          "author": "Luc",
+          "date": "2024-12-04T12:24:30+00:00"
+        },
+        {
+          "sha": "dae9c6d",
+          "message": "Make MX state multiple instead of unique\n\nAdd M6 for Tool change\nBump version\nBuild package\nUpdate grbl test server to have changing $G report",
+          "author": "Luc",
+          "date": "2024-12-03T00:16:41+00:00"
+        },
+        {
+          "sha": "29daa79",
+          "message": "Fix empty icon width in icon selector is not consistent\n\nAdd online help to esp3d.io in info page",
+          "author": "Luc",
+          "date": "2024-12-02T05:45:28+00:00"
+        },
+        {
+          "sha": "193447d",
+          "message": "Add version badge",
+          "author": "Luc",
+          "date": "2024-12-01T08:13:27+00:00"
+        },
+        {
+          "sha": "260ac24",
+          "message": "Add extensions readme",
+          "author": "Luc",
+          "date": "2024-11-28T06:57:48+00:00"
+        },
+        {
+          "sha": "cabfd29",
+          "message": "Better notification to extensions for isVisible\n\nAdd notification to extension: isConnected to track WS status and inform extensions\nBump version",
+          "author": "Luc",
+          "date": "2024-11-23T07:52:27+00:00"
+        },
+        {
+          "sha": "0b0116f",
+          "message": "update packages",
+          "author": "Luc",
+          "date": "2024-10-13T07:34:05+00:00"
+        },
+        {
+          "sha": "2c14171",
+          "message": "Add more captive portal URL\n\nFix Marlin filter file settings not working for second SD and isolate normal SD and Direct SD setting to avoid duplicate item and so conflict value\nBump version",
+          "author": "Luc",
+          "date": "2024-10-13T07:29:50+00:00"
+        },
+        {
+          "sha": "27ba10f",
+          "message": "Add Missing translation\n\nFix typo for grblHAL/grbl",
+          "author": "Luc",
+          "date": "2024-09-23T06:38:36+00:00"
+        },
+        {
+          "sha": "79384ad",
+          "message": "Remove excessive bottom margin on pages",
+          "author": "Luc",
+          "date": "2024-08-21T10:51:25+00:00"
+        },
+        {
+          "sha": "0f530b5",
+          "message": "Better UI on landscape / portrait for GCode Viewer",
+          "author": "Luc",
+          "date": "2024-08-21T09:12:52+00:00"
+        },
+        {
+          "sha": "779883e",
+          "message": "remove .gz extension in url for local extension\n\nBump Version\nBuild packages",
+          "author": "Luc",
+          "date": "2024-08-21T01:15:54+00:00"
+        },
+        {
+          "sha": "3c8f38f",
+          "message": "Bump version\n\nBuild packages",
+          "author": "Luc",
+          "date": "2024-08-16T05:40:42+00:00"
+        },
+        {
+          "sha": "f49016a",
+          "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
+          "author": "Luc",
+          "date": "2024-08-16T05:37:49+00:00"
         }
       ],
       "commit_activity": [

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765933531.5790246,
+  "timestamp": 1765938627.3971705,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -324,6 +324,246 @@
           "message": "Fix BT Service is no set a started due to wrong API usage",
           "author": "Luc",
           "date": "2025-06-18T14:02:02+00:00"
+        },
+        {
+          "sha": "041658d",
+          "message": "fix missing sanity check if BT",
+          "author": "Luc",
+          "date": "2025-06-18T05:06:33+00:00"
+        },
+        {
+          "sha": "0b8dc3a",
+          "message": "Update esp3d_commands.cpp\n\nOverride new behavior in Marlin that prevent error to update screen e.g: No SD Card -> IP is not displayed because M117 is locked, so always unlock M117 output\nDo not affect M111 because it is user key, so he can type M117 first to unlock if necessary, the fix only apply to auto M117 output",
+          "author": "Luc",
+          "date": "2025-04-26T06:18:50+00:00"
+        },
+        {
+          "sha": "1a0928e",
+          "message": "Fix serial2socket module lock after a while",
+          "author": "Luc",
+          "date": "2025-04-14T08:59:01+00:00"
+        },
+        {
+          "sha": "6e43923",
+          "message": "Fix WDT error message when doing formating\n\nBum version",
+          "author": "Luc",
+          "date": "2025-04-13T06:40:44+00:00"
+        },
+        {
+          "sha": "3f60af3",
+          "message": "Update esp_sd.cpp",
+          "author": "Luc",
+          "date": "2025-03-26T07:15:46+00:00"
+        },
+        {
+          "sha": "a63243d",
+          "message": "Update info.json",
+          "author": "Luc",
+          "date": "2025-03-26T06:55:08+00:00"
+        },
+        {
+          "sha": "8a6334e",
+          "message": "Sd refactoring (#1086)",
+          "author": "Luc",
+          "date": "2025-03-26T06:49:45+00:00"
+        },
+        {
+          "sha": "5501e78",
+          "message": "Improve serial Service thanks @rondlh\n\nBump version due to latest fixes",
+          "author": "Luc",
+          "date": "2025-03-19T03:37:34+00:00"
+        },
+        {
+          "sha": "8104887",
+          "message": "Fixed the issue that ESP201 cannot display the ANALOG pin value. (#1083)",
+          "author": "E2D",
+          "date": "2025-03-17T07:19:39+00:00"
+        },
+        {
+          "sha": "d0bde79",
+          "message": "Fixed FTP client connection logic with accept(); updated service config format. (#1082)",
+          "author": "E2D",
+          "date": "2025-03-16T09:02:39+00:00"
+        },
+        {
+          "sha": "429007b",
+          "message": "Buzzer bug fixed. (#1081)\n\n* Adjusted buzzer initialization logic to support ESP-IDF 5.1.1, added conditional compilation to be compatible with older versions\n\n* Update buzzer.cpp",
+          "author": "E2D",
+          "date": "2025-03-14T15:17:13+00:00"
+        },
+        {
+          "sha": "dc8e221",
+          "message": "Update info.json\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-03-12T07:02:33+00:00"
+        },
+        {
+          "sha": "8b70bb5",
+          "message": "Update esp3d_version.h\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2025-03-12T07:01:42+00:00"
+        },
+        {
+          "sha": "a57850a",
+          "message": "Fixed the issue where Ethernet static IP cannot be set. (#1080)",
+          "author": "E2D",
+          "date": "2025-03-12T07:00:40+00:00"
+        },
+        {
+          "sha": "750ef32",
+          "message": "Update wificonfig.cpp",
+          "author": "Luc",
+          "date": "2025-01-30T08:51:56+00:00"
+        },
+        {
+          "sha": "c222ba8",
+          "message": "smaller svg logo",
+          "author": "Luc",
+          "date": "2025-01-26T02:37:53+00:00"
+        },
+        {
+          "sha": "ed2d713",
+          "message": "Update embedded for help link to go to esp3d.io",
+          "author": "Luc",
+          "date": "2025-01-21T09:09:02+00:00"
+        },
+        {
+          "sha": "880ab40",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2024-12-18T04:19:04+00:00"
+        },
+        {
+          "sha": "6c10293",
+          "message": "Fix version in readme and json orz\n\nUpdate readme",
+          "author": "Luc",
+          "date": "2024-12-18T04:07:34+00:00"
+        },
+        {
+          "sha": "8293833",
+          "message": "Bump version for beta 1",
+          "author": "Luc",
+          "date": "2024-12-18T03:40:33+00:00"
+        },
+        {
+          "sha": "0f55c19",
+          "message": "Fix compilation for esp8266",
+          "author": "Luc",
+          "date": "2024-12-10T12:27:39+00:00"
+        },
+        {
+          "sha": "00ed692",
+          "message": "Update configuration.h",
+          "author": "Luc",
+          "date": "2024-12-10T11:53:48+00:00"
+        },
+        {
+          "sha": "3bb05c9",
+          "message": "Update ESP32SSDP library to access started state and ethernet fix\n\nAdd SSDP ad mDNS to ESP420 report|\nAdd waiting loop to get the ethernet IP in DHCP in STA mode to be sure network services start with proper IP\nChange debug log to verbose log\n\nBump version",
+          "author": "Luc",
+          "date": "2024-12-10T11:14:46+00:00"
+        },
+        {
+          "sha": "d6a58d5",
+          "message": "Update esp3d_version.h",
+          "author": "Luc",
+          "date": "2024-12-09T09:47:31+00:00"
+        },
+        {
+          "sha": "539d9fe",
+          "message": "Ajust code for ethernet\n\nBump version",
+          "author": "Luc",
+          "date": "2024-12-09T09:46:55+00:00"
+        },
+        {
+          "sha": "fe23f0c",
+          "message": "Grbl grblHAL better support for realtime commands (#1064)\n\n* Add a realtime command detector \r\n* Move `\\r` as printable char and not replaced as `\\n`\r\n* Refactorize Serial service code to avoid redondant code between esp32 and esp8266\r\n* Implement isrealtimeCommand check for serial and centralize function in string helper\r\n* Add new type message : realtimecmd\r\n* Update simulator to handle commands and realtime commands\r\n* Add simple serial test tool\r\n*  Generate error if use HAS_DISPLAY with grbl/grblHAL\r\n* Implement isRealTimeCommand for BT client\r\n* Simplify BT push2buffer code\r\n* Implement support for realtimecommand in telnet\r\n* Implement isRealTimeCommand on websocket RX\r\n* Simplify push2RXbuffer for websocket\r\n* Implement isRealTimeCommand for USB serial\r\n* Bump version",
+          "author": "Luc",
+          "date": "2024-12-08T09:26:19+00:00"
+        },
+        {
+          "sha": "7b99d8a",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2024-12-01T08:07:16+00:00"
+        },
+        {
+          "sha": "2e24f5e",
+          "message": "Create info.json",
+          "author": "Luc",
+          "date": "2024-12-01T06:12:49+00:00"
+        },
+        {
+          "sha": "be5e3f9",
+          "message": "Add missing WhatsApp setting in ESP400\n\nBump version",
+          "author": "Luc",
+          "date": "2024-11-27T01:07:52+00:00"
+        },
+        {
+          "sha": "d9f6ea6",
+          "message": "close #888",
+          "author": "Luc",
+          "date": "2024-11-25T07:45:09+00:00"
+        },
+        {
+          "sha": "d2c52ac",
+          "message": "Close #955\n\nAdd more default settings for SPI W5500 Ethernet\nBump version for tracking",
+          "author": "Luc",
+          "date": "2024-11-25T02:06:15+00:00"
+        },
+        {
+          "sha": "ff3dff0",
+          "message": "Update esp32_usb_serial.cpp",
+          "author": "Luc",
+          "date": "2024-11-04T21:11:02+00:00"
+        },
+        {
+          "sha": "b6a7add",
+          "message": "Remove wrong sanity check\n\nFix confusing comment",
+          "author": "Luc",
+          "date": "2024-11-03T16:56:37+00:00"
+        },
+        {
+          "sha": "b892b3f",
+          "message": "Add more data in ESP420 for USB Port  when connected",
+          "author": "Luc",
+          "date": "2024-10-20T12:59:59+00:00"
+        },
+        {
+          "sha": "9f303ca",
+          "message": "Add auto notification to USB Serial",
+          "author": "Luc",
+          "date": "2024-10-20T12:21:57+00:00"
+        },
+        {
+          "sha": "b409371",
+          "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
+          "author": "Luc",
+          "date": "2024-10-19T10:13:45+00:00"
+        },
+        {
+          "sha": "9bac144",
+          "message": "Update esp3d_version.h",
+          "author": "Luc",
+          "date": "2024-09-12T03:38:50+00:00"
+        },
+        {
+          "sha": "35f9cf8",
+          "message": "Fix W5500 Compilation issue (#1049)",
+          "author": "Luc",
+          "date": "2024-09-11T13:19:26+00:00"
+        },
+        {
+          "sha": "ae2dec2",
+          "message": "Serial refactoring and idf 4.4.7 for ESP32 (#1048)\n\n* Split esp32 code from esp8266 for Serial\r\n\r\n* split receive serial message and processing serial message in esp32 in different task\r\n\r\n* Make the esp32 code backward compatible with Arduino esp32 2.0.17 / IDF 4.4.7",
+          "author": "Luc",
+          "date": "2024-09-11T12:57:56+00:00"
+        },
+        {
+          "sha": "bd5f96d",
+          "message": "Fix server name are not in fixed location\n\nUpdate esp8266 time code for consistency with esp32",
+          "author": "Luc",
+          "date": "2024-09-10T02:18:31+00:00"
         }
       ],
       "commit_activity": [

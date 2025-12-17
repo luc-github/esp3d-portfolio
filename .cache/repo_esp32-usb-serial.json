@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765933604.0976303,
+  "timestamp": 1765938687.7589898,
   "data": {
     "name": "esp32-usb-serial",
     "type": "dependency",
@@ -91,6 +91,18 @@
           "message": "remove depency to _def.h",
           "author": "Luc",
           "date": "2024-02-13T03:58:27+00:00"
+        },
+        {
+          "sha": "eae4a7a",
+          "message": "initial import",
+          "author": "Luc",
+          "date": "2024-02-12T12:42:18+00:00"
+        },
+        {
+          "sha": "db58d62",
+          "message": "Initial commit",
+          "author": "Luc",
+          "date": "2024-02-12T12:39:25+00:00"
         }
       ],
       "commit_activity": [
