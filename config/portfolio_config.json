@@ -9,15 +9,9 @@
             "highlight_labels": ["critical", "priority"],
             "branches": [
                 {
-                    "name": "2.1.x",
+                    "name": "3.0",
                     "label": "Production",
                     "is_production": true,
-                    "issue_label": "ESP-2.X"
-                },
-                {
-                    "name": "3.0",
-                    "label": "Development",
-                    "is_production": false,
                     "issue_label": "ESP-3.X"
                 }
             ]
@@ -53,14 +47,9 @@
             "highlight_labels": ["critical", "priority"],
             "branches": [
                 {
-                    "name": "2.1",
-                    "label": "Production",
-                    "is_production": true
-                },
-                {
                     "name": "3.0",
-                    "label": "Development",
-                    "is_production": false,
+                    "label": "Production",
+                    "is_production": true,
                     "issue_label": "3.0"
                 }
             ]
