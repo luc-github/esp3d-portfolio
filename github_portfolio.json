@@ -540,6 +540,12 @@
             "message": "Add auto notification to USB Serial",
             "author": "Luc",
             "date": "2024-10-20T12:21:57+00:00"
+          },
+          {
+            "sha": "b409371",
+            "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
+            "author": "Luc",
+            "date": "2024-10-19T10:13:45+00:00"
           }
         ],
         "commit_activity": [
@@ -1707,6 +1713,12 @@
             "message": "Update sd_ESP32.cpp",
             "author": "Eduard Sukharev",
             "date": "2022-08-23T19:41:40+00:00"
+          },
+          {
+            "sha": "f6fb0b8",
+            "message": "Update README.md",
+            "author": "Luc",
+            "date": "2022-08-14T12:46:41+00:00"
           }
         ],
         "commit_activity": [
@@ -3102,6 +3114,12 @@
             "message": "remove .gz extension in url for local extension\n\nBump Version\nBuild packages",
             "author": "Luc",
             "date": "2024-08-21T01:15:54+00:00"
+          },
+          {
+            "sha": "3c8f38f",
+            "message": "Bump version\n\nBuild packages",
+            "author": "Luc",
+            "date": "2024-08-16T05:40:42+00:00"
           }
         ],
         "commit_activity": [
@@ -4420,6 +4438,12 @@
             "message": "Enable CI back",
             "author": "Luc",
             "date": "2024-04-16T00:47:07+00:00"
+          },
+          {
+            "sha": "fa6e2ce",
+            "message": "POC add Marlin Logo during splash to highlight FW target",
+            "author": "Luc",
+            "date": "2024-04-15T09:17:51+00:00"
           }
         ],
         "commit_activity": [
@@ -7495,6 +7519,12 @@
             "message": "\u2728 Ender-3 V2 DWIN for BTT Octopus V1.1 (#24983)",
             "author": "Taylor Talkington",
             "date": "2022-11-28T03:41:27+00:00"
+          },
+          {
+            "sha": "6f5ad55",
+            "message": "\u26a1\ufe0f More SCURVE cycles on unoptimized cortex-m0 (#24955)",
+            "author": "Chris Bagwell",
+            "date": "2022-11-28T03:40:11+00:00"
           }
         ],
         "commit_activity": [
@@ -8634,6 +8664,12 @@
             "message": "Add default pins for each mcu\n\nAdd pins for SPI screens\nAdd platformio.ini generation",
             "author": "Luc",
             "date": "2022-06-25T09:35:07+00:00"
+          },
+          {
+            "sha": "3564810",
+            "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
+            "author": "Luc",
+            "date": "2022-06-22T12:56:59+00:00"
           }
         ],
         "commit_activity": [
@@ -9804,6 +9840,12 @@
             "message": "Update with extensions Description and API\n\nFIx some typo with Notes",
             "author": "Luc",
             "date": "2024-08-20T15:52:12+00:00"
+          },
+          {
+            "sha": "b39dfa1",
+            "message": "Add variables page to TFT",
+            "author": "Luc",
+            "date": "2024-08-19T23:15:18+00:00"
           }
         ],
         "commit_activity": [
@@ -11816,6 +11858,12 @@
             "message": "Update to leverage on https://github.com/esp8266/Arduino/pull/5607\n\nAdd proper end() function\nAdd `SSDP.setDeviceType(\"upnp:rootdevice\"); ` in sample as it may not be obvious that it is an option to appear in Windows Network Panel",
             "author": "Luc",
             "date": "2019-01-14T19:28:02+00:00"
+          },
+          {
+            "sha": "ce7e723",
+            "message": "Fix Warning for unused variable",
+            "author": "Luc",
+            "date": "2018-11-18T14:36:42+00:00"
           }
         ],
         "commit_activity": [
@@ -16017,7 +16065,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1005.996551249805,
+      "avg_age_days": 1006.0014770832307,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
@@ -16038,20 +16086,20 @@
       "active_contributors": {
         "last_week": 1,
         "last_month": 4,
-        "total": 449
+        "total": 450
       },
       "activity_heatmap": [
         [
           3,
           5,
           9,
-          6,
+          7,
           4,
           8,
           2,
           7,
           5,
-          13,
+          14,
           2,
           0,
           5,
@@ -16065,7 +16113,7 @@
           1,
           5,
           2,
-          1
+          2
         ],
         [
           3,
@@ -16106,7 +16154,7 @@
           2,
           3,
           5,
-          7,
+          8,
           1,
           2,
           1,
@@ -16151,7 +16199,7 @@
           2,
           0,
           6,
-          9,
+          10,
           5,
           0,
           1,
@@ -16182,7 +16230,7 @@
           1,
           5,
           5,
-          1,
+          2,
           5,
           3,
           2,
@@ -16210,9 +16258,9 @@
           4,
           2,
           4,
-          6,
+          7,
           0,
-          1,
+          2,
           0,
           1,
           0,

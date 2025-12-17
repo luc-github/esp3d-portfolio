@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765950682.538161,
+  "timestamp": 1765951759.085838,
   "data": {
     "name": "Marlin",
     "type": "main",
@@ -2349,6 +2349,12 @@
           "message": "\u2728 Ender-3 V2 DWIN for BTT Octopus V1.1 (#24983)",
           "author": "Taylor Talkington",
           "date": "2022-11-28T03:41:27+00:00"
+        },
+        {
+          "sha": "6f5ad55",
+          "message": "\u26a1\ufe0f More SCURVE cycles on unoptimized cortex-m0 (#24955)",
+          "author": "Chris Bagwell",
+          "date": "2022-11-28T03:40:11+00:00"
         }
       ],
       "commit_activity": [

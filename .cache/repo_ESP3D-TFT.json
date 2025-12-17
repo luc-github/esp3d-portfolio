@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765950672.5608144,
+  "timestamp": 1765951749.7938037,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -505,6 +505,12 @@
           "message": "Enable CI back",
           "author": "Luc",
           "date": "2024-04-16T00:47:07+00:00"
+        },
+        {
+          "sha": "fa6e2ce",
+          "message": "POC add Marlin Logo during splash to highlight FW target",
+          "author": "Luc",
+          "date": "2024-04-15T09:17:51+00:00"
         }
       ],
       "commit_activity": [

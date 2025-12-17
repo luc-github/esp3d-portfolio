@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765950698.5253232,
+  "timestamp": 1765951773.5783172,
   "data": {
     "name": "ESP32SSDP",
     "type": "dependency",
@@ -391,6 +391,12 @@
           "message": "Update to leverage on https://github.com/esp8266/Arduino/pull/5607\n\nAdd proper end() function\nAdd `SSDP.setDeviceType(\"upnp:rootdevice\"); ` in sample as it may not be obvious that it is an option to appear in Windows Network Panel",
           "author": "Luc",
           "date": "2019-01-14T19:28:02+00:00"
+        },
+        {
+          "sha": "ce7e723",
+          "message": "Fix Warning for unused variable",
+          "author": "Luc",
+          "date": "2018-11-18T14:36:42+00:00"
         }
       ],
       "commit_activity": [

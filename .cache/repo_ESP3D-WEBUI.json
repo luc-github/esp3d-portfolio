@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765950665.7623842,
+  "timestamp": 1765951743.5487037,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -572,6 +572,12 @@
           "message": "remove .gz extension in url for local extension\n\nBump Version\nBuild packages",
           "author": "Luc",
           "date": "2024-08-21T01:15:54+00:00"
+        },
+        {
+          "sha": "3c8f38f",
+          "message": "Bump version\n\nBuild packages",
+          "author": "Luc",
+          "date": "2024-08-16T05:40:42+00:00"
         }
       ],
       "commit_activity": [
