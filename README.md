@@ -5,8 +5,8 @@
 ![Repositories](https://img.shields.io/badge/Repositories-13-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-5-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-41-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2025%2F%2012%2F%2017%2004:28%20UTC-lightgrey)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-35-yellow)
+![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2017%2005:51%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -46,9 +46,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (12) | 4 | 0 | 12.0 |
-| 🥈 2  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (9) | 3 | 0 | 9.0 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (15) | 5 | 0 | 15.0 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (12) | 4 | 0 | 12.0 |
+| 🥉 3  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
 | ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -69,8 +69,8 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (63) | 21 | 0 | 9.0 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (18) | 6 | 0 | 2.6 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (21) | 7 | 0 | 3.0 |
+| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (15) | 5 | 0 | 2.1 |
 | ▪️ 4  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
 | ▪️ 5  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -91,8 +91,8 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (63) | 21 | 0 | 2.1 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (25) | 7 | 2 | 0.8 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (24) | 8 | 0 | 0.8 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (30) | 10 | 0 | 1.0 |
+| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (26) | 8 | 1 | 0.9 |
 | ▪️ 4  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 0.3 |
 | ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -112,9 +112,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (110) | 34 | 4 | 0.3 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (109) | 35 | 2 | 0.3 |
 | 🥈 2  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (96) | 32 | 0 | 0.3 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (91) | 27 | 5 | 0.2 |
+| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (93) | 29 | 3 | 0.3 |
 | ▪️ 4  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (63) | 21 | 0 | 0.2 |
 | ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (56) | 18 | 1 | 0.2 |
 | ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (22) | 6 | 2 | 0.1 |
@@ -178,9 +178,9 @@ Repository popularity based on GitHub stars and forks.
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 41 |
+| Open Issues | 35 |
 | Closed Issues | 0 |
-| Average Age | 1046.8 days |
+| Average Age | 1006.0 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -190,7 +190,7 @@ Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.4 commits)
 Weekly   🟦 Few (1-10 commits)           (2.5 commits)
-Monthly  🟦 Few (1-25 commits)           (9.8 commits)
+Monthly  🟦 Few (1-25 commits)           (10.1 commits)
 ```
 
 </details>
@@ -210,28 +210,10 @@ Monthly  🟦 Few (1-25 commits)           (9.8 commits)
 </td></tr></table>
 
 <details>
-<summary><h4>🚀 Production Branch (`2.1.x`)</h4></summary>
+<summary><h4>🚀 Production Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-09-15 (#80d5ed1)
-Author: Luc
-```
-
-<table>
-<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2025-12-08</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-</table>
-
-</details>
-
-<details>
-<summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
-
-```
-Last commit: 2025-12-17 (#51971e4)
+Last commit: 2025-12-17 (#67bba4b)
 Author: Luc
 ```
 
@@ -362,26 +344,10 @@ Author: Luc
 </td></tr></table>
 
 <details>
-<summary><h4>🚀 Production Branch (`2.1`)</h4></summary>
+<summary><h4>🚀 Production Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-09-15 (#ba368b6)
-Author: Luc
-```
-
-<table>
-<tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>🔄</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
-</table>
-
-</details>
-
-<details>
-<summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
-
-```
-Last commit: 2025-12-16 (#b4ad97d)
+Last commit: 2025-12-17 (#338d4b8)
 Author: Luc
 ```
 
@@ -680,14 +646,10 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2025-12-08</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2025-12-08</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1.x</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2025-12-08</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#575: <a href="https://github.com/luc-github/ESP3D/issues/575">⏸️[FEATURE REQUEST]🦄Use better serial protocol communication</a></td><td><code>2021-02-01</code></td><td><code>2024-03-06</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -760,18 +722,16 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>🔄</td><td>🚀 2.1</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🔧 3.0</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 2.1</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#411: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/411">[FEATURE REQUEST] Flexible panels customizations to optimize empty space</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#265: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/265">[FEATURE REQUEST]Integrate the [ ESP700] command into the button</a></td><td><code>2022-09-18</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#85: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/85">[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them</a></td><td><code>2020-01-04</code></td><td><code>2022-08-15</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🔧 3.0</td><td>#242: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/242">[FEATURE REQUEST]Configuration  Wizard </a></td><td><code>2022-05-10</code></td><td><code>2022-06-06</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>🔄</td><td>🚀 3.0</td><td>#418: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/418">Updated to 2.1.3c0 version</a></td><td><code>2025-09-20</code></td><td><code>2025-09-23</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#411: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/411">[FEATURE REQUEST] Flexible panels customizations to optimize empty space</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#265: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/265">[FEATURE REQUEST]Integrate the [ ESP700] command into the button</a></td><td><code>2022-09-18</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#85: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/85">[FEATURE REQUEST]Be able to autodiscover all ESP3D devices and agregate them</a></td><td><code>2020-01-04</code></td><td><code>2022-08-15</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#242: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/242">[FEATURE REQUEST]Configuration  Wizard </a></td><td><code>2022-05-10</code></td><td><code>2022-06-06</code></td><td style="color: #000000">normal</td></tr>
 </table>
 
 </details>
@@ -1007,23 +967,23 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 499 |
+| Commits | 36 |
 | New Issues | 0 |
 | Closed Issues | 0 |
-| Active Contributors | 0 |
+| Active Contributors | 1 |
 
 ### Activity Heatmap
 
 ```
     00 03 06 09 12 15 18 21
     -----------------------
-Mon 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-Tue 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-Wed 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-Thu 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-Fri 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-Sat 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-Sun 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+Mon 🟨 🟨 🟩 🟩 🟩 🟦 🟦 🟩
+Tue 🟦 🟩 🟨 🟨 🟩 🟦 🟦 🟦
+Wed 🟩 🟨 🟩 🟩 🟩 🟦 🟦 🟩
+Thu 🟩 🟥 🟨 🟩 🟦 🟦 ⬜ 🟦
+Fri 🟩 🟩 🟦 🟦 🟦 🟦 🟦 🟦
+Sat 🟦 🟦 🟩 🟩 🟩 🟦 ⬜ ⬜
+Sun 🟨 🟦 🟨 🟩 🟩 🟦 🟦 🟦
 
 Legend:
 ⬜ No activity 🟦 Low (1-2 commits) 🟩 Moderate (3-5 commits) 🟨 High (6-10 commits) 🟥 Very High (>10 commits)
@@ -1035,7 +995,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-12-17 04:28:25 UTC*
+*🔄 Last updated: 2025-12-17 05:51:50 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

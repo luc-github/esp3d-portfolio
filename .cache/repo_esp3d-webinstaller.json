@@ -1,0 +1,851 @@
+{
+  "timestamp": 1765950694.2450945,
+  "data": {
+    "name": "esp3d-webinstaller",
+    "type": "main",
+    "description": "Web Installer for ESP32 projects",
+    "url": "https://github.com/luc-github/esp3d-webinstaller",
+    "language": "JavaScript",
+    "created_at": "2025-12-14T01:52:22+00:00",
+    "updated_at": "2025-12-15T13:38:31+00:00",
+    "branches": [
+      {
+        "name": "main",
+        "label": "Production",
+        "is_production": true,
+        "last_commit": {
+          "sha": "c680aa5",
+          "message": "Update script.js\n\nBetter handle case : browser not supported",
+          "author": "Luc",
+          "date": "2025-12-15T13:33:49+00:00"
+        },
+        "protected": false,
+        "issues": []
+      }
+    ],
+    "contributors": [
+      {
+        "login": "luc-github",
+        "contributions": 21,
+        "url": "https://github.com/luc-github"
+      }
+    ],
+    "activity": {
+      "recent_commits": [
+        {
+          "sha": "c680aa5",
+          "message": "Update script.js\n\nBetter handle case : browser not supported",
+          "author": "Luc",
+          "date": "2025-12-15T13:33:49+00:00"
+        },
+        {
+          "sha": "bc4589e",
+          "message": "orz...",
+          "author": "Luc",
+          "date": "2025-12-15T09:45:37+00:00"
+        },
+        {
+          "sha": "b671275",
+          "message": "fix bad english",
+          "author": "Luc",
+          "date": "2025-12-15T09:41:22+00:00"
+        },
+        {
+          "sha": "b43f3d1",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-12-15T09:38:09+00:00"
+        },
+        {
+          "sha": "5a75eb5",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-12-15T09:37:30+00:00"
+        },
+        {
+          "sha": "074b6fe",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-12-15T09:36:37+00:00"
+        },
+        {
+          "sha": "03c7f49",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-12-15T09:31:13+00:00"
+        },
+        {
+          "sha": "51210f8",
+          "message": "Update cancel.mp3\n\njust say bye bye",
+          "author": "Luc",
+          "date": "2025-12-15T09:22:01+00:00"
+        },
+        {
+          "sha": "14c9f22",
+          "message": "Use event sound for complete process\n\nallow to use sound according lang",
+          "author": "Luc",
+          "date": "2025-12-15T09:16:58+00:00"
+        },
+        {
+          "sha": "c945ef0",
+          "message": "Better multi language management\n\nAdd steps sounds",
+          "author": "Luc",
+          "date": "2025-12-15T07:02:44+00:00"
+        },
+        {
+          "sha": "18f4aeb",
+          "message": "Update style.css\n\nFix margin issue and responsivness rendering distord image on desktop view",
+          "author": "Luc",
+          "date": "2025-12-15T03:55:03+00:00"
+        },
+        {
+          "sha": "a69a2cd",
+          "message": "Update style.css\n\ndo not overlap panels in mobile view",
+          "author": "Luc",
+          "date": "2025-12-15T03:14:11+00:00"
+        },
+        {
+          "sha": "5bb917a",
+          "message": "Update style.css\n\nBetter rendering on mobile view but panels - wip",
+          "author": "Luc",
+          "date": "2025-12-15T03:02:03+00:00"
+        },
+        {
+          "sha": "fa5d15a",
+          "message": "Add static version\n\nAdd security for analytics\nUpdate Readme",
+          "author": "Luc",
+          "date": "2025-12-14T12:58:36+00:00"
+        },
+        {
+          "sha": "8412924",
+          "message": "Update files",
+          "author": "Luc",
+          "date": "2025-12-14T07:08:16+00:00"
+        },
+        {
+          "sha": "ea8c947",
+          "message": "Update config\n\nAdd missing file",
+          "author": "Luc",
+          "date": "2025-12-14T07:03:58+00:00"
+        },
+        {
+          "sha": "c652628",
+          "message": "Update README.md",
+          "author": "Luc",
+          "date": "2025-12-14T06:33:58+00:00"
+        },
+        {
+          "sha": "d774c28",
+          "message": "review readme",
+          "author": "Luc",
+          "date": "2025-12-14T06:26:51+00:00"
+        },
+        {
+          "sha": "c3344bb",
+          "message": "add more files\n\nadd Readme",
+          "author": "Luc",
+          "date": "2025-12-14T06:13:29+00:00"
+        },
+        {
+          "sha": "3116e0c",
+          "message": "initial commit",
+          "author": "Luc",
+          "date": "2025-12-14T01:54:34+00:00"
+        },
+        {
+          "sha": "732be0e",
+          "message": "Initial commit",
+          "author": "Luc",
+          "date": "2025-12-14T01:52:22+00:00"
+        }
+      ],
+      "commit_activity": [
+        {
+          "week": "2024-12-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-12-29T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-05T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-12T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-23T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-15T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-22T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-29T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-05T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-12T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-19T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-26T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-03T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-10T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-17T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-24T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-31T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-07T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-14T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-21T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-28T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-05T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-12T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-19T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-26T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-02T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-09T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-16T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-23T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-30T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-06T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-13T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-20T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-27T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-04T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-11T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-18T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-25T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-01T23:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-23T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-30T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-12-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-12-14T00:00:00+00:00",
+          "total": 21,
+          "days": [
+            8,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "statistics": {
+      "size": 3554,
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 1,
+      "default_branch": "main",
+      "license": "GNU General Public License v3.0"
+    }
+  }
+}

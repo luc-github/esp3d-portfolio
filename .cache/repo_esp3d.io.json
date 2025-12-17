@@ -1,0 +1,1114 @@
+{
+  "timestamp": 1765950691.2227442,
+  "data": {
+    "name": "esp3d.io",
+    "type": "main",
+    "description": "Documentation of ESP3D Ecosystem",
+    "url": "https://github.com/luc-github/esp3d.io",
+    "language": "HTML",
+    "created_at": "2023-01-29T00:46:38+00:00",
+    "updated_at": "2025-11-28T10:33:49+00:00",
+    "branches": [
+      {
+        "name": "main",
+        "label": "Production",
+        "is_production": true,
+        "last_commit": {
+          "sha": "b5c3204",
+          "message": "Update sponsoring.html",
+          "author": "Luc",
+          "date": "2025-11-28T10:33:43+00:00"
+        },
+        "protected": false,
+        "issues": [
+          {
+            "number": 49,
+            "title": "List external devices  tested / supported by ESP3D",
+            "body": "In addition to hardware list a list of additionnals components could be added each one with description, pinout, settings, needed library,  etc  and classified by type:\nsensors (DH11/22...)\ndisplays : oled / tft\ninput : buttons / tbd \nSD card reader\nTBD \n",
+            "state": "open",
+            "created_at": "2025-02-26T02:27:34+00:00",
+            "updated_at": "2025-02-26T02:28:44+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/esp3d.io/issues/49",
+            "is_pr": false,
+            "labels": [
+              "enhancement"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 8,
+            "title": "Do a description page for each WebUI panel / Settings",
+            "body": "According Version and Target",
+            "state": "open",
+            "created_at": "2023-02-28T06:31:09+00:00",
+            "updated_at": "2023-02-28T06:31:09+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/esp3d.io/issues/8",
+            "is_pr": false,
+            "labels": [
+              "enhancement"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 6,
+            "title": "Add Default setting description page",
+            "body": "Each project has default settings values need to list them",
+            "state": "open",
+            "created_at": "2023-02-28T06:27:05+00:00",
+            "updated_at": "2023-02-28T06:27:05+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/esp3d.io/issues/6",
+            "is_pr": false,
+            "labels": [
+              "enhancement"
+            ],
+            "priority": "normal",
+            "assignee": null
+          }
+        ]
+      }
+    ],
+    "contributors": [
+      {
+        "login": "luc-github",
+        "contributions": 206,
+        "url": "https://github.com/luc-github"
+      },
+      {
+        "login": "serisman",
+        "contributions": 25,
+        "url": "https://github.com/serisman"
+      },
+      {
+        "login": "allcontributors[bot]",
+        "contributions": 8,
+        "url": "https://github.com/apps/allcontributors"
+      },
+      {
+        "login": "liqijian101",
+        "contributions": 5,
+        "url": "https://github.com/liqijian101"
+      },
+      {
+        "login": "peekpt",
+        "contributions": 3,
+        "url": "https://github.com/peekpt"
+      },
+      {
+        "login": "dbuezas",
+        "contributions": 1,
+        "url": "https://github.com/dbuezas"
+      },
+      {
+        "login": "jamespearson04",
+        "contributions": 1,
+        "url": "https://github.com/jamespearson04"
+      },
+      {
+        "login": "KristiyanHristov",
+        "contributions": 1,
+        "url": "https://github.com/KristiyanHristov"
+      },
+      {
+        "login": "Levak",
+        "contributions": 1,
+        "url": "https://github.com/Levak"
+      }
+    ],
+    "activity": {
+      "recent_commits": [
+        {
+          "sha": "b5c3204",
+          "message": "Update sponsoring.html",
+          "author": "Luc",
+          "date": "2025-11-28T10:33:43+00:00"
+        },
+        {
+          "sha": "f3a1168",
+          "message": "Update batch files",
+          "author": "Luc",
+          "date": "2025-11-13T06:45:14+00:00"
+        },
+        {
+          "sha": "65de0bd",
+          "message": "Update ftp_transfert.py to fix remote path bug",
+          "author": "Luc",
+          "date": "2025-11-13T06:19:49+00:00"
+        },
+        {
+          "sha": "0a0050d",
+          "message": "Update versions.html",
+          "author": "Luc",
+          "date": "2025-11-13T04:50:45+00:00"
+        },
+        {
+          "sha": "a9be3e6",
+          "message": "Update index.md",
+          "author": "Luc",
+          "date": "2025-11-13T04:49:38+00:00"
+        },
+        {
+          "sha": "126e63f",
+          "message": "add diff scripts for upload after new  build",
+          "author": "Luc",
+          "date": "2025-11-13T04:43:21+00:00"
+        },
+        {
+          "sha": "b5a6c85",
+          "message": "Update index.md\n\nfix typo in nano robin page",
+          "author": "Luc",
+          "date": "2025-10-26T07:00:46+00:00"
+        },
+        {
+          "sha": "d37f056",
+          "message": "Update for release",
+          "author": "Luc",
+          "date": "2025-10-09T06:03:12+00:00"
+        },
+        {
+          "sha": "a96ba01",
+          "message": "remove confusing line",
+          "author": "Luc",
+          "date": "2025-05-14T06:03:26+00:00"
+        },
+        {
+          "sha": "50202e5",
+          "message": "Update SD WiFi",
+          "author": "Luc",
+          "date": "2025-04-04T10:28:28+00:00"
+        },
+        {
+          "sha": "bb69524",
+          "message": "Add Lua script sample code",
+          "author": "Luc",
+          "date": "2025-01-17T00:17:38+00:00"
+        },
+        {
+          "sha": "b73f60f",
+          "message": "host code for forum.html",
+          "author": "Luc",
+          "date": "2025-01-04T12:15:43+00:00"
+        },
+        {
+          "sha": "2ec1268",
+          "message": "Fix typo",
+          "author": "Luc",
+          "date": "2025-01-04T11:20:31+00:00"
+        },
+        {
+          "sha": "4130bb8",
+          "message": "Add @levak extension",
+          "author": "Luc",
+          "date": "2025-01-04T10:38:25+00:00"
+        },
+        {
+          "sha": "9b30017",
+          "message": "Code base for Forum",
+          "author": "Luc",
+          "date": "2025-01-04T09:45:27+00:00"
+        },
+        {
+          "sha": "42447f5",
+          "message": "Make page wider",
+          "author": "Luc",
+          "date": "2024-12-31T03:34:56+00:00"
+        },
+        {
+          "sha": "110aa7a",
+          "message": "Add giscus forum",
+          "author": "Luc",
+          "date": "2024-12-22T08:11:37+00:00"
+        },
+        {
+          "sha": "88a5403",
+          "message": "Update translation.md",
+          "author": "Luc",
+          "date": "2024-12-21T03:37:36+00:00"
+        },
+        {
+          "sha": "65207dc",
+          "message": "make pages list order consistent with menu order for documentation",
+          "author": "Luc",
+          "date": "2024-12-16T08:22:05+00:00"
+        },
+        {
+          "sha": "3566a58",
+          "message": "Update index.md",
+          "author": "Luc",
+          "date": "2024-12-09T09:48:44+00:00"
+        },
+        {
+          "sha": "94f237a",
+          "message": "Fix markdown typo",
+          "author": "Luc",
+          "date": "2024-12-05T04:14:19+00:00"
+        },
+        {
+          "sha": "a197646",
+          "message": "Add extensions in Showcases for webui 3.0",
+          "author": "Luc",
+          "date": "2024-11-28T06:59:08+00:00"
+        },
+        {
+          "sha": "77aebda",
+          "message": "Fix typo in sample command for notification, spaces are not escaped",
+          "author": "Luc",
+          "date": "2024-11-25T09:25:46+00:00"
+        },
+        {
+          "sha": "7e34ac1",
+          "message": "Update mkdocs.yml",
+          "author": "Luc",
+          "date": "2024-11-25T09:05:18+00:00"
+        },
+        {
+          "sha": "4d1b495",
+          "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
+          "author": "Luc",
+          "date": "2024-11-25T07:46:51+00:00"
+        },
+        {
+          "sha": "888d280",
+          "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
+          "author": "Luc",
+          "date": "2024-11-25T02:10:01+00:00"
+        },
+        {
+          "sha": "039e431",
+          "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
+          "author": "Luc",
+          "date": "2024-11-23T08:06:11+00:00"
+        },
+        {
+          "sha": "3641b57",
+          "message": "fix path of screenshots",
+          "author": "Luc",
+          "date": "2024-11-18T00:44:05+00:00"
+        },
+        {
+          "sha": "c63cd3f",
+          "message": "Update index.md",
+          "author": "Luc",
+          "date": "2024-11-04T21:05:03+00:00"
+        },
+        {
+          "sha": "0ab0c66",
+          "message": "add otg doc",
+          "author": "Luc",
+          "date": "2024-11-04T02:51:08+00:00"
+        },
+        {
+          "sha": "7fea8cf",
+          "message": "Update index.md",
+          "author": "Luc",
+          "date": "2024-10-30T11:23:11+00:00"
+        },
+        {
+          "sha": "6dd02c3",
+          "message": "Update NodeMCU with pinout",
+          "author": "Luc",
+          "date": "2024-10-28T04:04:27+00:00"
+        },
+        {
+          "sha": "9414745",
+          "message": "Doc for ESP32-S3-LCD-1.47 - WIP",
+          "author": "Luc",
+          "date": "2024-10-28T03:48:59+00:00"
+        },
+        {
+          "sha": "bd6dd4a",
+          "message": "Add some notes to clarify connection",
+          "author": "Luc",
+          "date": "2024-10-21T08:54:36+00:00"
+        },
+        {
+          "sha": "84c20c7",
+          "message": "Update as now USB Serial OTG is supported",
+          "author": "Luc",
+          "date": "2024-10-21T08:46:37+00:00"
+        },
+        {
+          "sha": "1ab5f55",
+          "message": "Update Xiao Sense S3",
+          "author": "Luc",
+          "date": "2024-10-21T05:39:11+00:00"
+        },
+        {
+          "sha": "5aa25e3",
+          "message": "Add ttgo eth lite",
+          "author": "Luc",
+          "date": "2024-10-21T05:36:34+00:00"
+        },
+        {
+          "sha": "b599e5a",
+          "message": "Add Lilygo T-ETH Lite",
+          "author": "Luc",
+          "date": "2024-09-11T09:33:44+00:00"
+        },
+        {
+          "sha": "422d519",
+          "message": "Add missing FAQ menu in ESP3D 3.X",
+          "author": "Luc",
+          "date": "2024-09-07T06:18:53+00:00"
+        },
+        {
+          "sha": "06345eb",
+          "message": "Update version of ESP32 Core for ESP3D 3.0\n\nFix some typos",
+          "author": "Luc",
+          "date": "2024-09-06T04:48:50+00:00"
+        },
+        {
+          "sha": "8401e34",
+          "message": "Add ESP116/117/118 commands\n\nAdd new settings",
+          "author": "Luc",
+          "date": "2024-09-05T01:28:01+00:00"
+        },
+        {
+          "sha": "3860adb",
+          "message": "Update ethernet docs\n\nFix some typo with markdown",
+          "author": "Luc",
+          "date": "2024-09-02T13:19:53+00:00"
+        },
+        {
+          "sha": "d624e2d",
+          "message": "Update index.md",
+          "author": "Luc",
+          "date": "2024-09-01T04:50:40+00:00"
+        },
+        {
+          "sha": "eaa8930",
+          "message": "Add C6 support",
+          "author": "Luc",
+          "date": "2024-09-01T01:57:07+00:00"
+        },
+        {
+          "sha": "f202907",
+          "message": "add partitions for reference",
+          "author": "Luc",
+          "date": "2024-08-24T05:01:23+00:00"
+        },
+        {
+          "sha": "0e9f0f1",
+          "message": "Merge branch 'main' of https://github.com/luc-github/esp3d.io",
+          "author": "Luc",
+          "date": "2024-08-23T04:22:18+00:00"
+        },
+        {
+          "sha": "9b06c87",
+          "message": "Add telnet and lua for ESP3D V3.0",
+          "author": "Luc",
+          "date": "2024-08-23T04:22:14+00:00"
+        },
+        {
+          "sha": "9eb49b2",
+          "message": "Update mkdocs.yml",
+          "author": "Luc",
+          "date": "2024-08-23T00:37:24+00:00"
+        },
+        {
+          "sha": "936dec3",
+          "message": "Fix typo do display  some Notes\n\nAdd mining menu to extra content in webui 3.0 documentation",
+          "author": "Luc",
+          "date": "2024-08-21T04:17:23+00:00"
+        },
+        {
+          "sha": "0796a92",
+          "message": "Update with extensions Description and API\n\nFIx some typo with Notes",
+          "author": "Luc",
+          "date": "2024-08-20T15:52:12+00:00"
+        }
+      ],
+      "commit_activity": [
+        {
+          "week": "2024-12-22T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2024-12-29T00:00:00+00:00",
+          "total": 5,
+          "days": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "week": "2025-01-05T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-12T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-01-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-02-23T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-09T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-23T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-03-30T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-06T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-13T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-20T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-04-27T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-04T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-11T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-18T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-05-25T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-01T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-08T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-15T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-22T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-06-29T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-06T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-13T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-20T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-07-27T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-08-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-09-28T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-05T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-12T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-10-26T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-02T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-09T00:00:00+00:00",
+          "total": 5,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-16T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-23T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "week": "2025-11-30T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-12-07T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2025-12-14T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "statistics": {
+      "size": 114193,
+      "stars": 9,
+      "forks": 55,
+      "open_issues": 3,
+      "watchers": 9,
+      "default_branch": "main",
+      "license": "GNU General Public License v3.0"
+    }
+  }
+}
