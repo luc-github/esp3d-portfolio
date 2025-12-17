@@ -2707,7 +2707,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 2173,
-              "days_since_update": 1219,
+              "days_since_update": 1220,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3917,7 +3917,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 699,
+              "age_days": 700,
               "days_since_update": 222,
               "is_stale": true,
               "is_recent": false,
@@ -16550,7 +16550,13 @@
       "health_score": {}
     }
   ],
-  "rate_limit": {},
+  "rate_limit": {
+    "core": {
+      "limit": 5000,
+      "remaining": 4419,
+      "reset": "2025-12-17T10:53:02+00:00"
+    }
+  },
   "stats": {
     "repositories": {
       "total_count": 14,
@@ -16577,7 +16583,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1006.1827466967609,
+      "avg_age_days": 1006.1932162187862,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
