@@ -22,37 +22,75 @@ class GitHubCollector:
         self.private_repos = self._load_private_repos()
     
     def _load_private_repos(self) -> List[str]:
-        """Load private repository names from environment variable"""
+        """Load private repository names from environment variable.
+        
+        Expected format in PRIVATE_REPOS env var:
+        - Just the repo name: "my-private-repo" (NOT "username/my-private-repo")
+        - Multiple repos comma-separated: "repo1,repo2,repo3"
+        - Spaces are trimmed automatically
+        """
         private_repos_env = os.getenv('PRIVATE_REPOS', '')
+        
         if not private_repos_env:
+            self.logger.debug("PRIVATE_REPOS environment variable not set or empty")
             return []
         
+        # Parse comma-separated list
         repos = [r.strip() for r in private_repos_env.split(',') if r.strip()]
-        self.logger.info(f"Loaded {len(repos)} private repositories from environment")
-        return repos
+        
+        # Validate and warn about incorrect format
+        validated_repos = []
+        for repo in repos:
+            if '/' in repo:
+                # User provided full path like "username/repo" - extract just the repo name
+                repo_name = repo.split('/')[-1]
+                self.logger.warning(f"PRIVATE_REPOS: '{repo}' contains '/'. Using just '{repo_name}'. "
+                                  f"Format should be just the repo name without username.")
+                validated_repos.append(repo_name)
+            else:
+                validated_repos.append(repo)
+        
+        self.logger.info(f"Loaded {len(validated_repos)} private repositories from PRIVATE_REPOS: {validated_repos}")
+        return validated_repos
     
     def collect_private_repositories_data(self) -> List[Dict]:
         """Collect data for private repositories (commits only, anonymized)"""
         private_repos_data = []
         
         private_config = self.config.get_option('private_repositories', None)
-        if not private_config or not private_config.get('enabled', False):
+        if not private_config:
+            self.logger.debug("No 'private_repositories' section in config")
+            return []
+            
+        if not private_config.get('enabled', False):
+            self.logger.debug("Private repositories feature is disabled in config")
+            return []
+        
+        if not self.private_repos:
+            self.logger.info("No private repositories configured in PRIVATE_REPOS environment variable")
             return []
         
         display_prefix = private_config.get('display_prefix', 'Private Project')
+        self.logger.info(f"Collecting data for {len(self.private_repos)} private repositories...")
         
         for idx, repo_name in enumerate(self.private_repos, 1):
             try:
                 cache_key = f"private_repo_{idx}"  # Anonymized cache key
                 cached_data = self.cache.get(cache_key)
                 if cached_data:
+                    self.logger.debug(f"Using cached data for private repository #{idx}")
                     private_repos_data.append(cached_data)
                     continue
                 
-                self.logger.info(f"Collecting data for private repository #{idx}")
+                self.logger.info(f"Fetching data for private repository #{idx} ({repo_name})...")
+                
+                # Try to get the repo - this will fail if repo doesn't exist or token lacks permission
+                full_repo_name = f"{self.username}/{repo_name}"
+                self.logger.debug(f"Attempting to access: {full_repo_name}")
+                
                 repo = self._retry_on_failure(
                     self.github.get_repo, 
-                    f"{self.username}/{repo_name}"
+                    full_repo_name
                 )
                 
                 # Collect only commits (no issues, no stats, no details)
@@ -83,10 +121,18 @@ class GitHubCollector:
                 
                 self.cache.set(cache_key, repo_data)
                 private_repos_data.append(repo_data)
+                self.logger.info(f"Successfully collected data for private repository #{idx}")
                 
+            except GithubException as e:
+                self.logger.error(f"GitHub API error for private repository #{idx} ({repo_name}): {e.status} - {e.data}")
+                if e.status == 404:
+                    self.logger.error(f"  -> Repository not found. Check that '{repo_name}' exists and token has 'repo' scope.")
+                elif e.status == 401:
+                    self.logger.error(f"  -> Authentication failed. Check that GITHUB_TOKEN has 'repo' scope for private repos.")
             except Exception as e:
-                self.logger.error(f"Error collecting data for private repository #{idx}: {e}")
+                self.logger.error(f"Error collecting data for private repository #{idx} ({repo_name}): {e}")
         
+        self.logger.info(f"Finished collecting private repositories: {len(private_repos_data)} successful")
         return private_repos_data
     
     def _collect_private_activity_data(self, repo) -> Dict:

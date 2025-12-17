@@ -17,8 +17,11 @@ class PortfolioAnalyzer:
         self.logger = logging.getLogger("portfolio.analyzer")
         self.config = config_manager
         
-        # Initialize components
-        self.cache_manager = CacheManager(self.config.get_cache_config())
+        # Initialize components - pass full config to cache manager for change detection
+        self.cache_manager = CacheManager(
+            self.config.get_cache_config(),
+            full_config=self.config.config  # Pass full config for hash computation
+        )
         self.github_collector = GitHubCollector(github_token, self.config, self.cache_manager)
         self.stats_calculator = StatsCalculator(self.config)
         self.issue_processor = IssueProcessor(self.config)

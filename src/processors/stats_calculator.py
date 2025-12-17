@@ -69,13 +69,30 @@ class StatsCalculator:
     
     def _calculate_activity_stats(self, repositories: List[Dict]) -> Dict:
         """Calculate activity-related statistics"""
+        now = datetime.now(timezone.utc)
+        week_ago = now - timedelta(days=7)
+        
         all_commits = []
+        commits_last_week = 0
+        
         for repo in repositories:
             activity = repo.get('activity', {})
-            all_commits.extend(activity.get('recent_commits', []))
+            recent_commits = activity.get('recent_commits', [])
+            all_commits.extend(recent_commits)
+            
+            # Count commits from last 7 days only
+            for commit in recent_commits:
+                commit_date_str = commit.get('date')
+                if commit_date_str:
+                    try:
+                        commit_date = datetime.fromisoformat(commit_date_str.replace('Z', '+00:00'))
+                        if commit_date > week_ago:
+                            commits_last_week += 1
+                    except (ValueError, TypeError):
+                        pass
         
         stats = {
-            'total_commits': len(all_commits),
+            'total_commits': commits_last_week,  # Only commits from last 7 days
             'commit_frequency': self._calculate_commit_frequency(repositories),
             'active_contributors': self._count_active_contributors(repositories),
             'activity_heatmap': self._generate_activity_heatmap(repositories)
@@ -188,34 +205,68 @@ class StatsCalculator:
         return frequencies
     
     def _count_active_contributors(self, repositories: List[Dict]) -> Dict[str, int]:
-        """Count active contributors in different time periods"""
-        active_contributors = {
-            'last_week': set(),
-            'last_month': set(),
-            'total': set()
-        }
+        """Count active contributors in different time periods based on recent commits"""
+        now = datetime.now(timezone.utc)
+        week_ago = now - timedelta(days=7)
+        month_ago = now - timedelta(days=30)
+        
+        contributors_week = set()
+        contributors_month = set()
+        contributors_total = set()
         
         for repo in repositories:
-            contributors = repo.get('contributors', [])
-            for contributor in contributors:
-                active_contributors['total'].add(contributor['login'])
-                # Additional logic could be added here to check recent activity
+            # Use recent_commits for accurate contributor tracking
+            recent_commits = repo.get('activity', {}).get('recent_commits', [])
+            
+            for commit in recent_commits:
+                author = commit.get('author')
+                if not author or author == 'Private':  # Skip private/anonymous commits
+                    continue
+                    
+                contributors_total.add(author)
                 
-        return {period: len(contributors) for period, contributors in active_contributors.items()}
+                # Parse commit date to check time period
+                commit_date_str = commit.get('date')
+                if commit_date_str:
+                    try:
+                        commit_date = datetime.fromisoformat(commit_date_str.replace('Z', '+00:00'))
+                        if commit_date > week_ago:
+                            contributors_week.add(author)
+                        if commit_date > month_ago:
+                            contributors_month.add(author)
+                    except (ValueError, TypeError):
+                        pass
+            
+            # Also check contributors list for total count
+            for contributor in repo.get('contributors', []):
+                contributors_total.add(contributor.get('login', ''))
+        
+        return {
+            'last_week': len(contributors_week),
+            'last_month': len(contributors_month),
+            'total': len(contributors_total)
+        }
     
     def _generate_activity_heatmap(self, repositories: List[Dict]) -> List[List[int]]:
-        """Generate a weekly activity heatmap"""
+        """Generate a weekly activity heatmap based on recent commits"""
         heatmap = [[0 for _ in range(24)] for _ in range(7)]  # 7 days x 24 hours
         
         for repo in repositories:
-            activity = repo.get('activity', {}).get('commit_activity', [])
-            for week in activity:
-                for day, commits in enumerate(week.get('days', [])):
-                    if commits > 0:
-                        # Simplified distribution across hours
-                        commits_per_hour = commits / 24
-                        for hour in range(24):
-                            heatmap[day][hour] += commits_per_hour
+            # Use recent_commits for accurate heatmap
+            recent_commits = repo.get('activity', {}).get('recent_commits', [])
+            
+            for commit in recent_commits:
+                commit_date_str = commit.get('date')
+                if not commit_date_str:
+                    continue
+                    
+                try:
+                    commit_date = datetime.fromisoformat(commit_date_str.replace('Z', '+00:00'))
+                    day_of_week = commit_date.weekday()  # 0 = Monday, 6 = Sunday
+                    hour = commit_date.hour
+                    heatmap[day_of_week][hour] += 1
+                except (ValueError, TypeError):
+                    pass
                             
         return heatmap
     

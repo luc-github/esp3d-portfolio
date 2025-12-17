@@ -45,10 +45,10 @@ class MarkdownGenerator:
         """Generate header section with badges"""
         stats = data['stats']
         
-        # Generate last update timestamp for badge
+        # Generate last update timestamp for badge (use / as separator to avoid shields.io conflict)
         now = datetime.now(timezone.utc)
-        update_date = now.strftime("%Y--%%20%m--%%20%d%%20%H:%M%%20UTC").replace("--", "%2F")
-        update_display = now.strftime("%Y-%m-%d %H:%M UTC")
+        # Format: 2025 / 12 / 17 03:44 UTC (spaces around / for readability)
+        update_date = now.strftime("%Y %%2F %m %%2F %d %H:%M UTC").replace(" ", "%20")
         
         return [
             '# 🛠️ ESP3D Portfolio',
