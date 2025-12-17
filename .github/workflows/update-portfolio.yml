@@ -39,12 +39,14 @@ jobs:
       - name: Run analysis
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  
+          PRIVATE_REPOS: ${{ secrets.PRIVATE_REPOS }}
         run: |
           PYTHONPATH=$PYTHONPATH:$(pwd) python analyze.py
           
       - name: Commit and push if changed
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          PRIVATE_REPOS: ${{ secrets.PRIVATE_REPOS }}
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
