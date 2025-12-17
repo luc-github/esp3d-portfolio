@@ -205,8 +205,9 @@ class MarkdownGenerator:
         content = ['## 📦 Projects Status', '']
         
         # Sort repositories: main projects first, then dependencies
+        # Filter out private repositories
         sorted_repos = sorted(
-            data['repositories'],
+            [r for r in data['repositories'] if not r.get('is_private', False)],
             key=lambda x: (x['type'] != 'main', x['name'].lower())
         )
         

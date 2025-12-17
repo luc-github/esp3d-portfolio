@@ -42,6 +42,11 @@ class CacheManager:
         # Extract only the relevant parts of config
         relevant_config = {}
         
+        # Schema version - increment this when adding new data fields to force cache refresh
+        # v1: initial version
+        # v2: added version_info from info.json
+        relevant_config['_schema_version'] = 2
+        
         # Always include repositories (most important)
         relevant_config['repositories'] = config.get('repositories', [])
         
