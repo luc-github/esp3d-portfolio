@@ -2,10 +2,11 @@
 
 <div align="center">
 
-![Repositories](https://img.shields.io/badge/Repositories-12-blue)
+![Repositories](https://img.shields.io/badge/Repositories-13-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
-![Dependencies](https://img.shields.io/badge/Dependencies-4-green)
+![Dependencies](https://img.shields.io/badge/Dependencies-5-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-41-yellow)
+![Last Update](https://img.shields.io/badge/Last%20Update-2025-%2012-%2017%2003:44%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -29,6 +30,7 @@
 | [🔗 SSDP_IDF](#user-content-ssdp_idf) | Dependency | SSDP IDF component for ESP32 |
 | [🔗 esp32-usb-serial](#user-content-esp32-usb-serial) | Dependency | Arduino Library to use USB as OTG on ESP32 capable devices based on espressif IDF components |
 | [🔗 EspLuaEngine](#user-content-espluaengine) | Dependency | Add Lua engine to your firmware using ESP boards |
+| [🔗 plugin_oled_display](#user-content-plugin_oled_display) | Dependency | grblHAL plugin for oled display |
 | [📋 Global Issues](#-global-issues) | Overview | All open issues across projects |
 | [📊 Statistics](#-statistics) | Metrics | Project health and activity metrics |
 
@@ -42,20 +44,21 @@ Repository activity rankings based on activity over different time periods.
 
 <div class="activity-ranking">
 
-| Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
-|------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (9) | 3 | 0 | 9.0 |
-| 🥈 2 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
-| 🥉 3 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 11 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 12 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
+|:------------|------------|------|--------|---------|---------|-------------|
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (12) | 4 | 0 | 12.0 |
+| 🥈 2  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (9) | 3 | 0 | 9.0 |
+| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
 
@@ -63,20 +66,21 @@ Repository activity rankings based on activity over different time periods.
 
 <div class="activity-ranking">
 
-| Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
-|------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (63) | 21 | 0 | 9.0 |
-| 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
-| 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.9 |
-| ▪️ 4 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 11 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 12 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
+|:------------|------------|------|--------|---------|---------|-------------|
+| 🥇 1  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (63) | 21 | 0 | 9.0 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (18) | 6 | 0 | 2.6 |
+| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
+| ▪️ 4  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
+| ▪️ 5  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
 
@@ -84,20 +88,21 @@ Repository activity rankings based on activity over different time periods.
 
 <div class="activity-ranking">
 
-| Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
-|------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (63) | 21 | 0 | 2.1 |
-| 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (24) | 8 | 0 | 0.8 |
-| 🥉 3 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (13) | 3 | 2 | 0.4 |
-| ▪️ 4 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
-| ▪️ 5 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 11 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 12 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
+|:------------|------------|------|--------|---------|---------|-------------|
+| 🥇 1  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (63) | 21 | 0 | 2.1 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (25) | 7 | 2 | 0.8 |
+| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (24) | 8 | 0 | 0.8 |
+| ▪️ 4  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 0.3 |
+| ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
+| ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
 
@@ -105,20 +110,21 @@ Repository activity rankings based on activity over different time periods.
 
 <div class="activity-ranking">
 
-| Rank | Repository | Type | Score | Commits | Issues | Activity/Day |
-|------|------------|------|--------|---------|---------|-------------|
-| 🥇 1 | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (98) | 30 | 4 | 0.3 |
-| 🥈 2 | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜ (91) | 27 | 5 | 0.2 |
-| 🥉 3 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (63) | 21 | 0 | 0.2 |
-| ▪️ 4 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (56) | 18 | 1 | 0.2 |
-| ▪️ 5 | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (22) | 6 | 2 | 0.1 |
-| ▪️ 6 | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (13) | 3 | 2 | 0.0 |
-| ▪️ 7 | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (5) | 1 | 1 | 0.0 |
-| ▪️ 8 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (5) | 1 | 1 | 0.0 |
-| ▪️ 9 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 11 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 12 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
+|:------------|------------|------|--------|---------|---------|-------------|
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (110) | 34 | 4 | 0.3 |
+| 🥈 2  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (96) | 32 | 0 | 0.3 |
+| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (91) | 27 | 5 | 0.2 |
+| ▪️ 4  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (63) | 21 | 0 | 0.2 |
+| ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (56) | 18 | 1 | 0.2 |
+| ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (22) | 6 | 2 | 0.1 |
+| ▪️ 7  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (13) | 3 | 2 | 0.0 |
+| ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (5) | 1 | 1 | 0.0 |
+| ▪️ 9  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (5) | 1 | 1 | 0.0 |
+| ▪️ 10 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
 
@@ -129,6 +135,30 @@ Repository activity rankings based on activity over different time periods.
 - Activity/Day = Average daily activity score for the period
 - Higher scores indicate more activity
 
+## ⭐ Popularity Rankings
+
+Repository popularity based on GitHub stars and forks.
+
+<div class="popularity-ranking">
+
+| Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |
+|:------------|------------|------|---------|---------|-------------|
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,924 | 485 | 1,924 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 851 | 335 | 851 |
+| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 113 | 35 | 113 |
+| ▪️ 4  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 53 | 27 | 53 |
+| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 48 | 12 | 48 |
+| ▪️ 6  | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 18 | 5 | 18 |
+| ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | 9 | 5 | 9 |
+| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 9 | 55 | 9 |
+| ▪️ 9  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 8 | 5 | 8 |
+| ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | 3 | 3 | 3 |
+| ▪️ 11 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | 3 | 1 | 3 |
+| ▪️ 12 | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 2 | 0 | 2 |
+| ▪️ 13 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 1 | 0 | 1 |
+
+</div>
+
 ## 📊 Statistics
 
 <details>
@@ -138,10 +168,10 @@ Repository activity rankings based on activity over different time periods.
 
 | Metric | Value |
 |--------|-------|
-| Total Repositories | 12 |
+| Total Repositories | 13 |
 | Main Projects | 8 |
-| Dependencies | 4 |
-| Total Stars | 3039 |
+| Dependencies | 5 |
+| Total Stars | 3042 |
 | Total Forks | 968 |
 
 ### Issue Statistics
@@ -158,9 +188,9 @@ Repository activity rankings based on activity over different time periods.
 ```
 Commit Activity:
 
-Daily    🟦 Few (1-2 commits)            (0.3 commits)
-Weekly   🟦 Few (1-10 commits)           (1.8 commits)
-Monthly  🟦 Few (1-25 commits)           (7.1 commits)
+Daily    🟦 Few (1-2 commits)            (0.4 commits)
+Weekly   🟦 Few (1-10 commits)           (2.5 commits)
+Monthly  🟦 Few (1-25 commits)           (9.8 commits)
 ```
 
 </details>
@@ -201,7 +231,7 @@ Author: Luc
 <summary><h4>🔧 Development Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-12-16 (#1691de4)
+Last commit: 2025-12-17 (#51971e4)
 Author: Luc
 ```
 
@@ -581,6 +611,34 @@ Author: Luc
 
 <hr>
 
+<details open id="plugin_oled_display">
+<summary><h3>🔗 plugin_oled_display</h3></summary>
+<table><tr><td>
+
+**Project**: [plugin_oled_display](https://github.com/luc-github/plugin_oled_display)<br>
+**Type**: Dependency<br>
+**Description**: grblHAL plugin for oled display<br>
+**Language**: Python<br>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
+
+</td></tr></table>
+
+<details>
+<summary><h4>🚀 Production Branch (`main`)</h4></summary>
+
+```
+Last commit: 2025-12-17 (#f4369b0)
+Author: Luc
+```
+
+> 🎉 No open issues
+
+</details>
+
+</details>
+
+<hr>
+
 <details open id="ssdp_idf">
 <summary><h3>🔗 SSDP_IDF</h3></summary>
 <table><tr><td>
@@ -634,7 +692,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -646,17 +704,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -675,7 +729,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -687,17 +741,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -726,7 +776,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -738,17 +788,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -774,7 +820,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -786,17 +832,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -816,7 +858,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -828,17 +870,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -858,7 +896,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -870,17 +908,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -900,7 +934,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -912,17 +946,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -940,7 +970,7 @@ Author: Luc
 
 </details>
 
-**Health Score**: <span style="color: #ff0000">9.0%</span>
+**Health Score**: <span style="color: #ff0000">26.0%</span>
 
 <details>
 <summary>📊 Health Score Details</summary>
@@ -952,17 +982,13 @@ Author: Luc
 - Add more detailed README
 - Create documentation directory
 - Add usage examples
-| Maintenance | 20.0% | 🔴 Needs Attention |
-**Maintenance Suggestions:**
-- Increase commit frequency
-- Address stale issues
-- Set up automated testing
+| Maintenance | 70.0% | 🟢 Excellent |
 | Activity | 0.0% | 🔴 Needs Attention |
 **Activity Suggestions:**
 - Engage with community
 - Regular status updates
 - Promote the project
-| Community | 20.3% | 🔴 Needs Attention |
+| Community | 15.3% | 🔴 Needs Attention |
 **Community Suggestions:**
 - Add contributing guidelines
 - Add code of conduct
@@ -981,7 +1007,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 467 |
+| Commits | 499 |
 | New Issues | 0 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
@@ -1009,7 +1035,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-12-17 02:31:30 UTC*
+*🔄 Last updated: 2025-12-17 03:44:24 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
