@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951759.085838,
+  "timestamp": 1765966946.7225351,
   "data": {
     "name": "Marlin",
     "type": "main",
@@ -2355,6 +2355,12 @@
           "message": "\u26a1\ufe0f More SCURVE cycles on unoptimized cortex-m0 (#24955)",
           "author": "Chris Bagwell",
           "date": "2022-11-28T03:40:11+00:00"
+        },
+        {
+          "sha": "57f6c93",
+          "message": "\u26a1\ufe0f Input Shaping improvements (#24951)",
+          "author": "tombrazier",
+          "date": "2022-11-28T03:38:15+00:00"
         }
       ],
       "commit_activity": [

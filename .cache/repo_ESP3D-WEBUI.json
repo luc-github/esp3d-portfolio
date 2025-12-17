@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765951743.5487037,
+  "timestamp": 1765966843.3171268,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -212,7 +212,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 340,
+        "contributions": 342,
         "url": "https://github.com/luc-github"
       },
       {
@@ -578,6 +578,12 @@
           "message": "Bump version\n\nBuild packages",
           "author": "Luc",
           "date": "2024-08-16T05:40:42+00:00"
+        },
+        {
+          "sha": "f49016a",
+          "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
+          "author": "Luc",
+          "date": "2024-08-16T05:37:49+00:00"
         }
       ],
       "commit_activity": [
@@ -1260,7 +1266,7 @@
       ]
     },
     "statistics": {
-      "size": 118184,
+      "size": 118191,
       "stars": 851,
       "forks": 335,
       "open_issues": 10,
