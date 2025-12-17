@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765847549.2860508,
+  "timestamp": 1765929809.732507,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2025-12-13T23:20:22+00:00",
+    "updated_at": "2025-12-16T08:50:14+00:00",
     "branches": [
       {
         "name": "2.1",
@@ -58,10 +58,10 @@
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "50cbca2",
-          "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D-WEBUI into 3.0",
+          "sha": "b4ad97d",
+          "message": "Build packages for changes",
           "author": "Luc",
-          "date": "2025-12-02T11:33:45+00:00"
+          "date": "2025-12-16T08:50:06+00:00"
         },
         "protected": false,
         "issues": [
@@ -256,7 +256,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 337,
+        "contributions": 340,
         "url": "https://github.com/luc-github"
       },
       {
@@ -318,6 +318,24 @@
     "activity": {
       "recent_commits": [
         {
+          "sha": "b4ad97d",
+          "message": "Build packages for changes",
+          "author": "Luc",
+          "date": "2025-12-16T08:50:06+00:00"
+        },
+        {
+          "sha": "8d01ea7",
+          "message": "Update _control.scss\n\nDecrease padding to be consistent with other panels that use m-1",
+          "author": "Luc",
+          "date": "2025-12-16T08:47:54+00:00"
+        },
+        {
+          "sha": "83ffdb5",
+          "message": "Prepare release",
+          "author": "Luc",
+          "date": "2025-12-16T03:22:46+00:00"
+        },
+        {
           "sha": "50cbca2",
           "message": "Merge branch '3.0' of https://github.com/luc-github/ESP3D-WEBUI into 3.0",
           "author": "Luc",
@@ -358,24 +376,6 @@
           "message": "Update README.md",
           "author": "Luc",
           "date": "2025-11-02T08:16:47+00:00"
-        },
-        {
-          "sha": "f675d47",
-          "message": "Fix table closing tag in README.md",
-          "author": "Luc",
-          "date": "2025-10-09T05:53:08+00:00"
-        },
-        {
-          "sha": "77c2a58",
-          "message": "Add sponsors section and update contributors list\n\nAdded a sponsors section with links and images for various sponsorship tiers. Updated contributors list with new entries.",
-          "author": "Luc",
-          "date": "2025-10-09T05:46:54+00:00"
-        },
-        {
-          "sha": "06247f5",
-          "message": "Prepare code for release",
-          "author": "Luc",
-          "date": "2025-10-09T05:27:08+00:00"
         }
       ],
       "commit_activity": [
@@ -1044,11 +1044,11 @@
         },
         {
           "week": "2025-12-14T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
-            0,
+            3,
             0,
             0,
             0,
@@ -1058,7 +1058,7 @@
       ]
     },
     "statistics": {
-      "size": 117657,
+      "size": 118184,
       "stars": 850,
       "forks": 335,
       "open_issues": 10,
