@@ -7,169 +7,17 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2025-12-17T03:31:53+00:00",
+      "updated_at": "2025-12-17T05:28:18+00:00",
       "branches": [
         {
-          "name": "2.1.x",
+          "name": "3.0",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "80d5ed1",
-            "message": "Update platinum-0 image source in README\n\nUpdated the image source for platinum-0 sponsorship.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "sha": "67bba4b",
+            "message": "Bump firmware version from 3.0.1 to 3.0.2dev\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
             "author": "Luc",
-            "date": "2025-09-15T09:57:21+00:00"
-          },
-          "protected": false,
-          "issues": [
-            {
-              "number": 243,
-              "title": "[FEATURE REQUEST]\ud83e\udd84GCODE Streamer Host definition for 3.X",
-              "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
-              "state": "open",
-              "created_at": "2018-07-14T13:24:33+00:00",
-              "updated_at": "2025-12-08T08:56:32+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/243",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "Feedback Welcome",
-                "ESP3D 3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 2712,
-              "days_since_update": 8,
-              "is_stale": false,
-              "is_recent": false,
-              "activity_status": "inactive",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 795,
-              "title": "[TODO]\u2611Code refactoring plan",
-              "body": "There several area of refactoring in the code they are currently not mandatory but need to be addressed one day, so the purpose it to track them here as they can be a task out of current development because they won't change features but improve code itself and may be make it more robust:\n\n* <s>Change GenLinkedList to vector</s>:+1:\n*<s> Implement better file encapsulation class to cover any new file system and any new arch</s>:+1:\n* Web server abstraction layer to allow to update smoothly to another solution\n* Add https support once there is an HTTP server that is implemented that support it \n* Implement Wifi HAL and Ethernet HAL to avoid any arch def out of the HAL, and only limite the def to the features themself\n* Implement a target HAL to centralize all difference need by specific FW in one file or directory\n* <s>Refactoring the dispatch commands flow to make it more clear and remove unnecessary functions, use the message format of ESP3D-TFT</s>:+1:\n* <s>Request authentication of telnet / websocket only once per session not for each commands</s>:+1: \n* TBD\n\n\nAnyone willing to contribute is welcome of course \ud83d\ude38 in that case open discussion board for the targeted topic first to discussing, status of implementation will be here anyways",
-              "state": "open",
-              "created_at": "2022-07-28T00:34:00+00:00",
-              "updated_at": "2025-03-26T06:51:44+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/795",
-              "is_pr": false,
-              "labels": [
-                "Help Welcome",
-                "Code Simplification",
-                "ESP3D 3.X",
-                "Planned"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1238,
-              "days_since_update": 265,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 568,
-              "title": "[FEATURE REQUEST]\ud83e\udd84USB Disk support using CH376S chip",
-              "body": "Global FS support Flash and SD, now let's try to add USB Flash disk/key using SPI and CH376s Chip\r\n\r\nThis library looks very promising https://github.com/djuseeq/Ch376msc\r\ne\r\nChip is using 3.3 by default but need 5V to power the USB disk\r\nIt need to test features , if work as expected then need to implement an abstraction layer for the USB FS and  add it to the global FS",
-              "state": "open",
-              "created_at": "2021-01-24T19:14:07+00:00",
-              "updated_at": "2024-10-28T12:10:03+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/568",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "ESP3D 3.X",
-                "Planned",
-                "USB"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1787,
-              "days_since_update": 414,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "medium",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 575,
-              "title": "\u23f8\ufe0f[FEATURE REQUEST]\ud83e\udd84Use better serial protocol communication",
-              "body": "Current protocol between printer and ESP3D use raw serial which is ok for GCODE communication but no really efficient for file transfer\r\nMore over if some output come from printer board due to auto send it bring some trouble on file transfer which is already slow\r\n\r\nCurrent MKS protocol encapsulate each command in a frame with specific header,  it also use 2 additionnal pins for notification/ack ,and different headers for GCODE / File transfer / Error, which make coexistance easier\r\nThis protocol allow 110KB/S transfer vs 0.4KB/S M28/M29 transfer and handle GCODE even during transfer.\r\nThat said current MKS protocol miss 2 things:    \r\n* CRC to ensure data are correct\r\n* resend process in case of corrupted data\r\n\r\nI think add a CRC32 should improve reliability and will only use couple of byte on each frame, and calculation should not affect too much performances.  if done when data is received\r\nBased on this crc, if any error happen then do a resend, if more than 2 resend is needed  on same packet, then automaticaly ask for decreasing baudrate to do more secure transfer. \r\n\r\nThis would need to add some code in Printer FW  but will ensure communication for file transfer as well as commands \r\nThis will be between esp3d and printer like on MKS Wifi so external progam won't be affected.\r\n\r\nI am considering to write a library that could be used to hook the serial wifi port, but this also means need a dedicated wifi port like BTT do for board or TFT or an available UART port  \r\nIf Serial port  is same as USB one, it won't work (e.g: Mega/Ramps and aux 1),  so I need to see if can handle raw serial in same time or consider it as limitation= no support of shared solution, may add custom GCODE  to switch from one mode to another ?\r\nIn addition it need 2 additional pins available.\r\n\r\nThis would allow to remove the need of supporting the slow and unreliable M28/M29 protocol but bring more work on ESP3D part by adding a daughter library / Serial protocol accross FW  (Repetier / Marlin / Smoothieware/ TBD...)\r\n\r\nAny feedback /comment is welcome  \r\n\r\n",
-              "state": "open",
-              "created_at": "2021-02-01T12:13:07+00:00",
-              "updated_at": "2024-03-06T00:14:48+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/575",
-              "is_pr": false,
-              "labels": [
-                "Feature request",
-                "Feedback Welcome",
-                "ESP3D 3.X"
-              ],
-              "priority": "normal",
-              "assignee": "luc-github",
-              "age_days": 1779,
-              "days_since_update": 651,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "in_progress"
-            }
-          ],
-          "issue_summary": {
-            "total": 4,
-            "open": 4,
-            "closed": 0,
-            "priorities": {
-              "normal": 4
-            },
-            "ages": {
-              "recent": 0,
-              "active": 1,
-              "stale": 3
-            },
-            "complexity": {
-              "medium": 4
-            },
-            "size": {
-              "medium": 2,
-              "large": 2
-            },
-            "lifecycle": {
-              "new": 3,
-              "in_progress": 1
-            }
-          }
-        },
-        {
-          "name": "3.0",
-          "label": "Development",
-          "is_production": false,
-          "last_commit": {
-            "sha": "51971e4",
-            "message": "Revise README for ESP3D V3.0 updates\n\nUpdated README.md to reflect changes in ESP3D version and added relevant badges.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-            "author": "Luc",
-            "date": "2025-12-17T03:31:50+00:00"
+            "date": "2025-12-17T05:28:13+00:00"
           },
           "protected": false,
           "issues": [
@@ -317,7 +165,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 558,
+          "contributions": 559,
           "url": "https://github.com/luc-github"
         },
         {
@@ -393,6 +241,12 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "67bba4b",
+            "message": "Bump firmware version from 3.0.1 to 3.0.2dev\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "author": "Luc",
+            "date": "2025-12-17T05:28:13+00:00"
+          },
           {
             "sha": "51971e4",
             "message": "Revise README for ESP3D V3.0 updates\n\nUpdated README.md to reflect changes in ESP3D version and added relevant badges.\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -686,12 +540,6 @@
             "message": "Add auto notification to USB Serial",
             "author": "Luc",
             "date": "2024-10-20T12:21:57+00:00"
-          },
-          {
-            "sha": "b409371",
-            "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
-            "author": "Luc",
-            "date": "2024-10-19T10:13:45+00:00"
           }
         ],
         "commit_activity": [
@@ -1360,12 +1208,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 5,
+            "total": 6,
             "days": [
               0,
               0,
               1,
-              4,
+              5,
               0,
               0,
               0
@@ -1374,7 +1222,7 @@
         ]
       },
       "statistics": {
-        "size": 135127,
+        "size": 135147,
         "stars": 1924,
         "forks": 485,
         "open_issues": 4,
@@ -2564,104 +2412,17 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2025-12-17T03:22:06+00:00",
+      "updated_at": "2025-12-17T05:37:17+00:00",
       "branches": [
         {
-          "name": "2.1",
+          "name": "3.0",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "ba368b6",
-            "message": "Update platinum-0 sponsor image source",
+            "sha": "338d4b8",
+            "message": "Update badge labels in README.md",
             "author": "Luc",
-            "date": "2025-09-15T09:57:40+00:00"
-          },
-          "protected": false,
-          "issues": [
-            {
-              "number": 418,
-              "title": "Updated to 2.1.3c0 version",
-              "body": "### Changes include:\r\n- [x] Bootstrap update to v3.4.1\r\n- [x] many appearance changes aimed at: **unification** (elements that look the same now have the same HTML code and classes), **alignment** (e.g. button dimensions adapted to other elements in the line, appearance of the panels), **spaces**, **readability** (e.g. button colors and some icons, enlarged temperature diagram),\r\n- [x] tabs look and work as it should,\r\n- [x] removed unused CSS classes,\r\n- [x] some new IDs and Classes added,\r\n- [x] HTML code error corrected,\r\n- [x] omitted phrases were included in the translation,\r\n- [x] filename `tab_bar.html` changed to `tabbar.html` (nomenclature as `navbar.html` and `dashbar.html` without an `_` inside).\r\n\r\nIt is worth knowing that `tab_bar.html` is unnecessary. Forgive me, but I forgot to delete the file before committing the pull request. You can remove the file manually.\r\nI set the version to 2.1.3c0, which means it works the same as your 2.1.3b0 but has some appearance changes (c = custom). If you preffer to continue the beta numbering, simply change it to 2.1.3.b1.\r\n\r\n> [!IMPORTANT]\r\n> **The operation and functionality of the user interface have not changed.**\r\n\r\n> [!NOTE]\r\n> **The code was repeatedly compiled and tested on a test ESP01s and finally tested on a second ESP01s placed in the printer. I found no defects.**\r\n\r\n### The changes are best seen in the pictures below.\r\nBefore changes:\r\n<img width=\"1903\" height=\"1196\" alt=\"2 1 3b0_Dashboard\" src=\"https://github.com/user-attachments/assets/77fb9a52-e5ee-46da-a1c3-ab15967de4d4\" />\r\nAfter changes:\r\n<img width=\"1903\" height=\"1120\" alt=\"2 1 3c0_Dashboard\" src=\"https://github.com/user-attachments/assets/748dd0aa-1ede-418a-ade3-5375700ca6ac\" />\r\n",
-              "state": "open",
-              "created_at": "2025-09-20T14:45:06+00:00",
-              "updated_at": "2025-09-23T17:05:44+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/418",
-              "is_pr": true,
-              "labels": [],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 87,
-              "days_since_update": 84,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 414,
-              "title": "[FEATURE REQUEST]Add filament runout sensor status to WEB UI",
-              "body": "It will be excellent if there is possibility to monitor filament sensor status in Marlin messages and display it in WEB UI\n\nFor example if filament is OK, display green sign, when runs out, display red sign and some message.",
-              "state": "open",
-              "created_at": "2025-08-31T16:17:27+00:00",
-              "updated_at": "2025-09-01T07:12:33+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/414",
-              "is_pr": false,
-              "labels": [
-                "Feature request"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 107,
-              "days_since_update": 106,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
-              "size_estimate": "small",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            }
-          ],
-          "issue_summary": {
-            "total": 2,
-            "open": 2,
-            "closed": 0,
-            "priorities": {
-              "normal": 2
-            },
-            "ages": {
-              "recent": 0,
-              "active": 0,
-              "stale": 2
-            },
-            "complexity": {
-              "medium": 2
-            },
-            "size": {
-              "large": 1,
-              "small": 1
-            },
-            "lifecycle": {
-              "new": 2
-            }
-          }
-        },
-        {
-          "name": "3.0",
-          "label": "Development",
-          "is_production": false,
-          "last_commit": {
-            "sha": "b4ad97d",
-            "message": "Build packages for changes",
-            "author": "Luc",
-            "date": "2025-12-16T08:50:06+00:00"
+            "date": "2025-12-17T05:37:13+00:00"
           },
           "protected": false,
           "issues": [
@@ -2939,7 +2700,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1316,
+              "age_days": 1317,
               "days_since_update": 1289,
               "is_stale": true,
               "is_recent": false,
@@ -3042,6 +2803,18 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "338d4b8",
+            "message": "Update badge labels in README.md",
+            "author": "Luc",
+            "date": "2025-12-17T05:37:13+00:00"
+          },
+          {
+            "sha": "158124b",
+            "message": "Add 'devt' field to info.json",
+            "author": "Luc",
+            "date": "2025-12-17T05:29:38+00:00"
+          },
           {
             "sha": "b4ad97d",
             "message": "Build packages for changes",
@@ -3329,18 +3102,6 @@
             "message": "remove .gz extension in url for local extension\n\nBump Version\nBuild packages",
             "author": "Luc",
             "date": "2024-08-21T01:15:54+00:00"
-          },
-          {
-            "sha": "3c8f38f",
-            "message": "Bump version\n\nBuild packages",
-            "author": "Luc",
-            "date": "2024-08-16T05:40:42+00:00"
-          },
-          {
-            "sha": "f49016a",
-            "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
-            "author": "Luc",
-            "date": "2024-08-16T05:37:49+00:00"
           }
         ],
         "commit_activity": [
@@ -4009,12 +3770,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 3,
+            "total": 5,
             "days": [
               0,
               0,
               3,
-              0,
+              2,
               0,
               0,
               0
@@ -4130,7 +3891,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 697,
+              "age_days": 698,
               "days_since_update": 367,
               "is_stale": true,
               "is_recent": false,
@@ -4184,8 +3945,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 489,
-              "days_since_update": 489,
+              "age_days": 490,
+              "days_since_update": 490,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4210,7 +3971,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 604,
+              "age_days": 605,
               "days_since_update": 491,
               "is_stale": true,
               "is_recent": false,
@@ -4237,8 +3998,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 709,
-              "days_since_update": 709,
+              "age_days": 710,
+              "days_since_update": 710,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16242,225 +16003,225 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749134,
+      "total_size": 749154,
       "total_stars": 3042,
       "total_forks": 968,
       "branches": {
         "production": 11,
-        "development": 6,
+        "development": 4,
         "protected": 0
       }
     },
     "issues": {
-      "total_count": 41,
-      "open_count": 41,
+      "total_count": 35,
+      "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1046.8419808475273,
+      "avg_age_days": 1005.9890441607307,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 41
+        "normal": 35
       },
       "recent_activity": {
         "last_day": 0,
         "last_week": 0,
-        "last_month": 2
+        "last_month": 1
       }
     },
     "activity": {
-      "total_commits": 499,
+      "total_commits": 36,
       "commit_frequency": {
-        "daily": 0.3516483516483517,
-        "weekly": 2.4615384615384612,
-        "monthly": 9.846153846153845
+        "daily": 0.3598901098901099,
+        "weekly": 2.519230769230769,
+        "monthly": 10.076923076923077
       },
       "active_contributors": {
-        "last_week": 0,
-        "last_month": 0,
-        "total": 430
+        "last_week": 1,
+        "last_month": 4,
+        "total": 449
       },
       "activity_heatmap": [
         [
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125,
-          1.125
+          3,
+          5,
+          9,
+          6,
+          4,
+          8,
+          2,
+          7,
+          5,
+          13,
+          2,
+          0,
+          5,
+          2,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          1,
+          5,
+          2,
+          1
         ],
         [
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75,
-          0.75
+          3,
+          1,
+          1,
+          9,
+          2,
+          2,
+          6,
+          10,
+          7,
+          3,
+          5,
+          9,
+          4,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          4
         ],
         [
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665,
-          0.6666666666666665
+          1,
+          10,
+          3,
+          7,
+          7,
+          4,
+          6,
+          5,
+          2,
+          2,
+          3,
+          5,
+          7,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          3,
+          4
         ],
         [
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333,
-          1.083333333333333
+          0,
+          14,
+          1,
+          11,
+          18,
+          5,
+          12,
+          7,
+          10,
+          5,
+          8,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
         ],
         [
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0,
-          1.0
+          4,
+          6,
+          2,
+          0,
+          6,
+          9,
+          5,
+          0,
+          1,
+          0,
+          2,
+          2,
+          1,
+          5,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0
         ],
         [
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333,
-          0.3333333333333333
+          4,
+          0,
+          0,
+          2,
+          2,
+          2,
+          5,
+          1,
+          5,
+          5,
+          1,
+          5,
+          3,
+          2,
+          2,
+          4,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
         [
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375,
-          0.375
+          2,
+          9,
+          6,
+          3,
+          2,
+          1,
+          5,
+          11,
+          7,
+          4,
+          2,
+          4,
+          6,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          2,
+          0,
+          3,
+          1,
+          1
         ]
       ]
     },
@@ -16476,11 +16237,11 @@
         },
         {
           "date": "2025-09",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2025-08",
-          "count": 2
+          "count": 1
         },
         {
           "date": "2025-07",
@@ -16772,7 +16533,7 @@
         },
         {
           "date": "2025-12-14",
-          "count": 32
+          "count": 35
         },
         {
           "date": "2025-03-15",
@@ -16922,6 +16683,27 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 15
+        },
+        "details": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 5.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "is_private": false,
+        "score": {
           "commits": 4,
           "issues": 0,
           "comments": 0,
@@ -16954,27 +16736,6 @@
           "issues": 0,
           "comments": 0,
           "commits_per_day": 3.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "is_private": false,
-        "score": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 6
-        },
-        "details": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -17218,17 +16979,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 6,
+          "commits": 7,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 18
+          "total": 21
         },
         "details": {
-          "commits": 6,
+          "commits": 7,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.8571428571428571,
+          "commits_per_day": 1.0,
           "issues_per_day": 0.0
         }
       },
@@ -17239,17 +17000,17 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
-          "commits": 3,
+          "commits": 5,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 9
+          "total": 15
         },
         "details": {
-          "commits": 3,
+          "commits": 5,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.42857142857142855,
+          "commits_per_day": 0.7142857142857143,
           "issues_per_day": 0.0
         }
       },
@@ -17487,45 +17248,45 @@
         }
       },
       {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "is_private": false,
-        "score": {
-          "commits": 7,
-          "issues": 2,
-          "comments": 0,
-          "period_days": 30,
-          "total": 25
-        },
-        "details": {
-          "commits": 7,
-          "issues": 2,
-          "comments": 0,
-          "commits_per_day": 0.23333333333333334,
-          "issues_per_day": 0.06666666666666667
-        }
-      },
-      {
         "name": "ESP3D-WEBUI",
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
-          "commits": 8,
+          "commits": 10,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 24
+          "total": 30
+        },
+        "details": {
+          "commits": 10,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.3333333333333333,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "is_private": false,
+        "score": {
+          "commits": 8,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 30,
+          "total": 26
         },
         "details": {
           "commits": 8,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.26666666666666666,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -17747,18 +17508,18 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 34,
-          "issues": 4,
+          "commits": 35,
+          "issues": 2,
           "comments": 0,
           "period_days": 365,
-          "total": 110
+          "total": 109
         },
         "details": {
-          "commits": 34,
-          "issues": 4,
+          "commits": 35,
+          "issues": 2,
           "comments": 0,
-          "commits_per_day": 0.09315068493150686,
-          "issues_per_day": 0.010958904109589041
+          "commits_per_day": 0.0958904109589041,
+          "issues_per_day": 0.005479452054794521
         }
       },
       {
@@ -17789,18 +17550,18 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
-          "commits": 27,
-          "issues": 5,
+          "commits": 29,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 91
+          "total": 93
         },
         "details": {
-          "commits": 27,
-          "issues": 5,
+          "commits": 29,
+          "issues": 3,
           "comments": 0,
-          "commits_per_day": 0.07397260273972603,
-          "issues_per_day": 0.0136986301369863
+          "commits_per_day": 0.07945205479452055,
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
