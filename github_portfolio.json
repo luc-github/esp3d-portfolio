@@ -38,7 +38,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2712,
+              "age_days": 2713,
               "days_since_update": 9,
               "is_stale": false,
               "is_recent": false,
@@ -67,7 +67,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1238,
+              "age_days": 1239,
               "days_since_update": 266,
               "is_stale": true,
               "is_recent": false,
@@ -96,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1787,
-              "days_since_update": 414,
+              "age_days": 1788,
+              "days_since_update": 415,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1779,
-              "days_since_update": 651,
+              "age_days": 1780,
+              "days_since_update": 652,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2499,8 +2499,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 87,
-              "days_since_update": 84,
+              "age_days": 88,
+              "days_since_update": 85,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2525,7 +2525,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 107,
+              "age_days": 108,
               "days_since_update": 107,
               "is_stale": true,
               "is_recent": false,
@@ -2583,7 +2583,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1312,
+              "age_days": 1313,
               "days_since_update": 387,
               "is_stale": true,
               "is_recent": false,
@@ -2613,7 +2613,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1893,
+              "age_days": 1894,
               "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
@@ -2642,7 +2642,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1973,
+              "age_days": 1974,
               "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
@@ -2674,7 +2674,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 562,
+              "age_days": 563,
               "days_since_update": 430,
               "is_stale": true,
               "is_recent": false,
@@ -2730,7 +2730,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2173,
+              "age_days": 2174,
               "days_since_update": 1220,
               "is_stale": true,
               "is_recent": false,
@@ -3926,7 +3926,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 211,
+              "age_days": 212,
               "days_since_update": 141,
               "is_stale": true,
               "is_recent": false,
@@ -3954,7 +3954,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 700,
-              "days_since_update": 222,
+              "days_since_update": 223,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4062,7 +4062,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 605,
-              "days_since_update": 491,
+              "days_since_update": 492,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4143,8 +4143,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1173,
-              "days_since_update": 1173,
+              "age_days": 1174,
+              "days_since_update": 1174,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8377,8 +8377,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 281,
-              "days_since_update": 281,
+              "age_days": 282,
+              "days_since_update": 282,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10690,7 +10690,7 @@
         ]
       },
       "statistics": {
-        "size": 114193,
+        "size": 114197,
         "stars": 9,
         "forks": 55,
         "open_issues": 3,
@@ -10719,17 +10719,17 @@
       "url": "https://github.com/luc-github/esp3d-webinstaller",
       "language": "JavaScript",
       "created_at": "2025-12-14T01:52:22+00:00",
-      "updated_at": "2025-12-17T08:41:59+00:00",
+      "updated_at": "2025-12-17T12:16:00+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "68f6222",
-            "message": "Update README.md",
+            "sha": "f738bac",
+            "message": "Add version in footer",
             "author": "Luc",
-            "date": "2025-12-17T08:41:55+00:00"
+            "date": "2025-12-17T12:15:54+00:00"
           },
           "protected": false,
           "issues": [],
@@ -10752,12 +10752,30 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 23,
+          "contributions": 26,
           "url": "https://github.com/luc-github"
         }
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "f738bac",
+            "message": "Add version in footer",
+            "author": "Luc",
+            "date": "2025-12-17T12:15:54+00:00"
+          },
+          {
+            "sha": "49c64b9",
+            "message": "Merge branch 'main' of https://github.com/luc-github/esp3d-webinstaller",
+            "author": "Luc",
+            "date": "2025-12-17T11:56:25+00:00"
+          },
+          {
+            "sha": "c56d71a",
+            "message": "externalize version",
+            "author": "Luc",
+            "date": "2025-12-17T11:56:22+00:00"
+          },
           {
             "sha": "68f6222",
             "message": "Update README.md",
@@ -11563,12 +11581,12 @@
           },
           {
             "week": "2025-12-14T00:00:00+00:00",
-            "total": 23,
+            "total": 25,
             "days": [
               8,
               13,
               0,
-              2,
+              4,
               0,
               0,
               0
@@ -11577,7 +11595,7 @@
         ]
       },
       "statistics": {
-        "size": 3573,
+        "size": 3580,
         "stars": 1,
         "forks": 0,
         "open_issues": 0,
@@ -16691,8 +16709,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4688,
-      "reset": "2025-12-17T12:01:45+00:00"
+      "remaining": 4779,
+      "reset": "2025-12-18T02:06:37+00:00"
     }
   },
   "stats": {
@@ -16707,7 +16725,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749243,
+      "total_size": 749254,
       "total_stars": 3042,
       "total_forks": 968,
       "branches": {
@@ -16721,7 +16739,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1006.2090284220733,
+      "avg_age_days": 1006.7929856872471,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
@@ -16733,11 +16751,11 @@
       }
     },
     "activity": {
-      "total_commits": 80,
+      "total_commits": 81,
       "commit_frequency": {
-        "daily": 0.42307692307692313,
-        "weekly": 2.9615384615384612,
-        "monthly": 11.846153846153845
+        "daily": 0.4285714285714286,
+        "weekly": 2.9999999999999996,
+        "monthly": 11.999999999999998
       },
       "active_contributors": {
         "last_week": 1,
@@ -16809,8 +16827,8 @@
           11,
           6,
           7,
-          5,
-          10,
+          7,
+          11,
           2,
           2,
           2,
@@ -17237,7 +17255,7 @@
         },
         {
           "date": "2025-12-14",
-          "count": 58
+          "count": 60
         },
         {
           "date": "2025-03-15",
@@ -17402,6 +17420,27 @@
         }
       },
       {
+        "name": "esp3d-webinstaller",
+        "type": "main",
+        "description": "Web Installer for ESP32 projects",
+        "url": "https://github.com/luc-github/esp3d-webinstaller",
+        "is_private": false,
+        "score": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 15
+        },
+        "details": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 5.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "plugin_oled_display",
         "type": "dependency",
         "description": "grblHAL plugin for oled display",
@@ -17549,27 +17588,6 @@
         }
       },
       {
-        "name": "esp3d-webinstaller",
-        "type": "main",
-        "description": "Web Installer for ESP32 projects",
-        "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 6
-        },
-        "details": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 2.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP32SSDP",
         "type": "dependency",
         "description": "Simple SSDP library for ESP32",
@@ -17633,32 +17651,32 @@
         }
       },
       {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
-        "score": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 3
-        },
-        "details": {
-          "commits": 1,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 1.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "Marlin",
         "type": "main",
         "description": "Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.",
         "url": "https://github.com/luc-github/Marlin",
         "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
         "score": {
           "commits": 0,
           "issues": 0,
@@ -17683,17 +17701,17 @@
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 23,
+          "commits": 26,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 69
+          "total": 78
         },
         "details": {
-          "commits": 23,
+          "commits": 26,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.2857142857142856,
+          "commits_per_day": 3.7142857142857144,
           "issues_per_day": 0.0
         }
       },
@@ -17704,17 +17722,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 21,
+          "commits": 19,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 63
+          "total": 57
         },
         "details": {
-          "commits": 21,
+          "commits": 19,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.0,
+          "commits_per_day": 2.7142857142857144,
           "issues_per_day": 0.0
         }
       },
@@ -18000,17 +18018,17 @@
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 23,
+          "commits": 26,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 69
+          "total": 78
         },
         "details": {
-          "commits": 23,
+          "commits": 26,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.7666666666666667,
+          "commits_per_day": 0.8666666666666667,
           "issues_per_day": 0.0
         }
       },
@@ -18338,17 +18356,17 @@
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
-          "commits": 28,
+          "commits": 27,
           "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 90
+          "total": 87
         },
         "details": {
-          "commits": 28,
+          "commits": 27,
           "issues": 3,
           "comments": 0,
-          "commits_per_day": 0.07671232876712329,
+          "commits_per_day": 0.07397260273972603,
           "issues_per_day": 0.00821917808219178
         }
       },
@@ -18359,17 +18377,17 @@
         "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 23,
+          "commits": 26,
           "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 69
+          "total": 78
         },
         "details": {
-          "commits": 23,
+          "commits": 26,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.06301369863013699,
+          "commits_per_day": 0.07123287671232877,
           "issues_per_day": 0.0
         }
       },

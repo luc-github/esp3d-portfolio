@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-35-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2017%2011:08%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2018%2001:09%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -47,19 +47,19 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (18) | 6 | 0 | 18.0 |
-| 🥈 2  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (12) | 4 | 0 | 12.0 |
-| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
-| ▪️ 4  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
-| ▪️ 5  | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
-| ▪️ 6  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
-| ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
-| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
-| ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
+| 🥈 2  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (15) | 5 | 0 | 15.0 |
+| 🥉 3  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (12) | 4 | 0 | 12.0 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
+| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
+| ▪️ 6  | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (9) | 3 | 0 | 9.0 |
+| ▪️ 7  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
+| ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
+| ▪️ 9  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
 | ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
 | ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
 | ▪️ 12 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
-| ▪️ 13 | Private Project #1 | Private | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 3.0 |
-| ▪️ 14 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 14 | Private Project #1 | Private | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
 
@@ -69,10 +69,10 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (69) | 23 | 0 | 9.9 |
-| 🥈 2  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜ (63) | 21 | 0 | 9.0 |
+| 🥇 1  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (78) | 26 | 0 | 11.1 |
+| 🥈 2  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (57) | 19 | 0 | 8.1 |
 | 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (24) | 8 | 0 | 3.4 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (15) | 5 | 0 | 2.1 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (15) | 5 | 0 | 2.1 |
 | ▪️ 5  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 1.7 |
 | ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
 | ▪️ 7  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
@@ -93,7 +93,7 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 5.4 |
-| 🥈 2  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (69) | 23 | 0 | 2.3 |
+| 🥈 2  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (78) | 26 | 0 | 2.6 |
 | 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (30) | 10 | 0 | 1.0 |
 | ▪️ 4  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (29) | 9 | 1 | 1.0 |
 | ▪️ 5  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 0.4 |
@@ -118,8 +118,8 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 0.4 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (112) | 36 | 2 | 0.3 |
 | 🥉 3  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (99) | 33 | 0 | 0.3 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (90) | 28 | 3 | 0.2 |
-| ▪️ 5  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (69) | 23 | 0 | 0.2 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (87) | 27 | 3 | 0.2 |
+| ▪️ 5  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (78) | 26 | 0 | 0.2 |
 | ▪️ 6  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (62) | 20 | 1 | 0.2 |
 | ▪️ 7  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (31) | 9 | 2 | 0.1 |
 | ▪️ 8  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (22) | 6 | 2 | 0.1 |
@@ -184,7 +184,7 @@ Repository popularity based on GitHub stars and forks.
 |--------|-------|
 | Open Issues | 35 |
 | Closed Issues | 0 |
-| Average Age | 1006.2 days |
+| Average Age | 1006.8 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -194,7 +194,7 @@ Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.4 commits)
 Weekly   🟦 Few (1-10 commits)           (3.0 commits)
-Monthly  🟦 Few (1-25 commits)           (11.8 commits)
+Monthly  🟦 Few (1-25 commits)           (12.0 commits)
 ```
 
 </details>
@@ -327,7 +327,7 @@ Author: Luc
 <summary><h4>🚀 Production Branch (`main`)</h4></summary>
 
 ```
-Last commit: 2025-12-17 (#68f6222)
+Last commit: 2025-12-17 (#f738bac)
 Author: Luc
 ```
 
@@ -1016,7 +1016,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 80 |
+| Commits | 81 |
 | New Issues | 0 |
 | Closed Issues | 0 |
 | Active Contributors | 1 |
@@ -1044,7 +1044,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-12-17 11:08:37 UTC*
+*🔄 Last updated: 2025-12-18 01:09:31 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
