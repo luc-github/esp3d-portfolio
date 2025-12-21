@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766192759.5018802,
+  "timestamp": 1766279722.8750832,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2025-12-17T08:55:47+00:00",
+    "updated_at": "2025-12-21T00:13:33+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -503,19 +503,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2024-12-22T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2024-12-29T00:00:00+00:00",
           "total": 0,
@@ -1178,15 +1165,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2025-12-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 135156,
-      "stars": 1924,
+      "stars": 1927,
       "forks": 485,
       "open_issues": 4,
-      "watchers": 1924,
+      "watchers": 1927,
       "default_branch": "3.0"
     },
     "version_info": {

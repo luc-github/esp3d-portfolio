@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766192820.2391758,
+  "timestamp": 1766279785.6963487,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "HTML",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2025-12-17T10:33:24+00:00",
+    "updated_at": "2025-12-20T20:01:38+00:00",
     "branches": [
       {
         "name": "main",
@@ -447,19 +447,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2024-12-22T00:00:00+00:00",
-          "total": 1,
-          "days": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2024-12-29T00:00:00+00:00",
           "total": 5,
@@ -1122,15 +1109,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2025-12-21T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 114197,
-      "stars": 9,
-      "forks": 56,
+      "stars": 10,
+      "forks": 57,
       "open_issues": 3,
-      "watchers": 9,
+      "watchers": 10,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
     },
