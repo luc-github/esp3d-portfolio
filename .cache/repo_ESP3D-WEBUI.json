@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766884833.6685128,
+  "timestamp": 1766970997.762298,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 438,
+            "title": "Adding a custom logo",
+            "body": "Hi Luc, thank you for this absolute masterpiece of a Web UI. it\u2019s truly impressive\nI was just wondering if it\u2019s possible to add a custom logo for my project. How can I create and use my own logo in the ESP3D Web ui?",
+            "state": "open",
+            "created_at": "2025-12-28T15:07:59+00:00",
+            "updated_at": "2025-12-28T15:07:59+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/438",
+            "is_pr": false,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 418,
             "title": "Updated to 2.1.3c0 version",
@@ -1281,7 +1295,7 @@
       "size": 118191,
       "stars": 852,
       "forks": 337,
-      "open_issues": 10,
+      "open_issues": 11,
       "watchers": 852,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"

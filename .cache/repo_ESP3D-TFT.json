@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766884888.2667096,
+  "timestamp": 1766971015.2873235,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 82,
+            "title": "[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]",
+            "body": "\nUses the following hardware:\n\nSoC: ESP32-WROOM-32U-N8\nCapacitive Touch Panel Controller: FT6336U (I2C)\n3.5\" Capacitive Touch Panel: CL35BC219-40A (SPI)\nResolution: 480x320 \nUSB-C: Wired to an onboard CH340C USB to serial chip \nRJ11 serial port: To the host CNC controller\n1x Unpopulated space for a beeper\n1x Extra Button\n\n![Image](https://github.com/user-attachments/assets/171dfd7e-8f87-436d-8ace-1dffe7be96e0)\n![Image](https://github.com/user-attachments/assets/529f10b9-d63f-4f92-bc49-c68285c9a8ea)\n![Image](https://github.com/user-attachments/assets/20a87c13-1197-4457-8514-f9c36363e433)",
+            "state": "open",
+            "created_at": "2025-12-28T11:45:37+00:00",
+            "updated_at": "2025-12-28T15:24:44+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-TFT/issues/82",
+            "is_pr": false,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 81,
             "title": "The serial port cannot be connected to the printer, but the USB serial port can",
@@ -1214,7 +1228,7 @@
       "size": 100378,
       "stars": 48,
       "forks": 13,
-      "open_issues": 9,
+      "open_issues": 10,
       "watchers": 48,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
