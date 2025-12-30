@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-37-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2029%2001:19%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2025%20%2F%2012%20%2F%2030%2001:12%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -46,20 +46,20 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (2) | 0 | 1 | 2.0 |
-| 🥈 2  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (2) | 0 | 1 | 2.0 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 3.0 |
+| 🥈 2  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (2) | 0 | 1 | 2.0 |
 | 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 11 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 12 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 13 | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 14 | Private Project #1 | Private | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 14 | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
 
@@ -69,9 +69,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (21) | 7 | 0 | 3.0 |
-| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
-| 🥉 3  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (18) | 6 | 0 | 2.6 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
+| 🥉 3  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
 | ▪️ 4  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -147,13 +147,13 @@ Repository popularity based on GitHub stars and forks.
 
 | Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |
 |:------------|------------|------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,930 | 485 | 1,930 |
-| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 852 | 337 | 852 |
-| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 114 | 35 | 114 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,932 | 485 | 1,932 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 853 | 338 | 853 |
+| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 115 | 35 | 115 |
 | ▪️ 4  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 53 | 27 | 53 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 48 | 13 | 48 |
 | ▪️ 6  | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 18 | 5 | 18 |
-| ▪️ 7  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 10 | 59 | 10 |
+| ▪️ 7  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 10 | 60 | 10 |
 | ▪️ 8  | [Marlin](https://github.com/luc-github/Marlin) | Main | 9 | 5 | 9 |
 | ▪️ 9  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 8 | 5 | 8 |
 | ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | 3 | 3 | 3 |
@@ -175,8 +175,8 @@ Repository popularity based on GitHub stars and forks.
 | Total Repositories | 14 |
 | Main Projects | 8 |
 | Dependencies | 6 |
-| Total Stars | 3051 |
-| Total Forks | 975 |
+| Total Stars | 3055 |
+| Total Forks | 977 |
 
 ### Issue Statistics
 
@@ -184,7 +184,7 @@ Repository popularity based on GitHub stars and forks.
 |--------|-------|
 | Open Issues | 37 |
 | Closed Issues | 0 |
-| Average Age | 962.8 days |
+| Average Age | 963.8 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -293,7 +293,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2025-12-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2025-12-29</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#81: <a href="https://github.com/luc-github/ESP3D-TFT/issues/81">The serial port cannot be connected to the printer, but the USB serial port can</a></td><td><code>2025-05-19</code></td><td><code>2025-07-29</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#54: <a href="https://github.com/luc-github/ESP3D-TFT/issues/54">[FEATURE REQUEST]Move to lvgl 9.0</a></td><td><code>2024-01-17</code></td><td><code>2025-05-08</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-12-14</code></td><td style="color: #000000">normal</td></tr>
@@ -799,7 +799,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🔧 main</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2025-12-28</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2025-12-29</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#81: <a href="https://github.com/luc-github/ESP3D-TFT/issues/81">The serial port cannot be connected to the printer, but the USB serial port can</a></td><td><code>2025-05-19</code></td><td><code>2025-07-29</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#54: <a href="https://github.com/luc-github/ESP3D-TFT/issues/54">[FEATURE REQUEST]Move to lvgl 9.0</a></td><td><code>2024-01-17</code></td><td><code>2025-05-08</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#55: <a href="https://github.com/luc-github/ESP3D-TFT/issues/55">[FEATURE REQUEST]Code review / refactoring / improvement</a></td><td><code>2024-01-19</code></td><td><code>2024-12-14</code></td><td style="color: #000000">normal</td></tr>
@@ -1020,7 +1020,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 7 |
+| Commits | 6 |
 | New Issues | 2 |
 | Closed Issues | 0 |
 | Active Contributors | 0 |
@@ -1048,7 +1048,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2025-12-29 01:19:52 UTC*
+*🔄 Last updated: 2025-12-30 01:12:29 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
