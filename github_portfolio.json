@@ -22,6 +22,44 @@
           "protected": false,
           "issues": [
             {
+              "number": 1111,
+              "title": "Bump urllib3 from 1.26.5 to 2.6.3 in /libraries/lvgl-8.2.0/docs",
+              "body": "Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.5 to 2.6.3.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/urllib3/urllib3/releases\">urllib3's releases</a>.</em></p>\n<blockquote>\n<h2>2.6.3</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Changes</h2>\n<ul>\n<li>Fixed a security issue where decompression-bomb safeguards of the streaming API were bypassed when HTTP redirects were followed. (CVE-2026-21441 reported by <a href=\"https://github.com/D47A\"><code>@\u200bD47A</code></a>, 8.9 High, GHSA-38jv-5279-wg99)</li>\n<li>Started treating <code>Retry-After</code> times greater than 6 hours as 6 hours by default. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3743\">urllib3/urllib3#3743</a>)</li>\n<li>Fixed <code>urllib3.connection.VerifiedHTTPSConnection</code> on Emscripten. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3752\">urllib3/urllib3#3752</a>)</li>\n</ul>\n<h2>2.6.2</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Changes</h2>\n<ul>\n<li>Fixed <code>HTTPResponse.read_chunked()</code> to properly handle leftover data in the decoder's buffer when reading compressed chunked responses. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3734\">urllib3/urllib3#3734</a>)</li>\n</ul>\n<h2>2.6.1</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Changes</h2>\n<ul>\n<li>Restore previously removed <code>HTTPResponse.getheaders()</code> and <code>HTTPResponse.getheader()</code> methods. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3731\">#3731</a>)</li>\n</ul>\n<h2>2.6.0</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Security</h2>\n<ul>\n<li>Fixed a security issue where streaming API could improperly handle highly compressed HTTP content (&quot;decompression bombs&quot;) leading to excessive resource consumption even when a small amount of data was requested. Reading small chunks of compressed data is safer and much more efficient now. (CVE-2025-66471 reported by <a href=\"https://github.com/Cycloctane\"><code>@\u200bCycloctane</code></a>, 8.9 High, GHSA-2xpw-w6gg-jr37)</li>\n<li>Fixed a security issue where an attacker could compose an HTTP response with virtually unlimited links in the <code>Content-Encoding</code> header, potentially leading to a denial of service (DoS) attack by exhausting system resources during decoding. The number of allowed chained encodings is now limited to 5. (CVE-2025-66418 reported by <a href=\"https://github.com/illia-v\"><code>@\u200billia-v</code></a>, 8.9 High, GHSA-gm62-xv2j-4w53)</li>\n</ul>\n<blockquote>\n<p>[!IMPORTANT]</p>\n<ul>\n<li>If urllib3 is not installed with the optional <code>urllib3[brotli]</code> extra, but your environment contains a Brotli/brotlicffi/brotlipy package anyway, make sure to upgrade it to at least Brotli 1.2.0 or brotlicffi 1.2.0.0 to  benefit from the security fixes and avoid warnings. Prefer using  <code>urllib3[brotli]</code> to install a compatible Brotli package automatically.</li>\n</ul>\n</blockquote>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/urllib3/urllib3/blob/main/CHANGES.rst\">urllib3's changelog</a>.</em></p>\n<blockquote>\n<h1>2.6.3 (2026-01-07)</h1>\n<ul>\n<li>Fixed a high-severity security issue where decompression-bomb safeguards of\nthe streaming API were bypassed when HTTP redirects were followed.\n(<code>GHSA-38jv-5279-wg99 &lt;https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99&gt;</code>__)</li>\n<li>Started treating <code>Retry-After</code> times greater than 6 hours as 6 hours by\ndefault. (<code>[#3743](https://github.com/urllib3/urllib3/issues/3743) &lt;https://github.com/urllib3/urllib3/issues/3743&gt;</code>__)</li>\n<li>Fixed <code>urllib3.connection.VerifiedHTTPSConnection</code> on Emscripten.\n(<code>[#3752](https://github.com/urllib3/urllib3/issues/3752) &lt;https://github.com/urllib3/urllib3/issues/3752&gt;</code>__)</li>\n</ul>\n<h1>2.6.2 (2025-12-11)</h1>\n<ul>\n<li>Fixed <code>HTTPResponse.read_chunked()</code> to properly handle leftover data in\nthe decoder's buffer when reading compressed chunked responses.\n(<code>[#3734](https://github.com/urllib3/urllib3/issues/3734) &lt;https://github.com/urllib3/urllib3/issues/3734&gt;</code>__)</li>\n</ul>\n<h1>2.6.1 (2025-12-08)</h1>\n<ul>\n<li>Restore previously removed <code>HTTPResponse.getheaders()</code> and\n<code>HTTPResponse.getheader()</code> methods.\n(<code>[#3731](https://github.com/urllib3/urllib3/issues/3731) &lt;https://github.com/urllib3/urllib3/issues/3731&gt;</code>__)</li>\n</ul>\n<h1>2.6.0 (2025-12-05)</h1>\n<h2>Security</h2>\n<ul>\n<li>Fixed a security issue where streaming API could improperly handle highly\ncompressed HTTP content (&quot;decompression bombs&quot;) leading to excessive resource\nconsumption even when a small amount of data was requested. Reading small\nchunks of compressed data is safer and much more efficient now.\n(<code>GHSA-2xpw-w6gg-jr37 &lt;https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37&gt;</code>__)</li>\n<li>Fixed a security issue where an attacker could compose an HTTP response with\nvirtually unlimited links in the <code>Content-Encoding</code> header, potentially\nleading to a denial of service (DoS) attack by exhausting system resources\nduring decoding. The number of allowed chained encodings is now limited to 5.\n(<code>GHSA-gm62-xv2j-4w53 &lt;https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53&gt;</code>__)</li>\n</ul>\n<p>.. caution::</p>\n<ul>\n<li>If urllib3 is not installed with the optional <code>urllib3[brotli]</code> extra, but\nyour environment contains a Brotli/brotlicffi/brotlipy package anyway, make\nsure to upgrade it to at least Brotli 1.2.0 or brotlicffi 1.2.0.0 to\nbenefit from the security fixes and avoid warnings. Prefer using</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/0248277dd7ac0239204889ca991353ad3e3a1ddc\"><code>0248277</code></a> Release 2.6.3</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b\"><code>8864ac4</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/70cecb27ca99d56aaaeb63ac27ee270ef2b24c5c\"><code>70cecb2</code></a> Fix Scorecard issues related to vulnerable dev dependencies (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3755\">#3755</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/41f249abe1ef3e20768588969c4035aba060a359\"><code>41f249a</code></a> Move &quot;v2.0 Migration Guide&quot; to the end of the table of contents (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3747\">#3747</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/fd4dffd2fc544166b76151a2fa3d7b7c0eab540c\"><code>fd4dffd</code></a> Patch <code>VerifiedHTTPSConnection</code> for Emscripten (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3752\">#3752</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/13f0bfd55e4468fe1ea9c6f809d3a87b0f93ebab\"><code>13f0bfd</code></a> Handle massive values in Retry-After when calculating time to sleep for (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3743\">#3743</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/8c480bf87bcefd321b3a1ae47f04e908b6b2ed7b\"><code>8c480bf</code></a> Bump actions/upload-artifact from 5.0.0 to 6.0.0 (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3748\">#3748</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/4b40616e959c0a2c466e8075f2a785a9f99bb0c1\"><code>4b40616</code></a> Bump actions/cache from 4.3.0 to 5.0.1 (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3750\">#3750</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/82b8479663d037d220c883f1584dd01a43bb273b\"><code>82b8479</code></a> Bump actions/download-artifact from 6.0.0 to 7.0.0 (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3749\">#3749</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/34284cb01700bb7d4fdd472f909e22393e9174e2\"><code>34284cb</code></a> Mention experimental features in the security policy (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3746\">#3746</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/urllib3/urllib3/compare/1.26.5...2.6.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=urllib3&package-manager=pip&previous-version=1.26.5&new-version=2.6.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
+              "state": "open",
+              "created_at": "2026-01-08T00:06:39+00:00",
+              "updated_at": "2026-01-08T00:06:40+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/pull/1111",
+              "is_pr": true,
+              "labels": [
+                "dependencies",
+                "python"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [
+                "3746",
+                "3755",
+                "3752",
+                "3734",
+                "3747",
+                "3749",
+                "3731",
+                "3750",
+                "3743",
+                "3748"
+              ],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 1110,
               "title": "Bump qs and express in /embedded",
               "body": "Bumps [qs](https://github.com/ljharb/qs) to 6.14.1 and updates ancestor dependency [express](https://github.com/expressjs/express). These dependencies need to be updated together.\n\nUpdates `qs` from 6.13.0 to 6.14.1\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.14.1</strong></h2>\n<ul>\n<li>[Fix] ensure arrayLength applies to <code>[]</code> notation as well</li>\n<li>[Fix] <code>parse</code>: when a custom decoder returns <code>null</code> for a key, ignore that key</li>\n<li>[Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li>[meta] add threat model</li>\n<li>[actions] add workflow permissions</li>\n<li>[Tests] <code>stringify</code>: increase coverage</li>\n<li>[Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code>, <code>es-value-fixtures</code>, <code>for-each</code>, <code>object-inspect</code></li>\n</ul>\n<h2><strong>6.14.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>throwOnParameterLimitExceeded</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/517\">#517</a>)</li>\n<li>[Refactor] <code>parse</code>: use <code>utils.combine</code> more</li>\n<li>[patch] <code>parse</code>: add explicit <code>throwOnLimitExceeded</code> default</li>\n<li>[actions] use shared action; re-add finishers</li>\n<li>[meta] Fix changelog formatting bug</li>\n<li>[Deps] update <code>side-channel</code></li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>has-bigints</code>, <code>has-proto</code>, <code>has-symbols</code></li>\n<li>[Tests] increase coverage</li>\n</ul>\n<h2><strong>6.13.1</strong></h2>\n<ul>\n<li>[Fix] <code>stringify</code>: avoid a crash when a <code>filter</code> key is <code>null</code></li>\n<li>[Fix] <code>utils.merge</code>: functions should not be stringified into keys</li>\n<li>[Fix] <code>parse</code>: avoid a crash with interpretNumericEntities: true, comma: true, and iso charset</li>\n<li>[Fix] <code>stringify</code>: ensure a non-string <code>filter</code> does not crash</li>\n<li>[Refactor] use <code>__proto__</code> syntax instead of <code>Object.create</code> for null objects</li>\n<li>[Refactor] misc cleanup</li>\n<li>[Tests] <code>utils.merge</code>: add some coverage</li>\n<li>[Tests] fix a test case</li>\n<li>[actions] split out node 10-20, and 20+</li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>mock-property</code>, <code>object-inspect</code>, <code>tape</code></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/3fa11a5f643c76896387bd2d86904a2d0141fdf7\"><code>3fa11a5</code></a> v6.14.1</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/a62670423c1ccab0dd83c621bfb98c7c024e314d\"><code>a626704</code></a> [Dev Deps] update <code>npmignore</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/3086902ecf7f088d0d1803887643ac6c03d415b9\"><code>3086902</code></a> [Fix] ensure arrayLength applies to <code>[]</code> notation as well</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/fc7930e86c2264c1568c9f5606830e19b0bc2af2\"><code>fc7930e</code></a> [Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/0b06aac566abee45ef0327667a7cc89e7aed8b58\"><code>0b06aac</code></a> [Dev Deps] update <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/64951f6200a1fb72cc003c6e8226dde3d2ef591f\"><code>64951f6</code></a> [Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/e1bd2599cdff4c936ea52fb1f16f921cbe7aa88c\"><code>e1bd259</code></a> [Dev Deps] update <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f4b3d39709fef6ddbd85128d1ba4c6b566c4902e\"><code>f4b3d39</code></a> [eslint] add eslint 9 optional peer dep</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/6e94d9596ca50dffafcef40a5f64eca89962cf34\"><code>6e94d95</code></a> [Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/973dc3c51c86da9f4e30edeb4b1725158d439102\"><code>973dc3c</code></a> [actions] add workflow permissions</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.13.0...v6.14.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `express` from 4.21.2 to 4.22.1\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/releases\">express's releases</a>.</em></p>\n<blockquote>\n<h2>v4.22.1</h2>\n<h2>What's Changed</h2>\n<blockquote>\n<p>[!IMPORTANT]<br />\nThe prior release (4.22.0) included an erroneous breaking change related to the extended query parser. There is no actual security vulnerability associated with this behavior (CVE-2024-51999 has been rejected). The change has been fully reverted in this release.</p>\n</blockquote>\n<ul>\n<li>Release: 4.22.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6934\">expressjs/express#6934</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.22.0...v4.22.1\">https://github.com/expressjs/express/compare/4.22.0...v4.22.1</a></p>\n<h2>4.22.0</h2>\n<h2>Important: Security</h2>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Refactor: improve readability by <a href=\"https://github.com/sazk07\"><code>@\u200bsazk07</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6190\">expressjs/express#6190</a></li>\n<li>ci: add support for Node.js@23.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6080\">expressjs/express#6080</a></li>\n<li>Method functions with no path should error by <a href=\"https://github.com/wesleytodd\"><code>@\u200bwesleytodd</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5957\">expressjs/express#5957</a></li>\n<li>ci: updated github actions ci workflow by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6323\">expressjs/express#6323</a></li>\n<li>ci: reorder <code>npm i</code> steps to fix ci for older node versions by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6336\">expressjs/express#6336</a></li>\n<li>Backport: ci: add node.js 24 to test matrix by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6506\">expressjs/express#6506</a></li>\n<li>chore(4.x): wider range for query test skip by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6513\">expressjs/express#6513</a></li>\n<li>use tilde notation for certain dependencies by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6905\">expressjs/express#6905</a></li>\n<li>deps: qs@6.14.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6909\">expressjs/express#6909</a></li>\n<li>deps: use tilde notation for <code>qs</code> by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6919\">expressjs/express#6919</a></li>\n<li>Release: 4.22.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6921\">expressjs/express#6921</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.2...4.22.0\">https://github.com/expressjs/express/compare/4.21.2...4.22.0</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/blob/v4.22.1/History.md\">express's changelog</a>.</em></p>\n<blockquote>\n<h1>4.22.1 / 2025-12-01</h1>\n<ul>\n<li>Revert security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h1>4.22.0 / 2025-12-01</h1>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n<li>deps: use tilde notation for dependencies</li>\n<li>deps: qs@6.14.0</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/expressjs/express/commit/12fae14531a78f19a2caaa5d4f58d9b01eaf3194\"><code>12fae14</code></a> 4.22.1</li>\n<li><a href=\"https://github.com/expressjs/express/commit/5ddf311af32e772a77fd48b6266ce2f1ba330e1a\"><code>5ddf311</code></a> Revert &quot;sec: security patch for CVE-2024-51999&quot;</li>\n<li><a href=\"https://github.com/expressjs/express/commit/49744abd1120484fe64d7bde1cd3197c32523b6e\"><code>49744ab</code></a> 4.22.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6921\">#6921</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6e97452f600a3b01719fbc5517d833c7646b0bb7\"><code>6e97452</code></a> sec: security patch for CVE-2024-51999</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6a23d34d652b9e69a4486d2a2a0dea54b9685fa5\"><code>6a23d34</code></a> deps: use tilde notation for <code>qs</code> (<a href=\"https://redirect.github.com/expressjs/express/issues/6919\">#6919</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/8c12cdf93b89a4628b59179e3cc0722fc517d6b3\"><code>8c12cdf</code></a> deps: qs@6.14.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6909\">#6909</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/7fea74fcf02764580f38f2a7f1932dfa54cddd90\"><code>7fea74f</code></a> deps: use tilde notation for certain dependencies (<a href=\"https://redirect.github.com/expressjs/express/issues/6905\">#6905</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/dac7a0475a99e9dfc57b3b8e6d5bdf52813f1944\"><code>dac7a04</code></a> chore: wider range for query test skip (<a href=\"https://redirect.github.com/expressjs/express/issues/6513\">#6513</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/997919b48879bbd53171c3b4e5dd1b04ad139241\"><code>997919b</code></a> ci: add node.js 24 to test matrix (<a href=\"https://redirect.github.com/expressjs/express/issues/6506\">#6506</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/36fb59c6c7d9dfca0b08dfeafb5b6e4a249234a1\"><code>36fb59c</code></a> fix(ci): reorder <code>npm i</code> steps to fix ci for older node versions (<a href=\"https://redirect.github.com/expressjs/express/issues/6336\">#6336</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/expressjs/express/compare/4.21.2...v4.22.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
@@ -37,27 +75,27 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
+                "6190",
+                "6934",
+                "6323",
+                "6513",
                 "6336",
                 "6080",
-                "6190",
+                "6506",
                 "6909",
-                "6919",
+                "6921",
                 "517",
                 "6905",
-                "6934",
-                "6921",
-                "6513",
                 "5957",
-                "6506",
-                "6323"
+                "6919"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -79,8 +117,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2733,
-              "days_since_update": 29,
+              "age_days": 2734,
+              "days_since_update": 30,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -108,8 +146,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1259,
-              "days_since_update": 286,
+              "age_days": 1260,
+              "days_since_update": 287,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -137,8 +175,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1808,
-              "days_since_update": 435,
+              "age_days": 1809,
+              "days_since_update": 436,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -165,8 +203,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1800,
-              "days_since_update": 672,
+              "age_days": 1801,
+              "days_since_update": 673,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -178,26 +216,26 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 6
             },
             "ages": {
-              "recent": 1,
+              "recent": 2,
               "active": 1,
               "stale": 3
             },
             "complexity": {
-              "medium": 5
+              "medium": 6
             },
             "size": {
-              "large": 3,
+              "large": 4,
               "medium": 2
             },
             "lifecycle": {
-              "new": 4,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -1287,10 +1325,10 @@
         ]
       },
       "statistics": {
-        "size": 135299,
+        "size": 135303,
         "stars": 1937,
         "forks": 485,
-        "open_issues": 5,
+        "open_issues": 6,
         "watchers": 1937,
         "default_branch": "3.0"
       },
@@ -1375,8 +1413,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 290,
-              "days_since_update": 290,
+              "age_days": 291,
+              "days_since_update": 291,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1403,8 +1441,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1435,
-              "days_since_update": 381,
+              "age_days": 1436,
+              "days_since_update": 382,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2543,37 +2581,37 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 7,
-              "days_since_update": 7,
+              "age_days": 8,
+              "days_since_update": 8,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6336",
-                "6909",
-                "6905",
-                "502",
-                "6506",
-                "517",
-                "6921",
                 "501",
-                "6065",
-                "6094",
-                "5956",
-                "6513",
-                "6190",
-                "6919",
                 "6934",
-                "5957",
-                "6080",
-                "6209",
+                "6323",
+                "6336",
+                "6506",
+                "6909",
+                "5956",
+                "6190",
+                "517",
+                "6919",
+                "6513",
                 "506",
-                "511",
-                "6031",
+                "6065",
+                "502",
+                "5957",
                 "6029",
-                "6323"
+                "6031",
+                "6080",
+                "6921",
+                "6905",
+                "511",
+                "6094",
+                "6209"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2591,8 +2629,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 9,
-              "days_since_update": 9,
+              "age_days": 10,
+              "days_since_update": 10,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2615,8 +2653,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 108,
-              "days_since_update": 105,
+              "age_days": 109,
+              "days_since_update": 106,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2641,8 +2679,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 128,
-              "days_since_update": 127,
+              "age_days": 129,
+              "days_since_update": 128,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2670,8 +2708,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 282,
-              "days_since_update": 282,
+              "age_days": 283,
+              "days_since_update": 283,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2699,8 +2737,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1333,
-              "days_since_update": 407,
+              "age_days": 1334,
+              "days_since_update": 408,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2729,8 +2767,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1914,
-              "days_since_update": 450,
+              "age_days": 1915,
+              "days_since_update": 451,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2758,8 +2796,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1994,
-              "days_since_update": 450,
+              "age_days": 1995,
+              "days_since_update": 451,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2790,8 +2828,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 583,
-              "days_since_update": 450,
+              "age_days": 584,
+              "days_since_update": 451,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2818,8 +2856,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1206,
-              "days_since_update": 450,
+              "age_days": 1207,
+              "days_since_update": 451,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2846,8 +2884,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2194,
-              "days_since_update": 1240,
+              "age_days": 2195,
+              "days_since_update": 1241,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2876,8 +2914,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1337,
-              "days_since_update": 1310,
+              "age_days": 1338,
+              "days_since_update": 1311,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2896,8 +2934,8 @@
               "normal": 12
             },
             "ages": {
-              "recent": 1,
-              "active": 1,
+              "recent": 0,
+              "active": 2,
               "stale": 10
             },
             "complexity": {
@@ -4040,8 +4078,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 9,
-              "days_since_update": 8,
+              "age_days": 10,
+              "days_since_update": 9,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -4066,8 +4104,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 232,
-              "days_since_update": 161,
+              "age_days": 233,
+              "days_since_update": 162,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4093,8 +4131,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 720,
-              "days_since_update": 243,
+              "age_days": 721,
+              "days_since_update": 244,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4121,8 +4159,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 718,
-              "days_since_update": 388,
+              "age_days": 719,
+              "days_since_update": 389,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4147,8 +4185,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 450,
-              "days_since_update": 450,
+              "age_days": 451,
+              "days_since_update": 451,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4175,8 +4213,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 510,
-              "days_since_update": 510,
+              "age_days": 511,
+              "days_since_update": 511,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4201,8 +4239,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 625,
-              "days_since_update": 512,
+              "age_days": 626,
+              "days_since_update": 513,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4228,8 +4266,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 730,
-              "days_since_update": 730,
+              "age_days": 731,
+              "days_since_update": 731,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4254,8 +4292,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1051,
-              "days_since_update": 1051,
+              "age_days": 1052,
+              "days_since_update": 1052,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4283,8 +4321,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1194,
-              "days_since_update": 1194,
+              "age_days": 1195,
+              "days_since_update": 1195,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8517,8 +8555,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 302,
-              "days_since_update": 302,
+              "age_days": 303,
+              "days_since_update": 303,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8541,8 +8579,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 964,
-              "days_since_update": 964,
+              "age_days": 965,
+              "days_since_update": 965,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8569,8 +8607,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1298,
-              "days_since_update": 1237,
+              "age_days": 1299,
+              "days_since_update": 1238,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9688,8 +9726,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 314,
-              "days_since_update": 314,
+              "age_days": 315,
+              "days_since_update": 315,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9714,8 +9752,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1043,
-              "days_since_update": 1043,
+              "age_days": 1044,
+              "days_since_update": 1044,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9740,8 +9778,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1043,
-              "days_since_update": 1043,
+              "age_days": 1044,
+              "days_since_update": 1044,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11793,8 +11831,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 225,
-              "days_since_update": 225,
+              "age_days": 226,
+              "days_since_update": 226,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11819,8 +11857,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 966,
-              "days_since_update": 966,
+              "age_days": 967,
+              "days_since_update": 967,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11846,8 +11884,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2162,
-              "days_since_update": 2146,
+              "age_days": 2163,
+              "days_since_update": 2147,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12971,8 +13009,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 966,
-              "days_since_update": 966,
+              "age_days": 967,
+              "days_since_update": 967,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16490,17 +16528,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-01-05T05:01:15+00:00",
+      "updated_at": "2026-01-07T13:21:05+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "24ddfdf",
+            "sha": "d9ed74f",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-01-05T05:01:04+00:00"
+            "date": "2026-01-07T13:20:58+00:00"
           },
           "protected": false,
           "issues": []
@@ -16509,6 +16547,36 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "d9ed74f",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-07T13:20:58+00:00"
+          },
+          {
+            "sha": "bfe01ff",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-07T12:26:10+00:00"
+          },
+          {
+            "sha": "df7730a",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-07T10:15:25+00:00"
+          },
+          {
+            "sha": "18dbecc",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-07T07:23:47+00:00"
+          },
+          {
+            "sha": "74fa352",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-07T06:36:19+00:00"
+          },
           {
             "sha": "24ddfdf",
             "message": "Private commit",
@@ -16802,44 +16870,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2025-12-11T02:48:58+00:00"
-          },
-          {
-            "sha": "2f1b6a6",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-10T12:42:59+00:00"
-          },
-          {
-            "sha": "e32e052",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-10T12:19:57+00:00"
-          },
-          {
-            "sha": "5d2fa80",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-09T16:03:26+00:00"
-          },
-          {
-            "sha": "fc281f9",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-09T15:35:48+00:00"
-          },
-          {
-            "sha": "3206675",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-09T15:08:27+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "24ddfdf",
+          "sha": "d9ed74f",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-01-05T05:01:04+00:00"
+          "date": "2026-01-07T13:20:58+00:00"
         }
       },
       "statistics": {},
@@ -16849,8 +16887,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4750,
-      "reset": "2026-01-07T02:10:57+00:00"
+      "remaining": 4684,
+      "reset": "2026-01-08T02:13:26+00:00"
     }
   },
   "stats": {
@@ -16865,7 +16903,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749588,
+      "total_size": 749592,
       "total_stars": 3065,
       "total_forks": 979,
       "branches": {
@@ -16875,23 +16913,23 @@
       }
     },
     "issues": {
-      "total_count": 39,
-      "open_count": 39,
+      "total_count": 40,
+      "open_count": 40,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 922.2965647045156,
+      "avg_age_days": 900.2181549816781,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 39
+        "normal": 40
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 1,
+        "last_day": 1,
+        "last_week": 2,
         "last_month": 5
       }
     },
     "activity": {
-      "total_commits": 20,
+      "total_commits": 22,
       "commit_frequency": {
         "daily": 0.40934065934065944,
         "weekly": 2.8653846153846145,
@@ -16945,8 +16983,8 @@
           5,
           2,
           1,
-          3,
           1,
+          0,
           1,
           0,
           3,
@@ -16962,14 +17000,14 @@
           7,
           7,
           5,
-          8,
           9,
+          10,
           12,
           6,
+          8,
           7,
-          7,
-          12,
-          2,
+          11,
+          3,
           2,
           1,
           1,
@@ -17091,7 +17129,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-12",
-          "count": 4
+          "count": 5
         },
         {
           "date": "2025-11",
@@ -17539,6 +17577,27 @@
   "activity_ranking": {
     "daily": [
       {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 15
+        },
+        "details": {
+          "commits": 5,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 5.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
@@ -17546,17 +17605,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17810,27 +17869,6 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
-      },
-      {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
       }
     ],
     "weekly": [
@@ -17841,17 +17879,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 20,
+          "commits": 22,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 60
+          "total": 66
         },
         "details": {
-          "commits": 20,
+          "commits": 22,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 2.857142857142857,
+          "commits_per_day": 3.142857142857143,
           "issues_per_day": 0.0
         }
       },
@@ -17863,17 +17901,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 2,
           "comments": 0,
           "period_days": 7,
-          "total": 2
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.14285714285714285
+          "issues_per_day": 0.2857142857142857
         }
       },
       {
@@ -18455,17 +18493,17 @@
         "is_private": false,
         "score": {
           "commits": 33,
-          "issues": 3,
+          "issues": 4,
           "comments": 0,
           "period_days": 365,
-          "total": 105
+          "total": 107
         },
         "details": {
           "commits": 33,
-          "issues": 3,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.09041095890410959,
-          "issues_per_day": 0.00821917808219178
+          "issues_per_day": 0.010958904109589041
         }
       },
       {
