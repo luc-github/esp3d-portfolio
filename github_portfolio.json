@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2026-01-02T20:58:04+00:00",
+      "updated_at": "2026-01-08T15:52:51+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -21,44 +21,6 @@
           },
           "protected": false,
           "issues": [
-            {
-              "number": 1111,
-              "title": "Bump urllib3 from 1.26.5 to 2.6.3 in /libraries/lvgl-8.2.0/docs",
-              "body": "Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.26.5 to 2.6.3.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/urllib3/urllib3/releases\">urllib3's releases</a>.</em></p>\n<blockquote>\n<h2>2.6.3</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Changes</h2>\n<ul>\n<li>Fixed a security issue where decompression-bomb safeguards of the streaming API were bypassed when HTTP redirects were followed. (CVE-2026-21441 reported by <a href=\"https://github.com/D47A\"><code>@\u200bD47A</code></a>, 8.9 High, GHSA-38jv-5279-wg99)</li>\n<li>Started treating <code>Retry-After</code> times greater than 6 hours as 6 hours by default. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3743\">urllib3/urllib3#3743</a>)</li>\n<li>Fixed <code>urllib3.connection.VerifiedHTTPSConnection</code> on Emscripten. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3752\">urllib3/urllib3#3752</a>)</li>\n</ul>\n<h2>2.6.2</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Changes</h2>\n<ul>\n<li>Fixed <code>HTTPResponse.read_chunked()</code> to properly handle leftover data in the decoder's buffer when reading compressed chunked responses. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3734\">urllib3/urllib3#3734</a>)</li>\n</ul>\n<h2>2.6.1</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Changes</h2>\n<ul>\n<li>Restore previously removed <code>HTTPResponse.getheaders()</code> and <code>HTTPResponse.getheader()</code> methods. (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3731\">#3731</a>)</li>\n</ul>\n<h2>2.6.0</h2>\n<h2>\ud83d\ude80 urllib3 is fundraising for HTTP/2 support</h2>\n<p><a href=\"https://sethmlarson.dev/urllib3-is-fundraising-for-http2-support\">urllib3 is raising ~$40,000 USD</a> to release HTTP/2 support and ensure long-term sustainable maintenance of the project after a sharp decline in financial support. If your company or organization uses Python and would benefit from HTTP/2 support in Requests, pip, cloud SDKs, and thousands of other projects <a href=\"https://opencollective.com/urllib3\">please consider contributing financially</a> to ensure HTTP/2 support is developed sustainably and maintained for the long-haul.</p>\n<p>Thank you for your support.</p>\n<h2>Security</h2>\n<ul>\n<li>Fixed a security issue where streaming API could improperly handle highly compressed HTTP content (&quot;decompression bombs&quot;) leading to excessive resource consumption even when a small amount of data was requested. Reading small chunks of compressed data is safer and much more efficient now. (CVE-2025-66471 reported by <a href=\"https://github.com/Cycloctane\"><code>@\u200bCycloctane</code></a>, 8.9 High, GHSA-2xpw-w6gg-jr37)</li>\n<li>Fixed a security issue where an attacker could compose an HTTP response with virtually unlimited links in the <code>Content-Encoding</code> header, potentially leading to a denial of service (DoS) attack by exhausting system resources during decoding. The number of allowed chained encodings is now limited to 5. (CVE-2025-66418 reported by <a href=\"https://github.com/illia-v\"><code>@\u200billia-v</code></a>, 8.9 High, GHSA-gm62-xv2j-4w53)</li>\n</ul>\n<blockquote>\n<p>[!IMPORTANT]</p>\n<ul>\n<li>If urllib3 is not installed with the optional <code>urllib3[brotli]</code> extra, but your environment contains a Brotli/brotlicffi/brotlipy package anyway, make sure to upgrade it to at least Brotli 1.2.0 or brotlicffi 1.2.0.0 to  benefit from the security fixes and avoid warnings. Prefer using  <code>urllib3[brotli]</code> to install a compatible Brotli package automatically.</li>\n</ul>\n</blockquote>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/urllib3/urllib3/blob/main/CHANGES.rst\">urllib3's changelog</a>.</em></p>\n<blockquote>\n<h1>2.6.3 (2026-01-07)</h1>\n<ul>\n<li>Fixed a high-severity security issue where decompression-bomb safeguards of\nthe streaming API were bypassed when HTTP redirects were followed.\n(<code>GHSA-38jv-5279-wg99 &lt;https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99&gt;</code>__)</li>\n<li>Started treating <code>Retry-After</code> times greater than 6 hours as 6 hours by\ndefault. (<code>[#3743](https://github.com/urllib3/urllib3/issues/3743) &lt;https://github.com/urllib3/urllib3/issues/3743&gt;</code>__)</li>\n<li>Fixed <code>urllib3.connection.VerifiedHTTPSConnection</code> on Emscripten.\n(<code>[#3752](https://github.com/urllib3/urllib3/issues/3752) &lt;https://github.com/urllib3/urllib3/issues/3752&gt;</code>__)</li>\n</ul>\n<h1>2.6.2 (2025-12-11)</h1>\n<ul>\n<li>Fixed <code>HTTPResponse.read_chunked()</code> to properly handle leftover data in\nthe decoder's buffer when reading compressed chunked responses.\n(<code>[#3734](https://github.com/urllib3/urllib3/issues/3734) &lt;https://github.com/urllib3/urllib3/issues/3734&gt;</code>__)</li>\n</ul>\n<h1>2.6.1 (2025-12-08)</h1>\n<ul>\n<li>Restore previously removed <code>HTTPResponse.getheaders()</code> and\n<code>HTTPResponse.getheader()</code> methods.\n(<code>[#3731](https://github.com/urllib3/urllib3/issues/3731) &lt;https://github.com/urllib3/urllib3/issues/3731&gt;</code>__)</li>\n</ul>\n<h1>2.6.0 (2025-12-05)</h1>\n<h2>Security</h2>\n<ul>\n<li>Fixed a security issue where streaming API could improperly handle highly\ncompressed HTTP content (&quot;decompression bombs&quot;) leading to excessive resource\nconsumption even when a small amount of data was requested. Reading small\nchunks of compressed data is safer and much more efficient now.\n(<code>GHSA-2xpw-w6gg-jr37 &lt;https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37&gt;</code>__)</li>\n<li>Fixed a security issue where an attacker could compose an HTTP response with\nvirtually unlimited links in the <code>Content-Encoding</code> header, potentially\nleading to a denial of service (DoS) attack by exhausting system resources\nduring decoding. The number of allowed chained encodings is now limited to 5.\n(<code>GHSA-gm62-xv2j-4w53 &lt;https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53&gt;</code>__)</li>\n</ul>\n<p>.. caution::</p>\n<ul>\n<li>If urllib3 is not installed with the optional <code>urllib3[brotli]</code> extra, but\nyour environment contains a Brotli/brotlicffi/brotlipy package anyway, make\nsure to upgrade it to at least Brotli 1.2.0 or brotlicffi 1.2.0.0 to\nbenefit from the security fixes and avoid warnings. Prefer using</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/0248277dd7ac0239204889ca991353ad3e3a1ddc\"><code>0248277</code></a> Release 2.6.3</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b\"><code>8864ac4</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/70cecb27ca99d56aaaeb63ac27ee270ef2b24c5c\"><code>70cecb2</code></a> Fix Scorecard issues related to vulnerable dev dependencies (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3755\">#3755</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/41f249abe1ef3e20768588969c4035aba060a359\"><code>41f249a</code></a> Move &quot;v2.0 Migration Guide&quot; to the end of the table of contents (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3747\">#3747</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/fd4dffd2fc544166b76151a2fa3d7b7c0eab540c\"><code>fd4dffd</code></a> Patch <code>VerifiedHTTPSConnection</code> for Emscripten (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3752\">#3752</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/13f0bfd55e4468fe1ea9c6f809d3a87b0f93ebab\"><code>13f0bfd</code></a> Handle massive values in Retry-After when calculating time to sleep for (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3743\">#3743</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/8c480bf87bcefd321b3a1ae47f04e908b6b2ed7b\"><code>8c480bf</code></a> Bump actions/upload-artifact from 5.0.0 to 6.0.0 (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3748\">#3748</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/4b40616e959c0a2c466e8075f2a785a9f99bb0c1\"><code>4b40616</code></a> Bump actions/cache from 4.3.0 to 5.0.1 (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3750\">#3750</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/82b8479663d037d220c883f1584dd01a43bb273b\"><code>82b8479</code></a> Bump actions/download-artifact from 6.0.0 to 7.0.0 (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3749\">#3749</a>)</li>\n<li><a href=\"https://github.com/urllib3/urllib3/commit/34284cb01700bb7d4fdd472f909e22393e9174e2\"><code>34284cb</code></a> Mention experimental features in the security policy (<a href=\"https://redirect.github.com/urllib3/urllib3/issues/3746\">#3746</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/urllib3/urllib3/compare/1.26.5...2.6.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=urllib3&package-manager=pip&previous-version=1.26.5&new-version=2.6.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2026-01-08T00:06:39+00:00",
-              "updated_at": "2026-01-08T00:06:40+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/pull/1111",
-              "is_pr": true,
-              "labels": [
-                "dependencies",
-                "python"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "3746",
-                "3755",
-                "3752",
-                "3734",
-                "3747",
-                "3749",
-                "3731",
-                "3750",
-                "3743",
-                "3748"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
             {
               "number": 1110,
               "title": "Bump qs and express in /embedded",
@@ -75,27 +37,27 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 6,
-              "days_since_update": 6,
+              "age_days": 7,
+              "days_since_update": 7,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6190",
-                "6934",
-                "6323",
-                "6513",
                 "6336",
-                "6080",
                 "6506",
-                "6909",
-                "6921",
-                "517",
+                "6513",
                 "6905",
                 "5957",
-                "6919"
+                "6323",
+                "6909",
+                "6919",
+                "6921",
+                "6190",
+                "6080",
+                "517",
+                "6934"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -117,11 +79,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2734,
-              "days_since_update": 30,
-              "is_stale": false,
+              "age_days": 2735,
+              "days_since_update": 31,
+              "is_stale": true,
               "is_recent": false,
-              "activity_status": "inactive",
+              "activity_status": "stale",
               "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
@@ -146,8 +108,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1260,
-              "days_since_update": 287,
+              "age_days": 1261,
+              "days_since_update": 288,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -175,8 +137,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1809,
-              "days_since_update": 436,
+              "age_days": 1810,
+              "days_since_update": 437,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -203,8 +165,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1801,
-              "days_since_update": 673,
+              "age_days": 1802,
+              "days_since_update": 674,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -216,26 +178,26 @@
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 5,
+            "open": 5,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 5
             },
             "ages": {
-              "recent": 2,
-              "active": 1,
-              "stale": 3
+              "recent": 1,
+              "active": 0,
+              "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 5
             },
             "size": {
-              "large": 4,
+              "large": 3,
               "medium": 2
             },
             "lifecycle": {
-              "new": 5,
+              "new": 4,
               "in_progress": 1
             }
           }
@@ -1325,11 +1287,11 @@
         ]
       },
       "statistics": {
-        "size": 135303,
-        "stars": 1937,
+        "size": 135299,
+        "stars": 1938,
         "forks": 485,
-        "open_issues": 6,
-        "watchers": 1937,
+        "open_issues": 5,
+        "watchers": 1938,
         "default_branch": "3.0"
       },
       "version_info": {
@@ -1413,8 +1375,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 291,
-              "days_since_update": 291,
+              "age_days": 292,
+              "days_since_update": 292,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1441,8 +1403,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1436,
-              "days_since_update": 382,
+              "age_days": 1437,
+              "days_since_update": 383,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2551,7 +2513,7 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2026-01-05T07:14:40+00:00",
+      "updated_at": "2026-01-08T05:03:47+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -2581,37 +2543,37 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 8,
-              "days_since_update": 8,
+              "age_days": 9,
+              "days_since_update": 9,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "501",
-                "6934",
-                "6323",
-                "6336",
-                "6506",
-                "6909",
-                "5956",
-                "6190",
-                "517",
-                "6919",
-                "6513",
-                "506",
-                "6065",
-                "502",
-                "5957",
-                "6029",
-                "6031",
-                "6080",
-                "6921",
                 "6905",
+                "6323",
+                "6190",
+                "502",
+                "506",
+                "517",
+                "6934",
+                "6029",
+                "6336",
+                "6513",
+                "6919",
+                "6209",
+                "6080",
+                "501",
                 "511",
+                "6506",
+                "5957",
+                "6909",
+                "6921",
+                "6031",
+                "6065",
                 "6094",
-                "6209"
+                "5956"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2629,8 +2591,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 10,
-              "days_since_update": 10,
+              "age_days": 11,
+              "days_since_update": 11,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2653,8 +2615,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 109,
-              "days_since_update": 106,
+              "age_days": 110,
+              "days_since_update": 107,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2679,8 +2641,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 129,
-              "days_since_update": 128,
+              "age_days": 130,
+              "days_since_update": 129,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2708,8 +2670,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 283,
-              "days_since_update": 283,
+              "age_days": 284,
+              "days_since_update": 284,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2737,8 +2699,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1334,
-              "days_since_update": 408,
+              "age_days": 1335,
+              "days_since_update": 409,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2767,8 +2729,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1915,
-              "days_since_update": 451,
+              "age_days": 1916,
+              "days_since_update": 452,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2796,8 +2758,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1995,
-              "days_since_update": 451,
+              "age_days": 1996,
+              "days_since_update": 452,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2828,8 +2790,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 584,
-              "days_since_update": 451,
+              "age_days": 585,
+              "days_since_update": 452,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2856,8 +2818,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1207,
-              "days_since_update": 451,
+              "age_days": 1208,
+              "days_since_update": 452,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2884,8 +2846,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2195,
-              "days_since_update": 1241,
+              "age_days": 2196,
+              "days_since_update": 1242,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2914,8 +2876,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1338,
-              "days_since_update": 1311,
+              "age_days": 1339,
+              "days_since_update": 1312,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4023,10 +3985,10 @@
       },
       "statistics": {
         "size": 118375,
-        "stars": 856,
+        "stars": 857,
         "forks": 339,
         "open_issues": 12,
-        "watchers": 856,
+        "watchers": 857,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
       },
@@ -4078,8 +4040,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 10,
-              "days_since_update": 9,
+              "age_days": 11,
+              "days_since_update": 10,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -4104,8 +4066,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 233,
-              "days_since_update": 162,
+              "age_days": 234,
+              "days_since_update": 163,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4131,8 +4093,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 721,
-              "days_since_update": 244,
+              "age_days": 722,
+              "days_since_update": 245,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4159,8 +4121,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 719,
-              "days_since_update": 389,
+              "age_days": 720,
+              "days_since_update": 390,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4185,8 +4147,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 451,
-              "days_since_update": 451,
+              "age_days": 452,
+              "days_since_update": 452,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4213,8 +4175,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 511,
-              "days_since_update": 511,
+              "age_days": 512,
+              "days_since_update": 512,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4239,8 +4201,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 626,
-              "days_since_update": 513,
+              "age_days": 627,
+              "days_since_update": 514,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4266,8 +4228,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 731,
-              "days_since_update": 731,
+              "age_days": 732,
+              "days_since_update": 732,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4292,8 +4254,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1052,
-              "days_since_update": 1052,
+              "age_days": 1053,
+              "days_since_update": 1053,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4321,8 +4283,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1195,
-              "days_since_update": 1195,
+              "age_days": 1196,
+              "days_since_update": 1196,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8555,8 +8517,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 303,
-              "days_since_update": 303,
+              "age_days": 304,
+              "days_since_update": 304,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8579,8 +8541,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 965,
-              "days_since_update": 965,
+              "age_days": 966,
+              "days_since_update": 966,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8607,8 +8569,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1299,
-              "days_since_update": 1238,
+              "age_days": 1300,
+              "days_since_update": 1239,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9726,8 +9688,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 315,
-              "days_since_update": 315,
+              "age_days": 316,
+              "days_since_update": 316,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9752,8 +9714,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1044,
-              "days_since_update": 1044,
+              "age_days": 1045,
+              "days_since_update": 1045,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9778,8 +9740,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1044,
-              "days_since_update": 1044,
+              "age_days": 1045,
+              "days_since_update": 1045,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11831,8 +11793,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 226,
-              "days_since_update": 226,
+              "age_days": 227,
+              "days_since_update": 227,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11857,8 +11819,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 967,
-              "days_since_update": 967,
+              "age_days": 968,
+              "days_since_update": 968,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11884,8 +11846,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2163,
-              "days_since_update": 2147,
+              "age_days": 2164,
+              "days_since_update": 2148,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -13009,8 +12971,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 967,
-              "days_since_update": 967,
+              "age_days": 968,
+              "days_since_update": 968,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16528,17 +16490,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-01-07T13:21:05+00:00",
+      "updated_at": "2026-01-08T12:49:09+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "d9ed74f",
+            "sha": "7cd912e",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-01-07T13:20:58+00:00"
+            "date": "2026-01-08T12:49:02+00:00"
           },
           "protected": false,
           "issues": []
@@ -16547,6 +16509,48 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "7cd912e",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T12:49:02+00:00"
+          },
+          {
+            "sha": "5cecbbd",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T12:48:18+00:00"
+          },
+          {
+            "sha": "66b6175",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T09:22:59+00:00"
+          },
+          {
+            "sha": "15c5fde",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T09:22:13+00:00"
+          },
+          {
+            "sha": "5b64c6b",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T07:14:26+00:00"
+          },
+          {
+            "sha": "5b9c169",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T07:12:50+00:00"
+          },
+          {
+            "sha": "18a7b74",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-08T07:12:43+00:00"
+          },
           {
             "sha": "d9ed74f",
             "message": "Private commit",
@@ -16828,56 +16832,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2025-12-11T09:40:53+00:00"
-          },
-          {
-            "sha": "3057cd6",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T09:40:09+00:00"
-          },
-          {
-            "sha": "fef6056",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T09:39:03+00:00"
-          },
-          {
-            "sha": "faeaf9f",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T09:19:37+00:00"
-          },
-          {
-            "sha": "cfcecf0",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T04:45:02+00:00"
-          },
-          {
-            "sha": "663c4df",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T04:16:13+00:00"
-          },
-          {
-            "sha": "2bee17c",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T02:49:09+00:00"
-          },
-          {
-            "sha": "fe6dc35",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T02:48:58+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "d9ed74f",
+          "sha": "7cd912e",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-01-07T13:20:58+00:00"
+          "date": "2026-01-08T12:49:02+00:00"
         }
       },
       "statistics": {},
@@ -16887,8 +16849,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4684,
-      "reset": "2026-01-08T02:13:26+00:00"
+      "remaining": 4797,
+      "reset": "2026-01-09T01:29:04+00:00"
     }
   },
   "stats": {
@@ -16903,8 +16865,8 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749592,
-      "total_stars": 3065,
+      "total_size": 749588,
+      "total_stars": 3067,
       "total_forks": 979,
       "branches": {
         "production": 12,
@@ -16913,23 +16875,23 @@
       }
     },
     "issues": {
-      "total_count": 40,
-      "open_count": 40,
+      "total_count": 39,
+      "open_count": 39,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 900.2181549816781,
+      "avg_age_days": 924.2958555227565,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 40
+        "normal": 39
       },
       "recent_activity": {
-        "last_day": 1,
-        "last_week": 2,
-        "last_month": 5
+        "last_day": 0,
+        "last_week": 0,
+        "last_month": 4
       }
     },
     "activity": {
-      "total_commits": 22,
+      "total_commits": 27,
       "commit_frequency": {
         "daily": 0.40934065934065944,
         "weekly": 2.8653846153846145,
@@ -17022,17 +16984,17 @@
         [
           0,
           14,
-          3,
+          1,
           13,
-          20,
+          18,
           6,
           12,
-          7,
-          11,
           10,
+          11,
+          9,
           9,
           1,
-          4,
+          6,
           2,
           1,
           1,
@@ -17129,7 +17091,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-12",
-          "count": 5
+          "count": 4
         },
         {
           "date": "2025-11",
@@ -17583,17 +17545,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 5,
+          "commits": 7,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 15
+          "total": 21
         },
         "details": {
-          "commits": 5,
+          "commits": 7,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 5.0,
+          "commits_per_day": 7.0,
           "issues_per_day": 0.0
         }
       },
@@ -17605,17 +17567,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 2
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 1.0
+          "issues_per_day": 0.0
         }
       },
       {
@@ -17879,17 +17841,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 22,
+          "commits": 27,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 66
+          "total": 81
         },
         "details": {
-          "commits": 22,
+          "commits": 27,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.142857142857143,
+          "commits_per_day": 3.857142857142857,
           "issues_per_day": 0.0
         }
       },
@@ -17901,17 +17863,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 4
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.2857142857142857
+          "issues_per_day": 0.0
         }
       },
       {
@@ -18218,17 +18180,17 @@
         "is_private": false,
         "score": {
           "commits": 8,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 28
+          "total": 26
         },
         "details": {
           "commits": 8,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.26666666666666666,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -18493,17 +18455,17 @@
         "is_private": false,
         "score": {
           "commits": 33,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 107
+          "total": 105
         },
         "details": {
           "commits": 33,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.09041095890410959,
-          "issues_per_day": 0.010958904109589041
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
