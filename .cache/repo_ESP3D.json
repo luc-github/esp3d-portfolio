@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768094344.4374447,
+  "timestamp": 1768180866.2772882,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,6 +21,23 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1112,
+            "title": "Used Configurator and Compiles and updates ESP01S 4MB But no AP or Station wifi and cant communicate Serially",
+            "body": "I am using a ESP01S $MB and programmer purchased from Amazon.\nI Use Platformio for a lot of other projects so I disabled it in vscode and enabled Pioarduino.\nI used the Configurator to create my Configuration.ini, platformio.ini and index.html.gz.\nBuilding works without error and upload seems successful with result\nCompressed 474640 bytes to 336951...\nWriting at 0x00000000... (4 %)\n.......\nWriting at 0x00050000... (100 %)\nWrote 474640 bytes (336951 compressed) at 0x00000000 in 29.7 seconds (effective \n128.1 kbit/s)...\nHash of data verified.\nIf I then try to use serial monitor in vscode I get a few lines of garbage. Same if I try to connect using Putty.\nWifi AP is not available. I tried compiling with the Station SSID defined but that also did not work.\n\nAlso tried to upload filesystem image in Pioarduino. this failed with :\nFile  md5: b13656e68372eea15c1b8f734f0f44ff\nFlash md5: 178231681a8d37a3b5faf524d3e0c060\nMD5 of 0xFF is a5f6fbe334f9febc346340dcda56b51c\n\nA fatal error occurred: MD5 of file does not match data in flash!",
+            "state": "open",
+            "created_at": "2026-01-11T22:50:39+00:00",
+            "updated_at": "2026-01-12T00:14:08+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1112",
+            "is_pr": false,
+            "labels": [
+              "ESP8266",
+              "ESP3D 3.X"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 1110,
             "title": "Bump qs and express in /embedded",
@@ -1202,7 +1219,7 @@
       "size": 135299,
       "stars": 1939,
       "forks": 484,
-      "open_issues": 5,
+      "open_issues": 6,
       "watchers": 1939,
       "default_branch": "3.0"
     },

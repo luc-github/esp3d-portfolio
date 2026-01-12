@@ -22,6 +22,33 @@
           "protected": false,
           "issues": [
             {
+              "number": 1112,
+              "title": "Used Configurator and Compiles and updates ESP01S 4MB But no AP or Station wifi and cant communicate Serially",
+              "body": "I am using a ESP01S $MB and programmer purchased from Amazon.\nI Use Platformio for a lot of other projects so I disabled it in vscode and enabled Pioarduino.\nI used the Configurator to create my Configuration.ini, platformio.ini and index.html.gz.\nBuilding works without error and upload seems successful with result\nCompressed 474640 bytes to 336951...\nWriting at 0x00000000... (4 %)\n.......\nWriting at 0x00050000... (100 %)\nWrote 474640 bytes (336951 compressed) at 0x00000000 in 29.7 seconds (effective \n128.1 kbit/s)...\nHash of data verified.\nIf I then try to use serial monitor in vscode I get a few lines of garbage. Same if I try to connect using Putty.\nWifi AP is not available. I tried compiling with the Station SSID defined but that also did not work.\n\nAlso tried to upload filesystem image in Pioarduino. this failed with :\nFile  md5: b13656e68372eea15c1b8f734f0f44ff\nFlash md5: 178231681a8d37a3b5faf524d3e0c060\nMD5 of 0xFF is a5f6fbe334f9febc346340dcda56b51c\n\nA fatal error occurred: MD5 of file does not match data in flash!",
+              "state": "open",
+              "created_at": "2026-01-11T22:50:39+00:00",
+              "updated_at": "2026-01-12T00:14:08+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1112",
+              "is_pr": false,
+              "labels": [
+                "ESP8266",
+                "ESP3D 3.X"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 1110,
               "title": "Bump qs and express in /embedded",
               "body": "Bumps [qs](https://github.com/ljharb/qs) to 6.14.1 and updates ancestor dependency [express](https://github.com/expressjs/express). These dependencies need to be updated together.\n\nUpdates `qs` from 6.13.0 to 6.14.1\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.14.1</strong></h2>\n<ul>\n<li>[Fix] ensure arrayLength applies to <code>[]</code> notation as well</li>\n<li>[Fix] <code>parse</code>: when a custom decoder returns <code>null</code> for a key, ignore that key</li>\n<li>[Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li>[meta] add threat model</li>\n<li>[actions] add workflow permissions</li>\n<li>[Tests] <code>stringify</code>: increase coverage</li>\n<li>[Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code>, <code>es-value-fixtures</code>, <code>for-each</code>, <code>object-inspect</code></li>\n</ul>\n<h2><strong>6.14.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>throwOnParameterLimitExceeded</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/517\">#517</a>)</li>\n<li>[Refactor] <code>parse</code>: use <code>utils.combine</code> more</li>\n<li>[patch] <code>parse</code>: add explicit <code>throwOnLimitExceeded</code> default</li>\n<li>[actions] use shared action; re-add finishers</li>\n<li>[meta] Fix changelog formatting bug</li>\n<li>[Deps] update <code>side-channel</code></li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>has-bigints</code>, <code>has-proto</code>, <code>has-symbols</code></li>\n<li>[Tests] increase coverage</li>\n</ul>\n<h2><strong>6.13.1</strong></h2>\n<ul>\n<li>[Fix] <code>stringify</code>: avoid a crash when a <code>filter</code> key is <code>null</code></li>\n<li>[Fix] <code>utils.merge</code>: functions should not be stringified into keys</li>\n<li>[Fix] <code>parse</code>: avoid a crash with interpretNumericEntities: true, comma: true, and iso charset</li>\n<li>[Fix] <code>stringify</code>: ensure a non-string <code>filter</code> does not crash</li>\n<li>[Refactor] use <code>__proto__</code> syntax instead of <code>Object.create</code> for null objects</li>\n<li>[Refactor] misc cleanup</li>\n<li>[Tests] <code>utils.merge</code>: add some coverage</li>\n<li>[Tests] fix a test case</li>\n<li>[actions] split out node 10-20, and 20+</li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>mock-property</code>, <code>object-inspect</code>, <code>tape</code></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/3fa11a5f643c76896387bd2d86904a2d0141fdf7\"><code>3fa11a5</code></a> v6.14.1</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/a62670423c1ccab0dd83c621bfb98c7c024e314d\"><code>a626704</code></a> [Dev Deps] update <code>npmignore</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/3086902ecf7f088d0d1803887643ac6c03d415b9\"><code>3086902</code></a> [Fix] ensure arrayLength applies to <code>[]</code> notation as well</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/fc7930e86c2264c1568c9f5606830e19b0bc2af2\"><code>fc7930e</code></a> [Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/0b06aac566abee45ef0327667a7cc89e7aed8b58\"><code>0b06aac</code></a> [Dev Deps] update <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/64951f6200a1fb72cc003c6e8226dde3d2ef591f\"><code>64951f6</code></a> [Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/e1bd2599cdff4c936ea52fb1f16f921cbe7aa88c\"><code>e1bd259</code></a> [Dev Deps] update <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f4b3d39709fef6ddbd85128d1ba4c6b566c4902e\"><code>f4b3d39</code></a> [eslint] add eslint 9 optional peer dep</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/6e94d9596ca50dffafcef40a5f64eca89962cf34\"><code>6e94d95</code></a> [Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/973dc3c51c86da9f4e30edeb4b1725158d439102\"><code>973dc3c</code></a> [actions] add workflow permissions</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.13.0...v6.14.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `express` from 4.21.2 to 4.22.1\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/releases\">express's releases</a>.</em></p>\n<blockquote>\n<h2>v4.22.1</h2>\n<h2>What's Changed</h2>\n<blockquote>\n<p>[!IMPORTANT]<br />\nThe prior release (4.22.0) included an erroneous breaking change related to the extended query parser. There is no actual security vulnerability associated with this behavior (CVE-2024-51999 has been rejected). The change has been fully reverted in this release.</p>\n</blockquote>\n<ul>\n<li>Release: 4.22.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6934\">expressjs/express#6934</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.22.0...v4.22.1\">https://github.com/expressjs/express/compare/4.22.0...v4.22.1</a></p>\n<h2>4.22.0</h2>\n<h2>Important: Security</h2>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Refactor: improve readability by <a href=\"https://github.com/sazk07\"><code>@\u200bsazk07</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6190\">expressjs/express#6190</a></li>\n<li>ci: add support for Node.js@23.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6080\">expressjs/express#6080</a></li>\n<li>Method functions with no path should error by <a href=\"https://github.com/wesleytodd\"><code>@\u200bwesleytodd</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5957\">expressjs/express#5957</a></li>\n<li>ci: updated github actions ci workflow by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6323\">expressjs/express#6323</a></li>\n<li>ci: reorder <code>npm i</code> steps to fix ci for older node versions by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6336\">expressjs/express#6336</a></li>\n<li>Backport: ci: add node.js 24 to test matrix by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6506\">expressjs/express#6506</a></li>\n<li>chore(4.x): wider range for query test skip by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6513\">expressjs/express#6513</a></li>\n<li>use tilde notation for certain dependencies by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6905\">expressjs/express#6905</a></li>\n<li>deps: qs@6.14.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6909\">expressjs/express#6909</a></li>\n<li>deps: use tilde notation for <code>qs</code> by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6919\">expressjs/express#6919</a></li>\n<li>Release: 4.22.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6921\">expressjs/express#6921</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.2...4.22.0\">https://github.com/expressjs/express/compare/4.21.2...4.22.0</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/blob/v4.22.1/History.md\">express's changelog</a>.</em></p>\n<blockquote>\n<h1>4.22.1 / 2025-12-01</h1>\n<ul>\n<li>Revert security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h1>4.22.0 / 2025-12-01</h1>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n<li>deps: use tilde notation for dependencies</li>\n<li>deps: qs@6.14.0</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/expressjs/express/commit/12fae14531a78f19a2caaa5d4f58d9b01eaf3194\"><code>12fae14</code></a> 4.22.1</li>\n<li><a href=\"https://github.com/expressjs/express/commit/5ddf311af32e772a77fd48b6266ce2f1ba330e1a\"><code>5ddf311</code></a> Revert &quot;sec: security patch for CVE-2024-51999&quot;</li>\n<li><a href=\"https://github.com/expressjs/express/commit/49744abd1120484fe64d7bde1cd3197c32523b6e\"><code>49744ab</code></a> 4.22.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6921\">#6921</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6e97452f600a3b01719fbc5517d833c7646b0bb7\"><code>6e97452</code></a> sec: security patch for CVE-2024-51999</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6a23d34d652b9e69a4486d2a2a0dea54b9685fa5\"><code>6a23d34</code></a> deps: use tilde notation for <code>qs</code> (<a href=\"https://redirect.github.com/expressjs/express/issues/6919\">#6919</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/8c12cdf93b89a4628b59179e3cc0722fc517d6b3\"><code>8c12cdf</code></a> deps: qs@6.14.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6909\">#6909</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/7fea74fcf02764580f38f2a7f1932dfa54cddd90\"><code>7fea74f</code></a> deps: use tilde notation for certain dependencies (<a href=\"https://redirect.github.com/expressjs/express/issues/6905\">#6905</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/dac7a0475a99e9dfc57b3b8e6d5bdf52813f1944\"><code>dac7a04</code></a> chore: wider range for query test skip (<a href=\"https://redirect.github.com/expressjs/express/issues/6513\">#6513</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/997919b48879bbd53171c3b4e5dd1b04ad139241\"><code>997919b</code></a> ci: add node.js 24 to test matrix (<a href=\"https://redirect.github.com/expressjs/express/issues/6506\">#6506</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/36fb59c6c7d9dfca0b08dfeafb5b6e4a249234a1\"><code>36fb59c</code></a> fix(ci): reorder <code>npm i</code> steps to fix ci for older node versions (<a href=\"https://redirect.github.com/expressjs/express/issues/6336\">#6336</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/expressjs/express/compare/4.21.2...v4.22.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
@@ -37,27 +64,27 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 9,
-              "days_since_update": 9,
+              "age_days": 10,
+              "days_since_update": 10,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
+                "6919",
+                "5957",
+                "517",
+                "6080",
+                "6323",
+                "6506",
+                "6190",
+                "6513",
                 "6905",
                 "6909",
-                "6190",
-                "6506",
-                "6080",
-                "517",
-                "6513",
-                "6934",
-                "6921",
-                "5957",
-                "6919",
                 "6336",
-                "6323"
+                "6934",
+                "6921"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -79,8 +106,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2737,
-              "days_since_update": 33,
+              "age_days": 2738,
+              "days_since_update": 34,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -108,8 +135,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1263,
-              "days_since_update": 290,
+              "age_days": 1264,
+              "days_since_update": 291,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -137,8 +164,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1812,
-              "days_since_update": 439,
+              "age_days": 1813,
+              "days_since_update": 440,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -165,8 +192,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1804,
-              "days_since_update": 676,
+              "age_days": 1805,
+              "days_since_update": 677,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -178,26 +205,26 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 6
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 1,
               "stale": 4
             },
             "complexity": {
-              "medium": 5
+              "medium": 6
             },
             "size": {
-              "large": 3,
+              "large": 4,
               "medium": 2
             },
             "lifecycle": {
-              "new": 4,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -1290,7 +1317,7 @@
         "size": 135299,
         "stars": 1939,
         "forks": 484,
-        "open_issues": 5,
+        "open_issues": 6,
         "watchers": 1939,
         "default_branch": "3.0"
       },
@@ -1375,8 +1402,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 294,
-              "days_since_update": 294,
+              "age_days": 295,
+              "days_since_update": 295,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1403,8 +1430,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1439,
-              "days_since_update": 385,
+              "age_days": 1440,
+              "days_since_update": 386,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2543,37 +2570,37 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 11,
-              "days_since_update": 11,
+              "age_days": 12,
+              "days_since_update": 12,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "511",
+                "6190",
                 "6513",
-                "5956",
-                "6336",
-                "6029",
-                "6506",
-                "517",
-                "501",
-                "6065",
-                "6323",
+                "511",
                 "6905",
+                "6065",
+                "5956",
+                "6094",
+                "5957",
+                "506",
+                "6336",
+                "501",
+                "6209",
+                "6919",
+                "6080",
+                "502",
                 "6909",
                 "6934",
-                "6921",
-                "502",
-                "6094",
-                "6190",
-                "6080",
+                "6323",
+                "517",
+                "6506",
+                "6029",
                 "6031",
-                "6209",
-                "506",
-                "5957",
-                "6919"
+                "6921"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2591,8 +2618,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 13,
-              "days_since_update": 13,
+              "age_days": 14,
+              "days_since_update": 14,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2615,8 +2642,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 112,
-              "days_since_update": 109,
+              "age_days": 113,
+              "days_since_update": 110,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2641,8 +2668,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 132,
-              "days_since_update": 131,
+              "age_days": 133,
+              "days_since_update": 132,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2670,8 +2697,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 286,
-              "days_since_update": 286,
+              "age_days": 287,
+              "days_since_update": 287,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2699,8 +2726,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1337,
-              "days_since_update": 411,
+              "age_days": 1338,
+              "days_since_update": 412,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2729,8 +2756,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1918,
-              "days_since_update": 454,
+              "age_days": 1919,
+              "days_since_update": 455,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2758,8 +2785,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1998,
-              "days_since_update": 454,
+              "age_days": 1999,
+              "days_since_update": 455,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2790,8 +2817,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 587,
-              "days_since_update": 454,
+              "age_days": 588,
+              "days_since_update": 455,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2818,8 +2845,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1210,
-              "days_since_update": 454,
+              "age_days": 1212,
+              "days_since_update": 455,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2846,8 +2873,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2198,
-              "days_since_update": 1244,
+              "age_days": 2199,
+              "days_since_update": 1245,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2876,8 +2903,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1341,
-              "days_since_update": 1314,
+              "age_days": 1342,
+              "days_since_update": 1315,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4040,8 +4067,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 13,
-              "days_since_update": 12,
+              "age_days": 14,
+              "days_since_update": 13,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -4066,8 +4093,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 236,
-              "days_since_update": 165,
+              "age_days": 237,
+              "days_since_update": 166,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4093,8 +4120,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 724,
-              "days_since_update": 247,
+              "age_days": 725,
+              "days_since_update": 248,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4121,8 +4148,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 722,
-              "days_since_update": 392,
+              "age_days": 723,
+              "days_since_update": 393,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4147,8 +4174,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 454,
-              "days_since_update": 454,
+              "age_days": 455,
+              "days_since_update": 455,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4175,8 +4202,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 514,
-              "days_since_update": 514,
+              "age_days": 515,
+              "days_since_update": 515,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4201,8 +4228,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 629,
-              "days_since_update": 516,
+              "age_days": 630,
+              "days_since_update": 517,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4228,8 +4255,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 734,
-              "days_since_update": 734,
+              "age_days": 735,
+              "days_since_update": 735,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4254,8 +4281,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1055,
-              "days_since_update": 1055,
+              "age_days": 1056,
+              "days_since_update": 1056,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4283,8 +4310,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1198,
-              "days_since_update": 1198,
+              "age_days": 1199,
+              "days_since_update": 1199,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8517,8 +8544,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 306,
-              "days_since_update": 306,
+              "age_days": 307,
+              "days_since_update": 307,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8541,8 +8568,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 969,
-              "days_since_update": 969,
+              "age_days": 970,
+              "days_since_update": 970,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8569,8 +8596,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1302,
-              "days_since_update": 1242,
+              "age_days": 1303,
+              "days_since_update": 1243,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9688,8 +9715,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 318,
-              "days_since_update": 318,
+              "age_days": 319,
+              "days_since_update": 319,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9714,8 +9741,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1047,
-              "days_since_update": 1047,
+              "age_days": 1048,
+              "days_since_update": 1048,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9740,8 +9767,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1047,
-              "days_since_update": 1047,
+              "age_days": 1048,
+              "days_since_update": 1048,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11793,8 +11820,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 229,
-              "days_since_update": 229,
+              "age_days": 230,
+              "days_since_update": 230,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11819,8 +11846,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 970,
-              "days_since_update": 970,
+              "age_days": 971,
+              "days_since_update": 971,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11846,8 +11873,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2166,
-              "days_since_update": 2150,
+              "age_days": 2167,
+              "days_since_update": 2151,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12971,8 +12998,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 970,
-              "days_since_update": 970,
+              "age_days": 971,
+              "days_since_update": 971,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16490,17 +16517,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-01-11T00:22:24+00:00",
+      "updated_at": "2026-01-11T06:02:00+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "d8401ab",
+            "sha": "ccea8a3",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-01-10T08:15:47+00:00"
+            "date": "2026-01-11T06:01:53+00:00"
           },
           "protected": false,
           "issues": []
@@ -16509,6 +16536,18 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "ccea8a3",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-11T06:01:53+00:00"
+          },
+          {
+            "sha": "09a0af4",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-11T05:40:38+00:00"
+          },
           {
             "sha": "d8401ab",
             "message": "Private commit",
@@ -16820,26 +16859,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2025-12-13T05:28:18+00:00"
-          },
-          {
-            "sha": "33c2b91",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-12T14:11:31+00:00"
-          },
-          {
-            "sha": "dad3494",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-11T13:59:01+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "d8401ab",
+          "sha": "ccea8a3",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-01-10T08:15:47+00:00"
+          "date": "2026-01-11T06:01:53+00:00"
         }
       },
       "statistics": {},
@@ -16849,8 +16876,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4443,
-      "reset": "2026-01-11T02:21:12+00:00"
+      "remaining": 3738,
+      "reset": "2026-01-12T02:10:08+00:00"
     }
   },
   "stats": {
@@ -16875,23 +16902,23 @@
       }
     },
     "issues": {
-      "total_count": 39,
-      "open_count": 39,
+      "total_count": 40,
+      "open_count": 40,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 926.310614922305,
+      "avg_age_days": 904.143502895382,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 39
+        "normal": 40
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 0,
-        "last_month": 4
+        "last_day": 1,
+        "last_week": 1,
+        "last_month": 5
       }
     },
     "activity": {
-      "total_commits": 26,
+      "total_commits": 22,
       "commit_frequency": {
         "daily": 0.40659340659340665,
         "weekly": 2.8461538461538454,
@@ -16995,7 +17022,7 @@
           9,
           1,
           3,
-          1,
+          0,
           1,
           1,
           0,
@@ -17022,7 +17049,7 @@
           3,
           3,
           5,
-          1,
+          0,
           1,
           0,
           0,
@@ -17065,8 +17092,8 @@
           7,
           5,
           2,
-          2,
-          5,
+          3,
+          6,
           13,
           7,
           4,
@@ -17091,7 +17118,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-12",
-          "count": 4
+          "count": 5
         },
         {
           "date": "2025-11",
@@ -17545,17 +17572,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 3,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 9
+          "total": 6
         },
         "details": {
-          "commits": 3,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.0,
+          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -17567,17 +17594,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17841,17 +17868,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 26,
+          "commits": 22,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 78
+          "total": 66
         },
         "details": {
-          "commits": 26,
+          "commits": 22,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.7142857142857144,
+          "commits_per_day": 3.142857142857143,
           "issues_per_day": 0.0
         }
       },
@@ -17863,17 +17890,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -18137,17 +18164,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 53,
+          "commits": 54,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 159
+          "total": 162
         },
         "details": {
-          "commits": 53,
+          "commits": 54,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.7666666666666666,
+          "commits_per_day": 1.8,
           "issues_per_day": 0.0
         }
       },
@@ -18180,17 +18207,17 @@
         "is_private": false,
         "score": {
           "commits": 8,
-          "issues": 1,
+          "issues": 2,
           "comments": 0,
           "period_days": 30,
-          "total": 26
+          "total": 28
         },
         "details": {
           "commits": 8,
-          "issues": 1,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.26666666666666666,
-          "issues_per_day": 0.03333333333333333
+          "issues_per_day": 0.06666666666666667
         }
       },
       {
@@ -18455,17 +18482,17 @@
         "is_private": false,
         "score": {
           "commits": 33,
-          "issues": 3,
+          "issues": 4,
           "comments": 0,
           "period_days": 365,
-          "total": 105
+          "total": 107
         },
         "details": {
           "commits": 33,
-          "issues": 3,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.09041095890410959,
-          "issues_per_day": 0.00821917808219178
+          "issues_per_day": 0.010958904109589041
         }
       },
       {
