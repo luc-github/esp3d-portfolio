@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2026-01-09T13:52:16+00:00",
+      "updated_at": "2026-01-12T06:56:17+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -21,33 +21,6 @@
           },
           "protected": false,
           "issues": [
-            {
-              "number": 1112,
-              "title": "Used Configurator and Compiles and updates ESP01S 4MB But no AP or Station wifi and cant communicate Serially",
-              "body": "I am using a ESP01S $MB and programmer purchased from Amazon.\nI Use Platformio for a lot of other projects so I disabled it in vscode and enabled Pioarduino.\nI used the Configurator to create my Configuration.ini, platformio.ini and index.html.gz.\nBuilding works without error and upload seems successful with result\nCompressed 474640 bytes to 336951...\nWriting at 0x00000000... (4 %)\n.......\nWriting at 0x00050000... (100 %)\nWrote 474640 bytes (336951 compressed) at 0x00000000 in 29.7 seconds (effective \n128.1 kbit/s)...\nHash of data verified.\nIf I then try to use serial monitor in vscode I get a few lines of garbage. Same if I try to connect using Putty.\nWifi AP is not available. I tried compiling with the Station SSID defined but that also did not work.\n\nAlso tried to upload filesystem image in Pioarduino. this failed with :\nFile  md5: b13656e68372eea15c1b8f734f0f44ff\nFlash md5: 178231681a8d37a3b5faf524d3e0c060\nMD5 of 0xFF is a5f6fbe334f9febc346340dcda56b51c\n\nA fatal error occurred: MD5 of file does not match data in flash!",
-              "state": "open",
-              "created_at": "2026-01-11T22:50:39+00:00",
-              "updated_at": "2026-01-12T00:14:08+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1112",
-              "is_pr": false,
-              "labels": [
-                "ESP8266",
-                "ESP3D 3.X"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
             {
               "number": 1110,
               "title": "Bump qs and express in /embedded",
@@ -64,27 +37,27 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 10,
-              "days_since_update": 10,
+              "age_days": 11,
+              "days_since_update": 11,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6919",
-                "5957",
                 "517",
-                "6080",
-                "6323",
                 "6506",
+                "5957",
                 "6190",
+                "6909",
+                "6934",
+                "6323",
+                "6919",
+                "6921",
                 "6513",
                 "6905",
-                "6909",
-                "6336",
-                "6934",
-                "6921"
+                "6080",
+                "6336"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -106,8 +79,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2738,
-              "days_since_update": 34,
+              "age_days": 2739,
+              "days_since_update": 35,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -135,8 +108,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1264,
-              "days_since_update": 291,
+              "age_days": 1265,
+              "days_since_update": 292,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -164,8 +137,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1813,
-              "days_since_update": 440,
+              "age_days": 1814,
+              "days_since_update": 441,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -192,8 +165,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1805,
-              "days_since_update": 677,
+              "age_days": 1806,
+              "days_since_update": 678,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -205,26 +178,26 @@
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 5,
+            "open": 5,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 5
             },
             "ages": {
-              "recent": 1,
+              "recent": 0,
               "active": 1,
               "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 5
             },
             "size": {
-              "large": 4,
+              "large": 3,
               "medium": 2
             },
             "lifecycle": {
-              "new": 5,
+              "new": 4,
               "in_progress": 1
             }
           }
@@ -1315,10 +1288,10 @@
       },
       "statistics": {
         "size": 135299,
-        "stars": 1939,
+        "stars": 1940,
         "forks": 484,
-        "open_issues": 6,
-        "watchers": 1939,
+        "open_issues": 5,
+        "watchers": 1940,
         "default_branch": "3.0"
       },
       "version_info": {
@@ -1402,8 +1375,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 295,
-              "days_since_update": 295,
+              "age_days": 296,
+              "days_since_update": 296,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1430,8 +1403,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1440,
-              "days_since_update": 386,
+              "age_days": 1441,
+              "days_since_update": 387,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2570,37 +2543,37 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 12,
-              "days_since_update": 12,
+              "age_days": 13,
+              "days_since_update": 13,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6190",
-                "6513",
-                "511",
-                "6905",
-                "6065",
-                "5956",
                 "6094",
-                "5957",
-                "506",
-                "6336",
+                "502",
+                "6080",
                 "501",
                 "6209",
-                "6919",
-                "6080",
-                "502",
-                "6909",
-                "6934",
-                "6323",
-                "517",
-                "6506",
+                "5956",
                 "6029",
+                "517",
+                "5957",
                 "6031",
-                "6921"
+                "6323",
+                "6921",
+                "506",
+                "6336",
+                "6506",
+                "6190",
+                "6909",
+                "511",
+                "6065",
+                "6934",
+                "6919",
+                "6513",
+                "6905"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2618,8 +2591,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 14,
-              "days_since_update": 14,
+              "age_days": 15,
+              "days_since_update": 15,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2642,8 +2615,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 113,
-              "days_since_update": 110,
+              "age_days": 114,
+              "days_since_update": 111,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2668,8 +2641,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 133,
-              "days_since_update": 132,
+              "age_days": 134,
+              "days_since_update": 133,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2697,8 +2670,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 287,
-              "days_since_update": 287,
+              "age_days": 288,
+              "days_since_update": 288,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2726,8 +2699,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1338,
-              "days_since_update": 412,
+              "age_days": 1339,
+              "days_since_update": 413,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2756,8 +2729,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1919,
-              "days_since_update": 455,
+              "age_days": 1920,
+              "days_since_update": 456,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2785,8 +2758,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1999,
-              "days_since_update": 455,
+              "age_days": 2000,
+              "days_since_update": 456,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2817,8 +2790,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 588,
-              "days_since_update": 455,
+              "age_days": 589,
+              "days_since_update": 456,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2846,7 +2819,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1212,
-              "days_since_update": 455,
+              "days_since_update": 456,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2873,8 +2846,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2199,
-              "days_since_update": 1245,
+              "age_days": 2200,
+              "days_since_update": 1246,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2903,8 +2876,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1342,
-              "days_since_update": 1315,
+              "age_days": 1343,
+              "days_since_update": 1316,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4067,8 +4040,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 14,
-              "days_since_update": 13,
+              "age_days": 15,
+              "days_since_update": 14,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -4093,8 +4066,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 237,
-              "days_since_update": 166,
+              "age_days": 238,
+              "days_since_update": 167,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4120,8 +4093,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 725,
-              "days_since_update": 248,
+              "age_days": 726,
+              "days_since_update": 249,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4148,8 +4121,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 723,
-              "days_since_update": 393,
+              "age_days": 724,
+              "days_since_update": 394,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4174,8 +4147,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 455,
-              "days_since_update": 455,
+              "age_days": 456,
+              "days_since_update": 456,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4202,8 +4175,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 515,
-              "days_since_update": 515,
+              "age_days": 516,
+              "days_since_update": 516,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4228,8 +4201,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 630,
-              "days_since_update": 517,
+              "age_days": 631,
+              "days_since_update": 518,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4255,8 +4228,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 735,
-              "days_since_update": 735,
+              "age_days": 736,
+              "days_since_update": 736,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4281,8 +4254,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1056,
-              "days_since_update": 1056,
+              "age_days": 1057,
+              "days_since_update": 1057,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4310,8 +4283,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1199,
-              "days_since_update": 1199,
+              "age_days": 1200,
+              "days_since_update": 1200,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8544,8 +8517,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 307,
-              "days_since_update": 307,
+              "age_days": 308,
+              "days_since_update": 308,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8596,7 +8569,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1303,
+              "age_days": 1304,
               "days_since_update": 1243,
               "is_stale": true,
               "is_recent": false,
@@ -9715,8 +9688,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 319,
-              "days_since_update": 319,
+              "age_days": 320,
+              "days_since_update": 320,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9741,8 +9714,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1048,
-              "days_since_update": 1048,
+              "age_days": 1049,
+              "days_since_update": 1049,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9767,8 +9740,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1048,
-              "days_since_update": 1048,
+              "age_days": 1049,
+              "days_since_update": 1049,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11820,8 +11793,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 230,
-              "days_since_update": 230,
+              "age_days": 231,
+              "days_since_update": 231,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11846,8 +11819,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 971,
-              "days_since_update": 971,
+              "age_days": 972,
+              "days_since_update": 972,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11873,8 +11846,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2167,
-              "days_since_update": 2151,
+              "age_days": 2168,
+              "days_since_update": 2152,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12998,8 +12971,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 971,
-              "days_since_update": 971,
+              "age_days": 972,
+              "days_since_update": 972,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16517,17 +16490,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-01-11T06:02:00+00:00",
+      "updated_at": "2026-01-12T13:16:16+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "ccea8a3",
+            "sha": "989e61d",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-01-11T06:01:53+00:00"
+            "date": "2026-01-12T13:16:09+00:00"
           },
           "protected": false,
           "issues": []
@@ -16536,6 +16509,30 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "989e61d",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-12T13:16:09+00:00"
+          },
+          {
+            "sha": "e3475c8",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-12T13:15:47+00:00"
+          },
+          {
+            "sha": "3b77567",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-12T13:15:18+00:00"
+          },
+          {
+            "sha": "6aa09c6",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-12T00:08:54+00:00"
+          },
           {
             "sha": "ccea8a3",
             "message": "Private commit",
@@ -16835,38 +16832,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2025-12-19T04:13:09+00:00"
-          },
-          {
-            "sha": "97dbe9b",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-16T12:48:07+00:00"
-          },
-          {
-            "sha": "099ff86",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-13T09:05:10+00:00"
-          },
-          {
-            "sha": "6771b2d",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-13T06:58:56+00:00"
-          },
-          {
-            "sha": "016e6cc",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2025-12-13T05:28:18+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "ccea8a3",
+          "sha": "989e61d",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-01-11T06:01:53+00:00"
+          "date": "2026-01-12T13:16:09+00:00"
         }
       },
       "statistics": {},
@@ -16876,8 +16849,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 3738,
-      "reset": "2026-01-12T02:10:08+00:00"
+      "remaining": 4464,
+      "reset": "2026-01-13T01:42:34+00:00"
     }
   },
   "stats": {
@@ -16893,7 +16866,7 @@
         "Python": 1
       },
       "total_size": 749588,
-      "total_stars": 3070,
+      "total_stars": 3071,
       "total_forks": 979,
       "branches": {
         "production": 12,
@@ -16902,23 +16875,23 @@
       }
     },
     "issues": {
-      "total_count": 40,
-      "open_count": 40,
+      "total_count": 39,
+      "open_count": 39,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 904.143502895382,
+      "avg_age_days": 928.3011229385896,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 40
+        "normal": 39
       },
       "recent_activity": {
-        "last_day": 1,
-        "last_week": 1,
-        "last_month": 5
+        "last_day": 0,
+        "last_week": 0,
+        "last_month": 4
       }
     },
     "activity": {
-      "total_commits": 22,
+      "total_commits": 24,
       "commit_frequency": {
         "daily": 0.40659340659340665,
         "weekly": 2.8461538461538454,
@@ -16931,7 +16904,7 @@
       },
       "activity_heatmap": [
         [
-          4,
+          5,
           6,
           10,
           8,
@@ -16944,7 +16917,7 @@
           2,
           1,
           7,
-          2,
+          5,
           0,
           1,
           0,
@@ -16969,7 +16942,7 @@
           3,
           5,
           10,
-          5,
+          4,
           2,
           1,
           1,
@@ -17066,11 +17039,11 @@
           1,
           3,
           3,
-          4,
-          6,
+          3,
+          5,
           2,
           11,
-          6,
+          5,
           4,
           5,
           3,
@@ -17118,7 +17091,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-12",
-          "count": 5
+          "count": 4
         },
         {
           "date": "2025-11",
@@ -17572,17 +17545,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 2,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 6
+          "total": 9
         },
         "details": {
-          "commits": 2,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 2.0,
+          "commits_per_day": 3.0,
           "issues_per_day": 0.0
         }
       },
@@ -17594,17 +17567,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 2
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 1.0
+          "issues_per_day": 0.0
         }
       },
       {
@@ -17868,17 +17841,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 22,
+          "commits": 24,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 66
+          "total": 72
         },
         "details": {
-          "commits": 22,
+          "commits": 24,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.142857142857143,
+          "commits_per_day": 3.4285714285714284,
           "issues_per_day": 0.0
         }
       },
@@ -17890,17 +17863,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 2
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.14285714285714285
+          "issues_per_day": 0.0
         }
       },
       {
@@ -18207,17 +18180,17 @@
         "is_private": false,
         "score": {
           "commits": 8,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 28
+          "total": 26
         },
         "details": {
           "commits": 8,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.26666666666666666,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -18482,17 +18455,17 @@
         "is_private": false,
         "score": {
           "commits": 33,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 107
+          "total": 105
         },
         "details": {
           "commits": 33,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.09041095890410959,
-          "issues_per_day": 0.010958904109589041
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
