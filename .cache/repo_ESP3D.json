@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768353338.395672,
+  "timestamp": 1768439458.4214816,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -27,13 +27,15 @@
             "body": "I have BTT TFT35 which is showing option to view and list from both onboard SD (BTT SKR PRO V1) and the TFT SD. \nBut in ESP3D I have adjusted the settings to allow this but no files are listed when I chose TTF SD.\nI have configured marlin(Latest) setting  \n#define SDSUPPORT\n#define SDCARD_CONNECTION ONBOARD \nAnything obvious I am missing?\nIn the terminal the M20 SD:/ shows the list of files that are on the onboard SD",
             "state": "open",
             "created_at": "2026-01-13T22:40:29+00:00",
-            "updated_at": "2026-01-14T01:14:09+00:00",
+            "updated_at": "2026-01-15T00:37:29+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1114",
             "is_pr": false,
             "labels": [
-              "Waiting for details",
-              "BTT TFT"
+              "Marlin 2.X",
+              "ESP3D 3.X",
+              "BTT TFT",
+              "Not related to ESP3D"
             ],
             "priority": "normal",
             "assignee": null
@@ -44,11 +46,16 @@
             "body": "This pull request fixes a bug in the `handleSDFileList` method in `handle-SD-files.cpp` by correcting the conditional check for a trailing slash in the `path` variable. The change replaces an assignment operator (`=`) with the correct equality operator (`==`), ensuring proper path handling. Without this fix, subfolders cannot be opened, and only the top-level directory of the SD card is visible.",
             "state": "open",
             "created_at": "2026-01-13T22:11:31+00:00",
-            "updated_at": "2026-01-13T22:11:48+00:00",
+            "updated_at": "2026-01-14T19:33:47+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/pull/1113",
             "is_pr": true,
-            "labels": [],
+            "labels": [
+              "bug",
+              "Work in progress",
+              "ESP3D 3.X",
+              "SD Card"
+            ],
             "priority": "normal",
             "assignee": null
           },
@@ -1232,7 +1239,7 @@
     "statistics": {
       "size": 135299,
       "stars": 1939,
-      "forks": 484,
+      "forks": 486,
       "open_issues": 7,
       "watchers": 1939,
       "default_branch": "3.0"
