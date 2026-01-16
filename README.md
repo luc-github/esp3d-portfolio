@@ -5,8 +5,8 @@
 ![Repositories](https://img.shields.io/badge/Repositories-14-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-41-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2001%20%2F%2015%2001:13%20UTC-lightgrey)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-39-yellow)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2001%20%2F%2016%2001:16%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -46,8 +46,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (9) | 3 | 0 | 9.0 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 4.0 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (11) | 3 | 1 | 11.0 |
+| 🥈 2  | Private Project #1 | Private | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (6) | 2 | 0 | 6.0 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -69,8 +69,8 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (72) | 24 | 0 | 10.3 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 0.6 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (57) | 19 | 0 | 8.1 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (11) | 3 | 1 | 1.6 |
 | 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
 | ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -93,10 +93,10 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 5.4 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (30) | 8 | 3 | 1.0 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (21) | 5 | 3 | 0.7 |
-| ▪️ 4  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (15) | 5 | 0 | 0.5 |
-| ▪️ 5  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 0.4 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (29) | 9 | 1 | 1.0 |
+| 🥉 3  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (15) | 5 | 0 | 0.5 |
+| ▪️ 4  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 0.4 |
+| ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 2 | 3 | 0.4 |
 | ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (11) | 3 | 1 | 0.4 |
 | ▪️ 7  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 0.3 |
 | ▪️ 8  | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 0.3 |
@@ -116,7 +116,7 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 0.4 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (109) | 33 | 5 | 0.3 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (114) | 36 | 3 | 0.3 |
 | 🥉 3  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (99) | 33 | 0 | 0.3 |
 | ▪️ 4  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (78) | 26 | 0 | 0.2 |
 | ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (78) | 22 | 6 | 0.2 |
@@ -182,9 +182,9 @@ Repository popularity based on GitHub stars and forks.
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 41 |
+| Open Issues | 39 |
 | Closed Issues | 0 |
-| Average Age | 885.0 days |
+| Average Age | 931.0 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -193,8 +193,8 @@ Repository popularity based on GitHub stars and forks.
 Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.4 commits)
-Weekly   🟦 Few (1-10 commits)           (2.8 commits)
-Monthly  🟦 Few (1-25 commits)           (11.4 commits)
+Weekly   🟦 Few (1-10 commits)           (2.9 commits)
+Monthly  🟦 Few (1-25 commits)           (11.6 commits)
 ```
 
 </details>
@@ -218,15 +218,13 @@ Monthly  🟦 Few (1-25 commits)           (11.4 commits)
 <summary><h4>🚀 Production Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-12-17 (#cee8abb)
+Last commit: 2026-01-15 (#693f31f)
 Author: Luc
 ```
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1114: <a href="https://github.com/luc-github/ESP3D/issues/1114">No files displayed when looking at TFT SD</a></td><td><code>2026-01-13</code></td><td><code>2026-01-15</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#1113: <a href="https://github.com/luc-github/ESP3D/pull/1113">Fix logical error in path validation for SD file handling</a></td><td><code>2026-01-13</code></td><td><code>2026-01-14</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#1110: <a href="https://github.com/luc-github/ESP3D/pull/1110">Bump qs and express in /embedded</a></td><td><code>2026-01-01</code></td><td><code>2026-01-01</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1114: <a href="https://github.com/luc-github/ESP3D/issues/1114">No files displayed when looking at TFT SD</a></td><td><code>2026-01-13</code></td><td><code>2026-01-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2025-12-08</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -669,9 +667,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 3.0</td><td>#1114: <a href="https://github.com/luc-github/ESP3D/issues/1114">No files displayed when looking at TFT SD</a></td><td><code>2026-01-13</code></td><td><code>2026-01-15</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🚀 3.0</td><td>#1113: <a href="https://github.com/luc-github/ESP3D/pull/1113">Fix logical error in path validation for SD file handling</a></td><td><code>2026-01-13</code></td><td><code>2026-01-14</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🚀 3.0</td><td>#1110: <a href="https://github.com/luc-github/ESP3D/pull/1110">Bump qs and express in /embedded</a></td><td><code>2026-01-01</code></td><td><code>2026-01-01</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#1114: <a href="https://github.com/luc-github/ESP3D/issues/1114">No files displayed when looking at TFT SD</a></td><td><code>2026-01-13</code></td><td><code>2026-01-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2025-12-08</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -1028,10 +1024,10 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 24 |
-| New Issues | 3 |
+| Commits | 22 |
+| New Issues | 2 |
 | Closed Issues | 0 |
-| Active Contributors | 0 |
+| Active Contributors | 3 |
 
 ### Activity Heatmap
 
@@ -1040,7 +1036,7 @@ Author: Luc
     -----------------------
 Mon 🟨 🟨 🟩 🟨 🟩 🟦 🟦 🟩
 Tue 🟦 🟩 🟨 🟨 🟩 🟦 🟦 🟦
-Wed 🟩 🟨 🟥 🟨 🟨 🟦 🟦 🟩
+Wed 🟩 🟨 🟥 🟨 🟩 🟦 🟦 🟩
 Thu 🟩 🟥 🟥 🟨 🟦 🟦 ⬜ 🟦
 Fri 🟩 🟨 🟩 🟦 🟩 🟦 🟦 🟦
 Sat 🟦 🟩 🟨 🟩 🟩 🟦 ⬜ ⬜
@@ -1056,7 +1052,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2026-01-15 01:13:35 UTC*
+*🔄 Last updated: 2026-01-16 01:16:57 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768439458.4214816,
+  "timestamp": 1768525986.0117967,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-01-13T18:31:43+00:00",
+    "updated_at": "2026-01-15T10:53:33+00:00",
     "branches": [
       {
         "name": "3.0",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "cee8abb",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "sha": "693f31f",
+          "message": "Add sanity check in case no path",
           "author": "Luc",
-          "date": "2025-12-17T08:55:42+00:00"
+          "date": "2026-01-15T10:53:25+00:00"
         },
         "protected": false,
         "issues": [
@@ -27,7 +27,7 @@
             "body": "I have BTT TFT35 which is showing option to view and list from both onboard SD (BTT SKR PRO V1) and the TFT SD. \nBut in ESP3D I have adjusted the settings to allow this but no files are listed when I chose TTF SD.\nI have configured marlin(Latest) setting  \n#define SDSUPPORT\n#define SDCARD_CONNECTION ONBOARD \nAnything obvious I am missing?\nIn the terminal the M20 SD:/ shows the list of files that are on the onboard SD",
             "state": "open",
             "created_at": "2026-01-13T22:40:29+00:00",
-            "updated_at": "2026-01-15T00:37:29+00:00",
+            "updated_at": "2026-01-16T00:59:42+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1114",
             "is_pr": false,
@@ -36,42 +36,6 @@
               "ESP3D 3.X",
               "BTT TFT",
               "Not related to ESP3D"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 1113,
-            "title": "Fix logical error in path validation for SD file handling",
-            "body": "This pull request fixes a bug in the `handleSDFileList` method in `handle-SD-files.cpp` by correcting the conditional check for a trailing slash in the `path` variable. The change replaces an assignment operator (`=`) with the correct equality operator (`==`), ensuring proper path handling. Without this fix, subfolders cannot be opened, and only the top-level directory of the SD card is visible.",
-            "state": "open",
-            "created_at": "2026-01-13T22:11:31+00:00",
-            "updated_at": "2026-01-14T19:33:47+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/pull/1113",
-            "is_pr": true,
-            "labels": [
-              "bug",
-              "Work in progress",
-              "ESP3D 3.X",
-              "SD Card"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 1110,
-            "title": "Bump qs and express in /embedded",
-            "body": "Bumps [qs](https://github.com/ljharb/qs) to 6.14.1 and updates ancestor dependency [express](https://github.com/expressjs/express). These dependencies need to be updated together.\n\nUpdates `qs` from 6.13.0 to 6.14.1\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.14.1</strong></h2>\n<ul>\n<li>[Fix] ensure arrayLength applies to <code>[]</code> notation as well</li>\n<li>[Fix] <code>parse</code>: when a custom decoder returns <code>null</code> for a key, ignore that key</li>\n<li>[Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li>[meta] add threat model</li>\n<li>[actions] add workflow permissions</li>\n<li>[Tests] <code>stringify</code>: increase coverage</li>\n<li>[Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code>, <code>es-value-fixtures</code>, <code>for-each</code>, <code>object-inspect</code></li>\n</ul>\n<h2><strong>6.14.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>throwOnParameterLimitExceeded</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/517\">#517</a>)</li>\n<li>[Refactor] <code>parse</code>: use <code>utils.combine</code> more</li>\n<li>[patch] <code>parse</code>: add explicit <code>throwOnLimitExceeded</code> default</li>\n<li>[actions] use shared action; re-add finishers</li>\n<li>[meta] Fix changelog formatting bug</li>\n<li>[Deps] update <code>side-channel</code></li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>has-bigints</code>, <code>has-proto</code>, <code>has-symbols</code></li>\n<li>[Tests] increase coverage</li>\n</ul>\n<h2><strong>6.13.1</strong></h2>\n<ul>\n<li>[Fix] <code>stringify</code>: avoid a crash when a <code>filter</code> key is <code>null</code></li>\n<li>[Fix] <code>utils.merge</code>: functions should not be stringified into keys</li>\n<li>[Fix] <code>parse</code>: avoid a crash with interpretNumericEntities: true, comma: true, and iso charset</li>\n<li>[Fix] <code>stringify</code>: ensure a non-string <code>filter</code> does not crash</li>\n<li>[Refactor] use <code>__proto__</code> syntax instead of <code>Object.create</code> for null objects</li>\n<li>[Refactor] misc cleanup</li>\n<li>[Tests] <code>utils.merge</code>: add some coverage</li>\n<li>[Tests] fix a test case</li>\n<li>[actions] split out node 10-20, and 20+</li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>mock-property</code>, <code>object-inspect</code>, <code>tape</code></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/3fa11a5f643c76896387bd2d86904a2d0141fdf7\"><code>3fa11a5</code></a> v6.14.1</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/a62670423c1ccab0dd83c621bfb98c7c024e314d\"><code>a626704</code></a> [Dev Deps] update <code>npmignore</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/3086902ecf7f088d0d1803887643ac6c03d415b9\"><code>3086902</code></a> [Fix] ensure arrayLength applies to <code>[]</code> notation as well</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/fc7930e86c2264c1568c9f5606830e19b0bc2af2\"><code>fc7930e</code></a> [Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/0b06aac566abee45ef0327667a7cc89e7aed8b58\"><code>0b06aac</code></a> [Dev Deps] update <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/64951f6200a1fb72cc003c6e8226dde3d2ef591f\"><code>64951f6</code></a> [Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/e1bd2599cdff4c936ea52fb1f16f921cbe7aa88c\"><code>e1bd259</code></a> [Dev Deps] update <code>@ljharb/eslint-config</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f4b3d39709fef6ddbd85128d1ba4c6b566c4902e\"><code>f4b3d39</code></a> [eslint] add eslint 9 optional peer dep</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/6e94d9596ca50dffafcef40a5f64eca89962cf34\"><code>6e94d95</code></a> [Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/973dc3c51c86da9f4e30edeb4b1725158d439102\"><code>973dc3c</code></a> [actions] add workflow permissions</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.13.0...v6.14.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `express` from 4.21.2 to 4.22.1\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/releases\">express's releases</a>.</em></p>\n<blockquote>\n<h2>v4.22.1</h2>\n<h2>What's Changed</h2>\n<blockquote>\n<p>[!IMPORTANT]<br />\nThe prior release (4.22.0) included an erroneous breaking change related to the extended query parser. There is no actual security vulnerability associated with this behavior (CVE-2024-51999 has been rejected). The change has been fully reverted in this release.</p>\n</blockquote>\n<ul>\n<li>Release: 4.22.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6934\">expressjs/express#6934</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.22.0...v4.22.1\">https://github.com/expressjs/express/compare/4.22.0...v4.22.1</a></p>\n<h2>4.22.0</h2>\n<h2>Important: Security</h2>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Refactor: improve readability by <a href=\"https://github.com/sazk07\"><code>@\u200bsazk07</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6190\">expressjs/express#6190</a></li>\n<li>ci: add support for Node.js@23.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6080\">expressjs/express#6080</a></li>\n<li>Method functions with no path should error by <a href=\"https://github.com/wesleytodd\"><code>@\u200bwesleytodd</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5957\">expressjs/express#5957</a></li>\n<li>ci: updated github actions ci workflow by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6323\">expressjs/express#6323</a></li>\n<li>ci: reorder <code>npm i</code> steps to fix ci for older node versions by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6336\">expressjs/express#6336</a></li>\n<li>Backport: ci: add node.js 24 to test matrix by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6506\">expressjs/express#6506</a></li>\n<li>chore(4.x): wider range for query test skip by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6513\">expressjs/express#6513</a></li>\n<li>use tilde notation for certain dependencies by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6905\">expressjs/express#6905</a></li>\n<li>deps: qs@6.14.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6909\">expressjs/express#6909</a></li>\n<li>deps: use tilde notation for <code>qs</code> by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6919\">expressjs/express#6919</a></li>\n<li>Release: 4.22.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6921\">expressjs/express#6921</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.2...4.22.0\">https://github.com/expressjs/express/compare/4.21.2...4.22.0</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/blob/v4.22.1/History.md\">express's changelog</a>.</em></p>\n<blockquote>\n<h1>4.22.1 / 2025-12-01</h1>\n<ul>\n<li>Revert security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h1>4.22.0 / 2025-12-01</h1>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n<li>deps: use tilde notation for dependencies</li>\n<li>deps: qs@6.14.0</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/expressjs/express/commit/12fae14531a78f19a2caaa5d4f58d9b01eaf3194\"><code>12fae14</code></a> 4.22.1</li>\n<li><a href=\"https://github.com/expressjs/express/commit/5ddf311af32e772a77fd48b6266ce2f1ba330e1a\"><code>5ddf311</code></a> Revert &quot;sec: security patch for CVE-2024-51999&quot;</li>\n<li><a href=\"https://github.com/expressjs/express/commit/49744abd1120484fe64d7bde1cd3197c32523b6e\"><code>49744ab</code></a> 4.22.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6921\">#6921</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6e97452f600a3b01719fbc5517d833c7646b0bb7\"><code>6e97452</code></a> sec: security patch for CVE-2024-51999</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6a23d34d652b9e69a4486d2a2a0dea54b9685fa5\"><code>6a23d34</code></a> deps: use tilde notation for <code>qs</code> (<a href=\"https://redirect.github.com/expressjs/express/issues/6919\">#6919</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/8c12cdf93b89a4628b59179e3cc0722fc517d6b3\"><code>8c12cdf</code></a> deps: qs@6.14.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6909\">#6909</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/7fea74fcf02764580f38f2a7f1932dfa54cddd90\"><code>7fea74f</code></a> deps: use tilde notation for certain dependencies (<a href=\"https://redirect.github.com/expressjs/express/issues/6905\">#6905</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/dac7a0475a99e9dfc57b3b8e6d5bdf52813f1944\"><code>dac7a04</code></a> chore: wider range for query test skip (<a href=\"https://redirect.github.com/expressjs/express/issues/6513\">#6513</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/997919b48879bbd53171c3b4e5dd1b04ad139241\"><code>997919b</code></a> ci: add node.js 24 to test matrix (<a href=\"https://redirect.github.com/expressjs/express/issues/6506\">#6506</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/36fb59c6c7d9dfca0b08dfeafb5b6e4a249234a1\"><code>36fb59c</code></a> fix(ci): reorder <code>npm i</code> steps to fix ci for older node versions (<a href=\"https://redirect.github.com/expressjs/express/issues/6336\">#6336</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/expressjs/express/compare/4.21.2...v4.22.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
-            "state": "open",
-            "created_at": "2026-01-01T13:34:41+00:00",
-            "updated_at": "2026-01-01T13:34:42+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/pull/1110",
-            "is_pr": true,
-            "labels": [
-              "dependencies",
-              "javascript"
             ],
             "priority": "normal",
             "assignee": null
@@ -156,12 +120,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 560,
+        "contributions": 561,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 22,
+        "contributions": 23,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -188,6 +152,11 @@
         "login": "AustinSaintAubin",
         "contributions": 3,
         "url": "https://github.com/AustinSaintAubin"
+      },
+      {
+        "login": "BerranRemzi",
+        "contributions": 1,
+        "url": "https://github.com/BerranRemzi"
       },
       {
         "login": "KingBain",
@@ -232,6 +201,24 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "693f31f",
+          "message": "Add sanity check in case no path",
+          "author": "Luc",
+          "date": "2026-01-15T10:53:25+00:00"
+        },
+        {
+          "sha": "12c30f2",
+          "message": "docs: add BerranRemzi as a contributor for bug, and code (#1115)\n\n* docs: update README.md [skip ci]\n\n* docs: create .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2026-01-15T10:31:13+00:00"
+        },
+        {
+          "sha": "2c41562",
+          "message": "Fix logical error in path validation for SD file handling (#1113)\n\n* Fix logical error in path validation for SD file handling\n\n* Fix logical error in path validation for SPIFFS file handling",
+          "author": "Berran Remzi",
+          "date": "2026-01-15T10:29:32+00:00"
+        },
         {
           "sha": "cee8abb",
           "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -537,24 +524,6 @@
           "message": "Add auto notification to USB Serial",
           "author": "Luc",
           "date": "2024-10-20T12:21:57+00:00"
-        },
-        {
-          "sha": "b409371",
-          "message": "Add Usb Serial otg feature (#1055)\n\n* Update esp3d_version.h\r\n* Fix GCode client is not processed\r\n* Update lua engine to 1.0.3\r\n* Fix HOOKS and Init script conflicting at boot\r\n* Add a queue for multiple scripts (max 5)\r\n* Fix compilation failed on SERIAL_MKS on ESP32\r\n* Explain better sanity check on SERIAL_MKS and DISPLAY\r\n* Implement USB Serial OTG",
-          "author": "Luc",
-          "date": "2024-10-19T10:13:45+00:00"
-        },
-        {
-          "sha": "9bac144",
-          "message": "Update esp3d_version.h",
-          "author": "Luc",
-          "date": "2024-09-12T03:38:50+00:00"
-        },
-        {
-          "sha": "35f9cf8",
-          "message": "Fix W5500 Compilation issue (#1049)",
-          "author": "Luc",
-          "date": "2024-09-11T13:19:26+00:00"
         }
       ],
       "commit_activity": [
@@ -1223,13 +1192,13 @@
         },
         {
           "week": "2026-01-11T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
             0,
-            0,
+            3,
             0,
             0
           ]
@@ -1237,10 +1206,10 @@
       ]
     },
     "statistics": {
-      "size": 135299,
+      "size": 135171,
       "stars": 1939,
       "forks": 486,
-      "open_issues": 7,
+      "open_issues": 5,
       "watchers": 1939,
       "default_branch": "3.0"
     },
