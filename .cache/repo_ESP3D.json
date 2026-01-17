@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768525986.0117967,
+  "timestamp": 1768612196.9093401,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,25 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1114,
-            "title": "No files displayed when looking at TFT SD",
-            "body": "I have BTT TFT35 which is showing option to view and list from both onboard SD (BTT SKR PRO V1) and the TFT SD. \nBut in ESP3D I have adjusted the settings to allow this but no files are listed when I chose TTF SD.\nI have configured marlin(Latest) setting  \n#define SDSUPPORT\n#define SDCARD_CONNECTION ONBOARD \nAnything obvious I am missing?\nIn the terminal the M20 SD:/ shows the list of files that are on the onboard SD",
-            "state": "open",
-            "created_at": "2026-01-13T22:40:29+00:00",
-            "updated_at": "2026-01-16T00:59:42+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1114",
-            "is_pr": false,
-            "labels": [
-              "Marlin 2.X",
-              "ESP3D 3.X",
-              "BTT TFT",
-              "Not related to ESP3D"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -1209,7 +1190,7 @@
       "size": 135171,
       "stars": 1939,
       "forks": 486,
-      "open_issues": 5,
+      "open_issues": 4,
       "watchers": 1939,
       "default_branch": "3.0"
     },
