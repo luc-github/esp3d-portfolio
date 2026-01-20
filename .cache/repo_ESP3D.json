@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768785451.0079012,
+  "timestamp": 1768871523.4293897,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,20 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1116,
-            "title": "websocket connection error",
-            "body": "Description\n\nAfter opening the webUI, it closes automatically after 2-3 seconds showing a websocket connection error. The problem was reported and closed with a comment that it couldnot be duplicated in https://github.com/luc-github/ESP3D/issues/996 . But here this issue  is duplicated in my case without any possible fix after multiple failed attempts.. When using ESP3D (versions 3.0.0 and 3.0.1) on a NodeMCU (ESP8266) to bridge to an Arduino Mega 2560 running Grbl-Mega-5X, commands sent via the Web UI HTTP endpoint (/command?cmd=) return a generic \"ESP3D says: command forwarded\" message. However, the actual serial output from the target board (such as GRBL status or settings) is not returned in the HTTP response. Additionally, WebSocket connections required for real-time DRO updates consistently fail across both versions.\n\nExpected Behavior\n\nSending a command like ? or $$ via the HTTP API should return the actual serial data from the Arduino Mega (e.g., <Idle|MPos:0,0,0...> or $0=10...) directly in the response body. The WebSocket connection should be stable to allow the WebUI to update coordinates in real-time.\n\nActual Behavior\n\nHTTP API: Sending http://[IP]/command?cmd=? results in the string ESP3D says: command forwarded, but no GRBL status data is received by the browser.\n\nWebSocket Failure: Connection attempts to ws://[IP]/ws or ws://[IP]:81 consistently result in a WebSocket connection failed error in the browser console. This issue is identical in both v3.0.0 and v3.0.1.\n\nDRO Stagnation: Because the API does not return coordinates and the WebSocket fails, the WebUI remains \"Disconnected\" or fails to update position, even though the serial bridge is physically active via other ports (Telnet).\n\nCode Observations (Command/Accept Handling)\n\nThe issue appears linked to how ESP3D v3 handles command synchronization compared to v2.x. Specifically:\n\nIn the current code, the command processing logic (related to the _accept or process function for incoming requests) immediately triggers a \"forwarded\" acknowledgement to the web client.\n\nThe logic within the available() check for the serial buffer appears to be bypassed or decoupled during the HTTP request lifecycle. While the command is successfully sent to the board, the return data is not being pulled from the serial stream back into the same HTTP session or WebSocket stream.\n\nThis asynchronous behavior in the _accept mechanism seems to prevent the firmware from waiting for the serial response before closing the HTTP output, effectively breaking the feedback loop for real-time GRBL monitoring.\n\nThis represents a significant change from the synchronous response pattern in v2.x.\n\nSteps to Reproduce\n\nFlash ESP3D v3.0.0 or v3.0.1 to a NodeMCU (ESP8266).\n\nConnect to an Arduino Mega 2560 running Grbl-Mega-5X at 115200 Baud.\n\nAccess the official ESP3D WebUI (v3.0.0-alpha3).\n\nSend any command via the terminal.\n\nObserve the \"forwarded\" response in the logs and the \"WebSocket connection failed\" error in the browser inspector.\n\nHardware\n\nESP Board: NodeMCU v2 (ESP8266)\n\nFlash Size: 4MB\n\nTarget Board: Arduino Mega 2560\n\nFirmware on Target: Grbl-Mega-5X (4-axis foam cutter)\n\nFirmware & WebUI Version\n\nESP3D Firmware: Tested on 3.0.0 and 3.0.1\n\nESP3D WebUI: 3.0.0-alpha3 (official release)\n\nCommunication Settings\n\nBaud Rate: 115200\n\nMode: Bridge / Telnet Enabled\n\nAdditional Context\n\nWhile the Telnet bridge (Port 23) functions correctly for external G-code senders, the integrated WebUI is non-functional for machine control because it cannot retrieve the serial stream or establish a WebSocket connection. For 4-axis Hotwire CNC applications, the lack of real-time position reporting via the WebUI makes it impossible to monitor tapered cuts or wire positioning safely.",
-            "state": "open",
-            "created_at": "2026-01-18T16:27:07+00:00",
-            "updated_at": "2026-01-19T00:29:51+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1116",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -1204,7 +1190,7 @@
       "size": 135171,
       "stars": 1939,
       "forks": 486,
-      "open_issues": 5,
+      "open_issues": 4,
       "watchers": 1939,
       "default_branch": "3.0"
     },
