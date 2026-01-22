@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2026-01-15T10:53:33+00:00",
+      "updated_at": "2026-01-21T07:09:45+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -21,6 +21,43 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 1118,
+              "title": "Bump lodash from 4.17.21 to 4.17.23 in /embedded",
+              "body": "Bumps [lodash](https://github.com/lodash/lodash) from 4.17.21 to 4.17.23.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/lodash/lodash/commit/dec55b7a3b382da075e2eac90089b4cd00a26cbb\"><code>dec55b7</code></a> Bump main to v4.17.23 (<a href=\"https://redirect.github.com/lodash/lodash/issues/6088\">#6088</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/19c9251b3631d7cf220b43bc757eb33f1084f117\"><code>19c9251</code></a> fix: setCacheHas JSDoc return type should be boolean (<a href=\"https://redirect.github.com/lodash/lodash/issues/6071\">#6071</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/b5e672995ae26929d111a6e94589f8d03fb8e578\"><code>b5e6729</code></a> jsdoc: Add -0 and BigInt zeros to _.compact falsey values list (<a href=\"https://redirect.github.com/lodash/lodash/issues/6062\">#6062</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/edadd452146f7e4bad4ea684e955708931d84d81\"><code>edadd45</code></a> Prevent prototype pollution on baseUnset function</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/4879a7a7d0a4494b0e83c7fa21bcc9fc6e7f1a6d\"><code>4879a7a</code></a> doc: fix autoLink function, conversion of source links (<a href=\"https://redirect.github.com/lodash/lodash/issues/6056\">#6056</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/9648f692b0fc7c2f6a7a763d754377200126c2e8\"><code>9648f69</code></a> chore: remove <code>yarn.lock</code> file (<a href=\"https://redirect.github.com/lodash/lodash/issues/6053\">#6053</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/dfa407db0bf5b200f2c7a9e4f06830ceaf074be9\"><code>dfa407d</code></a> ci: remove legacy configuration files (<a href=\"https://redirect.github.com/lodash/lodash/issues/6052\">#6052</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/156e1965ae78b121a88f81178ab81632304e8d64\"><code>156e196</code></a> feat: add renovate setup (<a href=\"https://redirect.github.com/lodash/lodash/issues/6039\">#6039</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/933e1061b8c344d3fc742cdc400175d5ffc99bce\"><code>933e106</code></a> ci: add pipeline for Bun (<a href=\"https://redirect.github.com/lodash/lodash/issues/6023\">#6023</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/072a807ff7ad8ffc7c1d2c3097266e815d138e20\"><code>072a807</code></a> docs: update links related to Open JS Foundation (<a href=\"https://redirect.github.com/lodash/lodash/issues/5968\">#5968</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/lodash/lodash/compare/4.17.21...4.17.23\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=lodash&package-manager=npm_and_yarn&previous-version=4.17.21&new-version=4.17.23)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
+              "state": "open",
+              "created_at": "2026-01-21T23:17:00+00:00",
+              "updated_at": "2026-01-21T23:17:01+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/pull/1118",
+              "is_pr": true,
+              "labels": [
+                "dependencies",
+                "javascript"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [
+                "6052",
+                "5968",
+                "6023",
+                "6056",
+                "6088",
+                "6071",
+                "6039",
+                "6053",
+                "6062"
+              ],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 243,
               "title": "[FEATURE REQUEST]\ud83e\udd84GCODE Streamer Host definition for 3.X",
@@ -38,8 +75,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2747,
-              "days_since_update": 43,
+              "age_days": 2748,
+              "days_since_update": 44,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -67,8 +104,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1273,
-              "days_since_update": 300,
+              "age_days": 1274,
+              "days_since_update": 301,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +133,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1822,
-              "days_since_update": 449,
+              "age_days": 1823,
+              "days_since_update": 450,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +161,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1814,
-              "days_since_update": 686,
+              "age_days": 1815,
+              "days_since_update": 687,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -137,26 +174,26 @@
             }
           ],
           "issue_summary": {
-            "total": 4,
-            "open": 4,
+            "total": 5,
+            "open": 5,
             "closed": 0,
             "priorities": {
-              "normal": 4
+              "normal": 5
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 4
+              "medium": 5
             },
             "size": {
-              "medium": 2,
-              "large": 2
+              "large": 3,
+              "medium": 2
             },
             "lifecycle": {
-              "new": 3,
+              "new": 4,
               "in_progress": 1
             }
           }
@@ -1251,11 +1288,11 @@
         ]
       },
       "statistics": {
-        "size": 135171,
-        "stars": 1939,
+        "size": 135314,
+        "stars": 1938,
         "forks": 486,
-        "open_issues": 4,
-        "watchers": 1939,
+        "open_issues": 5,
+        "watchers": 1938,
         "default_branch": "3.0"
       },
       "version_info": {
@@ -1339,8 +1376,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 304,
-              "days_since_update": 304,
+              "age_days": 305,
+              "days_since_update": 305,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1367,8 +1404,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1449,
-              "days_since_update": 395,
+              "age_days": 1450,
+              "days_since_update": 396,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2477,7 +2514,7 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2026-01-16T21:04:25+00:00",
+      "updated_at": "2026-01-21T01:27:18+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -2491,6 +2528,43 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 440,
+              "title": "Bump lodash from 4.17.21 to 4.17.23",
+              "body": "Bumps [lodash](https://github.com/lodash/lodash) from 4.17.21 to 4.17.23.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/lodash/lodash/commit/dec55b7a3b382da075e2eac90089b4cd00a26cbb\"><code>dec55b7</code></a> Bump main to v4.17.23 (<a href=\"https://redirect.github.com/lodash/lodash/issues/6088\">#6088</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/19c9251b3631d7cf220b43bc757eb33f1084f117\"><code>19c9251</code></a> fix: setCacheHas JSDoc return type should be boolean (<a href=\"https://redirect.github.com/lodash/lodash/issues/6071\">#6071</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/b5e672995ae26929d111a6e94589f8d03fb8e578\"><code>b5e6729</code></a> jsdoc: Add -0 and BigInt zeros to _.compact falsey values list (<a href=\"https://redirect.github.com/lodash/lodash/issues/6062\">#6062</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/edadd452146f7e4bad4ea684e955708931d84d81\"><code>edadd45</code></a> Prevent prototype pollution on baseUnset function</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/4879a7a7d0a4494b0e83c7fa21bcc9fc6e7f1a6d\"><code>4879a7a</code></a> doc: fix autoLink function, conversion of source links (<a href=\"https://redirect.github.com/lodash/lodash/issues/6056\">#6056</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/9648f692b0fc7c2f6a7a763d754377200126c2e8\"><code>9648f69</code></a> chore: remove <code>yarn.lock</code> file (<a href=\"https://redirect.github.com/lodash/lodash/issues/6053\">#6053</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/dfa407db0bf5b200f2c7a9e4f06830ceaf074be9\"><code>dfa407d</code></a> ci: remove legacy configuration files (<a href=\"https://redirect.github.com/lodash/lodash/issues/6052\">#6052</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/156e1965ae78b121a88f81178ab81632304e8d64\"><code>156e196</code></a> feat: add renovate setup (<a href=\"https://redirect.github.com/lodash/lodash/issues/6039\">#6039</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/933e1061b8c344d3fc742cdc400175d5ffc99bce\"><code>933e106</code></a> ci: add pipeline for Bun (<a href=\"https://redirect.github.com/lodash/lodash/issues/6023\">#6023</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/072a807ff7ad8ffc7c1d2c3097266e815d138e20\"><code>072a807</code></a> docs: update links related to Open JS Foundation (<a href=\"https://redirect.github.com/lodash/lodash/issues/5968\">#5968</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/lodash/lodash/compare/4.17.21...4.17.23\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=lodash&package-manager=npm_and_yarn&previous-version=4.17.21&new-version=4.17.23)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D-WEBUI/network/alerts).\n\n</details>",
+              "state": "open",
+              "created_at": "2026-01-21T23:38:36+00:00",
+              "updated_at": "2026-01-21T23:38:37+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/440",
+              "is_pr": true,
+              "labels": [
+                "dependencies",
+                "javascript"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [
+                "6052",
+                "5968",
+                "6023",
+                "6056",
+                "6088",
+                "6071",
+                "6039",
+                "6053",
+                "6062"
+              ],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 438,
               "title": "Adding a custom logo",
@@ -2507,8 +2581,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 23,
-              "days_since_update": 2,
+              "age_days": 24,
+              "days_since_update": 3,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -2539,11 +2613,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 597,
-              "days_since_update": 7,
+              "age_days": 598,
+              "days_since_update": 8,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "small",
               "complexity": "high",
               "related_issues": [],
@@ -2566,37 +2640,37 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 21,
-              "days_since_update": 21,
+              "age_days": 22,
+              "days_since_update": 22,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6934",
-                "6065",
-                "511",
+                "6336",
                 "6029",
-                "501",
-                "6031",
-                "517",
-                "6905",
-                "6513",
-                "6323",
+                "6934",
                 "6209",
-                "6080",
+                "517",
+                "501",
+                "511",
+                "6513",
                 "6921",
+                "6031",
+                "6919",
+                "6190",
+                "5957",
+                "5956",
                 "6909",
+                "6905",
+                "506",
+                "6065",
                 "6506",
                 "502",
-                "6919",
-                "506",
-                "6190",
-                "5956",
-                "6336",
-                "6094",
-                "5957"
+                "6323",
+                "6080",
+                "6094"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2614,8 +2688,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 122,
-              "days_since_update": 119,
+              "age_days": 123,
+              "days_since_update": 120,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2640,8 +2714,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 142,
-              "days_since_update": 141,
+              "age_days": 143,
+              "days_since_update": 142,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2669,8 +2743,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 296,
-              "days_since_update": 296,
+              "age_days": 297,
+              "days_since_update": 297,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2698,8 +2772,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1347,
-              "days_since_update": 421,
+              "age_days": 1348,
+              "days_since_update": 422,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2728,8 +2802,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1928,
-              "days_since_update": 464,
+              "age_days": 1929,
+              "days_since_update": 465,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2757,8 +2831,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2008,
-              "days_since_update": 464,
+              "age_days": 2009,
+              "days_since_update": 465,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2785,8 +2859,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1220,
-              "days_since_update": 464,
+              "age_days": 1221,
+              "days_since_update": 465,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2813,8 +2887,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2208,
-              "days_since_update": 1254,
+              "age_days": 2209,
+              "days_since_update": 1255,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2843,8 +2917,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1351,
-              "days_since_update": 1324,
+              "age_days": 1352,
+              "days_since_update": 1325,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2856,28 +2930,28 @@
             }
           ],
           "issue_summary": {
-            "total": 12,
-            "open": 12,
+            "total": 13,
+            "open": 13,
             "closed": 0,
             "priorities": {
-              "normal": 12
+              "normal": 13
             },
             "ages": {
               "recent": 2,
-              "active": 1,
+              "active": 2,
               "stale": 9
             },
             "complexity": {
-              "medium": 11,
+              "medium": 12,
               "high": 1
             },
             "size": {
+              "large": 3,
               "small": 5,
-              "large": 2,
               "medium": 5
             },
             "lifecycle": {
-              "new": 12
+              "new": 13
             }
           }
         }
@@ -3951,11 +4025,11 @@
         ]
       },
       "statistics": {
-        "size": 118375,
-        "stars": 859,
+        "size": 118092,
+        "stars": 860,
         "forks": 338,
-        "open_issues": 12,
-        "watchers": 859,
+        "open_issues": 13,
+        "watchers": 860,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
       },
@@ -4000,7 +4074,7 @@
               "body": "\nUses the following hardware:\n\nSoC: ESP32-WROOM-32U-N8\nCapacitive Touch Panel Controller: FT6336U (I2C)\n3.5\" Capacitive Touch Panel: CL35BC219-40A (SPI)\nResolution: 480x320 \nUSB-C: Wired to an onboard CH340C USB to serial chip \nRJ11 serial port: To the host CNC controller\n1x Unpopulated space for a beeper\n1x Extra Button\n\n![Image](https://github.com/user-attachments/assets/171dfd7e-8f87-436d-8ace-1dffe7be96e0)\n![Image](https://github.com/user-attachments/assets/529f10b9-d63f-4f92-bc49-c68285c9a8ea)\n![Image](https://github.com/user-attachments/assets/20a87c13-1197-4457-8514-f9c36363e433)",
               "state": "open",
               "created_at": "2025-12-28T11:45:37+00:00",
-              "updated_at": "2026-01-17T10:40:31+00:00",
+              "updated_at": "2026-01-21T09:46:49+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3D-TFT/issues/82",
               "is_pr": false,
@@ -4010,8 +4084,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 23,
-              "days_since_update": 3,
+              "age_days": 24,
+              "days_since_update": 0,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -4036,8 +4110,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 246,
-              "days_since_update": 175,
+              "age_days": 247,
+              "days_since_update": 176,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4063,8 +4137,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 734,
-              "days_since_update": 257,
+              "age_days": 735,
+              "days_since_update": 258,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4091,8 +4165,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 732,
-              "days_since_update": 402,
+              "age_days": 733,
+              "days_since_update": 403,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4117,8 +4191,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 464,
-              "days_since_update": 464,
+              "age_days": 465,
+              "days_since_update": 465,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4145,8 +4219,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 524,
-              "days_since_update": 524,
+              "age_days": 525,
+              "days_since_update": 525,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4171,8 +4245,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 639,
-              "days_since_update": 526,
+              "age_days": 640,
+              "days_since_update": 527,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4198,8 +4272,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 744,
-              "days_since_update": 744,
+              "age_days": 745,
+              "days_since_update": 745,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4224,8 +4298,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1065,
-              "days_since_update": 1065,
+              "age_days": 1066,
+              "days_since_update": 1066,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4253,8 +4327,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1208,
-              "days_since_update": 1208,
+              "age_days": 1209,
+              "days_since_update": 1209,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8487,8 +8561,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 316,
-              "days_since_update": 316,
+              "age_days": 317,
+              "days_since_update": 317,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8539,7 +8613,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1312,
+              "age_days": 1313,
               "days_since_update": 1252,
               "is_stale": true,
               "is_recent": false,
@@ -9658,8 +9732,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 328,
-              "days_since_update": 328,
+              "age_days": 329,
+              "days_since_update": 329,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9684,8 +9758,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1057,
-              "days_since_update": 1057,
+              "age_days": 1058,
+              "days_since_update": 1058,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9710,8 +9784,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1057,
-              "days_since_update": 1057,
+              "age_days": 1058,
+              "days_since_update": 1058,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11734,20 +11808,47 @@
       "url": "https://github.com/luc-github/ESP32SSDP",
       "language": "C++",
       "created_at": "2018-03-20T12:53:31+00:00",
-      "updated_at": "2026-01-17T21:03:12+00:00",
+      "updated_at": "2026-01-21T10:33:16+00:00",
       "branches": [
         {
           "name": "v2.x",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "0dbf33a",
-            "message": "Update README with badges and copyright info",
+            "sha": "503e9f8",
+            "message": "Fix typo in README about IDF version updates\n\nCorrected a typo in the README regarding IDF updates.",
             "author": "Luc",
-            "date": "2025-12-17T09:08:13+00:00"
+            "date": "2026-01-21T10:33:12+00:00"
           },
           "protected": false,
           "issues": [
+            {
+              "number": 49,
+              "title": "tcpip_adapter_ip_info_t' was not declared in this scope",
+              "body": "**Describe the bug**\n\nI get this compiler error with the current ESP32 3.3.5 board definition:\n\n'tcpip_adapter_ip_info_t' was not declared in this scope\n\nThis issue was reported years ago (https://github.com/luc-github/ESP32SSDP/issues/3), but it seems it was not fixed or there is a solution that was not put in the thread?\n\nI followed the sketch example for the AsyncWebServer.\n\n\n**To Reproduce**\nSteps to reproduce the behavior:\n1. Open eample, press compile\n2. See error\n\n**Expected behavior**\nCompiler works\n\n**Firmware:**\n- ESP core version: [3.3.5]\n- Library Version:[1.2.2]\n- Wifi mode:[OFF]  \n\n**Board used (please complete the following information):**\n - MCU: [e.g. ESP32] \n - Name:[e.g. Sparkfun ESP32 Micromod] \n - Flash size: [4M]",
+              "state": "open",
+              "created_at": "2026-01-21T10:24:59+00:00",
+              "updated_at": "2026-01-21T12:25:02+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP32SSDP/issues/49",
+              "is_pr": false,
+              "labels": [
+                "bug",
+                "Compatibility"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "low",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 48,
               "title": "Device name can not contain <",
@@ -11763,8 +11864,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 239,
-              "days_since_update": 239,
+              "age_days": 240,
+              "days_since_update": 240,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11789,8 +11890,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 980,
-              "days_since_update": 980,
+              "age_days": 981,
+              "days_since_update": 981,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11816,8 +11917,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2176,
-              "days_since_update": 2160,
+              "age_days": 2177,
+              "days_since_update": 2161,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11829,27 +11930,27 @@
             }
           ],
           "issue_summary": {
-            "total": 3,
-            "open": 3,
+            "total": 4,
+            "open": 4,
             "closed": 0,
             "priorities": {
-              "normal": 3
+              "normal": 4
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 3
             },
             "complexity": {
-              "medium": 2,
-              "low": 1
+              "low": 2,
+              "medium": 2
             },
             "size": {
-              "medium": 2,
+              "medium": 3,
               "small": 1
             },
             "lifecycle": {
-              "new": 3
+              "new": 4
             }
           }
         }
@@ -11857,7 +11958,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 47,
+          "contributions": 49,
           "url": "https://github.com/luc-github"
         },
         {
@@ -11878,6 +11979,18 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "503e9f8",
+            "message": "Fix typo in README about IDF version updates\n\nCorrected a typo in the README regarding IDF updates.",
+            "author": "Luc",
+            "date": "2026-01-21T10:33:12+00:00"
+          },
+          {
+            "sha": "76cfd53",
+            "message": "Update version compatibility in README.md",
+            "author": "Luc",
+            "date": "2026-01-21T10:32:32+00:00"
+          },
           {
             "sha": "0dbf33a",
             "message": "Update README with badges and copyright info",
@@ -12189,18 +12302,6 @@
             "message": "Update .travis.yml",
             "author": "Luc",
             "date": "2020-02-07T04:53:26+00:00"
-          },
-          {
-            "sha": "2af5fff",
-            "message": "add travis for arduino and platformIO",
-            "author": "Luc",
-            "date": "2020-02-07T04:19:17+00:00"
-          },
-          {
-            "sha": "4ac65d8",
-            "message": "add template, workflow and stale",
-            "author": "Luc",
-            "date": "2020-02-02T10:36:40+00:00"
           }
         ],
         "commit_activity": [
@@ -12869,12 +12970,12 @@
           },
           {
             "week": "2026-01-18T00:00:00+00:00",
-            "total": 0,
+            "total": 2,
             "days": [
               0,
               0,
               0,
-              0,
+              2,
               0,
               0,
               0
@@ -12883,10 +12984,10 @@
         ]
       },
       "statistics": {
-        "size": 128,
+        "size": 134,
         "stars": 54,
         "forks": 27,
-        "open_issues": 3,
+        "open_issues": 4,
         "watchers": 54,
         "default_branch": "v2.x",
         "license": "GNU General Public License v3.0"
@@ -12899,10 +13000,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.5,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.255
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -12941,8 +13042,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 980,
-              "days_since_update": 980,
+              "age_days": 981,
+              "days_since_update": 981,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16460,17 +16561,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-01-20T14:45:24+00:00",
+      "updated_at": "2026-01-21T09:03:16+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "845dc1a",
+            "sha": "4b07c21",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-01-20T14:43:33+00:00"
+            "date": "2026-01-21T09:03:08+00:00"
           },
           "protected": false,
           "issues": []
@@ -16479,6 +16580,12 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "4b07c21",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-01-21T09:03:08+00:00"
+          },
           {
             "sha": "845dc1a",
             "message": "Private commit",
@@ -16796,20 +16903,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2026-01-05T05:01:04+00:00"
-          },
-          {
-            "sha": "8b524c1",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-01-05T04:04:30+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "845dc1a",
+          "sha": "4b07c21",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-01-20T14:43:33+00:00"
+          "date": "2026-01-21T09:03:08+00:00"
         }
       },
       "statistics": {},
@@ -16819,8 +16920,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4445,
-      "reset": "2026-01-21T02:10:11+00:00"
+      "remaining": 4765,
+      "reset": "2026-01-22T02:14:27+00:00"
     }
   },
   "stats": {
@@ -16835,7 +16936,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749460,
+      "total_size": 749326,
       "total_stars": 3073,
       "total_forks": 982,
       "branches": {
@@ -16845,27 +16946,27 @@
       }
     },
     "issues": {
-      "total_count": 38,
-      "open_count": 38,
+      "total_count": 41,
+      "open_count": 41,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 960.4317720455805,
+      "avg_age_days": 891.0949019565602,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 38
+        "normal": 41
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 2,
-        "last_month": 4
+        "last_day": 4,
+        "last_week": 5,
+        "last_month": 7
       }
     },
     "activity": {
       "total_commits": 29,
       "commit_frequency": {
-        "daily": 0.4065934065934066,
-        "weekly": 2.8461538461538454,
-        "monthly": 11.384615384615381
+        "daily": 0.41208791208791207,
+        "weekly": 2.884615384615384,
+        "monthly": 11.538461538461537
       },
       "active_contributors": {
         "last_week": 3,
@@ -16878,7 +16979,7 @@
           6,
           11,
           8,
-          5,
+          4,
           9,
           1,
           8,
@@ -16935,8 +17036,8 @@
           9,
           9,
           11,
-          6,
-          10,
+          7,
+          12,
           7,
           10,
           2,
@@ -16982,7 +17083,7 @@
           6,
           2,
           0,
-          7,
+          6,
           11,
           5,
           3,
@@ -17040,7 +17141,7 @@
           11,
           9,
           4,
-          2,
+          1,
           4,
           7,
           0,
@@ -17061,7 +17162,7 @@
       "issue_creation_trend": [
         {
           "date": "2025-12",
-          "count": 3
+          "count": 6
         },
         {
           "date": "2025-11",
@@ -17089,11 +17190,11 @@
         },
         {
           "date": "2025-05",
-          "count": 1
+          "count": 0
         },
         {
           "date": "2025-04",
-          "count": 1
+          "count": 2
         },
         {
           "date": "2025-03",
@@ -17365,7 +17466,7 @@
         },
         {
           "date": "2026-01-18",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2025-03-15",
@@ -17509,23 +17610,44 @@
   "activity_ranking": {
     "daily": [
       {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 8
+        },
+        "details": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 2.0,
+          "issues_per_day": 1.0
+        }
+      },
+      {
         "name": "Private Project #1",
         "type": "private",
         "description": "",
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 6,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 18
+          "total": 3
         },
         "details": {
-          "commits": 6,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 6.0,
+          "commits_per_day": 1.0,
           "issues_per_day": 0.0
         }
       },
@@ -17537,38 +17659,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17579,17 +17680,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17597,6 +17698,27 @@
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
         "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17681,27 +17803,6 @@
         "type": "main",
         "description": "Web Installer for ESP32 projects",
         "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17811,17 +17912,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 26,
+          "commits": 24,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 78
+          "total": 72
         },
         "details": {
-          "commits": 26,
+          "commits": 24,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.7142857142857144,
+          "commits_per_day": 3.4285714285714284,
           "issues_per_day": 0.0
         }
       },
@@ -17833,17 +17934,38 @@
         "is_private": false,
         "score": {
           "commits": 3,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 9
+          "total": 11
         },
         "details": {
           "commits": 3,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.42857142857142855,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.14285714285714285
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 7,
+          "total": 8
+        },
+        "details": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.2857142857142857,
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -17854,17 +17976,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 2,
           "comments": 0,
           "period_days": 7,
-          "total": 2
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.14285714285714285
+          "issues_per_day": 0.2857142857142857
         }
       },
       {
@@ -17977,27 +18099,6 @@
         "type": "main",
         "description": "Web Installer for ESP32 projects",
         "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18129,17 +18230,38 @@
         "is_private": false,
         "score": {
           "commits": 3,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 9
+          "total": 11
         },
         "details": {
           "commits": 3,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.1,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.03333333333333333
+        }
+      },
+      {
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 30,
+          "total": 8
+        },
+        "details": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -18150,17 +18272,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 3,
+          "issues": 4,
           "comments": 0,
           "period_days": 30,
-          "total": 6
+          "total": 8
         },
         "details": {
           "commits": 0,
-          "issues": 3,
+          "issues": 4,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.1
+          "issues_per_day": 0.13333333333333333
         }
       },
       {
@@ -18273,27 +18395,6 @@
         "type": "main",
         "description": "Web Installer for ESP32 projects",
         "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18424,18 +18525,18 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 36,
-          "issues": 2,
+          "commits": 35,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 112
+          "total": 111
         },
         "details": {
-          "commits": 36,
-          "issues": 2,
+          "commits": 35,
+          "issues": 3,
           "comments": 0,
-          "commits_per_day": 0.09863013698630137,
-          "issues_per_day": 0.005479452054794521
+          "commits_per_day": 0.0958904109589041,
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
@@ -18488,17 +18589,17 @@
         "is_private": false,
         "score": {
           "commits": 20,
-          "issues": 6,
+          "issues": 7,
           "comments": 0,
           "period_days": 365,
-          "total": 72
+          "total": 74
         },
         "details": {
           "commits": 20,
-          "issues": 6,
+          "issues": 7,
           "comments": 0,
           "commits_per_day": 0.0547945205479452,
-          "issues_per_day": 0.01643835616438356
+          "issues_per_day": 0.019178082191780823
         }
       },
       {
@@ -18571,18 +18672,18 @@
         "url": "https://github.com/luc-github/ESP32SSDP",
         "is_private": false,
         "score": {
-          "commits": 3,
-          "issues": 1,
+          "commits": 5,
+          "issues": 2,
           "comments": 0,
           "period_days": 365,
-          "total": 11
+          "total": 19
         },
         "details": {
-          "commits": 3,
-          "issues": 1,
+          "commits": 5,
+          "issues": 2,
           "comments": 0,
-          "commits_per_day": 0.00821917808219178,
-          "issues_per_day": 0.0027397260273972603
+          "commits_per_day": 0.0136986301369863,
+          "issues_per_day": 0.005479452054794521
         }
       },
       {

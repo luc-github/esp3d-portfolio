@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768958218.9026773,
+  "timestamp": 1769044575.3448925,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -27,7 +27,7 @@
             "body": "\nUses the following hardware:\n\nSoC: ESP32-WROOM-32U-N8\nCapacitive Touch Panel Controller: FT6336U (I2C)\n3.5\" Capacitive Touch Panel: CL35BC219-40A (SPI)\nResolution: 480x320 \nUSB-C: Wired to an onboard CH340C USB to serial chip \nRJ11 serial port: To the host CNC controller\n1x Unpopulated space for a beeper\n1x Extra Button\n\n![Image](https://github.com/user-attachments/assets/171dfd7e-8f87-436d-8ace-1dffe7be96e0)\n![Image](https://github.com/user-attachments/assets/529f10b9-d63f-4f92-bc49-c68285c9a8ea)\n![Image](https://github.com/user-attachments/assets/20a87c13-1197-4457-8514-f9c36363e433)",
             "state": "open",
             "created_at": "2025-12-28T11:45:37+00:00",
-            "updated_at": "2026-01-17T10:40:31+00:00",
+            "updated_at": "2026-01-21T09:46:49+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-TFT/issues/82",
             "is_pr": false,
