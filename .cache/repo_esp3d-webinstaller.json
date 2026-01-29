@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769562919.8454757,
+  "timestamp": 1769649890.991876,
   "data": {
     "name": "esp3d-webinstaller",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d-webinstaller",
     "language": "JavaScript",
     "created_at": "2025-12-14T01:52:22+00:00",
-    "updated_at": "2026-01-23T05:14:32+00:00",
+    "updated_at": "2026-01-28T09:41:07+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "c0f2416",
-          "message": "Add mdtohtml converter\n\nclean the .yaml files as not necessaries",
+          "sha": "d6bb613",
+          "message": "use project id instead as project name for login",
           "author": "Luc",
-          "date": "2026-01-23T05:14:24+00:00"
+          "date": "2026-01-28T09:41:00+00:00"
         },
         "protected": false,
         "issues": []
@@ -26,12 +26,30 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 27,
+        "contributions": 30,
         "url": "https://github.com/luc-github"
       }
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "d6bb613",
+          "message": "use project id instead as project name for login",
+          "author": "Luc",
+          "date": "2026-01-28T09:41:00+00:00"
+        },
+        {
+          "sha": "ab70d42",
+          "message": "Create .gitignore",
+          "author": "Luc",
+          "date": "2026-01-28T08:39:50+00:00"
+        },
+        {
+          "sha": "a9f04b9",
+          "message": "Multiple  Flash config",
+          "author": "Luc",
+          "date": "2026-01-23T08:18:21+00:00"
+        },
         {
           "sha": "c0f2416",
           "message": "Add mdtohtml converter\n\nclean the .yaml files as not necessaries",
@@ -848,25 +866,25 @@
         },
         {
           "week": "2026-01-18T00:00:00+00:00",
-          "total": 1,
+          "total": 2,
           "days": [
             0,
             0,
             0,
             0,
             0,
-            1,
+            2,
             0
           ]
         },
         {
           "week": "2026-01-25T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
             0,
-            0,
+            2,
             0,
             0,
             0
@@ -875,7 +893,7 @@
       ]
     },
     "statistics": {
-      "size": 4056,
+      "size": 4065,
       "stars": 2,
       "forks": 0,
       "open_issues": 0,
