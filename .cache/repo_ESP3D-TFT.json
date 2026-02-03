@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769995784.0739038,
+  "timestamp": 1770082147.1321461,
   "data": {
     "name": "ESP3D-TFT",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-TFT",
     "language": "C",
     "created_at": "2022-08-24T05:55:10+00:00",
-    "updated_at": "2026-01-29T11:13:32+00:00",
+    "updated_at": "2026-02-03T00:18:28+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Development",
         "is_production": false,
         "last_commit": {
-          "sha": "48c6ef0",
-          "message": "Update cache action version in CI workflow\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "sha": "59e57d0",
+          "message": "Create sdkconfig\n\nwork around idf extension cannot find the sdkconfig for flashing",
           "author": "Luc",
-          "date": "2025-12-17T06:36:08+00:00"
+          "date": "2026-02-03T00:18:22+00:00"
         },
         "protected": false,
         "issues": [
@@ -197,7 +197,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 839,
+        "contributions": 841,
         "url": "https://github.com/luc-github"
       },
       {
@@ -223,6 +223,18 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "59e57d0",
+          "message": "Create sdkconfig\n\nwork around idf extension cannot find the sdkconfig for flashing",
+          "author": "Luc",
+          "date": "2026-02-03T00:18:22+00:00"
+        },
+        {
+          "sha": "bd3e2b2",
+          "message": "Update dev_tools.cmake\n\ndisable  log by default",
+          "author": "Luc",
+          "date": "2026-02-02T23:07:53+00:00"
+        },
         {
           "sha": "48c6ef0",
           "message": "Update cache action version in CI workflow\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -534,18 +546,6 @@
           "message": "Add full clean everywhere\n\nStart by ESP32-S3 then ESP32",
           "author": "Luc",
           "date": "2024-04-16T01:10:24+00:00"
-        },
-        {
-          "sha": "3ccef88",
-          "message": "Enable CI back",
-          "author": "Luc",
-          "date": "2024-04-16T00:47:07+00:00"
-        },
-        {
-          "sha": "fa6e2ce",
-          "message": "POC add Marlin Logo during splash to highlight FW target",
-          "author": "Luc",
-          "date": "2024-04-15T09:17:51+00:00"
         }
       ],
       "commit_activity": [
@@ -1214,11 +1214,11 @@
         },
         {
           "week": "2026-02-01T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
-            0,
+            2,
             0,
             0,
             0,
@@ -1228,7 +1228,7 @@
       ]
     },
     "statistics": {
-      "size": 100378,
+      "size": 100379,
       "stars": 50,
       "forks": 14,
       "open_issues": 10,

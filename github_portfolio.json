@@ -38,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2759,
-              "days_since_update": 55,
+              "age_days": 2760,
+              "days_since_update": 56,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -67,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1285,
-              "days_since_update": 312,
+              "age_days": 1286,
+              "days_since_update": 313,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1834,
-              "days_since_update": 461,
+              "age_days": 1835,
+              "days_since_update": 462,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1826,
-              "days_since_update": 698,
+              "age_days": 1827,
+              "days_since_update": 699,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1339,8 +1339,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 316,
-              "days_since_update": 316,
+              "age_days": 317,
+              "days_since_update": 317,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1367,8 +1367,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1461,
-              "days_since_update": 407,
+              "age_days": 1462,
+              "days_since_update": 408,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2512,8 +2512,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 609,
-              "days_since_update": 19,
+              "age_days": 610,
+              "days_since_update": 20,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2538,8 +2538,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 154,
-              "days_since_update": 153,
+              "age_days": 155,
+              "days_since_update": 154,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2567,8 +2567,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 308,
-              "days_since_update": 308,
+              "age_days": 309,
+              "days_since_update": 309,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2596,8 +2596,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1359,
-              "days_since_update": 433,
+              "age_days": 1360,
+              "days_since_update": 434,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2626,8 +2626,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1940,
-              "days_since_update": 476,
+              "age_days": 1941,
+              "days_since_update": 477,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2655,8 +2655,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2020,
-              "days_since_update": 476,
+              "age_days": 2021,
+              "days_since_update": 477,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2683,8 +2683,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1232,
-              "days_since_update": 476,
+              "age_days": 1233,
+              "days_since_update": 477,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2711,8 +2711,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2220,
-              "days_since_update": 1266,
+              "age_days": 2221,
+              "days_since_update": 1267,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2741,8 +2741,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1363,
-              "days_since_update": 1336,
+              "age_days": 1364,
+              "days_since_update": 1337,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3850,7 +3850,7 @@
       "statistics": {
         "size": 117902,
         "stars": 861,
-        "forks": 339,
+        "forks": 340,
         "open_issues": 9,
         "watchers": 861,
         "default_branch": "3.0",
@@ -3877,17 +3877,17 @@
       "url": "https://github.com/luc-github/ESP3D-TFT",
       "language": "C",
       "created_at": "2022-08-24T05:55:10+00:00",
-      "updated_at": "2026-01-29T11:13:32+00:00",
+      "updated_at": "2026-02-03T00:18:28+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Development",
           "is_production": false,
           "last_commit": {
-            "sha": "48c6ef0",
-            "message": "Update cache action version in CI workflow\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+            "sha": "59e57d0",
+            "message": "Create sdkconfig\n\nwork around idf extension cannot find the sdkconfig for flashing",
             "author": "Luc",
-            "date": "2025-12-17T06:36:08+00:00"
+            "date": "2026-02-03T00:18:22+00:00"
           },
           "protected": false,
           "issues": [
@@ -3907,8 +3907,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 35,
-              "days_since_update": 11,
+              "age_days": 36,
+              "days_since_update": 12,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3933,8 +3933,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 258,
-              "days_since_update": 187,
+              "age_days": 259,
+              "days_since_update": 188,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3960,8 +3960,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 746,
-              "days_since_update": 269,
+              "age_days": 747,
+              "days_since_update": 270,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3988,8 +3988,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 744,
-              "days_since_update": 414,
+              "age_days": 745,
+              "days_since_update": 415,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4014,8 +4014,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 476,
-              "days_since_update": 476,
+              "age_days": 477,
+              "days_since_update": 477,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4042,8 +4042,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 536,
-              "days_since_update": 536,
+              "age_days": 537,
+              "days_since_update": 537,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4068,8 +4068,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 651,
-              "days_since_update": 538,
+              "age_days": 652,
+              "days_since_update": 539,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4095,8 +4095,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 756,
-              "days_since_update": 756,
+              "age_days": 757,
+              "days_since_update": 757,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4121,8 +4121,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1077,
-              "days_since_update": 1077,
+              "age_days": 1078,
+              "days_since_update": 1078,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4150,8 +4150,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1220,
-              "days_since_update": 1220,
+              "age_days": 1221,
+              "days_since_update": 1221,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4192,7 +4192,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 839,
+          "contributions": 841,
           "url": "https://github.com/luc-github"
         },
         {
@@ -4218,6 +4218,18 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "59e57d0",
+            "message": "Create sdkconfig\n\nwork around idf extension cannot find the sdkconfig for flashing",
+            "author": "Luc",
+            "date": "2026-02-03T00:18:22+00:00"
+          },
+          {
+            "sha": "bd3e2b2",
+            "message": "Update dev_tools.cmake\n\ndisable  log by default",
+            "author": "Luc",
+            "date": "2026-02-02T23:07:53+00:00"
+          },
           {
             "sha": "48c6ef0",
             "message": "Update cache action version in CI workflow\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -4529,18 +4541,6 @@
             "message": "Add full clean everywhere\n\nStart by ESP32-S3 then ESP32",
             "author": "Luc",
             "date": "2024-04-16T01:10:24+00:00"
-          },
-          {
-            "sha": "3ccef88",
-            "message": "Enable CI back",
-            "author": "Luc",
-            "date": "2024-04-16T00:47:07+00:00"
-          },
-          {
-            "sha": "fa6e2ce",
-            "message": "POC add Marlin Logo during splash to highlight FW target",
-            "author": "Luc",
-            "date": "2024-04-15T09:17:51+00:00"
           }
         ],
         "commit_activity": [
@@ -5209,11 +5209,11 @@
           },
           {
             "week": "2026-02-01T00:00:00+00:00",
-            "total": 0,
+            "total": 2,
             "days": [
               0,
               0,
-              0,
+              2,
               0,
               0,
               0,
@@ -5223,7 +5223,7 @@
         ]
       },
       "statistics": {
-        "size": 100378,
+        "size": 100379,
         "stars": 50,
         "forks": 14,
         "open_issues": 10,
@@ -5239,10 +5239,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.5,
+        "maintenance_score": 0.7,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.255
+        "overall_score": 0.32499999999999996
       }
     },
     {
@@ -8384,8 +8384,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 328,
-              "days_since_update": 328,
+              "age_days": 329,
+              "days_since_update": 329,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8408,8 +8408,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 991,
-              "days_since_update": 991,
+              "age_days": 992,
+              "days_since_update": 992,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8436,8 +8436,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1324,
-              "days_since_update": 1264,
+              "age_days": 1325,
+              "days_since_update": 1265,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9555,8 +9555,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 340,
-              "days_since_update": 340,
+              "age_days": 341,
+              "days_since_update": 341,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9581,8 +9581,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1069,
-              "days_since_update": 1069,
+              "age_days": 1070,
+              "days_since_update": 1070,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9607,8 +9607,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1069,
-              "days_since_update": 1069,
+              "age_days": 1070,
+              "days_since_update": 1070,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11685,8 +11685,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 11,
-              "days_since_update": 11,
+              "age_days": 12,
+              "days_since_update": 12,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -11711,8 +11711,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 251,
-              "days_since_update": 251,
+              "age_days": 252,
+              "days_since_update": 252,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11737,8 +11737,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 992,
-              "days_since_update": 992,
+              "age_days": 993,
+              "days_since_update": 993,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11764,8 +11764,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2188,
-              "days_since_update": 2172,
+              "age_days": 2189,
+              "days_since_update": 2173,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12833,7 +12833,7 @@
       "statistics": {
         "size": 134,
         "stars": 54,
-        "forks": 28,
+        "forks": 27,
         "open_issues": 4,
         "watchers": 54,
         "default_branch": "v2.x",
@@ -12889,8 +12889,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 992,
-              "days_since_update": 992,
+              "age_days": 993,
+              "days_since_update": 993,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16767,8 +16767,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4704,
-      "reset": "2026-02-02T01:58:35+00:00"
+      "remaining": 4716,
+      "reset": "2026-02-03T02:26:09+00:00"
     }
   },
   "stats": {
@@ -16783,7 +16783,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 749300,
+      "total_size": 749301,
       "total_stars": 3079,
       "total_forks": 985,
       "branches": {
@@ -16797,7 +16797,7 @@
       "open_count": 36,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1021.1411336513645,
+      "avg_age_days": 1022.1409653742116,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 36
@@ -16809,11 +16809,11 @@
       }
     },
     "activity": {
-      "total_commits": 20,
+      "total_commits": 19,
       "commit_frequency": {
-        "daily": 0.4148351648351648,
-        "weekly": 2.9038461538461537,
-        "monthly": 11.615384615384615
+        "daily": 0.42032967032967034,
+        "weekly": 2.942307692307692,
+        "monthly": 11.769230769230768
       },
       "active_contributors": {
         "last_week": 1,
@@ -16831,7 +16831,7 @@
           1,
           9,
           6,
-          14,
+          13,
           2,
           0,
           7,
@@ -16845,7 +16845,7 @@
           1,
           5,
           2,
-          2
+          3
         ],
         [
           4,
@@ -17313,7 +17313,7 @@
         },
         {
           "date": "2026-02-01",
-          "count": 0
+          "count": 2
         },
         {
           "date": "2025-03-15",
@@ -17457,23 +17457,23 @@
   "activity_ranking": {
     "daily": [
       {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
         "score": {
-          "commits": 3,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 9
+          "total": 6
         },
         "details": {
-          "commits": 3,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.0,
+          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -17524,27 +17524,6 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17749,6 +17728,27 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
+      },
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
       }
     ],
     "weekly": [
@@ -17759,17 +17759,38 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 18,
+          "commits": 15,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 54
+          "total": 45
         },
         "details": {
-          "commits": 18,
+          "commits": 15,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 2.5714285714285716,
+          "commits_per_day": 2.142857142857143,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 6
+        },
+        "details": {
+          "commits": 2,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.2857142857142857,
           "issues_per_day": 0.0
         }
       },
@@ -17841,27 +17862,6 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18112,6 +18112,27 @@
         }
       },
       {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 30,
+          "total": 8
+        },
+        "details": {
+          "commits": 2,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.06666666666666667,
+          "issues_per_day": 0.03333333333333333
+        }
+      },
+      {
         "name": "ESP32SSDP",
         "type": "dependency",
         "description": "Simple SSDP library for ESP32",
@@ -18137,27 +18158,6 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "period_days": 30,
-          "total": 2
-        },
-        "details": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.03333333333333333
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18471,6 +18471,27 @@
         }
       },
       {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 8,
+          "issues": 3,
+          "comments": 0,
+          "period_days": 365,
+          "total": 30
+        },
+        "details": {
+          "commits": 8,
+          "issues": 3,
+          "comments": 0,
+          "commits_per_day": 0.021917808219178082,
+          "issues_per_day": 0.00821917808219178
+        }
+      },
+      {
         "name": "ESP3DLib",
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
@@ -18489,27 +18510,6 @@
           "comments": 0,
           "commits_per_day": 0.024657534246575342,
           "issues_per_day": 0.0027397260273972603
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
-        "is_private": false,
-        "score": {
-          "commits": 6,
-          "issues": 3,
-          "comments": 0,
-          "period_days": 365,
-          "total": 24
-        },
-        "details": {
-          "commits": 6,
-          "issues": 3,
-          "comments": 0,
-          "commits_per_day": 0.01643835616438356,
-          "issues_per_day": 0.00821917808219178
         }
       },
       {
