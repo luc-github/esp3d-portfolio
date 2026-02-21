@@ -1,5 +1,5 @@
 {
-  "timestamp": 1771550692.0142653,
+  "timestamp": 1771636951.9758031,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-02-11T01:03:59+00:00",
+    "updated_at": "2026-02-20T18:46:02+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1121,
+            "title": "latest esp3D in esp32-cam no recognice SD card",
+            "body": "I used the same configuration as latest used, but the SD files gone from webUI, I should define SD PINS?\n\n[configuration.txt](https://github.com/user-attachments/files/25444362/configuration.txt)",
+            "state": "open",
+            "created_at": "2026-02-20T14:25:41+00:00",
+            "updated_at": "2026-02-21T00:50:44+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1121",
+            "is_pr": false,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -1188,10 +1202,10 @@
     },
     "statistics": {
       "size": 135000,
-      "stars": 1943,
+      "stars": 1944,
       "forks": 487,
-      "open_issues": 4,
-      "watchers": 1943,
+      "open_issues": 5,
+      "watchers": 1944,
       "default_branch": "3.0"
     },
     "version_info": {
