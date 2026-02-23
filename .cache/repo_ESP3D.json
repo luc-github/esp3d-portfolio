@@ -1,5 +1,5 @@
 {
-  "timestamp": 1771723723.1514978,
+  "timestamp": 1771810144.9159606,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-02-20T18:46:02+00:00",
+    "updated_at": "2026-02-22T18:01:28+00:00",
     "branches": [
       {
         "name": "3.0",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "693f31f",
-          "message": "Add sanity check in case no path",
+          "sha": "e74ac77",
+          "message": "Fix compilation on ESP8266",
           "author": "Luc",
-          "date": "2026-01-15T10:53:25+00:00"
+          "date": "2026-02-22T11:36:15+00:00"
         },
         "protected": false,
         "issues": [
@@ -27,12 +27,12 @@
             "body": "I used the same configuration as latest used, but the SD files gone from webUI, I should define SD PINS?\n\n[configuration.txt](https://github.com/user-attachments/files/25444362/configuration.txt)",
             "state": "open",
             "created_at": "2026-02-20T14:25:41+00:00",
-            "updated_at": "2026-02-21T23:39:54+00:00",
+            "updated_at": "2026-02-23T01:26:15+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D/issues/1121",
             "is_pr": false,
             "labels": [
-              "Under Investigation",
+              "Cannot Duplicate",
               "ESP3D 3.X",
               "SD Card"
             ],
@@ -119,7 +119,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 561,
+        "contributions": 569,
         "url": "https://github.com/luc-github"
       },
       {
@@ -200,6 +200,54 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "e74ac77",
+          "message": "Fix compilation on ESP8266",
+          "author": "Luc",
+          "date": "2026-02-22T11:36:15+00:00"
+        },
+        {
+          "sha": "ec00a9b",
+          "message": "Update sdio_esp32.cpp\n\n- Smarter SDMMC_FORCE_BEGIN with cooldown + proper delay(80) for 4bits\n- Added applySDPins() helper for multi-chip support",
+          "author": "Luc",
+          "date": "2026-02-22T10:43:44+00:00"
+        },
+        {
+          "sha": "8c044d1",
+          "message": "Fix Disabled Interface do not show Mac address on ESP32",
+          "author": "Luc",
+          "date": "2026-02-22T09:02:11+00:00"
+        },
+        {
+          "sha": "12f97eb",
+          "message": "Remove idf  error log generating noise on serial output",
+          "author": "Luc",
+          "date": "2026-02-22T08:14:28+00:00"
+        },
+        {
+          "sha": "f25f2fa",
+          "message": "Update ESP220.cpp\n\nDisplay Pins used for SDIO if defined",
+          "author": "Luc",
+          "date": "2026-02-22T08:13:44+00:00"
+        },
+        {
+          "sha": "2b14910",
+          "message": "Remove unnecessary log debug",
+          "author": "Luc",
+          "date": "2026-02-22T06:51:41+00:00"
+        },
+        {
+          "sha": "27f9a78",
+          "message": "Update ESP420.cpp\n\nAdd how many bits used for SDIO",
+          "author": "Luc",
+          "date": "2026-02-22T04:26:14+00:00"
+        },
+        {
+          "sha": "a9b80de",
+          "message": "Rename ESP3D_DEBUG_LEVEL to ESP3D_LOG_LEVEL  for consistency",
+          "author": "Luc",
+          "date": "2026-02-22T03:56:20+00:00"
+        },
         {
           "sha": "693f31f",
           "message": "Add sanity check in case no path",
@@ -475,54 +523,6 @@
           "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
           "date": "2024-12-01T08:07:16+00:00"
-        },
-        {
-          "sha": "2e24f5e",
-          "message": "Create info.json",
-          "author": "Luc",
-          "date": "2024-12-01T06:12:49+00:00"
-        },
-        {
-          "sha": "be5e3f9",
-          "message": "Add missing WhatsApp setting in ESP400\n\nBump version",
-          "author": "Luc",
-          "date": "2024-11-27T01:07:52+00:00"
-        },
-        {
-          "sha": "d9f6ea6",
-          "message": "close #888",
-          "author": "Luc",
-          "date": "2024-11-25T07:45:09+00:00"
-        },
-        {
-          "sha": "d2c52ac",
-          "message": "Close #955\n\nAdd more default settings for SPI W5500 Ethernet\nBump version for tracking",
-          "author": "Luc",
-          "date": "2024-11-25T02:06:15+00:00"
-        },
-        {
-          "sha": "ff3dff0",
-          "message": "Update esp32_usb_serial.cpp",
-          "author": "Luc",
-          "date": "2024-11-04T21:11:02+00:00"
-        },
-        {
-          "sha": "b6a7add",
-          "message": "Remove wrong sanity check\n\nFix confusing comment",
-          "author": "Luc",
-          "date": "2024-11-03T16:56:37+00:00"
-        },
-        {
-          "sha": "b892b3f",
-          "message": "Add more data in ESP420 for USB Port  when connected",
-          "author": "Luc",
-          "date": "2024-10-20T12:59:59+00:00"
-        },
-        {
-          "sha": "9f303ca",
-          "message": "Add auto notification to USB Serial",
-          "author": "Luc",
-          "date": "2024-10-20T12:21:57+00:00"
         }
       ],
       "commit_activity": [
@@ -1191,9 +1191,9 @@
         },
         {
           "week": "2026-02-22T00:00:00+00:00",
-          "total": 0,
+          "total": 8,
           "days": [
-            0,
+            8,
             0,
             0,
             0,
@@ -1205,11 +1205,11 @@
       ]
     },
     "statistics": {
-      "size": 135000,
-      "stars": 1944,
+      "size": 135007,
+      "stars": 1945,
       "forks": 488,
       "open_issues": 5,
-      "watchers": 1944,
+      "watchers": 1945,
       "default_branch": "3.0"
     },
     "version_info": {

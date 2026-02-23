@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-39-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2002%20%2F%2022%2001:31%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2002%20%2F%2023%2001:42%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -46,16 +46,16 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (12) | 4 | 0 | 12.0 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 2.0 |
-| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (26) | 8 | 1 | 26.0 |
+| 🥈 2  | Private Project #1 | Private | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 3.0 |
+| 🥉 3  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 2.0 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -70,15 +70,15 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (30) | 10 | 0 | 4.3 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
-| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (26) | 8 | 1 | 3.7 |
+| 🥉 3  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -92,16 +92,16 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 5.4 |
-| 🥈 2  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 0.4 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (159) | 53 | 0 | 5.3 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (28) | 8 | 2 | 0.9 |
 | 🥉 3  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.2 |
-| ▪️ 4  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 0.1 |
+| ▪️ 4  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.2 |
 | ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (4) | 0 | 2 | 0.1 |
-| ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
+| ▪️ 7  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -116,7 +116,7 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 0.4 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (105) | 33 | 3 | 0.3 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (129) | 41 | 3 | 0.4 |
 | 🥉 3  | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (93) | 31 | 0 | 0.3 |
 | ▪️ 4  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (90) | 30 | 0 | 0.2 |
 | ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (61) | 17 | 5 | 0.2 |
@@ -147,7 +147,7 @@ Repository popularity based on GitHub stars and forks.
 
 | Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |
 |:------------|------------|------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,944 | 488 | 1,944 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,945 | 488 | 1,945 |
 | 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 863 | 340 | 863 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 115 | 35 | 115 |
 | ▪️ 4  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 54 | 27 | 54 |
@@ -175,7 +175,7 @@ Repository popularity based on GitHub stars and forks.
 | Total Repositories | 14 |
 | Main Projects | 8 |
 | Dependencies | 6 |
-| Total Stars | 3084 |
+| Total Stars | 3085 |
 | Total Forks | 985 |
 
 ### Issue Statistics
@@ -184,7 +184,7 @@ Repository popularity based on GitHub stars and forks.
 |--------|-------|
 | Open Issues | 39 |
 | Closed Issues | 0 |
-| Average Age | 961.7 days |
+| Average Age | 962.8 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -193,8 +193,8 @@ Repository popularity based on GitHub stars and forks.
 Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.4 commits)
-Weekly   🟦 Few (1-10 commits)           (2.7 commits)
-Monthly  🟦 Few (1-25 commits)           (10.8 commits)
+Weekly   🟦 Few (1-10 commits)           (2.8 commits)
+Monthly  🟦 Few (1-25 commits)           (11.4 commits)
 ```
 
 </details>
@@ -210,7 +210,7 @@ Monthly  🟦 Few (1-25 commits)           (10.8 commits)
 **Version**: 🔵 v3.0.1 / dev:3.0.2<br>
 **Description**: FW for ESP8266/ESP8285/ESP32 used with 3D printer<br>
 **Language**: C<br>
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">32.5%</span>
 
 </td></tr></table>
 
@@ -218,13 +218,13 @@ Monthly  🟦 Few (1-25 commits)           (10.8 commits)
 <summary><h4>🚀 Production Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2026-01-15 (#693f31f)
+Last commit: 2026-02-22 (#e74ac77)
 Author: Luc
 ```
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#1121: <a href="https://github.com/luc-github/ESP3D/issues/1121">latest esp3D in esp32-cam no recognice SD card</a></td><td><code>2026-02-20</code></td><td><code>2026-02-21</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#1121: <a href="https://github.com/luc-github/ESP3D/issues/1121">latest esp3D in esp32-cam no recognice SD card</a></td><td><code>2026-02-20</code></td><td><code>2026-02-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2026-02-04</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -555,7 +555,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#49: <a href="https://github.com/luc-github/ESP32SSDP/issues/49">tcpip_adapter_ip_info_t' was not declared in this scope</a></td><td><code>2026-01-21</code></td><td><code>2026-01-21</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#49: <a href="https://github.com/luc-github/ESP32SSDP/issues/49">tcpip_adapter_ip_info_t' was not declared in this scope</a></td><td><code>2026-01-21</code></td><td><code>2026-02-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#48: <a href="https://github.com/luc-github/ESP32SSDP/issues/48">Device name can not contain <</a></td><td><code>2025-05-26</code></td><td><code>2025-05-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#35: <a href="https://github.com/luc-github/ESP32SSDP/issues/35">[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#9: <a href="https://github.com/luc-github/ESP32SSDP/issues/9">[FEATURE REQUEST] Respont to multiple device types or callback?</a></td><td><code>2020-02-05</code></td><td><code>2020-02-21</code></td><td style="color: #000000">normal</td></tr>
@@ -667,7 +667,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 3.0</td><td>#1121: <a href="https://github.com/luc-github/ESP3D/issues/1121">latest esp3D in esp32-cam no recognice SD card</a></td><td><code>2026-02-20</code></td><td><code>2026-02-21</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#1121: <a href="https://github.com/luc-github/ESP3D/issues/1121">latest esp3D in esp32-cam no recognice SD card</a></td><td><code>2026-02-20</code></td><td><code>2026-02-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#243: <a href="https://github.com/luc-github/ESP3D/issues/243">[FEATURE REQUEST]🦄GCODE Streamer Host definition for 3.X</a></td><td><code>2018-07-14</code></td><td><code>2026-02-04</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#795: <a href="https://github.com/luc-github/ESP3D/issues/795">[TODO]☑Code refactoring plan</a></td><td><code>2022-07-28</code></td><td><code>2025-03-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#568: <a href="https://github.com/luc-github/ESP3D/issues/568">[FEATURE REQUEST]🦄USB Disk support using CH376S chip</a></td><td><code>2021-01-24</code></td><td><code>2024-10-28</code></td><td style="color: #000000">normal</td></tr>
@@ -935,7 +935,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 v2.x</td><td>#49: <a href="https://github.com/luc-github/ESP32SSDP/issues/49">tcpip_adapter_ip_info_t' was not declared in this scope</a></td><td><code>2026-01-21</code></td><td><code>2026-01-21</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 v2.x</td><td>#49: <a href="https://github.com/luc-github/ESP32SSDP/issues/49">tcpip_adapter_ip_info_t' was not declared in this scope</a></td><td><code>2026-01-21</code></td><td><code>2026-02-23</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 v2.x</td><td>#48: <a href="https://github.com/luc-github/ESP32SSDP/issues/48">Device name can not contain <</a></td><td><code>2025-05-26</code></td><td><code>2025-05-26</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 v2.x</td><td>#35: <a href="https://github.com/luc-github/ESP32SSDP/issues/35">[BUG]Miss Send notify : NTS: ssdp:byebye when stopping ssdp server</a></td><td><code>2023-05-16</code></td><td><code>2023-05-16</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 v2.x</td><td>#9: <a href="https://github.com/luc-github/ESP32SSDP/issues/9">[FEATURE REQUEST] Respont to multiple device types or callback?</a></td><td><code>2020-02-05</code></td><td><code>2020-02-21</code></td><td style="color: #000000">normal</td></tr>
@@ -1024,10 +1024,10 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 10 |
-| New Issues | 1 |
+| Commits | 18 |
+| New Issues | 2 |
 | Closed Issues | 0 |
-| Active Contributors | 0 |
+| Active Contributors | 1 |
 
 ### Activity Heatmap
 
@@ -1040,7 +1040,7 @@ Wed 🟩 🟨 🟥 🟨 🟩 🟦 🟦 🟩
 Thu 🟩 🟥 🟨 🟨 🟦 🟦 ⬜ 🟦
 Fri 🟩 🟨 🟩 🟦 🟩 🟦 🟦 🟦
 Sat 🟦 🟩 🟨 🟩 🟩 🟦 ⬜ ⬜
-Sun 🟨 🟩 🟨 🟩 🟩 🟦 🟦 🟦
+Sun 🟨 🟩 🟨 🟩 🟩 ⬜ 🟦 🟦
 
 Legend:
 ⬜ No activity 🟦 Low (1-2 commits) 🟩 Moderate (3-5 commits) 🟨 High (6-10 commits) 🟥 Very High (>10 commits)
@@ -1052,7 +1052,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2026-02-22 01:31:28 UTC*
+*🔄 Last updated: 2026-02-23 01:42:09 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
