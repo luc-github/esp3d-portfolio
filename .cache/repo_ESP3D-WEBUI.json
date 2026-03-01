@@ -1,5 +1,5 @@
 {
-  "timestamp": 1772241505.7410665,
+  "timestamp": 1772329594.224546,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-02-20T18:46:05+00:00",
+    "updated_at": "2026-02-28T05:10:41+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,6 +21,23 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 443,
+            "title": "Bump minimatch from 3.1.2 to 3.1.5",
+            "body": "Bumps [minimatch](https://github.com/isaacs/minimatch) from 3.1.2 to 3.1.5.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/7bba97888a27a6162983056bcce2a6e28f668712\"><code>7bba978</code></a> 3.1.5</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/bd259425b2ca17b42897997f93e890314155522d\"><code>bd25942</code></a> docs: add warning about ReDoS</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/1a9c27c75725474dbde57db2995b6281b267756d\"><code>1a9c27c</code></a> fix partial matching of globstar patterns</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/1a2e084af579731af66c221214e3ca8222c9bf23\"><code>1a2e084</code></a> 3.1.4</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/ae24656237c3d58067442f790ce17eff84463a47\"><code>ae24656</code></a> update lockfile</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/b1003749228b2a79e1f237963a0d559ef7a0941e\"><code>b100374</code></a> limit recursion for **, improve perf considerably</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/26ffeaa091b9f660833e23f42e07165b33e85c13\"><code>26ffeaa</code></a> lockfile update</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/9eca892a4e5dbb20534f9f30483b85cdeee6c2eb\"><code>9eca892</code></a> lock node version to 14</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/00c323b188b704e5d4bc534ecec2268cfa70a32a\"><code>00c323b</code></a> 3.1.3</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/30486b2048929264f44d18822891cfffa02af78b\"><code>30486b2</code></a> update CI matrix and actions</li>\n<li>Additional commits viewable in <a href=\"https://github.com/isaacs/minimatch/compare/v3.1.2...v3.1.5\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=minimatch&package-manager=npm_and_yarn&previous-version=3.1.2&new-version=3.1.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D-WEBUI/network/alerts).\n\n</details>",
+            "state": "open",
+            "created_at": "2026-02-28T03:57:37+00:00",
+            "updated_at": "2026-02-28T03:57:37+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/443",
+            "is_pr": true,
+            "labels": [
+              "dependencies",
+              "javascript"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 442,
             "title": "Bump qs and express",
@@ -619,19 +636,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-03-02T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-03-09T00:00:00+00:00",
           "total": 1,
@@ -1294,15 +1298,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-03-01T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 118268,
-      "stars": 863,
+      "size": 118448,
+      "stars": 864,
       "forks": 339,
-      "open_issues": 11,
-      "watchers": 863,
+      "open_issues": 12,
+      "watchers": 864,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"
     },
