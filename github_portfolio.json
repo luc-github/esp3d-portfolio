@@ -38,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2790,
-              "days_since_update": 28,
+              "age_days": 2791,
+              "days_since_update": 29,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -67,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1316,
-              "days_since_update": 343,
+              "age_days": 1317,
+              "days_since_update": 344,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1865,
-              "days_since_update": 492,
+              "age_days": 1866,
+              "days_since_update": 493,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1857,
-              "days_since_update": 729,
+              "age_days": 1858,
+              "days_since_update": 730,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1339,8 +1339,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 347,
-              "days_since_update": 347,
+              "age_days": 348,
+              "days_since_update": 348,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1367,8 +1367,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1492,
-              "days_since_update": 438,
+              "age_days": 1493,
+              "days_since_update": 439,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2497,6 +2497,59 @@
           "protected": false,
           "issues": [
             {
+              "number": 444,
+              "title": "Bump immutable from 4.1.0 to 4.3.8",
+              "body": "Bumps [immutable](https://github.com/immutable-js/immutable-js) from 4.1.0 to 4.3.8.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/immutable-js/immutable-js/releases\">immutable's releases</a>.</em></p>\n<blockquote>\n<h2>v4.3.8</h2>\n<p>Fix Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') in immutable</p>\n<h2>v4.3.7</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Fix issue with slice negative of filtered sequence by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2006\">immutable-js/immutable-js#2006</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/immutable-js/immutable-js/compare/v4.3.6...v4.3.7\">https://github.com/immutable-js/immutable-js/compare/v4.3.6...v4.3.7</a></p>\n<h2>v4.3.6</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Fix Repeat(<!-- raw HTML omitted -->).equals(undefined) incorrectly returning true by <a href=\"https://github.com/butchler\"><code>@\u200bbutchler</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1994\">immutable-js/immutable-js#1994</a></li>\n</ul>\n<h3>Internals</h3>\n<ul>\n<li>change youtube image by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1973\">immutable-js/immutable-js#1973</a></li>\n<li>Upgrade eslint and ignore no-constructor-return rule for actual constructors by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1974\">immutable-js/immutable-js#1974</a></li>\n<li>upgrate documentation website to next 14 by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1975\">immutable-js/immutable-js#1975</a></li>\n<li>start migrating to nextjs app router by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1976\">immutable-js/immutable-js#1976</a></li>\n<li>upgrade next sitemap by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1978\">immutable-js/immutable-js#1978</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a href=\"https://github.com/butchler\"><code>@\u200bbutchler</code></a> made their first contribution in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1994\">immutable-js/immutable-js#1994</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/immutable-js/immutable-js/compare/v4.3.5...v4.3.6\">https://github.com/immutable-js/immutable-js/compare/v4.3.5...v4.3.6</a></p>\n<h2>v4.3.5</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Fix Set.fromKeys types with Map constructor in TS 5.0 by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1971\">immutable-js/immutable-js#1971</a></li>\n<li>upgrade to TS 5.1 by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1972\">immutable-js/immutable-js#1972</a></li>\n<li>fix dist-stats command by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1964\">immutable-js/immutable-js#1964</a></li>\n<li>fix Read the Docs link on readme by <a href=\"https://github.com/joshding\"><code>@\u200bjoshding</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1970\">immutable-js/immutable-js#1970</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a href=\"https://github.com/joshding\"><code>@\u200bjoshding</code></a> made their first contribution in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1970\">immutable-js/immutable-js#1970</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/immutable-js/immutable-js/compare/v4.3.4...v4.3.5\">https://github.com/immutable-js/immutable-js/compare/v4.3.4...v4.3.5</a></p>\n<h2>4.3.4</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Rollback toJS type due to circular reference error by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1958\">immutable-js/immutable-js#1958</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/immutable-js/immutable-js/compare/v4.3.3...v4.3.4\">https://github.com/immutable-js/immutable-js/compare/v4.3.3...v4.3.4</a></p>\n<h2>v4.3.3</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>[typescript] manage to handle toJS circular reference. <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/1932\">#1932</a> by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a></li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/immutable-js/immutable-js/blob/main/CHANGELOG.md\">immutable's changelog</a>.</em></p>\n<blockquote>\n<h1>Changelog</h1>\n<p>All notable changes to this project will be documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project adheres to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.\nDates are formatted as YYYY-MM-DD.</p>\n<h2>Unreleased</h2>\n<h2>5.1.5</h2>\n<ul>\n<li>Fix Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') in immutable</li>\n</ul>\n<h2>5.1.4</h2>\n<ul>\n<li>Migrate some files to TS by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2125\">immutable-js/immutable-js#2125</a>\n<ul>\n<li>Iterator.ts</li>\n<li>PairSorting.ts</li>\n<li>toJS.ts</li>\n<li>Math.ts</li>\n<li>Hash.ts</li>\n</ul>\n</li>\n<li>Extract CollectionHelperMethods and convert to TS by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2131\">immutable-js/immutable-js#2131</a></li>\n<li>Use npm <a href=\"https://docs.npmjs.com/trusted-publishers\">trusted publishing only</a> to avoid token stealing.</li>\n</ul>\n<h3>Documentation</h3>\n<ul>\n<li>Fix/a11y issues by <a href=\"https://github.com/lyannel\"><code>@\u200blyannel</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2136\">immutable-js/immutable-js#2136</a></li>\n<li>Doc add Map.get signature update by <a href=\"https://github.com/borracciaBlu\"><code>@\u200bborracciaBlu</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2138\">immutable-js/immutable-js#2138</a></li>\n<li>fix(doc):minor-issues#2132 by <a href=\"https://github.com/JayMeDotDot\"><code>@\u200bJayMeDotDot</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2133\">immutable-js/immutable-js#2133</a></li>\n<li>Fix algolia search by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2135\">immutable-js/immutable-js#2135</a></li>\n<li>Typo in OrderedMap by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2144\">immutable-js/immutable-js#2144</a></li>\n</ul>\n<h3>Internal</h3>\n<ul>\n<li>chore: Sort all imports and activate eslint import rule by <a href=\"https://github.com/jdeniau\"><code>@\u200bjdeniau</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2119\">immutable-js/immutable-js#2119</a></li>\n</ul>\n<h2>5.1.3</h2>\n<h3>TypeScript</h3>\n<ul>\n<li>fix: allow readonly map entry constructor by <a href=\"https://github.com/septs\"><code>@\u200bsepts</code></a> in <a href=\"https://redirect.github.com/immutable-js/immutable-js/pull/2123\">immutable-js/immutable-js#2123</a></li>\n</ul>\n<h3>Documentation</h3>\n<p>There has been a huge amount of changes in the documentation, mainly migrate from an autogenerated documentation from .d.ts file, to a proper documentation in markdown.\nThe playground has been included on nearly all method examples.\nWe added a page about browser extensions too: <a href=\"https://immutable-js.com/browser-extension/\">https://immutable-js.com/browser-extension/</a></p>\n<h3>Internal</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/485cbe0edf3ca7bb4b9c4a80ac55ba937a291da0\"><code>485cbe0</code></a> 4.3.8</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/6ed4eb626906df788b08019061b292b90bc718cb\"><code>6ed4eb6</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/94bcd3c79972db4afffd8d1e5aab415880098b05\"><code>94bcd3c</code></a> fix new proto key injection</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/faeb58b0cc71ed351dc51f672a95ae21bc859ef5\"><code>faeb58b</code></a> fix Prototype Pollution in mergeDeep, toJS, etc.</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/37ca4170060827e5f4eaa1969d1b61e5dc5eb11d\"><code>37ca417</code></a> release 4.3.7 (<a href=\"https://redirect.github.com/immutable-js/immutable-js/issues/2007\">#2007</a>)</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/23daf26b51ecc2805dcd9ac8534ce523397f9b62\"><code>23daf26</code></a> Fix issue with slice negative of filtered sequence (<a href=\"https://redirect.github.com/immutable-js/immutable-js/issues/2006\">#2006</a>)</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/493afba6ec17d9c999dc5a15ac80c71c6bdba1c3\"><code>493afba</code></a> release 4.3.6 (<a href=\"https://redirect.github.com/immutable-js/immutable-js/issues/1997\">#1997</a>)</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/be3cb9a7ae9a29f82c9d0c595f5f3cb957d7006c\"><code>be3cb9a</code></a> Fix Repeat(&lt;value&gt;).equals(undefined) incorrectly returning true (<a href=\"https://redirect.github.com/immutable-js/immutable-js/issues/1994\">#1994</a>)</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/d7664bf9d3539da8ea095f2ed08bbe1cd0d46071\"><code>d7664bf</code></a> generate sitemap in path that will be deployed</li>\n<li><a href=\"https://github.com/immutable-js/immutable-js/commit/f8327b1db0bb131df8a830cf14642f6ad07ca466\"><code>f8327b1</code></a> upgrade next sitemap (<a href=\"https://redirect.github.com/immutable-js/immutable-js/issues/1978\">#1978</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/immutable-js/immutable-js/compare/v4.1.0...v4.3.8\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by [GitHub Actions](<a href=\"https://www.npmjs.com/~GitHub\">https://www.npmjs.com/~GitHub</a> Actions), a new releaser for immutable since your current version.</p>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=immutable&package-manager=npm_and_yarn&previous-version=4.1.0&new-version=4.3.8)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D-WEBUI/network/alerts).\n\n</details>",
+              "state": "open",
+              "created_at": "2026-03-05T04:56:57+00:00",
+              "updated_at": "2026-03-05T04:56:57+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/444",
+              "is_pr": true,
+              "labels": [
+                "dependencies",
+                "javascript"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [
+                "2123",
+                "2131",
+                "1971",
+                "1978",
+                "2138",
+                "1964",
+                "1972",
+                "1970",
+                "2133",
+                "1973",
+                "1976",
+                "1958",
+                "1974",
+                "2135",
+                "2144",
+                "1997",
+                "1975",
+                "2125",
+                "2132",
+                "2119",
+                "2007",
+                "1994",
+                "2006",
+                "2136",
+                "1932"
+              ],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 442,
               "title": "Bump qs and express",
               "body": "Bumps [qs](https://github.com/ljharb/qs) to 6.14.2 and updates ancestor dependency [express](https://github.com/expressjs/express). These dependencies need to be updated together.\n\nUpdates `qs` from 6.10.3 to 6.14.2\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.14.2</strong></h2>\n<ul>\n<li>[Fix] <code>parse</code>: mark overflow objects for indexed notation exceeding <code>arrayLimit</code> (<a href=\"https://redirect.github.com/ljharb/qs/issues/546\">#546</a>)</li>\n<li>[Fix] <code>arrayLimit</code> means max count, not max index, in <code>combine</code>/<code>merge</code>/<code>parseArrayValue</code></li>\n<li>[Fix] <code>parse</code>: throw on <code>arrayLimit</code> exceeded with indexed notation when <code>throwOnLimitExceeded</code> is true (<a href=\"https://redirect.github.com/ljharb/qs/issues/529\">#529</a>)</li>\n<li>[Fix] <code>parse</code>: enforce <code>arrayLimit</code> on <code>comma</code>-parsed values</li>\n<li>[Fix] <code>parse</code>: fix error message to reflect arrayLimit as max index; remove extraneous comments (<a href=\"https://redirect.github.com/ljharb/qs/issues/545\">#545</a>)</li>\n<li>[Robustness] avoid <code>.push</code>, use <code>void</code></li>\n<li>[readme] document that <code>addQueryPrefix</code> does not add <code>?</code> to empty output (<a href=\"https://redirect.github.com/ljharb/qs/issues/418\">#418</a>)</li>\n<li>[readme] clarify <code>parseArrays</code> and <code>arrayLimit</code> documentation (<a href=\"https://redirect.github.com/ljharb/qs/issues/543\">#543</a>)</li>\n<li>[readme] replace runkit CI badge with shields.io check-runs badge</li>\n<li>[meta] fix changelog typo (<code>arrayLength</code> \u2192 <code>arrayLimit</code>)</li>\n<li>[actions] fix rebase workflow permissions</li>\n</ul>\n<h2><strong>6.14.1</strong></h2>\n<ul>\n<li>[Fix] ensure <code>arrayLimit</code> applies to <code>[]</code> notation as well</li>\n<li>[Fix] <code>parse</code>: when a custom decoder returns <code>null</code> for a key, ignore that key</li>\n<li>[Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li>[meta] add threat model</li>\n<li>[actions] add workflow permissions</li>\n<li>[Tests] <code>stringify</code>: increase coverage</li>\n<li>[Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code>, <code>es-value-fixtures</code>, <code>for-each</code>, <code>object-inspect</code></li>\n</ul>\n<h2><strong>6.14.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>throwOnParameterLimitExceeded</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/517\">#517</a>)</li>\n<li>[Refactor] <code>parse</code>: use <code>utils.combine</code> more</li>\n<li>[patch] <code>parse</code>: add explicit <code>throwOnLimitExceeded</code> default</li>\n<li>[actions] use shared action; re-add finishers</li>\n<li>[meta] Fix changelog formatting bug</li>\n<li>[Deps] update <code>side-channel</code></li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>has-bigints</code>, <code>has-proto</code>, <code>has-symbols</code></li>\n<li>[Tests] increase coverage</li>\n</ul>\n<h2><strong>6.13.1</strong></h2>\n<ul>\n<li>[Fix] <code>stringify</code>: avoid a crash when a <code>filter</code> key is <code>null</code></li>\n<li>[Fix] <code>utils.merge</code>: functions should not be stringified into keys</li>\n<li>[Fix] <code>parse</code>: avoid a crash with interpretNumericEntities: true, comma: true, and iso charset</li>\n<li>[Fix] <code>stringify</code>: ensure a non-string <code>filter</code> does not crash</li>\n<li>[Refactor] use <code>__proto__</code> syntax instead of <code>Object.create</code> for null objects</li>\n<li>[Refactor] misc cleanup</li>\n<li>[Tests] <code>utils.merge</code>: add some coverage</li>\n<li>[Tests] fix a test case</li>\n<li>[actions] split out node 10-20, and 20+</li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>mock-property</code>, <code>object-inspect</code>, <code>tape</code></li>\n</ul>\n<h2><strong>6.13.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>strictDepth</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/511\">#511</a>)</li>\n<li>[Tests] use <code>npm audit</code> instead of <code>aud</code></li>\n</ul>\n<h2><strong>6.12.3</strong></h2>\n<ul>\n<li>[Fix] <code>parse</code>: properly account for <code>strictNullHandling</code> when <code>allowEmptyArrays</code></li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/bdcf0c7f82387c18ac8fabfccd2f440645cef47b\"><code>bdcf0c7</code></a> v6.14.2</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/294db90c812ddbe7d7a35d5687c505fd21a2d6a2\"><code>294db90</code></a> [readme] document that <code>addQueryPrefix</code> does not add <code>?</code> to empty output</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/5c308e5516c270a78caa6f278465914090f91ec6\"><code>5c308e5</code></a> [readme] clarify <code>parseArrays</code> and <code>arrayLimit</code> documentation</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/6addf8cf738d529c54d91f6f3ffb6c1be91bbfdc\"><code>6addf8c</code></a> [Fix] <code>parse</code>: mark overflow objects for indexed notation exceeding <code>arrayLimit</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/cfc108f662326d6ab540f3545ef0b832baf83cdf\"><code>cfc108f</code></a> [Fix] <code>arrayLimit</code> means max count, not max index, in <code>combine</code>/<code>merge</code>/`pars...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/febb64442a80e49200211fa38d3c96b58024ac77\"><code>febb644</code></a> [Fix] <code>parse</code>: throw on <code>arrayLimit</code> exceeded with indexed notation when `thr...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f6a7abff1f13d644db9b05fe4f2c98ada6bf8482\"><code>f6a7abf</code></a> [Fix] <code>parse</code>: enforce <code>arrayLimit</code> on <code>comma</code>-parsed values</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/fbc5206c25b4d1851cea683f02c10756c521d15a\"><code>fbc5206</code></a> [Fix] <code>parse</code>: fix error message to reflect arrayLimit as max index; remove e...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/1b9a8b4e78c6aff4c22fa559107227f02fd0216a\"><code>1b9a8b4</code></a> [actions] fix rebase workflow permissions</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/2a35775614e0fb46ac8a3060201a32a7c23a7fda\"><code>2a35775</code></a> [meta] fix changelog typo (<code>arrayLength</code> \u2192 <code>arrayLimit</code>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.10.3...v6.14.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `express` from 4.18.1 to 4.22.1\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/releases\">express's releases</a>.</em></p>\n<blockquote>\n<h2>v4.22.1</h2>\n<h2>What's Changed</h2>\n<blockquote>\n<p>[!IMPORTANT]<br />\nThe prior release (4.22.0) included an erroneous breaking change related to the extended query parser. There is no actual security vulnerability associated with this behavior (CVE-2024-51999 has been rejected). The change has been fully reverted in this release.</p>\n</blockquote>\n<ul>\n<li>Release: 4.22.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6934\">expressjs/express#6934</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.22.0...v4.22.1\">https://github.com/expressjs/express/compare/4.22.0...v4.22.1</a></p>\n<h2>4.22.0</h2>\n<h2>Important: Security</h2>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Refactor: improve readability by <a href=\"https://github.com/sazk07\"><code>@\u200bsazk07</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6190\">expressjs/express#6190</a></li>\n<li>ci: add support for Node.js@23.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6080\">expressjs/express#6080</a></li>\n<li>Method functions with no path should error by <a href=\"https://github.com/wesleytodd\"><code>@\u200bwesleytodd</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5957\">expressjs/express#5957</a></li>\n<li>ci: updated github actions ci workflow by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6323\">expressjs/express#6323</a></li>\n<li>ci: reorder <code>npm i</code> steps to fix ci for older node versions by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6336\">expressjs/express#6336</a></li>\n<li>Backport: ci: add node.js 24 to test matrix by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6506\">expressjs/express#6506</a></li>\n<li>chore(4.x): wider range for query test skip by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6513\">expressjs/express#6513</a></li>\n<li>use tilde notation for certain dependencies by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6905\">expressjs/express#6905</a></li>\n<li>deps: qs@6.14.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6909\">expressjs/express#6909</a></li>\n<li>deps: use tilde notation for <code>qs</code> by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6919\">expressjs/express#6919</a></li>\n<li>Release: 4.22.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6921\">expressjs/express#6921</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.2...4.22.0\">https://github.com/expressjs/express/compare/4.21.2...4.22.0</a></p>\n<h2>4.21.2</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Add funding field (v4) by <a href=\"https://github.com/bjohansebas\"><code>@\u200bbjohansebas</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6065\">expressjs/express#6065</a></li>\n<li>deps: path-to-regexp@0.1.11 by <a href=\"https://github.com/blakeembrey\"><code>@\u200bblakeembrey</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5956\">expressjs/express#5956</a></li>\n<li>deps: bump path-to-regexp@0.1.12 by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6209\">expressjs/express#6209</a></li>\n<li>Release: 4.21.2 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6094\">expressjs/express#6094</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.1...4.21.2\">https://github.com/expressjs/express/compare/4.21.1...4.21.2</a></p>\n<h2>4.21.1</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Backport a fix for CVE-2024-47764 to the 4.x branch by <a href=\"https://github.com/joshbuker\"><code>@\u200bjoshbuker</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6029\">expressjs/express#6029</a></li>\n<li>Release: 4.21.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6031\">expressjs/express#6031</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.0...4.21.1\">https://github.com/expressjs/express/compare/4.21.0...4.21.1</a></p>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/blob/v4.22.1/History.md\">express's changelog</a>.</em></p>\n<blockquote>\n<h1>4.22.1 / 2025-12-01</h1>\n<ul>\n<li>Revert security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h1>4.22.0 / 2025-12-01</h1>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n<li>deps: use tilde notation for dependencies</li>\n<li>deps: qs@6.14.0</li>\n</ul>\n<h1>4.21.2 / 2024-11-06</h1>\n<ul>\n<li>deps: path-to-regexp@0.1.12\n<ul>\n<li>Fix backtracking protection</li>\n</ul>\n</li>\n<li>deps: path-to-regexp@0.1.11\n<ul>\n<li>Throws an error on invalid path values</li>\n</ul>\n</li>\n</ul>\n<h1>4.21.1 / 2024-10-08</h1>\n<ul>\n<li>Backported a fix for <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2024-47764\">CVE-2024-47764</a></li>\n</ul>\n<h1>4.21.0 / 2024-09-11</h1>\n<ul>\n<li>Deprecate <code>res.location(&quot;back&quot;)</code> and <code>res.redirect(&quot;back&quot;)</code> magic string</li>\n<li>deps: serve-static@1.16.2\n<ul>\n<li>includes send@0.19.0</li>\n</ul>\n</li>\n<li>deps: finalhandler@1.3.1</li>\n<li>deps: qs@6.13.0</li>\n</ul>\n<h1>4.20.0 / 2024-09-10</h1>\n<ul>\n<li>deps: serve-static@0.16.0\n<ul>\n<li>Remove link renderization in html while redirecting</li>\n</ul>\n</li>\n<li>deps: send@0.19.0\n<ul>\n<li>Remove link renderization in html while redirecting</li>\n</ul>\n</li>\n<li>deps: body-parser@0.6.0\n<ul>\n<li>add <code>depth</code> option to customize the depth level in the parser</li>\n<li>IMPORTANT: The default <code>depth</code> level for parsing URL-encoded data is now <code>32</code> (previously was <code>Infinity</code>)</li>\n</ul>\n</li>\n<li>Remove link renderization in html while using <code>res.redirect</code></li>\n<li>deps: path-to-regexp@0.1.10\n<ul>\n<li>Adds support for named matching groups in the routes using a regex</li>\n<li>Adds backtracking protection to parameters without regexes defined</li>\n</ul>\n</li>\n<li>deps: encodeurl@~2.0.0\n<ul>\n<li>Removes encoding of <code>\\</code>, <code>|</code>, and <code>^</code> to align better with URL spec</li>\n</ul>\n</li>\n<li>Deprecate passing <code>options.maxAge</code> and <code>options.expires</code> to <code>res.clearCookie</code></li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/expressjs/express/commit/12fae14531a78f19a2caaa5d4f58d9b01eaf3194\"><code>12fae14</code></a> 4.22.1</li>\n<li><a href=\"https://github.com/expressjs/express/commit/5ddf311af32e772a77fd48b6266ce2f1ba330e1a\"><code>5ddf311</code></a> Revert &quot;sec: security patch for CVE-2024-51999&quot;</li>\n<li><a href=\"https://github.com/expressjs/express/commit/49744abd1120484fe64d7bde1cd3197c32523b6e\"><code>49744ab</code></a> 4.22.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6921\">#6921</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6e97452f600a3b01719fbc5517d833c7646b0bb7\"><code>6e97452</code></a> sec: security patch for CVE-2024-51999</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6a23d34d652b9e69a4486d2a2a0dea54b9685fa5\"><code>6a23d34</code></a> deps: use tilde notation for <code>qs</code> (<a href=\"https://redirect.github.com/expressjs/express/issues/6919\">#6919</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/8c12cdf93b89a4628b59179e3cc0722fc517d6b3\"><code>8c12cdf</code></a> deps: qs@6.14.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6909\">#6909</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/7fea74fcf02764580f38f2a7f1932dfa54cddd90\"><code>7fea74f</code></a> deps: use tilde notation for certain dependencies (<a href=\"https://redirect.github.com/expressjs/express/issues/6905\">#6905</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/dac7a0475a99e9dfc57b3b8e6d5bdf52813f1944\"><code>dac7a04</code></a> chore: wider range for query test skip (<a href=\"https://redirect.github.com/expressjs/express/issues/6513\">#6513</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/997919b48879bbd53171c3b4e5dd1b04ad139241\"><code>997919b</code></a> ci: add node.js 24 to test matrix (<a href=\"https://redirect.github.com/expressjs/express/issues/6506\">#6506</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/36fb59c6c7d9dfca0b08dfeafb5b6e4a249234a1\"><code>36fb59c</code></a> fix(ci): reorder <code>npm i</code> steps to fix ci for older node versions (<a href=\"https://redirect.github.com/expressjs/express/issues/6336\">#6336</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/expressjs/express/compare/4.18.1...v4.22.1\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by <a href=\"https://www.npmjs.com/~jonchurch\">jonchurch</a>, a new releaser for express since your current version.</p>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D-WEBUI/network/alerts).\n\n</details>",
@@ -2512,39 +2565,39 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 20,
-              "days_since_update": 20,
+              "age_days": 21,
+              "days_since_update": 21,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6080",
-                "6336",
-                "418",
-                "5957",
-                "511",
                 "6919",
-                "543",
-                "5956",
+                "511",
+                "6080",
+                "6921",
                 "6513",
+                "6506",
+                "6905",
+                "517",
+                "6934",
+                "6065",
+                "6190",
                 "6094",
                 "6029",
-                "6190",
-                "6065",
-                "545",
-                "6209",
-                "6031",
-                "6921",
-                "6506",
-                "546",
-                "6934",
                 "6909",
-                "6323",
-                "517",
+                "418",
                 "529",
-                "6905"
+                "6209",
+                "546",
+                "543",
+                "545",
+                "6323",
+                "6031",
+                "5956",
+                "5957",
+                "6336"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2565,42 +2618,42 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 27,
-              "days_since_update": 27,
+              "age_days": 28,
+              "days_since_update": 28,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "20313",
+                "20381",
+                "20286",
+                "20289",
+                "20345",
+                "20390",
                 "20400",
-                "2",
+                "20353",
+                "20191",
+                "20287",
+                "20398",
+                "20320",
+                "20352",
+                "20251",
+                "20319",
+                "20189",
                 "20244",
                 "20255",
-                "20289",
-                "20305",
-                "20320",
-                "20287",
-                "20397",
-                "20312",
-                "20191",
-                "20390",
-                "20189",
-                "20345",
-                "20293",
-                "20258",
-                "20265",
-                "20353",
-                "20399",
                 "20346",
-                "20286",
-                "20398",
-                "20352",
-                "20319",
-                "20251",
-                "20389",
-                "20381"
+                "20293",
+                "20265",
+                "20305",
+                "20312",
+                "20313",
+                "20397",
+                "20258",
+                "2",
+                "20399",
+                "20389"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2626,8 +2679,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 640,
-              "days_since_update": 50,
+              "age_days": 641,
+              "days_since_update": 51,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2652,8 +2705,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 185,
-              "days_since_update": 184,
+              "age_days": 186,
+              "days_since_update": 185,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2681,8 +2734,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 339,
-              "days_since_update": 339,
+              "age_days": 340,
+              "days_since_update": 340,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2710,8 +2763,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1390,
-              "days_since_update": 464,
+              "age_days": 1391,
+              "days_since_update": 465,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2740,8 +2793,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1971,
-              "days_since_update": 507,
+              "age_days": 1972,
+              "days_since_update": 508,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2769,8 +2822,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2051,
-              "days_since_update": 507,
+              "age_days": 2052,
+              "days_since_update": 508,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2797,8 +2850,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1263,
-              "days_since_update": 507,
+              "age_days": 1264,
+              "days_since_update": 508,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2825,8 +2878,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2251,
-              "days_since_update": 1297,
+              "age_days": 2252,
+              "days_since_update": 1298,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2855,8 +2908,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1394,
-              "days_since_update": 1367,
+              "age_days": 1395,
+              "days_since_update": 1368,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2868,28 +2921,28 @@
             }
           ],
           "issue_summary": {
-            "total": 11,
-            "open": 11,
+            "total": 12,
+            "open": 12,
             "closed": 0,
             "priorities": {
-              "normal": 11
+              "normal": 12
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 2,
               "stale": 9
             },
             "complexity": {
-              "medium": 10,
+              "medium": 11,
               "high": 1
             },
             "size": {
-              "large": 2,
+              "large": 3,
               "small": 4,
               "medium": 5
             },
             "lifecycle": {
-              "new": 11
+              "new": 12
             }
           }
         }
@@ -3963,10 +4016,10 @@
         ]
       },
       "statistics": {
-        "size": 118268,
+        "size": 118448,
         "stars": 865,
         "forks": 339,
-        "open_issues": 11,
+        "open_issues": 12,
         "watchers": 865,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
@@ -4022,8 +4075,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 66,
-              "days_since_update": 42,
+              "age_days": 67,
+              "days_since_update": 43,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4048,8 +4101,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 289,
-              "days_since_update": 218,
+              "age_days": 290,
+              "days_since_update": 219,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4075,8 +4128,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 777,
-              "days_since_update": 300,
+              "age_days": 778,
+              "days_since_update": 301,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4103,8 +4156,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 775,
-              "days_since_update": 445,
+              "age_days": 776,
+              "days_since_update": 446,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4129,8 +4182,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 507,
-              "days_since_update": 507,
+              "age_days": 508,
+              "days_since_update": 508,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4157,8 +4210,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 567,
-              "days_since_update": 567,
+              "age_days": 568,
+              "days_since_update": 568,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4183,8 +4236,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 682,
-              "days_since_update": 569,
+              "age_days": 683,
+              "days_since_update": 570,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4210,8 +4263,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 787,
-              "days_since_update": 787,
+              "age_days": 788,
+              "days_since_update": 788,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4236,8 +4289,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1108,
-              "days_since_update": 1108,
+              "age_days": 1109,
+              "days_since_update": 1109,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4265,8 +4318,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1251,
-              "days_since_update": 1251,
+              "age_days": 1252,
+              "days_since_update": 1252,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -5354,10 +5407,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.7,
+        "maintenance_score": 0.5,
         "activity_score": 0.0,
         "community_score": 0.8,
-        "overall_score": 0.32499999999999996
+        "overall_score": 0.255
       }
     },
     {
@@ -8494,8 +8547,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 359,
-              "days_since_update": 359,
+              "age_days": 360,
+              "days_since_update": 360,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8518,8 +8571,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1022,
-              "days_since_update": 1022,
+              "age_days": 1023,
+              "days_since_update": 1023,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8546,8 +8599,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1355,
-              "days_since_update": 1295,
+              "age_days": 1356,
+              "days_since_update": 1296,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9665,8 +9718,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 371,
-              "days_since_update": 371,
+              "age_days": 372,
+              "days_since_update": 372,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9691,8 +9744,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1100,
-              "days_since_update": 1100,
+              "age_days": 1101,
+              "days_since_update": 1101,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9717,8 +9770,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1100,
-              "days_since_update": 1100,
+              "age_days": 1101,
+              "days_since_update": 1101,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11813,8 +11866,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 42,
-              "days_since_update": 10,
+              "age_days": 43,
+              "days_since_update": 11,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -11839,8 +11892,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 282,
-              "days_since_update": 282,
+              "age_days": 283,
+              "days_since_update": 283,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11865,8 +11918,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1023,
-              "days_since_update": 1023,
+              "age_days": 1024,
+              "days_since_update": 1024,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11892,8 +11945,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2219,
-              "days_since_update": 2203,
+              "age_days": 2220,
+              "days_since_update": 2204,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -13017,8 +13070,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1023,
-              "days_since_update": 1023,
+              "age_days": 1024,
+              "days_since_update": 1024,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16536,17 +16589,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-03-04T11:24:07+00:00",
+      "updated_at": "2026-03-06T00:25:38+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "0e4f437",
+            "sha": "8ad099a",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-03-04T11:23:55+00:00"
+            "date": "2026-03-05T12:12:55+00:00"
           },
           "protected": false,
           "issues": []
@@ -16555,6 +16608,12 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "8ad099a",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-03-05T12:12:55+00:00"
+          },
           {
             "sha": "0e4f437",
             "message": "Private commit",
@@ -16872,20 +16931,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2026-01-25T05:55:14+00:00"
-          },
-          {
-            "sha": "33c060d",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-01-24T12:14:05+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "0e4f437",
+          "sha": "8ad099a",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-03-04T11:23:55+00:00"
+          "date": "2026-03-05T12:12:55+00:00"
         }
       },
       "statistics": {},
@@ -16895,8 +16948,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4701,
-      "reset": "2026-03-05T01:37:58+00:00"
+      "remaining": 4755,
+      "reset": "2026-03-06T02:23:16+00:00"
     }
   },
   "stats": {
@@ -16911,7 +16964,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 755658,
+      "total_size": 755838,
       "total_stars": 3089,
       "total_forks": 986,
       "branches": {
@@ -16921,23 +16974,23 @@
       }
     },
     "issues": {
-      "total_count": 38,
-      "open_count": 38,
+      "total_count": 39,
+      "open_count": 39,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 998.0134169496296,
+      "avg_age_days": 973.420560707874,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 38
+        "normal": 39
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 0,
-        "last_month": 4
+        "last_day": 1,
+        "last_week": 1,
+        "last_month": 5
       }
     },
     "activity": {
-      "total_commits": 6,
+      "total_commits": 7,
       "commit_frequency": {
         "daily": 0.38461538461538464,
         "weekly": 2.692307692307692,
@@ -17040,7 +17093,7 @@
           5,
           11,
           1,
-          1,
+          2,
           0,
           1,
           1,
@@ -17092,7 +17145,7 @@
           5,
           2,
           6,
-          5,
+          4,
           3,
           2,
           4,
@@ -17137,7 +17190,7 @@
       "issue_creation_trend": [
         {
           "date": "2026-02",
-          "count": 2
+          "count": 3
         },
         {
           "date": "2026-01",
@@ -17181,7 +17234,7 @@
         },
         {
           "date": "2025-03",
-          "count": 3
+          "count": 2
         }
       ],
       "issue_resolution_trend": [
@@ -17591,27 +17644,6 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 6
-        },
-        "details": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 2.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp3d-webinstaller",
-        "type": "main",
-        "description": "Web Installer for ESP32 projects",
-        "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
           "commits": 1,
           "issues": 0,
           "comments": 0,
@@ -17624,6 +17656,27 @@
           "comments": 0,
           "commits_per_day": 1.0,
           "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17652,27 +17705,6 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17757,6 +17789,27 @@
         "type": "main",
         "description": "Documentation of ESP3D Ecosystem",
         "url": "https://github.com/luc-github/esp3d.io",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d-webinstaller",
+        "type": "main",
+        "description": "Web Installer for ESP32 projects",
+        "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17881,6 +17934,27 @@
     ],
     "weekly": [
       {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 12
+        },
+        "details": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.5714285714285714,
+          "issues_per_day": 0.0
+        }
+      },
+      {
         "name": "esp3d-webinstaller",
         "type": "main",
         "description": "Web Installer for ESP32 projects",
@@ -17902,24 +17976,24 @@
         }
       },
       {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "is_private": false,
         "score": {
-          "commits": 3,
-          "issues": 0,
+          "commits": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 9
+          "total": 2
         },
         "details": {
-          "commits": 3,
-          "issues": 0,
+          "commits": 0,
+          "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.42857142857142855,
-          "issues_per_day": 0.0
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -17948,27 +18022,6 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18183,17 +18236,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 34,
+          "commits": 35,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 102
+          "total": 105
         },
         "details": {
-          "commits": 34,
+          "commits": 35,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.1333333333333333,
+          "commits_per_day": 1.1666666666666667,
           "issues_per_day": 0.0
         }
       },
@@ -18247,17 +18300,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 3,
           "comments": 0,
           "period_days": 30,
-          "total": 4
+          "total": 6
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.1
         }
       },
       {
@@ -18564,17 +18617,17 @@
         "is_private": false,
         "score": {
           "commits": 16,
-          "issues": 5,
+          "issues": 6,
           "comments": 0,
           "period_days": 365,
-          "total": 58
+          "total": 60
         },
         "details": {
           "commits": 16,
-          "issues": 5,
+          "issues": 6,
           "comments": 0,
           "commits_per_day": 0.043835616438356165,
-          "issues_per_day": 0.0136986301369863
+          "issues_per_day": 0.01643835616438356
         }
       },
       {
