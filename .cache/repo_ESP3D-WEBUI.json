@@ -1,5 +1,5 @@
 {
-  "timestamp": 1773105753.4141057,
+  "timestamp": 1773192181.324572,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -21,6 +21,24 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 445,
+            "title": "[FEATURE REQUEST]Remove Informations Tab",
+            "body": "Hi everyone,\nAfter several years of no one commenting this tab, I am wondering if this tab is actually useful ? \nShould I remove it without harm ? It would simplify code and decrease package size a little for better features\n\nPlease everyone let me know your feedback on this, Thank you\n\n<img width=\"1009\" height=\"781\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/31f4e1b3-e05f-4a85-96c7-a28984681255\" />",
+            "state": "open",
+            "created_at": "2026-03-10T04:01:52+00:00",
+            "updated_at": "2026-03-10T09:31:58+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/445",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "Feedback Welcome",
+              "3.0"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 442,
             "title": "Bump qs and express",
@@ -1301,7 +1319,7 @@
       "size": 118268,
       "stars": 866,
       "forks": 340,
-      "open_issues": 11,
+      "open_issues": 12,
       "watchers": 866,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"

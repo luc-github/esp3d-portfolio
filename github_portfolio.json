@@ -7,17 +7,17 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2026-03-09T06:38:18+00:00",
+      "updated_at": "2026-03-10T13:43:13+00:00",
       "branches": [
         {
           "name": "3.0",
           "label": "Production",
           "is_production": true,
           "last_commit": {
-            "sha": "e74ac77",
-            "message": "Fix compilation on ESP8266",
+            "sha": "c75c8d0",
+            "message": "Rename license file name due to github API rules",
             "author": "Luc",
-            "date": "2026-02-22T11:36:15+00:00"
+            "date": "2026-03-10T13:43:03+00:00"
           },
           "protected": false,
           "issues": [
@@ -38,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2795,
-              "days_since_update": 33,
+              "age_days": 2796,
+              "days_since_update": 34,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -67,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1321,
-              "days_since_update": 348,
+              "age_days": 1322,
+              "days_since_update": 349,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1870,
-              "days_since_update": 497,
+              "age_days": 1871,
+              "days_since_update": 498,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1862,
-              "days_since_update": 734,
+              "age_days": 1863,
+              "days_since_update": 735,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -165,7 +165,7 @@
       "contributors": [
         {
           "login": "luc-github",
-          "contributions": 569,
+          "contributions": 570,
           "url": "https://github.com/luc-github"
         },
         {
@@ -246,6 +246,12 @@
       ],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "c75c8d0",
+            "message": "Rename license file name due to github API rules",
+            "author": "Luc",
+            "date": "2026-03-10T13:43:03+00:00"
+          },
           {
             "sha": "e74ac77",
             "message": "Fix compilation on ESP8266",
@@ -563,12 +569,6 @@
             "message": "Grbl grblHAL better support for realtime commands (#1064)\n\n* Add a realtime command detector \r\n* Move `\\r` as printable char and not replaced as `\\n`\r\n* Refactorize Serial service code to avoid redondant code between esp32 and esp8266\r\n* Implement isrealtimeCommand check for serial and centralize function in string helper\r\n* Add new type message : realtimecmd\r\n* Update simulator to handle commands and realtime commands\r\n* Add simple serial test tool\r\n*  Generate error if use HAS_DISPLAY with grbl/grblHAL\r\n* Implement isRealTimeCommand for BT client\r\n* Simplify BT push2buffer code\r\n* Implement support for realtimecommand in telnet\r\n* Implement isRealTimeCommand on websocket RX\r\n* Simplify push2RXbuffer for websocket\r\n* Implement isRealTimeCommand for USB serial\r\n* Bump version",
             "author": "Luc",
             "date": "2024-12-08T09:26:19+00:00"
-          },
-          {
-            "sha": "7b99d8a",
-            "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-            "author": "Luc",
-            "date": "2024-12-01T08:07:16+00:00"
           }
         ],
         "commit_activity": [
@@ -1237,11 +1237,11 @@
           },
           {
             "week": "2026-03-08T00:00:00+00:00",
-            "total": 0,
+            "total": 1,
             "days": [
               0,
               0,
-              0,
+              1,
               0,
               0,
               0,
@@ -1251,12 +1251,13 @@
         ]
       },
       "statistics": {
-        "size": 135007,
+        "size": 135008,
         "stars": 1947,
         "forks": 490,
         "open_issues": 4,
         "watchers": 1947,
-        "default_branch": "3.0"
+        "default_branch": "3.0",
+        "license": "GNU General Public License v3.0"
       },
       "version_info": {
         "version": "3.0.1",
@@ -1339,8 +1340,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 352,
-              "days_since_update": 352,
+              "age_days": 353,
+              "days_since_update": 353,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1367,8 +1368,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1497,
-              "days_since_update": 443,
+              "age_days": 1498,
+              "days_since_update": 444,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2497,6 +2498,34 @@
           "protected": false,
           "issues": [
             {
+              "number": 445,
+              "title": "[FEATURE REQUEST]Remove Informations Tab",
+              "body": "Hi everyone,\nAfter several years of no one commenting this tab, I am wondering if this tab is actually useful ? \nShould I remove it without harm ? It would simplify code and decrease package size a little for better features\n\nPlease everyone let me know your feedback on this, Thank you\n\n<img width=\"1009\" height=\"781\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/31f4e1b3-e05f-4a85-96c7-a28984681255\" />",
+              "state": "open",
+              "created_at": "2026-03-10T04:01:52+00:00",
+              "updated_at": "2026-03-10T09:31:58+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/445",
+              "is_pr": false,
+              "labels": [
+                "Feature request",
+                "Feedback Welcome",
+                "3.0"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 442,
               "title": "Bump qs and express",
               "body": "Bumps [qs](https://github.com/ljharb/qs) to 6.14.2 and updates ancestor dependency [express](https://github.com/expressjs/express). These dependencies need to be updated together.\n\nUpdates `qs` from 6.10.3 to 6.14.2\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.14.2</strong></h2>\n<ul>\n<li>[Fix] <code>parse</code>: mark overflow objects for indexed notation exceeding <code>arrayLimit</code> (<a href=\"https://redirect.github.com/ljharb/qs/issues/546\">#546</a>)</li>\n<li>[Fix] <code>arrayLimit</code> means max count, not max index, in <code>combine</code>/<code>merge</code>/<code>parseArrayValue</code></li>\n<li>[Fix] <code>parse</code>: throw on <code>arrayLimit</code> exceeded with indexed notation when <code>throwOnLimitExceeded</code> is true (<a href=\"https://redirect.github.com/ljharb/qs/issues/529\">#529</a>)</li>\n<li>[Fix] <code>parse</code>: enforce <code>arrayLimit</code> on <code>comma</code>-parsed values</li>\n<li>[Fix] <code>parse</code>: fix error message to reflect arrayLimit as max index; remove extraneous comments (<a href=\"https://redirect.github.com/ljharb/qs/issues/545\">#545</a>)</li>\n<li>[Robustness] avoid <code>.push</code>, use <code>void</code></li>\n<li>[readme] document that <code>addQueryPrefix</code> does not add <code>?</code> to empty output (<a href=\"https://redirect.github.com/ljharb/qs/issues/418\">#418</a>)</li>\n<li>[readme] clarify <code>parseArrays</code> and <code>arrayLimit</code> documentation (<a href=\"https://redirect.github.com/ljharb/qs/issues/543\">#543</a>)</li>\n<li>[readme] replace runkit CI badge with shields.io check-runs badge</li>\n<li>[meta] fix changelog typo (<code>arrayLength</code> \u2192 <code>arrayLimit</code>)</li>\n<li>[actions] fix rebase workflow permissions</li>\n</ul>\n<h2><strong>6.14.1</strong></h2>\n<ul>\n<li>[Fix] ensure <code>arrayLimit</code> applies to <code>[]</code> notation as well</li>\n<li>[Fix] <code>parse</code>: when a custom decoder returns <code>null</code> for a key, ignore that key</li>\n<li>[Refactor] <code>parse</code>: extract key segment splitting helper</li>\n<li>[meta] add threat model</li>\n<li>[actions] add workflow permissions</li>\n<li>[Tests] <code>stringify</code>: increase coverage</li>\n<li>[Dev Deps] update <code>eslint</code>, <code>@ljharb/eslint-config</code>, <code>npmignore</code>, <code>es-value-fixtures</code>, <code>for-each</code>, <code>object-inspect</code></li>\n</ul>\n<h2><strong>6.14.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>throwOnParameterLimitExceeded</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/517\">#517</a>)</li>\n<li>[Refactor] <code>parse</code>: use <code>utils.combine</code> more</li>\n<li>[patch] <code>parse</code>: add explicit <code>throwOnLimitExceeded</code> default</li>\n<li>[actions] use shared action; re-add finishers</li>\n<li>[meta] Fix changelog formatting bug</li>\n<li>[Deps] update <code>side-channel</code></li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>has-bigints</code>, <code>has-proto</code>, <code>has-symbols</code></li>\n<li>[Tests] increase coverage</li>\n</ul>\n<h2><strong>6.13.1</strong></h2>\n<ul>\n<li>[Fix] <code>stringify</code>: avoid a crash when a <code>filter</code> key is <code>null</code></li>\n<li>[Fix] <code>utils.merge</code>: functions should not be stringified into keys</li>\n<li>[Fix] <code>parse</code>: avoid a crash with interpretNumericEntities: true, comma: true, and iso charset</li>\n<li>[Fix] <code>stringify</code>: ensure a non-string <code>filter</code> does not crash</li>\n<li>[Refactor] use <code>__proto__</code> syntax instead of <code>Object.create</code> for null objects</li>\n<li>[Refactor] misc cleanup</li>\n<li>[Tests] <code>utils.merge</code>: add some coverage</li>\n<li>[Tests] fix a test case</li>\n<li>[actions] split out node 10-20, and 20+</li>\n<li>[Dev Deps] update <code>es-value-fixtures</code>, <code>mock-property</code>, <code>object-inspect</code>, <code>tape</code></li>\n</ul>\n<h2><strong>6.13.0</strong></h2>\n<ul>\n<li>[New] <code>parse</code>: add <code>strictDepth</code> option (<a href=\"https://redirect.github.com/ljharb/qs/issues/511\">#511</a>)</li>\n<li>[Tests] use <code>npm audit</code> instead of <code>aud</code></li>\n</ul>\n<h2><strong>6.12.3</strong></h2>\n<ul>\n<li>[Fix] <code>parse</code>: properly account for <code>strictNullHandling</code> when <code>allowEmptyArrays</code></li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/bdcf0c7f82387c18ac8fabfccd2f440645cef47b\"><code>bdcf0c7</code></a> v6.14.2</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/294db90c812ddbe7d7a35d5687c505fd21a2d6a2\"><code>294db90</code></a> [readme] document that <code>addQueryPrefix</code> does not add <code>?</code> to empty output</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/5c308e5516c270a78caa6f278465914090f91ec6\"><code>5c308e5</code></a> [readme] clarify <code>parseArrays</code> and <code>arrayLimit</code> documentation</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/6addf8cf738d529c54d91f6f3ffb6c1be91bbfdc\"><code>6addf8c</code></a> [Fix] <code>parse</code>: mark overflow objects for indexed notation exceeding <code>arrayLimit</code></li>\n<li><a href=\"https://github.com/ljharb/qs/commit/cfc108f662326d6ab540f3545ef0b832baf83cdf\"><code>cfc108f</code></a> [Fix] <code>arrayLimit</code> means max count, not max index, in <code>combine</code>/<code>merge</code>/`pars...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/febb64442a80e49200211fa38d3c96b58024ac77\"><code>febb644</code></a> [Fix] <code>parse</code>: throw on <code>arrayLimit</code> exceeded with indexed notation when `thr...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f6a7abff1f13d644db9b05fe4f2c98ada6bf8482\"><code>f6a7abf</code></a> [Fix] <code>parse</code>: enforce <code>arrayLimit</code> on <code>comma</code>-parsed values</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/fbc5206c25b4d1851cea683f02c10756c521d15a\"><code>fbc5206</code></a> [Fix] <code>parse</code>: fix error message to reflect arrayLimit as max index; remove e...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/1b9a8b4e78c6aff4c22fa559107227f02fd0216a\"><code>1b9a8b4</code></a> [actions] fix rebase workflow permissions</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/2a35775614e0fb46ac8a3060201a32a7c23a7fda\"><code>2a35775</code></a> [meta] fix changelog typo (<code>arrayLength</code> \u2192 <code>arrayLimit</code>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.10.3...v6.14.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `express` from 4.18.1 to 4.22.1\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/releases\">express's releases</a>.</em></p>\n<blockquote>\n<h2>v4.22.1</h2>\n<h2>What's Changed</h2>\n<blockquote>\n<p>[!IMPORTANT]<br />\nThe prior release (4.22.0) included an erroneous breaking change related to the extended query parser. There is no actual security vulnerability associated with this behavior (CVE-2024-51999 has been rejected). The change has been fully reverted in this release.</p>\n</blockquote>\n<ul>\n<li>Release: 4.22.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6934\">expressjs/express#6934</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.22.0...v4.22.1\">https://github.com/expressjs/express/compare/4.22.0...v4.22.1</a></p>\n<h2>4.22.0</h2>\n<h2>Important: Security</h2>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Refactor: improve readability by <a href=\"https://github.com/sazk07\"><code>@\u200bsazk07</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6190\">expressjs/express#6190</a></li>\n<li>ci: add support for Node.js@23.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6080\">expressjs/express#6080</a></li>\n<li>Method functions with no path should error by <a href=\"https://github.com/wesleytodd\"><code>@\u200bwesleytodd</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5957\">expressjs/express#5957</a></li>\n<li>ci: updated github actions ci workflow by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6323\">expressjs/express#6323</a></li>\n<li>ci: reorder <code>npm i</code> steps to fix ci for older node versions by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6336\">expressjs/express#6336</a></li>\n<li>Backport: ci: add node.js 24 to test matrix by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6506\">expressjs/express#6506</a></li>\n<li>chore(4.x): wider range for query test skip by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6513\">expressjs/express#6513</a></li>\n<li>use tilde notation for certain dependencies by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6905\">expressjs/express#6905</a></li>\n<li>deps: qs@6.14.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6909\">expressjs/express#6909</a></li>\n<li>deps: use tilde notation for <code>qs</code> by <a href=\"https://github.com/Phillip9587\"><code>@\u200bPhillip9587</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6919\">expressjs/express#6919</a></li>\n<li>Release: 4.22.0 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6921\">expressjs/express#6921</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.2...4.22.0\">https://github.com/expressjs/express/compare/4.21.2...4.22.0</a></p>\n<h2>4.21.2</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Add funding field (v4) by <a href=\"https://github.com/bjohansebas\"><code>@\u200bbjohansebas</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6065\">expressjs/express#6065</a></li>\n<li>deps: path-to-regexp@0.1.11 by <a href=\"https://github.com/blakeembrey\"><code>@\u200bblakeembrey</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/5956\">expressjs/express#5956</a></li>\n<li>deps: bump path-to-regexp@0.1.12 by <a href=\"https://github.com/jonchurch\"><code>@\u200bjonchurch</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6209\">expressjs/express#6209</a></li>\n<li>Release: 4.21.2 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6094\">expressjs/express#6094</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.1...4.21.2\">https://github.com/expressjs/express/compare/4.21.1...4.21.2</a></p>\n<h2>4.21.1</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Backport a fix for CVE-2024-47764 to the 4.x branch by <a href=\"https://github.com/joshbuker\"><code>@\u200bjoshbuker</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6029\">expressjs/express#6029</a></li>\n<li>Release: 4.21.1 by <a href=\"https://github.com/UlisesGascon\"><code>@\u200bUlisesGascon</code></a> in <a href=\"https://redirect.github.com/expressjs/express/pull/6031\">expressjs/express#6031</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/expressjs/express/compare/4.21.0...4.21.1\">https://github.com/expressjs/express/compare/4.21.0...4.21.1</a></p>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/expressjs/express/blob/v4.22.1/History.md\">express's changelog</a>.</em></p>\n<blockquote>\n<h1>4.22.1 / 2025-12-01</h1>\n<ul>\n<li>Revert security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n</ul>\n<h1>4.22.0 / 2025-12-01</h1>\n<ul>\n<li>Security fix for <a href=\"https://www.cve.org/CVERecord?id=CVE-2024-51999\">CVE-2024-51999</a> (<a href=\"https://github.com/expressjs/express/security/advisories/GHSA-pj86-cfqh-vqx6\">GHSA-pj86-cfqh-vqx6</a>)</li>\n<li>deps: use tilde notation for dependencies</li>\n<li>deps: qs@6.14.0</li>\n</ul>\n<h1>4.21.2 / 2024-11-06</h1>\n<ul>\n<li>deps: path-to-regexp@0.1.12\n<ul>\n<li>Fix backtracking protection</li>\n</ul>\n</li>\n<li>deps: path-to-regexp@0.1.11\n<ul>\n<li>Throws an error on invalid path values</li>\n</ul>\n</li>\n</ul>\n<h1>4.21.1 / 2024-10-08</h1>\n<ul>\n<li>Backported a fix for <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2024-47764\">CVE-2024-47764</a></li>\n</ul>\n<h1>4.21.0 / 2024-09-11</h1>\n<ul>\n<li>Deprecate <code>res.location(&quot;back&quot;)</code> and <code>res.redirect(&quot;back&quot;)</code> magic string</li>\n<li>deps: serve-static@1.16.2\n<ul>\n<li>includes send@0.19.0</li>\n</ul>\n</li>\n<li>deps: finalhandler@1.3.1</li>\n<li>deps: qs@6.13.0</li>\n</ul>\n<h1>4.20.0 / 2024-09-10</h1>\n<ul>\n<li>deps: serve-static@0.16.0\n<ul>\n<li>Remove link renderization in html while redirecting</li>\n</ul>\n</li>\n<li>deps: send@0.19.0\n<ul>\n<li>Remove link renderization in html while redirecting</li>\n</ul>\n</li>\n<li>deps: body-parser@0.6.0\n<ul>\n<li>add <code>depth</code> option to customize the depth level in the parser</li>\n<li>IMPORTANT: The default <code>depth</code> level for parsing URL-encoded data is now <code>32</code> (previously was <code>Infinity</code>)</li>\n</ul>\n</li>\n<li>Remove link renderization in html while using <code>res.redirect</code></li>\n<li>deps: path-to-regexp@0.1.10\n<ul>\n<li>Adds support for named matching groups in the routes using a regex</li>\n<li>Adds backtracking protection to parameters without regexes defined</li>\n</ul>\n</li>\n<li>deps: encodeurl@~2.0.0\n<ul>\n<li>Removes encoding of <code>\\</code>, <code>|</code>, and <code>^</code> to align better with URL spec</li>\n</ul>\n</li>\n<li>Deprecate passing <code>options.maxAge</code> and <code>options.expires</code> to <code>res.clearCookie</code></li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/expressjs/express/commit/12fae14531a78f19a2caaa5d4f58d9b01eaf3194\"><code>12fae14</code></a> 4.22.1</li>\n<li><a href=\"https://github.com/expressjs/express/commit/5ddf311af32e772a77fd48b6266ce2f1ba330e1a\"><code>5ddf311</code></a> Revert &quot;sec: security patch for CVE-2024-51999&quot;</li>\n<li><a href=\"https://github.com/expressjs/express/commit/49744abd1120484fe64d7bde1cd3197c32523b6e\"><code>49744ab</code></a> 4.22.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6921\">#6921</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6e97452f600a3b01719fbc5517d833c7646b0bb7\"><code>6e97452</code></a> sec: security patch for CVE-2024-51999</li>\n<li><a href=\"https://github.com/expressjs/express/commit/6a23d34d652b9e69a4486d2a2a0dea54b9685fa5\"><code>6a23d34</code></a> deps: use tilde notation for <code>qs</code> (<a href=\"https://redirect.github.com/expressjs/express/issues/6919\">#6919</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/8c12cdf93b89a4628b59179e3cc0722fc517d6b3\"><code>8c12cdf</code></a> deps: qs@6.14.0 (<a href=\"https://redirect.github.com/expressjs/express/issues/6909\">#6909</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/7fea74fcf02764580f38f2a7f1932dfa54cddd90\"><code>7fea74f</code></a> deps: use tilde notation for certain dependencies (<a href=\"https://redirect.github.com/expressjs/express/issues/6905\">#6905</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/dac7a0475a99e9dfc57b3b8e6d5bdf52813f1944\"><code>dac7a04</code></a> chore: wider range for query test skip (<a href=\"https://redirect.github.com/expressjs/express/issues/6513\">#6513</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/997919b48879bbd53171c3b4e5dd1b04ad139241\"><code>997919b</code></a> ci: add node.js 24 to test matrix (<a href=\"https://redirect.github.com/expressjs/express/issues/6506\">#6506</a>)</li>\n<li><a href=\"https://github.com/expressjs/express/commit/36fb59c6c7d9dfca0b08dfeafb5b6e4a249234a1\"><code>36fb59c</code></a> fix(ci): reorder <code>npm i</code> steps to fix ci for older node versions (<a href=\"https://redirect.github.com/expressjs/express/issues/6336\">#6336</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/expressjs/express/compare/4.18.1...v4.22.1\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by <a href=\"https://www.npmjs.com/~jonchurch\">jonchurch</a>, a new releaser for express since your current version.</p>\n</details>\n<br />\n\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D-WEBUI/network/alerts).\n\n</details>",
@@ -2512,39 +2541,39 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 25,
-              "days_since_update": 25,
+              "age_days": 26,
+              "days_since_update": 26,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "6934",
-                "6909",
-                "6209",
-                "529",
-                "6094",
-                "6506",
-                "511",
-                "6905",
-                "543",
+                "6031",
+                "6029",
                 "545",
-                "6065",
+                "6909",
+                "5957",
+                "6336",
+                "6094",
                 "6323",
                 "517",
-                "6513",
-                "6921",
-                "6029",
-                "6031",
                 "418",
-                "5956",
-                "6336",
+                "6934",
+                "529",
+                "6921",
+                "6209",
                 "6080",
-                "6919",
+                "6065",
                 "6190",
-                "5957",
-                "546"
+                "546",
+                "6513",
+                "6905",
+                "6919",
+                "6506",
+                "5956",
+                "543",
+                "511"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2565,42 +2594,42 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 32,
-              "days_since_update": 32,
+              "age_days": 33,
+              "days_since_update": 33,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
               "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [
-                "20251",
-                "20287",
-                "20389",
-                "20345",
-                "20352",
-                "20390",
-                "20399",
+                "20400",
                 "20397",
                 "2",
                 "20255",
-                "20189",
-                "20346",
-                "20319",
-                "20289",
-                "20244",
-                "20258",
-                "20353",
-                "20265",
-                "20286",
-                "20398",
-                "20320",
                 "20312",
-                "20313",
-                "20191",
+                "20265",
+                "20346",
+                "20289",
                 "20381",
-                "20400",
+                "20398",
+                "20389",
+                "20251",
+                "20191",
+                "20345",
+                "20258",
                 "20305",
-                "20293"
+                "20189",
+                "20319",
+                "20293",
+                "20287",
+                "20320",
+                "20244",
+                "20313",
+                "20352",
+                "20353",
+                "20399",
+                "20286",
+                "20390"
               ],
               "suggested_priority": "medium",
               "lifecycle_stage": "new"
@@ -2626,8 +2655,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 645,
-              "days_since_update": 55,
+              "age_days": 646,
+              "days_since_update": 56,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2652,8 +2681,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 190,
-              "days_since_update": 189,
+              "age_days": 191,
+              "days_since_update": 190,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2681,8 +2710,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 344,
-              "days_since_update": 344,
+              "age_days": 345,
+              "days_since_update": 345,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2710,8 +2739,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1395,
-              "days_since_update": 469,
+              "age_days": 1396,
+              "days_since_update": 470,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2740,8 +2769,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1976,
-              "days_since_update": 512,
+              "age_days": 1977,
+              "days_since_update": 513,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2769,8 +2798,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2056,
-              "days_since_update": 512,
+              "age_days": 2057,
+              "days_since_update": 513,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2797,8 +2826,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1268,
-              "days_since_update": 512,
+              "age_days": 1269,
+              "days_since_update": 513,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2825,8 +2854,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2256,
-              "days_since_update": 1302,
+              "age_days": 2257,
+              "days_since_update": 1303,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2855,8 +2884,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1399,
-              "days_since_update": 1372,
+              "age_days": 1400,
+              "days_since_update": 1373,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2868,28 +2897,28 @@
             }
           ],
           "issue_summary": {
-            "total": 11,
-            "open": 11,
+            "total": 12,
+            "open": 12,
             "closed": 0,
             "priorities": {
-              "normal": 11
+              "normal": 12
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 1,
               "stale": 10
             },
             "complexity": {
-              "medium": 10,
+              "medium": 11,
               "high": 1
             },
             "size": {
+              "medium": 6,
               "large": 2,
-              "small": 4,
-              "medium": 5
+              "small": 4
             },
             "lifecycle": {
-              "new": 11
+              "new": 12
             }
           }
         }
@@ -3966,7 +3995,7 @@
         "size": 118268,
         "stars": 866,
         "forks": 340,
-        "open_issues": 11,
+        "open_issues": 12,
         "watchers": 866,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
@@ -4012,7 +4041,7 @@
               "body": "\nUses the following hardware:\n\nSoC: ESP32-WROOM-32U-N8\nCapacitive Touch Panel Controller: FT6336U (I2C)\n3.5\" Capacitive Touch Panel: CL35BC219-40A (SPI)\nResolution: 480x320 \nUSB-C: Wired to an onboard CH340C USB to serial chip \nRJ11 serial port: To the host CNC controller\n1x Unpopulated space for a beeper\n1x Extra Button\n\n![Image](https://github.com/user-attachments/assets/171dfd7e-8f87-436d-8ace-1dffe7be96e0)\n![Image](https://github.com/user-attachments/assets/529f10b9-d63f-4f92-bc49-c68285c9a8ea)\n![Image](https://github.com/user-attachments/assets/20a87c13-1197-4457-8514-f9c36363e433)",
               "state": "open",
               "created_at": "2025-12-28T11:45:37+00:00",
-              "updated_at": "2026-01-21T09:46:49+00:00",
+              "updated_at": "2026-03-10T14:22:14+00:00",
               "closed_at": null,
               "url": "https://github.com/luc-github/ESP3D-TFT/issues/82",
               "is_pr": false,
@@ -4022,11 +4051,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 71,
-              "days_since_update": 47,
-              "is_stale": true,
-              "is_recent": false,
-              "activity_status": "stale",
+              "age_days": 72,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
               "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
@@ -4048,8 +4077,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 294,
-              "days_since_update": 223,
+              "age_days": 295,
+              "days_since_update": 224,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4075,8 +4104,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 782,
-              "days_since_update": 305,
+              "age_days": 783,
+              "days_since_update": 306,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4103,8 +4132,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 780,
-              "days_since_update": 450,
+              "age_days": 781,
+              "days_since_update": 451,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4129,8 +4158,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 512,
-              "days_since_update": 512,
+              "age_days": 513,
+              "days_since_update": 513,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4157,8 +4186,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 572,
-              "days_since_update": 572,
+              "age_days": 573,
+              "days_since_update": 573,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4183,8 +4212,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 687,
-              "days_since_update": 574,
+              "age_days": 688,
+              "days_since_update": 575,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4210,8 +4239,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 792,
-              "days_since_update": 792,
+              "age_days": 793,
+              "days_since_update": 793,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4236,8 +4265,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1113,
-              "days_since_update": 1113,
+              "age_days": 1114,
+              "days_since_update": 1114,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4265,8 +4294,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1256,
-              "days_since_update": 1256,
+              "age_days": 1257,
+              "days_since_update": 1257,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4285,9 +4314,9 @@
               "normal": 10
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
-              "stale": 10
+              "stale": 9
             },
             "complexity": {
               "medium": 9,
@@ -8494,8 +8523,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 364,
-              "days_since_update": 364,
+              "age_days": 365,
+              "days_since_update": 365,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8518,8 +8547,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1026,
-              "days_since_update": 1026,
+              "age_days": 1027,
+              "days_since_update": 1027,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8546,8 +8575,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1360,
-              "days_since_update": 1299,
+              "age_days": 1361,
+              "days_since_update": 1300,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9665,8 +9694,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 376,
-              "days_since_update": 376,
+              "age_days": 377,
+              "days_since_update": 377,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9691,8 +9720,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1105,
-              "days_since_update": 1105,
+              "age_days": 1106,
+              "days_since_update": 1106,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9717,8 +9746,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1105,
-              "days_since_update": 1105,
+              "age_days": 1106,
+              "days_since_update": 1106,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10809,7 +10838,7 @@
       "statistics": {
         "size": 114197,
         "stars": 11,
-        "forks": 63,
+        "forks": 64,
         "open_issues": 3,
         "watchers": 11,
         "default_branch": "main",
@@ -11813,8 +11842,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 47,
-              "days_since_update": 15,
+              "age_days": 48,
+              "days_since_update": 16,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -11839,8 +11868,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 287,
-              "days_since_update": 287,
+              "age_days": 288,
+              "days_since_update": 288,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11865,8 +11894,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1028,
-              "days_since_update": 1028,
+              "age_days": 1029,
+              "days_since_update": 1029,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11892,8 +11921,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2224,
-              "days_since_update": 2208,
+              "age_days": 2225,
+              "days_since_update": 2209,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -13017,8 +13046,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1028,
-              "days_since_update": 1028,
+              "age_days": 1029,
+              "days_since_update": 1029,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16895,8 +16924,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4758,
-      "reset": "2026-03-10T02:21:40+00:00"
+      "remaining": 4681,
+      "reset": "2026-03-11T02:21:30+00:00"
     }
   },
   "stats": {
@@ -16911,9 +16940,9 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 755658,
+      "total_size": 755659,
       "total_stars": 3092,
-      "total_forks": 988,
+      "total_forks": 989,
       "branches": {
         "production": 12,
         "development": 4,
@@ -16921,27 +16950,27 @@
       }
     },
     "issues": {
-      "total_count": 38,
-      "open_count": 38,
+      "total_count": 39,
+      "open_count": 39,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1003.0094916982407,
+      "avg_age_days": 978.2901993799551,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 38
+        "normal": 39
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 0,
-        "last_month": 2
+        "last_day": 2,
+        "last_week": 2,
+        "last_month": 4
       }
     },
     "activity": {
       "total_commits": 56,
       "commit_frequency": {
-        "daily": 0.3434065934065934,
-        "weekly": 2.4038461538461537,
-        "monthly": 9.615384615384615
+        "daily": 0.34615384615384615,
+        "weekly": 2.4230769230769234,
+        "monthly": 9.692307692307693
       },
       "active_contributors": {
         "last_week": 1,
@@ -16989,7 +17018,7 @@
           6,
           10,
           4,
-          2,
+          3,
           1,
           1,
           0,
@@ -17114,7 +17143,7 @@
           1,
           8,
           13,
-          9,
+          8,
           5,
           5,
           7,
@@ -17137,7 +17166,7 @@
       "issue_creation_trend": [
         {
           "date": "2026-02",
-          "count": 1
+          "count": 2
         },
         {
           "date": "2026-01",
@@ -17441,7 +17470,7 @@
         },
         {
           "date": "2026-03-08",
-          "count": 0
+          "count": 1
         },
         {
           "date": "2025-03-15",
@@ -17585,65 +17614,23 @@
   "activity_ranking": {
     "daily": [
       {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
-        "score": {
-          "commits": 9,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 27
-        },
-        "details": {
-          "commits": 9,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 9.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 3
         },
         "details": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 1.0,
           "issues_per_day": 0.0
         }
       },
@@ -17655,17 +17642,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17673,6 +17660,27 @@
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
         "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17877,6 +17885,27 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
+      },
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
       }
     ],
     "weekly": [
@@ -17902,65 +17931,44 @@
         }
       },
       {
-        "name": "esp3d-webinstaller",
-        "type": "main",
-        "description": "Web Installer for ESP32 projects",
-        "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 7,
-          "total": 6
-        },
-        "details": {
-          "commits": 2,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.2857142857142857,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 3
         },
         "details": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.14285714285714285,
           "issues_per_day": 0.0
         }
       },
       {
-        "name": "ESP3DLib",
+        "name": "esp3d-webinstaller",
         "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
+        "description": "Web Installer for ESP32 projects",
+        "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 3
         },
         "details": {
-          "commits": 0,
+          "commits": 1,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.0,
+          "commits_per_day": 0.14285714285714285,
           "issues_per_day": 0.0
         }
       },
@@ -17972,17 +17980,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -17990,6 +17998,27 @@
         "type": "main",
         "description": "ESP3D Firmware for ESP32 based TFT ",
         "url": "https://github.com/luc-github/ESP3D-TFT",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 7,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.14285714285714285
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18204,17 +18233,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 8,
+          "commits": 9,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 24
+          "total": 27
         },
         "details": {
-          "commits": 8,
+          "commits": 9,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.26666666666666666,
+          "commits_per_day": 0.3,
           "issues_per_day": 0.0
         }
       },
@@ -18244,6 +18273,27 @@
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
         "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 30,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.06666666666666667
+        }
+      },
+      {
+        "name": "ESP3D-TFT",
+        "type": "main",
+        "description": "ESP3D Firmware for ESP32 based TFT ",
+        "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18286,27 +18336,6 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "ESP3D-TFT",
-        "type": "main",
-        "description": "ESP3D Firmware for ESP32 based TFT ",
-        "url": "https://github.com/luc-github/ESP3D-TFT",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18500,17 +18529,17 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 41,
+          "commits": 42,
           "issues": 2,
           "comments": 0,
           "period_days": 365,
-          "total": 127
+          "total": 130
         },
         "details": {
-          "commits": 41,
+          "commits": 42,
           "issues": 2,
           "comments": 0,
-          "commits_per_day": 0.11232876712328767,
+          "commits_per_day": 0.11506849315068493,
           "issues_per_day": 0.005479452054794521
         }
       },
@@ -18543,17 +18572,17 @@
         "is_private": false,
         "score": {
           "commits": 16,
-          "issues": 5,
+          "issues": 6,
           "comments": 0,
           "period_days": 365,
-          "total": 58
+          "total": 60
         },
         "details": {
           "commits": 16,
-          "issues": 5,
+          "issues": 6,
           "comments": 0,
           "commits_per_day": 0.043835616438356165,
-          "issues_per_day": 0.0136986301369863
+          "issues_per_day": 0.01643835616438356
         }
       },
       {
@@ -18690,17 +18719,17 @@
         "is_private": false,
         "score": {
           "commits": 2,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 365,
-          "total": 8
+          "total": 6
         },
         "details": {
           "commits": 2,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.005479452054794521,
-          "issues_per_day": 0.0027397260273972603
+          "issues_per_day": 0.0
         }
       },
       {

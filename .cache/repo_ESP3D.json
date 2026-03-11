@@ -1,5 +1,5 @@
 {
-  "timestamp": 1773105716.3944433,
+  "timestamp": 1773192160.9691114,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-03-09T06:38:18+00:00",
+    "updated_at": "2026-03-10T13:43:13+00:00",
     "branches": [
       {
         "name": "3.0",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "e74ac77",
-          "message": "Fix compilation on ESP8266",
+          "sha": "c75c8d0",
+          "message": "Rename license file name due to github API rules",
           "author": "Luc",
-          "date": "2026-02-22T11:36:15+00:00"
+          "date": "2026-03-10T13:43:03+00:00"
         },
         "protected": false,
         "issues": [
@@ -101,7 +101,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 569,
+        "contributions": 570,
         "url": "https://github.com/luc-github"
       },
       {
@@ -182,6 +182,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "c75c8d0",
+          "message": "Rename license file name due to github API rules",
+          "author": "Luc",
+          "date": "2026-03-10T13:43:03+00:00"
+        },
         {
           "sha": "e74ac77",
           "message": "Fix compilation on ESP8266",
@@ -499,12 +505,6 @@
           "message": "Grbl grblHAL better support for realtime commands (#1064)\n\n* Add a realtime command detector \r\n* Move `\\r` as printable char and not replaced as `\\n`\r\n* Refactorize Serial service code to avoid redondant code between esp32 and esp8266\r\n* Implement isrealtimeCommand check for serial and centralize function in string helper\r\n* Add new type message : realtimecmd\r\n* Update simulator to handle commands and realtime commands\r\n* Add simple serial test tool\r\n*  Generate error if use HAS_DISPLAY with grbl/grblHAL\r\n* Implement isRealTimeCommand for BT client\r\n* Simplify BT push2buffer code\r\n* Implement support for realtimecommand in telnet\r\n* Implement isRealTimeCommand on websocket RX\r\n* Simplify push2RXbuffer for websocket\r\n* Implement isRealTimeCommand for USB serial\r\n* Bump version",
           "author": "Luc",
           "date": "2024-12-08T09:26:19+00:00"
-        },
-        {
-          "sha": "7b99d8a",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2024-12-01T08:07:16+00:00"
         }
       ],
       "commit_activity": [
@@ -1173,11 +1173,11 @@
         },
         {
           "week": "2026-03-08T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -1187,12 +1187,13 @@
       ]
     },
     "statistics": {
-      "size": 135007,
+      "size": 135008,
       "stars": 1947,
       "forks": 490,
       "open_issues": 4,
       "watchers": 1947,
-      "default_branch": "3.0"
+      "default_branch": "3.0",
+      "license": "GNU General Public License v3.0"
     },
     "version_info": {
       "version": "3.0.1",
