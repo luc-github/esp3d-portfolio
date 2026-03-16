@@ -5,8 +5,8 @@
 ![Repositories](https://img.shields.io/badge/Repositories-14-blue)
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
-![Open Issues](https://img.shields.io/badge/Open%20Issues-39-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2003%20%2F%2015%2001:51%20UTC-lightgrey)
+![Open Issues](https://img.shields.io/badge/Open%20Issues-36-yellow)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2003%20%2F%2016%2001:52%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -20,7 +20,7 @@
 |---------|------|---------|-------------|
 | [⭐ ESP3D](#user-content-esp3d) | Main Project | v3.0.1 / dev:3.0.2 | FW for ESP8266/ESP8285/ESP32 used with 3D printer |
 | [⭐ ESP3DLib](#user-content-esp3dlib) | Main Project | v1.0.0 | ESP3D library for Marlin and ESP32 boards |
-| [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | v3.0.1 / dev:3.0.2 | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
+| [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | v3.0.1 / dev:3.1.0 beta 1 | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
 | [⭐ ESP3D-TFT](#user-content-esp3d-tft) | Main Project | v3.0.0.a26 | ESP3D Firmware for ESP32 based TFT  |
 | [⭐ Marlin](#user-content-marlin) | Main Project | missing | Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine. |
 | [⭐ ESP3D-Configurator](#user-content-esp3d-configurator) | Main Project | v1.0.34 | Configurator for ESP3D Firmware |
@@ -46,10 +46,10 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (6) | 2 | 0 | 6.0 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (9) | 3 | 0 | 9.0 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (8) | 2 | 1 | 8.0 |
+| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -69,9 +69,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (135) | 45 | 0 | 19.3 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (81) | 27 | 0 | 11.6 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (8) | 2 | 1 | 1.1 |
+| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
 | ▪️ 4  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
 | ▪️ 5  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -95,7 +95,7 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 5.4 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (27) | 9 | 0 | 0.9 |
 | 🥉 3  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 0.3 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (8) | 2 | 1 | 0.3 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
 | ▪️ 6  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
 | ▪️ 7  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -118,7 +118,7 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 0.4 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜ (118) | 38 | 2 | 0.3 |
 | 🥉 3  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (99) | 33 | 0 | 0.3 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (57) | 15 | 6 | 0.2 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (57) | 17 | 3 | 0.2 |
 | ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (36) | 12 | 0 | 0.1 |
 | ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (26) | 8 | 1 | 0.1 |
 | ▪️ 7  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (24) | 6 | 3 | 0.1 |
@@ -182,9 +182,9 @@ Repository popularity based on GitHub stars and forks.
 
 | Metric | Value |
 |--------|-------|
-| Open Issues | 39 |
+| Open Issues | 36 |
 | Closed Issues | 0 |
-| Average Age | 982.3 days |
+| Average Age | 1053.6 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -194,7 +194,7 @@ Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.3 commits)
 Weekly   🟦 Few (1-10 commits)           (2.4 commits)
-Monthly  🟦 Few (1-25 commits)           (9.5 commits)
+Monthly  🟦 Few (1-25 commits)           (9.6 commits)
 ```
 
 </details>
@@ -346,10 +346,10 @@ Author: Luc
 
 **Project**: [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI)<br>
 **Type**: Main<br>
-**Version**: 🔵 v3.0.1 / dev:3.0.2<br>
+**Version**: 🔵 v3.0.1 / dev:3.1.0 beta 1<br>
 **Description**: A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC<br>
 **Language**: JavaScript<br>
-**Health Score**: <span style="color: #ff0000">25.5%</span>
+**Health Score**: <span style="color: #ff0000">32.5%</span>
 
 </td></tr></table>
 
@@ -357,18 +357,15 @@ Author: Luc
 <summary><h4>🚀 Production Branch (`3.0`)</h4></summary>
 
 ```
-Last commit: 2025-12-17 (#338d4b8)
+Last commit: 2026-03-15 (#6e33e7a)
 Author: Luc
 ```
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#445: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/445">[FEATURE REQUEST]Remove Informations Tab</a></td><td><code>2026-03-10</code></td><td><code>2026-03-12</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#442: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/442">Bump qs and express</a></td><td><code>2026-02-12</code></td><td><code>2026-02-12</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>#441: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/441">Bump webpack from 5.88.2 to 5.105.0</a></td><td><code>2026-02-05</code></td><td><code>2026-02-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#445: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/445">[FEATURE REQUEST]Remove Informations Tab</a></td><td><code>2026-03-10</code></td><td><code>2026-03-15</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2026-01-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>#411: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/411">[FEATURE REQUEST] Flexible panels customizations to optimize empty space</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
@@ -751,12 +748,9 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🚀 3.0</td><td>#445: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/445">[FEATURE REQUEST]Remove Informations Tab</a></td><td><code>2026-03-10</code></td><td><code>2026-03-12</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🚀 3.0</td><td>#442: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/442">Bump qs and express</a></td><td><code>2026-02-12</code></td><td><code>2026-02-12</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>🔄</td><td>🚀 3.0</td><td>#441: <a href="https://github.com/luc-github/ESP3D-WEBUI/pull/441">Bump webpack from 5.88.2 to 5.105.0</a></td><td><code>2026-02-05</code></td><td><code>2026-02-05</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🚀 3.0</td><td>#445: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/445">[FEATURE REQUEST]Remove Informations Tab</a></td><td><code>2026-03-10</code></td><td><code>2026-03-15</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#390: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/390">[FEATURE REQUEST]Port surfacing wizard as extension </a></td><td><code>2024-06-02</code></td><td><code>2026-01-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#414: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/414">[FEATURE REQUEST]Add filament runout sensor status to WEB UI</a></td><td><code>2025-08-31</code></td><td><code>2025-09-01</code></td><td style="color: #000000">normal</td></tr>
-<tr><td>⭕</td><td>🚀 3.0</td><td>#411: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/411">[FEATURE REQUEST] Flexible panels customizations to optimize empty space</a></td><td><code>2025-03-30</code></td><td><code>2025-03-30</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#244: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/244">CNC process visualization functionality</a></td><td><code>2022-05-14</code></td><td><code>2024-11-25</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#122: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/122">[FEATURE REQUEST]PCB and Engraving Milling autoleveling</a></td><td><code>2020-10-10</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🚀 3.0</td><td>#106: <a href="https://github.com/luc-github/ESP3D-WEBUI/issues/106">[FEATURE REQUEST] Bed Mesh Leveling Visualizer</a></td><td><code>2020-07-22</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
@@ -1024,7 +1018,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 46 |
+| Commits | 30 |
 | New Issues | 2 |
 | Closed Issues | 0 |
 | Active Contributors | 1 |
@@ -1039,7 +1033,7 @@ Tue 🟦 🟩 🟨 🟨 🟩 🟦 🟦 🟦
 Wed 🟩 🟨 🟥 🟨 🟩 🟦 🟦 🟩
 Thu 🟩 🟥 🟨 🟨 🟦 🟦 ⬜ 🟦
 Fri 🟩 🟨 🟩 🟦 🟩 🟦 🟦 🟦
-Sat 🟦 🟦 🟩 🟩 🟨 🟦 ⬜ ⬜
+Sat 🟦 🟦 🟩 🟩 🟩 🟦 ⬜ ⬜
 Sun 🟨 🟩 🟨 🟨 🟩 🟦 🟦 🟩
 
 Legend:
@@ -1052,7 +1046,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2026-03-15 01:51:39 UTC*
+*🔄 Last updated: 2026-03-16 01:52:23 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
