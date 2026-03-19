@@ -1,5 +1,5 @@
 {
-  "timestamp": 1773798225.83003,
+  "timestamp": 1773884669.6723053,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,39 +7,20 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-03-17T10:50:09+00:00",
+    "updated_at": "2026-03-19T01:32:22+00:00",
     "branches": [
       {
         "name": "3.0",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "c75c8d0",
-          "message": "Rename license file name due to github API rules",
-          "author": "Luc",
-          "date": "2026-03-10T13:43:03+00:00"
+          "sha": "6132284",
+          "message": "docs: add Binch3000 as a contributor for bug (#1129)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2026-03-19T01:32:17+00:00"
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1128,
-            "title": "Error SPI2 Lilygo ETH-Lite ESP32S3",
-            "body": "Hello, \nHas anyone else had this problem?\nI'm using a Lilygo ETH Lite card and I can't get SPI2 to work.\nSPI is for the SD card and SPI2 is for Ethernet.\n\nHere's the platform compilation error:\n```\nesp3d/src/modules/ethernet/ethconfig.cpp:36:26: error: #if with no expression\n   36 | #if ETHERNET_SPI_USE_SPI2\n      |                          ^\n*** [.pioenvs\\esp32-s3\\src\\src\\modules\\ethernet\\ethconfig.cpp.o] Error 1\n```\nHere's my code:\n**ETHERNET**\n```\n/* Use Ethernet\n * Enable ethernet communications\n */\n#define ETH_FEATURE\n\n// Ethernet type (Check ETH.h eth_phy_type_t)\n// TYPE_ETH_PHY_LAN8720\n// TYPE_ETH_PHY_TLK110\n// TYPE_ETH_PHY_RTL8201\n// TYPE_ETH_PHY_DP83848\n// TYPE_ETH_PHY_DM9051\n// TYPE_ETH_PHY_KSZ8041\n// TYPE_ETH_PHY_KSZ8081\n// TYPE_ETH_PHY_W5500\n#define ESP3D_ETH_PHY_TYPE TYPE_ETH_PHY_W5500\n\n// Ethernet board Clock mode\n//  MODE_ETH_CLOCK_GPIO0_IN\n//  MODE_ETH_CLOCK_GPIO0_OUT\n//  MODE_ETH_CLOCK_GPIO16_OUT\n//  MODE_ETH_CLOCK_GPIO17_OUT\n//#define ESP3D_ETH_CLK_MODE MODE_ETH_CLOCK_GPIO0_IN\n\n// Pins of ethernet board\n//#define ESP3D_ETH_PHY_POWER_PIN 16\n//#define ESP3D_ETH_PHY_MDC_PIN 23\n//#define ESP3D_ETH_PHY_MDIO_PIN 18\n// These are the pins for the W5500 chip using SPI\n#define ETHERNET_SPI_USE_SPI2\n//#define ETHERNET_SPI_USE_SPI2 1\n#define ETH_SPI_SCK 10 //18\n#define ETH_SPI_MISO 11 //23\n#define ETH_SPI_MOSI 12 //19\n#define ETH_PHY_CS 9\n#define ETH_PHY_IRQ 13\n#define ETH_PHY_RST 14 //4\n\n// Address of ethernet board\n#define ESP3D_ETH_PHY_ADDR 1\n```\n**SD**\n```\n/************************************\n *\n * SD filesystem\n *\n * Filesystem on SD card\n *\n ************************************/\n\n/* SD card connection\n * ESP_NO_SD //(default)\n * ESP_NOT_SHARED_SD //Only your ESP board is connected to SDCard\n * ESP_SHARED_SD //Printer SD Card is also connected to ESP3D\n * Does your system has SD card and how it is connected to your ESP3D\n */\n #define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD\n\n/* SD card library\n * ESP_SD_NATIVE //esp32 / esp8266\n * ESP_SDIO      //esp32 only\n * ESP_SDFAT2    //esp8266  / esp32\n */\n#define SD_DEVICE ESP_SD_NATIVE\n\n\n// #define SD_CARD_TYPE ESP_FYSETC_WIFI_PRO_SDCARD\n\n/* Sdio bit mode\n * Mode used by SDIO library 1 bit / 4bits\n * SD_ONE_BIT_MODE\n * SD_FOUR_BIT_MODE\n */\n //#define SDIO_BIT_MODE SD_FOUR_BIT_MODE\n\n/* Enable date/time on files\n * Set date/time on files using SNTP or last webui connection\n */\n //#define SD_TIMESTAMP_FEATURE\n\n/************************************\n *\n * SD card pins\n *\n ************************************/\n\n/* SD card detect pin\n * The pin used to detect SD card\n */\n// #define ESP_SD_DETECT_PIN 4\n\n/* SD card detect pin value\n * State of SD card detect pin when card is present\n */\n// #define ESP_SD_DETECT_VALUE 0\n\n/* SD shared flag pin\n * The pin used to enable SD card for ESP board\n */\n// #define ESP_FLAG_SHARED_SD_PIN -1\n\n/* SD shared flag pin value\n * State of SD card shared pin for ESP board\n */\n// #define ESP_FLAG_SHARED_SD_VALUE 0\n\n/* SD card CS pin\n * The pin used to select SD card in SPI mode\n */\n #define ESP_SD_CS_PIN 42 //21\n #define ESP_SD_MISO_PIN 5 //8\n #define ESP_SD_MOSI_PIN 6 //9\n #define ESP_SD_SCK_PIN  7 //7\n//#define ESP_SDIO_CMD_PIN 38\n//#define ESP_SDIO_D0_PIN 40\n#define ESP_SDIO_CLK_PIN 7\n```\n ",
-            "state": "open",
-            "created_at": "2026-03-17T16:09:44+00:00",
-            "updated_at": "2026-03-17T19:02:00+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1128",
-            "is_pr": false,
-            "labels": [
-              "bug",
-              "Under Investigation",
-              "ESP3D 3.X",
-              "ESP32-S3"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -120,12 +101,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 570,
+        "contributions": 575,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 23,
+        "contributions": 24,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -201,6 +182,42 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "6132284",
+          "message": "docs: add Binch3000 as a contributor for bug (#1129)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2026-03-19T01:32:17+00:00"
+        },
+        {
+          "sha": "b425508",
+          "message": "Fix compilation on eth if no wifi due to typo thanks @Binch3000",
+          "author": "Luc",
+          "date": "2026-03-19T00:39:34+00:00"
+        },
+        {
+          "sha": "83baa7d",
+          "message": "Update info.json",
+          "author": "Luc",
+          "date": "2026-03-18T04:07:46+00:00"
+        },
+        {
+          "sha": "7cbfca7",
+          "message": "Fix W55000 Comnpilation",
+          "author": "Luc",
+          "date": "2026-03-18T02:42:41+00:00"
+        },
+        {
+          "sha": "aba6ecb",
+          "message": "Update platformio.ini\n\nFix platformio warning for colorize",
+          "author": "Luc",
+          "date": "2026-03-18T02:23:51+00:00"
+        },
+        {
+          "sha": "72843a6",
+          "message": "Disable idf log errors",
+          "author": "Luc",
+          "date": "2026-03-18T02:23:16+00:00"
+        },
         {
           "sha": "c75c8d0",
           "message": "Rename license file name due to github API rules",
@@ -488,42 +505,6 @@
           "message": "Bump version for beta 1",
           "author": "Luc",
           "date": "2024-12-18T03:40:33+00:00"
-        },
-        {
-          "sha": "0f55c19",
-          "message": "Fix compilation for esp8266",
-          "author": "Luc",
-          "date": "2024-12-10T12:27:39+00:00"
-        },
-        {
-          "sha": "00ed692",
-          "message": "Update configuration.h",
-          "author": "Luc",
-          "date": "2024-12-10T11:53:48+00:00"
-        },
-        {
-          "sha": "3bb05c9",
-          "message": "Update ESP32SSDP library to access started state and ethernet fix\n\nAdd SSDP ad mDNS to ESP420 report|\nAdd waiting loop to get the ethernet IP in DHCP in STA mode to be sure network services start with proper IP\nChange debug log to verbose log\n\nBump version",
-          "author": "Luc",
-          "date": "2024-12-10T11:14:46+00:00"
-        },
-        {
-          "sha": "d6a58d5",
-          "message": "Update esp3d_version.h",
-          "author": "Luc",
-          "date": "2024-12-09T09:47:31+00:00"
-        },
-        {
-          "sha": "539d9fe",
-          "message": "Ajust code for ethernet\n\nBump version",
-          "author": "Luc",
-          "date": "2024-12-09T09:46:55+00:00"
-        },
-        {
-          "sha": "fe23f0c",
-          "message": "Grbl grblHAL better support for realtime commands (#1064)\n\n* Add a realtime command detector \r\n* Move `\\r` as printable char and not replaced as `\\n`\r\n* Refactorize Serial service code to avoid redondant code between esp32 and esp8266\r\n* Implement isrealtimeCommand check for serial and centralize function in string helper\r\n* Add new type message : realtimecmd\r\n* Update simulator to handle commands and realtime commands\r\n* Add simple serial test tool\r\n*  Generate error if use HAS_DISPLAY with grbl/grblHAL\r\n* Implement isRealTimeCommand for BT client\r\n* Simplify BT push2buffer code\r\n* Implement support for realtimecommand in telnet\r\n* Implement isRealTimeCommand on websocket RX\r\n* Simplify push2RXbuffer for websocket\r\n* Implement isRealTimeCommand for USB serial\r\n* Bump version",
-          "author": "Luc",
-          "date": "2024-12-08T09:26:19+00:00"
         }
       ],
       "commit_activity": [
@@ -1192,13 +1173,13 @@
         },
         {
           "week": "2026-03-15T00:00:00+00:00",
-          "total": 0,
+          "total": 6,
           "days": [
             0,
             0,
             0,
-            0,
-            0,
+            4,
+            2,
             0,
             0
           ]
@@ -1206,18 +1187,18 @@
       ]
     },
     "statistics": {
-      "size": 135008,
-      "stars": 1950,
-      "forks": 491,
-      "open_issues": 5,
-      "watchers": 1950,
+      "size": 135021,
+      "stars": 1951,
+      "forks": 490,
+      "open_issues": 4,
+      "watchers": 1951,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
-      "version": "3.0.1",
-      "devt": "3.0.2",
-      "display": "v3.0.1 / dev:3.0.2",
+      "version": "3.0.2",
+      "devt": "3.0.3",
+      "display": "v3.0.2 / dev:3.0.3",
       "status": "both"
     }
   }
