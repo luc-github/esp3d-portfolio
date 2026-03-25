@@ -1,5 +1,5 @@
 {
-  "timestamp": 1774315648.5082538,
+  "timestamp": 1774403371.437948,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 51,
+            "title": "Add OrcaSlicer oriented theme",
+            "body": "Add a second dark theme that fixes some issues of the original & uses similar accent colors to OrcaSlicer.\r\n\r\nThe initial loading-screen happens before the user-theme is loaded, so you still get flash-banged when you refresh the page.\r\n\r\nThe file is minified using `uglifycss` and compressed with `gzip`.\r\n\r\nColors are set via CSS variables and can easily be changed:\r\n```css\r\n--bg: #2d2d30;\r\n--bg-secondary: #36363c;\r\n--border: #38383d;\r\n--primary: #00675b;\r\n--secondary: #0e7c74;\r\n--text-dark: #ced8d7;\r\n--text-light: #fff;\r\n--menu-shadow: #000;\r\n```\r\nTested with [ESP3D-3.0.1](https://github.com/luc-github/ESP3D/releases/tag/v3.0.1) on Firefox and Chromium.",
+            "state": "open",
+            "created_at": "2026-03-24T22:35:46+00:00",
+            "updated_at": "2026-03-24T22:35:46+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/esp3d.io/pull/51",
+            "is_pr": true,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 49,
             "title": "List external devices  tested / supported by ESP3D",
@@ -1128,8 +1142,8 @@
     "statistics": {
       "size": 114197,
       "stars": 11,
-      "forks": 65,
-      "open_issues": 3,
+      "forks": 66,
+      "open_issues": 4,
       "watchers": 11,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"

@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2026-03-23T12:56:04+00:00",
+      "updated_at": "2026-03-25T01:41:08+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -21,6 +21,89 @@
           },
           "protected": false,
           "issues": [
+            {
+              "number": 1131,
+              "title": "Bump pygments from 2.9.0 to 2.19.2 in /libraries/lvgl-8.2.0/docs",
+              "body": "Bumps [pygments](https://github.com/pygments/pygments) from 2.9.0 to 2.19.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/pygments/pygments/releases\">pygments's releases</a>.</em></p>\n<blockquote>\n<h2>2.19.2</h2>\n<ul>\n<li>Lua: Fix regression introduced in 2.19.0 (<a href=\"https://redirect.github.com/pygments/pygments/issues/2882\">#2882</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2839\">#2839</a>)</li>\n</ul>\n<h2>2.19.1</h2>\n<ul>\n<li>\n<p>Updated lexers:</p>\n<ul>\n<li>Ini: Fix quoted string regression introduced in 2.19.0</li>\n<li>Lua: Fix a regression introduced in 2.19.0</li>\n</ul>\n</li>\n</ul>\n<h2>2.19.0</h2>\n<ul>\n<li>\n<p>New lexers:</p>\n<ul>\n<li>CodeQL (<a href=\"https://redirect.github.com/pygments/pygments/issues/2819\">#2819</a>)</li>\n<li>Debian Sources (<a href=\"https://redirect.github.com/pygments/pygments/issues/2788\">#2788</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2747\">#2747</a>)</li>\n<li>Gleam (<a href=\"https://redirect.github.com/pygments/pygments/issues/2662\">#2662</a>)</li>\n<li>GoogleSQL (<a href=\"https://redirect.github.com/pygments/pygments/issues/2820\">#2820</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2814\">#2814</a>)</li>\n<li>JSON5 (<a href=\"https://redirect.github.com/pygments/pygments/issues/2734\">#2734</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/1880\">#1880</a>)</li>\n<li>Maple (<a href=\"https://redirect.github.com/pygments/pygments/issues/2763\">#2763</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2548\">#2548</a>)</li>\n<li>NumbaIR (<a href=\"https://redirect.github.com/pygments/pygments/issues/2433\">#2433</a>)</li>\n<li>PDDL (<a href=\"https://redirect.github.com/pygments/pygments/issues/2799\">#2799</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2616\">#2616</a>)</li>\n<li>Rego (<a href=\"https://redirect.github.com/pygments/pygments/issues/2794\">#2794</a>)</li>\n<li>TableGen (<a href=\"https://redirect.github.com/pygments/pygments/issues/2751\">#2751</a>)</li>\n<li>Vue.js (<a href=\"https://redirect.github.com/pygments/pygments/issues/2832\">#2832</a>)</li>\n</ul>\n</li>\n<li>\n<p>Updated lexers:</p>\n<ul>\n<li>BQN: Various improvements (<a href=\"https://redirect.github.com/pygments/pygments/issues/2789\">#2789</a>)</li>\n<li>C#: Fix number highlighting (<a href=\"https://redirect.github.com/pygments/pygments/issues/986\">#986</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2727\">#2727</a>), add <code>file</code> keyword (<a href=\"https://redirect.github.com/pygments/pygments/issues/2726\">#2726</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2805\">#2805</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2806\">#2806</a>), add various other keywords (<a href=\"https://redirect.github.com/pygments/pygments/issues/2745\">#2745</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2770\">#2770</a>)</li>\n<li>CSS: Add <code>revert</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2766\">#2766</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2775\">#2775</a>)</li>\n<li>Debian control: Add <code>Change-By</code> field (<a href=\"https://redirect.github.com/pygments/pygments/issues/2757\">#2757</a>)</li>\n<li>Elip: Improve punctuation handling (<a href=\"https://redirect.github.com/pygments/pygments/issues/2651\">#2651</a>)</li>\n<li>Igor: Add <code>int</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2801\">#2801</a>)</li>\n<li>Ini: Fix quoted strings with embedded comment characters (<a href=\"https://redirect.github.com/pygments/pygments/issues/2767\">#2767</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2720\">#2720</a>)</li>\n<li>Java: Support functions returning types containing a question mark (<a href=\"https://redirect.github.com/pygments/pygments/issues/2737\">#2737</a>)</li>\n<li>JavaScript: Support private identiiers (<a href=\"https://redirect.github.com/pygments/pygments/issues/2729\">#2729</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2671\">#2671</a>)</li>\n<li>LLVM: Add <code>splat</code>, improve floating-point number parsing (<a href=\"https://redirect.github.com/pygments/pygments/issues/2755\">#2755</a>)</li>\n<li>Lua: Improve variable detection, add built-in functions (<a href=\"https://redirect.github.com/pygments/pygments/issues/2829\">#2829</a>)</li>\n<li>Macaulay2: Update to 1.24.11 (<a href=\"https://redirect.github.com/pygments/pygments/issues/2800\">#2800</a>)</li>\n<li>PostgreSQL: Add more <code>EXPLAIN</code> keywords (<a href=\"https://redirect.github.com/pygments/pygments/issues/2785\">#2785</a>), handle <code>/</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2774\">#2774</a>)</li>\n<li>S-Lexer: Fix keywords (<a href=\"https://redirect.github.com/pygments/pygments/issues/2082\">#2082</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2750\">#2750</a>)</li>\n<li>TransactSQL: Fix single-line comments (<a href=\"https://redirect.github.com/pygments/pygments/issues/2717\">#2717</a>)</li>\n<li>Turtle: Fix triple quoted strings (<a href=\"https://redirect.github.com/pygments/pygments/issues/2744\">#2744</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2758\">#2758</a>)</li>\n<li>Typst: Various improvements (<a href=\"https://redirect.github.com/pygments/pygments/issues/2724\">#2724</a>)</li>\n<li>Various: Add <code>^</code> as an operator to Matlab, Octave and Scilab (<a href=\"https://redirect.github.com/pygments/pygments/issues/2798\">#2798</a>)</li>\n<li>Vyper: Add <code>staticcall</code> and <code>extcall</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2719\">#2719</a>)</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li>Mark file extensions for <code>HTML/XML+Evoque</code> as aliases (<a href=\"https://redirect.github.com/pygments/pygments/issues/2743\">#2743</a>)</li>\n<li>Add a color for <code>Operator.Word</code> to the <code>rrt</code> style (<a href=\"https://redirect.github.com/pygments/pygments/issues/2709\">#2709</a>)</li>\n<li>Fix broken link in the documentation (<a href=\"https://redirect.github.com/pygments/pygments/issues/2803\">#2803</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2804\">#2804</a>)</li>\n<li>Drop executable bit where not needed (<a href=\"https://redirect.github.com/pygments/pygments/issues/2781\">#2781</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/pygments/pygments/blob/master/CHANGES\">pygments's changelog</a>.</em></p>\n<blockquote>\n<h2>Version 2.19.2</h2>\n<p>(released June 21st, 2025)</p>\n<ul>\n<li>Lua: Fix regression introduced in 2.19.0 (<a href=\"https://redirect.github.com/pygments/pygments/issues/2882\">#2882</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2839\">#2839</a>)</li>\n</ul>\n<h2>Version 2.19.1</h2>\n<p>(released January 6th, 2025)</p>\n<ul>\n<li>\n<p>Updated lexers:</p>\n<ul>\n<li>Ini: Fix quoted string regression introduced in 2.19.0</li>\n<li>Lua: Fix a regression introduced in 2.19.0</li>\n</ul>\n</li>\n</ul>\n<h2>Version 2.19.0</h2>\n<p>(released January 5th, 2025)</p>\n<ul>\n<li>\n<p>New lexers:</p>\n<ul>\n<li>CodeQL (<a href=\"https://redirect.github.com/pygments/pygments/issues/2819\">#2819</a>)</li>\n<li>Debian Sources (<a href=\"https://redirect.github.com/pygments/pygments/issues/2788\">#2788</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2747\">#2747</a>)</li>\n<li>Gleam (<a href=\"https://redirect.github.com/pygments/pygments/issues/2662\">#2662</a>)</li>\n<li>GoogleSQL (<a href=\"https://redirect.github.com/pygments/pygments/issues/2820\">#2820</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2814\">#2814</a>)</li>\n<li>JSON5 (<a href=\"https://redirect.github.com/pygments/pygments/issues/2734\">#2734</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/1880\">#1880</a>)</li>\n<li>Maple (<a href=\"https://redirect.github.com/pygments/pygments/issues/2763\">#2763</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2548\">#2548</a>)</li>\n<li>NumbaIR (<a href=\"https://redirect.github.com/pygments/pygments/issues/2433\">#2433</a>)</li>\n<li>PDDL (<a href=\"https://redirect.github.com/pygments/pygments/issues/2799\">#2799</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2616\">#2616</a>)</li>\n<li>Rego (<a href=\"https://redirect.github.com/pygments/pygments/issues/2794\">#2794</a>)</li>\n<li>TableGen (<a href=\"https://redirect.github.com/pygments/pygments/issues/2751\">#2751</a>)</li>\n<li>Vue.js (<a href=\"https://redirect.github.com/pygments/pygments/issues/2832\">#2832</a>)</li>\n</ul>\n</li>\n<li>\n<p>Updated lexers:</p>\n<ul>\n<li>BQN: Various improvements (<a href=\"https://redirect.github.com/pygments/pygments/issues/2789\">#2789</a>)</li>\n<li>C#: Fix number highlighting (<a href=\"https://redirect.github.com/pygments/pygments/issues/986\">#986</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2727\">#2727</a>), add <code>file</code> keyword (<a href=\"https://redirect.github.com/pygments/pygments/issues/2726\">#2726</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2805\">#2805</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2806\">#2806</a>), add various other keywords (<a href=\"https://redirect.github.com/pygments/pygments/issues/2745\">#2745</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2770\">#2770</a>)</li>\n<li>CSS: Add <code>revert</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2766\">#2766</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2775\">#2775</a>)</li>\n<li>Debian control: Add <code>Change-By</code> field (<a href=\"https://redirect.github.com/pygments/pygments/issues/2757\">#2757</a>)</li>\n<li>Elip: Improve punctuation handling (<a href=\"https://redirect.github.com/pygments/pygments/issues/2651\">#2651</a>)</li>\n<li>Igor: Add <code>int</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2801\">#2801</a>)</li>\n<li>Ini: Fix quoted strings with embedded comment characters (<a href=\"https://redirect.github.com/pygments/pygments/issues/2767\">#2767</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2720\">#2720</a>)</li>\n<li>Java: Support functions returning types containing a question mark (<a href=\"https://redirect.github.com/pygments/pygments/issues/2737\">#2737</a>)</li>\n<li>JavaScript: Support private identiiers (<a href=\"https://redirect.github.com/pygments/pygments/issues/2729\">#2729</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2671\">#2671</a>)</li>\n<li>LLVM: Add <code>splat</code>, improve floating-point number parsing (<a href=\"https://redirect.github.com/pygments/pygments/issues/2755\">#2755</a>)</li>\n<li>Lua: Improve variable detection, add built-in functions (<a href=\"https://redirect.github.com/pygments/pygments/issues/2829\">#2829</a>)</li>\n<li>Macaulay2: Update to 1.24.11 (<a href=\"https://redirect.github.com/pygments/pygments/issues/2800\">#2800</a>)</li>\n<li>PostgreSQL: Add more <code>EXPLAIN</code> keywords (<a href=\"https://redirect.github.com/pygments/pygments/issues/2785\">#2785</a>), handle <code>/</code> (<a href=\"https://redirect.github.com/pygments/pygments/issues/2774\">#2774</a>)</li>\n<li>S-Lexer: Fix keywords (<a href=\"https://redirect.github.com/pygments/pygments/issues/2082\">#2082</a>, <a href=\"https://redirect.github.com/pygments/pygments/issues/2750\">#2750</a>)</li>\n<li>TransactSQL: Fix single-line comments (<a href=\"https://redirect.github.com/pygments/pygments/issues/2717\">#2717</a>)</li>\n</ul>\n</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/pygments/pygments/commit/cfca62e6e95136e48a255e8cbffb0bbe1d98456c\"><code>cfca62e</code></a> Prepare v2.19.2 release.</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/6688300df2ea289a6137c7ee9c78d0bb95683b5c\"><code>6688300</code></a> Disable pyodide (currently broken.)</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/66997c3e302226a95c22cdaebf827444327920fa\"><code>66997c3</code></a> Update ruff version.</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/94dda77d69a6d6c47c33f06ce2425e7f306154a2\"><code>94dda77</code></a> Update CHANGES.</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/26634c856cefea620571123577d1f8cf09589ed8\"><code>26634c8</code></a> Merge pull request <a href=\"https://redirect.github.com/pygments/pygments/issues/2882\">#2882</a> from thavelick/fix_lua_runaway_regex</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/b6a51ece09e31d3db2b732c8536a533b6de74768\"><code>b6a51ec</code></a> fix lua regex causing runaway backtracking.</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/edef94d66c2d70f05a86ac6098a69ab253b8d946\"><code>edef94d</code></a> Investigation for <a href=\"https://redirect.github.com/pygments/pygments/issues/2839\">#2839</a>.</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/fb6a00ef872e45a23212c214b8494ebedbd4709b\"><code>fb6a00e</code></a> Merge pull request <a href=\"https://redirect.github.com/pygments/pygments/issues/2837\">#2837</a> from dlazin/sql-cleanup</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/bf7aa2368fe7e0f42d4543781f0b00b4565b3995\"><code>bf7aa23</code></a> Clean up sql.py</li>\n<li><a href=\"https://github.com/pygments/pygments/commit/b583de4794e94b4dc4c2da03a7c29f462482293e\"><code>b583de4</code></a> Prepare 2.19.1 release.</li>\n<li>Additional commits viewable in <a href=\"https://github.com/pygments/pygments/compare/2.9.0...2.19.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=pygments&package-manager=pip&previous-version=2.9.0&new-version=2.19.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
+              "state": "open",
+              "created_at": "2026-03-25T01:32:03+00:00",
+              "updated_at": "2026-03-25T01:32:04+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/pull/1131",
+              "is_pr": true,
+              "labels": [
+                "dependencies",
+                "python"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "large",
+              "complexity": "medium",
+              "related_issues": [
+                "2548",
+                "2709",
+                "2803",
+                "2800",
+                "2767",
+                "2770",
+                "2837",
+                "2801",
+                "2775",
+                "2832",
+                "2774",
+                "2082",
+                "2750",
+                "2814",
+                "2766",
+                "2719",
+                "2799",
+                "2744",
+                "2734",
+                "2763",
+                "2616",
+                "2671",
+                "2758",
+                "2717",
+                "2781",
+                "2662",
+                "2751",
+                "2839",
+                "2747",
+                "2788",
+                "2829",
+                "2794",
+                "2820",
+                "2651",
+                "2726",
+                "2755",
+                "2724",
+                "2433",
+                "2882",
+                "2789",
+                "2737",
+                "2757",
+                "2785",
+                "2743",
+                "2804",
+                "1880",
+                "2745",
+                "2819",
+                "2798",
+                "2720",
+                "986",
+                "2729",
+                "2806",
+                "2727",
+                "2805"
+              ],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
             {
               "number": 243,
               "title": "[FEATURE REQUEST]\ud83e\udd84GCODE Streamer Host definition for 3.X",
@@ -38,8 +121,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2809,
-              "days_since_update": 47,
+              "age_days": 2810,
+              "days_since_update": 48,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -67,8 +150,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1335,
-              "days_since_update": 362,
+              "age_days": 1336,
+              "days_since_update": 363,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -96,8 +179,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1884,
-              "days_since_update": 511,
+              "age_days": 1885,
+              "days_since_update": 512,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +207,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1876,
-              "days_since_update": 748,
+              "age_days": 1877,
+              "days_since_update": 749,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -137,26 +220,26 @@
             }
           ],
           "issue_summary": {
-            "total": 4,
-            "open": 4,
+            "total": 5,
+            "open": 5,
             "closed": 0,
             "priorities": {
-              "normal": 4
+              "normal": 5
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 4
+              "medium": 5
             },
             "size": {
-              "medium": 2,
-              "large": 2
+              "large": 3,
+              "medium": 2
             },
             "lifecycle": {
-              "new": 3,
+              "new": 4,
               "in_progress": 1
             }
           }
@@ -1252,10 +1335,10 @@
       },
       "statistics": {
         "size": 135021,
-        "stars": 1954,
+        "stars": 1955,
         "forks": 491,
-        "open_issues": 4,
-        "watchers": 1954,
+        "open_issues": 5,
+        "watchers": 1955,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
       },
@@ -1340,8 +1423,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 366,
-              "days_since_update": 366,
+              "age_days": 367,
+              "days_since_update": 367,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1368,8 +1451,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1511,
-              "days_since_update": 457,
+              "age_days": 1512,
+              "days_since_update": 458,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2514,11 +2597,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 13,
-              "days_since_update": 7,
+              "age_days": 14,
+              "days_since_update": 9,
               "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
+              "is_recent": false,
+              "activity_status": "inactive",
               "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
@@ -2546,8 +2629,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 659,
-              "days_since_update": 69,
+              "age_days": 660,
+              "days_since_update": 70,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2572,8 +2655,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 204,
-              "days_since_update": 203,
+              "age_days": 205,
+              "days_since_update": 204,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2601,8 +2684,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1409,
-              "days_since_update": 483,
+              "age_days": 1410,
+              "days_since_update": 484,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2631,8 +2714,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1990,
-              "days_since_update": 526,
+              "age_days": 1991,
+              "days_since_update": 527,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2660,8 +2743,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2070,
-              "days_since_update": 526,
+              "age_days": 2071,
+              "days_since_update": 527,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2688,8 +2771,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1282,
-              "days_since_update": 526,
+              "age_days": 1284,
+              "days_since_update": 527,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2716,8 +2799,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2270,
-              "days_since_update": 1316,
+              "age_days": 2271,
+              "days_since_update": 1317,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2746,8 +2829,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1413,
-              "days_since_update": 1386,
+              "age_days": 1414,
+              "days_since_update": 1387,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2766,8 +2849,8 @@
               "normal": 9
             },
             "ages": {
-              "recent": 1,
-              "active": 0,
+              "recent": 0,
+              "active": 1,
               "stale": 8
             },
             "complexity": {
@@ -3912,8 +3995,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 85,
-              "days_since_update": 13,
+              "age_days": 86,
+              "days_since_update": 14,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3938,8 +4021,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 308,
-              "days_since_update": 237,
+              "age_days": 309,
+              "days_since_update": 238,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3965,8 +4048,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 796,
-              "days_since_update": 319,
+              "age_days": 797,
+              "days_since_update": 320,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3993,8 +4076,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 794,
-              "days_since_update": 464,
+              "age_days": 795,
+              "days_since_update": 465,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4019,8 +4102,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 526,
-              "days_since_update": 526,
+              "age_days": 527,
+              "days_since_update": 527,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4047,8 +4130,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 586,
-              "days_since_update": 586,
+              "age_days": 587,
+              "days_since_update": 587,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4073,8 +4156,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 701,
-              "days_since_update": 588,
+              "age_days": 702,
+              "days_since_update": 589,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4100,8 +4183,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 806,
-              "days_since_update": 806,
+              "age_days": 807,
+              "days_since_update": 807,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4126,8 +4209,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1127,
-              "days_since_update": 1127,
+              "age_days": 1128,
+              "days_since_update": 1128,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4155,8 +4238,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1270,
-              "days_since_update": 1270,
+              "age_days": 1271,
+              "days_since_update": 1271,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8384,8 +8467,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 378,
-              "days_since_update": 378,
+              "age_days": 379,
+              "days_since_update": 379,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8408,8 +8491,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1041,
-              "days_since_update": 1041,
+              "age_days": 1042,
+              "days_since_update": 1042,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8436,8 +8519,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1374,
-              "days_since_update": 1314,
+              "age_days": 1375,
+              "days_since_update": 1315,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9541,6 +9624,37 @@
           "protected": false,
           "issues": [
             {
+              "number": 51,
+              "title": "Add OrcaSlicer oriented theme",
+              "body": "Add a second dark theme that fixes some issues of the original & uses similar accent colors to OrcaSlicer.\r\n\r\nThe initial loading-screen happens before the user-theme is loaded, so you still get flash-banged when you refresh the page.\r\n\r\nThe file is minified using `uglifycss` and compressed with `gzip`.\r\n\r\nColors are set via CSS variables and can easily be changed:\r\n```css\r\n--bg: #2d2d30;\r\n--bg-secondary: #36363c;\r\n--border: #38383d;\r\n--primary: #00675b;\r\n--secondary: #0e7c74;\r\n--text-dark: #ced8d7;\r\n--text-light: #fff;\r\n--menu-shadow: #000;\r\n```\r\nTested with [ESP3D-3.0.1](https://github.com/luc-github/ESP3D/releases/tag/v3.0.1) on Firefox and Chromium.",
+              "state": "open",
+              "created_at": "2026-03-24T22:35:46+00:00",
+              "updated_at": "2026-03-24T22:35:46+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/esp3d.io/pull/51",
+              "is_pr": true,
+              "labels": [],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "low",
+              "related_issues": [
+                "36363",
+                "0",
+                "000",
+                "38383",
+                "00675",
+                "2"
+              ],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 49,
               "title": "List external devices  tested / supported by ESP3D",
               "body": "In addition to hardware list a list of additionnals components could be added each one with description, pinout, settings, needed library,  etc  and classified by type:\nsensors (DH11/22...)\ndisplays : oled / tft\ninput : buttons / tbd \nSD card reader\nTBD \n",
@@ -9555,8 +9669,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 390,
-              "days_since_update": 390,
+              "age_days": 391,
+              "days_since_update": 391,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9581,8 +9695,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1119,
-              "days_since_update": 1119,
+              "age_days": 1120,
+              "days_since_update": 1120,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9607,8 +9721,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1119,
-              "days_since_update": 1119,
+              "age_days": 1120,
+              "days_since_update": 1120,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9620,25 +9734,27 @@
             }
           ],
           "issue_summary": {
-            "total": 3,
-            "open": 3,
+            "total": 4,
+            "open": 4,
             "closed": 0,
             "priorities": {
-              "normal": 3
+              "normal": 4
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 3
             },
             "complexity": {
+              "low": 1,
               "medium": 3
             },
             "size": {
+              "medium": 1,
               "small": 3
             },
             "lifecycle": {
-              "new": 3
+              "new": 4
             }
           }
         }
@@ -10699,8 +10815,8 @@
       "statistics": {
         "size": 114197,
         "stars": 11,
-        "forks": 65,
-        "open_issues": 3,
+        "forks": 66,
+        "open_issues": 4,
         "watchers": 11,
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
@@ -11715,8 +11831,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 61,
-              "days_since_update": 29,
+              "age_days": 62,
+              "days_since_update": 30,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -11741,8 +11857,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 301,
-              "days_since_update": 301,
+              "age_days": 302,
+              "days_since_update": 302,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11767,8 +11883,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1042,
-              "days_since_update": 1042,
+              "age_days": 1044,
+              "days_since_update": 1044,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11794,8 +11910,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2238,
-              "days_since_update": 2222,
+              "age_days": 2239,
+              "days_since_update": 2223,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12919,8 +13035,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1042,
-              "days_since_update": 1042,
+              "age_days": 1044,
+              "days_since_update": 1044,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16797,8 +16913,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4706,
-      "reset": "2026-03-24T02:24:49+00:00"
+      "remaining": 4099,
+      "reset": "2026-03-25T02:44:55+00:00"
     }
   },
   "stats": {
@@ -16814,8 +16930,8 @@
         "Python": 1
       },
       "total_size": 782162,
-      "total_stars": 3100,
-      "total_forks": 991,
+      "total_stars": 3101,
+      "total_forks": 992,
       "branches": {
         "production": 12,
         "development": 4,
@@ -16823,23 +16939,23 @@
       }
     },
     "issues": {
-      "total_count": 36,
-      "open_count": 36,
+      "total_count": 38,
+      "open_count": 38,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1061.5607455671181,
+      "avg_age_days": 1006.6692203281121,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 36
+        "normal": 38
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 0,
-        "last_month": 3
+        "last_day": 2,
+        "last_week": 2,
+        "last_month": 4
       }
     },
     "activity": {
-      "total_commits": 29,
+      "total_commits": 27,
       "commit_frequency": {
         "daily": 0.35714285714285715,
         "weekly": 2.5,
@@ -17039,7 +17155,7 @@
       "issue_creation_trend": [
         {
           "date": "2026-02",
-          "count": 1
+          "count": 3
         },
         {
           "date": "2026-01",
@@ -17479,27 +17595,6 @@
   "activity_ranking": {
     "daily": [
       {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
-        "score": {
-          "commits": 10,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 30
-        },
-        "details": {
-          "commits": 10,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 10.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
         "name": "ESP3D",
         "type": "main",
         "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
@@ -17507,17 +17602,38 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 1,
-          "total": 0
+          "total": 2
         },
         "details": {
           "commits": 0,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.0
+          "issues_per_day": 1.0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17609,27 +17725,6 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17771,6 +17866,27 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
+      },
+      {
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
       }
     ],
     "weekly": [
@@ -17781,17 +17897,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 22,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 66
+          "total": 63
         },
         "details": {
-          "commits": 22,
+          "commits": 21,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 3.142857142857143,
+          "commits_per_day": 3.0,
           "issues_per_day": 0.0
         }
       },
@@ -17803,38 +17919,38 @@
         "is_private": false,
         "score": {
           "commits": 6,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 18
+          "total": 20
         },
         "details": {
           "commits": 6,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.8571428571428571,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
-        "name": "esp3d-webinstaller",
+        "name": "esp3d.io",
         "type": "main",
-        "description": "Web Installer for ESP32 projects",
-        "url": "https://github.com/luc-github/esp3d-webinstaller",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
-          "commits": 1,
-          "issues": 0,
+          "commits": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 3
+          "total": 2
         },
         "details": {
-          "commits": 1,
-          "issues": 0,
+          "commits": 0,
+          "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.14285714285714285,
-          "issues_per_day": 0.0
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -17943,10 +18059,10 @@
         }
       },
       {
-        "name": "esp3d.io",
+        "name": "esp3d-webinstaller",
         "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
+        "description": "Web Installer for ESP32 projects",
+        "url": "https://github.com/luc-github/esp3d-webinstaller",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18098,18 +18214,18 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 15,
-          "issues": 0,
+          "commits": 7,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 45
+          "total": 23
         },
         "details": {
-          "commits": 15,
-          "issues": 0,
+          "commits": 7,
+          "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.5,
-          "issues_per_day": 0.0
+          "commits_per_day": 0.23333333333333334,
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -18176,10 +18292,10 @@
         }
       },
       {
-        "name": "ESP32SSDP",
-        "type": "dependency",
-        "description": "Simple SSDP library for ESP32",
-        "url": "https://github.com/luc-github/ESP32SSDP",
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18260,10 +18376,10 @@
         }
       },
       {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
+        "name": "ESP32SSDP",
+        "type": "dependency",
+        "description": "Simple SSDP library for ESP32",
+        "url": "https://github.com/luc-github/ESP32SSDP",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18395,17 +18511,17 @@
         "is_private": false,
         "score": {
           "commits": 41,
-          "issues": 2,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 127
+          "total": 129
         },
         "details": {
           "commits": 41,
-          "issues": 2,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.11232876712328767,
-          "issues_per_day": 0.005479452054794521
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
@@ -18458,17 +18574,17 @@
         "is_private": false,
         "score": {
           "commits": 12,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 365,
-          "total": 36
+          "total": 38
         },
         "details": {
           "commits": 12,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.03287671232876712,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.0027397260273972603
         }
       },
       {
