@@ -22,81 +22,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 1133,
-              "title": "Bump picomatch from 2.3.1 to 2.3.2 in /embedded",
-              "body": "Bumps [picomatch](https://github.com/micromatch/picomatch) from 2.3.1 to 2.3.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/releases\">picomatch's releases</a>.</em></p>\n<blockquote>\n<h2>2.3.2</h2>\n<p>This is a security release fixing several security relevant issues.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>fix: exception when glob pattern contains constructor by <a href=\"https://github.com/Jason3S\"><code>@\u200bJason3S</code></a> in <a href=\"https://redirect.github.com/micromatch/picomatch/pull/144\">micromatch/picomatch#144</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-c2c7-rcm5-vvqj\">CVE-2026-33671</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-3v7f-55p6-f55p\">CVE-2026-33672</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/blob/master/CHANGELOG.md\">picomatch's changelog</a>.</em></p>\n<blockquote>\n<h1>Release history</h1>\n<p><strong>All notable changes to this project will be documented in this file.</strong></p>\n<p>The format is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>\nand this project adheres to <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<!-- raw HTML omitted -->\n<ul>\n<li>Changelogs are for humans, not machines.</li>\n<li>There should be an entry for every single version.</li>\n<li>The same types of changes should be grouped.</li>\n<li>Versions and sections should be linkable.</li>\n<li>The latest version comes first.</li>\n<li>The release date of each versions is displayed.</li>\n<li>Mention whether you follow Semantic Versioning.</li>\n</ul>\n<!-- raw HTML omitted -->\n<!-- raw HTML omitted -->\n<p>Changelog entries are classified using the following labels <em>(from <a href=\"http://keepachangelog.com/\">keep-a-changelog</a></em>):</p>\n<ul>\n<li><code>Added</code> for new features.</li>\n<li><code>Changed</code> for changes in existing functionality.</li>\n<li><code>Deprecated</code> for soon-to-be removed features.</li>\n<li><code>Removed</code> for now removed features.</li>\n<li><code>Fixed</code> for any bug fixes.</li>\n<li><code>Security</code> in case of vulnerabilities.</li>\n</ul>\n<!-- raw HTML omitted -->\n<h2>4.0.0 (2024-02-07)</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Fix bad text values in parse <a href=\"https://redirect.github.com/micromatch/picomatch/issues/126\">#126</a>, thanks to <a href=\"https://github.com/connor4312\"><code>@\u200bconnor4312</code></a></li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Remove process global to work outside of node <a href=\"https://redirect.github.com/micromatch/picomatch/issues/129\">#129</a>, thanks to <a href=\"https://github.com/styfle\"><code>@\u200bstyfle</code></a></li>\n<li>Add sideEffects to package.json <a href=\"https://redirect.github.com/micromatch/picomatch/issues/128\">#128</a>, thanks to <a href=\"https://github.com/frandiox\"><code>@\u200bfrandiox</code></a></li>\n<li>Removed <code>os</code>, make compatible browser environment. See <a href=\"https://redirect.github.com/micromatch/picomatch/issues/124\">#124</a>, thanks to <a href=\"https://github.com/gwsbhqt\"><code>@\u200bgwsbhqt</code></a></li>\n</ul>\n<h2>3.0.1</h2>\n<h3>Fixes</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/81cba8d4b767cab3cb29d26eb4f691eed75b73b2\"><code>81cba8d</code></a> Publish 2.3.2</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/fc1f6b69006e9435caf8fb40d8aff378bc0b7bce\"><code>fc1f6b6</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/eec17aee5428a7249e9ca5adbb8a0d28fa29619b\"><code>eec17ae</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/78f8ca4362d9e66cadea97b93e292f10096452ed\"><code>78f8ca4</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/picomatch/issues/156\">#156</a> from micromatch/backport-144</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/3f4f10eaa65bf3a52e8f2999674cd27e11fa3c9b\"><code>3f4f10e</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/picomatch/issues/144\">#144</a> from Jason3S/jdent-object-properties</li>\n<li>See full diff in <a href=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=picomatch&package-manager=npm_and_yarn&previous-version=2.3.1&new-version=2.3.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2026-03-25T21:42:46+00:00",
-              "updated_at": "2026-03-25T21:42:46+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/pull/1133",
-              "is_pr": true,
-              "labels": [
-                "dependencies",
-                "javascript"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "126",
-                "129",
-                "156",
-                "144",
-                "128",
-                "124"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
-              "number": 1132,
-              "title": "Bump requests from 2.25.1 to 2.33.0 in /libraries/lvgl-8.2.0/docs",
-              "body": "Bumps [requests](https://github.com/psf/requests) from 2.25.1 to 2.33.0.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/psf/requests/releases\">requests's releases</a>.</em></p>\n<blockquote>\n<h2>v2.33.0</h2>\n<h2>2.33.0 (2026-03-25)</h2>\n<p><strong>Announcements</strong></p>\n<ul>\n<li>\ud83d\udce3 Requests is adding inline types. If you have a typed code base that uses Requests, please take a look at <a href=\"https://redirect.github.com/psf/requests/issues/7271\">#7271</a>. Give it a try, and report any gaps or feedback you may have in the issue. \ud83d\udce3</li>\n</ul>\n<p><strong>Security</strong></p>\n<ul>\n<li>CVE-2026-25645 <code>requests.utils.extract_zipped_paths</code> now extracts contents to a non-deterministic location to prevent malicious file replacement. This does not affect default usage of Requests, only applications calling the utility function directly.</li>\n</ul>\n<p><strong>Improvements</strong></p>\n<ul>\n<li>Migrated to a PEP 517 build system using setuptools. (<a href=\"https://redirect.github.com/psf/requests/issues/7012\">#7012</a>)</li>\n</ul>\n<p><strong>Bugfixes</strong></p>\n<ul>\n<li>Fixed an issue where an empty netrc entry could cause malformed authentication to be applied to Requests on Python 3.11+. (<a href=\"https://redirect.github.com/psf/requests/issues/7205\">#7205</a>)</li>\n</ul>\n<p><strong>Deprecations</strong></p>\n<ul>\n<li>Dropped support for Python 3.9 following its end of support. (<a href=\"https://redirect.github.com/psf/requests/issues/7196\">#7196</a>)</li>\n</ul>\n<p><strong>Documentation</strong></p>\n<ul>\n<li>Various typo fixes and doc improvements.</li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a href=\"https://github.com/M0d3v1\"><code>@\u200bM0d3v1</code></a> made their first contribution in <a href=\"https://redirect.github.com/psf/requests/pull/6865\">psf/requests#6865</a></li>\n<li><a href=\"https://github.com/aminvakil\"><code>@\u200baminvakil</code></a> made their first contribution in <a href=\"https://redirect.github.com/psf/requests/pull/7220\">psf/requests#7220</a></li>\n<li><a href=\"https://github.com/E8Price\"><code>@\u200bE8Price</code></a> made their first contribution in <a href=\"https://redirect.github.com/psf/requests/pull/6960\">psf/requests#6960</a></li>\n<li><a href=\"https://github.com/mitre88\"><code>@\u200bmitre88</code></a> made their first contribution in <a href=\"https://redirect.github.com/psf/requests/pull/7244\">psf/requests#7244</a></li>\n<li><a href=\"https://github.com/magsen\"><code>@\u200bmagsen</code></a> made their first contribution in <a href=\"https://redirect.github.com/psf/requests/pull/6553\">psf/requests#6553</a></li>\n<li><a href=\"https://github.com/Rohan5commit\"><code>@\u200bRohan5commit</code></a> made their first contribution in <a href=\"https://redirect.github.com/psf/requests/pull/7227\">psf/requests#7227</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/psf/requests/blob/main/HISTORY.md#2330-2026-03-25\">https://github.com/psf/requests/blob/main/HISTORY.md#2330-2026-03-25</a></p>\n<h2>v2.32.5</h2>\n<h2>2.32.5 (2025-08-18)</h2>\n<p><strong>Bugfixes</strong></p>\n<ul>\n<li>The SSLContext caching feature originally introduced in 2.32.0 has created\na new class of issues in Requests that have had negative impact across a number\nof use cases. The Requests team has decided to revert this feature as long term\nmaintenance of it is proving to be unsustainable in its current iteration.</li>\n</ul>\n<p><strong>Deprecations</strong></p>\n<ul>\n<li>Added support for Python 3.14.</li>\n<li>Dropped support for Python 3.8 following its end of support.</li>\n</ul>\n<h2>v2.32.4</h2>\n<h2>2.32.4 (2025-06-10)</h2>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/psf/requests/blob/main/HISTORY.md\">requests's changelog</a>.</em></p>\n<blockquote>\n<h2>2.33.0 (2026-03-25)</h2>\n<p><strong>Announcements</strong></p>\n<ul>\n<li>\ud83d\udce3 Requests is adding inline types. If you have a typed code base that\nuses Requests, please take a look at <a href=\"https://redirect.github.com/psf/requests/issues/7271\">#7271</a>. Give it a try, and report\nany gaps or feedback you may have in the issue. \ud83d\udce3</li>\n</ul>\n<p><strong>Security</strong></p>\n<ul>\n<li>CVE-2026-25645 <code>requests.utils.extract_zipped_paths</code> now extracts\ncontents to a non-deterministic location to prevent malicious file\nreplacement. This does not affect default usage of Requests, only\napplications calling the utility function directly.</li>\n</ul>\n<p><strong>Improvements</strong></p>\n<ul>\n<li>Migrated to a PEP 517 build system using setuptools. (<a href=\"https://redirect.github.com/psf/requests/issues/7012\">#7012</a>)</li>\n</ul>\n<p><strong>Bugfixes</strong></p>\n<ul>\n<li>Fixed an issue where an empty netrc entry could cause\nmalformed authentication to be applied to Requests on\nPython 3.11+. (<a href=\"https://redirect.github.com/psf/requests/issues/7205\">#7205</a>)</li>\n</ul>\n<p><strong>Deprecations</strong></p>\n<ul>\n<li>Dropped support for Python 3.9 following its end of support. (<a href=\"https://redirect.github.com/psf/requests/issues/7196\">#7196</a>)</li>\n</ul>\n<p><strong>Documentation</strong></p>\n<ul>\n<li>Various typo fixes and doc improvements.</li>\n</ul>\n<h2>2.32.5 (2025-08-18)</h2>\n<p><strong>Bugfixes</strong></p>\n<ul>\n<li>The SSLContext caching feature originally introduced in 2.32.0 has created\na new class of issues in Requests that have had negative impact across a number\nof use cases. The Requests team has decided to revert this feature as long term\nmaintenance of it is proving to be unsustainable in its current iteration.</li>\n</ul>\n<p><strong>Deprecations</strong></p>\n<ul>\n<li>Added support for Python 3.14.</li>\n<li>Dropped support for Python 3.8 following its end of support.</li>\n</ul>\n<h2>2.32.4 (2025-06-10)</h2>\n<p><strong>Security</strong></p>\n<ul>\n<li>CVE-2024-47081 Fixed an issue where a maliciously crafted URL and trusted\nenvironment will retrieve credentials for the wrong hostname/machine from a\nnetrc file.</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/psf/requests/commit/bc04dfd6dad4cb02cd92f5daa81eb562d280a761\"><code>bc04dfd</code></a> v2.33.0</li>\n<li><a href=\"https://github.com/psf/requests/commit/66d21cb07bd6255b1280291c4fafb71803cdb3b7\"><code>66d21cb</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/psf/requests/commit/8b9bc8fc0f63be84602387913c4b689f19efd028\"><code>8b9bc8f</code></a> Move badges to top of README (<a href=\"https://redirect.github.com/psf/requests/issues/7293\">#7293</a>)</li>\n<li><a href=\"https://github.com/psf/requests/commit/e331a288f369973f5de0ec8901c94cae4fa87286\"><code>e331a28</code></a> Remove unused extraction call (<a href=\"https://redirect.github.com/psf/requests/issues/7292\">#7292</a>)</li>\n<li><a href=\"https://github.com/psf/requests/commit/753fd08c5eacce0aa0df73fe47e49525c67e0a29\"><code>753fd08</code></a> docs: fix FAQ grammar in httplib2 example</li>\n<li><a href=\"https://github.com/psf/requests/commit/774a0b837a194ee885d4fdd9ca947900cc3daf71\"><code>774a0b8</code></a> docs(socks): same block as other sections</li>\n<li><a href=\"https://github.com/psf/requests/commit/9c72a41bec8597f948c9d8caa5dc3f12273b3303\"><code>9c72a41</code></a> Bump github/codeql-action from 4.33.0 to 4.34.1</li>\n<li><a href=\"https://github.com/psf/requests/commit/ebf71906798ec82f34e07d3168f8b8aecaf8a3be\"><code>ebf7190</code></a> Bump github/codeql-action from 4.32.0 to 4.33.0</li>\n<li><a href=\"https://github.com/psf/requests/commit/0e4ae38f0c93d4f92a96c774bd52c069d12a4798\"><code>0e4ae38</code></a> docs: exclude Response.is_permanent_redirect from API docs (<a href=\"https://redirect.github.com/psf/requests/issues/7244\">#7244</a>)</li>\n<li><a href=\"https://github.com/psf/requests/commit/d568f47278492e630cc990a259047c67991d007a\"><code>d568f47</code></a> docs: clarify Quickstart POST example (<a href=\"https://redirect.github.com/psf/requests/issues/6960\">#6960</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/psf/requests/compare/v2.25.1...v2.33.0\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=requests&package-manager=pip&previous-version=2.25.1&new-version=2.33.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2026-03-25T20:35:53+00:00",
-              "updated_at": "2026-03-25T20:35:54+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/pull/1132",
-              "is_pr": true,
-              "labels": [
-                "dependencies",
-                "python"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "7205",
-                "6865",
-                "6553",
-                "7220",
-                "6960",
-                "7227",
-                "7196",
-                "2330",
-                "7271",
-                "7012",
-                "7293",
-                "7292",
-                "7244"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 243,
               "title": "[FEATURE REQUEST]\ud83e\udd84GCODE Streamer Host definition for 3.X",
               "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
@@ -113,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2811,
-              "days_since_update": 49,
+              "age_days": 2812,
+              "days_since_update": 50,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -142,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1337,
-              "days_since_update": 364,
+              "age_days": 1338,
+              "days_since_update": 365,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -171,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1886,
-              "days_since_update": 513,
+              "age_days": 1887,
+              "days_since_update": 514,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -199,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1878,
-              "days_since_update": 750,
+              "age_days": 1879,
+              "days_since_update": 751,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -212,26 +137,26 @@
             }
           ],
           "issue_summary": {
-            "total": 6,
-            "open": 6,
+            "total": 4,
+            "open": 4,
             "closed": 0,
             "priorities": {
-              "normal": 6
+              "normal": 4
             },
             "ages": {
-              "recent": 2,
+              "recent": 0,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "medium": 6
+              "medium": 4
             },
             "size": {
-              "large": 4,
-              "medium": 2
+              "medium": 2,
+              "large": 2
             },
             "lifecycle": {
-              "new": 5,
+              "new": 3,
               "in_progress": 1
             }
           }
@@ -1326,10 +1251,10 @@
         ]
       },
       "statistics": {
-        "size": 135168,
+        "size": 135027,
         "stars": 1954,
         "forks": 491,
-        "open_issues": 6,
+        "open_issues": 4,
         "watchers": 1954,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
@@ -1415,8 +1340,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 368,
-              "days_since_update": 368,
+              "age_days": 369,
+              "days_since_update": 369,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1443,8 +1368,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1513,
-              "days_since_update": 459,
+              "age_days": 1514,
+              "days_since_update": 460,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2573,40 +2498,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 450,
-              "title": "Bump picomatch from 2.3.1 to 2.3.2",
-              "body": "Bumps [picomatch](https://github.com/micromatch/picomatch) from 2.3.1 to 2.3.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/releases\">picomatch's releases</a>.</em></p>\n<blockquote>\n<h2>2.3.2</h2>\n<p>This is a security release fixing several security relevant issues.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>fix: exception when glob pattern contains constructor by <a href=\"https://github.com/Jason3S\"><code>@\u200bJason3S</code></a> in <a href=\"https://redirect.github.com/micromatch/picomatch/pull/144\">micromatch/picomatch#144</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-c2c7-rcm5-vvqj\">CVE-2026-33671</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-3v7f-55p6-f55p\">CVE-2026-33672</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/blob/master/CHANGELOG.md\">picomatch's changelog</a>.</em></p>\n<blockquote>\n<h1>Release history</h1>\n<p><strong>All notable changes to this project will be documented in this file.</strong></p>\n<p>The format is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>\nand this project adheres to <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<!-- raw HTML omitted -->\n<ul>\n<li>Changelogs are for humans, not machines.</li>\n<li>There should be an entry for every single version.</li>\n<li>The same types of changes should be grouped.</li>\n<li>Versions and sections should be linkable.</li>\n<li>The latest version comes first.</li>\n<li>The release date of each versions is displayed.</li>\n<li>Mention whether you follow Semantic Versioning.</li>\n</ul>\n<!-- raw HTML omitted -->\n<!-- raw HTML omitted -->\n<p>Changelog entries are classified using the following labels <em>(from <a href=\"http://keepachangelog.com/\">keep-a-changelog</a></em>):</p>\n<ul>\n<li><code>Added</code> for new features.</li>\n<li><code>Changed</code> for changes in existing functionality.</li>\n<li><code>Deprecated</code> for soon-to-be removed features.</li>\n<li><code>Removed</code> for now removed features.</li>\n<li><code>Fixed</code> for any bug fixes.</li>\n<li><code>Security</code> in case of vulnerabilities.</li>\n</ul>\n<!-- raw HTML omitted -->\n<h2>4.0.0 (2024-02-07)</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Fix bad text values in parse <a href=\"https://redirect.github.com/micromatch/picomatch/issues/126\">#126</a>, thanks to <a href=\"https://github.com/connor4312\"><code>@\u200bconnor4312</code></a></li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Remove process global to work outside of node <a href=\"https://redirect.github.com/micromatch/picomatch/issues/129\">#129</a>, thanks to <a href=\"https://github.com/styfle\"><code>@\u200bstyfle</code></a></li>\n<li>Add sideEffects to package.json <a href=\"https://redirect.github.com/micromatch/picomatch/issues/128\">#128</a>, thanks to <a href=\"https://github.com/frandiox\"><code>@\u200bfrandiox</code></a></li>\n<li>Removed <code>os</code>, make compatible browser environment. See <a href=\"https://redirect.github.com/micromatch/picomatch/issues/124\">#124</a>, thanks to <a href=\"https://github.com/gwsbhqt\"><code>@\u200bgwsbhqt</code></a></li>\n</ul>\n<h2>3.0.1</h2>\n<h3>Fixes</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/81cba8d4b767cab3cb29d26eb4f691eed75b73b2\"><code>81cba8d</code></a> Publish 2.3.2</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/fc1f6b69006e9435caf8fb40d8aff378bc0b7bce\"><code>fc1f6b6</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/eec17aee5428a7249e9ca5adbb8a0d28fa29619b\"><code>eec17ae</code></a> Merge commit from fork</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/78f8ca4362d9e66cadea97b93e292f10096452ed\"><code>78f8ca4</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/picomatch/issues/156\">#156</a> from micromatch/backport-144</li>\n<li><a href=\"https://github.com/micromatch/picomatch/commit/3f4f10eaa65bf3a52e8f2999674cd27e11fa3c9b\"><code>3f4f10e</code></a> Merge pull request <a href=\"https://redirect.github.com/micromatch/picomatch/issues/144\">#144</a> from Jason3S/jdent-object-properties</li>\n<li>See full diff in <a href=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=picomatch&package-manager=npm_and_yarn&previous-version=2.3.1&new-version=2.3.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3D-WEBUI/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2026-03-25T22:45:40+00:00",
-              "updated_at": "2026-03-25T22:45:41+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/450",
-              "is_pr": true,
-              "labels": [
-                "dependencies",
-                "javascript"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "126",
-                "129",
-                "156",
-                "144",
-                "128",
-                "124"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 445,
               "title": "[FEATURE REQUEST]Remove Informations Tab",
               "body": "Hi everyone,\nAfter several years of no one commenting this tab, I am wondering if this tab is actually useful ? \nShould I remove it without harm ? It would simplify code and decrease package size a little for better features\n\nPlease everyone let me know your feedback on this, Thank you\n\n<img width=\"1009\" height=\"781\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/31f4e1b3-e05f-4a85-96c7-a28984681255\" />",
@@ -2623,7 +2514,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 15,
+              "age_days": 16,
               "days_since_update": 10,
               "is_stale": false,
               "is_recent": false,
@@ -2655,8 +2546,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 661,
-              "days_since_update": 71,
+              "age_days": 662,
+              "days_since_update": 72,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2681,8 +2572,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 206,
-              "days_since_update": 205,
+              "age_days": 207,
+              "days_since_update": 206,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2710,8 +2601,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1411,
-              "days_since_update": 485,
+              "age_days": 1412,
+              "days_since_update": 486,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2740,8 +2631,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1992,
-              "days_since_update": 528,
+              "age_days": 1993,
+              "days_since_update": 529,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2769,8 +2660,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2072,
-              "days_since_update": 528,
+              "age_days": 2073,
+              "days_since_update": 529,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2798,7 +2689,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1285,
-              "days_since_update": 528,
+              "days_since_update": 529,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2825,8 +2716,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2272,
-              "days_since_update": 1318,
+              "age_days": 2273,
+              "days_since_update": 1319,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2855,8 +2746,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1415,
-              "days_since_update": 1388,
+              "age_days": 1416,
+              "days_since_update": 1389,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2868,28 +2759,27 @@
             }
           ],
           "issue_summary": {
-            "total": 10,
-            "open": 10,
+            "total": 9,
+            "open": 9,
             "closed": 0,
             "priorities": {
-              "normal": 10
+              "normal": 9
             },
             "ages": {
-              "recent": 1,
+              "recent": 0,
               "active": 1,
               "stale": 8
             },
             "complexity": {
-              "medium": 9,
+              "medium": 8,
               "high": 1
             },
             "size": {
-              "large": 1,
               "medium": 5,
               "small": 4
             },
             "lifecycle": {
-              "new": 10
+              "new": 9
             }
           }
         }
@@ -3963,10 +3853,10 @@
         ]
       },
       "statistics": {
-        "size": 134264,
+        "size": 134085,
         "stars": 867,
         "forks": 340,
-        "open_issues": 10,
+        "open_issues": 9,
         "watchers": 867,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
@@ -4022,8 +3912,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 87,
-              "days_since_update": 15,
+              "age_days": 88,
+              "days_since_update": 16,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -4048,8 +3938,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 310,
-              "days_since_update": 239,
+              "age_days": 311,
+              "days_since_update": 240,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4075,8 +3965,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 798,
-              "days_since_update": 321,
+              "age_days": 799,
+              "days_since_update": 322,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4103,8 +3993,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 796,
-              "days_since_update": 466,
+              "age_days": 797,
+              "days_since_update": 467,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4129,8 +4019,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 528,
-              "days_since_update": 528,
+              "age_days": 529,
+              "days_since_update": 529,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4157,8 +4047,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 588,
-              "days_since_update": 588,
+              "age_days": 589,
+              "days_since_update": 589,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4183,8 +4073,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 703,
-              "days_since_update": 590,
+              "age_days": 704,
+              "days_since_update": 591,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4210,8 +4100,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 808,
-              "days_since_update": 808,
+              "age_days": 809,
+              "days_since_update": 809,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4236,8 +4126,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1129,
-              "days_since_update": 1129,
+              "age_days": 1130,
+              "days_since_update": 1130,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4265,8 +4155,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1272,
-              "days_since_update": 1272,
+              "age_days": 1273,
+              "days_since_update": 1273,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8494,8 +8384,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 380,
-              "days_since_update": 380,
+              "age_days": 381,
+              "days_since_update": 381,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8518,8 +8408,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1043,
-              "days_since_update": 1043,
+              "age_days": 1044,
+              "days_since_update": 1044,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8546,8 +8436,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1376,
-              "days_since_update": 1316,
+              "age_days": 1377,
+              "days_since_update": 1317,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9665,8 +9555,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 392,
-              "days_since_update": 392,
+              "age_days": 393,
+              "days_since_update": 393,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9691,8 +9581,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1121,
-              "days_since_update": 1121,
+              "age_days": 1122,
+              "days_since_update": 1122,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9717,8 +9607,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1121,
-              "days_since_update": 1121,
+              "age_days": 1122,
+              "days_since_update": 1122,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11830,8 +11720,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 63,
-              "days_since_update": 31,
+              "age_days": 64,
+              "days_since_update": 32,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11856,8 +11746,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 303,
-              "days_since_update": 303,
+              "age_days": 304,
+              "days_since_update": 304,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11909,8 +11799,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2240,
-              "days_since_update": 2224,
+              "age_days": 2241,
+              "days_since_update": 2225,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16912,8 +16802,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4951,
-      "reset": "2026-03-26T03:00:46+00:00"
+      "remaining": 4849,
+      "reset": "2026-03-27T02:45:18+00:00"
     }
   },
   "stats": {
@@ -16928,7 +16818,7 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 782493,
+      "total_size": 782173,
       "total_stars": 3100,
       "total_forks": 992,
       "branches": {
@@ -16938,19 +16828,19 @@
       }
     },
     "issues": {
-      "total_count": 39,
-      "open_count": 39,
+      "total_count": 36,
+      "open_count": 36,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 981.7824655857039,
+      "avg_age_days": 1064.5748896814582,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 39
+        "normal": 36
       },
       "recent_activity": {
-        "last_day": 3,
-        "last_week": 3,
-        "last_month": 5
+        "last_day": 0,
+        "last_week": 0,
+        "last_month": 2
       }
     },
     "activity": {
@@ -17154,7 +17044,7 @@
       "issue_creation_trend": [
         {
           "date": "2026-02",
-          "count": 4
+          "count": 1
         },
         {
           "date": "2026-01",
@@ -17193,11 +17083,11 @@
           "count": 0
         },
         {
-          "date": "2025-04",
+          "date": "2025-05",
           "count": 2
         },
         {
-          "date": "2025-03",
+          "date": "2025-04",
           "count": 0
         }
       ],
@@ -17243,11 +17133,11 @@
           "count": 0
         },
         {
-          "date": "2025-04",
+          "date": "2025-05",
           "count": 0
         },
         {
-          "date": "2025-03",
+          "date": "2025-04",
           "count": 0
         }
       ],
@@ -17601,38 +17491,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 2,
+          "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 4
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 2,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 2.0
-        }
-      },
-      {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "period_days": 1,
-          "total": 2
-        },
-        "details": {
-          "commits": 0,
-          "issues": 1,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 1.0
+          "issues_per_day": 0.0
         }
       },
       {
@@ -17640,6 +17509,27 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17911,27 +17801,6 @@
         }
       },
       {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 2,
-          "comments": 0,
-          "period_days": 7,
-          "total": 4
-        },
-        "details": {
-          "commits": 0,
-          "issues": 2,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.2857142857142857
-        }
-      },
-      {
         "name": "esp3d.io",
         "type": "main",
         "description": "Documentation of ESP3D Ecosystem",
@@ -17953,24 +17822,24 @@
         }
       },
       {
-        "name": "ESP3D-WEBUI",
+        "name": "ESP3D",
         "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 2
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.14285714285714285
+          "issues_per_day": 0.0
         }
       },
       {
@@ -17978,6 +17847,27 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -18214,17 +18104,17 @@
         "is_private": false,
         "score": {
           "commits": 7,
-          "issues": 2,
+          "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 25
+          "total": 21
         },
         "details": {
           "commits": 7,
-          "issues": 2,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.23333333333333334,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.0
         }
       },
       {
@@ -18256,17 +18146,17 @@
         "is_private": false,
         "score": {
           "commits": 2,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 10
+          "total": 8
         },
         "details": {
           "commits": 2,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.06666666666666667,
-          "issues_per_day": 0.06666666666666667
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -18509,18 +18399,18 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 41,
-          "issues": 4,
+          "commits": 38,
+          "issues": 1,
           "comments": 0,
           "period_days": 365,
-          "total": 131
+          "total": 116
         },
         "details": {
-          "commits": 41,
-          "issues": 4,
+          "commits": 38,
+          "issues": 1,
           "comments": 0,
-          "commits_per_day": 0.11232876712328767,
-          "issues_per_day": 0.010958904109589041
+          "commits_per_day": 0.10410958904109589,
+          "issues_per_day": 0.0027397260273972603
         }
       },
       {
@@ -18552,17 +18442,17 @@
         "is_private": false,
         "score": {
           "commits": 17,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 59
+          "total": 57
         },
         "details": {
           "commits": 17,
-          "issues": 4,
+          "issues": 3,
           "comments": 0,
           "commits_per_day": 0.04657534246575343,
-          "issues_per_day": 0.010958904109589041
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
