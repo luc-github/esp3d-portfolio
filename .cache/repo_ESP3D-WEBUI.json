@@ -1,5 +1,5 @@
 {
-  "timestamp": 1774749081.6360044,
+  "timestamp": 1774835652.4252439,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,27 +7,46 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-03-28T04:19:25+00:00",
+    "updated_at": "2026-03-29T03:58:38+00:00",
     "branches": [
       {
         "name": "3.0",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "6e33e7a",
-          "message": "Update devt version to 3.1.0 beta 1",
+          "sha": "97c01e8",
+          "message": "Update build-ci.yml",
           "author": "Luc",
-          "date": "2026-03-15T13:29:25+00:00"
+          "date": "2026-03-29T03:58:31+00:00"
         },
         "protected": false,
         "issues": [
+          {
+            "number": 452,
+            "title": "[FEATURE REQUEST]Allows to have js in theme pack",
+            "body": "If need to change some behavior of the UI it could be useful to allow to use extra js and extra fonts\nwith the coming themepack manifest feature, it should be easy to support it, because all necessary informations are in header\n",
+            "state": "open",
+            "created_at": "2026-03-29T06:58:48+00:00",
+            "updated_at": "2026-03-29T07:49:55+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/452",
+            "is_pr": false,
+            "labels": [
+              "Enhancement",
+              "Feature request",
+              "3.1",
+              "Themes"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 445,
             "title": "[FEATURE REQUEST]Remove Informations Tab",
             "body": "Hi everyone,\nAfter several years of no one commenting this tab, I am wondering if this tab is actually useful ? \nShould I remove it without harm ? It would simplify code and decrease package size a little for better features\n\nPlease everyone let me know your feedback on this, Thank you\n\n<img width=\"1009\" height=\"781\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/31f4e1b3-e05f-4a85-96c7-a28984681255\" />",
             "state": "open",
             "created_at": "2026-03-10T04:01:52+00:00",
-            "updated_at": "2026-03-16T01:59:15+00:00",
+            "updated_at": "2026-03-29T06:05:52+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/445",
             "is_pr": false,
@@ -197,7 +216,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 344,
+        "contributions": 345,
         "url": "https://github.com/luc-github"
       },
       {
@@ -258,6 +277,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "97c01e8",
+          "message": "Update build-ci.yml",
+          "author": "Luc",
+          "date": "2026-03-29T03:58:31+00:00"
+        },
         {
           "sha": "6e33e7a",
           "message": "Update devt version to 3.1.0 beta 1",
@@ -575,12 +600,6 @@
           "message": "Bump version\n\nBuild packages",
           "author": "Luc",
           "date": "2024-08-16T05:40:42+00:00"
-        },
-        {
-          "sha": "f49016a",
-          "message": "Fix depend do not handle connection_id and id in orGroups (#399)\n\nFix Extra SD play pause commands do not display in settings due to conditions not properly handled",
-          "author": "Luc",
-          "date": "2024-08-16T05:37:49+00:00"
         }
       ],
       "commit_activity": [
@@ -1249,9 +1268,9 @@
         },
         {
           "week": "2026-03-29T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
-            0,
+            1,
             0,
             0,
             0,
@@ -1263,10 +1282,10 @@
       ]
     },
     "statistics": {
-      "size": 135113,
+      "size": 134957,
       "stars": 868,
       "forks": 340,
-      "open_issues": 9,
+      "open_issues": 10,
       "watchers": 868,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"
