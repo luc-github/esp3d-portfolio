@@ -1,5 +1,5 @@
 {
-  "timestamp": 1774835621.7776856,
+  "timestamp": 1774921894.752487,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,20 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1135,
-            "title": "COMMUNICATION_PROTOCOL MKS_SERIAL Issue",
-            "body": "Hello Luc / World\n\nI've been looping around with my ESP8266-12S MKS Module constantly resetting the par couple of day\ntoday I ( using ChatGPT ) found the fix / hack\n\n    /* Serial Communication protocol\n     * RAW_SERIAL // Basic serial protocol, without data change\n     * MKS_SERIAL // This is a MakerBase communication protocol, used with MKS\n     * printers and TFT, it encapsulated data in a custom protocol\n     */\n    //#define COMMUNICATION_PROTOCOL RAW_SERIAL\n    #define COMMUNICATION_PROTOCOL RAW_SERIAL\n\nthese line made the firmware stable and running, and as I'm by no means a skilled coder, I have no idea why it works, but it does : \n     // hack by Brock / ChatGPT :\n    #undef MKS_SERIAL\n    #define MKS_SERIAL 1\n\nAnd by the way, thanks for a great piece of soft / firmware, I love it to the bones\n\nBest regards, Brock :)",
-            "state": "open",
-            "created_at": "2026-03-29T18:56:51+00:00",
-            "updated_at": "2026-03-30T00:47:18+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/issues/1135",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 795,
             "title": "[TODO]\u2611Code refactoring plan",
@@ -1204,7 +1190,7 @@
       "size": 134742,
       "stars": 1956,
       "forks": 491,
-      "open_issues": 5,
+      "open_issues": 4,
       "watchers": 1956,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"

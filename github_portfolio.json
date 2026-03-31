@@ -22,30 +22,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 1135,
-              "title": "COMMUNICATION_PROTOCOL MKS_SERIAL Issue",
-              "body": "Hello Luc / World\n\nI've been looping around with my ESP8266-12S MKS Module constantly resetting the par couple of day\ntoday I ( using ChatGPT ) found the fix / hack\n\n    /* Serial Communication protocol\n     * RAW_SERIAL // Basic serial protocol, without data change\n     * MKS_SERIAL // This is a MakerBase communication protocol, used with MKS\n     * printers and TFT, it encapsulated data in a custom protocol\n     */\n    //#define COMMUNICATION_PROTOCOL RAW_SERIAL\n    #define COMMUNICATION_PROTOCOL RAW_SERIAL\n\nthese line made the firmware stable and running, and as I'm by no means a skilled coder, I have no idea why it works, but it does : \n     // hack by Brock / ChatGPT :\n    #undef MKS_SERIAL\n    #define MKS_SERIAL 1\n\nAnd by the way, thanks for a great piece of soft / firmware, I love it to the bones\n\nBest regards, Brock :)",
-              "state": "open",
-              "created_at": "2026-03-29T18:56:51+00:00",
-              "updated_at": "2026-03-30T00:47:18+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D/issues/1135",
-              "is_pr": false,
-              "labels": [],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "medium",
-              "complexity": "low",
-              "related_issues": [],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 243,
               "title": "[FEATURE REQUEST]\ud83e\udd84GCODE Streamer Host definition for 3.X",
               "body": "Time to define what host feature will be:\r\nBasic description\r\n1 - Read Gcode from SD \r\n2- Send GCODE to printer FW via Serial\r\n3 - Wait for ack\r\n4 - if ack go to 1 / if error go to 2\r\n\r\nNow need to clarify each part : \r\n* Point 1  is no issue so far: just store file name / currentline \r\n* Point 2 need more elaborate:\r\n1 - add Line numbering in command\r\n`N1 G28`\r\nReset the line numbering is M110 N0 on Repetier / Marlin / Smoothiware\r\n2 - add command checksum for safety (all command char are XOR+*+checksum calculated)\r\n`N20 M105*20`\r\n* Point4 : ack always use ok +line number \r\n`ok 20`\r\nif error on line number or checksum you get\r\n`resend 20`\r\n\r\nNot sure if special command need to be handled (like @pause) right now as it is not a host that have direct UI, but will be when Oled Screen is enabled as well as rotary encoder is supported.\r\n\r\nOne command is key: Emergency stop, to stop sending commands ans stop printer FW\r\n",
@@ -62,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2815,
-              "days_since_update": 53,
+              "age_days": 2816,
+              "days_since_update": 54,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -91,8 +67,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1341,
-              "days_since_update": 368,
+              "age_days": 1342,
+              "days_since_update": 369,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -120,8 +96,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1890,
-              "days_since_update": 517,
+              "age_days": 1891,
+              "days_since_update": 518,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -148,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1882,
-              "days_since_update": 754,
+              "age_days": 1883,
+              "days_since_update": 755,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -161,27 +137,26 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 4,
+            "open": 4,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 4
             },
             "ages": {
-              "recent": 1,
+              "recent": 0,
               "active": 0,
               "stale": 4
             },
             "complexity": {
-              "low": 1,
               "medium": 4
             },
             "size": {
-              "medium": 3,
+              "medium": 2,
               "large": 2
             },
             "lifecycle": {
-              "new": 4,
+              "new": 3,
               "in_progress": 1
             }
           }
@@ -1279,7 +1254,7 @@
         "size": 134742,
         "stars": 1956,
         "forks": 491,
-        "open_issues": 5,
+        "open_issues": 4,
         "watchers": 1956,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
@@ -1365,8 +1340,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 372,
-              "days_since_update": 372,
+              "age_days": 373,
+              "days_since_update": 373,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1393,8 +1368,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1517,
-              "days_since_update": 463,
+              "age_days": 1518,
+              "days_since_update": 464,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2540,8 +2515,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 0,
-              "days_since_update": 0,
+              "age_days": 1,
+              "days_since_update": 1,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -2568,8 +2543,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 19,
-              "days_since_update": 0,
+              "age_days": 20,
+              "days_since_update": 1,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -2600,8 +2575,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 665,
-              "days_since_update": 75,
+              "age_days": 666,
+              "days_since_update": 76,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2626,8 +2601,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 210,
-              "days_since_update": 209,
+              "age_days": 211,
+              "days_since_update": 210,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2655,8 +2630,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1415,
-              "days_since_update": 489,
+              "age_days": 1416,
+              "days_since_update": 490,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2685,8 +2660,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1996,
-              "days_since_update": 532,
+              "age_days": 1997,
+              "days_since_update": 533,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2714,8 +2689,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2076,
-              "days_since_update": 532,
+              "age_days": 2077,
+              "days_since_update": 533,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2742,8 +2717,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1289,
-              "days_since_update": 532,
+              "age_days": 1290,
+              "days_since_update": 533,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2770,8 +2745,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2276,
-              "days_since_update": 1322,
+              "age_days": 2277,
+              "days_since_update": 1323,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2800,8 +2775,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1419,
-              "days_since_update": 1392,
+              "age_days": 1420,
+              "days_since_update": 1393,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3966,8 +3941,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 91,
-              "days_since_update": 19,
+              "age_days": 92,
+              "days_since_update": 20,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -3992,8 +3967,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 314,
-              "days_since_update": 243,
+              "age_days": 315,
+              "days_since_update": 244,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4019,8 +3994,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 802,
-              "days_since_update": 325,
+              "age_days": 803,
+              "days_since_update": 326,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4047,8 +4022,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 800,
-              "days_since_update": 470,
+              "age_days": 801,
+              "days_since_update": 471,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4073,8 +4048,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 532,
-              "days_since_update": 532,
+              "age_days": 533,
+              "days_since_update": 533,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4101,8 +4076,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 592,
-              "days_since_update": 592,
+              "age_days": 593,
+              "days_since_update": 593,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4127,8 +4102,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 707,
-              "days_since_update": 594,
+              "age_days": 708,
+              "days_since_update": 595,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4154,8 +4129,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 812,
-              "days_since_update": 812,
+              "age_days": 813,
+              "days_since_update": 813,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4180,8 +4155,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1133,
-              "days_since_update": 1133,
+              "age_days": 1134,
+              "days_since_update": 1134,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4209,8 +4184,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1276,
-              "days_since_update": 1276,
+              "age_days": 1277,
+              "days_since_update": 1277,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8438,8 +8413,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 384,
-              "days_since_update": 384,
+              "age_days": 385,
+              "days_since_update": 385,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8462,8 +8437,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1047,
-              "days_since_update": 1047,
+              "age_days": 1048,
+              "days_since_update": 1048,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8490,8 +8465,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1380,
-              "days_since_update": 1320,
+              "age_days": 1381,
+              "days_since_update": 1321,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9609,8 +9584,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 396,
-              "days_since_update": 396,
+              "age_days": 397,
+              "days_since_update": 397,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9635,8 +9610,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1125,
-              "days_since_update": 1125,
+              "age_days": 1126,
+              "days_since_update": 1126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9661,8 +9636,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1125,
-              "days_since_update": 1125,
+              "age_days": 1126,
+              "days_since_update": 1126,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11774,8 +11749,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 67,
-              "days_since_update": 35,
+              "age_days": 68,
+              "days_since_update": 36,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11800,8 +11775,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 307,
-              "days_since_update": 307,
+              "age_days": 308,
+              "days_since_update": 308,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11826,8 +11801,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1049,
-              "days_since_update": 1049,
+              "age_days": 1050,
+              "days_since_update": 1050,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11853,8 +11828,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2244,
-              "days_since_update": 2228,
+              "age_days": 2245,
+              "days_since_update": 2229,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12978,8 +12953,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1048,
-              "days_since_update": 1048,
+              "age_days": 1050,
+              "days_since_update": 1050,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16497,17 +16472,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-03-28T22:28:40+00:00",
+      "updated_at": "2026-03-30T14:38:54+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "f3709d4",
+            "sha": "b1d1c8f",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-03-28T22:28:34+00:00"
+            "date": "2026-03-30T14:38:45+00:00"
           },
           "protected": false,
           "issues": []
@@ -16516,6 +16491,18 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "b1d1c8f",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-03-30T14:38:45+00:00"
+          },
+          {
+            "sha": "079e28a",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-03-30T13:59:03+00:00"
+          },
           {
             "sha": "f3709d4",
             "message": "Private commit",
@@ -16827,26 +16814,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2026-03-09T03:18:41+00:00"
-          },
-          {
-            "sha": "6862380",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-03-09T03:21:24+00:00"
-          },
-          {
-            "sha": "52b94db",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-03-09T00:57:08+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "f3709d4",
+          "sha": "b1d1c8f",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-03-28T22:28:34+00:00"
+          "date": "2026-03-30T14:38:45+00:00"
         }
       },
       "statistics": {},
@@ -16856,8 +16831,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4804,
-      "reset": "2026-03-30T02:21:37+00:00"
+      "remaining": 4652,
+      "reset": "2026-03-31T02:43:48+00:00"
     }
   },
   "stats": {
@@ -16882,23 +16857,23 @@
       }
     },
     "issues": {
-      "total_count": 38,
-      "open_count": 38,
+      "total_count": 37,
+      "open_count": 37,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1011.4189298299915,
+      "avg_age_days": 1039.7479159136478,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 38
+        "normal": 37
       },
       "recent_activity": {
-        "last_day": 3,
-        "last_week": 3,
-        "last_month": 4
+        "last_day": 0,
+        "last_week": 2,
+        "last_month": 3
       }
     },
     "activity": {
-      "total_commits": 13,
+      "total_commits": 6,
       "commit_frequency": {
         "daily": 0.3626373626373626,
         "weekly": 2.5384615384615383,
@@ -16911,10 +16886,10 @@
       },
       "activity_heatmap": [
         [
-          4,
+          3,
           7,
           8,
-          13,
+          12,
           5,
           9,
           1,
@@ -16924,8 +16899,8 @@
           2,
           1,
           9,
+          5,
           4,
-          3,
           2,
           0,
           1,
@@ -17097,8 +17072,8 @@
     "trends": {
       "issue_creation_trend": [
         {
-          "date": "2026-02",
-          "count": 3
+          "date": "2026-03",
+          "count": 2
         },
         {
           "date": "2026-01",
@@ -17109,11 +17084,11 @@
           "count": 1
         },
         {
-          "date": "2025-11",
+          "date": "2025-12",
           "count": 1
         },
         {
-          "date": "2025-10",
+          "date": "2025-11",
           "count": 0
         },
         {
@@ -17147,7 +17122,7 @@
       ],
       "issue_resolution_trend": [
         {
-          "date": "2026-02",
+          "date": "2026-03",
           "count": 0
         },
         {
@@ -17159,11 +17134,11 @@
           "count": 0
         },
         {
-          "date": "2025-11",
+          "date": "2025-12",
           "count": 0
         },
         {
-          "date": "2025-10",
+          "date": "2025-11",
           "count": 0
         },
         {
@@ -17534,44 +17509,23 @@
   "activity_ranking": {
     "daily": [
       {
-        "name": "ESP3D-WEBUI",
-        "type": "main",
-        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
-        "url": "https://github.com/luc-github/ESP3D-WEBUI",
-        "is_private": false,
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
         "score": {
-          "commits": 1,
-          "issues": 2,
-          "comments": 0,
-          "period_days": 1,
-          "total": 7
-        },
-        "details": {
-          "commits": 1,
-          "issues": 2,
-          "comments": 0,
-          "commits_per_day": 1.0,
-          "issues_per_day": 2.0
-        }
-      },
-      {
-        "name": "esp3d.io",
-        "type": "main",
-        "description": "Documentation of ESP3D Ecosystem",
-        "url": "https://github.com/luc-github/esp3d.io",
-        "is_private": false,
-        "score": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 3
+          "total": 6
         },
         "details": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.0,
+          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -17583,17 +17537,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 2
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 1.0
+          "issues_per_day": 0.0
         }
       },
       {
@@ -17601,6 +17555,27 @@
         "type": "main",
         "description": "ESP3D library for Marlin and ESP32 boards",
         "url": "https://github.com/luc-github/ESP3DLib",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D-WEBUI",
+        "type": "main",
+        "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
+        "url": "https://github.com/luc-github/ESP3D-WEBUI",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17664,6 +17639,27 @@
         "type": "main",
         "description": "Configurator for ESP3D Firmware",
         "url": "https://github.com/luc-github/ESP3D-Configurator",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 1,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "esp3d.io",
+        "type": "main",
+        "description": "Documentation of ESP3D Ecosystem",
+        "url": "https://github.com/luc-github/esp3d.io",
         "is_private": false,
         "score": {
           "commits": 0,
@@ -17805,27 +17801,6 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
-      },
-      {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
       }
     ],
     "weekly": [
@@ -17836,17 +17811,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 10,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 30
+          "total": 9
         },
         "details": {
-          "commits": 10,
+          "commits": 3,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.4285714285714286,
+          "commits_per_day": 0.42857142857142855,
           "issues_per_day": 0.0
         }
       },
@@ -17900,17 +17875,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 2
+          "total": 0
         },
         "details": {
           "commits": 0,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.14285714285714285
+          "issues_per_day": 0.0
         }
       },
       {
@@ -18154,37 +18129,16 @@
         "is_private": false,
         "score": {
           "commits": 7,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 23
+          "total": 21
         },
         "details": {
           "commits": 7,
-          "issues": 1,
+          "issues": 0,
           "comments": 0,
           "commits_per_day": 0.23333333333333334,
-          "issues_per_day": 0.03333333333333333
-        }
-      },
-      {
-        "name": "esp3d-webinstaller",
-        "type": "main",
-        "description": "Web Installer for ESP32 projects",
-        "url": "https://github.com/luc-github/esp3d-webinstaller",
-        "is_private": false,
-        "score": {
-          "commits": 5,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 30,
-          "total": 15
-        },
-        "details": {
-          "commits": 5,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.16666666666666666,
           "issues_per_day": 0.0
         }
       },
@@ -18207,6 +18161,27 @@
           "comments": 0,
           "commits_per_day": 0.1,
           "issues_per_day": 0.06666666666666667
+        }
+      },
+      {
+        "name": "esp3d-webinstaller",
+        "type": "main",
+        "description": "Web Installer for ESP32 projects",
+        "url": "https://github.com/luc-github/esp3d-webinstaller",
+        "is_private": false,
+        "score": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 30,
+          "total": 12
+        },
+        "details": {
+          "commits": 4,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.13333333333333333,
+          "issues_per_day": 0.0
         }
       },
       {
@@ -18450,17 +18425,17 @@
         "is_private": false,
         "score": {
           "commits": 38,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "period_days": 365,
-          "total": 118
+          "total": 116
         },
         "details": {
           "commits": 38,
-          "issues": 2,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.10410958904109589,
-          "issues_per_day": 0.005479452054794521
+          "issues_per_day": 0.0027397260273972603
         }
       },
       {
