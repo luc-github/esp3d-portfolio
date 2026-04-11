@@ -38,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1142,
-              "days_since_update": 5,
+              "age_days": 1143,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -66,8 +66,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2826,
-              "days_since_update": 64,
+              "age_days": 2827,
+              "days_since_update": 65,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -95,8 +95,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1352,
-              "days_since_update": 379,
+              "age_days": 1353,
+              "days_since_update": 380,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1901,
-              "days_since_update": 528,
+              "age_days": 1902,
+              "days_since_update": 529,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -152,8 +152,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 1893,
-              "days_since_update": 765,
+              "age_days": 1894,
+              "days_since_update": 766,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1324,39 +1324,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 94,
-              "title": "Bump picomatch from 2.2.1 to 2.3.2 in /embedded",
-              "body": "Bumps [picomatch](https://github.com/micromatch/picomatch) from 2.2.1 to 2.3.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/releases\">picomatch's releases</a>.</em></p>\n<blockquote>\n<h2>2.3.2</h2>\n<p>This is a security release fixing several security relevant issues.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>fix: exception when glob pattern contains constructor by <a href=\"https://github.com/Jason3S\"><code>@\u200bJason3S</code></a> in <a href=\"https://redirect.github.com/micromatch/picomatch/pull/144\">micromatch/picomatch#144</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-c2c7-rcm5-vvqj\">CVE-2026-33671</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-3v7f-55p6-f55p\">CVE-2026-33672</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2</a></p>\n<h2>2.3.1</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Fixes bug when a pattern containing an expression after the closing parenthesis (<code>/!(*.d).{ts,tsx}</code>) was incorrectly converted to regexp (<a href=\"https://github.com/micromatch/picomatch/commit/9f241ef\">9f241ef</a>).</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Some documentation improvements (<a href=\"https://github.com/micromatch/picomatch/commit/f81d236\">f81d236</a>, <a href=\"https://github.com/micromatch/picomatch/commit/421e0e7\">421e0e7</a>).</li>\n</ul>\n<h2>2.2.3</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Do not skip pattern seperator for square brackets (<a href=\"https://github.com/micromatch/picomatch/commit/fb08a30\">fb08a30</a>).</li>\n<li>Set negatedExtGlob also if it does not span the whole pattern (<a href=\"https://github.com/micromatch/picomatch/commit/032e3f5\">032e3f5</a>).</li>\n</ul>\n<h2>2.2.2</h2>\n<p>No release notes provided.</p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/blob/master/CHANGELOG.md\">picomatch's changelog</a>.</em></p>\n<blockquote>\n<h1>Release history</h1>\n<p><strong>All notable changes to this project will be documented in this file.</strong></p>\n<p>The format is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>\nand this project adheres to <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<!-- raw HTML omitted -->\n<ul>\n<li>Changelogs are for humans, not machines.</li>\n<li>There should be an entry for every single version.</li>\n<li>The same types of changes should be grouped.</li>\n<li>Versions and sections should be linkable.</li>\n<li>The latest version comes first.</li>\n<li>The release date of each versions is displayed.</li>\n<li>Mention whether you follow Semantic Versioning.</li>\n</ul>\n<!-- raw HTML omitted -->\n<!-- raw HTML omitted -->\n<p>Changelog entries are classified using the following labels <em>(from <a href=\"http://keepachangelog.com/\">keep-a-changelog</a></em>):</p>\n<ul>\n<li><code>Added</code> for new features.</li>\n<li><code>Changed</code> for changes in existing functionality.</li>\n<li><code>Deprecated</code> for soon-to-be removed features.</li>\n<li><code>Removed</code> for now removed features.</li>\n<li><code>Fixed</code> for any bug fixes.</li>\n<li><code>Security</code> in case of vulnerabilities.</li>\n</ul>\n<!-- raw HTML omitted -->\n<h2>4.0.0 (2024-02-07)</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Fix bad text values in parse <a href=\"https://redirect.github.com/micromatch/picomatch/issues/126\">#126</a>, thanks to <a href=\"https://github.com/connor4312\"><code>@\u200bconnor4312</code></a></li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Remove process global to work outside of node <a href=\"https://redirect.github.com/micromatch/picomatch/issues/129\">#129</a>, thanks to <a href=\"https://github.com/styfle\"><code>@\u200bstyfle</code></a></li>\n<li>Add sideEffects to package.json <a href=\"https://redirect.github.com/micromatch/picomatch/issues/128\">#128</a>, thanks to <a href=\"https://github.com/frandiox\"><code>@\u200bfrandiox</code></a></li>\n<li>Removed <code>os</code>, make compatible browser environment. See <a href=\"https://redirect.github.com/micromatch/picomatch/issues/124\">#124</a>, thanks to <a href=\"https://github.com/gwsbhqt\"><code>@\u200bgwsbhqt</code></a></li>\n</ul>\n<h2>3.0.1</h2>\n<h3>Fixes</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li>See full diff in <a href=\"https://github.com/micromatch/picomatch/commits/2.3.2\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by <a href=\"https://www.npmjs.com/~danez\">danez</a>, a new releaser for picomatch since your current version.</p>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=picomatch&package-manager=npm_and_yarn&previous-version=2.2.1&new-version=2.3.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3DLib/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2026-04-08T09:47:42+00:00",
-              "updated_at": "2026-04-08T09:47:43+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/pull/94",
-              "is_pr": true,
-              "labels": [
-                "dependencies",
-                "javascript"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1,
-              "days_since_update": 1,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "144",
-                "129",
-                "124",
-                "126",
-                "128"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 93,
               "title": "[BUG] Parsing U8glib-HAL.h may fail under specific conditions",
               "body": "I am using Marlin 2.0.9.10 with PlatformIO 6.1.15 to compile firmware for an ESP32 board (MagicMaker Sparrow).\nI found that **U8glib-HAL.h may fail to parse** in espcom.cpp under specific circumstances, even if the dependency already exists.\n\nOriginal code:\n```cpp\n#if HAS_MARLINUI_U8GLIB\n  #include <U8glib-HAL.h>\n#endif\n```\nAfter modifying to the following code, the compilation error disappears and the firmware works normally:\n```cpp\n#if HAS_MARLINUI_U8GLIB\n  #if __has_include (<U8glib-HAL.h>)\n    #include <U8glib-HAL.h>\n  #endif\n#endif\n```\n",
@@ -1371,8 +1338,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1384,26 +1351,25 @@
             }
           ],
           "issue_summary": {
-            "total": 2,
-            "open": 2,
+            "total": 1,
+            "open": 1,
             "closed": 0,
             "priorities": {
-              "normal": 2
+              "normal": 1
             },
             "ages": {
-              "recent": 2,
+              "recent": 1,
               "active": 0,
               "stale": 0
             },
             "complexity": {
-              "medium": 2
+              "medium": 1
             },
             "size": {
-              "large": 1,
               "medium": 1
             },
             "lifecycle": {
-              "new": 2
+              "new": 1
             }
           }
         },
@@ -1420,39 +1386,6 @@
           "protected": false,
           "issues": [
             {
-              "number": 94,
-              "title": "Bump picomatch from 2.2.1 to 2.3.2 in /embedded",
-              "body": "Bumps [picomatch](https://github.com/micromatch/picomatch) from 2.2.1 to 2.3.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/releases\">picomatch's releases</a>.</em></p>\n<blockquote>\n<h2>2.3.2</h2>\n<p>This is a security release fixing several security relevant issues.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>fix: exception when glob pattern contains constructor by <a href=\"https://github.com/Jason3S\"><code>@\u200bJason3S</code></a> in <a href=\"https://redirect.github.com/micromatch/picomatch/pull/144\">micromatch/picomatch#144</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-c2c7-rcm5-vvqj\">CVE-2026-33671</a></li>\n<li>Fix for <a href=\"https://github.com/micromatch/picomatch/security/advisories/GHSA-3v7f-55p6-f55p\">CVE-2026-33672</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2\">https://github.com/micromatch/picomatch/compare/2.3.1...2.3.2</a></p>\n<h2>2.3.1</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Fixes bug when a pattern containing an expression after the closing parenthesis (<code>/!(*.d).{ts,tsx}</code>) was incorrectly converted to regexp (<a href=\"https://github.com/micromatch/picomatch/commit/9f241ef\">9f241ef</a>).</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Some documentation improvements (<a href=\"https://github.com/micromatch/picomatch/commit/f81d236\">f81d236</a>, <a href=\"https://github.com/micromatch/picomatch/commit/421e0e7\">421e0e7</a>).</li>\n</ul>\n<h2>2.2.3</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Do not skip pattern seperator for square brackets (<a href=\"https://github.com/micromatch/picomatch/commit/fb08a30\">fb08a30</a>).</li>\n<li>Set negatedExtGlob also if it does not span the whole pattern (<a href=\"https://github.com/micromatch/picomatch/commit/032e3f5\">032e3f5</a>).</li>\n</ul>\n<h2>2.2.2</h2>\n<p>No release notes provided.</p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/micromatch/picomatch/blob/master/CHANGELOG.md\">picomatch's changelog</a>.</em></p>\n<blockquote>\n<h1>Release history</h1>\n<p><strong>All notable changes to this project will be documented in this file.</strong></p>\n<p>The format is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>\nand this project adheres to <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<!-- raw HTML omitted -->\n<ul>\n<li>Changelogs are for humans, not machines.</li>\n<li>There should be an entry for every single version.</li>\n<li>The same types of changes should be grouped.</li>\n<li>Versions and sections should be linkable.</li>\n<li>The latest version comes first.</li>\n<li>The release date of each versions is displayed.</li>\n<li>Mention whether you follow Semantic Versioning.</li>\n</ul>\n<!-- raw HTML omitted -->\n<!-- raw HTML omitted -->\n<p>Changelog entries are classified using the following labels <em>(from <a href=\"http://keepachangelog.com/\">keep-a-changelog</a></em>):</p>\n<ul>\n<li><code>Added</code> for new features.</li>\n<li><code>Changed</code> for changes in existing functionality.</li>\n<li><code>Deprecated</code> for soon-to-be removed features.</li>\n<li><code>Removed</code> for now removed features.</li>\n<li><code>Fixed</code> for any bug fixes.</li>\n<li><code>Security</code> in case of vulnerabilities.</li>\n</ul>\n<!-- raw HTML omitted -->\n<h2>4.0.0 (2024-02-07)</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Fix bad text values in parse <a href=\"https://redirect.github.com/micromatch/picomatch/issues/126\">#126</a>, thanks to <a href=\"https://github.com/connor4312\"><code>@\u200bconnor4312</code></a></li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Remove process global to work outside of node <a href=\"https://redirect.github.com/micromatch/picomatch/issues/129\">#129</a>, thanks to <a href=\"https://github.com/styfle\"><code>@\u200bstyfle</code></a></li>\n<li>Add sideEffects to package.json <a href=\"https://redirect.github.com/micromatch/picomatch/issues/128\">#128</a>, thanks to <a href=\"https://github.com/frandiox\"><code>@\u200bfrandiox</code></a></li>\n<li>Removed <code>os</code>, make compatible browser environment. See <a href=\"https://redirect.github.com/micromatch/picomatch/issues/124\">#124</a>, thanks to <a href=\"https://github.com/gwsbhqt\"><code>@\u200bgwsbhqt</code></a></li>\n</ul>\n<h2>3.0.1</h2>\n<h3>Fixes</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li>See full diff in <a href=\"https://github.com/micromatch/picomatch/commits/2.3.2\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by <a href=\"https://www.npmjs.com/~danez\">danez</a>, a new releaser for picomatch since your current version.</p>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=picomatch&package-manager=npm_and_yarn&previous-version=2.2.1&new-version=2.3.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all of the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/luc-github/ESP3DLib/network/alerts).\n\n</details>",
-              "state": "open",
-              "created_at": "2026-04-08T09:47:42+00:00",
-              "updated_at": "2026-04-08T09:47:43+00:00",
-              "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3DLib/pull/94",
-              "is_pr": true,
-              "labels": [
-                "dependencies",
-                "javascript"
-              ],
-              "priority": "normal",
-              "assignee": null,
-              "age_days": 1,
-              "days_since_update": 1,
-              "is_stale": false,
-              "is_recent": true,
-              "activity_status": "active",
-              "size_estimate": "large",
-              "complexity": "medium",
-              "related_issues": [
-                "144",
-                "129",
-                "124",
-                "126",
-                "128"
-              ],
-              "suggested_priority": "medium",
-              "lifecycle_stage": "new"
-            },
-            {
               "number": 93,
               "title": "[BUG] Parsing U8glib-HAL.h may fail under specific conditions",
               "body": "I am using Marlin 2.0.9.10 with PlatformIO 6.1.15 to compile firmware for an ESP32 board (MagicMaker Sparrow).\nI found that **U8glib-HAL.h may fail to parse** in espcom.cpp under specific circumstances, even if the dependency already exists.\n\nOriginal code:\n```cpp\n#if HAS_MARLINUI_U8GLIB\n  #include <U8glib-HAL.h>\n#endif\n```\nAfter modifying to the following code, the compilation error disappears and the firmware works normally:\n```cpp\n#if HAS_MARLINUI_U8GLIB\n  #if __has_include (<U8glib-HAL.h>)\n    #include <U8glib-HAL.h>\n  #endif\n#endif\n```\n",
@@ -1467,8 +1400,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 5,
-              "days_since_update": 5,
+              "age_days": 6,
+              "days_since_update": 6,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1497,8 +1430,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 383,
-              "days_since_update": 383,
+              "age_days": 384,
+              "days_since_update": 384,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1525,8 +1458,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1528,
-              "days_since_update": 474,
+              "age_days": 1529,
+              "days_since_update": 475,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1538,27 +1471,26 @@
             }
           ],
           "issue_summary": {
-            "total": 4,
-            "open": 4,
+            "total": 3,
+            "open": 3,
             "closed": 0,
             "priorities": {
-              "normal": 4
+              "normal": 3
             },
             "ages": {
-              "recent": 2,
+              "recent": 1,
               "active": 0,
               "stale": 2
             },
             "complexity": {
-              "medium": 3,
+              "medium": 2,
               "low": 1
             },
             "size": {
-              "large": 1,
               "medium": 3
             },
             "lifecycle": {
-              "new": 4
+              "new": 3
             }
           }
         }
@@ -2612,10 +2544,10 @@
         ]
       },
       "statistics": {
-        "size": 11676,
+        "size": 11618,
         "stars": 116,
         "forks": 35,
-        "open_issues": 4,
+        "open_issues": 3,
         "watchers": 116,
         "default_branch": "master",
         "license": "GNU General Public License v3.0"
@@ -2641,7 +2573,7 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2026-04-03T06:34:11+00:00",
+      "updated_at": "2026-04-10T08:57:32+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -2656,19 +2588,17 @@
           "protected": false,
           "issues": [
             {
-              "number": 453,
-              "title": "[FEATURE REQUEST]Allow to hide extension individually at start",
-              "body": "currently extensions are loaded all at once and put in cache so even not visible they can continue to run, so for background extension - it may be interresting to not display them at start but only `on demand`\nbecause they are now already displayed in position defined individually, that could be also good to define initial status : visible / not visible at start like others panels ",
+              "number": 454,
+              "title": "[INFORMATION]Brotli Support",
+              "body": "Brotli-compressed WebUI packages are already generated and included as part of the build process:\n\n| Target | Subtarget  |  Gzip Path | Gzip Size | Brotli Path | Brotli Size |\n|--------|-----------|-----------|-----------|--------------|--------------|\n| CNC | GRBL | index.html.gz | 91.2 KB | index.html.br | 75.6 KB |\n| CNC | GRBLHal | index.html.gz | 95.8 KB | index.html.br | 79.0 KB |\n| Printer3D | Marlin | index.html.gz | 97.1 KB | index.html.br | 80.2 KB |\n| Printer3D | Marlin-embedded |index.html.gz | 96.6 KB | index.html.br | 79.8 KB |\n| Printer3D | Repetier |index.html.gz | 96.0 KB | index.html.br | 79.3 KB |\n| Printer3D | Smoothieware | index.html.gz | 95.6 KB | index.html.br | 78.8 KB |\n| SandTable | GRBL | index.html.gz | 83.4 KB | index.html.br | 69.1 KB |\n\nThe size reduction benefit is obvious.  \nHowever, **these Brotli files are not yet used by any current server implementation.**\n\nThey are included **as preparation for future support**, so everything will already be ready once Brotli becomes usable on supported platforms.\n\nCurrently, there is no Brotli support on the server side in:\n\n- ESP3D  \n- ESP3DLib  \n- ESP3D-TFT  \n- ESP3D-HUB  \n- or any known compatible server  \n\n## Why is Brotli not usable yet?\n\nServing Brotli content typically requires HTTPS support, which needs about **50 KB of stack memory**.  \nThis generally requires **PSRAM**, which is not available on most supported boards.\n\nAs a result:\n\n- **ESP8266** is definitely out of scope  \n- **ESP32 without PSRAM** is also out of scope  \n- **Arduino ESP32 Core** does not currently support an HTTPS server suitable for this use case  \n  - Switching to another web server would require a large amount of work  \n  - This could negatively impact system stability  \n  - Therefore, ESP3D itself is currently out of scope  \n\nAdditionally:\n\n- **ESP3D-TFT** will be replaced by **ESP3D-X** (next-generation platform)\n\n## Summary\n\nBrotli packages are already generated **as a forward-looking preparation**,  \nbut **this feature should not be considered active yet**.\n\nPlease do not focus too much on Brotli support until HTTPS support is implemented in **ESP3D-X**.",
               "state": "open",
-              "created_at": "2026-04-09T06:32:53+00:00",
-              "updated_at": "2026-04-09T06:33:30+00:00",
+              "created_at": "2026-04-10T03:52:02+00:00",
+              "updated_at": "2026-04-10T03:52:56+00:00",
               "closed_at": null,
-              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/453",
+              "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/454",
               "is_pr": false,
               "labels": [
-                "Feature request",
-                "3.0",
-                "Extension",
+                "Enhancement",
                 "3.1"
               ],
               "priority": "normal",
@@ -2678,7 +2608,7 @@
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
-              "size_estimate": "medium",
+              "size_estimate": "large",
               "complexity": "medium",
               "related_issues": [],
               "suggested_priority": "medium",
@@ -2702,8 +2632,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 11,
-              "days_since_update": 11,
+              "age_days": 12,
+              "days_since_update": 12,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2730,8 +2660,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 30,
-              "days_since_update": 11,
+              "age_days": 31,
+              "days_since_update": 12,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2762,8 +2692,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 676,
-              "days_since_update": 86,
+              "age_days": 677,
+              "days_since_update": 87,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2788,8 +2718,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 221,
-              "days_since_update": 220,
+              "age_days": 222,
+              "days_since_update": 221,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2817,8 +2747,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1426,
-              "days_since_update": 500,
+              "age_days": 1427,
+              "days_since_update": 501,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2847,8 +2777,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2007,
-              "days_since_update": 543,
+              "age_days": 2008,
+              "days_since_update": 544,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2876,8 +2806,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2087,
-              "days_since_update": 543,
+              "age_days": 2088,
+              "days_since_update": 544,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2905,7 +2835,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1300,
-              "days_since_update": 543,
+              "days_since_update": 544,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2932,8 +2862,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2287,
-              "days_since_update": 1333,
+              "age_days": 2288,
+              "days_since_update": 1334,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2962,8 +2892,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1430,
-              "days_since_update": 1403,
+              "age_days": 1431,
+              "days_since_update": 1404,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2991,8 +2921,9 @@
               "high": 1
             },
             "size": {
-              "medium": 6,
-              "small": 5
+              "large": 1,
+              "small": 5,
+              "medium": 5
             },
             "lifecycle": {
               "new": 11
@@ -4070,10 +4001,10 @@
       },
       "statistics": {
         "size": 124884,
-        "stars": 869,
-        "forks": 339,
+        "stars": 871,
+        "forks": 340,
         "open_issues": 11,
-        "watchers": 869,
+        "watchers": 871,
         "default_branch": "3.0",
         "license": "GNU General Public License v3.0"
       },
@@ -4128,11 +4059,11 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 102,
-              "days_since_update": 30,
-              "is_stale": false,
+              "age_days": 103,
+              "days_since_update": 31,
+              "is_stale": true,
               "is_recent": false,
-              "activity_status": "inactive",
+              "activity_status": "stale",
               "size_estimate": "medium",
               "complexity": "medium",
               "related_issues": [],
@@ -4154,8 +4085,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 325,
-              "days_since_update": 254,
+              "age_days": 326,
+              "days_since_update": 255,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4181,8 +4112,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 813,
-              "days_since_update": 336,
+              "age_days": 814,
+              "days_since_update": 337,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4209,8 +4140,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 811,
-              "days_since_update": 481,
+              "age_days": 812,
+              "days_since_update": 482,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4235,8 +4166,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 543,
-              "days_since_update": 543,
+              "age_days": 544,
+              "days_since_update": 544,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4263,8 +4194,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 603,
-              "days_since_update": 603,
+              "age_days": 604,
+              "days_since_update": 604,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4289,8 +4220,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 718,
-              "days_since_update": 605,
+              "age_days": 719,
+              "days_since_update": 606,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4316,8 +4247,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 823,
-              "days_since_update": 823,
+              "age_days": 824,
+              "days_since_update": 824,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4342,8 +4273,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1144,
-              "days_since_update": 1144,
+              "age_days": 1145,
+              "days_since_update": 1145,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4371,8 +4302,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1287,
-              "days_since_update": 1287,
+              "age_days": 1288,
+              "days_since_update": 1288,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4392,8 +4323,8 @@
             },
             "ages": {
               "recent": 0,
-              "active": 1,
-              "stale": 9
+              "active": 0,
+              "stale": 10
             },
             "complexity": {
               "medium": 9,
@@ -8600,8 +8531,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 395,
-              "days_since_update": 395,
+              "age_days": 396,
+              "days_since_update": 396,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8624,8 +8555,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1058,
-              "days_since_update": 1058,
+              "age_days": 1059,
+              "days_since_update": 1059,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -8652,8 +8583,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1391,
-              "days_since_update": 1331,
+              "age_days": 1392,
+              "days_since_update": 1332,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9742,7 +9673,7 @@
       "url": "https://github.com/luc-github/esp3d.io",
       "language": "HTML",
       "created_at": "2023-01-29T00:46:38+00:00",
-      "updated_at": "2026-03-29T08:00:48+00:00",
+      "updated_at": "2026-04-10T02:30:05+00:00",
       "branches": [
         {
           "name": "main",
@@ -9771,8 +9702,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 407,
-              "days_since_update": 407,
+              "age_days": 408,
+              "days_since_update": 408,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9797,8 +9728,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1136,
-              "days_since_update": 1136,
+              "age_days": 1137,
+              "days_since_update": 1137,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9823,8 +9754,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1136,
-              "days_since_update": 1136,
+              "age_days": 1137,
+              "days_since_update": 1137,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -10919,10 +10850,10 @@
       },
       "statistics": {
         "size": 114402,
-        "stars": 11,
+        "stars": 12,
         "forks": 66,
         "open_issues": 3,
-        "watchers": 11,
+        "watchers": 12,
         "default_branch": "main",
         "license": "GNU General Public License v3.0"
       },
@@ -10936,8 +10867,8 @@
         "documentation_score": 0.0,
         "maintenance_score": 0.7,
         "activity_score": 0.0,
-        "community_score": 0.7100000000000001,
-        "overall_score": 0.31599999999999995
+        "community_score": 0.72,
+        "overall_score": 0.31699999999999995
       }
     },
     {
@@ -11936,8 +11867,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 78,
-              "days_since_update": 46,
+              "age_days": 79,
+              "days_since_update": 47,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11962,8 +11893,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 318,
-              "days_since_update": 318,
+              "age_days": 319,
+              "days_since_update": 319,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12015,8 +11946,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2255,
-              "days_since_update": 2239,
+              "age_days": 2256,
+              "days_since_update": 2240,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -16659,17 +16590,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-04-09T03:50:03+00:00",
+      "updated_at": "2026-04-10T12:27:47+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "5974b78",
+            "sha": "4ef598a",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-04-09T03:49:57+00:00"
+            "date": "2026-04-10T12:27:42+00:00"
           },
           "protected": false,
           "issues": []
@@ -16678,6 +16609,18 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "4ef598a",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-04-10T12:27:42+00:00"
+          },
+          {
+            "sha": "aa149b2",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-04-10T04:17:55+00:00"
+          },
           {
             "sha": "5974b78",
             "message": "Private commit",
@@ -16989,26 +16932,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2026-03-13T07:59:27+00:00"
-          },
-          {
-            "sha": "4a45a7f",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-03-11T10:26:58+00:00"
-          },
-          {
-            "sha": "23a31b7",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-03-11T10:17:03+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "5974b78",
+          "sha": "4ef598a",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-04-09T03:49:57+00:00"
+          "date": "2026-04-10T12:27:42+00:00"
         }
       },
       "statistics": {},
@@ -17018,8 +16949,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4666,
-      "reset": "2026-04-10T02:49:51+00:00"
+      "remaining": 4947,
+      "reset": "2026-04-11T02:50:35+00:00"
     }
   },
   "stats": {
@@ -17034,9 +16965,9 @@
         "HTML": 1,
         "Python": 1
       },
-      "total_size": 772945,
-      "total_stars": 3105,
-      "total_forks": 991,
+      "total_size": 772887,
+      "total_stars": 3108,
+      "total_forks": 992,
       "branches": {
         "production": 12,
         "development": 4,
@@ -17044,23 +16975,23 @@
       }
     },
     "issues": {
-      "total_count": 43,
-      "open_count": 43,
+      "total_count": 41,
+      "open_count": 41,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 930.1741355355283,
+      "avg_age_days": 976.4381939817657,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 43
+        "normal": 41
       },
       "recent_activity": {
         "last_day": 1,
-        "last_week": 6,
-        "last_month": 8
+        "last_week": 4,
+        "last_month": 6
       }
     },
     "activity": {
-      "total_commits": 4,
+      "total_commits": 6,
       "commit_frequency": {
         "daily": 0.3626373626373626,
         "weekly": 2.5384615384615383,
@@ -17135,7 +17066,7 @@
           8,
           12,
           7,
-          11,
+          9,
           9,
           9,
           1,
@@ -17181,7 +17112,7 @@
           6,
           2,
           0,
-          5,
+          6,
           11,
           5,
           2,
@@ -17189,7 +17120,7 @@
           0,
           2,
           3,
-          1,
+          2,
           5,
           3,
           1,
@@ -17260,7 +17191,7 @@
       "issue_creation_trend": [
         {
           "date": "2026-03",
-          "count": 6
+          "count": 4
         },
         {
           "date": "2026-02",
@@ -17698,17 +17629,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
           "period_days": 1,
-          "total": 3
+          "total": 6
         },
         "details": {
-          "commits": 1,
+          "commits": 2,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.0,
+          "commits_per_day": 2.0,
           "issues_per_day": 0.0
         }
       },
@@ -17994,17 +17925,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 4,
+          "commits": 6,
           "issues": 0,
           "comments": 0,
           "period_days": 7,
-          "total": 12
+          "total": 18
         },
         "details": {
-          "commits": 4,
+          "commits": 6,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.5714285714285714,
+          "commits_per_day": 0.8571428571428571,
           "issues_per_day": 0.0
         }
       },
@@ -18016,17 +17947,17 @@
         "is_private": false,
         "score": {
           "commits": 0,
-          "issues": 4,
+          "issues": 2,
           "comments": 0,
           "period_days": 7,
-          "total": 8
+          "total": 4
         },
         "details": {
           "commits": 0,
-          "issues": 4,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.0,
-          "issues_per_day": 0.5714285714285714
+          "issues_per_day": 0.2857142857142857
         }
       },
       {
@@ -18347,27 +18278,6 @@
         }
       },
       {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 0,
-          "issues": 4,
-          "comments": 0,
-          "period_days": 30,
-          "total": 8
-        },
-        "details": {
-          "commits": 0,
-          "issues": 4,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.13333333333333333
-        }
-      },
-      {
         "name": "esp3d.io",
         "type": "main",
         "description": "Documentation of ESP3D Ecosystem",
@@ -18407,6 +18317,27 @@
           "comments": 0,
           "commits_per_day": 0.06666666666666667,
           "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "period_days": 30,
+          "total": 4
+        },
+        "details": {
+          "commits": 0,
+          "issues": 2,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 0.06666666666666667
         }
       },
       {
@@ -18692,17 +18623,17 @@
         "is_private": false,
         "score": {
           "commits": 8,
-          "issues": 4,
+          "issues": 2,
           "comments": 0,
           "period_days": 365,
-          "total": 32
+          "total": 28
         },
         "details": {
           "commits": 8,
-          "issues": 4,
+          "issues": 2,
           "comments": 0,
           "commits_per_day": 0.021917808219178082,
-          "issues_per_day": 0.010958904109589041
+          "issues_per_day": 0.005479452054794521
         }
       },
       {

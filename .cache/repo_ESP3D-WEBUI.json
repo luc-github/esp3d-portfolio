@@ -1,5 +1,5 @@
 {
-  "timestamp": 1775786190.2034972,
+  "timestamp": 1775872062.866318,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-04-03T06:34:11+00:00",
+    "updated_at": "2026-04-10T08:57:32+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -22,19 +22,17 @@
         "protected": false,
         "issues": [
           {
-            "number": 453,
-            "title": "[FEATURE REQUEST]Allow to hide extension individually at start",
-            "body": "currently extensions are loaded all at once and put in cache so even not visible they can continue to run, so for background extension - it may be interresting to not display them at start but only `on demand`\nbecause they are now already displayed in position defined individually, that could be also good to define initial status : visible / not visible at start like others panels ",
+            "number": 454,
+            "title": "[INFORMATION]Brotli Support",
+            "body": "Brotli-compressed WebUI packages are already generated and included as part of the build process:\n\n| Target | Subtarget  |  Gzip Path | Gzip Size | Brotli Path | Brotli Size |\n|--------|-----------|-----------|-----------|--------------|--------------|\n| CNC | GRBL | index.html.gz | 91.2 KB | index.html.br | 75.6 KB |\n| CNC | GRBLHal | index.html.gz | 95.8 KB | index.html.br | 79.0 KB |\n| Printer3D | Marlin | index.html.gz | 97.1 KB | index.html.br | 80.2 KB |\n| Printer3D | Marlin-embedded |index.html.gz | 96.6 KB | index.html.br | 79.8 KB |\n| Printer3D | Repetier |index.html.gz | 96.0 KB | index.html.br | 79.3 KB |\n| Printer3D | Smoothieware | index.html.gz | 95.6 KB | index.html.br | 78.8 KB |\n| SandTable | GRBL | index.html.gz | 83.4 KB | index.html.br | 69.1 KB |\n\nThe size reduction benefit is obvious.  \nHowever, **these Brotli files are not yet used by any current server implementation.**\n\nThey are included **as preparation for future support**, so everything will already be ready once Brotli becomes usable on supported platforms.\n\nCurrently, there is no Brotli support on the server side in:\n\n- ESP3D  \n- ESP3DLib  \n- ESP3D-TFT  \n- ESP3D-HUB  \n- or any known compatible server  \n\n## Why is Brotli not usable yet?\n\nServing Brotli content typically requires HTTPS support, which needs about **50 KB of stack memory**.  \nThis generally requires **PSRAM**, which is not available on most supported boards.\n\nAs a result:\n\n- **ESP8266** is definitely out of scope  \n- **ESP32 without PSRAM** is also out of scope  \n- **Arduino ESP32 Core** does not currently support an HTTPS server suitable for this use case  \n  - Switching to another web server would require a large amount of work  \n  - This could negatively impact system stability  \n  - Therefore, ESP3D itself is currently out of scope  \n\nAdditionally:\n\n- **ESP3D-TFT** will be replaced by **ESP3D-X** (next-generation platform)\n\n## Summary\n\nBrotli packages are already generated **as a forward-looking preparation**,  \nbut **this feature should not be considered active yet**.\n\nPlease do not focus too much on Brotli support until HTTPS support is implemented in **ESP3D-X**.",
             "state": "open",
-            "created_at": "2026-04-09T06:32:53+00:00",
-            "updated_at": "2026-04-09T06:33:30+00:00",
+            "created_at": "2026-04-10T03:52:02+00:00",
+            "updated_at": "2026-04-10T03:52:56+00:00",
             "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/453",
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/454",
             "is_pr": false,
             "labels": [
-              "Feature request",
-              "3.0",
-              "Extension",
+              "Enhancement",
               "3.1"
             ],
             "priority": "normal",
@@ -1302,10 +1300,10 @@
     },
     "statistics": {
       "size": 124884,
-      "stars": 869,
-      "forks": 339,
+      "stars": 871,
+      "forks": 340,
       "open_issues": 11,
-      "watchers": 869,
+      "watchers": 871,
       "default_branch": "3.0",
       "license": "GNU General Public License v3.0"
     },
