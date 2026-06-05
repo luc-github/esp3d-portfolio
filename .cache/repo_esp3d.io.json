@@ -1,13 +1,13 @@
 {
-  "timestamp": 1776132106.9064167,
+  "timestamp": 1780627609.3027568,
   "data": {
     "name": "esp3d.io",
     "type": "main",
     "description": "Documentation of ESP3D Ecosystem",
     "url": "https://github.com/luc-github/esp3d.io",
-    "language": "HTML",
+    "language": "MDX",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2026-04-10T02:30:05+00:00",
+    "updated_at": "2026-05-27T02:34:23+00:00",
     "branches": [
       {
         "name": "main",
@@ -75,7 +75,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 209,
+        "contributions": 234,
         "url": "https://github.com/luc-github"
       },
       {
@@ -126,6 +126,156 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "1e26915",
+          "message": "Remove Line everywhere\n\nRemove What'sApp from ESP3D-TFT as not supported on it actually",
+          "author": "Luc",
+          "date": "2026-05-27T02:34:15+00:00"
+        },
+        {
+          "sha": "5b4d58f",
+          "message": "Update with latest releases",
+          "author": "Luc",
+          "date": "2026-05-25T07:01:55+00:00"
+        },
+        {
+          "sha": "0d3b6d1",
+          "message": "Update style to be closer to astro style",
+          "author": "Luc",
+          "date": "2026-05-11T12:08:49+00:00"
+        },
+        {
+          "sha": "d9dbf2b",
+          "message": "Update style to be better with astro",
+          "author": "Luc",
+          "date": "2026-05-10T12:03:11+00:00"
+        },
+        {
+          "sha": "db896fa",
+          "message": "Fix wrong link",
+          "author": "Luc",
+          "date": "2026-05-07T08:49:48+00:00"
+        },
+        {
+          "sha": "fc8c6b7",
+          "message": "fix header ads is covered by toc and make toc unreadable",
+          "author": "Luc",
+          "date": "2026-04-24T15:14:22+00:00"
+        },
+        {
+          "sha": "e241dd1",
+          "message": "do better ads positionning to improve overall reasdibility",
+          "author": "Luc",
+          "date": "2026-04-24T11:39:56+00:00"
+        },
+        {
+          "sha": "4ce93eb",
+          "message": "Add discord",
+          "author": "Luc",
+          "date": "2026-04-24T09:23:06+00:00"
+        },
+        {
+          "sha": "3426f77",
+          "message": "More text updated",
+          "author": "Luc",
+          "date": "2026-04-21T14:56:23+00:00"
+        },
+        {
+          "sha": "49cb322",
+          "message": "More style update",
+          "author": "Luc",
+          "date": "2026-04-21T13:11:18+00:00"
+        },
+        {
+          "sha": "6ced8ae",
+          "message": "Fix style typos",
+          "author": "Luc",
+          "date": "2026-04-21T12:56:03+00:00"
+        },
+        {
+          "sha": "f72c1d8",
+          "message": "Fix grammar typos",
+          "author": "Luc",
+          "date": "2026-04-21T12:50:04+00:00"
+        },
+        {
+          "sha": "2158627",
+          "message": "Add some fixes for Dark theme\n\nAdd script to simplify deployement on line\nImplement Adsense -WIP",
+          "author": "Luc",
+          "date": "2026-04-21T03:53:55+00:00"
+        },
+        {
+          "sha": "474fc9c",
+          "message": "Add paypal\n\nFix tile issue in dark mode",
+          "author": "Luc",
+          "date": "2026-04-20T14:53:16+00:00"
+        },
+        {
+          "sha": "81b1f3b",
+          "message": "Fix typo and menu order",
+          "author": "Luc",
+          "date": "2026-04-20T13:10:13+00:00"
+        },
+        {
+          "sha": "1de884a",
+          "message": "Fix typo and menu order",
+          "author": "Luc",
+          "date": "2026-04-20T12:11:45+00:00"
+        },
+        {
+          "sha": "14c0cb6",
+          "message": "Fix some menus",
+          "author": "Luc",
+          "date": "2026-04-20T09:47:41+00:00"
+        },
+        {
+          "sha": "715903e",
+          "message": "Code base pour TFT WEBUI  EXTRA TOOLS et Sponsoring",
+          "author": "Luc",
+          "date": "2026-04-20T09:41:00+00:00"
+        },
+        {
+          "sha": "973918a",
+          "message": "code base pour ESP3DLib",
+          "author": "Luc",
+          "date": "2026-04-20T08:41:00+00:00"
+        },
+        {
+          "sha": "45ef099",
+          "message": "Finalize ESP3D 3.X import",
+          "author": "Luc",
+          "date": "2026-04-20T07:28:30+00:00"
+        },
+        {
+          "sha": "6f0be23",
+          "message": "Add support for image zoom\n\nFinalize ESP3D-2.1.X",
+          "author": "Luc",
+          "date": "2026-04-20T01:58:12+00:00"
+        },
+        {
+          "sha": "1cf7ee2",
+          "message": "Update index.mdx",
+          "author": "Luc",
+          "date": "2026-04-19T14:33:26+00:00"
+        },
+        {
+          "sha": "e5835d7",
+          "message": "UI Adjustment for theme and menus",
+          "author": "Luc",
+          "date": "2026-04-19T13:55:51+00:00"
+        },
+        {
+          "sha": "4ce4e9c",
+          "message": "Fix typos",
+          "author": "Luc",
+          "date": "2026-04-13T16:23:09+00:00"
+        },
+        {
+          "sha": "10eb797",
+          "message": "Porting ESP3D",
+          "author": "Luc",
+          "date": "2026-04-13T16:00:12+00:00"
+        },
         {
           "sha": "e43fab0",
           "message": "Create themes showcase directory\n\nAdd orca theme from gilex-dev",
@@ -299,250 +449,9 @@
           "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
           "author": "Luc",
           "date": "2024-11-25T07:46:51+00:00"
-        },
-        {
-          "sha": "888d280",
-          "message": "Update due to https://github.com/luc-github/ESP3D/issues/955\n\nComplete Pins for ESP32 Eth Lite",
-          "author": "Luc",
-          "date": "2024-11-25T02:10:01+00:00"
-        },
-        {
-          "sha": "039e431",
-          "message": "Fix array Markdown not properly displayed\n\nAdd extension isConnected basic reference",
-          "author": "Luc",
-          "date": "2024-11-23T08:06:11+00:00"
-        },
-        {
-          "sha": "3641b57",
-          "message": "fix path of screenshots",
-          "author": "Luc",
-          "date": "2024-11-18T00:44:05+00:00"
-        },
-        {
-          "sha": "c63cd3f",
-          "message": "Update index.md",
-          "author": "Luc",
-          "date": "2024-11-04T21:05:03+00:00"
-        },
-        {
-          "sha": "0ab0c66",
-          "message": "add otg doc",
-          "author": "Luc",
-          "date": "2024-11-04T02:51:08+00:00"
-        },
-        {
-          "sha": "7fea8cf",
-          "message": "Update index.md",
-          "author": "Luc",
-          "date": "2024-10-30T11:23:11+00:00"
-        },
-        {
-          "sha": "6dd02c3",
-          "message": "Update NodeMCU with pinout",
-          "author": "Luc",
-          "date": "2024-10-28T04:04:27+00:00"
-        },
-        {
-          "sha": "9414745",
-          "message": "Doc for ESP32-S3-LCD-1.47 - WIP",
-          "author": "Luc",
-          "date": "2024-10-28T03:48:59+00:00"
-        },
-        {
-          "sha": "bd6dd4a",
-          "message": "Add some notes to clarify connection",
-          "author": "Luc",
-          "date": "2024-10-21T08:54:36+00:00"
-        },
-        {
-          "sha": "84c20c7",
-          "message": "Update as now USB Serial OTG is supported",
-          "author": "Luc",
-          "date": "2024-10-21T08:46:37+00:00"
-        },
-        {
-          "sha": "1ab5f55",
-          "message": "Update Xiao Sense S3",
-          "author": "Luc",
-          "date": "2024-10-21T05:39:11+00:00"
-        },
-        {
-          "sha": "5aa25e3",
-          "message": "Add ttgo eth lite",
-          "author": "Luc",
-          "date": "2024-10-21T05:36:34+00:00"
-        },
-        {
-          "sha": "b599e5a",
-          "message": "Add Lilygo T-ETH Lite",
-          "author": "Luc",
-          "date": "2024-09-11T09:33:44+00:00"
-        },
-        {
-          "sha": "422d519",
-          "message": "Add missing FAQ menu in ESP3D 3.X",
-          "author": "Luc",
-          "date": "2024-09-07T06:18:53+00:00"
-        },
-        {
-          "sha": "06345eb",
-          "message": "Update version of ESP32 Core for ESP3D 3.0\n\nFix some typos",
-          "author": "Luc",
-          "date": "2024-09-06T04:48:50+00:00"
-        },
-        {
-          "sha": "8401e34",
-          "message": "Add ESP116/117/118 commands\n\nAdd new settings",
-          "author": "Luc",
-          "date": "2024-09-05T01:28:01+00:00"
-        },
-        {
-          "sha": "3860adb",
-          "message": "Update ethernet docs\n\nFix some typo with markdown",
-          "author": "Luc",
-          "date": "2024-09-02T13:19:53+00:00"
-        },
-        {
-          "sha": "d624e2d",
-          "message": "Update index.md",
-          "author": "Luc",
-          "date": "2024-09-01T04:50:40+00:00"
-        },
-        {
-          "sha": "eaa8930",
-          "message": "Add C6 support",
-          "author": "Luc",
-          "date": "2024-09-01T01:57:07+00:00"
-        },
-        {
-          "sha": "f202907",
-          "message": "add partitions for reference",
-          "author": "Luc",
-          "date": "2024-08-24T05:01:23+00:00"
-        },
-        {
-          "sha": "0e9f0f1",
-          "message": "Merge branch 'main' of https://github.com/luc-github/esp3d.io",
-          "author": "Luc",
-          "date": "2024-08-23T04:22:18+00:00"
-        },
-        {
-          "sha": "9b06c87",
-          "message": "Add telnet and lua for ESP3D V3.0",
-          "author": "Luc",
-          "date": "2024-08-23T04:22:14+00:00"
-        },
-        {
-          "sha": "9eb49b2",
-          "message": "Update mkdocs.yml",
-          "author": "Luc",
-          "date": "2024-08-23T00:37:24+00:00"
-        },
-        {
-          "sha": "936dec3",
-          "message": "Fix typo do display  some Notes\n\nAdd mining menu to extra content in webui 3.0 documentation",
-          "author": "Luc",
-          "date": "2024-08-21T04:17:23+00:00"
-        },
-        {
-          "sha": "0796a92",
-          "message": "Update with extensions Description and API\n\nFIx some typo with Notes",
-          "author": "Luc",
-          "date": "2024-08-20T15:52:12+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-04-20T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-04-27T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-04T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-11T00:00:00+00:00",
-          "total": 1,
-          "days": [
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-18T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-25T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-06-01T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-08T00:00:00+00:00",
           "total": 0,
@@ -1117,6 +1026,97 @@
         },
         {
           "week": "2026-04-12T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-19T00:00:00+00:00",
+          "total": 18,
+          "days": [
+            2,
+            8,
+            5,
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-03T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-10T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-24T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-31T00:00:00+00:00",
           "total": 0,
           "days": [
             0,
@@ -1131,18 +1131,18 @@
       ]
     },
     "statistics": {
-      "size": 114402,
+      "size": 121749,
       "stars": 12,
       "forks": 66,
       "open_issues": 3,
       "watchers": 12,
-      "default_branch": "main",
+      "default_branch": "starlight-astro-porting",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
-      "version": "2.1.0",
+      "version": "3.0.0",
       "devt": null,
-      "display": "v2.1.0",
+      "display": "v3.0.0",
       "status": "production"
     }
   }

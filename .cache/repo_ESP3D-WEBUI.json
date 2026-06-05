@@ -1,5 +1,5 @@
 {
-  "timestamp": 1776132031.9023323,
+  "timestamp": 1780627571.506853,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-04-10T08:57:32+00:00",
+    "updated_at": "2026-06-01T18:58:35+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -234,7 +234,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 345,
+        "contributions": 359,
         "url": "https://github.com/luc-github"
       },
       {
@@ -301,16 +301,100 @@
     "activity": {
       "recent_commits": [
         {
-          "sha": "97c01e8",
-          "message": "Update build-ci.yml",
+          "sha": "b6f501c",
+          "message": "Update for release preparation",
           "author": "Luc",
-          "date": "2026-03-29T03:58:31+00:00"
+          "date": "2026-05-25T06:44:27+00:00"
         },
         {
-          "sha": "6e33e7a",
-          "message": "Update devt version to 3.1.0 beta 1",
+          "sha": "4be7726",
+          "message": "Fix external manifest for extension fallback documented but not yet implemented\n\nUpdate for rc1",
           "author": "Luc",
-          "date": "2026-03-15T13:29:25+00:00"
+          "date": "2026-05-08T06:00:53+00:00"
+        },
+        {
+          "sha": "e72782a",
+          "message": "Update info.json",
+          "author": "Luc",
+          "date": "2026-04-24T05:55:21+00:00"
+        },
+        {
+          "sha": "2161691",
+          "message": "Create release_notes_3.1.0_beta2.md",
+          "author": "Luc",
+          "date": "2026-04-24T05:54:29+00:00"
+        },
+        {
+          "sha": "451e8fa",
+          "message": "Add support for https and wss if detected\n\nRebuild packages",
+          "author": "Luc",
+          "date": "2026-04-17T04:49:11+00:00"
+        },
+        {
+          "sha": "d96b431",
+          "message": "Fix WS if no port provided",
+          "author": "Luc",
+          "date": "2026-04-15T13:32:08+00:00"
+        },
+        {
+          "sha": "77bfbb2",
+          "message": "Add Manifest for languages packs  and themes packs\n\nAdd Js / font  to themes packs",
+          "author": "Luc",
+          "date": "2026-04-12T12:16:17+00:00"
+        },
+        {
+          "sha": "2a68aa0",
+          "message": "Update size calculation to take in account brotli packages",
+          "author": "Luc",
+          "date": "2026-04-09T11:16:50+00:00"
+        },
+        {
+          "sha": "20c3eb9",
+          "message": "Allow to select visibility on start per item for extra content",
+          "author": "Luc",
+          "date": "2026-04-09T08:03:28+00:00"
+        },
+        {
+          "sha": "6c7707c",
+          "message": "remove working docs",
+          "author": "Luc",
+          "date": "2026-04-01T10:34:40+00:00"
+        },
+        {
+          "sha": "07906c2",
+          "message": "Implement brotli support in build tool chain",
+          "author": "Luc",
+          "date": "2026-04-01T10:32:48+00:00"
+        },
+        {
+          "sha": "1f4990f",
+          "message": "Update build-ci.yml",
+          "author": "Luc",
+          "date": "2026-03-29T03:57:57+00:00"
+        },
+        {
+          "sha": "7a94b38",
+          "message": "Fix subdir does not generate 404 on all system do more check",
+          "author": "Luc",
+          "date": "2026-03-15T12:30:58+00:00"
+        },
+        {
+          "sha": "19a69da",
+          "message": "Do npm audit fix\n\nRemove unused Memo directory",
+          "author": "Luc",
+          "date": "2026-03-15T09:34:40+00:00"
+        },
+        {
+          "sha": "b83c059",
+          "message": "Improvement (#449)\n\nAdd new settings for panels size\nAdd screening for extensions\nAdd extension scan and selector\nAllows to move extra content panels individualy\nAllow to move panels by drag and drop in dash board\nAllow to store extensions in extensions sub directory or root but not both\nAllow to store language packs in languages sub directory or root but not both\nAllow to store themes in themes sub directory or root but not both\nRefactoring of the test server for esier maintainability\nImprove packing process to decrease final package\nRemove some icons that seems not useful in webui context to decrease final package\nSave in preferences.json only differences from default values\nMinify preferences.json to decrease file size\nUpdate severals styles for UI consistency\nUpdate all translations pack\nAdd several tools for easier language update including tools to detect missing translations/ automate translations / update missing translations\nRemove smoothie package to use a stripped version to decrease final package size\nUpdate browser list and hash",
+          "author": "Luc",
+          "date": "2026-03-15T09:17:35+00:00"
+        },
+        {
+          "sha": "1ec088f",
+          "message": "Code base for 3.1 (#448)\n\nAdd new settings for panels size\nAdd screening for extensions\nAdd extension scan and selector\nAllows to move extra content panels individualy\nAllow to move panels by drag and drop in dash board\nAllow to store extensions in extensions sub directory or root but not both\nAllow to store language packs in languages sub directory or root but not both\nAllow to store themes in themes sub directory or root but not both\nRefactoring of the test server for esier maintainability\nImprove packing process to decrease final package\nRemove some icons that seems not useful in webui context to decrease final package\nSave in preferences.json only differences from default values\nMinify preferences.json to decrease file size\nUpdate severals styles for UI consistency\nUpdate all translations pack\nAdd several tools for easier language update including tools to detect missing translations/ automate translations / update missing translations\nRemove smoothie package to use a stripped version to decrease final package size\nUpdate browser list and hash",
+          "author": "Luc",
+          "date": "2026-03-15T09:07:22+00:00"
         },
         {
           "sha": "64c58c8",
@@ -539,184 +623,9 @@
           "message": "Update 3D printer jog settings panel conditions",
           "author": "Luc",
           "date": "2024-12-08T11:52:34+00:00"
-        },
-        {
-          "sha": "afc4148",
-          "message": "fix race condition that make extension to be loaded twice, use isLoadedState[id] instead of isLoading to prevent it",
-          "author": "Luc",
-          "date": "2024-12-05T04:51:17+00:00"
-        },
-        {
-          "sha": "a57ec62",
-          "message": "Update P1 to P0 for consistency  for probe",
-          "author": "Luc",
-          "date": "2024-12-04T12:24:30+00:00"
-        },
-        {
-          "sha": "dae9c6d",
-          "message": "Make MX state multiple instead of unique\n\nAdd M6 for Tool change\nBump version\nBuild package\nUpdate grbl test server to have changing $G report",
-          "author": "Luc",
-          "date": "2024-12-03T00:16:41+00:00"
-        },
-        {
-          "sha": "29daa79",
-          "message": "Fix empty icon width in icon selector is not consistent\n\nAdd online help to esp3d.io in info page",
-          "author": "Luc",
-          "date": "2024-12-02T05:45:28+00:00"
-        },
-        {
-          "sha": "193447d",
-          "message": "Add version badge",
-          "author": "Luc",
-          "date": "2024-12-01T08:13:27+00:00"
-        },
-        {
-          "sha": "260ac24",
-          "message": "Add extensions readme",
-          "author": "Luc",
-          "date": "2024-11-28T06:57:48+00:00"
-        },
-        {
-          "sha": "cabfd29",
-          "message": "Better notification to extensions for isVisible\n\nAdd notification to extension: isConnected to track WS status and inform extensions\nBump version",
-          "author": "Luc",
-          "date": "2024-11-23T07:52:27+00:00"
-        },
-        {
-          "sha": "0b0116f",
-          "message": "update packages",
-          "author": "Luc",
-          "date": "2024-10-13T07:34:05+00:00"
-        },
-        {
-          "sha": "2c14171",
-          "message": "Add more captive portal URL\n\nFix Marlin filter file settings not working for second SD and isolate normal SD and Direct SD setting to avoid duplicate item and so conflict value\nBump version",
-          "author": "Luc",
-          "date": "2024-10-13T07:29:50+00:00"
-        },
-        {
-          "sha": "27ba10f",
-          "message": "Add Missing translation\n\nFix typo for grblHAL/grbl",
-          "author": "Luc",
-          "date": "2024-09-23T06:38:36+00:00"
-        },
-        {
-          "sha": "79384ad",
-          "message": "Remove excessive bottom margin on pages",
-          "author": "Luc",
-          "date": "2024-08-21T10:51:25+00:00"
-        },
-        {
-          "sha": "0f530b5",
-          "message": "Better UI on landscape / portrait for GCode Viewer",
-          "author": "Luc",
-          "date": "2024-08-21T09:12:52+00:00"
-        },
-        {
-          "sha": "779883e",
-          "message": "remove .gz extension in url for local extension\n\nBump Version\nBuild packages",
-          "author": "Luc",
-          "date": "2024-08-21T01:15:54+00:00"
-        },
-        {
-          "sha": "3c8f38f",
-          "message": "Bump version\n\nBuild packages",
-          "author": "Luc",
-          "date": "2024-08-16T05:40:42+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-04-20T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-04-27T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-04T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-11T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-18T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-25T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-06-01T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-08T00:00:00+00:00",
           "total": 0,
@@ -1239,9 +1148,9 @@
         },
         {
           "week": "2026-03-15T00:00:00+00:00",
-          "total": 2,
+          "total": 4,
           "days": [
-            2,
+            4,
             0,
             0,
             0,
@@ -1265,12 +1174,12 @@
         },
         {
           "week": "2026-03-29T00:00:00+00:00",
-          "total": 1,
+          "total": 3,
           "days": [
             1,
             0,
             0,
-            0,
+            2,
             0,
             0,
             0
@@ -1278,6 +1187,45 @@
         },
         {
           "week": "2026-04-05T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-12T00:00:00+00:00",
+          "total": 3,
+          "days": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-19T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-26T00:00:00+00:00",
           "total": 0,
           "days": [
             0,
@@ -1290,7 +1238,59 @@
           ]
         },
         {
-          "week": "2026-04-12T00:00:00+00:00",
+          "week": "2026-05-03T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-24T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-31T00:00:00+00:00",
           "total": 0,
           "days": [
             0,
@@ -1305,19 +1305,19 @@
       ]
     },
     "statistics": {
-      "size": 126197,
-      "stars": 871,
-      "forks": 339,
+      "size": 131053,
+      "stars": 878,
+      "forks": 343,
       "open_issues": 11,
-      "watchers": 871,
-      "default_branch": "3.0",
+      "watchers": 878,
+      "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
-      "version": "3.0.1",
-      "devt": "3.1.0 beta 1",
-      "display": "v3.0.1 / dev:3.1.0 beta 1",
-      "status": "both"
+      "version": "3.1.0",
+      "devt": "3.1.0",
+      "display": "v3.1.0",
+      "status": "production"
     }
   }
 }

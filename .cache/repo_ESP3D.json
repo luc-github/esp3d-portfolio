@@ -1,5 +1,5 @@
 {
-  "timestamp": 1776131859.4786875,
+  "timestamp": 1780627547.4066255,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-04-13T15:16:03+00:00",
+    "updated_at": "2026-06-04T20:25:05+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -119,7 +119,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 575,
+        "contributions": 584,
         "url": "https://github.com/luc-github"
       },
       {
@@ -200,6 +200,60 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "8a62e5f",
+          "message": "Update esp3d_pins.h",
+          "author": "Luc",
+          "date": "2026-06-03T12:38:33+00:00"
+        },
+        {
+          "sha": "12a7030",
+          "message": "Add NetNeighbor reference",
+          "author": "Luc",
+          "date": "2026-06-01T08:59:58+00:00"
+        },
+        {
+          "sha": "9ed8fab",
+          "message": "add new logos set",
+          "author": "Luc",
+          "date": "2026-05-30T23:32:47+00:00"
+        },
+        {
+          "sha": "92932ce",
+          "message": "Update Lua credits\n\nAdd documentation for Lua and mDNS",
+          "author": "Luc",
+          "date": "2026-05-30T08:56:08+00:00"
+        },
+        {
+          "sha": "03135ce",
+          "message": "Add device-info in mdns services\n\nRemove unnecessary relation with WEBSERVER\nBetter port selection for esp3d service",
+          "author": "Luc",
+          "date": "2026-05-28T06:32:42+00:00"
+        },
+        {
+          "sha": "456fe95",
+          "message": "Code cleanup - removing Line as API is no more supported by Line",
+          "author": "Luc",
+          "date": "2026-05-27T02:55:16+00:00"
+        },
+        {
+          "sha": "64cb21a",
+          "message": "Preparation for release",
+          "author": "Luc",
+          "date": "2026-05-25T06:49:28+00:00"
+        },
+        {
+          "sha": "a70d842",
+          "message": "Improve SD Sharing and SD access flow\n\nUpdate documentation",
+          "author": "Luc",
+          "date": "2026-05-13T00:34:59+00:00"
+        },
+        {
+          "sha": "f6e1a29",
+          "message": "Websocket file transfert",
+          "author": "Luc",
+          "date": "2026-05-12T04:17:20+00:00"
+        },
         {
           "sha": "6132284",
           "message": "docs: add Binch3000 as a contributor for bug (#1129)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
@@ -469,154 +523,9 @@
           "message": "Buzzer bug fixed. (#1081)\n\n* Adjusted buzzer initialization logic to support ESP-IDF 5.1.1, added conditional compilation to be compatible with older versions\n\n* Update buzzer.cpp",
           "author": "E2D",
           "date": "2025-03-14T15:17:13+00:00"
-        },
-        {
-          "sha": "dc8e221",
-          "message": "Update info.json\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2025-03-12T07:02:33+00:00"
-        },
-        {
-          "sha": "8b70bb5",
-          "message": "Update esp3d_version.h\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2025-03-12T07:01:42+00:00"
-        },
-        {
-          "sha": "a57850a",
-          "message": "Fixed the issue where Ethernet static IP cannot be set. (#1080)",
-          "author": "E2D",
-          "date": "2025-03-12T07:00:40+00:00"
-        },
-        {
-          "sha": "750ef32",
-          "message": "Update wificonfig.cpp",
-          "author": "Luc",
-          "date": "2025-01-30T08:51:56+00:00"
-        },
-        {
-          "sha": "c222ba8",
-          "message": "smaller svg logo",
-          "author": "Luc",
-          "date": "2025-01-26T02:37:53+00:00"
-        },
-        {
-          "sha": "ed2d713",
-          "message": "Update embedded for help link to go to esp3d.io",
-          "author": "Luc",
-          "date": "2025-01-21T09:09:02+00:00"
-        },
-        {
-          "sha": "880ab40",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2024-12-18T04:19:04+00:00"
-        },
-        {
-          "sha": "6c10293",
-          "message": "Fix version in readme and json orz\n\nUpdate readme",
-          "author": "Luc",
-          "date": "2024-12-18T04:07:34+00:00"
-        },
-        {
-          "sha": "8293833",
-          "message": "Bump version for beta 1",
-          "author": "Luc",
-          "date": "2024-12-18T03:40:33+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-04-20T00:00:00+00:00",
-          "total": 1,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1
-          ]
-        },
-        {
-          "week": "2025-04-27T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-04T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-11T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-18T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-25T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-06-01T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-08T00:00:00+00:00",
           "total": 0,
@@ -1201,22 +1110,113 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-04-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-10T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-24T00:00:00+00:00",
+          "total": 4,
+          "days": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2026-05-31T00:00:00+00:00",
+          "total": 3,
+          "days": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 134742,
-      "stars": 1958,
-      "forks": 489,
+      "size": 140778,
+      "stars": 1979,
+      "forks": 490,
       "open_issues": 5,
-      "watchers": 1958,
-      "default_branch": "3.0",
+      "watchers": 1979,
+      "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
-      "version": "3.0.2",
-      "devt": "3.0.3",
-      "display": "v3.0.2 / dev:3.0.3",
+      "version": "3.1.0",
+      "devt": "3.1.1",
+      "display": "v3.1.0 / dev:3.1.1",
       "status": "both"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1776132269.2976267,
+  "timestamp": 1780627615.9758666,
   "data": {
     "name": "esp3d-webinstaller",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/esp3d-webinstaller",
     "language": "JavaScript",
     "created_at": "2025-12-14T01:52:22+00:00",
-    "updated_at": "2026-03-17T10:26:05+00:00",
+    "updated_at": "2026-05-29T13:12:58+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "0e232ce",
-          "message": "Update for mp4\n\nremove testing",
+          "sha": "d2fc37e",
+          "message": "Add duration bar on flash window with a countdown\n\nAdd a dialog box to propose to retry in case of timeout to avoid the user to redo the full process",
           "author": "Luc",
-          "date": "2026-03-17T10:25:58+00:00"
+          "date": "2026-05-29T13:12:48+00:00"
         },
         "protected": false,
         "issues": []
@@ -26,12 +26,72 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 35,
+        "contributions": 45,
         "url": "https://github.com/luc-github"
       }
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "d2fc37e",
+          "message": "Add duration bar on flash window with a countdown\n\nAdd a dialog box to propose to retry in case of timeout to avoid the user to redo the full process",
+          "author": "Luc",
+          "date": "2026-05-29T13:12:48+00:00"
+        },
+        {
+          "sha": "5c7e102",
+          "message": "Improve flash UX adding picture to locate flash button\n\nIncrease agressive time out from 3 seconds to 10 seconds\nPut default baudrate on OSX to 115200 instead of fastest one\nAllows to retry flash if port is busy instead of cancelling process\nLog baudrate in case of error/success to follow if issues follow baudrates",
+          "author": "Luc",
+          "date": "2026-05-29T09:37:37+00:00"
+        },
+        {
+          "sha": "7fd9c73",
+          "message": "Fix le last step color",
+          "author": "Luc",
+          "date": "2026-05-03T11:59:56+00:00"
+        },
+        {
+          "sha": "7257b65",
+          "message": "new favicon",
+          "author": "Luc",
+          "date": "2026-04-23T10:11:38+00:00"
+        },
+        {
+          "sha": "2b4aea9",
+          "message": "add auto for light mode",
+          "author": "Luc",
+          "date": "2026-04-23T08:13:32+00:00"
+        },
+        {
+          "sha": "aff3370",
+          "message": "Improve UI consistency",
+          "author": "Luc",
+          "date": "2026-04-23T07:51:33+00:00"
+        },
+        {
+          "sha": "becfe65",
+          "message": "Add better drop list style  with icons and status\n\nAdd better view and customization for baud rate",
+          "author": "Luc",
+          "date": "2026-04-23T04:11:31+00:00"
+        },
+        {
+          "sha": "08e5190",
+          "message": "Update script.js",
+          "author": "Luc",
+          "date": "2026-04-22T12:57:43+00:00"
+        },
+        {
+          "sha": "ecbb546",
+          "message": "Add version support",
+          "author": "Luc",
+          "date": "2026-04-22T12:01:40+00:00"
+        },
+        {
+          "sha": "c3fdcb4",
+          "message": "Change logo\n\nAdd baudrate change support\nChange config.json  to use customized parameters if necessary\nRemove ESP32 everywhere to become more generic\nUpdate  and clean readme\nBump version",
+          "author": "Luc",
+          "date": "2026-04-22T10:21:36+00:00"
+        },
         {
           "sha": "0e232ce",
           "message": "Update for mp4\n\nremove testing",
@@ -244,97 +304,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-04-19T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-04-26T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-03T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-10T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-17T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-24T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-31T23:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-07T23:00:00+00:00",
           "total": 0,
@@ -919,11 +888,102 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-04-19T00:00:00+00:00",
+          "total": 7,
+          "days": [
+            0,
+            0,
+            0,
+            3,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-03T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-24T00:00:00+00:00",
+          "total": 2,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 20722,
+      "size": 24503,
       "stars": 2,
       "forks": 0,
       "open_issues": 0,
@@ -933,8 +993,8 @@
     },
     "version_info": {
       "version": null,
-      "devt": "1.0.3",
-      "display": "dev:1.0.3",
+      "devt": "1.0.5",
+      "display": "dev:1.0.5",
       "status": "development"
     }
   }

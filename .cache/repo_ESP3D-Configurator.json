@@ -1,5 +1,5 @@
 {
-  "timestamp": 1776132091.3968801,
+  "timestamp": 1780627601.2737586,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -7,73 +7,26 @@
     "url": "https://github.com/luc-github/ESP3D-Configurator",
     "language": "JavaScript",
     "created_at": "2022-06-03T07:30:48+00:00",
-    "updated_at": "2026-01-01T23:59:39+00:00",
+    "updated_at": "2026-06-03T09:02:46+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "644f37a",
-          "message": "Include disclaimer in README\n\nAdded a disclaimer about software usage and liability.",
+          "sha": "6254efd",
+          "message": "Merge pull request #29 from luc-github/refactoring\n\nRefactoring for better maintenance and improve reliability",
           "author": "Luc",
-          "date": "2025-12-17T08:40:18+00:00"
+          "date": "2026-06-03T08:54:11+00:00"
         },
         "protected": false,
-        "issues": [
-          {
-            "number": 28,
-            "title": "[FEATURE REQUEST] Configure Client mode",
-            "body": "Its possible make a configuration for work in client mode?\u00bf\n",
-            "state": "open",
-            "created_at": "2025-03-10T18:10:37+00:00",
-            "updated_at": "2025-03-10T18:11:05+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-Configurator/issues/28",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 16,
-            "title": "[FEATURE REQUEST]Web Flasher Tool",
-            "body": "May be use : https://esphome.github.io/esp-web-tools/",
-            "state": "open",
-            "created_at": "2023-05-18T01:28:29+00:00",
-            "updated_at": "2023-05-18T01:28:29+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-Configurator/issues/16",
-            "is_pr": false,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 5,
-            "title": "[Information]Devt status",
-            "body": "The configurator is now in beta state \ud83c\udf86 \r\nThe current version is compatible with ESP3D 3.0 only\r\n\r\nIt still need to get improved text content (suggestions/contributions are more than welcome) and add translations support once text is ready.\r\n \r\nThe offline behavior seems not consistent across browsers - so only online version is currently usable=> under investigation\r\n\r\nEdit: offline mode is now fixed and prebuild is available in `build` directory",
-            "state": "open",
-            "created_at": "2022-06-18T06:49:19+00:00",
-            "updated_at": "2022-08-18T01:28:03+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-Configurator/issues/5",
-            "is_pr": false,
-            "labels": [
-              "documentation",
-              "help wanted",
-              "Work in progress"
-            ],
-            "priority": "normal",
-            "assignee": null
-          }
-        ]
+        "issues": []
       }
     ],
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 103,
+        "contributions": 110,
         "url": "https://github.com/luc-github"
       },
       {
@@ -89,6 +42,48 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "6254efd",
+          "message": "Merge pull request #29 from luc-github/refactoring\n\nRefactoring for better maintenance and improve reliability",
+          "author": "Luc",
+          "date": "2026-06-03T08:54:11+00:00"
+        },
+        {
+          "sha": "2c3374b",
+          "message": "Merge branch 'main' into refactoring",
+          "author": "Luc",
+          "date": "2026-06-03T08:52:28+00:00"
+        },
+        {
+          "sha": "09fb609",
+          "message": "Update .gitignore",
+          "author": "Luc",
+          "date": "2026-06-03T08:29:35+00:00"
+        },
+        {
+          "sha": "6e4d7f1",
+          "message": "Update documentation",
+          "author": "Luc",
+          "date": "2026-06-03T07:26:27+00:00"
+        },
+        {
+          "sha": "ded3d02",
+          "message": "Better Pins management\n\nAllows export / import of the config\nAdd Light/Auto/Dark mode\nAdd preset feature to add easily new board on existing list",
+          "author": "Luc",
+          "date": "2026-06-03T07:21:48+00:00"
+        },
+        {
+          "sha": "485771a",
+          "message": "Display default pins and do immediate update of availablble GPIO\n\nBlock configuration files download if any GPIO conflict",
+          "author": "Luc",
+          "date": "2026-06-02T13:22:04+00:00"
+        },
+        {
+          "sha": "32d76bd",
+          "message": "Make tab accessibles anytime\n\nSplit configuration.json by tab for easier maintenance",
+          "author": "Luc",
+          "date": "2026-06-02T11:18:28+00:00"
+        },
         {
           "sha": "644f37a",
           "message": "Include disclaimer in README\n\nAdded a disclaimer about software usage and liability.",
@@ -370,142 +365,9 @@
           "message": "Fix wrong default value for SDIO MODE",
           "author": "Luc",
           "date": "2022-06-27T04:07:36+00:00"
-        },
-        {
-          "sha": "7c72ac5",
-          "message": "Fix missing env: in platformio.ini",
-          "author": "Luc",
-          "date": "2022-06-27T02:00:00+00:00"
-        },
-        {
-          "sha": "39cad20",
-          "message": "Remove ethernet feature if ESP01 form factor orz...",
-          "author": "Luc",
-          "date": "2022-06-26T03:17:12+00:00"
-        },
-        {
-          "sha": "9a7a7b9",
-          "message": "Add support of Esp01 Form Factor\n\nLimit pins according form factors (all or  ESP01 (0/2 for esp8266 and  2,8,9 for ESP32-C3)\nLimit settings according pins form factors\nAdd support for multiple depend\nAdd SD SPI pins customization\nChange None label for pin by Default according context\nBumb version",
-          "author": "Luc",
-          "date": "2022-06-26T03:10:31+00:00"
-        },
-        {
-          "sha": "3f6b085",
-          "message": "Fix typo",
-          "author": "Luc",
-          "date": "2022-06-25T09:38:47+00:00"
-        },
-        {
-          "sha": "28d4711",
-          "message": "Add default pins for each mcu\n\nAdd pins for SPI screens\nAdd platformio.ini generation",
-          "author": "Luc",
-          "date": "2022-06-25T09:35:07+00:00"
-        },
-        {
-          "sha": "3564810",
-          "message": "Remove SSL Client settings\n\nAdd number type for generated results\nDo not show Autostart section if set to  none",
-          "author": "Luc",
-          "date": "2022-06-22T12:56:59+00:00"
-        },
-        {
-          "sha": "15893a2",
-          "message": "Update index.html",
-          "author": "Luc",
-          "date": "2022-06-22T02:52:09+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-04-20T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-04-27T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-04T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-11T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-18T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-25T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-06-01T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-08T00:00:00+00:00",
           "total": 0,
@@ -1090,22 +952,113 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-04-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-24T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-31T00:00:00+00:00",
+          "total": 5,
+          "days": [
+            0,
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 942,
+      "size": 1054,
       "stars": 9,
       "forks": 5,
-      "open_issues": 3,
+      "open_issues": 0,
       "watchers": 9,
       "default_branch": "main",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
-      "version": "1.0.34",
+      "version": "1.1.0",
       "devt": null,
-      "display": "v1.0.34",
+      "display": "v1.1.0",
       "status": "production"
     }
   }

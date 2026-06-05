@@ -1,5 +1,5 @@
 {
-  "timestamp": 1776133119.484678,
+  "timestamp": 1780627645.6377833,
   "data": {
     "name": "EspLuaEngine",
     "type": "dependency",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/EspLuaEngine",
     "language": "C",
     "created_at": "2024-08-17T11:15:11+00:00",
-    "updated_at": "2026-02-19T05:46:50+00:00",
+    "updated_at": "2026-05-30T08:54:37+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "e4c3f46",
-          "message": "Add disclaimer about software warranty and usage\n\nAdded a disclaimer section to the README file to clarify the software's warranty and usage conditions.",
+          "sha": "95406de",
+          "message": "Update credits to Lua",
           "author": "Luc",
-          "date": "2025-12-17T10:33:51+00:00"
+          "date": "2026-05-30T08:54:29+00:00"
         },
         "protected": false,
         "issues": []
@@ -26,12 +26,18 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 9,
+        "contributions": 10,
         "url": "https://github.com/luc-github"
       }
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "95406de",
+          "message": "Update credits to Lua",
+          "author": "Luc",
+          "date": "2026-05-30T08:54:29+00:00"
+        },
         {
           "sha": "e4c3f46",
           "message": "Add disclaimer about software warranty and usage\n\nAdded a disclaimer section to the README file to clarify the software's warranty and usage conditions.",
@@ -88,97 +94,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-04-20T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-04-27T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-04T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-11T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-18T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-05-25T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "week": "2025-06-01T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-08T00:00:00+00:00",
           "total": 0,
@@ -763,11 +678,102 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-04-19T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-04-26T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-03T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-10T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-17T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "week": "2026-05-24T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "week": "2026-05-31T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 425,
+      "size": 595,
       "stars": 4,
       "forks": 1,
       "open_issues": 0,
