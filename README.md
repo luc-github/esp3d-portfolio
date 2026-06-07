@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-32-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2006%20%2F%2006%2002:34%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2006%20%2F%2007%2002:53%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -70,18 +70,18 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (21) | 7 | 0 | 3.0 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (12) | 4 | 0 | 1.7 |
-| 🥉 3  | Private Project #1 | Private | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (12) | 4 | 0 | 1.7 |
-| ▪️ 4  | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
-| ▪️ 5  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 7  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 8  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 9  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 10 | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 11 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 12 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 13 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥈 2  | Private Project #1 | Private | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (9) | 3 | 0 | 1.3 |
+| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.9 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 10 | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 11 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 12 | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 13 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 14 | [plugin_oled_display](https://github.com/luc-github/plugin_oled_display) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 
 </div>
@@ -95,7 +95,7 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (54) | 18 | 0 | 1.8 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (27) | 9 | 0 | 0.9 |
 | 🥉 3  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (21) | 7 | 0 | 0.7 |
-| ▪️ 4  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (15) | 5 | 0 | 0.5 |
+| ▪️ 4  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (12) | 4 | 0 | 0.4 |
 | ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.2 |
 | ▪️ 6  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.2 |
 | ▪️ 7  | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
@@ -147,14 +147,14 @@ Repository popularity based on GitHub stars and forks.
 
 | Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |
 |:------------|------------|------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,979 | 490 | 1,979 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 1,980 | 490 | 1,980 |
 | 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 878 | 343 | 878 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 117 | 36 | 117 |
 | ▪️ 4  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 56 | 27 | 56 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 51 | 16 | 51 |
 | ▪️ 6  | [esp32-usb-serial](https://github.com/luc-github/esp32-usb-serial) | Dependency | 18 | 5 | 18 |
 | ▪️ 7  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 12 | 66 | 12 |
-| ▪️ 8  | [Marlin](https://github.com/luc-github/Marlin) | Main | 9 | 5 | 9 |
+| ▪️ 8  | [Marlin](https://github.com/luc-github/Marlin) | Main | 10 | 5 | 10 |
 | ▪️ 9  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 9 | 5 | 9 |
 | ▪️ 10 | [SSDP_IDF](https://github.com/luc-github/SSDP_IDF) | Dependency | 4 | 3 | 4 |
 | ▪️ 11 | [EspLuaEngine](https://github.com/luc-github/EspLuaEngine) | Dependency | 4 | 1 | 4 |
@@ -175,7 +175,7 @@ Repository popularity based on GitHub stars and forks.
 | Total Repositories | 14 |
 | Main Projects | 8 |
 | Dependencies | 6 |
-| Total Stars | 3141 |
+| Total Stars | 3143 |
 | Total Forks | 997 |
 
 ### Issue Statistics
@@ -184,7 +184,7 @@ Repository popularity based on GitHub stars and forks.
 |--------|-------|
 | Open Issues | 32 |
 | Closed Issues | 0 |
-| Average Age | 1055.2 days |
+| Average Age | 1056.2 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -464,7 +464,7 @@ Author: Luc
 **Version**: ⚪ missing<br>
 **Description**: Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine.<br>
 **Language**: C++<br>
-**Health Score**: <span style="color: #ff0000">13.9%</span>
+**Health Score**: <span style="color: #ff0000">14.0%</span>
 
 </td></tr></table>
 
@@ -971,7 +971,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 16 |
+| Commits | 12 |
 | New Issues | 0 |
 | Closed Issues | 0 |
 | Active Contributors | 1 |
@@ -999,7 +999,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2026-06-06 02:34:32 UTC*
+*🔄 Last updated: 2026-06-07 02:53:30 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
