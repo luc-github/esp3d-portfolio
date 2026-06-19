@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781751190.3956563,
+  "timestamp": 1781840388.7315326,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 455,
+            "title": "Rationalize ESP700 path syntax across targets",
+            "body": "Centralize ESP700 command building in targets/helpers\r\n\r\nReplace legacy stream= form with [ESP700]/SD or /FS path syntax in Marlin, CNC GRBL and SandTable GRBL sources\r\n\r\nNormalize Status panel ESP701 controls to action= syntax and reuse canonical builder in Macros FS actions",
+            "state": "open",
+            "created_at": "2026-06-18T14:12:15+00:00",
+            "updated_at": "2026-06-18T14:12:15+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/455",
+            "is_pr": true,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 454,
             "title": "[INFORMATION]Brotli Support",
@@ -1307,8 +1321,8 @@
     "statistics": {
       "size": 131053,
       "stars": 881,
-      "forks": 343,
-      "open_issues": 11,
+      "forks": 344,
+      "open_issues": 12,
       "watchers": 881,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
