@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781923395.1794922,
+  "timestamp": 1782012274.2732537,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-06-19T21:54:17+00:00",
+    "updated_at": "2026-06-20T23:47:24+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -119,7 +119,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 585,
+        "contributions": 586,
         "url": "https://github.com/luc-github"
       },
       {
@@ -200,6 +200,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "9ac738a",
+          "message": "Fix documentation link in README.md\n\nUpdated the documentation link to point to the correct version.\r\nThanks @Armaan-Raisinghani for pointing out\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2026-06-20T23:47:19+00:00"
+        },
         {
           "sha": "1f76ce0",
           "message": "Disable default output\n\nfix typo in header for sd",
@@ -517,28 +523,9 @@
           "message": "Fixed the issue that ESP201 cannot display the ANALOG pin value. (#1083)",
           "author": "E2D",
           "date": "2025-03-17T07:19:39+00:00"
-        },
-        {
-          "sha": "d0bde79",
-          "message": "Fixed FTP client connection logic with accept(); updated service config format. (#1082)",
-          "author": "E2D",
-          "date": "2025-03-16T09:02:39+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-06-22T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-06-29T00:00:00+00:00",
           "total": 0,
@@ -1201,15 +1188,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-06-21T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 140781,
-      "stars": 1980,
+      "size": 140788,
+      "stars": 1981,
       "forks": 490,
       "open_issues": 5,
-      "watchers": 1980,
+      "watchers": 1981,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
     },
