@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783044817.3923995,
+  "timestamp": 1783131108.722238,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-07-01T19:57:35+00:00",
+    "updated_at": "2026-07-03T12:04:22+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -119,7 +119,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 586,
+        "contributions": 589,
         "url": "https://github.com/luc-github"
       },
       {
@@ -200,6 +200,24 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "6d02ec7",
+          "message": "Fix authentication does not compile if no http enabled\n\nBumb version",
+          "author": "Luc",
+          "date": "2026-07-03T12:04:12+00:00"
+        },
+        {
+          "sha": "21bd8f3",
+          "message": "Fix compilation if no http server",
+          "author": "Luc",
+          "date": "2026-07-03T08:42:12+00:00"
+        },
+        {
+          "sha": "01c4f2f",
+          "message": "Fix missing utf mention to load file",
+          "author": "Luc",
+          "date": "2026-07-03T08:41:51+00:00"
+        },
         {
           "sha": "9ac738a",
           "message": "Fix documentation link in README.md\n\nUpdated the documentation link to point to the correct version.\r\nThanks @Armaan-Raisinghani for pointing out\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -505,24 +523,6 @@
           "message": "Update info.json",
           "author": "Luc",
           "date": "2025-03-26T06:55:08+00:00"
-        },
-        {
-          "sha": "8a6334e",
-          "message": "Sd refactoring (#1086)",
-          "author": "Luc",
-          "date": "2025-03-26T06:49:45+00:00"
-        },
-        {
-          "sha": "5501e78",
-          "message": "Improve serial Service thanks @rondlh\n\nBump version due to latest fixes",
-          "author": "Luc",
-          "date": "2025-03-19T03:37:34+00:00"
-        },
-        {
-          "sha": "8104887",
-          "message": "Fixed the issue that ESP201 cannot display the ANALOG pin value. (#1083)",
-          "author": "E2D",
-          "date": "2025-03-17T07:19:39+00:00"
         }
       ],
       "commit_activity": [
@@ -1191,23 +1191,23 @@
         },
         {
           "week": "2026-06-28T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
             0,
             0,
-            0,
+            3,
             0
           ]
         }
       ]
     },
     "statistics": {
-      "size": 140788,
+      "size": 140794,
       "stars": 1982,
-      "forks": 489,
+      "forks": 490,
       "open_issues": 5,
       "watchers": 1982,
       "default_branch": "3.1",

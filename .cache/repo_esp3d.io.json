@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783044874.202531,
+  "timestamp": 1783131161.7776358,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "MDX",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2026-06-07T16:00:59+00:00",
+    "updated_at": "2026-07-03T12:09:21+00:00",
     "branches": [
       {
         "name": "main",
@@ -75,7 +75,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 234,
+        "contributions": 235,
         "url": "https://github.com/luc-github"
       },
       {
@@ -126,6 +126,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "4aa9f62",
+          "message": "Add better credits material",
+          "author": "Luc",
+          "date": "2026-07-03T12:09:12+00:00"
+        },
         {
           "sha": "1e26915",
           "message": "Remove Line everywhere\n\nRemove What'sApp from ESP3D-TFT as not supported on it actually",
@@ -443,12 +449,6 @@
           "message": "Update mkdocs.yml",
           "author": "Luc",
           "date": "2024-11-25T09:05:18+00:00"
-        },
-        {
-          "sha": "4d1b495",
-          "message": "Add what's App / callmebot documentation for https://github.com/luc-github/ESP3D/issues/888",
-          "author": "Luc",
-          "date": "2024-11-25T07:46:51+00:00"
         }
       ],
       "commit_activity": [
@@ -1117,21 +1117,21 @@
         },
         {
           "week": "2026-06-28T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
             0,
             0,
-            0,
+            1,
             0
           ]
         }
       ]
     },
     "statistics": {
-      "size": 121749,
+      "size": 121934,
       "stars": 13,
       "forks": 66,
       "open_issues": 3,

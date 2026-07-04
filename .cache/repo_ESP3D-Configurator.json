@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783044866.1999657,
+  "timestamp": 1783131154.227746,
   "data": {
     "name": "ESP3D-Configurator",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3D-Configurator",
     "language": "JavaScript",
     "created_at": "2022-06-03T07:30:48+00:00",
-    "updated_at": "2026-06-03T09:02:46+00:00",
+    "updated_at": "2026-07-03T12:07:48+00:00",
     "branches": [
       {
         "name": "main",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "6254efd",
-          "message": "Merge pull request #29 from luc-github/refactoring\n\nRefactoring for better maintenance and improve reliability",
+          "sha": "70948b0",
+          "message": "Fix typos change in latest code",
           "author": "Luc",
-          "date": "2026-06-03T08:54:11+00:00"
+          "date": "2026-07-03T12:07:40+00:00"
         },
         "protected": false,
         "issues": []
@@ -26,7 +26,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 110,
+        "contributions": 112,
         "url": "https://github.com/luc-github"
       },
       {
@@ -42,6 +42,18 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "70948b0",
+          "message": "Fix typos change in latest code",
+          "author": "Luc",
+          "date": "2026-07-03T12:07:40+00:00"
+        },
+        {
+          "sha": "8e419d2",
+          "message": "Remove non ascii chars if non utf8 program access configuration file (sanity check)",
+          "author": "Luc",
+          "date": "2026-07-03T08:51:11+00:00"
+        },
         {
           "sha": "6254efd",
           "message": "Merge pull request #29 from luc-github/refactoring\n\nRefactoring for better maintenance and improve reliability",
@@ -353,18 +365,6 @@
           "message": "Fix warning due to missing browserlist entry on package.json\n\nUpdate platformio.ini monitor echo flags according latest documentation : https://docs.platformio.org/en/latest/projectconf/section_env_monitor.html#monitor-echo as monitor_flags is not more supported",
           "author": "Luc",
           "date": "2022-07-17T07:57:26+00:00"
-        },
-        {
-          "sha": "756cde0",
-          "message": "Fix typo",
-          "author": "Luc",
-          "date": "2022-07-01T13:27:17+00:00"
-        },
-        {
-          "sha": "2b81808",
-          "message": "Fix wrong default value for SDIO MODE",
-          "author": "Luc",
-          "date": "2022-06-27T04:07:36+00:00"
         }
       ],
       "commit_activity": [
@@ -1033,21 +1033,21 @@
         },
         {
           "week": "2026-06-28T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
             0,
             0,
             0,
-            0,
+            2,
             0
           ]
         }
       ]
     },
     "statistics": {
-      "size": 1054,
+      "size": 1062,
       "stars": 9,
       "forks": 5,
       "open_issues": 0,
