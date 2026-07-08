@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783391279.353383,
+  "timestamp": 1783476147.4628875,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 456,
+            "title": "added multi-line for macros",
+            "body": "## Add multi-line G-code support for macros\r\n\r\nThis change allows G-code entered in the Macros module to span multiple lines, making longer macros easier to read and maintain.\r\n\r\n### Changes\r\n\r\n* Replaces the single-line macro G-code field with a multiline textarea.\r\n* Updates `CMD` macro execution to process each non-empty line as an individual command.\r\n* Supports LF and Windows CRLF line endings.\r\n* Preserves compatibility with existing semicolon-separated single-line macros.\r\n* Ignores blank lines during execution.\r\n\r\nThis makes it possible to write macros such as:\r\n\r\n```gcode\r\nG90\r\nG0 X0 Y0\r\nM3 S1000\r\n```\r\n\r\nor\r\n```gcode\r\nG90;G0 X0 Y0;M3 S1000\r\n```",
+            "state": "open",
+            "created_at": "2026-07-07T20:31:09+00:00",
+            "updated_at": "2026-07-07T20:31:09+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/456",
+            "is_pr": true,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 455,
             "title": "Rationalize ESP700 path syntax across targets",
@@ -1321,8 +1335,8 @@
     "statistics": {
       "size": 131053,
       "stars": 883,
-      "forks": 346,
-      "open_issues": 12,
+      "forks": 347,
+      "open_issues": 13,
       "watchers": 883,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
