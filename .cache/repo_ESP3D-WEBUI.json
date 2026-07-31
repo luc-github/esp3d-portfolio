@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785376142.3969073,
+  "timestamp": 1785463614.213229,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 457,
+            "title": "When having long filenames enabled via M20 L send the short one when hitting the play button",
+            "body": "When i enabled getting the files from the sd with the command: M21;M20 L, I nicely see the long file names of my files on the sd card.\r\n\r\nBut when i hit the play button, on a long named file, MARLIN complains that it cannot find the file.\r\n\r\nThis adds the feature having the files listed nicely and send MARLIN the short one.\r\n\r\n",
+            "state": "open",
+            "created_at": "2026-07-30T13:09:41+00:00",
+            "updated_at": "2026-07-30T13:29:44+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/457",
+            "is_pr": true,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 456,
             "title": "added multi-line for macros",
@@ -1335,8 +1349,8 @@
     "statistics": {
       "size": 131053,
       "stars": 887,
-      "forks": 350,
-      "open_issues": 13,
+      "forks": 351,
+      "open_issues": 14,
       "watchers": 887,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
