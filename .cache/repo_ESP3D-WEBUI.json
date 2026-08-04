@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785722826.417319,
+  "timestamp": 1785808390.690863,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,7 +27,7 @@
             "body": "When i enabled getting the files from the sd with the command: M21;M20 L, I nicely see the long file names of my files on the sd card.\r\n\r\nBut when i hit the play button, on a long named file, MARLIN complains that it cannot find the file.\r\n\r\nThis adds the feature having the files listed nicely and send MARLIN the short one.\r\n\r\n",
             "state": "open",
             "created_at": "2026-07-30T13:09:41+00:00",
-            "updated_at": "2026-08-02T09:56:19+00:00",
+            "updated_at": "2026-08-03T08:03:22+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/457",
             "is_pr": true,
@@ -1349,7 +1349,7 @@
     "statistics": {
       "size": 131053,
       "stars": 888,
-      "forks": 352,
+      "forks": 351,
       "open_issues": 14,
       "watchers": 888,
       "default_branch": "3.1",
