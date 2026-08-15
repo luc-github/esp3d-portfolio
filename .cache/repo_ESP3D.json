@@ -1,5 +1,5 @@
 {
-  "timestamp": 1786670310.24788,
+  "timestamp": 1786754993.6602342,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -21,20 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1147,
-            "title": "Feature/marlin binary file transfer",
-            "body": "## Summary\r\n\r\nAdd an optional service that transfers a file from the ESP3D flash filesystem\r\nor attached ESP3D SD card to Marlin's SD card using Marlin Binary File Transfer.\r\n\r\nThe service:\r\n\r\n- obtains exclusive access to the printer serial link while active;\r\n- temporarily disconnects terminal clients and rejects concurrent polling;\r\n- sends the BFT protocol framing and data;\r\n- uses heatshrink compression when requested;\r\n- exposes HTTP start, status, and cancellation endpoints.\r\n\r\nThe heatshrink 0.4.1 encoder is vendored with its upstream license and an\r\nencoder-finalization regression test.\r\n\r\n## Configuration\r\n\r\nEnable by defining:\r\n\r\n` #define MARLIN_BINARY_FILE_TRANSFER_FEATURE`\r\n\r\nThe feature is disabled by default.\r\n\r\n## Testing\r\n\r\nHardware-tested with ESP32-S3, ESP3D 3.1, and Marlin built with  BINARY_FILE_TRANSFER.\r\n\r\nA 2MB G-code file was transferred from ESP32 LittleFS to Marlin's  SD card, then verified with Marlin M35 against the host POSIX cksum. The transfer took less than 2 minutes. To check the `cksum`, [the new g-code proposed in PR 28257](https://github.com/MarlinFirmware/Marlin/pull/28527 )was used.\r\n\r\nThe transferred file was subsequently selected and printed successfully from  Marlin's SD card.\r\n\r\nThe companion PR for the WEBUI will be posted soon.",
-            "state": "open",
-            "created_at": "2026-08-13T21:32:50+00:00",
-            "updated_at": "2026-08-13T21:32:50+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/pull/1147",
-            "is_pr": true,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 891,
             "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
@@ -1222,7 +1208,7 @@
       "size": 140817,
       "stars": 1989,
       "forks": 491,
-      "open_issues": 6,
+      "open_issues": 5,
       "watchers": 1989,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
