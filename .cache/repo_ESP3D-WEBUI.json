@@ -1,5 +1,5 @@
 {
-  "timestamp": 1787014197.4864552,
+  "timestamp": 1787100637.6582315,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -27,11 +27,14 @@
             "body": "## Dependencies\r\n\r\nThis stacked PR depends on:\r\n\r\n- #459 \u2014 shared Marlin capability detection and SD-file support\r\n- luc-github/ESP3D#1147 \u2014 ESP3D binary-transfer service\r\n\r\nOnce #459 is merged, this PR will be rebased onto `3.1` so its diff contains  only the binary-transfer controls.\r\n\r\n## Summary\r\n\r\nAdd a transfer action for files stored on ESP3D flash or its attached SD card.\r\nThe action sends the selected file to Marlin's SD card through the ESP3D\r\nbinary-transfer endpoint. The action appears as an upward arrow, near the filename. \r\n\r\nThe UI checks `Cap:BINARY_FILE_TRANSFER:1`, displays transfer progress and\r\nerrors, disables terminal input and polling while the serial connection is\r\nreserved, and restores normal terminal operation when the transfer ends.\r\n\r\n## Testing\r\n\r\nHardware-tested with ESP32-S3, ESP3D 3.1, and Marlin with   `BINARY_FILE_TRANSFER` enabled.",
             "state": "open",
             "created_at": "2026-08-13T21:47:35+00:00",
-            "updated_at": "2026-08-14T03:16:04+00:00",
+            "updated_at": "2026-08-18T11:36:08+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/460",
             "is_pr": true,
-            "labels": [],
+            "labels": [
+              "No plan so far",
+              "3.1"
+            ],
             "priority": "normal",
             "assignee": null
           },
@@ -41,13 +44,16 @@
             "body": "## Add multi-line G-code support for macros\r\n\r\nThis change allows G-code entered in the Macros module to span multiple lines, making longer macros easier to read and maintain.\r\n\r\n### Changes\r\n\r\n* Replaces the single-line macro G-code field with a multiline textarea.\r\n* Updates `CMD` macro execution to process each non-empty line as an individual command.\r\n* Supports LF and Windows CRLF line endings.\r\n* Preserves compatibility with existing semicolon-separated single-line macros.\r\n* Ignores blank lines during execution.\r\n\r\nThis makes it possible to write macros such as:\r\n\r\n```gcode\r\nG90\r\nG0 X0 Y0\r\nM3 S1000\r\n```\r\n\r\nor\r\n```gcode\r\nG90;G0 X0 Y0;M3 S1000\r\n```",
             "state": "open",
             "created_at": "2026-07-07T20:31:09+00:00",
-            "updated_at": "2026-07-08T05:27:02+00:00",
+            "updated_at": "2026-08-18T11:40:05+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/456",
             "is_pr": true,
-            "labels": [],
+            "labels": [
+              "3.1",
+              "waiting for update"
+            ],
             "priority": "normal",
-            "assignee": null
+            "assignee": "jcarletto27"
           },
           {
             "number": 455,
@@ -55,13 +61,13 @@
             "body": "Centralize ESP700 command building in targets/helpers\r\n\r\nReplace legacy stream= form with [ESP700]/SD or /FS path syntax in Marlin, CNC GRBL and SandTable GRBL sources\r\n\r\nNormalize Status panel ESP701 controls to action= syntax and reuse canonical builder in Macros FS actions",
             "state": "open",
             "created_at": "2026-06-18T14:12:15+00:00",
-            "updated_at": "2026-07-08T05:59:41+00:00",
+            "updated_at": "2026-08-18T11:41:07+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/455",
             "is_pr": true,
             "labels": [],
             "priority": "normal",
-            "assignee": null
+            "assignee": "rixnco"
           },
           {
             "number": 454,
