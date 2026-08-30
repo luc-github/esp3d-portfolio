@@ -7,7 +7,7 @@
       "url": "https://github.com/luc-github/ESP3D",
       "language": "C",
       "created_at": "2015-04-16T13:47:44+00:00",
-      "updated_at": "2026-08-28T10:15:23+00:00",
+      "updated_at": "2026-08-29T17:52:35+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -38,8 +38,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1283,
-              "days_since_update": 146,
+              "age_days": 1284,
+              "days_since_update": 147,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -66,8 +66,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2967,
-              "days_since_update": 205,
+              "age_days": 2968,
+              "days_since_update": 206,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -95,8 +95,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1493,
-              "days_since_update": 520,
+              "age_days": 1494,
+              "days_since_update": 521,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +124,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2042,
-              "days_since_update": 669,
+              "age_days": 2043,
+              "days_since_update": 670,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -152,8 +152,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 2034,
-              "days_since_update": 906,
+              "age_days": 2035,
+              "days_since_update": 907,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1338,8 +1338,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 146,
-              "days_since_update": 146,
+              "age_days": 147,
+              "days_since_update": 147,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1400,8 +1400,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 146,
-              "days_since_update": 146,
+              "age_days": 147,
+              "days_since_update": 147,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1430,8 +1430,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 524,
-              "days_since_update": 524,
+              "age_days": 525,
+              "days_since_update": 525,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1458,7 +1458,7 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1669,
+              "age_days": 1670,
               "days_since_update": 616,
               "is_stale": true,
               "is_recent": false,
@@ -1865,19 +1865,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -2540,6 +2527,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -2573,7 +2573,7 @@
       "url": "https://github.com/luc-github/ESP3D-WEBUI",
       "language": "JavaScript",
       "created_at": "2017-05-19T07:02:14+00:00",
-      "updated_at": "2026-08-25T00:51:34+00:00",
+      "updated_at": "2026-08-29T21:13:27+00:00",
       "branches": [
         {
           "name": "3.0",
@@ -2600,8 +2600,8 @@
               "labels": [],
               "priority": "normal",
               "assignee": "rixnco",
-              "age_days": 71,
-              "days_since_update": 10,
+              "age_days": 72,
+              "days_since_update": 11,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2627,8 +2627,8 @@
               ],
               "priority": "normal",
               "assignee": "jcarletto27",
-              "age_days": 52,
-              "days_since_update": 10,
+              "age_days": 53,
+              "days_since_update": 11,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2654,8 +2654,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 15,
-              "days_since_update": 10,
+              "age_days": 16,
+              "days_since_update": 11,
               "is_stale": false,
               "is_recent": false,
               "activity_status": "inactive",
@@ -2687,8 +2687,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 152,
-              "days_since_update": 138,
+              "age_days": 153,
+              "days_since_update": 139,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2743,7 +2743,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 172,
-              "days_since_update": 152,
+              "days_since_update": 153,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2774,8 +2774,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 817,
-              "days_since_update": 227,
+              "age_days": 818,
+              "days_since_update": 228,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2800,8 +2800,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 362,
-              "days_since_update": 361,
+              "age_days": 363,
+              "days_since_update": 362,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2829,8 +2829,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1567,
-              "days_since_update": 641,
+              "age_days": 1568,
+              "days_since_update": 642,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2859,8 +2859,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2148,
-              "days_since_update": 684,
+              "age_days": 2149,
+              "days_since_update": 685,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2888,8 +2888,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2228,
-              "days_since_update": 684,
+              "age_days": 2229,
+              "days_since_update": 685,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2916,8 +2916,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1441,
-              "days_since_update": 684,
+              "age_days": 1442,
+              "days_since_update": 685,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2944,8 +2944,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2428,
-              "days_since_update": 1474,
+              "age_days": 2429,
+              "days_since_update": 1475,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2975,7 +2975,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 1572,
-              "days_since_update": 1544,
+              "days_since_update": 1545,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3409,19 +3409,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -4084,15 +4071,28 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
       "statistics": {
         "size": 131054,
-        "stars": 894,
+        "stars": 895,
         "forks": 354,
         "open_issues": 14,
-        "watchers": 894,
+        "watchers": 895,
         "default_branch": "3.1",
         "license": "GNU General Public License v3.0"
       },
@@ -4147,8 +4147,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 243,
-              "days_since_update": 101,
+              "age_days": 244,
+              "days_since_update": 102,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4173,8 +4173,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 684,
-              "days_since_update": 684,
+              "age_days": 685,
+              "days_since_update": 685,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4201,8 +4201,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 744,
-              "days_since_update": 744,
+              "age_days": 745,
+              "days_since_update": 745,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4228,7 +4228,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 860,
-              "days_since_update": 746,
+              "days_since_update": 747,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -7711,19 +7711,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -8385,6 +8372,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -8793,19 +8793,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -9468,6 +9455,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -9530,8 +9530,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 549,
-              "days_since_update": 549,
+              "age_days": 550,
+              "days_since_update": 550,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9556,8 +9556,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1277,
-              "days_since_update": 1277,
+              "age_days": 1278,
+              "days_since_update": 1278,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9582,8 +9582,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1277,
-              "days_since_update": 1277,
+              "age_days": 1278,
+              "days_since_update": 1278,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9998,19 +9998,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -10673,6 +10660,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -11017,19 +11017,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-30T23:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-06T23:00:00+00:00",
             "total": 0,
@@ -11692,6 +11679,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -11755,8 +11755,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 219,
-              "days_since_update": 187,
+              "age_days": 220,
+              "days_since_update": 188,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11781,8 +11781,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 459,
-              "days_since_update": 459,
+              "age_days": 460,
+              "days_since_update": 460,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11807,8 +11807,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1201,
-              "days_since_update": 1201,
+              "age_days": 1202,
+              "days_since_update": 1202,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11835,7 +11835,7 @@
               "priority": "normal",
               "assignee": null,
               "age_days": 2397,
-              "days_since_update": 2380,
+              "days_since_update": 2381,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12223,19 +12223,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -12897,6 +12884,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -12959,8 +12959,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1201,
-              "days_since_update": 1201,
+              "age_days": 1202,
+              "days_since_update": 1202,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -13181,19 +13181,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -13855,6 +13842,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -14019,19 +14019,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -14694,6 +14681,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -14828,19 +14828,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -15503,6 +15490,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -15523,10 +15523,10 @@
       },
       "health_score": {
         "documentation_score": 0.0,
-        "maintenance_score": 0.5,
+        "maintenance_score": 0.4,
         "activity_score": 0.0,
         "community_score": 0.20333333333333334,
-        "overall_score": 0.19533333333333333
+        "overall_score": 0.16033333333333333
       }
     },
     {
@@ -15775,19 +15775,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-08-31T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-09-07T00:00:00+00:00",
             "total": 0,
@@ -16450,6 +16437,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-08-30T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -16844,7 +16844,7 @@
     "core": {
       "limit": 5000,
       "remaining": 5000,
-      "reset": "2026-08-29T06:05:44+00:00"
+      "reset": "2026-08-30T03:56:55+00:00"
     }
   },
   "stats": {
@@ -16860,7 +16860,7 @@
         "Python": 1
       },
       "total_size": 796735,
-      "total_stars": 3173,
+      "total_stars": 3174,
       "total_forks": 1015,
       "branches": {
         "production": 12,
@@ -16873,7 +16873,7 @@
       "open_count": 35,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1045.6200039219214,
+      "avg_age_days": 1046.5305510320602,
       "avg_resolution_time": 0,
       "priority_distribution": {
         "normal": 35
@@ -17088,11 +17088,11 @@
           "count": 1
         },
         {
-          "date": "2026-06",
+          "date": "2026-07",
           "count": 1
         },
         {
-          "date": "2026-05",
+          "date": "2026-06",
           "count": 1
         },
         {
@@ -17108,7 +17108,7 @@
           "count": 2
         },
         {
-          "date": "2026-01",
+          "date": "2026-02",
           "count": 0
         },
         {
@@ -17138,11 +17138,11 @@
           "count": 0
         },
         {
-          "date": "2026-06",
+          "date": "2026-07",
           "count": 0
         },
         {
-          "date": "2026-05",
+          "date": "2026-06",
           "count": 0
         },
         {
@@ -17158,7 +17158,7 @@
           "count": 0
         },
         {
-          "date": "2026-01",
+          "date": "2026-02",
           "count": 0
         },
         {
@@ -17392,7 +17392,7 @@
           "count": 0
         },
         {
-          "date": "2025-08-30",
+          "date": "2026-08-30",
           "count": 0
         },
         {
@@ -18035,17 +18035,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 34,
+          "commits": 32,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 102
+          "total": 96
         },
         "details": {
-          "commits": 34,
+          "commits": 32,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 1.1333333333333333,
+          "commits_per_day": 1.0666666666666667,
           "issues_per_day": 0.0
         }
       },
