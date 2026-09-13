@@ -1,5 +1,5 @@
 {
-  "timestamp": 1789180342.0961967,
+  "timestamp": 1789266680.7743096,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-09-10T19:45:34+00:00",
+    "updated_at": "2026-09-12T03:56:31+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,6 +21,22 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1148,
+            "title": "Shared SD card and Marlin docs",
+            "body": "Suggested tag: [DOCS]\nVersion : tag: v3.1.3 / b85dc1cce\n\nThank you for ESP3D! I used ESP3D v2 on an ESP8266 module for many years. Now it is time to update.\nI'm wanting to use a shared SD card (ESP_SHARED_SD) with a Marlin firmware 3D printer (Arduino ATMEGA & RAMPS & G3D panel), with ESP3D 3.1 on an ESP32-CAM, and with some 74HC157 logic to exchange the CMD/CLK/DAT0 pins (intercepting the EXP2 connector)\n\n[esp3d.io docs](https://esp3d.io/esp3d/version-3x/documentation/sdtransfer/)  link say this (marlin) is supported with a little snippet of code, \n\n\n\nThere's a link to [shared_sd_mechanism_V2.0.md](https://github.com/luc-github/ESP3D/blob/3.1/docs/shared_sd_mechanism_V2.0.md), here I've linked the github copy so it renders nicely. It has  \u2705 symbols in implementation status for some functions (where some exist in esp_sd.* and some are renamed/missing).\n\nIt's not clear, but looking in [`esp_sd.cpp`](https://github.com/luc-github/ESP3D/blob/3.1/esp3d/src/modules/filesystem/esp_sd.cpp), there's no code to actually do this callback registration .\n\nSo, what is a user of the docs meant to do now? Copy and paste chunks of `shared_sd_mechanism_V2.0.md` ... somewhere? It looks unimplemented, or at least only implemented for ESP_FYSETC_WIFI_PRO_SDCARD\n\n(Also there are two linked documents  \"[shared_sd_mechanism_V1.0.md](https://github.com/luc-github/ESP3D/blob/3.1/docs/shared_sd_mechanism_V1.0.md). and [discussion_shared_sd_mechanism.md](https://github.com/luc-github/ESP3D/blob/3.1/docs/discussion_shared_sd_mechanism.md).\", neither of which ever appear to have existed in this repository (searching over all commits))\n\n",
+            "state": "open",
+            "created_at": "2026-09-12T09:42:20+00:00",
+            "updated_at": "2026-09-12T12:06:45+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/issues/1148",
+            "is_pr": false,
+            "labels": [
+              "Documentation"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 891,
             "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
@@ -526,19 +542,6 @@
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-09-14T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-09-21T00:00:00+00:00",
           "total": 0,
@@ -1201,15 +1204,28 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-09-13T00:00:00+00:00",
+          "total": 0,
+          "days": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
       "size": 140817,
-      "stars": 1994,
+      "stars": 1995,
       "forks": 493,
-      "open_issues": 5,
-      "watchers": 1994,
+      "open_issues": 6,
+      "watchers": 1995,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
     },
