@@ -1,5 +1,5 @@
 {
-  "timestamp": 1792464892.5424345,
+  "timestamp": 1792550935.8842368,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -7,17 +7,17 @@
     "url": "https://github.com/luc-github/ESP3DLib",
     "language": "C++",
     "created_at": "2019-12-16T13:18:03+00:00",
-    "updated_at": "2026-10-09T01:23:27+00:00",
+    "updated_at": "2026-10-20T03:31:05+00:00",
     "branches": [
       {
         "name": "master",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "916c63c",
-          "message": "Merge pull request #95 from luc-github/dependabot/npm_and_yarn/embedded/brace-expansion-1.1.21\n\nBump brace-expansion from 1.1.11 to 1.1.21 in /embedded",
+          "sha": "832051d",
+          "message": "Merge pull request #97 from luc-github/all-contributors/add-ellensp\n\ndocs: add ellensp as a contributor for code",
           "author": "Luc",
-          "date": "2026-10-09T01:23:21+00:00"
+          "date": "2026-10-20T03:31:01+00:00"
         },
         "protected": false,
         "issues": [
@@ -111,12 +111,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 104,
+        "contributions": 106,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 16,
+        "contributions": 18,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -126,7 +126,7 @@
       },
       {
         "login": "ellensp",
-        "contributions": 5,
+        "contributions": 6,
         "url": "https://github.com/ellensp"
       },
       {
@@ -152,6 +152,36 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "832051d",
+          "message": "Merge pull request #97 from luc-github/all-contributors/add-ellensp\n\ndocs: add ellensp as a contributor for code",
+          "author": "Luc",
+          "date": "2026-10-20T03:31:01+00:00"
+        },
+        {
+          "sha": "6ced2f4",
+          "message": "docs: update .all-contributorsrc [skip ci]",
+          "author": "allcontributors[bot]",
+          "date": "2026-10-20T03:30:43+00:00"
+        },
+        {
+          "sha": "c9f305e",
+          "message": "docs: update README.md [skip ci]",
+          "author": "allcontributors[bot]",
+          "date": "2026-10-20T03:30:42+00:00"
+        },
+        {
+          "sha": "dfbe385",
+          "message": "Merge pull request #96 from ellensp/fix-wifi-interface-idf4\n\nUse WIFI_IF_STA / WIFI_IF_AP for esp_wifi_get_protocol / esp_wifi_get\u2026",
+          "author": "Luc",
+          "date": "2026-10-20T03:28:07+00:00"
+        },
+        {
+          "sha": "33bc3d4",
+          "message": "Use WIFI_IF_STA / WIFI_IF_AP for esp_wifi_get_protocol / esp_wifi_get_config\n\nESP-IDF 4.x (arduino-esp32 2.x) changed these functions to take a\nwifi_interface_t, so ESP_IF_WIFI_STA / ESP_IF_WIFI_AP (esp_interface_t)\nno longer compile. WIFI_IF_STA / WIFI_IF_AP exist in both IDF 3.3\n(as defines of ESP_IF_WIFI_*) and IDF 4.4 (as the enum), so this\nbuilds on arduino-esp32 1.0.x and 2.x.",
+          "author": "ellensp",
+          "date": "2026-10-20T02:29:26+00:00"
+        },
         {
           "sha": "916c63c",
           "message": "Merge pull request #95 from luc-github/dependabot/npm_and_yarn/embedded/brace-expansion-1.1.21\n\nBump brace-expansion from 1.1.11 to 1.1.21 in /embedded",
@@ -445,36 +475,6 @@
           "message": "Merge pull request #49 from luc-github/dependabot/npm_and_yarn/embedded/decode-uri-component-0.2.2\n\nBump decode-uri-component from 0.2.0 to 0.2.2 in /embedded",
           "author": "Luc",
           "date": "2022-12-05T05:20:23+00:00"
-        },
-        {
-          "sha": "4a85695",
-          "message": "Bump decode-uri-component from 0.2.0 to 0.2.2 in /embedded\n\nBumps [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component) from 0.2.0 to 0.2.2.\n- [Release notes](https://github.com/SamVerschueren/decode-uri-component/releases)\n- [Commits](https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: decode-uri-component\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-          "author": "dependabot[bot]",
-          "date": "2022-12-05T05:12:53+00:00"
-        },
-        {
-          "sha": "8dd41f3",
-          "message": "Merge pull request #47 from eduard-sukharev/patch-1\n\nFix MKS MINI 12864 blanking on SD write with MKS TinyBee",
-          "author": "Luc",
-          "date": "2022-09-14T22:15:44+00:00"
-        },
-        {
-          "sha": "afd2163",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2022-08-29T01:21:09+00:00"
-        },
-        {
-          "sha": "5ed2275",
-          "message": "Update web_server.cpp",
-          "author": "Eduard Sukharev",
-          "date": "2022-08-23T19:51:57+00:00"
-        },
-        {
-          "sha": "12c86ba",
-          "message": "Update sd_ESP32.h",
-          "author": "Eduard Sukharev",
-          "date": "2022-08-23T19:42:27+00:00"
         }
       ],
       "commit_activity": [
@@ -1143,11 +1143,11 @@
         },
         {
           "week": "2026-10-18T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
-            0,
+            3,
             0,
             0,
             0,
@@ -1157,7 +1157,7 @@
       ]
     },
     "statistics": {
-      "size": 11907,
+      "size": 11917,
       "stars": 119,
       "forks": 39,
       "open_issues": 3,
