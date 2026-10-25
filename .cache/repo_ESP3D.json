@@ -1,5 +1,5 @@
 {
-  "timestamp": 1792810096.0283136,
+  "timestamp": 1792895984.1466823,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-10-23T21:14:54+00:00",
+    "updated_at": "2026-10-24T17:55:21+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 1149,
+            "title": "Add Orca Slicer SD upload and print compatibility",
+            "body": "Adds support for OrcaSlicer\u2019s ESP3D upload and print workflow. Orca can upload G-code through POST /upload_serial, test the connection with M105, then select and start the uploaded file with M23 and M24. ESP3D stores the file on its SD card and streams it to the printer when printing starts. The change validates filenames and upload state, and is enabled when SD and G-code hosting features are configured.\n",
+            "state": "open",
+            "created_at": "2026-10-25T01:28:36+00:00",
+            "updated_at": "2026-10-25T02:11:51+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D/pull/1149",
+            "is_pr": true,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 891,
             "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
@@ -1207,8 +1221,8 @@
     "statistics": {
       "size": 140824,
       "stars": 2000,
-      "forks": 498,
-      "open_issues": 5,
+      "forks": 499,
+      "open_issues": 6,
       "watchers": 2000,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"

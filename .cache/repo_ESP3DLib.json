@@ -1,5 +1,5 @@
 {
-  "timestamp": 1792810104.3941298,
+  "timestamp": 1792895993.8664865,
   "data": {
     "name": "ESP3DLib",
     "type": "main",
@@ -7,48 +7,20 @@
     "url": "https://github.com/luc-github/ESP3DLib",
     "language": "C++",
     "created_at": "2019-12-16T13:18:03+00:00",
-    "updated_at": "2026-10-23T16:51:52+00:00",
+    "updated_at": "2026-10-24T12:20:38+00:00",
     "branches": [
       {
         "name": "master",
         "label": "Production",
         "is_production": true,
         "last_commit": {
-          "sha": "832051d",
-          "message": "Merge pull request #97 from luc-github/all-contributors/add-ellensp\n\ndocs: add ellensp as a contributor for code",
+          "sha": "bfe08bf",
+          "message": "Merge pull request #100 from ellensp/fix-s2s-nonblocking-write\n\nDon't send to the websocket from the caller's task",
           "author": "Luc",
-          "date": "2026-10-20T03:31:01+00:00"
+          "date": "2026-10-24T12:20:33+00:00"
         },
         "protected": false,
         "issues": [
-          {
-            "number": 99,
-            "title": "Match Marlin's CardReader::mount() signature",
-            "body": "### Description\n\n`src/include/Marlin/cardreader.h` declares Marlin's `CardReader` for ESP3DLib's shared SD support, including:\n\n```cpp\nstatic void mount();\n```\n\nIn Marlin `bugfix-2.1.x`, `CardReader::mount()` now takes an argument (MarlinFirmware/Marlin#28656):\n\n```cpp\nstatic void mount(const bool alert=true);\n```\n\nThe two declarations mangle to different symbols, so a Marlin build with `ESP3D_WIFISUPPORT` and `SDSUPPORT` fails to link:\n\n```\nundefined reference to `CardReader::mount()'\n```\n\nThis PR declares `mount()` the way Marlin does now. ESP3DLib's calls (`card.mount()` in `esp_sd.cpp`) are unchanged and use the default argument.\n\nThe declaration now matches Marlin `bugfix-2.1.x` after #28656. Marlin versions from before #28656 have only `mount()` without an argument.\n\n### Testing\n\nMKS TinyBee, Marlin `bugfix-2.1.x` with arduino-esp32 3.0.4 (pioarduino 51.03.04), `ESP3D_WIFISUPPORT`, `SDSUPPORT`, `WEBSUPPORT`:\n- Before: the link fails with the error above.\n- After: it builds and links. ESP3D SD commands (`[ESP740]`, `[ESP750]`) and the web SD file list release the card from Marlin and mount it again afterwards (Marlin reports `SD card released` / `SD card ok`), and Marlin can still list and print from the card.\n",
-            "state": "open",
-            "created_at": "2026-10-23T16:37:41+00:00",
-            "updated_at": "2026-10-24T02:11:34+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3DLib/pull/99",
-            "is_pr": true,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 98,
-            "title": "Don't stop SD listing at an orphaned long name",
-            "body": "### Description\n\nOn an MKS TinyBee that has been updated from SD, the ESP3D SD file list is always empty: `[ESP740]` reports `Files: 0, Dirs :0`, and the web file list returns `\"files\":[]`, although the card has files on it.\n\nThe MKS bootloader flashes `firmware.bin` and then renames it to `FIRMWARE.CUR` by changing only the 8.3 name. The long name entry for `firmware.bin` stays in front of it. These are the first two root directory entries of the test card, read on the board:\n\n```\nentry 0: 41 66 00 69 00 72 00 6D 00 77 00 0F 00 57 ...   long name \"firmware.bin\", checksum 0x57\nentry 1: 46 49 52 4D 57 41 52 45 43 55 52 20 ...         short name FIRMWARE.CUR\n```\n\nThe long name's checksum, 0x57, is the checksum of `FIRMWARE.BIN`. `FIRMWARE.CUR` has a checksum of 0x21. SdFat's `FatFile::openNext()` treats that mismatch as a failure (`if (lfnOrd && checksum != lfnChecksum(dir->name)) goto fail;`, the same in SdFat 2.2.3, 2.3.0 and 2.3.1). So `ESP_SDFile::openNextFile()` in `sd_sdfat2_esp32.cpp` returns no file at the first entry, and every listing of that directory ends there. Linux, and Marlin's own SD code, ignore the orphaned long name and list the rest of the directory.\n\nWhen SdFat's `openNextFile()` fails, `ESP_SDFile::openNextFile()` now looks at the last 32-byte entry it read:\n- If that entry is the end of the directory (first byte 0x00), or the card reports an error, it stops as before.\n- Otherwise it calls `openNextFile()` again, which continues from the next entry.\n\nThe entry that failed (`FIRMWARE.CUR` here) is skipped, because SdFat won't open it.\n\n### Testing\n\nMKS TinyBee, Marlin `bugfix-2.1.x` with arduino-esp32 3.0.4 (pioarduino 51.03.04) and SdFat 2.2.3. The card has `FIRMWARE.CUR` (as above), a `.Trash-1000` directory and `webtest.gcode`:\n\n| | `[ESP740]` (telnet) | `/sdfiles?path=/` |\n|---|---|---|\n| Before | `Files: 0, Dirs :0` | `\"files\":[]` |\n| After | `[DIR] .Trash-1000`, `webtest.gcode 53 B`, `Files: 1, Dirs :1` | `.Trash-1000` and `webtest.gcode` |\n\nTotal and used space are reported the same before and after (7.42 GB, 340 KB).\n",
-            "state": "open",
-            "created_at": "2026-10-23T16:36:14+00:00",
-            "updated_at": "2026-10-23T16:36:14+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3DLib/pull/98",
-            "is_pr": true,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 93,
             "title": "[BUG] Parsing U8glib-HAL.h may fail under specific conditions",
@@ -80,30 +52,41 @@
         "protected": false,
         "issues": [
           {
+            "number": 101,
+            "title": "Don't send to network clients from the caller's task",
+            "body": "### Description\n\n`Serial_2_Socket::write()` is called by Marlin, from Marlin's loop task. On each newline (and when the buffer filled or timed out) it called `flush()`, which ran `esp3d_commands.process()` on the line in that task. So dispatching to the websocket and other clients ran in Marlin's task, and `WebSocket_Server::writeBytes()` calls `broadcastBIN()` when its own buffer fills.\n\nSending to a websocket client that has stopped reading blocks. With a full TCP send buffer, `WiFiClient::write()` waits up to 10 \u00d7 1 s in `select()`, and `WebSockets::write()` keeps retrying for up to `WEBSOCKETS_TCP_TIMEOUT` (5 s). Marlin's loop task stops for that time. Marlin watches that task with a 4 s task watchdog (`USE_WATCHDOG`, MarlinFirmware/Marlin#28725), so the board resets. A web UI tab left open on a phone that has gone to sleep, or a client that dropped off the WiFi, can do this during a print.\n\nThis PR keeps the processing in the ESP3D task:\n- `write()` and `flush()` turn the TX buffer into a message as before, but put it on a FreeRTOS queue (`S2S_TXQUEUESIZE`, 32) instead of processing it. If the queue is full, the message is dropped.\n- `handle()`, called from the ESP3D task, processes the queued messages after `handle_flush()`.\n- `WebSocket_Server::flushTXbuffer()` sends to each connected client with `sendBIN()` instead of `broadcastBIN()`, and disconnects a client whose send fails, so it can't stall every later send.\n\n### Testing\n\nMKS TinyBee, Marlin `bugfix-2.1.x` with arduino-esp32 3.0.4 (pioarduino 51.03.04), `ESP3D_WIFISUPPORT`, `WEBSUPPORT`, `USE_WATCHDOG`, station mode. A script sent `M503` to `/command?cmd=` every 0.3 s and `M118` over USB serial every 0.5 s. A test websocket client (`webui-v3`, port 81) completed the handshake and then never read.\n\n| | Before | After |\n|---|---|---|\n| Stalled client + `M503` flood, 60 s | Task watchdog reset (`loopTask`) 7.7 s in | No reset; serial `M118` answered in 0.06 s or less |\n| Reading client alone, 20 rounds | All output received | All output received |\n| New reading client straight after a stalled-client run, 20 rounds | | All output received |\n",
+            "state": "open",
+            "created_at": "2026-10-24T12:09:20+00:00",
+            "updated_at": "2026-10-24T14:35:54+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3DLib/pull/101",
+            "is_pr": true,
+            "labels": [
+              "bug",
+              "Planned",
+              "3.0",
+              "Work in progress"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
             "number": 99,
             "title": "Match Marlin's CardReader::mount() signature",
             "body": "### Description\n\n`src/include/Marlin/cardreader.h` declares Marlin's `CardReader` for ESP3DLib's shared SD support, including:\n\n```cpp\nstatic void mount();\n```\n\nIn Marlin `bugfix-2.1.x`, `CardReader::mount()` now takes an argument (MarlinFirmware/Marlin#28656):\n\n```cpp\nstatic void mount(const bool alert=true);\n```\n\nThe two declarations mangle to different symbols, so a Marlin build with `ESP3D_WIFISUPPORT` and `SDSUPPORT` fails to link:\n\n```\nundefined reference to `CardReader::mount()'\n```\n\nThis PR declares `mount()` the way Marlin does now. ESP3DLib's calls (`card.mount()` in `esp_sd.cpp`) are unchanged and use the default argument.\n\nThe declaration now matches Marlin `bugfix-2.1.x` after #28656. Marlin versions from before #28656 have only `mount()` without an argument.\n\n### Testing\n\nMKS TinyBee, Marlin `bugfix-2.1.x` with arduino-esp32 3.0.4 (pioarduino 51.03.04), `ESP3D_WIFISUPPORT`, `SDSUPPORT`, `WEBSUPPORT`:\n- Before: the link fails with the error above.\n- After: it builds and links. ESP3D SD commands (`[ESP740]`, `[ESP750]`) and the web SD file list release the card from Marlin and mount it again afterwards (Marlin reports `SD card released` / `SD card ok`), and Marlin can still list and print from the card.\n",
             "state": "open",
             "created_at": "2026-10-23T16:37:41+00:00",
-            "updated_at": "2026-10-24T02:11:34+00:00",
+            "updated_at": "2026-10-24T05:54:07+00:00",
             "closed_at": null,
             "url": "https://github.com/luc-github/ESP3DLib/pull/99",
             "is_pr": true,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 98,
-            "title": "Don't stop SD listing at an orphaned long name",
-            "body": "### Description\n\nOn an MKS TinyBee that has been updated from SD, the ESP3D SD file list is always empty: `[ESP740]` reports `Files: 0, Dirs :0`, and the web file list returns `\"files\":[]`, although the card has files on it.\n\nThe MKS bootloader flashes `firmware.bin` and then renames it to `FIRMWARE.CUR` by changing only the 8.3 name. The long name entry for `firmware.bin` stays in front of it. These are the first two root directory entries of the test card, read on the board:\n\n```\nentry 0: 41 66 00 69 00 72 00 6D 00 77 00 0F 00 57 ...   long name \"firmware.bin\", checksum 0x57\nentry 1: 46 49 52 4D 57 41 52 45 43 55 52 20 ...         short name FIRMWARE.CUR\n```\n\nThe long name's checksum, 0x57, is the checksum of `FIRMWARE.BIN`. `FIRMWARE.CUR` has a checksum of 0x21. SdFat's `FatFile::openNext()` treats that mismatch as a failure (`if (lfnOrd && checksum != lfnChecksum(dir->name)) goto fail;`, the same in SdFat 2.2.3, 2.3.0 and 2.3.1). So `ESP_SDFile::openNextFile()` in `sd_sdfat2_esp32.cpp` returns no file at the first entry, and every listing of that directory ends there. Linux, and Marlin's own SD code, ignore the orphaned long name and list the rest of the directory.\n\nWhen SdFat's `openNextFile()` fails, `ESP_SDFile::openNextFile()` now looks at the last 32-byte entry it read:\n- If that entry is the end of the directory (first byte 0x00), or the card reports an error, it stops as before.\n- Otherwise it calls `openNextFile()` again, which continues from the next entry.\n\nThe entry that failed (`FIRMWARE.CUR` here) is skipped, because SdFat won't open it.\n\n### Testing\n\nMKS TinyBee, Marlin `bugfix-2.1.x` with arduino-esp32 3.0.4 (pioarduino 51.03.04) and SdFat 2.2.3. The card has `FIRMWARE.CUR` (as above), a `.Trash-1000` directory and `webtest.gcode`:\n\n| | `[ESP740]` (telnet) | `/sdfiles?path=/` |\n|---|---|---|\n| Before | `Files: 0, Dirs :0` | `\"files\":[]` |\n| After | `[DIR] .Trash-1000`, `webtest.gcode 53 B`, `Files: 1, Dirs :1` | `.Trash-1000` and `webtest.gcode` |\n\nTotal and used space are reported the same before and after (7.42 GB, 340 KB).\n",
-            "state": "open",
-            "created_at": "2026-10-23T16:36:14+00:00",
-            "updated_at": "2026-10-23T16:36:14+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3DLib/pull/98",
-            "is_pr": true,
-            "labels": [],
+            "labels": [
+              "Planned",
+              "3.0",
+              "On hold",
+              "Marlin 2.X",
+              "Compatibility"
+            ],
             "priority": "normal",
             "assignee": null
           },
@@ -167,7 +150,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 106,
+        "contributions": 107,
         "url": "https://github.com/luc-github"
       },
       {
@@ -182,7 +165,7 @@
       },
       {
         "login": "ellensp",
-        "contributions": 6,
+        "contributions": 7,
         "url": "https://github.com/ellensp"
       },
       {
@@ -208,6 +191,18 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "bfe08bf",
+          "message": "Merge pull request #100 from ellensp/fix-s2s-nonblocking-write\n\nDon't send to the websocket from the caller's task",
+          "author": "Luc",
+          "date": "2026-10-24T12:20:33+00:00"
+        },
+        {
+          "sha": "e96c683",
+          "message": "Don't send to the websocket from the caller's task\n\nSerial_2_Socket::write runs in Marlin's loop task and sent the buffer\nfrom there when it filled. Sending to a client that has stopped reading\nwaits up to about 15 s (WiFiClient write retries plus the WebSockets\nTCP timeout), long enough to trip Marlin's task watchdog.\n\nwrite() now only copies into the TX buffer, under a mutex, and drops\noutput that doesn't fit. flush() only sets a flag. The ESP3DLib task\nsends the buffer from handle_flush(), to each client in turn, and\ndisconnects a client whose send fails so it can't stall later sends.",
+          "author": "ellensp",
+          "date": "2026-10-24T11:00:51+00:00"
+        },
         {
           "sha": "832051d",
           "message": "Merge pull request #97 from luc-github/all-contributors/add-ellensp\n\ndocs: add ellensp as a contributor for code",
@@ -519,34 +514,9 @@
           "message": "Merge pull request #50 from luc-github/dependabot/npm_and_yarn/embedded/minimatch-3.0.8\n\nBump minimatch from 3.0.4 to 3.0.8 in /embedded",
           "author": "Luc",
           "date": "2022-12-05T05:21:29+00:00"
-        },
-        {
-          "sha": "dd5bb12",
-          "message": "Bump minimatch from 3.0.4 to 3.0.8 in /embedded\n\nBumps [minimatch](https://github.com/isaacs/minimatch) from 3.0.4 to 3.0.8.\n- [Release notes](https://github.com/isaacs/minimatch/releases)\n- [Changelog](https://github.com/isaacs/minimatch/blob/main/changelog.md)\n- [Commits](https://github.com/isaacs/minimatch/compare/v3.0.4...v3.0.8)\n\n---\nupdated-dependencies:\n- dependency-name: minimatch\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-          "author": "dependabot[bot]",
-          "date": "2022-12-05T05:21:05+00:00"
-        },
-        {
-          "sha": "df757c0",
-          "message": "Merge pull request #49 from luc-github/dependabot/npm_and_yarn/embedded/decode-uri-component-0.2.2\n\nBump decode-uri-component from 0.2.0 to 0.2.2 in /embedded",
-          "author": "Luc",
-          "date": "2022-12-05T05:20:23+00:00"
         }
       ],
       "commit_activity": [
-        {
-          "week": "2025-10-26T00:00:00+00:00",
-          "total": 0,
-          "days": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        },
         {
           "week": "2025-11-02T00:00:00+00:00",
           "total": 0,
@@ -1209,11 +1179,24 @@
             0,
             0
           ]
+        },
+        {
+          "week": "2026-10-25T00:00:00+00:00",
+          "total": 1,
+          "days": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
     "statistics": {
-      "size": 11917,
+      "size": 11930,
       "stars": 119,
       "forks": 39,
       "open_issues": 5,
