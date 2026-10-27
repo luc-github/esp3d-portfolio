@@ -1,5 +1,5 @@
 {
-  "timestamp": 1792982270.1411202,
+  "timestamp": 1793070753.5149965,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -22,14 +22,14 @@
         "protected": false,
         "issues": [
           {
-            "number": 1149,
-            "title": "Add Orca Slicer SD upload and print compatibility",
-            "body": "Adds support for OrcaSlicer\u2019s ESP3D upload and print workflow. Orca can upload G-code through POST /upload_serial, test the connection with M105, then select and start the uploaded file with M23 and M24. ESP3D stores the file on its SD card and streams it to the printer when printing starts. The change validates filenames and upload state, and is enabled when SD and G-code hosting features are configured.\n",
+            "number": 1150,
+            "title": "Optional STA rejoin from the setup fallback",
+            "body": "If STA can't connect at boot (for example while the router is rebooting) and `sta fallback mode` is `setup`, ESP3D switches to the setup AP and stays there until someone restarts it. This PR adds an opt-in setting so it rejoins on its own once the network is back.\n\n## Changes\n- New byte setting `ESP_STA_FALLBACK_RETRY` (position 1257, the first free byte after `ESP_USB_SERIAL_BAUD_RATE`), shown in `[ESP400]` as \"sta fallback retry\" under network/sta. It's no/yes with a default of **no**, so behaviour is unchanged unless it's turned on.\n- When it's on, the radio mode is STA, and the setup AP is running as the STA fallback, `WiFiConfig::handle()` starts an async scan every 2 minutes (`STA_FALLBACK_RETRY_INTERVAL`). If the configured SSID shows up, it calls `NetConfig::begin()`. If that connection fails again, the normal fallback applies.\n- No scan runs while a client is connected to the setup AP, because the channel hopping would disrupt it.\n- Settings saved by older builds have 0xFF at the new position. `ESP3DSettings::begin()` replaces an invalid value there with the default.\n\n## Testing\n- This branch builds for `esp32-c3` and `esp8266dev`.\n- The same two commits run on an ESP32-C3 with Marlin, on DevZTH's fork of 3.1.3 (only the base differs). With the extender off, I power-cycled the printer so it came up in setup mode. After the extender was switched back on, the printer rejoined STA by itself.\n\n## Limitations\n- A hidden SSID never appears in a scan, so it won't be rejoined.\n- With a wrong saved password, it retries every 2 minutes, and each attempt briefly drops the setup AP.",
             "state": "open",
-            "created_at": "2026-10-25T01:28:36+00:00",
-            "updated_at": "2026-10-25T03:45:10+00:00",
+            "created_at": "2026-10-26T04:20:45+00:00",
+            "updated_at": "2026-10-26T14:10:26+00:00",
             "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/pull/1149",
+            "url": "https://github.com/luc-github/ESP3D/pull/1150",
             "is_pr": true,
             "labels": [],
             "priority": "normal",

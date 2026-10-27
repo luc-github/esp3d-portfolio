@@ -1,5 +1,5 @@
 {
-  "timestamp": 1792982292.1755884,
+  "timestamp": 1793070778.0484133,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-10-20T19:26:48+00:00",
+    "updated_at": "2026-10-26T06:30:35+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,54 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 460,
-            "title": "Add Marlin binary file transfer controls",
-            "body": "## Dependencies\r\n\r\nThis stacked PR depends on:\r\n\r\n- #459 \u2014 shared Marlin capability detection and SD-file support\r\n- luc-github/ESP3D#1147 \u2014 ESP3D binary-transfer service\r\n\r\nOnce #459 is merged, this PR will be rebased onto `3.1` so its diff contains  only the binary-transfer controls.\r\n\r\n## Summary\r\n\r\nAdd a transfer action for files stored on ESP3D flash or its attached SD card.\r\nThe action sends the selected file to Marlin's SD card through the ESP3D\r\nbinary-transfer endpoint. The action appears as an upward arrow, near the filename. \r\n\r\nThe UI checks `Cap:BINARY_FILE_TRANSFER:1`, displays transfer progress and\r\nerrors, disables terminal input and polling while the serial connection is\r\nreserved, and restores normal terminal operation when the transfer ends.\r\n\r\n## Testing\r\n\r\nHardware-tested with ESP32-S3, ESP3D 3.1, and Marlin with   `BINARY_FILE_TRANSFER` enabled.",
-            "state": "open",
-            "created_at": "2026-08-13T21:47:35+00:00",
-            "updated_at": "2026-08-18T11:36:08+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/460",
-            "is_pr": true,
-            "labels": [
-              "No plan so far",
-              "3.1"
-            ],
-            "priority": "normal",
-            "assignee": null
-          },
-          {
-            "number": 456,
-            "title": "added multi-line for macros",
-            "body": "## Add multi-line G-code support for macros\r\n\r\nThis change allows G-code entered in the Macros module to span multiple lines, making longer macros easier to read and maintain.\r\n\r\n### Changes\r\n\r\n* Replaces the single-line macro G-code field with a multiline textarea.\r\n* Updates `CMD` macro execution to process each non-empty line as an individual command.\r\n* Supports LF and Windows CRLF line endings.\r\n* Preserves compatibility with existing semicolon-separated single-line macros.\r\n* Ignores blank lines during execution.\r\n\r\nThis makes it possible to write macros such as:\r\n\r\n```gcode\r\nG90\r\nG0 X0 Y0\r\nM3 S1000\r\n```\r\n\r\nor\r\n```gcode\r\nG90;G0 X0 Y0;M3 S1000\r\n```",
-            "state": "open",
-            "created_at": "2026-07-07T20:31:09+00:00",
-            "updated_at": "2026-08-18T11:40:05+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/456",
-            "is_pr": true,
-            "labels": [
-              "3.1",
-              "waiting for update"
-            ],
-            "priority": "normal",
-            "assignee": "jcarletto27"
-          },
-          {
-            "number": 455,
-            "title": "Rationalize ESP700 path syntax across targets",
-            "body": "Centralize ESP700 command building in targets/helpers\r\n\r\nReplace legacy stream= form with [ESP700]/SD or /FS path syntax in Marlin, CNC GRBL and SandTable GRBL sources\r\n\r\nNormalize Status panel ESP701 controls to action= syntax and reuse canonical builder in Macros FS actions",
-            "state": "open",
-            "created_at": "2026-06-18T14:12:15+00:00",
-            "updated_at": "2026-08-18T11:41:07+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/455",
-            "is_pr": true,
-            "labels": [],
-            "priority": "normal",
-            "assignee": "rixnco"
-          },
           {
             "number": 454,
             "title": "[INFORMATION]Brotli Support",
@@ -326,6 +278,11 @@
         "url": "https://github.com/Engineer2Designer"
       },
       {
+        "login": "Mainfurr",
+        "contributions": 1,
+        "url": "https://github.com/Mainfurr"
+      },
+      {
         "login": "drzejkopf",
         "contributions": 1,
         "url": "https://github.com/drzejkopf"
@@ -333,6 +290,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "da3c304",
+          "message": "Marlin SD: refresh the list after a delete (#463)\n\n* Refresh the Marlin SD list after a delete\n\nThe delete query ended on the first plain \"ok\". The default delete\ncommand is \"M21;M30 #\", so the ok of M21 (or of a polling command)\narrived before \"File deleted\" and the query ended as \"end without\nstart\", which is reported as an error. The list was then not refreshed.\nEnd the query on \"File deleted\" instead.\n\n* Fail SD deletes fast on known errors and always refresh the list\n\nA missing card or an unknown M21/M30 now ends the delete query at once\nas an error instead of after the 30 s timeout, using the same messages\nthe list query already checks. The Files panel refreshes the list after\nevery delete or createdir result, also on errors and timeouts, so it\nalways shows what is on the card.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "author": "Mainfurr",
+          "date": "2026-10-26T06:30:28+00:00"
+        },
         {
           "sha": "eb10609",
           "message": "fix: multi_agent.cwe-306 security vulnerability (#461)\n\nAutomated security fix generated by OrbisAI Security",
@@ -650,12 +613,6 @@
           "message": "per users request",
           "author": "Luc",
           "date": "2024-12-09T01:38:01+00:00"
-        },
-        {
-          "sha": "7266acf",
-          "message": "Update CNC settings display condition\n\nremove control-fieldset class from grblHAL dor Mask for consistency",
-          "author": "Luc",
-          "date": "2024-12-09T01:10:39+00:00"
         }
       ],
       "commit_activity": [
@@ -1324,10 +1281,10 @@
         },
         {
           "week": "2026-10-25T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -1338,10 +1295,10 @@
       ]
     },
     "statistics": {
-      "size": 130371,
+      "size": 130373,
       "stars": 899,
-      "forks": 357,
-      "open_issues": 13,
+      "forks": 358,
+      "open_issues": 10,
       "watchers": 899,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
