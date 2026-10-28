@@ -1,5 +1,5 @@
 {
-  "timestamp": 1793070753.5149965,
+  "timestamp": 1793158033.367201,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-10-25T17:54:03+00:00",
+    "updated_at": "2026-10-27T16:08:14+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -133,7 +133,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 592,
+        "contributions": 593,
         "url": "https://github.com/luc-github"
       },
       {
@@ -214,6 +214,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "29924e7",
+          "message": "Fix ESP104 not displaying proper state\n\nMake WIFI-SETUP consistent accross commands\nFix several Typos\nFix isValidByteSettings always return true even incorrect",
+          "author": "Luc",
+          "date": "2026-10-27T16:08:01+00:00"
+        },
         {
           "sha": "c3dc70f",
           "message": "Update All Contributors badge count to 28\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
@@ -531,12 +537,6 @@
           "message": "Update esp3d_commands.cpp\n\nOverride new behavior in Marlin that prevent error to update screen e.g: No SD Card -> IP is not displayed because M117 is locked, so always unlock M117 output\nDo not affect M111 because it is user key, so he can type M117 first to unlock if necessary, the fix only apply to auto M117 output",
           "author": "Luc",
           "date": "2025-04-26T06:18:50+00:00"
-        },
-        {
-          "sha": "1a0928e",
-          "message": "Fix serial2socket module lock after a while",
-          "author": "Luc",
-          "date": "2025-04-14T08:59:01+00:00"
         }
       ],
       "commit_activity": [
@@ -1205,12 +1205,12 @@
         },
         {
           "week": "2026-10-25T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
-            0,
+            1,
             0,
             0,
             0
