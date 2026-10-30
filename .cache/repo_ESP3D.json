@@ -1,5 +1,5 @@
 {
-  "timestamp": 1793245765.7992003,
+  "timestamp": 1793332338.5094573,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-10-28T14:32:57+00:00",
+    "updated_at": "2026-10-30T02:21:32+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,20 +21,6 @@
         },
         "protected": false,
         "issues": [
-          {
-            "number": 1150,
-            "title": "Optional STA rejoin from the setup fallback",
-            "body": "If STA can't connect at boot (for example while the router is rebooting) and `sta fallback mode` is `setup`, ESP3D switches to the setup AP and stays there until someone restarts it. This PR adds an opt-in setting so it rejoins on its own once the network is back.\n\n## Changes\n- New byte setting `ESP_STA_FALLBACK_RETRY` (position 1257, the first free byte after `ESP_USB_SERIAL_BAUD_RATE`), shown in `[ESP400]` as \"sta fallback retry\" under network/sta. It's no/yes with a default of **no**, so behaviour is unchanged unless it's turned on.\n- When it's on, the radio mode is STA, and the setup AP is running as the STA fallback, `WiFiConfig::handle()` starts an async scan every 2 minutes (`STA_FALLBACK_RETRY_INTERVAL`). If the configured SSID shows up, it calls `NetConfig::begin()`. If that connection fails again, the normal fallback applies.\n- No scan runs while a client is connected to the setup AP, because the channel hopping would disrupt it.\n- Settings saved by older builds have 0xFF at the new position. `ESP3DSettings::begin()` replaces an invalid value there with the default.\n\n## Testing\n- This branch builds for `esp32-c3` and `esp8266dev`.\n- The same two commits run on an ESP32-C3 with Marlin, on DevZTH's fork of 3.1.3 (only the base differs). With the extender off, I power-cycled the printer so it came up in setup mode. After the extender was switched back on, the printer rejoined STA by itself.\n\n## Limitations\n- A hidden SSID never appears in a scan, so it won't be rejoined.\n- With a wrong saved password, it retries every 2 minutes, and each attempt briefly drops the setup AP.",
-            "state": "open",
-            "created_at": "2026-10-26T04:20:45+00:00",
-            "updated_at": "2026-10-26T14:10:26+00:00",
-            "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D/pull/1150",
-            "is_pr": true,
-            "labels": [],
-            "priority": "normal",
-            "assignee": null
-          },
           {
             "number": 891,
             "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
@@ -133,12 +119,12 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 593,
+        "contributions": 594,
         "url": "https://github.com/luc-github"
       },
       {
         "login": "allcontributors[bot]",
-        "contributions": 24,
+        "contributions": 25,
         "url": "https://github.com/apps/allcontributors"
       },
       {
@@ -187,6 +173,11 @@
         "url": "https://github.com/A7F"
       },
       {
+        "login": "Mainfurr",
+        "contributions": 1,
+        "url": "https://github.com/Mainfurr"
+      },
+      {
         "login": "mhoyer",
         "contributions": 1,
         "url": "https://github.com/mhoyer"
@@ -214,6 +205,24 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "2ed38b7",
+          "message": "Add USB cdc  client support for ESP32S3 usb native",
+          "author": "Luc",
+          "date": "2026-10-30T02:21:23+00:00"
+        },
+        {
+          "sha": "f057077",
+          "message": "docs: add Mainfurr as a contributor for code (#1151)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+          "author": "allcontributors[bot]",
+          "date": "2026-10-29T08:51:35+00:00"
+        },
+        {
+          "sha": "4af9394",
+          "message": "Optional STA rejoin from the setup fallback (#1150)\n\n* Add optional STA rejoin from the setup fallback\n\nNew setting ESP_STA_FALLBACK_RETRY (pos 1257, \"sta fallback retry\" in\nnetwork/sta, default off). When it is on and the STA connection failed\nover to the setup AP, ESP3D scans every 2 minutes (while no client is\nconnected to the AP) and restarts the network once the configured SSID\nis visible again. If that attempt fails it falls back to setup mode as\nbefore.\n\nSettings saved by older builds read 0xFF at the new position; the\ndefault is written at startup when the stored value is not valid.\n\n* Add [ESP109] for the STA fallback retry and report it on serial\n\n[ESP109] shows or sets the sta fallback retry setting (ON/OFF, admin to\nset), so it can be turned off without [ESP401]. When the setup fallback\nstarts with the retry on, \"Waiting for STA network\" is sent to all\nclients, next to the existing \"STA network found, reconnecting\".\nDocumented in espXXX.md, Commands.md and authentication.md.\n\n* Reject invalid values in [ESP109]\n\nisValidByteSetting() returns true for any value of an on/off setting, so\n[ESP109]MAYBE stored 255. Only ON and OFF are written now, anything else\ngets \"Invalid parameter\". The 0xFF init check for the setting compares\nthe value directly for the same reason.",
+          "author": "Mainfurr",
+          "date": "2026-10-29T08:50:09+00:00"
+        },
         {
           "sha": "29924e7",
           "message": "Fix ESP104 not displaying proper state\n\nMake WIFI-SETUP consistent accross commands\nFix several Typos\nFix isValidByteSettings always return true even incorrect",
@@ -519,24 +528,6 @@
           "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
           "author": "Luc",
           "date": "2025-10-09T05:18:41+00:00"
-        },
-        {
-          "sha": "3c14543",
-          "message": "Fix BT Service is no set a started due to wrong API usage",
-          "author": "Luc",
-          "date": "2025-06-18T14:02:02+00:00"
-        },
-        {
-          "sha": "041658d",
-          "message": "fix missing sanity check if BT",
-          "author": "Luc",
-          "date": "2025-06-18T05:06:33+00:00"
-        },
-        {
-          "sha": "0b8dc3a",
-          "message": "Update esp3d_commands.cpp\n\nOverride new behavior in Marlin that prevent error to update screen e.g: No SD Card -> IP is not displayed because M117 is locked, so always unlock M117 output\nDo not affect M111 because it is user key, so he can type M117 first to unlock if necessary, the fix only apply to auto M117 output",
-          "author": "Luc",
-          "date": "2025-04-26T06:18:50+00:00"
         }
       ],
       "commit_activity": [
@@ -1205,25 +1196,25 @@
         },
         {
           "week": "2026-10-25T00:00:00+00:00",
-          "total": 1,
+          "total": 4,
           "days": [
             0,
             0,
             0,
             1,
-            0,
-            0,
+            2,
+            1,
             0
           ]
         }
       ]
     },
     "statistics": {
-      "size": 140824,
-      "stars": 2000,
+      "size": 141528,
+      "stars": 2001,
       "forks": 500,
-      "open_issues": 6,
-      "watchers": 2000,
+      "open_issues": 5,
+      "watchers": 2001,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
     },
