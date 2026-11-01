@@ -22,6 +22,41 @@
           "protected": false,
           "issues": [
             {
+              "number": 1152,
+              "title": "Move to idf 5.5.X to as now platformio is back to complete pioarduino for esp32",
+              "body": "Will port necessary changes for Arduino Release v3.3.12 based on ESP-IDF v5.5.5\nusing first pioarduino and also check platformio because platformio is back on esp32-arduino for 3.X and not sur pioarduino will continue the support if then \n\nNote: Dependency libraries may also need some update as well \n\nhttps://github.com/luc-github/ESP32SSDP/issues/49",
+              "state": "open",
+              "created_at": "2026-10-31T04:20:08+00:00",
+              "updated_at": "2026-10-31T04:20:42+00:00",
+              "closed_at": null,
+              "url": "https://github.com/luc-github/ESP3D/issues/1152",
+              "is_pr": false,
+              "labels": [
+                "enhancement",
+                "Compatibility",
+                "ESP32",
+                "ESP3D 3.X",
+                "Planned",
+                "ESP32-S2",
+                "ESP32-C3",
+                "ESP32-S3",
+                "ESP32-C6",
+                "Core Update Needed"
+              ],
+              "priority": "normal",
+              "assignee": null,
+              "age_days": 0,
+              "days_since_update": 0,
+              "is_stale": false,
+              "is_recent": true,
+              "activity_status": "active",
+              "size_estimate": "medium",
+              "complexity": "medium",
+              "related_issues": [],
+              "suggested_priority": "medium",
+              "lifecycle_stage": "new"
+            },
+            {
               "number": 891,
               "title": "[FEATURE REQUEST]\ud83e\udd84Add discord Notification",
               "body": "the APi is described  here : https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-1p01\r\nand here : https://gist.github.com/Birdie0/78ee79402a4301b1faf412ab5f1cdcf9",
@@ -38,8 +73,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1346,
-              "days_since_update": 209,
+              "age_days": 1347,
+              "days_since_update": 210,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -66,8 +101,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 3030,
-              "days_since_update": 268,
+              "age_days": 3031,
+              "days_since_update": 269,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -95,8 +130,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1556,
-              "days_since_update": 583,
+              "age_days": 1557,
+              "days_since_update": 584,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -124,8 +159,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2105,
-              "days_since_update": 732,
+              "age_days": 2106,
+              "days_since_update": 733,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -152,8 +187,8 @@
               ],
               "priority": "normal",
               "assignee": "luc-github",
-              "age_days": 2097,
-              "days_since_update": 969,
+              "age_days": 2098,
+              "days_since_update": 970,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -165,27 +200,27 @@
             }
           ],
           "issue_summary": {
-            "total": 5,
-            "open": 5,
+            "total": 6,
+            "open": 6,
             "closed": 0,
             "priorities": {
-              "normal": 5
+              "normal": 6
             },
             "ages": {
-              "recent": 0,
+              "recent": 1,
               "active": 0,
               "stale": 5
             },
             "complexity": {
-              "medium": 5
+              "medium": 6
             },
             "size": {
+              "medium": 3,
               "small": 1,
-              "medium": 2,
               "large": 2
             },
             "lifecycle": {
-              "new": 4,
+              "new": 5,
               "in_progress": 1
             }
           }
@@ -606,19 +641,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -1281,6 +1303,19 @@
               2,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -1288,7 +1323,7 @@
         "size": 141529,
         "stars": 2001,
         "forks": 499,
-        "open_issues": 5,
+        "open_issues": 6,
         "watchers": 2001,
         "default_branch": "3.1",
         "license": "GNU General Public License v3.0"
@@ -1343,8 +1378,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 209,
-              "days_since_update": 209,
+              "age_days": 210,
+              "days_since_update": 210,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1408,8 +1443,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 6,
-              "days_since_update": 6,
+              "age_days": 7,
+              "days_since_update": 7,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1440,8 +1475,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 7,
-              "days_since_update": 6,
+              "age_days": 8,
+              "days_since_update": 7,
               "is_stale": false,
               "is_recent": true,
               "activity_status": "active",
@@ -1468,8 +1503,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 209,
-              "days_since_update": 209,
+              "age_days": 210,
+              "days_since_update": 210,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1498,8 +1533,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 587,
-              "days_since_update": 587,
+              "age_days": 588,
+              "days_since_update": 588,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1526,8 +1561,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1732,
-              "days_since_update": 678,
+              "age_days": 1733,
+              "days_since_update": 679,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -1934,19 +1969,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -2609,6 +2631,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -2672,8 +2707,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 203,
-              "days_since_update": 203,
+              "age_days": 204,
+              "days_since_update": 204,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2700,8 +2735,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 234,
-              "days_since_update": 215,
+              "age_days": 235,
+              "days_since_update": 216,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2732,8 +2767,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 880,
-              "days_since_update": 290,
+              "age_days": 881,
+              "days_since_update": 291,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2758,8 +2793,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 425,
-              "days_since_update": 424,
+              "age_days": 426,
+              "days_since_update": 425,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2787,8 +2822,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1630,
-              "days_since_update": 704,
+              "age_days": 1631,
+              "days_since_update": 705,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2817,8 +2852,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2211,
-              "days_since_update": 747,
+              "age_days": 2212,
+              "days_since_update": 748,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2846,8 +2881,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2291,
-              "days_since_update": 747,
+              "age_days": 2292,
+              "days_since_update": 748,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2874,8 +2909,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1504,
-              "days_since_update": 747,
+              "age_days": 1505,
+              "days_since_update": 748,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2902,8 +2937,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2491,
-              "days_since_update": 1537,
+              "age_days": 2492,
+              "days_since_update": 1538,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -2932,8 +2967,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1634,
-              "days_since_update": 1607,
+              "age_days": 1635,
+              "days_since_update": 1608,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -3376,19 +3411,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 2,
-            "days": [
-              2,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -4051,6 +4073,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -4114,8 +4149,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 306,
-              "days_since_update": 164,
+              "age_days": 307,
+              "days_since_update": 165,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4140,8 +4175,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 747,
-              "days_since_update": 747,
+              "age_days": 748,
+              "days_since_update": 748,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4168,8 +4203,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 807,
-              "days_since_update": 807,
+              "age_days": 808,
+              "days_since_update": 808,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4194,8 +4229,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 922,
-              "days_since_update": 809,
+              "age_days": 923,
+              "days_since_update": 810,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -4587,19 +4622,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -5252,6 +5274,19 @@
           },
           {
             "week": "2026-10-25T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
             "total": 0,
             "days": [
               0,
@@ -7678,19 +7713,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -8352,6 +8374,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -8760,19 +8795,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -9435,6 +9457,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -9497,8 +9532,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 612,
-              "days_since_update": 612,
+              "age_days": 613,
+              "days_since_update": 613,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9523,8 +9558,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1340,
-              "days_since_update": 1340,
+              "age_days": 1341,
+              "days_since_update": 1341,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9549,8 +9584,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1340,
-              "days_since_update": 1340,
+              "age_days": 1341,
+              "days_since_update": 1341,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -9965,19 +10000,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 5,
@@ -10640,6 +10662,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -10984,19 +11019,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-01T23:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -11659,6 +11681,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -11722,8 +11757,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 282,
-              "days_since_update": 250,
+              "age_days": 283,
+              "days_since_update": 251,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11748,8 +11783,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 522,
-              "days_since_update": 522,
+              "age_days": 523,
+              "days_since_update": 523,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11774,8 +11809,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1264,
-              "days_since_update": 1264,
+              "age_days": 1265,
+              "days_since_update": 1265,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -11801,8 +11836,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 2460,
-              "days_since_update": 2443,
+              "age_days": 2461,
+              "days_since_update": 2444,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -12190,19 +12225,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -12864,6 +12886,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -12926,8 +12961,8 @@
               ],
               "priority": "normal",
               "assignee": null,
-              "age_days": 1264,
-              "days_since_update": 1264,
+              "age_days": 1265,
+              "days_since_update": 1265,
               "is_stale": true,
               "is_recent": false,
               "activity_status": "stale",
@@ -13148,19 +13183,6 @@
         ],
         "commit_activity": [
           {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
-          {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
             "days": [
@@ -13822,6 +13844,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -13986,19 +14021,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -14661,6 +14683,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -14795,19 +14830,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -15470,6 +15492,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -15742,19 +15777,6 @@
           }
         ],
         "commit_activity": [
-          {
-            "week": "2025-11-02T00:00:00+00:00",
-            "total": 0,
-            "days": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ]
-          },
           {
             "week": "2025-11-09T00:00:00+00:00",
             "total": 0,
@@ -16417,6 +16439,19 @@
               0,
               0
             ]
+          },
+          {
+            "week": "2026-11-01T00:00:00+00:00",
+            "total": 0,
+            "days": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ]
       },
@@ -16451,17 +16486,17 @@
       "url": null,
       "language": null,
       "created_at": "2025-05-27T04:25:42+00:00",
-      "updated_at": "2026-10-29T14:02:34+00:00",
+      "updated_at": "2026-10-31T08:48:57+00:00",
       "branches": [
         {
           "name": "main",
           "label": "Default",
           "is_production": true,
           "last_commit": {
-            "sha": "decb3df",
+            "sha": "fdf6425",
             "message": "Private commit",
             "author": "Private",
-            "date": "2026-10-29T02:05:39+00:00"
+            "date": "2026-10-31T08:48:48+00:00"
           },
           "protected": false,
           "issues": []
@@ -16470,6 +16505,12 @@
       "contributors": [],
       "activity": {
         "recent_commits": [
+          {
+            "sha": "fdf6425",
+            "message": "Private commit",
+            "author": "Private",
+            "date": "2026-10-31T08:48:48+00:00"
+          },
           {
             "sha": "decb3df",
             "message": "Private commit",
@@ -16787,20 +16828,14 @@
             "message": "Private commit",
             "author": "Private",
             "date": "2026-07-27T01:18:16+00:00"
-          },
-          {
-            "sha": "4ca6881",
-            "message": "Private commit",
-            "author": "Private",
-            "date": "2026-07-26T11:41:08+00:00"
           }
         ],
         "commit_activity": [],
         "last_commit": {
-          "sha": "decb3df",
+          "sha": "fdf6425",
           "message": "Private commit",
           "author": "Private",
-          "date": "2026-10-29T02:05:39+00:00"
+          "date": "2026-10-31T08:48:48+00:00"
         }
       },
       "statistics": {},
@@ -16810,8 +16845,8 @@
   "rate_limit": {
     "core": {
       "limit": 5000,
-      "remaining": 4814,
-      "reset": "2026-10-31T04:31:07+00:00"
+      "remaining": 4817,
+      "reset": "2026-11-01T04:36:51+00:00"
     }
   },
   "stats": {
@@ -16836,30 +16871,30 @@
       }
     },
     "issues": {
-      "total_count": 33,
-      "open_count": 33,
+      "total_count": 34,
+      "open_count": 34,
       "closed_count": 0,
       "close_rate": 0.0,
-      "avg_age_days": 1159.6884716808077,
+      "avg_age_days": 1126.5828582511663,
       "avg_resolution_time": 0,
       "priority_distribution": {
-        "normal": 33
+        "normal": 34
       },
       "recent_activity": {
-        "last_day": 0,
-        "last_week": 2,
-        "last_month": 2
+        "last_day": 1,
+        "last_week": 1,
+        "last_month": 3
       }
     },
     "activity": {
-      "total_commits": 12,
+      "total_commits": 10,
       "commit_frequency": {
-        "daily": 0.5439560439560438,
-        "weekly": 3.807692307692308,
-        "monthly": 15.230769230769232
+        "daily": 0.5384615384615383,
+        "weekly": 3.7692307692307696,
+        "monthly": 15.076923076923078
       },
       "active_contributors": {
-        "last_week": 4,
+        "last_week": 3,
         "last_month": 5,
         "total": 457
       },
@@ -17003,7 +17038,7 @@
           2,
           4,
           1,
-          9,
+          10,
           4,
           1,
           6,
@@ -17032,7 +17067,7 @@
           8,
           6,
           5,
-          6,
+          5,
           6,
           2,
           2,
@@ -17052,7 +17087,7 @@
       "issue_creation_trend": [
         {
           "date": "2026-10",
-          "count": 2
+          "count": 3
         },
         {
           "date": "2026-09",
@@ -17076,11 +17111,11 @@
         },
         {
           "date": "2026-04",
-          "count": 3
+          "count": 1
         },
         {
           "date": "2026-03",
-          "count": 1
+          "count": 3
         },
         {
           "date": "2026-02",
@@ -17150,10 +17185,6 @@
         }
       ],
       "commit_trend": [
-        {
-          "date": "2025-11-02",
-          "count": 2
-        },
         {
           "date": "2025-11-09",
           "count": 5
@@ -17359,7 +17390,7 @@
           "count": 7
         },
         {
-          "date": "2025-11-01",
+          "date": "2026-11-01",
           "count": 0
         }
       ]
@@ -17368,11 +17399,11 @@
   "activity_ranking": {
     "daily": [
       {
-        "name": "ESP3D",
-        "type": "main",
-        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
-        "url": "https://github.com/luc-github/ESP3D",
-        "is_private": false,
+        "name": "Private Project #1",
+        "type": "private",
+        "description": "",
+        "url": "",
+        "is_private": true,
         "score": {
           "commits": 1,
           "issues": 0,
@@ -17386,6 +17417,27 @@
           "comments": 0,
           "commits_per_day": 1.0,
           "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3D",
+        "type": "main",
+        "description": "FW for ESP8266/ESP8285/ESP32 used with 3D printer",
+        "url": "https://github.com/luc-github/ESP3D",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "period_days": 1,
+          "total": 2
+        },
+        "details": {
+          "commits": 0,
+          "issues": 1,
+          "comments": 0,
+          "commits_per_day": 0.0,
+          "issues_per_day": 1.0
         }
       },
       {
@@ -17639,27 +17691,6 @@
           "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
-      },
-      {
-        "name": "Private Project #1",
-        "type": "private",
-        "description": "",
-        "url": "",
-        "is_private": true,
-        "score": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "period_days": 1,
-          "total": 0
-        },
-        "details": {
-          "commits": 0,
-          "issues": 0,
-          "comments": 0,
-          "commits_per_day": 0.0,
-          "issues_per_day": 0.0
-        }
       }
     ],
     "weekly": [
@@ -17671,17 +17702,17 @@
         "is_private": false,
         "score": {
           "commits": 5,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 7,
-          "total": 15
+          "total": 17
         },
         "details": {
           "commits": 5,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.7142857142857143,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.14285714285714285
         }
       },
       {
@@ -17706,27 +17737,6 @@
         }
       },
       {
-        "name": "ESP3DLib",
-        "type": "main",
-        "description": "ESP3D library for Marlin and ESP32 boards",
-        "url": "https://github.com/luc-github/ESP3DLib",
-        "is_private": false,
-        "score": {
-          "commits": 2,
-          "issues": 2,
-          "comments": 0,
-          "period_days": 7,
-          "total": 10
-        },
-        "details": {
-          "commits": 2,
-          "issues": 2,
-          "comments": 0,
-          "commits_per_day": 0.2857142857142857,
-          "issues_per_day": 0.2857142857142857
-        }
-      },
-      {
         "name": "ESP3D-WEBUI",
         "type": "main",
         "description": "A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC",
@@ -17744,6 +17754,27 @@
           "issues": 0,
           "comments": 0,
           "commits_per_day": 0.14285714285714285,
+          "issues_per_day": 0.0
+        }
+      },
+      {
+        "name": "ESP3DLib",
+        "type": "main",
+        "description": "ESP3D library for Marlin and ESP32 boards",
+        "url": "https://github.com/luc-github/ESP3DLib",
+        "is_private": false,
+        "score": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "period_days": 7,
+          "total": 0
+        },
+        "details": {
+          "commits": 0,
+          "issues": 0,
+          "comments": 0,
+          "commits_per_day": 0.0,
           "issues_per_day": 0.0
         }
       },
@@ -17966,17 +17997,17 @@
         "url": "",
         "is_private": true,
         "score": {
-          "commits": 11,
+          "commits": 12,
           "issues": 0,
           "comments": 0,
           "period_days": 30,
-          "total": 33
+          "total": 36
         },
         "details": {
-          "commits": 11,
+          "commits": 12,
           "issues": 0,
           "comments": 0,
-          "commits_per_day": 0.36666666666666664,
+          "commits_per_day": 0.4,
           "issues_per_day": 0.0
         }
       },
@@ -18009,17 +18040,17 @@
         "is_private": false,
         "score": {
           "commits": 5,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "period_days": 30,
-          "total": 15
+          "total": 17
         },
         "details": {
           "commits": 5,
-          "issues": 0,
+          "issues": 1,
           "comments": 0,
           "commits_per_day": 0.16666666666666666,
-          "issues_per_day": 0.0
+          "issues_per_day": 0.03333333333333333
         }
       },
       {
@@ -18283,18 +18314,18 @@
         "url": "https://github.com/luc-github/ESP3D",
         "is_private": false,
         "score": {
-          "commits": 50,
-          "issues": 2,
+          "commits": 49,
+          "issues": 3,
           "comments": 0,
           "period_days": 365,
-          "total": 154
+          "total": 153
         },
         "details": {
-          "commits": 50,
-          "issues": 2,
+          "commits": 49,
+          "issues": 3,
           "comments": 0,
-          "commits_per_day": 0.136986301369863,
-          "issues_per_day": 0.005479452054794521
+          "commits_per_day": 0.13424657534246576,
+          "issues_per_day": 0.00821917808219178
         }
       },
       {
