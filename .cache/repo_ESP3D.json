@@ -1,5 +1,5 @@
 {
-  "timestamp": 1793853412.2946928,
+  "timestamp": 1793939732.234951,
   "data": {
     "name": "ESP3D",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D",
     "language": "C",
     "created_at": "2015-04-16T13:47:44+00:00",
-    "updated_at": "2026-11-03T10:51:58+00:00",
+    "updated_at": "2026-11-05T13:57:35+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -165,7 +165,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 595,
+        "contributions": 597,
         "url": "https://github.com/luc-github"
       },
       {
@@ -251,6 +251,18 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "fc86a86",
+          "message": "Update donation link in README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2026-11-05T13:57:30+00:00"
+        },
+        {
+          "sha": "bb9e52e",
+          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
+          "author": "Luc",
+          "date": "2026-11-05T13:51:13+00:00"
+        },
         {
           "sha": "8cbc5e9",
           "message": "Use supported board names",
@@ -562,18 +574,6 @@
           "message": "Fix Baudrate displayed as 0 instead of correct baudrate in [ESP420]\n\nBump version to 3.0.1",
           "author": "Luc",
           "date": "2025-10-19T03:31:53+00:00"
-        },
-        {
-          "sha": "4fe0c31",
-          "message": "Update README.md\n\nSigned-off-by: Luc <8822552+luc-github@users.noreply.github.com>",
-          "author": "Luc",
-          "date": "2025-10-09T06:20:05+00:00"
-        },
-        {
-          "sha": "9f20f8b",
-          "message": "Prepare version for release",
-          "author": "Luc",
-          "date": "2025-10-09T05:21:33+00:00"
         }
       ],
       "commit_activity": [
@@ -1242,13 +1242,13 @@
         },
         {
           "week": "2026-11-01T00:00:00+00:00",
-          "total": 0,
+          "total": 2,
           "days": [
             0,
             0,
             0,
             0,
-            0,
+            2,
             0,
             0
           ]
@@ -1256,7 +1256,7 @@
       ]
     },
     "statistics": {
-      "size": 141529,
+      "size": 141550,
       "stars": 2002,
       "forks": 498,
       "open_issues": 7,

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1793853434.4527905,
+  "timestamp": 1793939755.4815617,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-11-02T12:31:02+00:00",
+    "updated_at": "2026-11-06T02:22:16+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -214,7 +214,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 361,
+        "contributions": 364,
         "url": "https://github.com/luc-github"
       },
       {
@@ -290,6 +290,24 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "57f0f9a",
+          "message": "Change donation link to ESP3D-WEBUI\n\nUpdated donation link in README for ESP3D-WEBUI.",
+          "author": "Luc",
+          "date": "2026-11-06T02:22:09+00:00"
+        },
+        {
+          "sha": "c3542f1",
+          "message": "Include donation button in README\n\nAdd donation button to README",
+          "author": "Luc",
+          "date": "2026-11-05T13:55:57+00:00"
+        },
+        {
+          "sha": "4234835",
+          "message": "Update PayPal donation link to new URL",
+          "author": "Luc",
+          "date": "2026-11-05T13:54:18+00:00"
+        },
         {
           "sha": "da3c304",
           "message": "Marlin SD: refresh the list after a delete (#463)\n\n* Refresh the Marlin SD list after a delete\n\nThe delete query ended on the first plain \"ok\". The default delete\ncommand is \"M21;M30 #\", so the ok of M21 (or of a polling command)\narrived before \"File deleted\" and the query ended as \"end without\nstart\", which is reported as an error. The list was then not refreshed.\nEnd the query on \"File deleted\" instead.\n\n* Fail SD deletes fast on known errors and always refresh the list\n\nA missing card or an unknown M21/M30 now ends the delete query at once\nas an error instead of after the 30 s timeout, using the same messages\nthe list query already checks. The Files panel refreshes the list after\nevery delete or createdir result, also on errors and timeouts, so it\nalways shows what is on the card.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
@@ -595,24 +613,6 @@
           "message": "generate template",
           "author": "Luc",
           "date": "2024-12-16T08:24:04+00:00"
-        },
-        {
-          "sha": "8033f62",
-          "message": "Build packages\n\nClose #249",
-          "author": "Luc",
-          "date": "2024-12-09T02:38:18+00:00"
-        },
-        {
-          "sha": "d7413c6",
-          "message": "Remove plotter as seems no more sustained\n\nUpdate SandTable UI",
-          "author": "Luc",
-          "date": "2024-12-09T02:36:18+00:00"
-        },
-        {
-          "sha": "d1c3f23",
-          "message": "per users request",
-          "author": "Luc",
-          "date": "2024-12-09T01:38:01+00:00"
         }
       ],
       "commit_activity": [
@@ -1281,21 +1281,21 @@
         },
         {
           "week": "2026-11-01T00:00:00+00:00",
-          "total": 0,
+          "total": 3,
           "days": [
             0,
             0,
             0,
             0,
-            0,
-            0,
+            2,
+            1,
             0
           ]
         }
       ]
     },
     "statistics": {
-      "size": 130373,
+      "size": 130382,
       "stars": 896,
       "forks": 359,
       "open_issues": 10,

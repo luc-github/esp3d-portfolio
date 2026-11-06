@@ -1,5 +1,5 @@
 {
-  "timestamp": 1793853470.2261646,
+  "timestamp": 1793939797.1437917,
   "data": {
     "name": "esp3d.io",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/esp3d.io",
     "language": "MDX",
     "created_at": "2023-01-29T00:46:38+00:00",
-    "updated_at": "2026-10-08T02:02:32+00:00",
+    "updated_at": "2026-11-06T02:32:50+00:00",
     "branches": [
       {
         "name": "main",
@@ -75,7 +75,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 236,
+        "contributions": 237,
         "url": "https://github.com/luc-github"
       },
       {
@@ -126,6 +126,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "4460df6",
+          "message": "update esp3d / esp3d-x",
+          "author": "Luc",
+          "date": "2026-11-06T02:32:36+00:00"
+        },
         {
           "sha": "162fca4",
           "message": "Add sound customization  feature\n\nAdd new unlock sound\nRewrite buzzer module for performance and reliability le blob sounds et le kit sont g\u00e9n\u00e9r\u00e9s \u00e0 chaque build.\nFix crashs of std::stoi  in [ESP250] and [ESP290] ;\nFix result of ESP250]\nRewrite buzzer driver to become not bloking\nUpdate documentation",
@@ -443,12 +449,6 @@
           "message": "Add extensions in Showcases for webui 3.0",
           "author": "Luc",
           "date": "2024-11-28T06:59:08+00:00"
-        },
-        {
-          "sha": "77aebda",
-          "message": "Fix typo in sample command for notification, spaces are not escaped",
-          "author": "Luc",
-          "date": "2024-11-25T09:25:46+00:00"
         }
       ],
       "commit_activity": [
@@ -1117,21 +1117,21 @@
         },
         {
           "week": "2026-11-01T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
             0,
             0,
             0,
-            0,
+            1,
             0
           ]
         }
       ]
     },
     "statistics": {
-      "size": 123517,
+      "size": 129271,
       "stars": 13,
       "forks": 66,
       "open_issues": 3,
