@@ -1,5 +1,5 @@
 {
-  "timestamp": 1793939755.4815617,
+  "timestamp": 1794024037.6532705,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -22,17 +22,36 @@
         "protected": false,
         "issues": [
           {
-            "number": 454,
-            "title": "[INFORMATION]Brotli Support",
-            "body": "Brotli-compressed WebUI packages are already generated and included as part of the build process:\n\n| Target | Subtarget  |  Gzip Path | Gzip Size | Brotli Path | Brotli Size |\n|--------|-----------|-----------|-----------|--------------|--------------|\n| CNC | GRBL | index.html.gz | 91.2 KB | index.html.br | 75.6 KB |\n| CNC | GRBLHal | index.html.gz | 95.8 KB | index.html.br | 79.0 KB |\n| Printer3D | Marlin | index.html.gz | 97.1 KB | index.html.br | 80.2 KB |\n| Printer3D | Marlin-embedded |index.html.gz | 96.6 KB | index.html.br | 79.8 KB |\n| Printer3D | Repetier |index.html.gz | 96.0 KB | index.html.br | 79.3 KB |\n| Printer3D | Smoothieware | index.html.gz | 95.6 KB | index.html.br | 78.8 KB |\n| SandTable | GRBL | index.html.gz | 83.4 KB | index.html.br | 69.1 KB |\n\nThe size reduction benefit is obvious.  \nHowever, **these Brotli files are not yet used by any current server implementation.**\n\nThey are included **as preparation for future support**, so everything will already be ready once Brotli becomes usable on supported platforms.\n\nCurrently, there is no Brotli support on the server side in:\n\n- ESP3D  \n- ESP3DLib  \n- ESP3D-TFT  \n- ESP3D-HUB  \n- or any known compatible server  \n\n## Why is Brotli not usable yet?\n\nServing Brotli content typically requires HTTPS support, which needs about **50 KB of stack memory**.  \nThis generally requires **PSRAM**, which is not available on most supported boards.\n\nAs a result:\n\n- **ESP8266** is definitely out of scope  \n- **ESP32 without PSRAM** is also out of scope  \n- **Arduino ESP32 Core** does not currently support an HTTPS server suitable for this use case  \n  - Switching to another web server would require a large amount of work  \n  - This could negatively impact system stability  \n  - Therefore, ESP3D itself is currently out of scope  \n\nAdditionally:\n\n- **ESP3D-TFT** will be replaced by **ESP3D-X** (next-generation platform)\n\n## Summary\n\nBrotli packages are already generated **as a forward-looking preparation**,  \nbut **this feature should not be considered active yet**.\n\nPlease do not focus too much on Brotli support until HTTPS support is implemented in **ESP3D-X**.",
+            "number": 465,
+            "title": "[FEATURE REQUEST]Add support for Inch in grbl",
+            "body": "Current UI only handle mm , inch support is a request for cnc firmware. \n",
             "state": "open",
-            "created_at": "2026-04-10T03:52:02+00:00",
-            "updated_at": "2026-04-10T03:52:56+00:00",
+            "created_at": "2026-11-06T10:36:32+00:00",
+            "updated_at": "2026-11-06T10:36:41+00:00",
             "closed_at": null,
-            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/454",
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/465",
             "is_pr": false,
             "labels": [
-              "Enhancement",
+              "Feature request",
+              "CNC",
+              "3.1"
+            ],
+            "priority": "normal",
+            "assignee": null
+          },
+          {
+            "number": 464,
+            "title": "[FEATURE REQUEST]Manage grbl G5X.0 workspace",
+            "body": "Currently grbl Workspace is displayed but cannot be changed in UI , need terminal command\nMalke G5X  button responsive\n",
+            "state": "open",
+            "created_at": "2026-11-06T10:34:04+00:00",
+            "updated_at": "2026-11-06T10:34:19+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/issues/464",
+            "is_pr": false,
+            "labels": [
+              "Feature request",
+              "CNC",
               "3.1"
             ],
             "priority": "normal",
@@ -1298,7 +1317,7 @@
       "size": 130382,
       "stars": 896,
       "forks": 359,
-      "open_issues": 10,
+      "open_issues": 11,
       "watchers": 896,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
