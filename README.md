@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-36-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2011%20%2F%2009%2004:00%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2011%20%2F%2010%2005:33%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -47,10 +47,10 @@ Repository activity rankings based on activity over different time periods.
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 3.0 |
-| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥈 2  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (2) | 0 | 1 | 2.0 |
+| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 4  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -69,12 +69,12 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (27) | 9 | 0 | 3.9 |
-| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (13) | 3 | 2 | 1.9 |
-| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (8) | 2 | 1 | 1.1 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (24) | 8 | 0 | 3.4 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜ (13) | 3 | 2 | 1.9 |
+| 🥉 3  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (6) | 2 | 0 | 0.9 |
 | ▪️ 4  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.4 |
-| ▪️ 5  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.3 |
+| ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -92,12 +92,12 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (51) | 17 | 0 | 1.7 |
+| 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (54) | 18 | 0 | 1.8 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (25) | 7 | 2 | 0.8 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (25) | 7 | 2 | 0.8 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (16) | 4 | 2 | 0.5 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (16) | 4 | 2 | 0.5 |
 | ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
-| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
 | ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 8  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 9  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -148,7 +148,7 @@ Repository popularity based on GitHub stars and forks.
 | Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |
 |:------------|------------|------|---------|---------|-------------|
 | 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 2,005 | 498 | 2,005 |
-| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 896 | 359 | 896 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 896 | 358 | 896 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 122 | 39 | 122 |
 | ▪️ 4  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 57 | 27 | 57 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 54 | 17 | 54 |
@@ -176,7 +176,7 @@ Repository popularity based on GitHub stars and forks.
 | Main Projects | 8 |
 | Dependencies | 6 |
 | Total Stars | 3197 |
-| Total Forks | 1026 |
+| Total Forks | 1025 |
 
 ### Issue Statistics
 
@@ -184,7 +184,7 @@ Repository popularity based on GitHub stars and forks.
 |--------|-------|
 | Open Issues | 36 |
 | Closed Issues | 0 |
-| Average Age | 1066.0 days |
+| Average Age | 1067.0 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -194,7 +194,7 @@ Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.5 commits)
 Weekly   🟦 Few (1-10 commits)           (3.8 commits)
-Monthly  🟦 Few (1-25 commits)           (15.2 commits)
+Monthly  🟦 Few (1-25 commits)           (15.1 commits)
 ```
 
 </details>
@@ -291,7 +291,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2026-05-19</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2026-11-09</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#76: <a href="https://github.com/luc-github/ESP3D-TFT/issues/76">[FEATURE REQUEST]Add Lua interpreter support like in ESP3D</a></td><td><code>2024-10-13</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#74: <a href="https://github.com/luc-github/ESP3D-TFT/issues/74">[FEATURE REQUEST]Add BTT GCODE thumbnails</a></td><td><code>2024-08-14</code></td><td><code>2024-08-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>#67: <a href="https://github.com/luc-github/ESP3D-TFT/issues/67">[FEATURE REQUEST]Add support of macro defined by webui on screen</a></td><td><code>2024-04-21</code></td><td><code>2024-08-13</code></td><td style="color: #000000">normal</td></tr>
@@ -805,7 +805,7 @@ Author: Luc
 
 <table>
 <tr><th>Status</th><th>Branch</th><th>Issue</th><th>Created</th><th>Updated</th><th>Priority</th></tr>
-<tr><td>⭕</td><td>🔧 main</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2026-05-19</code></td><td style="color: #000000">normal</td></tr>
+<tr><td>⭕</td><td>🔧 main</td><td>#82: <a href="https://github.com/luc-github/ESP3D-TFT/issues/82">[FEATURE REQUEST] Support for MKS DLC32 MAX LCD [ESP-TFT35 v4.1]</a></td><td><code>2025-12-28</code></td><td><code>2026-11-09</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#76: <a href="https://github.com/luc-github/ESP3D-TFT/issues/76">[FEATURE REQUEST]Add Lua interpreter support like in ESP3D</a></td><td><code>2024-10-13</code></td><td><code>2024-10-13</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#74: <a href="https://github.com/luc-github/ESP3D-TFT/issues/74">[FEATURE REQUEST]Add BTT GCODE thumbnails</a></td><td><code>2024-08-14</code></td><td><code>2024-08-14</code></td><td style="color: #000000">normal</td></tr>
 <tr><td>⭕</td><td>🔧 main</td><td>#67: <a href="https://github.com/luc-github/ESP3D-TFT/issues/67">[FEATURE REQUEST]Add support of macro defined by webui on screen</a></td><td><code>2024-04-21</code></td><td><code>2024-08-13</code></td><td style="color: #000000">normal</td></tr>
@@ -979,7 +979,7 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 15 |
+| Commits | 14 |
 | New Issues | 3 |
 | Closed Issues | 0 |
 | Active Contributors | 1 |
@@ -1007,7 +1007,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2026-11-09 04:00:10 UTC*
+*🔄 Last updated: 2026-11-10 05:33:07 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 
