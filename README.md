@@ -6,7 +6,7 @@
 ![Main Projects](https://img.shields.io/badge/Main%20Projects-8-orange)
 ![Dependencies](https://img.shields.io/badge/Dependencies-6-green)
 ![Open Issues](https://img.shields.io/badge/Open%20Issues-36-yellow)
-![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2011%20%2F%2017%2005:59%20UTC-lightgrey)
+![Last Update](https://img.shields.io/badge/Last%20Update-2026%20%2F%2011%20%2F%2018%2005:29%20UTC-lightgrey)
 
 📑 Real-time status and analysis of ESP3D-related projects
 
@@ -20,7 +20,7 @@
 |---------|------|---------|-------------|
 | [⭐ ESP3D](#user-content-esp3d) | Main Project | v3.1.0 / dev:3.1.1 | FW for ESP8266/ESP8285/ESP32 used with 3D printer |
 | [⭐ ESP3DLib](#user-content-esp3dlib) | Main Project | v1.0.0 | ESP3D library for Marlin and ESP32 boards |
-| [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | v3.1.0 | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
+| [⭐ ESP3D-WEBUI](#user-content-esp3d-webui) | Main Project | v3.1.0 / dev:3.2.0 | A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC |
 | [⭐ ESP3D-TFT](#user-content-esp3d-tft) | Main Project | v3.0.0.a26 | ESP3D Firmware for ESP32 based TFT  |
 | [⭐ Marlin](#user-content-marlin) | Main Project | missing | Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform. | Many commercial 3D printers come with Marlin installed. Check with your vendor if you need source code for your specific machine. |
 | [⭐ ESP3D-Configurator](#user-content-esp3d-configurator) | Main Project | v1.1.0 | Configurator for ESP3D Firmware |
@@ -46,9 +46,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 3.0 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -69,9 +69,9 @@ Repository activity rankings based on activity over different time periods.
 
 | Rank &nbsp; | Repository | Type | Score | Commits | Issues | Activity/Day |
 |:------------|------------|------|--------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥈 2  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
-| 🥉 3  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥇 1  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (3) | 1 | 0 | 0.4 |
+| 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
+| 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 4  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 5  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
 | ▪️ 6  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -95,7 +95,7 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (51) | 17 | 0 | 1.7 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (25) | 7 | 2 | 0.8 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜ (25) | 7 | 2 | 0.8 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (16) | 4 | 2 | 0.5 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜ (19) | 5 | 2 | 0.6 |
 | ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (3) | 1 | 0 | 0.1 |
 | ▪️ 6  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (2) | 0 | 1 | 0.1 |
 | ▪️ 7  | [Marlin](https://github.com/luc-github/Marlin) | Main | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0) | 0 | 0 | 0.0 |
@@ -118,7 +118,7 @@ Repository activity rankings based on activity over different time periods.
 | 🥇 1  | Private Project #1 | Private | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 (162) | 54 | 0 | 0.4 |
 | 🥈 2  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬜ (161) | 51 | 4 | 0.4 |
 | 🥉 3  | [esp3d-webinstaller](https://github.com/luc-github/esp3d-webinstaller) | Main | 🟦🟦🟦🟦🟦🟦🟦🟦⬜⬜ (135) | 45 | 0 | 0.4 |
-| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (110) | 34 | 4 | 0.3 |
+| ▪️ 4  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (113) | 35 | 4 | 0.3 |
 | ▪️ 5  | [esp3d.io](https://github.com/luc-github/esp3d.io) | Main | 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜ (99) | 33 | 0 | 0.3 |
 | ▪️ 6  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (44) | 12 | 4 | 0.1 |
 | ▪️ 7  | [ESP3D-Configurator](https://github.com/luc-github/ESP3D-Configurator) | Main | 🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜ (33) | 11 | 0 | 0.1 |
@@ -147,8 +147,8 @@ Repository popularity based on GitHub stars and forks.
 
 | Rank &nbsp; | Repository | Type | ⭐ Stars | 🍴 Forks | 👀 Watchers |
 |:------------|------------|------|---------|---------|-------------|
-| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 2,006 | 499 | 2,006 |
-| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 897 | 358 | 897 |
+| 🥇 1  | [ESP3D](https://github.com/luc-github/ESP3D) | Main | 2,006 | 498 | 2,006 |
+| 🥈 2  | [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI) | Main | 899 | 358 | 899 |
 | 🥉 3  | [ESP3DLib](https://github.com/luc-github/ESP3DLib) | Main | 122 | 39 | 122 |
 | ▪️ 4  | [ESP32SSDP](https://github.com/luc-github/ESP32SSDP) | Dependency | 57 | 27 | 57 |
 | ▪️ 5  | [ESP3D-TFT](https://github.com/luc-github/ESP3D-TFT) | Main | 54 | 17 | 54 |
@@ -175,8 +175,8 @@ Repository popularity based on GitHub stars and forks.
 | Total Repositories | 14 |
 | Main Projects | 8 |
 | Dependencies | 6 |
-| Total Stars | 3199 |
-| Total Forks | 1026 |
+| Total Stars | 3201 |
+| Total Forks | 1025 |
 
 ### Issue Statistics
 
@@ -184,7 +184,7 @@ Repository popularity based on GitHub stars and forks.
 |--------|-------|
 | Open Issues | 36 |
 | Closed Issues | 0 |
-| Average Age | 1074.0 days |
+| Average Age | 1075.0 days |
 | Close Rate | 0.0% |
 
 ### Recent Activity
@@ -194,7 +194,7 @@ Commit Activity:
 
 Daily    🟦 Few (1-2 commits)            (0.5 commits)
 Weekly   🟦 Few (1-10 commits)           (3.8 commits)
-Monthly  🟦 Few (1-25 commits)           (15.1 commits)
+Monthly  🟦 Few (1-25 commits)           (15.2 commits)
 ```
 
 </details>
@@ -338,7 +338,7 @@ Author: Luc
 
 **Project**: [ESP3D-WEBUI](https://github.com/luc-github/ESP3D-WEBUI)<br>
 **Type**: Main<br>
-**Version**: 🟢 v3.1.0<br>
+**Version**: 🔵 v3.1.0 / dev:3.2.0<br>
 **Description**: A Web UI for ESP8266 or ESP32 based boards connected to 3D printers / CNC<br>
 **Language**: JavaScript<br>
 **Health Score**: <span style="color: #ff0000">15.0%</span>
@@ -979,10 +979,10 @@ Author: Luc
 
 | Activity | Count |
 |----------|--------|
-| Commits | 0 |
+| Commits | 1 |
 | New Issues | 0 |
 | Closed Issues | 0 |
-| Active Contributors | 0 |
+| Active Contributors | 1 |
 
 ### Activity Heatmap
 
@@ -1007,7 +1007,7 @@ Legend:
 
 <div align="center">
 
-*🔄 Last updated: 2026-11-17 05:59:57 UTC*
+*🔄 Last updated: 2026-11-18 05:29:32 UTC*
 
 *Generated by [esp3d-portfolio](https://github.com/luc-github/esp3d-portfolio)*
 

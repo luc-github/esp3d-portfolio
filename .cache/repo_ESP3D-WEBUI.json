@@ -1,5 +1,5 @@
 {
-  "timestamp": 1794895110.5170615,
+  "timestamp": 1794979694.372967,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-11-16T06:02:40+00:00",
+    "updated_at": "2026-11-17T21:41:00+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -233,7 +233,7 @@
     "contributors": [
       {
         "login": "luc-github",
-        "contributions": 364,
+        "contributions": 365,
         "url": "https://github.com/luc-github"
       },
       {
@@ -304,6 +304,12 @@
     ],
     "activity": {
       "recent_commits": [
+        {
+          "sha": "d6b0a5e",
+          "message": "New UI Fixed Mode allowing positioning panel anywhere with any size to simulate one panel screen (#466)\n\nNew CNC Change Tool Panel\nUpdate CNC Probe Panel\nAdd Inch support in CNC UI\nAdd G5.X selection feature in CNC panel\nFix bug with https when not explicit port is provided\nAdd https /wss mock server for tests\nSeveral small bug fixes\nMassive refactoring to decrease core code and keep final footprint under 100KB",
+          "author": "Luc",
+          "date": "2026-11-17T08:56:03+00:00"
+        },
         {
           "sha": "57f0f9a",
           "message": "Change donation link to ESP3D-WEBUI\n\nUpdated donation link in README for ESP3D-WEBUI.",
@@ -621,12 +627,6 @@
           "message": "Fix sensor not displayed since reporting is in stream instead of core",
           "author": "Luc",
           "date": "2024-12-17T08:33:21+00:00"
-        },
-        {
-          "sha": "f9dbf5c",
-          "message": "generate template",
-          "author": "Luc",
-          "date": "2024-12-16T08:24:04+00:00"
         }
       ],
       "commit_activity": [
@@ -1295,11 +1295,11 @@
         },
         {
           "week": "2026-11-15T00:00:00+00:00",
-          "total": 0,
+          "total": 1,
           "days": [
             0,
             0,
-            0,
+            1,
             0,
             0,
             0,
@@ -1309,19 +1309,19 @@
       ]
     },
     "statistics": {
-      "size": 144359,
-      "stars": 897,
+      "size": 146145,
+      "stars": 899,
       "forks": 358,
       "open_issues": 11,
-      "watchers": 897,
+      "watchers": 899,
       "default_branch": "3.1",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
       "version": "3.1.0",
-      "devt": "3.1.0",
-      "display": "v3.1.0",
-      "status": "production"
+      "devt": "3.2.0",
+      "display": "v3.1.0 / dev:3.2.0",
+      "status": "both"
     }
   }
 }
