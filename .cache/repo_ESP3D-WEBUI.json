@@ -1,5 +1,5 @@
 {
-  "timestamp": 1795759650.2052763,
+  "timestamp": 1795844906.0285823,
   "data": {
     "name": "ESP3D-WEBUI",
     "type": "main",
@@ -7,7 +7,7 @@
     "url": "https://github.com/luc-github/ESP3D-WEBUI",
     "language": "JavaScript",
     "created_at": "2017-05-19T07:02:14+00:00",
-    "updated_at": "2026-11-22T20:47:19+00:00",
+    "updated_at": "2026-11-27T14:38:21+00:00",
     "branches": [
       {
         "name": "3.0",
@@ -21,6 +21,20 @@
         },
         "protected": false,
         "issues": [
+          {
+            "number": 467,
+            "title": "Add Marlin LCD SD and USB file browsing",
+            "body": "Adds LCD SD and USB file-system sources to the Marlin target.\r\n\r\n- LCD SD lists with M21 L;M20\r\n- USB lists with M21 U;M20\r\n- Play/delete commands mount the selected storage before operating\r\n- Adds display options, sorting preferences, default filesystem options, and stream response handling\r\n\r\nValidation: staged JSON parsing and git diff --check passed. Node/npm was unavailable in this environment, so the webpack build could not be run.",
+            "state": "open",
+            "created_at": "2026-11-27T23:10:37+00:00",
+            "updated_at": "2026-11-28T00:29:36+00:00",
+            "closed_at": null,
+            "url": "https://github.com/luc-github/ESP3D-WEBUI/pull/467",
+            "is_pr": true,
+            "labels": [],
+            "priority": "normal",
+            "assignee": null
+          },
           {
             "number": 465,
             "title": "[FEATURE REQUEST]Add support for Inch in grbl",
@@ -1309,12 +1323,12 @@
       ]
     },
     "statistics": {
-      "size": 146145,
-      "stars": 902,
+      "size": 147525,
+      "stars": 903,
       "forks": 359,
-      "open_issues": 11,
-      "watchers": 902,
-      "default_branch": "3.1",
+      "open_issues": 12,
+      "watchers": 903,
+      "default_branch": "3.X",
       "license": "GNU General Public License v3.0"
     },
     "version_info": {
